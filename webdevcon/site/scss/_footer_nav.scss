@@ -1,0 +1,23 @@
+@import "variables";
+
+footer nav {
+* {
+  font-size: $small;
+  color: $white;
+ }
+h2 {
+  color: $mediumLightGray;
+ }
+ul, li, h2 {
+  display: inline-block;
+ }
+li:not(:first-of-type):before {
+   content: "|";
+   width: 10px;
+   text-align: center;
+ }
+a {
+  padding: 0 5px;
+ }
+
+}

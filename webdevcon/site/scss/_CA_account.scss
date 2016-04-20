@@ -1,0 +1,45 @@
+@import "variables";
+
+// CSS specifically for Consumer App "Manage Account" page 
+.manage-account {
+  section {
+    border-top: 1px solid $line;
+    padding: 25px 0;
+  }
+  section:first-of-type {
+    border: none;
+  }
+  article {
+    margin-bottom: 20px;
+  }
+  h2 {
+    text-align: left;
+    font-size: $large;
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+  h3 {
+    display: inline-block;
+  }
+  p, h3 {
+    font-weight: normal;
+    font-size: $medium;
+    margin: 0;
+  }
+  p.instructions {
+    text-align: center;
+    color: $lightGray;
+    margin: 20px;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .manage-account {
+    h2 {
+      font-size: $xxlarge;
+    }
+    h3, .instructions {
+      margin: 0 20px 5px;
+      font-size: $large;
+    }
+  }
+}

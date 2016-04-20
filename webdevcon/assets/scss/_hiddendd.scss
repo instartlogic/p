@@ -1,0 +1,32 @@
+@import "variables";
+
+.hidden_dd {
+		margin-top: 0;
+		transform: translatey(-1vh);
+		max-height: 80vh;
+		overflow: scroll;
+	dt {
+		margin-bottom: 0;
+		margin-top: 0.2rem;
+		width: 60%;
+		padding-left: 5px;
+		font-weight: bold;
+		display: block;
+		clear: both;
+		color: $background;
+		background-color: $ilblue;
+		font-size: 1.6rem;
+	}
+	dd {
+		position: absolute;
+		top: 101vh;
+		font-size: 1rem;
+	}
+	dt:hover + dd {
+    position: static;
+}
+}
+.halfwidth {
+dd {
+		width: 50%;
+}}

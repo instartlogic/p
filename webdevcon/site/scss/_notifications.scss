@@ -1,0 +1,67 @@
+@import "variables";
+
+.notify-container {
+    width: 100%;
+    position: absolute;
+    transform: scale(1, 0);
+    left: 0;
+    box-shadow:  0 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+    //max-height: 0;
+    transform-origin: top center;
+    p {
+      text-align: center;
+      margin: 10px;
+      font-size: 0.75rem;
+      line-height: 1.5;
+      &:before {
+        height: 1.5em; width: 2em;
+        margin: -5px 0;
+        background-size: contain;
+        content: '';
+      }
+    }
+  // but default only runs 0.25 thru the animation
+  &.warning, &.error, &.success {
+    animation: shownotification 10s 0.25 forwards;
+  }
+  // unlesss it autodismisses itself
+  &.autodismiss {
+    animation: shownotification 10s both;
+  }
+  &.warning {
+    background-color: $warning;
+    p:before {
+      background-image: url(../images/warning.svg);
+    }
+  }
+  &.error {
+    background-color: $error;
+    color: $white;
+    p:before {
+      background-image: url(../images/error.svg);
+    }
+  }
+  &.success {
+    background-color: $success;
+    color: white;
+    p:before {
+      background-image: url(../images/success.svg);
+    }
+  }
+  .close {
+    width: 30px;
+    line-height: 3;
+    float: right;
+  }
+}
+
+@keyframes shownotification {
+  0%, 100% {
+    transform: scale(1, 0);
+  }
+  10%, 90% {
+    transform: scale(1, 1);
+  }
+}
+

@@ -1,0 +1,51 @@
+@imports "variables";
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  margin: auto;
+  ul {
+    margin: 0 20px;
+    display: flex;
+  }
+  li {
+    display: inline-block;
+    flex: 0 0 164px;
+    transition: left 200ms;
+    position: relative;
+    left: 0;
+
+  }
+$count: 0;
+$itemwidth: 164px;
+@while $count < 20 {
+  .left#{$count} li {
+    left: $count * $itemwidth * -1
+  }
+  $count: $count + 1
+}
+
+  .backward, .forward {
+    background: none;
+    border: none;
+    color: $visaBlue;
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-style: none none solid solid;
+    transform: rotate(45deg);
+    &:hover {
+      color: $lightBlue;
+      cursor: pointer
+    }
+    &[disabled] {
+      color: $lightGray;
+      cursor: default;
+    }
+  }
+    .forward {
+      border-style: solid solid none none;
+    }
+}
+@import "carouselradios";

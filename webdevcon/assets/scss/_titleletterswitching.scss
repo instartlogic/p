@@ -1,0 +1,30 @@
+@import "variables";
+.switchletters {
+h1 {
+	display: flex; 
+	text-align: center;
+	color: $ilblue;
+	justify-content: center;
+	padding: 40px 0;
+	letter-spacing: 0.25px;
+	flex-flow: row wrap;
+}
+i {	position: absolute; 
+	color: rgba(0,0,0,0.01); 
+	text-shadow: none;
+}
+span {padding: 0 5px; white-space: nowrap;}
+h1 span { order: 0;}
+.a:after {content: 'y'}
+h1:hover .a:after {content: 'e' }
+h1:hover .a:before {content: 'made ' }
+h1:hover .c:before {content: 'with ' }
+h1:hover .c:after {content: ' Standards ' }
+h1:hover .a {order: 4}
+h1:hover .b {order: 1}
+.b:after {content: 'le'}
+h1:hover .b:before {content: '  ' }
+h1:hover .b:after {content: 'ility and ' }
+h1:hover .c {order: 6}
+h1:hover .d {order: 2}
+}

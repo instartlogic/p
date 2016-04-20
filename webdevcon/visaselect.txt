@@ -1,0 +1,77 @@
+<section id="footer-listbox" role="listbox" aria-label="Select your country" class="footer-languageSelector">
+  <section role="option" tabindex="-1" aria-selected="true" 
+    id="footerLanguageOption-0" data-value="AR" class="footer-languageSelector-item">
+    <label>Argentina</label>
+    <i class="footer-languageSelector-item-icon footer-img-AR"></i>
+  </section>
+  <section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-1" data-value="AU" class="footer-languageSelector-item">
+    <label>Australia</label>
+    <i class="footer-languageSelector-item-icon footer-img-AU"></i>
+  </section>
+  <section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-2" data-value="BR" class="footer-languageSelector-item">
+    <label>Brazil</label>
+    <i class="footer-languageSelector-item-icon footer-img-BR"></i>
+  </section>
+  <section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-3" data-value="CA" class="footer-languageSelector-item">
+    <label>Canada</label>
+    <i class="footer-languageSelector-item-icon footer-img-CA"></i>
+  </section>
+  <section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-4" data-value="CL" class="footer-languageSelector-item">
+    <label>Chile</label>
+    <i class="footer-languageSelector-item-icon footer-img-CL"></i>
+  </section>
+  <section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-5" data-value="CN" class="footer-languageSelector-item">
+    <label>China</label>
+    <i class="footer-languageSelector-item-icon footer-img-CN"></i>
+  </section>
+  <section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-6" data-value="CO" class="footer-languageSelector-item">
+    <label>Colombia</label>
+    <i class="footer-languageSelector-item-icon footer-img-CO"></i>
+  </section>
+  <section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-7" data-value="HK" class="footer-languageSelector-item">
+    <label>Hong Kong</label>
+    <i class="footer-languageSelector-item-icon footer-img-HK"></i>
+  </section>
+  <section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-8" data-value="MY" class="footer-languageSelector-item">
+    <label>Malaysia</label>
+    <i class="footer-languageSelector-item-icon footer-img-MY"></i>
+  </section>
+  <section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-9" data-value="MX" class="footer-languageSelector-item">
+    <label>Mexico</label>
+    <i class="footer-languageSelector-item-icon footer-img-MX"></i>
+  </section>
+  <section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-10" data-value="NZ" class="footer-languageSelector-item">
+    <label>New Zealand</label>
+    <i class="footer-languageSelector-item-icon footer-img-NZ"></i>
+  </section>
+  <section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-11" data-value="PE" class="footer-languageSelector-item">
+    <label>Peru</label>
+    <i class="footer-languageSelector-item-icon footer-img-PE"></i>
+  </section>
+  <section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-12" data-value="SG" class="footer-languageSelector-item">
+    <label>Singapore</label>
+    <i class="footer-languageSelector-item-icon footer-img-SG"></i>
+  </section>
+  <section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-13" data-value="ZA" class="footer-languageSelector-item">
+    <label>South Africa</label>
+    <i class="footer-languageSelector-item-icon footer-img-ZA"></i>
+  </section>
+  <section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-14" data-value="AE" class="footer-languageSelector-item">
+    <label>United Arab Emirates</label>
+    <i class="footer-languageSelector-item-icon footer-img-AE"></i>
+  </section>
+</section>

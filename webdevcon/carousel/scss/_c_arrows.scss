@@ -1,0 +1,23 @@
+/*/ ARROWS /*/
+.forward, 
+.backward {
+  content: '';
+  background: none;
+  border: none;
+  color: blue;
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-style: none none solid solid;
+  transform: rotate(45deg);
+  cursor: pointer; 
+}
+
+.forward:hover, 
+.backward:hover {
+  color: red;
+}
+
+.forward {
+  border-style: solid solid none none; 
+}

@@ -1,0 +1,43 @@
+@import "variables";
+
+fieldset {
+  border: none;
+  footer & {
+  border-bottom: 1px solid $label;
+  line-height: 24px;
+  overflow-x: auto;
+  overflow-y: auto;
+  position: absolute;
+  top: 24px;
+  }
+
+&::-webkit-scrollbar{
+  width:8px;
+  height:8px;
+}
+&::-webkit-scrollbar-button:end:increment,
+&::-webkit-scrollbar-button:start:decrement,
+&::-webkit-scrollbar-button:vertical:end:decrement,
+&::-webkit-scrollbar-button:vertical:start:increment{display:none}
+&::-webkit-scrollbar-track-piece:vertical{background-color:transparent}
+&::-webkit-scrollbar-track-piece:vertical:start{
+    border-radius:10px 10px 0 0;
+    background-color:transparent;
+  }
+&::-webkit-scrollbar-track-piece:vertical:end{
+    border-radius: 0 0 10px 10px;
+    background-color:transparent;
+  }
+&::-webkit-scrollbar-thumb:vertical{
+  height: 56px;
+  border-radius: 10px;
+  background-color: $gray;
+}
+
+input[type=radio], legend {
+  opacity: 0;
+  position: absolute;
+}
+}
+
+

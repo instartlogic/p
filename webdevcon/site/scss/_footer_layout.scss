@@ -1,0 +1,30 @@
+@import "variables";
+
+/* layout the footer here. 
+   The actual nav and language selector have their own modules
+   */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    width: 100vw;
+    line-height: 0.9;
+    background-color: rgba(0, 0, 0, .75);
+    z-index: 1000;
+    .lock {
+      width: 10px;
+      height: 13px;
+      margin: 0 5px 0 10px;
+    }
+    nav {
+      display: inline-block;
+    }
+    .languages {
+      float: right;
+      margin-right: 15px;
+    }
+    small {
+      display: none;
+    }
+}

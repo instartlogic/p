@@ -1,0 +1,31 @@
+@import "variables";
+.spinner {
+  position: relative;
+ input {
+  color: transparent;
+  }
+  &:after {
+  content: ''; 
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: 49%;
+  border: solid;
+  color: $spinner;
+  border-width: 0 0 3px 3px;
+  -webkit-animation: spin linear infinite 0.4s;
+  animation: spin linear infinite 0.4s;
+  transform: rotate(0deg);
+ }
+}
+.spinner.button-holder:after {
+  color: $buttonSpinner;
+  top: 30px;
+}
+@-webkit-keyframes spin {
+  100% {  transform: rotate(360deg);}
+}
+@keyframes spin {
+  100% {  transform: rotate(360deg);}
+}

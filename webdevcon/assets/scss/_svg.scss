@@ -1,0 +1,16 @@
+@import "variables";
+.svg {
+	
+	svg {width: 20vw; fill: $ilblue;}
+	ul {
+		display: flex;
+		justify-content: space-between;
+		list-style-type: none;
+		height: 50vh;
+		width: 90vw;
+		margin: 10vh auto;
+	}
+ 	.arrow {
+	clear: both;
+	}
+}

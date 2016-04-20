@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+<head>
+  <title>Create Account</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/consumerapp.css" rel="stylesheet">
+</head>
+
+<body class="consumer">
+    <!--<section class="viewPage chrome">
+    <div class="viewPage-relativeWrapper">-->
+
+      <header class="header destination-header blue">
+        <!--<div class="header-contentWrapper">-->
+          <!--<a href="#" title="Visa Checkout Logo link to VisaCheckout.com">
+          <u class="icons-sprite-text">Visa Checkout Logo</u></i>-->
+
+          <a href="#" class="header-logo icon"><span>Visa Checkout</span></a>
+
+          <nav>
+            <ul>
+              <li>
+                <span>New user?</span>
+                <!--remove <div class="viewButton viewButton--primaryCTA">-->
+                    <!-- replace <input type="submit" name="Create Account" class="viewButton-button" value="Create Account">-->
+                    <a class="btn cta">Create Account</a>
+               <!-- </div> -->
+              </li>
+            </ul>
+          </nav>
+        <!--</div>-->
+        <!--<div style="display:none;" class="header-throbber header-img-throbber">
+        </div>-->
+      </header>
+
+      <!--<span></span><!-- what is this span for? -->
+      <!-- remove <div class="viewPage-contents-wrapper">-->
+        <main><!-- instead of <div class="viewPage-contents">-->
+          <!--remove <div class="viewPage-contents-child">-->
+            <div class="notify-container">
+              <span class="notificationAid" tabindex="-1">
+              </span>
+            </div>
+            <!--<div id="lowerEnv" class="notify-container notify-container-hasNotification warning" style="display:block;">-->
+            <div id="lowerEnv" class="notify-container warning" style="display:block; oxpacity: 0;">
+            <!-- added opacity for dev. Don't put in code-->
+              <button class="close icon"><span>close</span></button>
+              <!--<p class="notify-warning notification" role="alert" aria-live="assertive" tabindex="-1">-->
+              <p role="alert" aria-live="assertive"> NOT FOR CONSUMER USE! - SANDBOX TEST ENVIRONMENT</p>
+            </div>
+            <div id="login" class="bundleSignin bundleSignin-content">
+
+              <h1 class="bundleSignin-heading">Welcome back.</h1>
+              <form class="bundleSignin-form flex flex-grow" role="form" novalidate="">
+                <!--<div class="flex-grow">-->
+                  <!--<div>-->
+                    <!--<div class="viewInputField">-->
+                    <div class="formControl">
+                      <!--<input type="email" autocomplete="off" class="viewInput viewInput--default" value="easfdase@fasdfasd.om" maxlength="256" id="userName" autocapitalize="none" aria-required="true">-->
+                      <input type="email" id="userName" required  aria-required="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" 
+                      onfocus="changeClassFocus(this.id)"
+                      onblur="changeClassBlur(this.id)">
+                      <!--<label class="viewInputField-label viewInputField-label--isFloating" for="userName">-->
+                      <label for="userName">
+                      Email or Mobile Number</label>
+                      <label class="viewInputField-error viewInputField-label viewInputField-label--isFloating">
+                      </label>
+                      <!--<div role="button" class="viewInputField-clearButton" tabindex="0"  aria-label="Clear Email or Mobile Number"></div>-->
+                      <button class="icon clear"><span>Clear Email or Mobile Number</span></button>
+                      <label class="viewInputField-helperText"></label>
+                      <!--<span></span>
+                      <div class="viewInputField-line"></div>
+                      <span></span>-->
+                    </div>
+                    <!--<div class="viewInputField">-->
+                    <div class="formControl">
+                      <input type="password" autocomplete="off" class="viewInput viewInput--default" maxlength="32" id="password" autocapitalize="none" aria-required="true"
+                      onfocus="changeClassFocus(this.id)"
+                      onblur="changeClassBlur(this.id)">
+
+                      <!--<label class="viewInputField-label viewInputField-label--isNotFloating" for="password">Password</label>-->
+                      <label for="password">Password</label>
+                      <label class="viewInputField-error viewInputField-label viewInputField-label--isFloating"></label>
+                      <a title="Forgot your password link" tabindex="0" href="forgot.html">
+                      Forgot?</a>
+                      <div role="button" class="viewInputField-clearButton" tabindex="0" style="visibility:hidden;opacity:0;"></div>
+                      <label class="viewInputField-helperText"></label>
+                      <!--<span></span>
+                      <div class="viewInputField-line"></div>
+                      <span></span>-->
+                    </div>
+                  <!--</div>-->
+                  <!--<div>--><!-- why is this div here? -->
+                    <div class="checkbox-wrapper">
+                      <input id="rememberMe" type="checkbox" checked="" aria-label="Remember me on this device" aria-required="false">
+                      <!--<span class="checkbox checked"></span>-->
+                      <label for="rememberMe" class=""><span>Remember me on this device</span></label>
+                    </div>
+                  <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="flex-fixed">-->
+                  <!--<div class="viewButton viewButton--primaryCTA viewButtonSigninIssuer viewButtonSignin">
+                    <input class="viewButton-button" type="submit" value="Sign In" name="Sign In">
+                  </div>-->
+                  <div class="button-holder">
+                    <input class="btn cta" type="submit" value="Sign In" name="Sign In">
+                  </div> 
+                <!--</div>-->
+              </form>
+            </div>
+          <!--</div>-->
+        </main><!--</div>-->
+        <!--<span></span><!-- what is this span for? -->
+      <!--</div>
+    </div>-->
+
+    <footer class="footer footer--isPageLevel footer--isLowered">
+      <!--<div class="footer-relativeWrapper">
+          <div class="footer-homeRow">-->
+          <!-- replace <i class="footer-lock footer-img-footerLockIcon"><u class="icons-sprite-text">Secure</u></i>-->
+          <i class="lock icon"><span class="visuallyhidden">Secure</span></i>
+
+          <!--<section class="footer-textSection">-->
+          <nav>
+              <!--<label class="footer-product footer-copy footer-copy--subtle">Visa Checkout:</label>-->
+              <h2>Visa Checkout:</h2>
+              <ul>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+              <!--<ul class="footer-links">
+                <li class="footer-link footer-copy">
+                  <a tabindex="0" href="#">Terms</a>
+                </li>
+                <li class="footer-link footer-copy">
+                  <a tabindex="0" href="#">Privacy</a>
+                </li>
+                <li class="footer-link footer-copy">
+                  <a tabindex="0" href="#">Support</a>
+                </li>
+                <li class="footer-link footer-copy">
+                  <a id="_bapw-link" class="footer-v-ad-optout" href="http://info.evidon.com/pub_info/1184?v=1" target="_blank" title="Adjust ad preferences">
+                    <img src="https://cdn.betrad.com/pub/icon1.png" id="_bapw-icon" style="display: none !important;" height="1" width="1">
+                  </a>
+                </li>
+              </ul>-->
+            </nav>
+          <!--</section>-->
+
+          <section id="languageIndicator" tabindex="0">
+            <span id="languageText"></span>
+            <span id="languageFlag" class="langUS"></span>
+            <span id="languageOpenClose"></span>
+          </section>
+         <!-- <div class="footer-countryLanguageSelector" role="listbox" aria-owns="footer-listbox" aria-label="Country Language Selector" aria-expanded="false" aria-activedescendent="footerLanguageOption-0">
+              <span class="footer-languageIndicator">
+                <span class="footer-languageIndicator-language" style="display:none;">
+                  <a class="footer-copy" tabindex="0" aria-label="Select your language" role="alert" href="#"></a>
+                  <span class="footer-copy footer-copy--subtle">|</span>
+                </span>
+                <a aria-controls="footer-listbox" tabindex="0" class="footer-languageIndicator-flag">
+                  <i class="footer-copy footer-flag footer-img-US"></i>
+                  <i class="footer-dropdownArrow footer-img-dropdownFooterArrowDefault"></i>
+                </a>
+              </span>-->
+
+              <!--<section id="footer-listbox" role="listbox" aria-label="Select your country" class="footer-languageSelector">
+                  <!-- <section role="option" tabindex="-1" aria-selected="true" id="footerLanguageOption-0" data-value="AR" class="footer-languageSelector-item">
+                    <label>Argentina</label>
+                    <i class="footer-languageSelector-item-icon footer-img-AR"></i>
+                  </section>
+                  <section role="option" tabindex="-1" aria-selected="false" id="footerLanguageOption-1" data-value="AU" class="footer-languageSelector-item">
+                    <label>Australia</label>
+                    <i class="footer-languageSelector-item-icon footer-img-AU"></i>
+                  </section>
+                  <section role="option" tabindex="-1" aria-selected="false" id="footerLanguageOption-2" data-value="BR" class="footer-languageSelector-item">
+                    <label>Brazil</label>
+                    <i class="footer-languageSelector-item-icon footer-img-BR"></i>
+                  </section>
+                  <section role="option" tabindex="-1" aria-selected="false" id="footerLanguageOption-3" data-value="CA" class="footer-languageSelector-item">
+                    <label>Canada</label>
+                    <i class="footer-languageSelector-item-icon footer-img-CA"></i>
+                  </section>
+                  <section role="option" tabindex="-1" aria-selected="false" id="footerLanguageOption-4" data-value="CL" class="footer-languageSelector-item">
+                    <label>Chile</label>
+                    <i class="footer-languageSelector-item-icon footer-img-CL"></i>
+                  </section>
+                  <section role="option" tabindex="-1" aria-selected="false" id="footerLanguageOption-5" data-value="CN" class="footer-languageSelector-item">
+                    <label>China</label>
+                    <i class="footer-languageSelector-item-icon footer-img-CN"></i>
+                  </section>
+                  <section role="option" tabindex="-1" aria-selected="false" id="footerLanguageOption-6" data-value="CO" class="footer-languageSelector-item">
+                    <label>Colombia</label>
+                    <i class="footer-languageSelector-item-icon footer-img-CO"></i>
+                  </section>
+                  <section role="option" tabindex="-1" aria-selected="false" id="footerLanguageOption-7" data-value="HK" class="footer-languageSelector-item">
+                    <label>Hong Kong</label>
+                    <i class="footer-languageSelector-item-icon footer-img-HK"></i>
+                  </section>
+                  <section role="option" tabindex="-1" aria-selected="false" id="footerLanguageOption-8" data-value="MY" class="footer-languageSelector-item">
+                    <label>Malaysia</label>
+                    <i class="footer-languageSelector-item-icon footer-img-MY"></i>
+                  </section>
+                  <section role="option" tabindex="-1" aria-selected="false" id="footerLanguageOption-9" data-value="MX" class="footer-languageSelector-item">
+                    <label>Mexico</label>
+                    <i class="footer-languageSelector-item-icon footer-img-MX"></i>
+                  </section>
+                  <section role="option" tabindex="-1" aria-selected="false" id="footerLanguageOption-10" data-value="NZ" class="footer-languageSelector-item">
+                    <label>New Zealand</label>
+                    <i class="footer-languageSelector-item-icon footer-img-NZ"></i>
+                  </section>
+                  <section role="option" tabindex="-1" aria-selected="false" id="footerLanguageOption-11" data-value="PE" class="footer-languageSelector-item">
+                    <label>Peru</label>
+                    <i class="footer-languageSelector-item-icon footer-img-PE"></i>
+                  </section>
+                  <section role="option" tabindex="-1" aria-selected="false" id="footerLanguageOption-12" data-value="SG" class="footer-languageSelector-item">
+                    <label>Singapore</label>
+                    <i class="footer-languageSelector-item-icon footer-img-SG"></i>
+                  </section>
+                  <section role="option" tabindex="-1" aria-selected="false" id="footerLanguageOption-13" data-value="ZA" class="footer-languageSelector-item">
+                    <label>South Africa</label>
+                    <i class="footer-languageSelector-item-icon footer-img-ZA"></i>
+                  </section>
+                  <section role="option" tabindex="-1" aria-selected="false" id="footerLanguageOption-14" data-value="AE" class="footer-languageSelector-item">
+                    <label>United Arab Emirates</label>
+                    <i class="footer-languageSelector-item-icon footer-img-AE"></i>
+                  </section> -->
+          <fieldset class="languageSelector">
+              <legend>Select your country:</legend>
+              <ul>
+                <li>
+                    <input type="radio" name="langSelect"  id="langAR" value="AR">
+                    <label for="langAR" class="langAR">Argentina</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langAU" value="AU">
+                    <label for="langAU" class="langAU">Australia</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langBR" value="BR">
+                    <label for="langBR" class="langBR">Brazil</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langCA" value="CA">
+                    <label for="langCA" class="langCA">Canada</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langCL" value="CL">
+                    <label for="langCL" class="langCL">Chile</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langCN" value="CN">
+                    <label for="langCN" class="langCN">China</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langCO" value="CO">
+                    <label for="langCO" class="langCO">Colombia</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langHK" value="HK">
+                    <label for="langHK" class="langHK">Hong Kong</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langMY" value="MY">
+                    <label for="langMY" class="langMY">Malaysia</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langMX" value="MX">
+                    <label for="langMX" class="langMX">Mexico</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langNZ" value="NZ">
+                    <label for="langNZ" class="langNZ">New Zealand</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langPE" value="PE">
+                    <label for="langPE" class="langPE">Peru</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langSG" value="SG">
+                    <label for="langSG" class="langSG">Singapore</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langZA" value="ZA">
+                    <label for="langZA" class="langZA">South Africa</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langAE" value="AE">
+                    <label for="langAE" class="langAE">United Arab Emirates</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langUS" value="US">
+                    <label for="langUS" class="langUS">United States</label>
+                </li>
+                </ul>
+              </fieldset>
+          <!--</div>-->
+          <!-- <span class="footer-disclaimerText"> -->
+          <small>
+          Visa Checkout may share information about how you use this card in Visa Checkout with the financial institution that issued the card for customer service, usage analysis, fraud prevention and marketing related to Visa Checkout.
+          </small>
+          <!-- </span> -->
+        <!-- </div> -->
+      <!--</div>-->
+    </footer>
+
+    <!--</section>-->
+  </div>
+
+  <div class="view-modal-portal">
+    <!--<div></div>-->
+  </div>
+
+<script src="js/site.js"></script>
+</body>
+
+</html>

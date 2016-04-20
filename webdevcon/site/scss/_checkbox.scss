@@ -1,0 +1,33 @@
+@import "variables";
+
+input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+  ~ label {
+    font-size: $mediumplus;
+    padding-left: 30px;
+    position: relative;
+    display: inline-block;
+  }
+  ~ label:before {
+    content: '';
+    height: $xlarge;
+    width: $xlarge;
+    border: $inputLink 2px solid;
+    margin-right: 10px;
+    margin-bottom: -3px;
+    position: absolute;
+    left: 0;
+  }
+  ~ label:hover:before,
+  &:focus  ~ label:before,
+  &:active ~ label:before {
+    border-color: $lineFocus;
+  }
+  &:checked ~ label:before {
+    content: "✓";
+    text-align: center;
+    line-height: 1;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,22 @@
+@import "variables";
+
+.editinfo {
+  form {
+    padding: 0 40px;
+  }
+  .button-holder {
+    display: flex;
+    margin: 5px -5px;
+    flex-wrap: wrap;
+    a, input.cta {
+      width: 49%;
+      min-width: auto;
+      flex: 1 0 47%;
+      margin: 5px;
+      text-align: center;
+    }
+    .cta {
+      float: right;
+    }
+  }
+}

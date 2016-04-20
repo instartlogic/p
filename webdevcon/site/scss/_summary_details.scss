@@ -1,0 +1,16 @@
+::-webkit-details-marker {
+  display: none;
+}
+summary {
+  font-size: $medium;
+  display: block;
+}
+details {
+  display: block;
+  margin-bottom: 1em;
+}
+details:not(.open) {
+  p {
+    display: none;
+  }
+}
