@@ -353,7 +353,7 @@ Based on: http://estelle.github.com/slides
 </div>
 
 
-
+<!--
 <div class="slide"> 
 <header><h1>Speed Rules</h1></header> 
 <section class="content"> 
@@ -397,14 +397,14 @@ Remove render-blocking JavaScript</dt>
 
  <a class="pagelink" href="https://developers.google.com/speed/docs/insights/rules">Page Speed Insights</a>
  </section>
-</div>
+</div>-->
 
 <div class="slide"> 
 <header><h1>Usability Rules</h1></header> 
 <section class="content"> 
 <dl class="hidden_dd">
 <dt>Avoid plugins</dt>
- <dd></dd>
+ 
 <dt>Configure the viewport</dt>
  <dd>Optimize pages to display well on mobile devices by including a meta viewport in the head of the document specifying <code>width=device-width, initial-scale=1</code>.
 
@@ -416,7 +416,7 @@ Remove render-blocking JavaScript</dt>
 <dt>Size tap targets appropriately</dt>
  <dd>Set a minimum tap target size of  of 48 CSS pixels on a site with a properly-set mobile viewport. Make important tap targets large enough to be easy to press, ensuring there is extra spacing between smaller tap targets.</dd>
 <dt>Use legible font sizes</dt>
- <dd></dd>
+
  </dl>
  <a class="pagelink" href="https://developers.google.com/speed/docs/insights/rules">Page Speed Insights</a>
  </section>
@@ -467,7 +467,14 @@ Remove render-blocking JavaScript</dt>
 <li>Do not design content in a way that is known to cause seizures.
 </li>
 <li>Provide ways to help users navigate, find content, and determine where they are.</li>
-</ol>
+</ol></section>
+</div>
+
+
+
+<div class="slide wcag2">
+<header><h1>WCAG 2.0 (2008)</h1></header>
+<section>
 <p>
 <strong>Understandable:</strong>
 Information and operation of UI</p>
@@ -478,7 +485,7 @@ Information and operation of UI</p>
 </li>
 <li>Help users avoid and correct mistakes.</li>
 </ol>
-<p><strong>Robust: </strong>
+<p><strong>Robust:</strong>
 Content interprable by UAs, including AT.</p>
 <ol>
 <li>Maximize compatibility with current and future user agents, including assistive technologies.
@@ -490,7 +497,7 @@ Content interprable by UAs, including AT.</p>
 <header><h1>Accessible Design Rules</h1></header>
 
 <section>
-<dl class="hidden_dd halfwidth"><dt>Plan Heading Structure Early</dt>
+<dl class="hidden_dd" style="margin-right: 38vw;"><dt>Plan Heading Structure Early</dt>
 <dd>Ensure all content and design fits into a <a href="/techniques/semanticstructure/">logical heading structure</a>.</dd>
 
 <dt>Consider Reading Order</dt>
@@ -531,7 +538,7 @@ Content interprable by UAs, including AT.</p>
 
 <dt>Design Accessible Form Controls</dt>
 <dd>Ensure <a href="/techniques/forms/">form controls</a> have descriptive labels and instructions. Pay close attention to form validation errors and recovery mechanisms.</dd></dl>
-<a href="http://webaim.org/resources/designers/"><img src="http://webaim.org/resources/designers/media/designers.png" alt="Web Accessibility for Designers infographic with link to text version at WebAIM.org" style="width: 45%; position: absolute; top: 0; right: 0;"></a>
+<a href="http://webaim.org/resources/designers/"><img src="http://webaim.org/resources/designers/media/designers.png" alt="Web Accessibility for Designers infographic with link to text version at WebAIM.org" style="width: 40%; position: absolute; top: 0; right: 0;"></a>
 </section>
 </div>
 
@@ -542,9 +549,23 @@ Content interprable by UAs, including AT.</p>
 <header><h1>Issues</h1></header>
 </div>
 
+
+
+<div class="slide object" style="background: url(assets/images/visalogin.png) no-repeat center 0;">
+<object data="https://secure.checkout.visa.com"></object>
+<a href="https://secure.checkout.visa.com" class="pagelink">Original Site</a>
+</div>
+
 <div class="slide object">
 <object data="http://www.webpagetest.org/result/160406_HP_14ZZ/1/details/"></object>
 </div>
+
+
+<div class="slide object" style="background: url(assets/images/visalogin2.png) no-repeat center 0;">
+<object data="site/"></object>
+<a href="site/" class="pagelink">My Version</a>
+</div>
+
 
 <div class="slide object">
 <object data="http://www.webpagetest.org/result/160418_TW_NN/5/details/"></object>
@@ -634,6 +655,17 @@ Content interprable by UAs, including AT.</p>
 
 
 <div class="slide object">
+<object data="mask.txt" class="enlarge"></object>
+
+</div>
+<div class="slide object">
+<object data="maskshell.txt" class="enlarge"></object>
+
+</div>
+
+
+
+<div class="slide object">
 <object data="http://estelle.github.io/carousel-carousel/"></object>
 <a href="http://estelle.github.io/carousel-carousel/" class="pagelink">Github Repo</a>
 
@@ -649,7 +681,10 @@ Content interprable by UAs, including AT.</p>
 <img src="assets/images/carousel-carousel.png"  class="bytes" alt="Carousel script is 1.1kb">
 </div>
 
+<div class="slide object">
+<object data="assets/carouselcss.txt" class="enlarge"></object>
 
+</div>
 
 <div class="slide object">
 <object data="https://www.w3.org/WAI/tutorials/carousels/"></object>
@@ -680,6 +715,29 @@ Content interprable by UAs, including AT.</p>
 <img src="assets/images/language_selector_time.png"  class="bytes" alt="Selector script is 917 bytes">
 </div>
 
+<div class="slide object">
+<object data="_languageselector.txt" class="enlarge"></object>
+</div>
+
+
+
+<div class="slide thinkoutsidebox intro">
+  <div class="box">
+    <p aria-label="think outside the box">think</p>
+  </div>  
+</div>
+
+<div class="slide" style="background-image: url(assets/images/scaffolding.jpg); background-size: cover;" aria-label="Image of bay bridge's scaffolding">
+<span class="photocredit">Photo: <a href="https://www.flickr.com/photos/toasty/">Kenneth Lu</a></span>
+</div>
+
+<div class="slide object">
+<object data="http://w3c.github.io/aria-in-html/#rule1"></object>
+<a href="http://w3c.github.io/aria-in-html/#rule1" class="pagelink">WAI-ARIA</a>
+</div>
+
+
+
   <div class="slide intro">
     <section class="content">
     <h1 style="font-size: 3rem; margin-top: 10%;">Thank You</h1>
@@ -689,10 +747,10 @@ Content interprable by UAs, including AT.</p>
     </section>
 </div>
 
-<div class="slide">
+<div class="slide resources">
   <header><h1>Resources</h1></header>
   <section class="content">
-  <p>Accessibility</p>
+  <p style="margin-bottom:0;">Accessibility</p>
     <ul>
     <li><a href="http://webaim.org/resources/">Web AIM Resource List</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">MDN List of ARIA Resources</a></li>

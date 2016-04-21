@@ -476,24 +476,30 @@ a.pagelink {
   margin-top: 0;
   transform: translatey(-1vh);
   max-height: 80vh;
-  overflow: scroll; }
+  overflow: scroll;
+  margin-bottom: 3vh; }
   .hidden_dd dt {
     margin-bottom: 0;
     margin-top: 0.2rem;
-    width: 60%;
     padding-left: 5px;
     font-weight: bold;
     display: block;
     clear: both;
-    color: #ffffff;
-    background-color: #226DAA;
+    border-bottom: 1px solid #dedede;
     font-size: 1.6rem; }
+    .hidden_dd dt:hover {
+      color: #ffffff;
+      background-color: #226DAA;
+      border-bottom: 1px solid #226DAA; }
   .hidden_dd dd {
     position: absolute;
-    top: 101vh;
-    font-size: 1rem; }
+    top: -101vh;
+    font-size: 1rem;
+    margin-left: 0;
+    padding: 5px 5px 10px 10px; }
   .hidden_dd dt:hover + dd {
-    position: static; }
+    position: static;
+    background-color: #dedede; }
 
 .halfwidth dd {
   width: 50%; }
@@ -538,6 +544,13 @@ li {
   margin: 10vh auto; }
 .svg .arrow {
   clear: both; }
+
+.resources p {
+  margin: 0; }
+.resources ul {
+  margin: 0 0 1rem 0; }
+.resources p, .resources ul {
+  font-size: 1.3rem; }
 
 .thinkoutsidebox .box {
   width: 25vw;
