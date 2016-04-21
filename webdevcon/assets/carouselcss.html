@@ -1,0 +1,38 @@
+<style>
+b {color:  #226DAA;}
+pre {float: left;}
+body {display: flex;}
+</style>
+<body>
+<pre>.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  margin: auto;
+  ul {
+    margin: 0 20px;
+    display: flex;
+  }
+  li {
+    display: inline-block;
+    flex: 0 0 164px;
+    <b>transition: left 200ms;</b>
+    position: relative;
+    left: 0;
+  }
+<b>$count: 0;
+$itemwidth: 164px;
+@while $count < 20 {
+  .left#{$count} li {
+    left: $count * $itemwidth * -1
+  }
+  $count: $count + 1
+}</b>
+</pre>
+<pre>
+function carouselChange (name, value) {
+  var ul = document.querySelector('.' + name);
+  <b>ul.setAttribute('class', 
+                      name + ' left' + value);</b>
+}</pre></body>

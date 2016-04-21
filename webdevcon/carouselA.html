@@ -1,0 +1,44 @@
+<style>
+b {color:  #226DAA;}
+pre {
+  font-size: 1.25rem;
+}
+</style>
+<pre>&lt;form action="carousel.html">
+  <b>&lt;fieldset>
+    &lt;legend></b>Select an address to edit:&lt;/legend>
+    &lt;div class="carousel">
+        &lt;span class="backward" data-move="backward" data-carousel="shipping-addresses" 
+                 hidden <b>aria-hidden="true"</b>>&lt;/span>
+        &lt;ul class="shipping-addresses left0">
+          &lt;li>
+            <b>&lt;label for="address1"></b>
+            &lt;p>Estelle Weyl&lt;/p>
+            &lt;p>Alley Not A Street&lt;/p>
+            &lt;p>Valley City, ND 58072&lt;/p>
+            &lt;/label>
+          &lt;/li>
+          &lt;li>
+            <b>&lt;label for="address2"></b>
+            &lt;p>Estelle Weyl&lt;/p>
+            &lt;p>194 Castro Street&lt;/p>
+            &lt;p>Mountain View, CA  94041&lt;/p>
+            &lt;/label>
+          &lt;/li>
+        &lt;/ul>
+        &lt;span class="forward" data-move="forward" data-carousel="shipping-addresses" 
+                 hidden <b>aria-hidden="true"</b>>&lt;/span>
+      &lt;/div>
+      &lt;ul id="addressradios" class="carousel-radios">
+        &lt;li>
+          &lt;input type="radio" name="shipping-addresses" value="0" <b>id="address1"</b> checked>&lt;span>&lt;/span>
+        &lt;/li>
+        &lt;li>
+          &lt;input type="radio" name="shipping-addresses" value="1" <b>id="address2"></b>&lt;span>&lt;/span>
+        &lt;/li>
+      &lt;/ul>
+    &lt;/fieldset>
+  &lt;input type="submit" value="Edit">
+&lt;/form>
+</pre>
+

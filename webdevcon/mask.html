@@ -1,0 +1,31 @@
+  <style>
+b {color:  #226DAA;}
+</style>
+<pre>// replaces each masked input with a shall containing the input and it's mask.
+  <b>createShell</b> : function (input) {
+    var <b>wrap = document.createElement('span'),
+        mask = document.createElement('span'),
+        emphasis = document.createElement('i'),</b>
+        inputClass = input.getAttribute('class'),
+        placeholderText = input.getAttribute('placeholder'),
+        placeholder = document.createTextNode(placeholderText);
+
+    input.setAttribute('maxlength', placeholder.length);
+    input.setAttribute('data-placeholder', placeholderText);
+    input.removeAttribute('placeholder');
+
+
+    if ( !inputClass || ( inputClass && inputClass.indexOf('masked') === -1 ) ) {
+      input.setAttribute( 'class', inputClass + ' masked');
+    }
+
+    <b>mask.setAttribute('aria-hidden', 'true');</b>
+    mask.setAttribute('id', input.getAttribute('id') + 'Mask');
+    mask.appendChild(emphasis);
+    mask.appendChild(placeholder);
+
+    wrap.setAttribute('class', 'shell');
+    wrap.appendChild(mask);
+    input.parentNode.insertBefore( wrap, input );
+    wrap.appendChild(input);
+  },</pre>

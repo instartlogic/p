@@ -1,0 +1,38 @@
+<style>
+b {color:  #226DAA;}
+</style>
+<pre>footer {
+  &.open {
+        height: 168px; }
+  &.closed fieldset {
+      <b>transform: scale(1,0); </b>}
+  fieldset {
+      width: 215px;
+      height: 160px;
+      padding-right: 7px;
+    input[type=radio], legend {
+      opacity: 0.01;
+      position: absolute; right: 0px;
+    }
+    li {
+      font-size: $small;
+      width: 100%;
+      padding-left: 5px;
+      border-top: 1px solid $label;
+      line-height: 34px;
+    }
+    label {
+      color: $white;
+      background-position: 95% 50%;
+      display: block;
+      padding-left: 3px;
+    }
+    <b>label:active,
+    label:focus,
+    label:hover,
+    :checked + label {
+      outline: 1px dotted $white;
+      background-color: $mediumLightGray;
+    }</b>
+  }
+}
