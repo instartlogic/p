@@ -1,0 +1,31 @@
+@import "variables";
+/* checkbox is  part of label under '_checkbox.scss' 
+
+$label: $mediumGray;
+$labelFocus: $darkBlue;
+$labelError: $error;
+
+*/
+
+.formControl {
+  label {
+    position: absolute;
+    top: 0%; left: 0;
+    transition: .2s;
+    color: $label;
+    font-size: $xsmall;
+    &.empty {
+      top: 35%;
+      font-size: $large;
+    }
+    &.focus {
+      color: $labelFocus;
+    }
+    &.error {
+      color: $labelError;
+    }
+    &.readonly {
+      color: $readonly;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@imports "variables";
+// shipping addresses for the carousel on the account page
+.shipping-addresses {  
+    width: 164px;
+    height: 105px;
+    overflow: hidden;
+  li {
+    width: 164px;
+    height: 105px;
+    display: table-cell;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid $lightGray;
+    border-radius: 5px;
+    background: $white;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    p {
+      font-size: $mediumsmall;
+      margin: 0;
+    }
+  }  
+}

@@ -1,0 +1,47 @@
+@import "variables";
+
+body {
+    min-height: 100vh;
+    background-color: $bodyBackground2;
+    background-repeat: repeat, no-repeat;
+    background-image: url(../images/background.svg),
+          linear-gradient(45deg, $bodyBackground 0, $bodyBackground2 45%);
+}
+
+main {
+    position: relative;
+    background-color: $white;
+    background-color: rgba(255, 255, 255, 0.95);
+    opacity: 0.95;
+    padding: 40px 20px 70px;
+    min-width: 320px;
+}
+
+form {
+  margin: 0 6%;
+}
+
+.content {
+  padding-top: 20px;
+}
+
+@media screen and (min-width: $tablet) {
+ main { 
+    width: 720px;
+    border-radius: 0 0 7px 7px;
+    min-height: 420px;
+    margin: 0 auto 44px;
+    padding: 100px 0 75px;
+  }
+ .content {
+    width: 500px;
+    margin: auto;
+  }
+  form {
+    margin: 0;
+  }
+  #forgot,
+  #login {
+    width: 400px;
+  }
+}

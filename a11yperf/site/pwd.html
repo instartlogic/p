@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+  <title>Edit Account Information</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/consumerapp.css" rel="stylesheet">
+
+</head>
+
+<body class="consumer">
+      <header>
+        <div class="headercontents">
+          <a href="#" class="header-logo icon"><span>Visa Checkout</span></a>
+          <nav>
+            <ul>
+              <li>
+                <a class="btn secondary-cta" href=
+                "https://usa.visa.com/pay-with-visa/visa-checkout/featured.html">See All Stores</a>
+              
+                <a class="btn cta" href="logout.html">Log Out</a>
+              </li>
+            </ul>
+          </nav>
+          </div>
+          <div class="throbber"></div>
+      </header>
+
+      <main>
+          
+          <div id="edit" class="content subaccount editinfo">
+
+            <h1>Edit Account Information</h1>
+            <form novalidate="" action="account.html">
+            <h1>Sign-In Information</h1>
+<div class="formControl">
+  <input type="email" autocomplete="both" value="estelle@wey.org" readonly="true" id="email" name="email">
+    <label  for="email">Email Address</label>
+</div>
+
+<div class="formControl">
+    <input type="password" autocomplete="off" id="currentPassword" autocapitalize="none" aria-required="true">
+    <label  for="currentPassword">Current Password</label>
+</div>
+
+
+<div class="formControl">
+    <input type="password" autocomplete="off" id="newPassword" autocapitalize="none" aria-required="true">
+    <label  for="newPassword">New Password</label>
+</div>
+
+                <div class="button-holder">
+                  <a href="account.html" class="btn secondary-cta">Cancel</a>
+                  <input class="btn cta" type="submit" value="Update" name="Update">
+                </div> 
+
+            </form>
+          </div>
+      </main>
+
+    <footer class="closed">
+          <i class="lock icon"><span class="visuallyhidden">Secure</span></i>
+
+          <nav>
+            <h2>Visa Checkout:</h2>
+            <ul>
+              <li><a href="tos.html">Terms</a></li>
+              <li><a href="privacy.html">Privacy</a></li>
+              <li><a href="support.html">Support</a></li>
+            </ul>
+          </nav>
+
+          <section id="languageIndicator">
+            <a href="#">
+              <span id="languageText"></span>
+              <span id="languageFlag" class="langUS icon"></span>
+              <span id="languageOpenClose" class="up icon"></span>
+            </a>
+
+            <fieldset id="languageSelector">
+              <legend>Select your country:</legend>
+              <ul>
+                <li>
+                    <input type="radio" name="langSelect" checked aria-selected="true" id="langAR" value="AR">
+                    <label for="langAR" class="langAR">Argentina</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langAU" value="AU">
+                    <label for="langAU" class="langAU">Australia</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langBR" value="BR">
+                    <label for="langBR" class="langBR">Brazil</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langCA" value="CA">
+                    <label for="langCA" class="langCA">Canada</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langCL" value="CL">
+                    <label for="langCL" class="langCL">Chile</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langCN" value="CN">
+                    <label for="langCN" class="langCN">China</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langCO" value="CO">
+                    <label for="langCO" class="langCO">Colombia</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langHK" value="HK">
+                    <label for="langHK" class="langHK">Hong Kong</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langMY" value="MY">
+                    <label for="langMY" class="langMY">Malaysia</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langMX" value="MX">
+                    <label for="langMX" class="langMX">Mexico</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langNZ" value="NZ">
+                    <label for="langNZ" class="langNZ">New Zealand</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langPE" value="PE">
+                    <label for="langPE" class="langPE">Peru</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langSG" value="SG">
+                    <label for="langSG" class="langSG">Singapore</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langZA" value="ZA">
+                    <label for="langZA" class="langZA">South Africa</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langAE" value="AE">
+                    <label for="langAE" class="langAE">United Arab Emirates</label>
+                </li>
+                </ul>
+              </fieldset>
+            </section>
+          <small>
+          Visa Checkout may share information about how you use this card in Visa Checkout with the financial institution that issued the card for customer service, usage analysis, fraud prevention and marketing related to Visa Checkout.
+          </small>
+    </footer>
+
+
+  <div class="view-modal-portal"></div>
+
+<script src="js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+@import "variables";
+
+.tos.content {
+  * { text-align: left; }
+  p, ol, li {
+    font-size: $medium;
+  }
+  ol {
+    list-style-type: decimal;
+    padding-left: 1em;
+  }
+  ol ul,
+  ol ol {
+    list-style-type: lower-alpha;
+  }
+  ol ol ul,
+  ol ol ol {
+    list-style-type: none;
+    li {margin-top: 1em;}
+  }
+  ol ol ol {
+    counter-reset: parenthesis;
+    li {
+      counter-increment: parenthesis;
+      margin-left: 25px;
+      position: relative;
+      &:before {
+        content: "(" counter(parenthesis) ")";
+        position: absolute;
+        left: -25px;
+      }
+    }
+  }
+  li,
+  ol + p  {
+    margin-top: 3em;
+  }
+}
+.privacy.tos {
+  h3 {
+    font-size: $mediumplus;
+    margin-top: 2em;
+    font-weight: normal;
+  }
+  h3.appendix,
+  h3:last-of-type {
+    text-align: center;
+    text-decoration: underline;
+  }
+  li {
+    margin: 1.5em 0 1.5em 1.5em;
+  }
+}

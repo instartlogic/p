@@ -1,0 +1,37 @@
+
+
+<form action="carousel.html">
+  <fieldset>
+    <legend>Select an address to edit:</legend>
+    <div class="carousel">
+        <span class="backward" data-move="backward" data-carousel="shipping-addresses" hidden aria-hidden="true"></span>
+        <ul class="shipping-addresses left0">
+          <li>
+            <label for="address1">
+            <p>Estelle Weyl</p>
+            <p>Alley Not A Street</p>
+            <p>Valley City, ND 58072</p>
+            </label>
+          </li>
+          <li>
+            <label for="address2">
+            <p>Estelle Weyl</p>
+            <p>194 Castro Street</p>
+            <p>Mountain View, CA  94041</p>
+            </label>
+          </li>
+        </ul>
+        <span class="forward" data-move="forward" data-carousel="shipping-addresses" hidden aria-hidden="true"></span>
+      </div>
+      <ul id="addressradios" class="carousel-radios">
+        <li>
+          <input type="radio" name="shipping-addresses" value="0" id="address1" checked><span></span>
+        </li>
+        <li>
+          <input type="radio" name="shipping-addresses" value="1" id="address2"><span></span>
+        </li>
+      </ul>
+    </fieldset>
+  <input type="submit">
+</form>
+

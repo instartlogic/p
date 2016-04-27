@@ -1,0 +1,22 @@
+@import "variables";
+.deaf {
+	section {
+		width: 100vw;
+		text-align: center;
+	}
+	iframe {margin: auto;}
+}
+
+
+.deaf, .blind { 
+	h1 {
+		color: rgba(0,0,0,0.01);
+		text-shadow: none;
+	}
+}
+
+.colorblind {
+	background: url(../images/colorblindness.png);
+	background-position: center;
+	background-size: cover;
+}

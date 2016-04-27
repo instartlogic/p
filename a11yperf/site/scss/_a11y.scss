@@ -1,0 +1,23 @@
+@imports "variables";
+
+.icon *, 
+.visuallyhidden.visuallyhidden.visuallyhidden, 
+.a11y.a11y.a11y {
+    color: transparent;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: 1px;
+    margin: -1px;
+  }
+ @media screen and (max-width: $tablet - 1) {
+  .mobilehide {
+    color: transparent;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: 1px;
+  }
+ }

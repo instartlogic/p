@@ -1,0 +1,55 @@
+@import "variables";
+.formControl {
+  z-index: 0;
+  fieldset {
+    display: none;
+    width: 100%;
+    height: 160px;
+    top: 40px;
+    border: 1px solid $lightGray;
+    background-color: $white;
+    z-index: 100;
+    padding: 0;
+  input[type=radio], legend {
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    background-color: $white;
+    line-height: 1.667;
+    padding: 0 22px;
+    border-bottom: 1px solid $dustGray;
+  }
+  label {
+    transition: none;
+    position: static;
+    font-size: $medium;
+    position: relative;
+  }
+
+  li:active,
+  li:focus,
+  li:hover {
+    outline: $black dotted 1px;
+    background-color: rgb(238, 238, 238);
+
+  }
+  :checked + label:before {
+    content: url(../images/checkmark.svg);
+    position: absolute;
+    left: -15px;
+    top: 0;
+  }
+  }
+// hides the next formcontrols from peeking thru the country selector
+  &.hasFieldset ~ .formControl {
+    z-index: -1;
+  }
+// opens fieldset when input has focus
+  &.hasFieldset input:focus ~ fieldset {
+    display: block;
+  }
+}
+
+

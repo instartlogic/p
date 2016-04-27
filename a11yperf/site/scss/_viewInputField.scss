@@ -1,0 +1,46 @@
+@import "variables";
+
+.formControl{
+  clear: both;
+  padding: 11px 0 7px 0;
+  position: relative;
+}
+
+// when it really narrows on mobile, the inputs should be full width
+@media screen and (min-width: $narrow) {
+.formControl-half {
+  width: 50%;
+  float: left;
+  display: inline-block;
+  &:nth-of-type(odd) button {
+    margin-right: 5px;
+  }
+}
+.formControl-half + .formControl-half {
+  clear: none;
+  float: right;
+  label {
+    margin-left: 10px;
+  }
+  input {
+    border-left: 1px solid;
+    padding-left: 10px;
+  }
+}
+}
+
+.formControl .clear,
+.formControl a {
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+.formControl a {
+    font-size: $mediumplus;
+    color: $visaBlue;
+    line-height: 1;
+}
+.formControl .clear {
+    width: 15px;
+    height: 15px;
+}

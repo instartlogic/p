@@ -1,0 +1,15 @@
+@import "variables";
+.content {
+h1, h2 {
+    font-size: 1.375rem;
+    font-weight: normal;
+    margin: 0 0 16px;
+    text-align: center;
+ } 
+h2 {
+  font-size: $mediumplus;
+ }
+p.notice {
+  color: $mediumLightGray;
+ }
+}

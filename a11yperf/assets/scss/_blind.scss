@@ -1,0 +1,19 @@
+@import "variables";
+.blind {
+	background-color: black;
+	a {
+		color: $ilblue;
+		background-color: white;
+	 	text-decoration: underline;
+	 	font-size: 0.875rem; padding: 4px;
+	 }
+
+	 p {
+	 	animation: moveclick steps(4, start) 10s infinite;
+	 }
+}
+@keyframes moveclick {
+	0% { transform: translate(65vw, 0);}
+	50% { transform: translate(55vw, 45vh);}
+	100% { transform: translate(75vw, 90vh);}
+}

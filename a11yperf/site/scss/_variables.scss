@@ -1,0 +1,103 @@
+// ---------------------------
+// font-stack
+// ---------------------------
+$font-family: Open Sans, Arial, Helvetica, sans-serif;
+
+// ---------------------------
+// font-sizes
+// ---------------------------
+$root-size: 100%;
+$xxlarge: 1.375rem;          
+$xlarge: 1.125rem;   
+$large: 1rem;           
+$mediumplus: 0.875rem;
+$mediumrem: 0.8rem;      
+$medium: 0.75rem;          
+$mediumsmall: 0.6875rem;     
+$small: 0.625rem;           
+$xsmall: 0.5625rem; 
+
+// ---------------------------
+// screen sizes
+// ---------------------------
+
+$tablet: 768px;
+$narrow: 450px;
+
+// -------------------
+// Simple Color Names
+// 
+// "PRIVATE" named colors
+//
+// use "color by function" names below instead of these names whenever possible
+// -------------------
+$darkGray:    #333333;
+$mediumGray:  #4b4b4b;
+$mediumLightGray: #75787b;
+$lightGray:   #bbbbbb;
+$gray:        #494949;
+$dustGray:    #efefef;
+// blue tones
+$midniteBlue: #1a1f71;
+$darkBlue:    #0c4da9;
+$lightBlue:   #0097e1;
+$paleBlue:    #257fc2;
+$dustBlue:    #edf8fd;
+$gradEndBlue: #2894d2;
+// -------------------
+// Colors by function 
+// Note: cta = call to action
+// 
+// "PUBLIC" named colors
+//
+// -------------------
+
+$white:       #ffffff;
+$black:       #000000;
+$transparent: transparent;
+$visaBlue:    #003ea9;
+$visaGold:    #ffdc00;
+$cta:         #ffd700;
+$ctaActive:   #f7b600;
+$error:       #db553c;
+$success:     #15a35d;
+$warning: $cta;
+
+// -------------------
+// Colors by use
+// -------------------
+
+$label: $mediumGray;
+$labelFocus: $darkBlue;
+$labelError: $error;
+$readonly: $gray;
+
+$helper: $lightGray;
+$helperHidden: rgba($lightGray, 0);
+$inputText: $darkGray;
+
+$line: $gray;
+$lineFocus: $lightBlue;
+$lineError: $error;
+
+$charCountPositive: $success;
+$charCountNegative: $error;
+
+$inputLink: $darkBlue;
+
+$buttonText: $black;
+
+$ctaBackground: $cta;
+$ctaHover: lighten($cta, 10%);
+$ctaText: $darkBlue;
+$secondary: $transparent;
+$secondaryBorder: $darkBlue;
+
+$spinner: $lightBlue;
+$buttonSpinner: $darkBlue;
+
+$bodyBackground: $darkBlue;
+$bodyBackground2: $gradEndBlue;
+
+$LIactive: $dustBlue;
+

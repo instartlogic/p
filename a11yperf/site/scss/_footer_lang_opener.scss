@@ -1,0 +1,20 @@
+@import "variables";
+
+#languageIndicator {
+  float: right;
+  > a {
+    display: block;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 2px;
+  }
+}
+#languageFlag {
+    width: 55px;
+    height: 20px;
+}
+#languageOpenClose {
+  height: 20px;
+  width: 20px;
+}
+

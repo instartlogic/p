@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+<head>
+  <title>Add Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/consumerapp.css" rel="stylesheet">
+</head>
+
+<body class="consumer">
+      <header>
+        <div class="headercontents">
+          <a href="#" class="header-logo icon"><span>Visa Checkout</span></a>
+          <nav>
+            <ul>
+              <li>
+                <a class="btn secondary-cta" href=
+                "https://usa.visa.com/pay-with-visa/visa-checkout/featured.html">See All Stores</a>
+              
+                <a class="btn cta" href="logout.html">Log Out</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+          
+          <div id="addcard" class="content subaccount addcard">
+
+<h1>Add Card</h1>
+<div class="cardflip" id="cardflip">
+  <div class="front">Front of card</div>
+  <div class="back">CVV</div>
+</div>
+
+<form novalidate="" action="account.html">
+<div class="formControl">
+    <input type="tel" autocomplete="off" id="ccnumber" required aria-required="true" pxlaceholder="15 to 16 digits" class="masked">
+    <label for="ccnumber"  class="empty">Credit Card Number</label>
+</div>
+
+<div class="formControl formControl-half">
+    <input type="tel" autocomplete="off" id="expiry" required aria-required="true" pxlaceholder="mm/yy" class="masked"  class="masked">
+    <label for="expiry"  class="empty">Expires</label>
+</div>
+<div class="formControl formControl-half">
+    <input type="tel" autocomplete="off" id="cvv" autocapitalize="none" aria-required="true" required  class="masked">
+    <label  for="cvv"  class="empty">Security Code</label>
+</div>
+
+<div class="formControl">
+    <input type="text" autocomplete="off" id="nickname" required aria-required="true">
+    <label for="ccnumber"  class="empty">Card Nickname (Optional)</label>
+</div>
+<div class="checkbox-wrapper">
+    <input id="preferred" type="checkbox" aria-required="false">
+    <label for="preferred" class="empty"><span>Preferred Card</span></label>
+</div>
+
+
+            <h1>Billing Address</h1>
+<div class="formControl formControl-half">
+    <input type="text" autocomplete="off" maxlength="24" id="firstName" required aria-required="true">
+    <label for="firstName" class="empty">First Name</label>
+    <!--<button class="icon clear"><span>Clear First Name</span></button>-->
+</div>
+
+<div class="formControl formControl-half">
+    <input type="text" autocomplete="off" maxlength="24" id="lastName" required aria-required="true">
+    <label for="lastName" class="empty">Last Name</label>
+    <!--<button class="icon clear"><span>Clear last name</span></button>-->
+</div>
+
+<div class="formControl">
+    <input type="text" autocomplete="off" maxlength="256" id="add1" autocapitalize="none" aria-required="true" required>
+    <label  for="add1"  class="empty">Address Line 1</label>
+    <!--<button class="icon clear"><span>Clear language</span></button>-->
+</div>
+
+<div class="formControl">
+    <input type="text" autocomplete="off" maxlength="256" id="add2" autocapitalize="none">
+    <label  for="add2"  class="empty">Address Line 2 (Optional)</label>
+    <!--<button class="icon clear"><span>Clear language</span></button>-->
+</div>
+
+<div class="formControl">
+    <input type="text" autocomplete="off" maxlength="256" id="city" autocapitalize="none">
+    <label for="city"  class="empty">City</label>
+    <!--<button class="icon clear"><span>Clear language</span></button>-->
+</div>
+
+<div class="formControl formControl-half">
+    <input type="text" autocomplete="off" maxlength="24" id="state" required aria-required="true">
+    <label for="state"  class="empty">State</label>
+    <!--<button class="icon clear"><span>Clear First Name</span></button>-->
+</div>
+
+<div class="formControl formControl-half">
+    <input type="text" autocomplete="off" maxlength="24" id="zip" required aria-required="true">
+    <label for="zip"  class="empty">Zip Code</label>
+    <!--<button class="icon clear"><span>Clear last name</span></button>-->
+</div>
+
+<div class="formControl hasFieldset">
+  <input type="text" autocomplete="both" class="" value="United States of America" readonly="true" id="countryCode" readonly="true" role="" name="country">
+    <label  for="countryCode">Country</label>
+    <fieldset id="countrySelector">
+      <legend>Select your country:</legend>
+      <ul>
+        <li>
+            <input type="radio" name="countSelect" checked aria-selected="true" id="countAR" value="AR">
+            <label for="countAR" class="countAR">Argentina</label>
+        </li>
+        <li>
+          <input type="radio" name="countSelect" id="countAU" value="AU">
+            <label for="countAU" class="countAU">Australia</label>
+        </li>
+        <li>
+          <input type="radio" name="countSelect" id="countBR" value="BR">
+            <label for="countBR" class="countBR">Brazil</label>
+        </li>
+        <li>
+          <input type="radio" name="countSelect" id="countCA" value="CA">
+            <label for="countCA" class="countCA">Canada</label>
+        </li>
+        <li>
+          <input type="radio" name="countSelect" id="countCL" value="CL">
+            <label for="countCL" class="countCL">Chile</label>
+        </li>
+        <li>
+          <input type="radio" name="countSelect" id="countCN" value="CN">
+            <label for="countCN" class="countCN">China</label>
+        </li>
+        <li>
+          <input type="radio" name="countSelect" id="countCO" value="CO">
+            <label for="countCO" class="countCO">Colombia</label>
+        </li>
+        <li>
+          <input type="radio" name="countSelect" id="countHK" value="HK">
+            <label for="countHK" class="countHK">Hong Kong</label>
+        </li>
+        <li>
+          <input type="radio" name="countSelect" id="countMY" value="MY">
+            <label for="countMY" class="countMY">Malaysia</label>
+        </li>
+        <li>
+          <input type="radio" name="countSelect" id="countMX" value="MX">
+            <label for="countMX" class="countMX">Mexico</label>
+        </li>
+        <li>
+          <input type="radio" name="countSelect" id="countNZ" value="NZ">
+            <label for="countNZ" class="countNZ">New Zealand</label>
+        </li>
+        <li>
+          <input type="radio" name="countSelect" id="countPE" value="PE">
+            <label for="countPE" class="countPE">Peru</label>
+        </li>
+        <li>
+          <input type="radio" name="countSelect" id="countSG" value="SG">
+            <label for="countSG" class="countSG">Singapore</label>
+        </li>
+        <li>
+          <input type="radio" name="countSelect" id="countZA" value="ZA">
+            <label for="countZA" class="countZA">South Africa</label>
+        </li>
+        <li>
+          <input type="radio" name="countSelect" id="countAE" value="AE">
+            <label for="countAE" class="countAE">United Arab Emirates</label>
+        </li>
+        </ul>
+      </fieldset>
+</div>
+
+<div class="formControl">
+  <input type="tel" id="phone"  name="phone">
+    <label  for="phone"  class="empty">Phone</label>
+</div>
+
+                <div class="button-holder">
+                  <a href="account.html" class="btn secondary-cta">Cancel</a>
+                  <input class="btn cta" type="submit" value="Add Card" name="Update">
+                </div> 
+
+            </form>
+          </div>
+      </main>
+
+    <footer class="closed">
+          <i class="lock icon"><span class="visuallyhidden">Secure</span></i>
+
+          <nav>
+            <h2>Visa Checkout:</h2>
+            <ul>
+              <li><a href="tos.html">Terms</a></li>
+              <li><a href="privacy.html">Privacy</a></li>
+              <li><a href="support.html">Support</a></li>
+            </ul>
+          </nav>
+
+          <section id="languageIndicator">
+            <a href="#">
+              <span id="languageText"></span>
+              <span id="languageFlag" class="langUS icon"></span>
+              <span id="languageOpenClose" class="up icon"></span>
+            </a>
+
+            <fieldset id="languageSelector">
+              <legend>Select your country:</legend>
+              <ul>
+                <li>
+                    <input type="radio" name="langSelect" checked aria-selected="true" id="langAR" value="AR">
+                    <label for="langAR" class="langAR">Argentina</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langAU" value="AU">
+                    <label for="langAU" class="langAU">Australia</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langBR" value="BR">
+                    <label for="langBR" class="langBR">Brazil</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langCA" value="CA">
+                    <label for="langCA" class="langCA">Canada</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langCL" value="CL">
+                    <label for="langCL" class="langCL">Chile</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langCN" value="CN">
+                    <label for="langCN" class="langCN">China</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langCO" value="CO">
+                    <label for="langCO" class="langCO">Colombia</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langHK" value="HK">
+                    <label for="langHK" class="langHK">Hong Kong</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langMY" value="MY">
+                    <label for="langMY" class="langMY">Malaysia</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langMX" value="MX">
+                    <label for="langMX" class="langMX">Mexico</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langNZ" value="NZ">
+                    <label for="langNZ" class="langNZ">New Zealand</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langPE" value="PE">
+                    <label for="langPE" class="langPE">Peru</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langSG" value="SG">
+                    <label for="langSG" class="langSG">Singapore</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langZA" value="ZA">
+                    <label for="langZA" class="langZA">South Africa</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langAE" value="AE">
+                    <label for="langAE" class="langAE">United Arab Emirates</label>
+                </li>
+                </ul>
+              </fieldset>
+            </section>
+          <small>
+          Visa Checkout may share information about how you use this card in Visa Checkout with the financial institution that issued the card for customer service, usage analysis, fraud prevention and marketing related to Visa Checkout.
+          </small>
+    </footer>
+
+  <div class="view-modal-portal"></div>
+
+<script src="js/site.js" async></script>
+<script src="js/inputmask.js" async></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+/*/ RADIO BUTTONS /*/
+.carousel-radios {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  list-style-type: none;
+  margin: auto; 
+}
+.carousel-radios li {
+  flex: 0 1 19px;
+  text-align: center;
+  position: relative; 
+}
+.carousel-radios li input {
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  width: 10px;
+  z-index: 2; 
+}
+.carousel-radios li input:focus {
+  background-color: black; 
+}
+.carousel-radios li span {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1.5px solid blue;
+  border-radius: 50%;
+  z-index: 1; 
+}
+.carousel-radios li :checked + span {
+  background-color: blue; 
+}
+.carousel-radios li :focus + span {
+   outline: 1px solid rgba(0,0,0,0.2);
+}

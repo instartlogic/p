@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+<head>
+  <title>create Account</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="css/consumerapp.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="main" class="consumer">
+
+      <header>
+        <div class="headercontents">
+          <a href="#" class="header-logo icon"><span>Visa Checkout</span></a>
+          <nav>
+            <ul>
+              <li>
+                <span class="mobilehide">Have an account?</span>
+                <a class="btn secondary-cta" href="test.html">Sign In</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+
+<main>
+<div id="createAccount" class="content">
+<h1>Things are about to get easier.</h1>
+<!-- remove unnecessary spans in h2 -->
+<h2>Simply add your info to create an account. (You only have to do this once.)</h2>
+<form role="form" action="account.html">
+<div class="formControl formControl-half">
+    <input type="text" autocomplete="off" maxlength="24" id="firstName" required aria-required="true">
+    <label for="firstName" class="empty">First Name</label>
+    <button class="icon clear"><span>Clear First Name</span></button>
+</div>
+
+<div class="formControl formControl-half">
+    <input type="text" autocomplete="off" maxlength="24" id="lastName" required aria-required="true">
+    <label for="lastName" class="empty">Last Name</label>
+    <button class="icon clear"><span>Clear last name</span></button>
+</div>
+
+<div class="formControl">
+    <input type="text" autocomplete="off" maxlength="256" id="userName" autocapitalize="none" aria-required="true" required>
+    <label  for="userName" class="empty">Email or Mobile Number</label>
+    <button class="icon clear"><span>Clear last name</span></button>
+</div>
+
+<div class="formControl">
+    <input type="password" autocomplete="off" maxlength="32" id="password" autocapitalize="none" aria-required="true" aria-describedby="describepassword" required>
+    <label for="password" class="empty">Create Password</label>
+    <a href="#" class="viewPassword--toggle" aria-label="Show password characters">Show</a>
+    <!--<button class="icon clear"><span>Clear password</span></button>-->
+  <!--  <label class="formControl-helperText">Minimum 6 Characters</label>
+    <p id="describepassword" class="accessAid">Minimum 6 Characters</p> -->
+</div>
+
+<div class="formControl">
+<input type="text" autocomplete="both" class="" value="Canada" readonly="" id="countryCode" role="" name="country">
+<!--
+<fieldset id="languageSelector">
+              <legend>Select your country:</legend>
+              <ul>
+                <li>
+                    <input type="radio" name="langSelect" checked aria-selected="true" id="langAR" value="AR">
+                    <label for="langAR" class="langAR">Argentina</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langAU" value="AU">
+                    <label for="langAU" class="langAU">Australia</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langBR" value="BR">
+                    <label for="langBR" class="langBR">Brazil</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langCA" value="CA">
+                    <label for="langCA" class="langCA">Canada</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langCL" value="CL">
+                    <label for="langCL" class="langCL">Chile</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langCN" value="CN">
+                    <label for="langCN" class="langCN">China</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langCO" value="CO">
+                    <label for="langCO" class="langCO">Colombia</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langHK" value="HK">
+                    <label for="langHK" class="langHK">Hong Kong</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langMY" value="MY">
+                    <label for="langMY" class="langMY">Malaysia</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langMX" value="MX">
+                    <label for="langMX" class="langMX">Mexico</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langNZ" value="NZ">
+                    <label for="langNZ" class="langNZ">New Zealand</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langPE" value="PE">
+                    <label for="langPE" class="langPE">Peru</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langSG" value="SG">
+                    <label for="langSG" class="langSG">Singapore</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langZA" value="ZA">
+                    <label for="langZA" class="langZA">South Africa</label>
+                </li>
+                <li>
+                  <input type="radio" name="langSelect" id="langAE" value="AE">
+                    <label for="langAE" class="langAE">United Arab Emirates</label>
+                </li>
+                </ul>
+              </fieldset>-->
+
+<label for="countryCode" class="viewSelect-helperText">Select or enter a country</label>
+
+</div>
+
+ <div class="checkbox-wrapper remember-me">
+    <input id="rememberMe" type="checkbox" checked="" aria-label="Remember me on this device" aria-required="false">
+    <label for="rememberMe" class=""><span>Make signing in easy on this device</span></label>
+
+<p>Your username will be remembered and we'll display your card design on this device.</p>
+</div>
+<p class="disclaimer">By creating an account, you agree to Visa Checkout's <a data-tracker="termsOfService" gtm-tracker-uniq="content-termsOfService" data-tracker-uniq="content-termsOfService" href="/pages/terms?country=CA&amp;locale=en-CA" target="_blank" class="legalLinks">Terms of Service</a> and <a data-tracker="privacyPolicy" gtm-tracker-uniq="content-privacyPolicy" href="/pages/privacy?country=CA&amp;locale=en-CA" target="_blank" class="legalLinks">Privacy Policy</a>. You also accept Visa Checkout's <a data-tracker="electronicCommunicationPolicy" gtm-tracker-uniq="content-electronicCommunicationPolicy" href="/pages/electronic_communication?country=CA&amp;locale=en-CA" target="_blank" class="legalLinks">Electronic Communication Policy</a>, and agree to receive account notices via email or electronically instead of by mail.</p>
+
+<div class="button-holder spinner">
+    <input class="btn cta" name="Create Account" type="submit" value="Create Account">
+
+</div>
+</form>
+</div>
+</main>
+
+
+<footer class="closed">
+  <i class="lock icon"><span>Secure</span></i>
+
+  <nav>
+    <h2>Visa Checkout:</h2>
+    <ul>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Support</a></li>
+    </ul>
+  </nav>
+
+  <section id="languageIndicator">
+    <a href="#">
+      <span id="languageText"></span>
+      <span id="languageFlag" class="langUS icon"><span>US selected</span></span>
+      <span id="languageOpenClose" class="up icon"></span>
+    </a>
+
+    <fieldset id="languageSelector">
+      <legend>Select your country:</legend>
+      <ul>
+        <li>
+            <input type="radio" name="langSelect" checked aria-selected="true" id="langAR" value="AR">
+            <label for="langAR" class="langAR">Argentina</label>
+        </li>
+        <li>
+          <input type="radio" name="langSelect" id="langAU" value="AU">
+            <label for="langAU" class="langAU">Australia</label>
+        </li>
+        <li>
+          <input type="radio" name="langSelect" id="langBR" value="BR">
+            <label for="langBR" class="langBR">Brazil</label>
+        </li>
+        <li>
+          <input type="radio" name="langSelect" id="langCA" value="CA">
+            <label for="langCA" class="langCA">Canada</label>
+        </li>
+        <li>
+          <input type="radio" name="langSelect" id="langCL" value="CL">
+            <label for="langCL" class="langCL">Chile</label>
+        </li>
+        <li>
+          <input type="radio" name="langSelect" id="langCN" value="CN">
+            <label for="langCN" class="langCN">China</label>
+        </li>
+        <li>
+          <input type="radio" name="langSelect" id="langCO" value="CO">
+            <label for="langCO" class="langCO">Colombia</label>
+        </li>
+        <li>
+          <input type="radio" name="langSelect" id="langHK" value="HK">
+            <label for="langHK" class="langHK">Hong Kong</label>
+        </li>
+        <li>
+          <input type="radio" name="langSelect" id="langMY" value="MY">
+            <label for="langMY" class="langMY">Malaysia</label>
+        </li>
+        <li>
+          <input type="radio" name="langSelect" id="langMX" value="MX">
+            <label for="langMX" class="langMX">Mexico</label>
+        </li>
+        <li>
+          <input type="radio" name="langSelect" id="langNZ" value="NZ">
+            <label for="langNZ" class="langNZ">New Zealand</label>
+        </li>
+        <li>
+          <input type="radio" name="langSelect" id="langPE" value="PE">
+            <label for="langPE" class="langPE">Peru</label>
+        </li>
+        <li>
+          <input type="radio" name="langSelect" id="langSG" value="SG">
+            <label for="langSG" class="langSG">Singapore</label>
+        </li>
+        <li>
+          <input type="radio" name="langSelect" id="langZA" value="ZA">
+            <label for="langZA" class="langZA">South Africa</label>
+        </li>
+        <li>
+          <input type="radio" name="langSelect" id="langAE" value="AE">
+            <label for="langAE" class="langAE">United Arab Emirates</label>
+        </li>
+        <li>
+          <input type="radio" name="langSelect" id="langUS" value="US">
+            <label for="langUS" class="langUS">United States</label>
+        </li>
+        </ul>
+      </fieldset>
+    </section>
+  <small>
+  Visa Checkout may share information about how you use this card in Visa Checkout with the financial institution that issued the card for customer service, usage analysis, fraud prevention and marketing related to Visa Checkout.
+  </small>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>

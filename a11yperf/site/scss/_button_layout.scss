@@ -1,0 +1,38 @@
+@import "variables";
+
+
+.button-holder {
+    padding: 1.35em 0;
+}
+.btn {
+  margin-bottom: 10px;
+  text-align: center;
+}
+header .btn {
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+
+// if there are 2 buttons, on a wide screen, put two on the one line;
+@media screen and (min-width: $tablet) {
+  .button-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    .cta {
+      min-width: 58%;
+      display: inline-block;
+    }
+    .btn:not(:only-child) { 
+      width: 45%;
+      display: inline-block;
+      min-width: auto;
+      flex: 1 0 45%;
+      min-width: auto;
+    }
+    .btn:nth-child(2) {
+      margin-left: 10px;
+    }
+  }
+}

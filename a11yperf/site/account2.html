@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+  <title>Account</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/consumerapp.css" rel="stylesheet">
+</head>
+
+<body class="consumer">
+     <header>
+        <div class="headercontents">
+        <a href="#" class="header-logo icon"><span>Visa Checkout</span></a>
+        <!--<nav>
+          <ul>
+            <li>
+              <span class="mobilehide">Have an account?</span>
+              <a class="btn secondary-cta" href="test.html">Sign In</a>
+            </li>
+          </ul>
+        </nav>-->
+      </div>
+    </header>
+
+    <main>
+      <div id="manageAccount" class="content manage-account">
+
+        <section>
+          <h2>My Cards</h2>
+          <div class="buttons">
+            <a href="editcard.html" class="btn button-link">Edit<span class="a11y"> your card</span></a>
+            <a href="addcard.html" class="btn button-link">Add<span class="a11y"> a new card</span></a>
+          </div>
+          <p class="instructions">Add a card to get the full benefits of Visa Checkout.</p>
+        </section>
+
+        <section>
+          <h2>My Address Book</h2>
+          <form action="editaddress.html">
+          <fieldset>
+          <legend>Select an address to edit:</legend>
+          <div class="carousel">
+            <span class="backward" data-move="backward" data-carousel="shipping-addresses" hidden aria-hidden="true"></span>
+            <ul class="shipping-addresses left0">
+              <li>
+                <label for="address1">
+                <p>Estelle Weyl</p>
+                <p>901 Metro Center Blvd.</p>
+                <p>Foster City, CA 94078</p>
+                <p>6504322266</p>
+                </label>
+              </li>
+              <li>
+                <label for="address2">
+                <p>Estelle Weyl</p>
+                <p>1952 Eddy Street</p>
+                <p>San Francisco, CA 94115</p>
+                <p>4154412842</p>
+                </label>
+              </li>
+              <li>
+                <label for="address3">
+                  <p>Sonia Weyl</p>
+                  <p>673 Zollinger Drive</p>
+                  <p>Merion Station, PA  19066</p>
+                  <p>6014561234</p>
+                </label>
+              </li>
+              <li>
+                <label for="address4">
+                  <p>Dominique Brody</p>
+                  <p>14 Fiske Avenue</p>
+                  <p>Waltham, MA 02451</p>
+                  <p>7818931002</p>
+                </label>
+              </li>
+              <li>
+                <label for="address5">
+                  <p>Estelley Weyl</p>
+                  <p>901 Metro Center Boulevard</p>
+                  <p>Foster City, CA 94404</p>
+                  <p>4158459906</p>
+                </label>
+              </li>
+              <li>
+                <label for="address6">
+                  <p>George Weyl</p>
+                  <p>23 Somerset Road</p>
+                  <p>Lexington, MA  02446</p>
+                  <p>6178622799</p>
+                </label>
+              </li>
+            </ul>
+            <span class="forward" data-move="forward" data-carousel="shipping-addresses" hidden aria-hidden="true"></span>
+            </div>
+            <ul id="addressradios" class="carousel-radios">
+              <li>
+                <input type="radio" name="shipping-addresses" value="0" id="address1" checked><span></span>
+              </li>
+              <li>
+                <input type="radio" name="shipping-addresses" value="1" id="address2"><span></span>
+              </li>
+              <li>
+                <input type="radio" name="shipping-addresses" value="2" id="address3"><span></span>
+              </li>
+              <li>
+                <input type="radio" name="shipping-addresses" value="3" id="address4"><span></span>
+              </li>
+              <li>
+                <input type="radio" name="shipping-addresses" value="4" id="address5"><span></span>
+              </li>
+              <li>
+                <input type="radio" name="shipping-addresses" value="5" id="address6"><span></span>
+              </li>
+            </ul>
+            </fieldset>
+            <div class="buttons">
+              <input type="submit" class="btn button-link" value="Edit">
+              <a href="addaddress.html" class="btn button-link">Add<span class="a11y"> a new address</span></a>
+            </div> 
+            </form>
+        </section>
+
+        <section>
+          <h2>My Personal Information</h2>
+          <a href="edit.html" class="btn button-link">Edit<span class="a11y"> your personal information</span></a>
+          <div class="address">
+            <p>Estelle Weyl</p>
+            <p>English</p>
+            <p>United States of America</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>My Account Information</h2>
+          <article id="signinSettings" class="signin-settings">
+            <a href="pwd.html" class="btn button-link">Edit<span class="a11y"> sign-in information</span></a>
+            <h3>Sign-In Information</h3>
+            <p>eweyl@visa.com <a href="#">(Unconfirmed)</a></p>
+            <p>••••••</p>
+          </article>
+          <article id="securityQuestions" class="security-questions">
+              <a href="edit.html" class="btn button-link">Add<span class="a11y"> security questions</span></a>
+              <h3>Security Questions</h3>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="closed">
+          <i class="lock icon"><span class="visuallyhidden">Secure</span></i>
+
+          <nav>
+            <h2>Visa Checkout:</h2>
+            <ul>
+              <li><a href="tos.html">Terms</a></li>
+              <li><a href="privacy.html">Privacy</a></li>
+              <li><a href="support.html">Support</a></li>
+            </ul>
+          </nav>
+          <small>
+          Visa Checkout may share information about how you use this card in Visa Checkout with the financial institution that issued the card for customer service, usage analysis, fraud prevention and marketing related to Visa Checkout.
+          </small>
+    </footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+$cardflipTransitionDuration: 0.6s;
+.cardflip, 
+.front, 
+.back {
+  width: 164px;
+  height: 104px;
+}
+
+.cardflip {
+  perspective: 1000;
+  transition: $cardflipTransitionDuration;
+  margin: auto;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: rotatey(0deg);
+
+  // temp look and feel (remove)
+  background-color: grey;
+  background-image: linear-gradient(to bottom left, white, grey);
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  // end temp
+}
+.cardflip.cvv {
+  transform: rotatey(180deg);
+}
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+.back {
+  transform: rotateY(180deg);
+  z-index: 1;
+  transition: z-index $cardflipTransitionDuration; 
+}
+.cvv .back {
+  z-index: 3;
+}

@@ -1,0 +1,17 @@
+@import "variables";
+// Throbber works in IE10+
+.throbber {
+  height: 4px;
+  margin: 0 -11px;
+  background: linear-gradient(left, $lightGray 24%, $visaGold 26%, $visaGold 74%, $lightGray 76%); // android < 4.4
+  background: linear-gradient(to left, $lightGray 24%, $visaGold 26%, $visaGold 74%, $lightGray 76%);
+  -webkit-animation: bgchange infinite 1s linear; // Safari < 9
+  animation: bgchange infinite 1s linear;
+  background-size: 50% 100%;
+}
+@keyframes bgchange {
+  100% {background-position: right;}
+}
+@-webkit-keyframes bgchange { // Safari < 9
+  100% {background-position: right;}
+}

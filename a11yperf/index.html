@@ -1,0 +1,800 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+    <!--[if gte IE 9]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]--> 
+    <!--[if lt IE 9]><meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" /><![endif]--> 
+<meta charset="utf-8" />
+    <title>Simply Accessible Web Performance</title>
+<!--
+Made by: Put Your Name Here
+Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
+Based on: http://estelle.github.com/slides 
+-->    
+<link rel="stylesheet" href="assets/css/index.css">
+ <base target="play"/>
+</head>
+
+<body> 
+<div id="presentation">
+   <div id="slides">
+   
+   
+  <div class="slide intro">
+    <section class="content">
+    <h1 style="font-size: 3rem; margin-top: 10%;">Simply Accessible Web Performance</h1>
+      <h2>Estelle Weyl</h2>
+      <p><a href="http://instartlogic.github.io/p/webdevcon">http://instartlogic.github.io/p/webdevcon</a></p>
+      
+    </section>
+</div>
+
+<div class="slide">
+<section class="content">
+<h1>Estelle Weyl</h1>
+<h2><a href="http://www.standardista.com">www.standardista.com</a><br>
+<a href="http://www.instartlogic.com/blog">www.instartlogic.com/blog</a></h2><h2><a href="http://www.twitter.com/webdevtips">@webdevtips</a><br><a href="http://www.twitter.com/estellevw">@estellevw</a><br><a href="http://www.twitter.com/standardista">@standardista</a></h2>
+<div class="floatright">
+  <img src="http://akamaicovers.oreilly.com/images/9780987467485/cat.gif" alt="HTML5 and CSS3 for the Real World">
+  <img src="http://akamaicovers.oreilly.com/images/0636920041658/rc_cat.gif" alt="Animations and Transitions with CSS"/>
+  <img src="http://akamaicovers.oreilly.com/images/0636920021711/cat.gif" alt="MObile HTML5" />
+  \<img src="http://akamaicovers.oreilly.com/images/0636920025955/cat.gif" alt="Web Performance Daybook"/></div>
+</section>
+</div>
+ 
+
+
+<div class="slide intro switchletters">
+<header><h1 aria-label="Accessibility and Performance Made Simple with Web Standards"><span class=a>Simpl<i>y</i></span>
+  <span class=b>Accessib<i>le</i></span>
+<span class=c>Web</span>
+  <span class=d>Performance</span></h1></header>
+
+  <table cellpadding="0" cellspacing="0" align="center">
+  	<tr>
+  	<td style="border-bottom: 5px solid #226daa; width: 25vw; height: 20vh;">Features</td>
+  	<td style="border-left: 5px solid #226daa;  border-bottom:5px solid #226daa; ">Solutions</td>
+  	</tr>
+  	<tr>
+  	<td>Issues</td>
+  	<td style="border-left: 5px solid #226daa; width: 25vw; height: 20vh;">Prescriptions</td>
+  	</tr>
+  </table>
+
+</div>
+
+<div class="slide intro">
+<header><h1>Accessibility</h1></header>
+</div>
+
+
+
+<!-- slide -->
+<div class="slide blind">
+<h1>Screen Reader experience</h1>
+<p><a href="" aria-label="don't click this link. It's a example fo bad user experience">click here</a>
+</p>
+</div>
+
+
+<!-- Slide -->
+<div class="slide deaf">
+
+<h1>Hearing impaired experience</h1>
+<section>
+<iframe src="https://vine.co/v/iIEqKFz1uOY/embed/simple" width="600" height="600" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+  </video>
+  </section>
+</div>
+
+<!-- slide -->
+<div class="slide deaf colorblind">
+<h1>Color Blindness experience</h1>
+</div>
+      <!-- slide -->
+   <div class="slide tweet" style="text-align: center; padding-top: 40px;"> 
+<a href="https://twitter.com/dugboticus/status/720542337185771520"><img alt="Disability: a mismatch in interaction between the features of a person’s body and the features of the environment in which they live. &mdash; Alistair Duggin (@dugboticus) April 14, 2016" src="assets/images/tweetdisability.png"></a>
+</div>
+
+
+<div class="slide graph svg">
+<header><h1>We all benefit from the <abbr title="Americans with Disabilities Act">ADA</abbr></h1></header>
+	
+<ul class="">
+	<li><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 96 120" enable-background="new 0 0 96 96" xml:space="preserve"><path d="M90,79h-8V49c0-1.1-0.9-2-2-2h-7.408c-1.424-4.4-3.699-8.416-6.619-11.86C65.973,35.092,66,35.052,66,35V17c0-1.1-0.9-2-2-2  H26V5c0-1.1-0.896-2-2-2h-6c-1.104,0-2,0.9-2,2s0.896,2,2,2h4v20c0,0.056,0.028,0.1,0.032,0.156C11.288,33.18,4,44.668,4,57.836  C4,77.229,19.772,93,39.16,93c19.388,0,35.164-15.771,35.164-35.164c0-2.34-0.248-4.624-0.68-6.836H78v30c0,1.1,0.9,2,2,2h10  c1.104,0,2-0.9,2-2S91.1,79,90,79z M26,19h36v12.156c-6.152-5.272-14.12-8.48-22.84-8.48c-4.656,0-9.088,0.924-13.16,2.584V19z   M39.16,63.836c-3.308,0-5.996-2.691-5.996-6s2.688-6,5.996-6c3.312,0,6.004,2.691,6.004,6S42.472,63.836,39.16,63.836z"></path><path d="M41.16,57.836c0,1.105-0.895,2-2,2s-2-0.895-2-2s0.895-2,2-2S41.16,56.73,41.16,57.836z"></path><text x="0" y="111" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by iconsmind.com</text><text x="0" y="116" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg></li>
+	<li>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 96 120" enable-background="new 0 0 96 96" xml:space="preserve"><path d="M44.988,63h20c15.863,0,28.836-12.393,29.871-28H15.12C16.16,50.604,29.124,63,44.988,63z"/><path d="M12.156,31h5.66L4.528,17.712c-0.78-0.776-2.048-0.776-2.828,0c-0.78,0.78-0.78,2.048,0,2.828L12.156,31z"></path><path d="M64.988,3h-12c-1.104,0-2,0.896-2,2v26h43.896C93.844,15.392,80.855,3,64.988,3z"/><path d="M78.652,65c-7.721,0-14,6.28-14,14c0,7.721,6.279,14,14,14c7.72,0,14-6.279,14-14C92.652,71.28,86.372,65,78.652,65z"/><path d="M34.652,65c-7.72,0-14,6.28-14,14c0,7.721,6.28,14,14,14c7.72,0,14-6.279,14-14C48.652,71.28,42.372,65,34.652,65z"></path></svg>
+	</li>
+	<li>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 96 120" enable-background="new 0 0 96 96" xml:space="preserve"><path d="M10.74,62.676l48.084-48.084l-3.816-3.82c-3.832-3.836-11.72-3.272-15.836,0.844L7.388,43.4  c-4.24,4.244-4.46,11.464-0.464,15.456L10.74,62.676z"></path><path d="M91.352,18.836l-4.244-4.244c-0.779-0.78-2.051-0.78-2.828,0c-0.779,0.776-0.779,2.048,0,2.828l2.828,2.828L75.788,31.56  L61.652,17.42L13.568,65.504l6.108,6.104c0.392,0.393,0.904,0.584,1.416,0.584c0.512,0,1.024-0.195,1.416-0.584  c4.852-4.852,11.852-5.084,16.504-0.432c0.752,0.752,2.08,0.752,2.828,0l49.516-49.512c0.377-0.376,0.584-0.884,0.584-1.416  S91.729,19.212,91.352,18.836z"></path><path d="M24.848,73.027c-3.372,3.381-3.368,8.873,0.004,12.248c1.636,1.633,3.808,2.537,6.12,2.537c2.316,0,4.488-0.904,6.124-2.541  c3.372-3.371,3.372-8.863,0-12.248C33.82,69.752,28.116,69.752,24.848,73.027z"></path></svg>
+	</li>
+	</ul>
+</div>
+
+<div class="slide graph">
+<header><h1>Disability is a spectrum</h1></header>
+<div class="arrow" style="margin-top: 30px">
+		<div>permanent</div>
+		<div class="border"></div>
+		<div>situational</div>
+	</div>
+<ul>
+	<li>Parapalegic</li>
+	<li>Broken Leg</li>
+	<li>Stillettos</li>
+</ul>
+
+<ul>
+	<li>Blind</li>
+	<li>Reading Glasses</li>
+	<li>Sun Glare</li>
+</ul>
+<ul>
+	<li>Dyslexic</li>
+	<li>Medicated</li>
+	<li>Distracted</li>
+</ul>
+
+<ul>
+	<li>Quadrapalegic</li>
+	<li>Broken Arm</li>
+	<li>Holding a Baby</li>
+</ul>
+
+<ul>
+	<li>Hard of Hearing</li>
+	<li>Aircraft Marshaller</li>
+	<li>Forgotten Headphones</li>
+</ul>
+
+
+	<div class="arrow">
+		<div>permanent</div>
+		<div class="border"></div>
+		<div>situational</div>
+	</div>
+</div>
+<!-- slide -->
+
+<div class="slide">
+<h1 class="aria"><i>A</i>ccessible
+<i>R</i>ich
+<i>I</i>nternet 
+<i>A</i>pplications</h1>
+</div>
+
+
+
+
+<div class="slide tweet">
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The 1st rule of ARIA use is if you can use a native HTML element or attribute with the semantics behavior already built in, do that instead!</p>&mdash; Estelle Weyl (@estellevw) <a href="https://twitter.com/estellevw/status/702935029807058944">February 25, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</div>
+
+
+<div class="slide intro">
+<header><h1>Performance</h1></header>
+</div>
+
+
+
+      <!-- slide -->
+   <div class="slide tweet"> 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I remember when 3G was primary mobile speed. It was slow but still worked, so why now when my phone says 3G it becomes completely useless.</p>&mdash; Stephen Gundee (@StephenGundee) <a href="https://twitter.com/StephenGundee/status/712650972133138433">March 23, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+      <!-- slide -->
+   <div class="slide"> 
+     <header>
+     	<h1>November 2010</h2>
+     </header> 
+    <img  style="height: 80vh; display: inline-block; margin: auto;" id="bytesperpage2" class="chart" src="http://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=226daa&amp;chd=t:416,34,25,113,2,22&amp;chds=0,416&amp;chdlp=b&amp;chdl=total 702 kB&amp;chl=Images+-+416+kB%7CHTML+-+34+kB%7CStylesheets+-+25+kB%7CScripts+-+113+kB%7CFonts+-+2+kB%7COther+-+22+kB&amp;chma=|5&amp;chtt=Average+Bytes+per+Page+by+Content+Type+November+2010" alt='In 2010, content was Images=416kb, HTML=34kb, Stylesheets=25kb, Scripts=113kb, Fonts=2kb, and Other=22kb for a total of 702kb'>
+
+   </div> 
+
+
+   <!-- slide -->
+   <div class="slide"> 
+     <header>
+     	<h1>April 2016</h2>
+     </header> 
+    <img style="height: 80vh; display: inline-block; margin: auto;" id="bytesperpage" class="chart" src="http://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=226daa&amp;is3D=true&amp;chd=t:1463,66,78,360,124,200,4&amp;chds=0,1463&amp;chdlp=b&amp;chdl=total 2301 kB&amp;chl=Images+-+1463+kB%7CHTML+-+66+kB%7CStylesheets+-+78+kB%7CScripts+-+360+kB%7CFonts+-+124+kB%7CVideo+-+200+kB%7COther+-+4+kB&amp;chma=|5&amp;chtt=Average+Bytes+per+Page+by+Content+Type+April+2016"
+	alt='In 2016, content is Images=1463kb, HTML=66kb, Stylesheets=78kb, Scripts=360kb, Fonts=124kb, Video=200 and Other=4kb for a total of 2301 kb'>
+
+   </div
+
+   
+   
+      <!-- slide -->
+   <div class="slide"> 
+     <header><h1>2010 vs 2016</h1></header> 
+     <section class="overlapping_pies">
+<div class="big_piechart"  style="
+    background-image: url(http://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=226daa&amp;is3D=true&amp;chd=t:1460,67,77,367,123,193,4&amp;chds=0,1460&amp;chdlp=b&amp;chma=|5);">
+
+    <!--<img  style="height: 24.43vh;
+    opacity: 0.5;
+    margin: auto;
+    display: inline-block;
+    border: 27.125vh solid #FFF;
+    transform: translate(198px, -80vh);
+}" id="bytesperpage2" class="chart" src="http://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=226daa&amp;chd=t:416,34,25,113,2,22&amp;chbg=transparent&amp;chds=0,416&amp;chdlp=b&amp;chma=|5" style="vertical-align: top;">-->
+ <div class="small_piechart"  style="
+    background-image: url(http://chart.googleapis.com/chart?chs=400x225&amp;cht=p&amp;chco=333333&amp;chd=t:416,34,25,113,2,22&amp;chbg=transparent&amp;chds=0,416&amp;chdlp=b&amp;chma=|5);"></div>
+    <span  aria-label="for a total increase of 339% over less than 6 years">339%</span>
+</div>
+   </div>
+   
+      <!-- slide 
+   <div class="slide"> 
+     <header><h1>2016 vs 2010</h1></header> 
+     <section class="overlapping_pies">
+<div class="big_piechart" style="background-image: url(http://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=226daa&amp;is3D=true&amp;chd=t:1460,67,77,367,123,193,4&amp;chds=0,1460&amp;chdlp=b&amp;chma=|5)">
+ <div class="small_piechart"  style="
+    background-image: url(http://chart.googleapis.com/chart?chs=400x225&amp;cht=p&amp;chco=333333&amp;chd=t:416,34,25,113,2,22&amp;chbg=transparent&amp;chds=0,416&amp;chdlp=b&amp;chma=|5&amp;chp=-.55);">339%</div>
+    </div>
+    </section>
+
+ </div>-->
+
+
+<div class="slide intro">
+<header><h1>Prescriptions</h1></header>
+</div>
+
+
+
+
+
+<div class="slide"> 
+<header><h1>Image Optimization</h1></header> 
+<section class="content"> 
+<dl class="hidden_dd">
+<dt>GZip</dt>
+<dd>GZip works best for text-based content, while providing little to no byte shrinkage on previously-compressed assets. SVG is a text-based image format. Minifying and GZipping SVG image and font files can greatly <a href="http://calendar.perfplanet.com/2014/tips-for-optimising-svg-delivery-for-the-web/">reduce their SVG file size</a>. Minify first. Then Gzip.</dd>
+<dt>Remove Image Metadata</dt>
+<dd>Cameras and software often add metadata to images that is not seen by the web user. This metadata can actually be a security risk by exposing geographical data. There’s free software that will <a href="https://itunes.apple.com/us/app/exifpurge/id784466108?mt=12">strip EXIF metadata</a> from multiple images at a time.</dd>
+<dt>Resize Images</dt>
+<dd>Serve the smallest image file for the screen size and resolution. <ul>
+<li> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">&lt;picture&gt;</a> element</li>
+<li><a href="http://www.sitepoint.com/how-to-build-responsive-images-with-srcset/">srcset</a> attribute</li><li>load small background images in CSS </support <a href="http://caniuse.com/#search=srcset">Internet Explorer</a>, consider using <a href="http://scottjehl.github.io/picturefill/">Picturefill</a> or JS-free <a href="https://www.smashingmagazine.com/2013/06/clown-car-technique-solving-for-adaptive-images-in-responsive-web-design/">Clown Car Technique</a>.</li>
+<li>Serve scaled images. Resizing images means <a href="http://blog.cloudfour.com/responsive-images-101-part-9-image-breakpoints/">downloading unneeded pixels</a> and take longer to decode and paint.
+</li></ul>
+</dd>
+<dt>Optimize Images</dt>
+<dd>Serve the smallest image size for the screen size and resolution. Images, no matter the size, should be compressed as much as possible without noticeably degrading the quality. Image compression programs include <a href="https://imageoptim.com/">ImageOptim</a> and <a href="https://pngmini.com/">ImageAlpha</a> for pngs. Can be automated with machine learning with <a href="https://www.instartlogic.com/blog/playing-smartvision-intelligent-image-optimization">SmartVision</a>.</dd>
+<dt>Use the Right Image Format</dt>
+<dd>Image types include SVG, GIF, JPEG, PNG, and WebP. 
+<ul>
+<li>GIF: Palette of less than 256 colors, like a comic, for transparency and for low quality animation</li>
+<li>SVG: Better than GIFS: Scalable, Animatable, unlimited color pallette</li>
+<li>PNG: When you need transparency and have more than 256 colors.</li>
+<li>JPEG: raster images</li>
+<li>JPEG with a CSS mask: when you need transparency on a raster image and PNG-24 file size is huge</li>
+<li> WebP:  Animation, transparency, and great resolution with small file size, but only supported in Blink. <a href="https://developers.google.com/speed/webp/faq#which_web_browsers_natively_support_webp">Test WebP</a></li>
+<li>JPEG-XR: For Edge</li>
+</ul>
+</dd>
+<dt>Reduce the Number of Images</dt>
+<dd>Reduce HTTP requests with sprites. Also, consider reducing actual number of images your page requires: is your image worth 1,000 words or does your site work better without it?</dd>
+<dt>Leverage CSS</dt>
+<dd>Leverage CSS to reduce image size and number of images:
+<ul><li><strong>Image Masking:</strong> use <a href="http://wegraphics.net/blog/articles/png-masking-how-to-dynamically-shape-any-image-on-your-website/">image masking</a> when you need a “transparent JPEG” without PNG-24 file size</li>
+<li><strong>CSS Effects:</strong> gradients, borders, outlines, rounded corners, shadows, etc. Create resolution-independent effects with minifiable &amp; gZippable text</li>
+<li><strong>Sprites:</strong> until HTTP/2 is fully supported  use <a href="https://www.smashingmagazine.com/2009/04/the-mystery-of-css-sprites-techniques-tools-and-tutorials/">image sprites</a> and background-position to reduce number of requests</li>
+<li><strong>Animation:</strong> when animating GIFs, consider CSS <a href="http://codepen.io/estelle/pen/LyItm">animation using the steps()</a> timing function and sprites as an alternative</li>
+<li><strong>Filters:</strong> use <a href="http://www.html5rocks.com/en/tutorials/filters/understanding-css/">CSS filter</a> effects instead of multiple versions of the same image if you want filters applied: save bytes, HTTP requests and time</li>
+<li><strong>Media Queries:</strong> Use media queries to serve hi-res images to hi-res devices</li>
+</ul></dd>
+</dl>
+<p><strong>Note:</strong> Include an <em>alt</em> attribute on all  foreground images, with empty <a href="http://webaim.org/techniques/alttext/"><em>alt</em> attribute</a> for decorative images.</p>
+
+<a class="pagelink" href="https://www.instartlogic.com/blog/image-optimization-tips-for-improved-web-performance">Image Optimization Tips</a>
+</section>
+</div> 
+ 
+  
+<div class="slide">
+<header><h1>PageSpeed</h1></header>
+<section class="content">
+<dl class="hidden_dd">
+<dt>Minimize request size</dt>
+ <dd>GZip all requests. </dd>
+<dt>Leverage browser caching.</dt>
+ <dd>Include caching headers for all requests with a future date so previously fetched responses can be reused instead of refetched.</dd>
+<dt>Specify a cache validator</dt>
+ <dd>Specify a <code>Last-Modified</code> or ETag header to enable cache validation. ETags provide revalidation tokens automatically sent by client to check if there are file changes since last requested. </dd>
+<dt>Minify CSS, JS &amp; HTML</dt>
+ <dd>Removing unnecessary whitespace saves bandwidth</dd>
+<dt>Defer parsing of JavaScript</dt>
+ <dd>inlcude <code>async</code> attribute in your <code>&lt;script&gt;</code> tags so client can continue downloading assets instead of waiting as scripts are downloaded, parsed and excecuted.</dd>
+<dt>Optimize images</dt>
+ <dd>Choose best format and compression on a per image basis include: type of data being encoded, image format capabilities, quality settings, resolution, and more. Leverage SVG and CSS. See previous page.</dd>
+<dt>Specify a character set</dt>
+ <dd>Including a content-type header, such as <code>Content-Type: text/html; charset=UTF-8</code> reduces browser processing. Can start parsing HTML immediately when it knows which character set it has.</dd>
+<dt>Remove query strings from static resources</dt>
+ <dd>Resources with a "?" in the URL are not cached by some proxy caching servers</dd>
+<dt>Specify a Vary: Accept-Encoding header</dt>
+ <dd>In case client doesn't support compression, tells proxy server to store both compressed and uncompressed versions.</dd>
+<dt>Avoid CSS @import</dt>
+ <dd>Only starts downing imported file once encountered rather than in parallel.</dd>
+<dt>Avoid a character set in the meta tag</dt>
+ <dd>Better to include it in HTTP Content-Type header (IE8 rule)</dd>
+<dt>Avoid bad requests</dt>
+ <dd>404 and 410 errors waste time. If requests are for blocking resources, it becomes a more serious problem.</dd>
+<dt>Avoid landing page redirects</dt>
+ <dd>If your site requires redirects, do them server-side not client side, to reduce round trip requests. Removing HTTP redirects removes extra round trips.</dd>
+<dt>Combine images into CSS sprites</dt>
+ <dd></dd>
+<dt>Enable Keep-Alive</dt>
+ <dd>HTTP persistent connections allows a TCP connection to send and receive multiple HTTP requests, reducing latency for subsequent requests.</dd>
+<dt>Enable compression</dt>
+ <dd>GZip!</dd>
+<dt>Inline Small CSS &amp; JS</dt>
+ <dd></dd>
+<dt>Minimize redirects</dt>
+ <dd>Minimizing redirects removes additional RTTs and wait time for users.</dd>
+<dt>Optimize the order of styles and scripts</dt>
+ <dd></dd>
+<dt>Prefer asynchronous resources</dt>
+ <dd>Many JS libraries and frameworks were originally written as synchronous scripts, but now have asynchronous versions. Use the asynchronous versions. </dd>
+<dt>Put CSS in the document head</dt>
+ <dd></dd>
+<dt>Serve resources from a consistent URL</dt>
+ <dd></dd>
+<dt>Serve scaled images</dt>
+ <dd>Properly sized images saves bandwidth.</dd>
+<dt>Specify image dimensions</dt>
+ <dd>Enables rendering page before images are downloaded. Without proper dimensions, browser will need to reflow and repaint upon image downloaded.</dd>
+</dl>
+<a class="pagelink" href="https://developers.google.com/speed/docs/insights/about#send-us-your-feedback">Page Speed</a>
+</div>
+
+
+<!--
+<div class="slide"> 
+<header><h1>Speed Rules</h1></header> 
+<section class="content"> 
+<dl class="hidden_dd">
+<dt>Avoid landing page redirects</dt>
+ <dd>Instead of creating a m.mysite.com, create responsive content. Redirects trigger an additional HTTP request-response cycle and delay page rendering. In the best case, each redirect will add a single roundtrip (HTTP request-response), and in the worst it may result in multiple additional roundtrips to perform the DNS lookup, TCP handshake, and TLS negotiation in addition to the additional HTTP request-response cycle. Minimize use of redirects to improve site performance.</dd>
+
+<dt>
+Enable compression</dt>
+ <dd></dd>
+<dt>
+Improve server response time</dt>
+ <dd></dd>
+<dt>
+Inline CSS</dt>
+ <dd></dd>
+<dt>
+Leverage browser caching</dt>
+ <dd></dd>
+<dt>
+Minify resources</dt>
+ <dd></dd>
+<dt>
+Optimize images</dt>
+ <dd></dd>
+<dt>
+Optimize CSS delivery</dt>
+ <dd></dd>
+<dt>
+Prioritize visible content</dt>
+ <dd></dd>
+<dt>
+Remove render-blocking JavaScript</dt>
+ <dd></dd>
+
+
+<dt>Use asynchronous scripts</dt>
+ <dd>Instead of blocking loading while waiting for scripts to finish downloading before the page renders, script are downloadeded in the background</dd>
+
+ </dl>
+
+ <a class="pagelink" href="https://developers.google.com/speed/docs/insights/rules">Page Speed Insights</a>
+ </section>
+</div>-->
+
+<div class="slide"> 
+<header><h1>Usability Rules</h1></header> 
+<section class="content"> 
+<dl class="hidden_dd">
+<dt>Avoid plugins</dt>
+ 
+<dt>Configure the viewport</dt>
+ <dd>Optimize pages to display well on mobile devices by including a meta viewport in the head of the document specifying <code>width=device-width, initial-scale=1</code>.
+
+<pre>&lt;meta name=viewport content="width=device-width, initial-scale=1"&gt;</dd>
+<dt>Size content to viewport</dt>
+ <dd>Scrolling websites vertically is Okay, but horizontally creates poor user experience. Use media queries and <code>vh</code>, <code>vw</code> and percents for width.
+
+</dd>
+<dt>Size tap targets appropriately</dt>
+ <dd>Set a minimum tap target size of  of 48 CSS pixels on a site with a properly-set mobile viewport. Make important tap targets large enough to be easy to press, ensuring there is extra spacing between smaller tap targets.</dd>
+<dt>Use legible font sizes</dt>
+
+ </dl>
+ <a class="pagelink" href="https://developers.google.com/speed/docs/insights/rules">Page Speed Insights</a>
+ </section>
+</div>
+
+
+
+<div class="slide">
+<header><h1>WCAG 1.0 (1998)</h1></header>
+<section>
+<ol><li>Provide equivalent alternatives to auditory and visual content
+</li><li>Don’t rely on colour alone
+</li><li>Use markup and style sheets, and do so properly
+</li><li>Clarify natural language usage
+</li><li>Create tables that transform gracefully
+</li><li>Ensure that pages featuring new technologies transform gracefully
+</li><li>Ensure user control of time sensitive content changes
+</li><li>Ensure direct accessibility of embedded user interfaces
+</li><li>Design for device independence
+</li><li>User interim solutions
+</li><li>Use W3C technologies and guidelines
+</li><li>Provide context and orientation information
+</li><li>Provide clear navigation mechanisms
+</li><li>Ensure that documents are clear and simple
+</li></ol>
+</section>
+</div>
+
+
+
+<div class="slide wcag2">
+<header><h1>WCAG 2.0 (2008)</h1></header>
+<section>
+<p><strong>Perceivable:</strong> Content &amp; UI components</p>
+<ol>
+<li>Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.</li>
+<li>Time-based media: Provide alternatives for time-based media.</li>
+<li>Create content that can be presented in different ways (for example simpler layout) without losing information or structure.
+</li>
+<li>Make it easier for users to see and hear content including separating foreground from background.</li>
+</ol>
+<p><strong>Operable:</strong> UI and Nav </p>
+<ol>
+<li>Make all functionality available from a keyboard.</li>
+</li>
+<li>Provide users enough time to read and use content.
+</li>
+<li>Do not design content in a way that is known to cause seizures.
+</li>
+<li>Provide ways to help users navigate, find content, and determine where they are.</li>
+</ol></section>
+</div>
+
+
+
+<div class="slide wcag2">
+<header><h1>WCAG 2.0 (2008)</h1></header>
+<section>
+<p>
+<strong>Understandable:</strong>
+Information and operation of UI</p>
+<ol>
+<li>Make text content readable and understandable.
+</li>
+<li>Make web pages appear and operate in predictable ways.
+</li>
+<li>Help users avoid and correct mistakes.</li>
+</ol>
+<p><strong>Robust:</strong>
+Content interprable by UAs, including AT.</p>
+<ol>
+<li>Maximize compatibility with current and future user agents, including assistive technologies.
+</li>
+</ol></section>
+</div>
+
+<div class="slide">
+<header><h1>Accessible Design Rules</h1></header>
+
+<section>
+<dl class="hidden_dd" style="margin-right: 38vw;"><dt>Plan Heading Structure Early</dt>
+<dd>Ensure all content and design fits into a <a href="/techniques/semanticstructure/">logical heading structure</a>.</dd>
+
+<dt>Consider Reading Order</dt>
+<dd>The <a href="/techniques/screenreader/">reading order</a> should be the same as the visual order.</dd>
+
+<dt>Provide Good Contrast</dt>
+<dd>Be especially careful with light shades of gray, orange, and yellow. Check your contrast levels with our <a href="/resources/contrastchecker/">color contrast checker</a>.</dd>
+
+<dt>Use True Text Whenever Possible</dt>
+<dd><a href="/techniques/images/text_graphic">True text</a> enlarges better, loads faster, and is easier to translate. Use <a href="/techniques/css/">CSS</a> to add visual style.</dd>
+
+<dt>Watch the Use of CAPS</dt>
+<dd>All caps can be difficult to read and can be read incorrectly by screen readers.</dd>
+
+<dt>Use Adequate Font Size</dt>
+<dd>Font size can vary based on the font chosen, but 10 point is usually a minimum.</dd>
+
+<dt>Remember Line Length</dt>
+<dd>Don't make it too long or too short.</dd>
+
+<dt>Make Sure Links are Recognizable</dt>
+<dd>Differentiate <a href="/techniques/hypertext/">links</a> in the body of the page with underlines or something other than color alone.</dd>
+
+<dt>Design Link Focus Indicators</dt>
+<dd>Ensure keyboard users can visually identify a focused link. Use the standard dotted line or other non-color designators.</dd>
+
+<dt>Design a "Skip to Main Content" Link</dt>
+<dd>A link for keyboard users to <a href="/techniques/skipnav/">skip navigation</a> should be at the top of the page. It can be hidden, but should be visible when it receives keyboard focus.</dd>
+
+<dt>Ensure Link Text Makes Sense on Its Own</dt>
+<dd>Avoid "Click Here" in <a href="/techniques/hypertext/">link text</a>. Other ambiguous links, such as "More" or "Continue", can also be confusing.</dd>
+
+<dt>Use Animation, Video, and Audio Carefully</dt>
+<dd>If used, provide a play/pause button. Avoid flashing or strobing content: It can cause seizures.</dd>
+
+<dt>Don't Rely on Color Alone</dt>
+<dd>Because users often can't distinguish or may override page colors, color cannot be the only way information is conveyed.</dd>
+
+<dt>Design Accessible Form Controls</dt>
+<dd>Ensure <a href="/techniques/forms/">form controls</a> have descriptive labels and instructions. Pay close attention to form validation errors and recovery mechanisms.</dd></dl>
+<a href="http://webaim.org/resources/designers/"><img src="http://webaim.org/resources/designers/media/designers.png" alt="Web Accessibility for Designers infographic with link to text version at WebAIM.org" style="width: 40%; position: absolute; top: 0; right: 0;"></a>
+</section>
+</div>
+
+
+
+
+<div class="slide intro">
+<header><h1>Issues</h1></header>
+</div>
+
+
+
+<div class="slide object" style="background: url(assets/images/visalogin.png) no-repeat center 0;">
+<object data="https://secure.checkout.visa.com"></object>
+<a href="https://secure.checkout.visa.com" class="pagelink">Original Site</a>
+</div>
+
+<div class="slide object">
+<object data="http://www.webpagetest.org/result/160406_HP_14ZZ/1/details/"></object>
+</div>
+
+
+<div class="slide object" style="background: url(assets/images/visalogin2.png) no-repeat center 0;">
+<object data="site/"></object>
+<a href="site/" class="pagelink">My Version</a>
+</div>
+
+
+<div class="slide object">
+<object data="http://www.webpagetest.org/result/160418_TW_NN/5/details/"></object>
+</div>
+
+
+<div class="slide object">
+<object data="http://www.webpagetest.org/video/compare.php?tests=160417_WM_114N%2C160417_7M_114P&thumbSize=200&ival=500&end=visual"></object>
+</div>
+
+<div class="slide" style="background-image: url(assets/images/scaffolding.jpg); background-size: cover;" aria-label="Image of bay bridge's scaffolding">
+<span class="photocredit">Photo: <a href="https://www.flickr.com/photos/toasty/">Kenneth Lu</a></span>
+</div>
+
+<!--
+<div class="slide object" style="background: url(assets/images/visalogin.png) no-repeat center 0;">
+<object data="https://secure.checkout.visa.com"></object>
+<a href="https://secure.checkout.visa.com" class="pagelink">Original Site</a>
+</div>
+-->
+
+<div class="slide object" style="background: url(assets/images/visalogin2.png) no-repeat center 0;">
+<object data="site/"></object>
+<a href="site/" class="pagelink">My Version</a>
+</div>
+
+<div class="slide intro">
+<header><h1>Solutions</h1></header>
+</div>
+
+<div class="slide object">
+<object data="http://robinherbots.github.io/jquery.inputmask/"></object>
+<a href="http://robinherbots.github.io/jquery.inputmask/" class="pagelink">Github Repo</a>
+<img src="assets/images/inputmasksize.png"  class="bytes" alt="jquery at 37.7kb and input masking script is 29.6kb">
+</div>
+
+
+
+
+<div class="slide thinkoutsidebox intro">
+  <div class="box">
+    <p aria-label="think outside the box">think</p>
+  </div>  
+</div>
+
+
+<div class="slide object">
+<object data="http://estelle.github.io/input-masking/indexcss.html"></object>
+<a href="http://estelle.github.io/input-masking/indexcss.html" class="pagelink">Github Repo</a>
+<img src="assets/images/inputmasksize_a11y.png"  class="bytes" alt="script is only 2.0kb">
+</div>
+
+
+<div class="slide">
+<pre contenteditable>&lt;ul>
+  &lt;li>
+    &lt;label for="expiration">Credit Card Expiration Month&lt;/label>
+    &lt;input id="expiration" type="tel" placeholder="MM/YY" class="masked" 
+    pattern="(1[0-2]|0[1-9])\/\d\d" data-valid-example="11/18" 
+    title="2-digit month and 2-digit year greater than 01/15">
+  &lt;/li>
+
+&lt;li>
+  &lt;label for="zip">Zip Code&lt;/label>
+  &lt;input id="zip" type="tel" name="zipcode" class="masked" 
+  placeholder="XXXXX" pattern="\d{5}" title="5-digit zip code">
+&lt;/li>
+&lt;li>
+  &lt;label for="zipca">Canadian Zip Code&lt;/label>
+  &lt;input id="zipca" type="text" name="zipcodeca"  class="masked"
+  placeholder="XXX XXX" pattern="\w\d\w \d\w\d" data-charset="_X_ X_X" 
+  title="6-character alphanumeric zip code in the format of A1A 1A1">
+&lt;/li>
+&lt;li>
+  &lt;label for="tel">Telephone&lt;/label>
+  &lt;input id="tel" type="tel" name="phone"  class="masked"
+  placeholder="(XXX) XXX-XXXX" pattern="\(\d{3}\) \d{3}\-\d{4}" title="10-digit number">
+&lt;/li>
+&lt;li>
+  &lt;label for="cc">Credit Card Number&lt;/label>
+  &lt;input id="cc" type="tel" name="ccnumber"  class="masked"
+  placeholder="XXXX XXXX XXXX XXXX" pattern="\d{4} \d{4} \d{4} \d{4}" title="16-digit number">
+&lt;/li>
+&lt;/ul></pre>
+<a href="https://github.com/estelle/input-masking/" class="pagelink">Input Masking README.md</a>
+</div>
+
+
+<div class="slide object">
+<object data="mask.html" class="enlarge"></object>
+
+</div>
+<div class="slide object">
+<object data="maskshell.html" class="enlarge"></object>
+
+</div>
+
+
+
+<div class="slide object">
+<object data="http://estelle.github.io/carousel-carousel/"></object>
+<a href="http://estelle.github.io/carousel-carousel/" class="pagelink">Github Repo</a>
+
+</div>
+
+<div class="slide object">
+<object data="noreactvisacarousel.html"></object>
+<a href="" class="pagelink"></a>
+</div>
+
+<div class="slide object">
+<object data="carouselA.html"></object>
+<img src="assets/images/carousel-carousel.png"  class="bytes" alt="Carousel script is 1.1kb">
+</div>
+
+<div class="slide object">
+<object data="assets/carouselcss.html" class="enlarge"></object>
+<a href="http://github.com/estelle/carousel-carousel" class="pagelink">Github Repo</a>
+
+</div>
+
+<div class="slide object">
+<object data="https://www.w3.org/WAI/tutorials/carousels/"></object>
+<a href="https://www.w3.org/WAI/tutorials/carousels/" class="pagelink"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> Carousel Guidelines</a>
+</div>
+
+
+<div class="slide object">
+<object data="site/index_js.html"></object>
+<a href="site/index_js.html" class="pagelink">Example Page</a>
+</div>
+
+
+<div class="slide object">
+<object data="visaselect.html" class="enlarge"></object>
+<img src="assets/images/dropkick.png" class="bytes" alt="5.8kb for the dropkick js file with jquery dependencyof 38.6 kb minified">
+</div>
+
+
+<div class="slide tweet" aria-label="First rule of ARIA: If you can use a native HTML element or attribute with the semantics and behaviour you require already built in, instead of re-purposing an element and adding an ARIA role, state or property to make it accessible, then do so. Under what circumstances may this not be possible? If the feature is available in HTML [HTML51] but it is not implemented or it is implemented, but accessibility support is not. If the visual design constraints rule out the use of a particular native element, because the element cannot be styled as required. If the feature is not currently available in HTML.">
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">It&#39;s Monday 3rd of April 2016 and... <br>First rule of ARIA, is still:<a href="https://t.co/bsiN798ARq">https://t.co/bsiN798ARq</a> <a href="https://t.co/gXwDXAKGjU">pic.twitter.com/gXwDXAKGjU</a></p>&mdash; Steve Faulkner (@stevefaulkner) <a href="https://twitter.com/stevefaulkner/status/717013674016247808">April 4, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+
+<div class="slide object">
+<object data="estelleselect.html" class="enlarge"></object>
+<img src="assets/images/language_selector_time.png"  class="bytes" alt="Selector script is 917 bytes">
+</div>
+
+<div class="slide object">
+<object data="_languageselector.html" class="enlarge"></object>
+</div>
+
+
+
+<div class="slide thinkoutsidebox intro">
+  <div class="box">
+    <p aria-label="think outside the box">think</p>
+  </div>  
+</div>
+
+<div class="slide" style="background-image: url(assets/images/scaffolding.jpg); background-size: cover;" aria-label="Image of bay bridge's scaffolding">
+<span class="photocredit">Photo: <a href="https://www.flickr.com/photos/toasty/">Kenneth Lu</a></span>
+</div>
+
+<div class="slide object">
+<object data="http://w3c.github.io/aria-in-html/#rule1"></object>
+<a href="http://w3c.github.io/aria-in-html/#rule1" class="pagelink">WAI-ARIA</a>
+</div>
+
+
+
+  <div class="slide intro">
+    <section class="content">
+    <h1 style="font-size: 3rem; margin-top: 10%;">Thank You</h1>
+      <h2>Estelle Weyl</h2>
+      <p><a href="http://instartlogic.github.io/p/webdevcon">http://instartlogic.github.io/p/webdevcon</a></p>
+      <p>all talks at <a href="http://instartlogic.github.io/">instartlogic.github.io</a></p>
+    </section>
+</div>
+
+<div class="slide resources">
+  <header><h1>Resources</h1></header>
+  <section class="content">
+  <p style="margin-bottom:0;">Accessibility</p>
+    <ul>
+    <li><a href="http://webaim.org/resources/">Web AIM Resource List</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">MDN List of ARIA Resources</a></li>
+    </ul>
+  <p>Performance</p>
+    <ul>
+    <li><a href="http://www.webpagetest.org/">www.WebPageTest.org</a></li>
+    <li><a href="http://perf.rocks/">Perf.Rocks</a></li>
+    </ul>
+  <p>Github Repos</p>
+  <ul>
+    <li>Input Masking: <a href="https://github.com/estelle/input-masking">https://github.com/estelle/input-masking</a></li>
+    <li>Carousel-Carousel: <a href="https://github.com/estelle/carousel-carousel">https://github.com/estelle/carousel-carousel</a></li>
+    <li>Drop-down/Select: <a href="http://estelle.github.io">Check back soon</a></li>
+    </ul>
+  </section>
+</div>
+
+<div class="slide">
+<section class="content">
+<h1>Estelle Weyl</h1>
+<h2><a href="http://www.standardista.com">www.standardista.com</a><br>
+<a href="http://www.instartlogic.com/blog">www.instartlogic.com/blog</a></h2><h2><a href="http://www.twitter.com/webdevtips">@webdevtips</a><br><a href="http://www.twitter.com/estellevw">@estellevw</a><br><a href="http://www.twitter.com/standardista">@standardista</a></h2>
+<div class="floatright">
+  <img src="http://akamaicovers.oreilly.com/images/9780987467485/cat.gif" alt="HTML5 and CSS3 for the Real World">
+  <img src="http://akamaicovers.oreilly.com/images/0636920041658/rc_cat.gif" alt="Animations and Transitions with CSS"/>
+  <img src="http://akamaicovers.oreilly.com/images/0636920021711/cat.gif" alt="MObile HTML5" />
+  <img src="http://akamaicovers.oreilly.com/images/0636920025955/cat.gif" alt="Web Performance Daybook"/></div>
+</section>
+</div>
+
+   </div>
+</div>
+<script src="slides.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30010510-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
