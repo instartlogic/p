@@ -4,13 +4,13 @@
     <!--[if gte IE 9]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]--> 
     <!--[if lt IE 9]><meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" /><![endif]--> 
 <meta charset="utf-8" />
-    <title>Simply Accessible Web Performance</title>
+    <title>Simply Accessible</title>
 <!--
 Made by: Put Your Name Here
 Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
 Based on: http://estelle.github.com/slides 
 -->    
-<link rel="stylesheet" href="../a11yperf/assets/css/index.css">
+<link rel="stylesheet" href="../a11yperf/assets/css/budapest.css">
  <base target="play"/>
 </head>
 
@@ -21,9 +21,9 @@ Based on: http://estelle.github.com/slides
    
   <div class="slide intro">
     <section class="content">
-    <h1 style="font-size: 3rem; margin-top: 10%;">Simply Accessible Web Performance</h1>
+    <h1 style="font-size: 3rem; margin-top: 10%;">Simply Accessible</h1>
       <h2>Estelle Weyl</h2>
-      <p><a href="http://instartlogic.github.io/p/webdevcon">http://instartlogic.github.io/p/webdevcon</a></p>
+      <p><a href="http://instartlogic.github.io/p/webdevcon">http://instartlogic.github.io/p/cssbudapest</a></p>
       
     </section>
 </div>
@@ -43,11 +43,12 @@ Based on: http://estelle.github.com/slides
  
 
 
-<div class="slide intro switchletters">
-<header><h1 aria-label="Accessibility and Performance Made Simple with Web Standards"><span class=a>Simpl<i>y</i></span>
-  <span class=b>Accessib<i>le</i></span>
-<span class=c>Web</span>
-  <span class=d>Performance</span></h1></header>
+<div class="slide intro">
+<header><h1 aria-label="Accessibility and Performance with Web Standards" onmouseover="this.innerHTML
+ = 'Accessibility and Performance with Web Standards';"
+ onmouseout="this.innerHTML
+ = 'Simply Accessible';"
+ >Simply Accessible</h1></header>
 
   <table cellpadding="0" cellspacing="0" align="center">
   	<tr>
@@ -417,20 +418,20 @@ Remove render-blocking JavaScript</dt>
 <div class="slide">
 <header><h1>WCAG 1.0 (1998)</h1></header>
 <section>
-<ol><li>Provide equivalent alternatives to auditory and visual content
-</li><li>Don’t rely on colour alone
-</li><li>Use markup and style sheets, and do so properly
-</li><li>Clarify natural language usage
+<ol class="pop"><li>Provide equivalent <i>alt</i>ernatives to auditory and visual content
+</li><li>Don’t rely on <i>colour</i> alone
+</li><li>Use markup (<i>HTML</i>) and style sheets (<i>CSS</i>), and do so properly
+</li><li>Clarify natural <i>lang</i>uage usage
 </li><li>Create tables that transform gracefully
 </li><li>Ensure that pages featuring new technologies transform gracefully
-</li><li>Ensure user control of time sensitive content changes
+</li><li>Ensure user control of <i>time</i> sensitive content changes
 </li><li>Ensure direct accessibility of embedded user interfaces
-</li><li>Design for device independence
+</li><li>Design for <i>device independence</i>
 </li><li>User interim solutions
 </li><li>Use W3C technologies and guidelines
 </li><li>Provide context and orientation information
-</li><li>Provide clear navigation mechanisms
-</li><li>Ensure that documents are clear and simple
+</li><li>Provide clear <i>nav</i>igation mechanisms
+</li><li>Ensure that documents are <i>clear</i> and <i>simple</i>
 </li></ol>
 </section>
 </div>
@@ -487,48 +488,54 @@ Content interprable by UAs, including AT.</p>
 <header><h1>Accessible Design Rules</h1></header>
 
 <section>
-<dl class="hidden_dd" style="margin-right: 38vw;"><dt>Plan Heading Structure Early</dt>
-<dd>Ensure all content and design fits into a <a href="../a11yperf/techniques/semanticstructure/">logical heading structure</a>.</dd>
+<ol class="pop"><li><b>Plan <i>Heading Structure</i> Early</b>
+<br/>Ensure all content and design fits into a <a href="../a11yperf/techniques/semanticstructure/">logical heading structure</a>.</li>
 
-<dt>Consider Reading Order</dt>
-<dd>The <a href="/techniques/screenreader/">reading order</a> should be the same as the visual order.</dd>
+<li><b>Consider <i>Reading Order</i></b>
+<br/>The <a href="/techniques/screenreader/">reading order</a> should be the same as the visual order.</li>
 
-<dt>Provide Good Contrast</dt>
-<dd>Be especially careful with light shades of gray, orange, and yellow. Check your contrast levels with our <a href="../a11yperf/resources/contrastchecker/">color contrast checker</a>.</dd>
+<li><b>Provide Good <i>Contrast</i></b>
+<br/>Be especially careful with light shades of gray, orange, and yellow. Check your contrast levels with our color contrast checker.</li>
 
-<dt>Use True Text Whenever Possible</dt>
-<dd><a href="../a11yperf/techniques/images/text_graphic">True text</a> enlarges better, loads faster, and is easier to translate. Use <a href="../a11yperf/techniques/css/">CSS</a> to add visual style.</dd>
+<li><b>Use True <i>Text</i> Whenever Possible</b>
+<br/>True text enlarges better, loads faster, and is easier to translate. Use CSS to add visual style.</li>
 
-<dt>Watch the Use of CAPS</dt>
-<dd>All caps can be difficult to read and can be read incorrectly by screen readers.</dd>
+<li><b>Watch the Use of CAPS</b>
+<br/>All caps can be difficult to read and can be read incorrectly by screen readers.</li>
 
-<dt>Use Adequate Font Size</dt>
-<dd>Font size can vary based on the font chosen, but 10 point is usually a minimum.</dd>
+<li><b>Use Adequate <i>Font Size</i></b>
+<br/>Font size can vary based on the font chosen, but 10 point is usually a minimum.</li>
 
-<dt>Remember Line Length</dt>
-<dd>Don't make it too long or too short.</dd>
+<li><b>Remember <i>Line Length</i></b>
+<br/>Don't make it too long or too short.</li>
+</section>
+</div>
 
-<dt>Make Sure Links are Recognizable</dt>
-<dd>Differentiate <a href="../a11yperf/techniques/hypertext/">links</a> in the body of the page with underlines or something other than color alone.</dd>
+<div class="slide">
+<header><h1>Accessible Design Rules (2)</h1></header>
 
-<dt>Design Link Focus Indicators</dt>
-<dd>Ensure keyboard users can visually identify a focused link. Use the standard dotted line or other non-color designators.</dd>
+<section>
+<ol  start="8" class="pop"><li><b>Make Sure <i>Links</i> are Recognizable</b>
+<br/>Differentiate links in the body of the page with underlines or something other than color alone.</li>
 
-<dt>Design a "Skip to Main Content" Link</dt>
-<dd>A link for keyboard users to <a href="../a11yperf/techniques/skipnav/">skip navigation</a> should be at the top of the page. It can be hidden, but should be visible when it receives keyboard focus.</dd>
+<li><b>Design Link <i>Focus</i> Indicators</b>
+<br/>Ensure keyboard users can visually identify a focused link. Use the standard dotted line or other non-color designators.</li>
 
-<dt>Ensure Link Text Makes Sense on Its Own</dt>
-<dd>Avoid "Click Here" in <a href="../a11yperf/techniques/hypertext/">link text</a>. Other ambiguous links, such as "More" or "Continue", can also be confusing.</dd>
+<li><b>Design a "<i>Skip</i> to Main Content" Link</b>
+<br/>A link for keyboard users to skip navigation should be at the top of the page. It can be hidden, but should be visible when it receives keyboard focus.</li>
 
-<dt>Use Animation, Video, and Audio Carefully</dt>
-<dd>If used, provide a play/pause button. Avoid flashing or strobing content: It can cause seizures.</dd>
+<li><b>Ensure <i>Link Text</i> Makes Sense on Its Own</b>
+<br/>Avoid "Click Here" in link text. Other ambiguous links, such as "More" or "Continue", can also be confusing.</li>
 
-<dt>Don't Rely on Color Alone</dt>
-<dd>Because users often can't distinguish or may override page colors, color cannot be the only way information is conveyed.</dd>
+<li><i>Motion and sound</i>: <b>Use Animation, Video, and Audio Carefully</b>
+<br/>If used, provide a play/pause button. Avoid flashing or strobing content: It can cause seizures.</li>
 
-<dt>Design Accessible Form Controls</dt>
-<dd>Ensure <a href="../a11yperf/techniques/forms/">form controls</a> have descriptive labels and instructions. Pay close attention to form validation errors and recovery mechanisms.</dd></dl>
-<a href="http://webaim.org/resources/designers/"><img src="http://webaim.org/resources/designers/media/designers.png" alt="Web Accessibility for Designers infographic with link to text version at WebAIM.org" style="width: 40%; position: absolute; top: 0; right: 0;"></a>
+<li><b>Don't Rely on <i>Color</i> Alone</b>
+<br/>Because users often can't distinguish or may override page colors, color cannot be the only way information is conveyed.</li>
+
+<li><b>Design Accessible <i>Form Controls</i></b>
+<br/>Ensure form controls have descriptive labels and instructions. Pay close attention to form validation errors and recovery mechanisms.</li></ul>
+<a href="http://webaim.org/resources/designers/" class="pagelink">Get Poster</a>
 </section>
 </div>
 
@@ -541,7 +548,7 @@ Content interprable by UAs, including AT.</p>
 
 
 
-<div class="slide object" style="background: url(assets/images/visalogin.png) no-repeat center 0;">
+<div class="slide object" style="background: url(../a11yperf/assets/images/visalogin.png) no-repeat center 0;">
 <object data="https://secure.checkout.visa.com"></object>
 <a href="https://secure.checkout.visa.com" class="pagelink">Original Site</a>
 </div>
@@ -551,7 +558,7 @@ Content interprable by UAs, including AT.</p>
 </div>
 
 
-<div class="slide object" style="background: url(assets/images/visalogin2.png) no-repeat center 0;">
+<div class="slide object" style="background: url(../a11yperf/assets/images/visalogin2.png) no-repeat center 0;">
 <object data="../a11yperf/site/"></object>
 <a href="../a11yperf/site/" class="pagelink">My Version</a>
 </div>
@@ -571,7 +578,7 @@ Content interprable by UAs, including AT.</p>
 </div>
 
 
-<div class="slide object" style="background: url(assets/images/visalogin2.png) no-repeat center 0;">
+<div class="slide object" style="background: url(../a11yperf/assets/images/visalogin2.png) no-repeat center 0;">
 <object data="../a11yperf/site/"></object>
 <a href="../a11yperf/site/" class="pagelink">My Version</a>
 </div>
@@ -602,9 +609,21 @@ Content interprable by UAs, including AT.</p>
 <img src="../a11yperf/assets/images/inputmasksize_a11y.png"  class="bytes" alt="script is only 2.0kb">
 </div>
 
+<!--
+<div class="slide object">
+<object data="http://www.wufoo.com/html5/example/"></object>
+<a href="http://www.wufoo.com/html5/example/" class="pagelink">Browser Test</a>
+</div>-->
+
+
+<div class="slide object">
+<object data="https://miketaylr.com/code/input-type-attr.html"></object>
+<a href="https://miketaylr.com/code/input-type-attr.html" class="pagelink">Browser Test</a>
+</div>
+
 
 <div class="slide">
-<pre contenteditable>&lt;ul>
+<pre contenteditable class="allcode">&lt;ul>
   &lt;li>
     &lt;label for="expiration">Credit Card Expiration Month&lt;/label>
     &lt;input id="expiration" type="tel" placeholder="MM/YY" class="masked" 
@@ -614,8 +633,8 @@ Content interprable by UAs, including AT.</p>
 
 &lt;li>
   &lt;label for="zip">Zip Code&lt;/label>
-  &lt;input id="zip" type="tel" name="zipcode" class="masked" 
-  placeholder="XXXXX" pattern="\d{5}" title="5-digit zip code">
+  <b>&lt;input id="zip" type="tel" name="zipcode" class="masked" 
+  placeholder="XXXXX" pattern="\d{5}" title="5-digit zip code"></b>
 &lt;/li>
 &lt;li>
   &lt;label for="zipca">Canadian Zip Code&lt;/label>
@@ -638,14 +657,115 @@ Content interprable by UAs, including AT.</p>
 </div>
 
 
+
+<div class="slide">
+<pre contenteditable class="allcode">
+&lt;li>
+  &lt;label for="zip">Zip Code&lt;/label>
+  <b>&lt;span class="shell">
+    &lt;span aria-hidden="true" id="zipMask">&lt;i>&lt;/i>XXXXX&lt;/span>
+    &lt;input id="zip" type="tel" name="zipcode" pattern="\d{5}" 
+    class="masked" title="5-digit zip code" maxlength="5" data-placeholder="XXXXX">
+  &lt;/span></b>
+&lt;/li>
+
+
+&lt;li>
+  &lt;label for="zip">Zip Code&lt;/label>
+  <b>&lt;span class="shell">
+    &lt;span aria-hidden="true" id="zipMask">&lt;i>123&lt;/i>XX&lt;/span>
+    &lt;input id="zip" type="tel" name="zipcode" pattern="\d{5}" 
+    class="masked" title="5-digit zip code" maxlength="5" data-placeholder="XXXXX">
+  &lt;/span></b>
+&lt;/li>
+</pre></div>
+
+
+
 <div class="slide object">
-<object data="../a11yperf/mask.html" class="enlarge"></object>
+<pre contenteditable class="allcode">// replaces each masked input with a shall containing the input and it's mask.
+  <b>createShell</b> : function (input) {
+<b>    var wrap = document.createElement('span'),
+        mask = document.createElement('span'),
+        emphasis = document.createElement('i'),</b>
+        inputClass = input.getAttribute('class'),
+        placeholderText = input.getAttribute('placeholder'),
+        placeholder = document.createTextNode(placeholderText);
+
+    input.setAttribute('maxlength', placeholder.length);
+    input.setAttribute('data-placeholder', placeholderText);
+    input.removeAttribute('placeholder');
+
+
+    if ( !inputClass || ( inputClass && inputClass.indexOf('masked') === -1 ) ) {
+      input.setAttribute( 'class', inputClass + ' masked');
+    }
+
+    <b>mask.setAttribute('aria-hidden', 'true');</b>
+    mask.setAttribute('id', input.getAttribute('id') + 'Mask');
+    mask.appendChild(emphasis);
+    mask.appendChild(placeholder);
+
+    wrap.setAttribute('class', 'shell');
+    wrap.appendChild(mask);
+    input.parentNode.insertBefore( wrap, input );
+    wrap.appendChild(input);
+  },</pre>
 
 </div>
-<div class="slide object">
-<object data="../a11yperf/maskshell.html" class="enlarge"></object>
 
+
+<div class="slide">
+  <header><h1>ARIA Accessibilty</h1></header>
+    <section class="content">
+      <ul>
+        <li>aria-labeledby="otherElement idValues"</li>
+        <li>aria-label="Read by Screen Reader"</li>
+        <li>&lt;label for="idOfFormControl"> (or implicit label)</li>
+        <li>placeholder</li>
+        <li>title</li>
+        <li>not accessible</li>
+      </ul>
+      <pre contenteditable style="font-size: 1.4rem">&lt;label for="telephone"&gt;Telephone Number&lt;/label&gt;
+  &lt;input type="tel" id="telephone" placeholder="(XXX) XXX-XXXX"
+  aria-describedby="hint"&gt;
+  &lt;span class="hint" id="hint"&gt;10-digit phone number&lt;/span&gt;</pre>
+  <label for="telephonex">Telephone Number</label>
+  <input type="tel" id="telephonex" placeholder="(XXX) XXX-XXXX" aria-describedby="hint3"><span class="hint" id="hint3">10-digit phone number</span>
+    </section>
 </div>
+
+
+
+
+<div class="slide">
+<pre contenteditable class="allcode">.shell {
+  position: relative;
+  line-height: 1; }
+  <b>.shell span</b> {
+    position: absolute;
+    left: 3px;
+    top: 1px;
+    color: #ccc;
+    pointer-events: none;
+    z-index: -1; }
+    <b>.shell span i </b>{
+      /* any of these 3 will work */
+<b>      color: transparent;
+      opacity: 0;
+      visibility: hidden; </b>
+      }
+
+.shell span, 
+input.masked {
+  font-size: 16px;
+  font-family: monospace;
+  padding-right: 10px;
+ <b> background-color: transparent;</b>
+  text-transform: uppercase; 
+  }</pre></div>
+
+
 
 
 

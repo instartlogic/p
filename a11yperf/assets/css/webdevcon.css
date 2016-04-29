@@ -237,35 +237,6 @@ small {
   opacity: 0.5;
   text-align: left; }
 
-pre {
-  text-align: left;
-  font-size: 0.8rem;
-  padding: 10px 20px;
-  border-radius: 8px;
-  border: 1px solid white;
-  background: linear-gradient(to top, #eaf3fb 50%, #FFF 50%);
-  background-size: 100% 2.7rem;
-  background-position: 0 1.8rem;
-  background-clip: padding-box;
-  background-attachment: local; }
-  pre b, pre em {
-    font-weight: normal;
-    font-style: normal;
-    color: #226DAA;
-    font-weight: bold;
-    transition: 200ms; }
-    pre b:hover, pre em:hover {
-      display: inline-block;
-      transform: scale(1.5);
-      background-color: rgba(255, 255, 255, 0.8);
-      transform-origin: left center; }
-  pre.allcode {
-    height: 90vh;
-    overflow: scroll;
-    font-size: 1.4rem;
-    box-sizing: border-box;
-    width: 99vw; }
-
 /* OBJECT PAGES */
 .object header {
   position: absolute;
@@ -616,4 +587,4 @@ li {
   #presentation-counter, #info, #topinfo, .counter {
     display: none; } }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=webdevcon.css.map */

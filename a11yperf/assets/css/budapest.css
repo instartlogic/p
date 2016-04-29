@@ -322,48 +322,6 @@ a.pagelink {
     display: inline-block;
     padding-left: 5px; }
 
-.switchletters h1 {
-  display: flex;
-  text-align: center;
-  color: #226DAA;
-  justify-content: center;
-  padding: 40px 0;
-  letter-spacing: 0.25px;
-  flex-flow: row wrap; }
-.switchletters i {
-  position: absolute;
-  color: rgba(0, 0, 0, 0.01);
-  text-shadow: none; }
-.switchletters span {
-  padding: 0 5px;
-  white-space: nowrap; }
-.switchletters h1 span {
-  order: 0; }
-.switchletters .a:after {
-  content: 'y'; }
-.switchletters h1:hover .a:after {
-  content: "e"; }
-.switchletters h1:hover .a:before {
-  content: "made "; }
-.switchletters h1:hover .c:before {
-  content: "with "; }
-.switchletters h1:hover .c:after {
-  content: " Standards "; }
-.switchletters h1:hover .a {
-  order: 4; }
-.switchletters h1:hover .b {
-  order: 1; }
-.switchletters .b:after {
-  content: 'le'; }
-.switchletters h1:hover .b:before {
-  content: "  "; }
-.switchletters h1:hover .b:after {
-  content: "ility and "; }
-.switchletters h1:hover .c {
-  order: 6; }
-.switchletters h1:hover .d {
-  order: 2; }
-
 .tweet iframe {
   margin: 100px auto 0 !important;
   font-size: 1.2rem;
@@ -514,6 +472,14 @@ a.pagelink {
 .halfwidth dd {
   width: 50%; }
 
+.pop {
+  line-height: 1.75em; }
+  .pop i {
+    color: #226DAA;
+    font-weight: bold;
+    font-size: 1.75em;
+    font-style: normal; }
+
 body {
   counter-reset: wcag; }
 
@@ -616,4 +582,4 @@ li {
   #presentation-counter, #info, #topinfo, .counter {
     display: none; } }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=budapest.css.map */

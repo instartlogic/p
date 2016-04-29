@@ -39,26 +39,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
-pre {
-  text-align: left;
-  font-size: 0.8rem;
-  padding: 10px 20px;
-  background: $darken;
-  border-radius: 8px;
-  border: 1px solid white;
-}
-pre b {
-  font-weight: normal;
-  color: $ilblue;
-  text-shadow: $ilblue 0 0 1px;
-/*letter-spacing: -1px;*/}
-pre em {
-  font-weight: normal;
-  font-style: normal;
-  color: $ilblue;
-  text-shadow: $ilblue 0 0 1px;
-}
-
 .content {
   font-size: 2rem;
 }
