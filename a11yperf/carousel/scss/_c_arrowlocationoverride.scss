@@ -11,6 +11,9 @@
     background: rgba(255,255,255,0.3);
     transform: rotate(-45deg);
   }
+  &:focus:before {
+    outline: 3px solid black;
+  }
 }
 
 .forward {

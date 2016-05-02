@@ -19,6 +19,7 @@ var carouselCarousel = {
       }
       for(i = 0; i < l; i++) {
         radios[i].addEventListener('change', function (e) {
+          console.log('change')
           carouselCarousel.carouselChange(e.target.name, e.target.dataset.value);
         })
       }
@@ -27,8 +28,11 @@ var carouselCarousel = {
 
   // Activate arrows if there is more than one item and arrows are included
   activateForwardAndBack: function () {
-    var arrowButtons = document.querySelectorAll('#' + carouselCarousel.carouselID +' [data-move]');
+    console.log(arguments.length);
+    var arrowButtons = document.querySelectorAll('#' + carouselCarousel.carouselID +' [data-move]'),
+        l = arrowButtons.length;
     for (var i = 0; i < l; i++) {
+      console.log(i + ' ' + l);
       arrowButtons[i].removeAttribute('hidden');
       arrowButtons[i].setAttribute('tabindex', '0');
       arrowButtons[i].addEventListener('click', function(e) {

@@ -141,7 +141,6 @@ fieldset.carousel {
 /*/ ARROWS /*/
 .forward,
 .backward {
-  content: '';
   background: none;
   border: none;
   color: red;
@@ -181,6 +180,9 @@ fieldset.carousel {
     right: -1em;
     background: rgba(255, 255, 255, 0.3);
     transform: rotate(-45deg); }
+  .forward:focus:before,
+  .backward:focus:before {
+    outline: 3px solid black; }
 
 .forward {
   transform: translatex(-3em) rotate(45deg); }
@@ -188,7 +190,7 @@ fieldset.carousel {
 .forward:after {
   border-style: none solid solid none; }
 
-.carousel-content label {
+.carousel-labels label {
   display: block;
   height: 100%;
   width: 100%; }
