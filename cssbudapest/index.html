@@ -659,7 +659,7 @@ Content interprable by UAs, including AT.</p>
 
 
 <div class="slide">
-<pre contenteditable class="allcode">
+<pre contenteditable>
 &lt;li>
   &lt;label for="zip">Zip Code&lt;/label>
   <b>&lt;span class="shell">
@@ -667,16 +667,17 @@ Content interprable by UAs, including AT.</p>
     &lt;input id="zip" type="tel" name="zipcode" pattern="\d{5}" 
     class="masked" title="5-digit zip code" maxlength="5" data-placeholder="XXXXX">
   &lt;/span></b>
-&lt;/li>
+&lt;/li></pre>
 
+<p>on data entry...</p>
 
-&lt;li>
+<pre contenteditable>&lt;li>
   &lt;label for="zip">Zip Code&lt;/label>
-  <b>&lt;span class="shell">
-    &lt;span aria-hidden="true" id="zipMask">&lt;i>123&lt;/i>XX&lt;/span>
+  &lt;span class="shell">
+    <b>&lt;span aria-hidden="true" id="zipMask">&lt;i>123&lt;/i>XX&lt;/span></b>
     &lt;input id="zip" type="tel" name="zipcode" pattern="\d{5}" 
     class="masked" title="5-digit zip code" maxlength="5" data-placeholder="XXXXX">
-  &lt;/span></b>
+  &lt;/span>
 &lt;/li>
 </pre></div>
 
@@ -716,29 +717,6 @@ Content interprable by UAs, including AT.</p>
 
 
 <div class="slide">
-  <header><h1>ARIA Accessibilty</h1></header>
-    <section class="content">
-      <ul>
-        <li>aria-labeledby="otherElement idValues"</li>
-        <li>aria-label="Read by Screen Reader"</li>
-        <li>&lt;label for="idOfFormControl"> (or implicit label)</li>
-        <li>placeholder</li>
-        <li>title</li>
-        <li>not accessible</li>
-      </ul>
-      <pre contenteditable style="font-size: 1.4rem">&lt;label for="telephone"&gt;Telephone Number&lt;/label&gt;
-  &lt;input type="tel" id="telephone" placeholder="(XXX) XXX-XXXX"
-  aria-describedby="hint"&gt;
-  &lt;span class="hint" id="hint"&gt;10-digit phone number&lt;/span&gt;</pre>
-  <label for="telephonex">Telephone Number</label>
-  <input type="tel" id="telephonex" placeholder="(XXX) XXX-XXXX" aria-describedby="hint3"><span class="hint" id="hint3">10-digit phone number</span>
-    </section>
-</div>
-
-
-
-
-<div class="slide">
 <pre contenteditable class="allcode">.shell {
   position: relative;
   line-height: 1; }
@@ -766,6 +744,40 @@ input.masked {
   }</pre></div>
 
 
+
+<div class="slide">
+  <header><h1>ARIA Accessibilty</h1></header>
+    <section class="content">
+      <ul>
+        <li>aria-labeledby="otherElement idValues"</li>
+        <li>aria-label="Read by Screen Reader"</li>
+        <li>&lt;label for="idOfFormControl"> (or implicit label)</li>
+        <li>placeholder</li>
+        <li>title</li>
+        <li>not accessible</li>
+      </ul>
+      <pre contenteditable style="font-size: 1.4rem">&lt;label for="telephone"&gt;Telephone Number&lt;/label&gt;
+  &lt;input type="tel" id="telephone" placeholder="(XXX) XXX-XXXX"
+  aria-describedby="hint"&gt;
+  &lt;span class="hint" id="hint"&gt;10-digit phone number&lt;/span&gt;</pre>
+  <label for="telephonex">Telephone Number</label>
+  <input type="tel" id="telephonex" placeholder="(XXX) XXX-XXXX" aria-describedby="hint3"><span class="hint" id="hint3">10-digit phone number</span>
+    </section>
+</div>
+
+
+<div class="slide object">
+<object data="../a11yperf/inputmask.html"></object>
+<a href="../a11yperf/inputmask.html" class="pagelink">Open</a>
+<img src="../a11yperf/assets/images/inputmasksize_a11y.png"  class="bytes" alt="script is only 2.0kb">
+</div>
+
+
+
+<div class="slide intro">
+<header><h1 style="font-size: 110%">In Production</h1>
+<p style="font-size: 90%"><a href="https://secure.checkout.visa.com/addressaddnew">https://secure.checkout.visa.com/addressaddnew</a></p></header>
+</div>
 
 
 

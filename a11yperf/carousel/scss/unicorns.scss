@@ -1,13 +1,15 @@
 @charset "utf-8";
 
-$theme: blue;
-$carousel_width: 20em;
-$arrowwidth: 1px;
+$theme: red;
+$carousel_width: 40em;
+$arrowwidth: 5px;
 
+@import "c_base";
 @import "c_fieldset";
 @import "c_labels";
 @import "c_radios";
 @import "c_arrows";
+@import "c_arrowlocationoverride";
 @import "c_carousel";
 
 @import "example";

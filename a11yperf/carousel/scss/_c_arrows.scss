@@ -1,21 +1,26 @@
 /*/ ARROWS /*/
 .forward, 
 .backward {
-  content: '';
   background: none;
   border: none;
-  color: blue;
+  color: $theme;
   width: 20px;
   height: 20px;
   border: 2px solid;
   border-style: none none solid solid;
   transform: rotate(45deg);
   cursor: pointer; 
+  box-sizing: border-box;
 }
 
 .forward:hover, 
-.backward:hover {
-  color: red;
+.backward:hover,
+.forward:focus, 
+.backward:focus {
+  color: darken($theme, 20%);
+  outline: none;
+  box-shadow: none;
+  border-width: 4px;
 }
 
 .forward {

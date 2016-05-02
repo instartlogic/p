@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+  <title>Carousel Carousel Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/unicorns.css">
+  <style>
+  .carousel-labels {
+    width: 800px; height: 350px;
+  }
+  .carousel-labels li {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+  label p {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 3px 5px;
+    background-color: rgba(255,255,255,0.65);
+  }
+  </style>
+</head>
+
+<body>
+<p></p>
+          <form action='https://www.flickr.com/photos/'>
+          <fieldset class="carousel" id="myCarousel">
+          <legend>Select a Carousel from the carousel:</legend>
+          <div>
+            <a class="backward" data-move="backward" data-carousel="carouselcarousel-unicorns" hidden aria-hidden="true"></a>
+            <ul class="carousel-labels left0">
+              <li style="background-image: url(horses/horse1.jpg);">
+                <label for="unicorn1"><p>Carousel photo by  Ian Clark</p>
+                </label>
+              </li>
+              <li style="background-image: url(horses/horse2.jpg);">
+                <label for="unicorn2"><p>Carousel photo by  Poppy</p>
+                </label>
+              </li>
+              <li style="background-image: url(horses/horse3.jpg);">
+                <label for="unicorn3"><p>Carousel photo by  Lebatihem</p>
+                </label>
+              </li>
+              <li style="background-image: url(horses/horse4.jpg);">
+                <label for="unicorn4"><p>Carousel photo by  Jenny Huey</p>
+                </label>
+              </li>
+              <li style="background-image: url(horses/horse5.jpg);">
+                <label for="unicorn5"><p>Carousel photo by  Andrea Kirkby</p>
+                </label>
+              </li>
+            </ul>
+            <a class="forward" data-move="forward" data-carousel="carouselcarousel-unicorns" hidden aria-hidden="true"></a>
+            </div>
+            <ul id="unicornradios" class="carousel-radios">
+              <li>
+                <input type="radio" name="carouselcarousel-unicorns" data-value="0" value="mrshoes/7260311450" id="unicorn1" checked><span></span>
+              </li>
+              <li>
+                <input type="radio" name="carouselcarousel-unicorns" value="hddod/128789866" data-value="1" id="unicorn2"><span></span>
+              </li>
+              <li>
+                <input type="radio" name="carouselcarousel-unicorns" value="lebatihem/15542975284" data-value="2" id="unicorn3"><span></span>
+              </li>
+              <li>
+                <input type="radio" name="carouselcarousel-unicorns" value="jensview/9061358498" data-value="3" id="unicorn4"><span></span>
+              </li>
+              <li>
+                <input type="radio" name="carouselcarousel-unicorns" value="andreakirkby/5733510802" data-value="4" id="unicorn5"><span></span>
+              </li>
+          
+            </ul>
+            </fieldset>
+           <input type="submit" value="See it on Flickr">
+            </form>
+<script src="carousel-carousel.js"></script>
+<script>
+// This is specific for this carousel example.
+var radios = document.querySelectorAll('input[type=radio]'),
+    i = 0,
+    l = radios.length;
+
+for(i = 0; i < l; i++) {
+  radios[i].addEventListener('change', function (e) {
+    changAction(e.target.name, e.target.value);
+  })
+}
+
+function changAction (name, value) {
+  var url = 'https://www.flickr.com/photos/' + value; 
+  var form = document.querySelector('form').setAttribute('action', url);
+  console.log(url)
+}
+</script>
+
+</body>
+</html>

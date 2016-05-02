@@ -1,6 +1,4 @@
-@import "c_variables";
-
-.carousel-content li {
+.carousel-labels li {
   box-sizing: border-box;
   line-height: 1.6;
   display: flex;
@@ -9,7 +7,7 @@
   border-radius: 5px;
   background: #ffffff;
 }
-.carousel-content li p {
+.carousel-labels li p {
   font-size: 1rem;
   margin: 0; 
   text-align: center;
@@ -32,13 +30,13 @@
       ul {
         display: flex;
         align-items: stretch; 
-        width: 20em;
+        width: $carousel_width;
         overflow: hidden;
       }
       li {
         border: 1px solid green;
         justify-content: center;
-        flex: 0 0 20em;
+        flex: 0 0 $carousel_width;
         transition: left 200ms;
         position: relative;
         left: 0; 

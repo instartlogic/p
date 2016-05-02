@@ -23,7 +23,7 @@ var carousel = {
       }
       for(i = 0; i < l; i++) {
         radios[i].addEventListener('change', function (e) {
-          carousel.change(e.target.name, e.target.value);
+          carousel.change(e.target.name, e.target.dataset.value);
         })
       }
     }
@@ -49,9 +49,9 @@ var carousel = {
   },
 
   change : function (name, value) {
-    name = 'carousel-content';
+    name = 'carousel-labels';
     var ul = document.querySelector('.' + name);
     ul.setAttribute('class', name + ' left' + value);
   }
 }
-window.onload = carousel.init('#address');
+window.onload = carousel.init('#myCarousel');

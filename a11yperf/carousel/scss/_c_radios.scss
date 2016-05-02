@@ -28,13 +28,13 @@
   display: block;
   width: 10px;
   height: 10px;
-  border: 1.5px solid blue;
+  border: 1.5px solid $theme;
   border-radius: 50%;
   z-index: 1; 
 }
 .carousel-radios li :checked + span {
-  background-color: blue; 
+  background-color: darken($theme, 20%); 
 }
 .carousel-radios li :focus + span {
-   outline: 1px solid rgba(0,0,0,0.2);
+   outline: 1px dashed darken($theme, 20%);
 }

@@ -48,55 +48,55 @@ fieldset.carousel {
     .carousel div ul {
       display: flex;
       align-items: stretch;
-      width: 20em;
+      width: 40em;
       overflow: hidden; }
     .carousel div li {
       border: 1px solid green;
       justify-content: center;
-      flex: 0 0 20em;
+      flex: 0 0 40em;
       transition: left 200ms;
       position: relative;
       left: 0; }
     .carousel div .left0 li {
       left: 0em; }
     .carousel div .left1 li {
-      left: -20em; }
-    .carousel div .left2 li {
       left: -40em; }
-    .carousel div .left3 li {
-      left: -60em; }
-    .carousel div .left4 li {
+    .carousel div .left2 li {
       left: -80em; }
-    .carousel div .left5 li {
-      left: -100em; }
-    .carousel div .left6 li {
+    .carousel div .left3 li {
       left: -120em; }
-    .carousel div .left7 li {
-      left: -140em; }
-    .carousel div .left8 li {
+    .carousel div .left4 li {
       left: -160em; }
-    .carousel div .left9 li {
-      left: -180em; }
-    .carousel div .left10 li {
+    .carousel div .left5 li {
       left: -200em; }
-    .carousel div .left11 li {
-      left: -220em; }
-    .carousel div .left12 li {
+    .carousel div .left6 li {
       left: -240em; }
-    .carousel div .left13 li {
-      left: -260em; }
-    .carousel div .left14 li {
+    .carousel div .left7 li {
       left: -280em; }
-    .carousel div .left15 li {
-      left: -300em; }
-    .carousel div .left16 li {
+    .carousel div .left8 li {
       left: -320em; }
-    .carousel div .left17 li {
-      left: -340em; }
-    .carousel div .left18 li {
+    .carousel div .left9 li {
       left: -360em; }
+    .carousel div .left10 li {
+      left: -400em; }
+    .carousel div .left11 li {
+      left: -440em; }
+    .carousel div .left12 li {
+      left: -480em; }
+    .carousel div .left13 li {
+      left: -520em; }
+    .carousel div .left14 li {
+      left: -560em; }
+    .carousel div .left15 li {
+      left: -600em; }
+    .carousel div .left16 li {
+      left: -640em; }
+    .carousel div .left17 li {
+      left: -680em; }
+    .carousel div .left18 li {
+      left: -720em; }
     .carousel div .left19 li {
-      left: -380em; }
+      left: -760em; }
 
 /*/ RADIO BUTTONS /*/
 .carousel-radios {
@@ -128,22 +128,23 @@ fieldset.carousel {
   display: block;
   width: 10px;
   height: 10px;
-  border: 1.5px solid blue;
+  border: 1.5px solid red;
   border-radius: 50%;
   z-index: 1; }
 
 .carousel-radios li :checked + span {
-  background-color: #000099; }
+  background-color: #990000; }
 
 .carousel-radios li :focus + span {
-  outline: 1px dashed #000099; }
+  outline: 1px dashed #990000; }
 
 /*/ ARROWS /*/
 .forward,
 .backward {
+  content: '';
   background: none;
   border: none;
-  color: blue;
+  color: red;
   width: 20px;
   height: 20px;
   border: 2px solid;
@@ -156,13 +157,41 @@ fieldset.carousel {
 .backward:hover,
 .forward:focus,
 .backward:focus {
-  color: #000099;
+  color: #990000;
   outline: none;
   box-shadow: none;
   border-width: 4px; }
 
 .forward {
   border-style: solid solid none none; }
+
+/*/ ARROWS /*/
+.forward,
+.backward {
+  transform: translatex(3em) rotate(45deg);
+  z-index: 100;
+  position: relative; }
+  .forward:before,
+  .backward:before {
+    content: "";
+    position: absolute;
+    top: -0.5em;
+    bottom: -0.5em;
+    left: -1em;
+    right: -1em;
+    background: rgba(255, 255, 255, 0.3);
+    transform: rotate(-45deg); }
+
+.forward {
+  transform: translatex(-3em) rotate(45deg); }
+
+.forward:after {
+  border-style: none solid solid none; }
+
+.carousel-content label {
+  display: block;
+  height: 100%;
+  width: 100%; }
 
 input[type=radio],
 legend {
@@ -177,4 +206,4 @@ label {
   flex-direction: column;
   align-content: center; }
 
-/*# sourceMappingURL=carousel.css.map */
+/*# sourceMappingURL=unicorns.css.map */

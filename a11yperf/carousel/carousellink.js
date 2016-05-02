@@ -45,7 +45,6 @@ function moveForwardOrBack(e) {
           newValue = (buttons.length + selectedButton + move) % buttons.length;
       buttons[newValue].checked = true;
       carouselChange(name, newValue);
-      console.log(selectedButton);
 }
 
 function carouselChange (name, value) {

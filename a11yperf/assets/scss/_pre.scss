@@ -11,6 +11,10 @@ pre {
     background-position: 0 1.8rem;
     background-clip: padding-box;
     background-attachment: local;
+  width: 99vw;
+  overflow: scroll;
+  font-size: 1.4rem;
+  box-sizing: border-box;
 b, em {
   font-weight: normal;
   font-style: normal;
@@ -26,9 +30,5 @@ b, em {
 }
 &.allcode {
   height: 90vh;
-  overflow: scroll;
-  font-size: 1.4rem;
-  box-sizing: border-box;
-  width: 99vw;
 }
 }

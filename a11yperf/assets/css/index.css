@@ -247,7 +247,11 @@ pre {
   background-size: 100% 2.7rem;
   background-position: 0 1.8rem;
   background-clip: padding-box;
-  background-attachment: local; }
+  background-attachment: local;
+  width: 99vw;
+  overflow: scroll;
+  font-size: 1.4rem;
+  box-sizing: border-box; }
   pre b, pre em {
     font-weight: normal;
     font-style: normal;
@@ -260,11 +264,7 @@ pre {
       background-color: rgba(255, 255, 255, 0.8);
       transform-origin: left center; }
   pre.allcode {
-    height: 90vh;
-    overflow: scroll;
-    font-size: 1.4rem;
-    box-sizing: border-box;
-    width: 99vw; }
+    height: 90vh; }
 
 /* OBJECT PAGES */
 .object header {

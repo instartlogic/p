@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Masking</title>
+  <style>
+  *, input, span, i {font-size: 36px;}
+  li {
+  line-height: 2; }
+
+:invalid {
+  outline: 1px solid red; }
+
+.shell {
+  position: relative;
+  line-height: 1; }
+  .shell span {
+    position: absolute;
+    left: 3px;
+    top: 5px;
+    color: #ccc;
+    pointer-events: none;
+    z-index: -1; }
+    .shell span i {
+      /* any of these 3 will work */
+      color: transparent;
+      opacity: 0;
+      visibility: hidden; }
+
+input.masked,
+.shell span {
+  font-family: monospace;
+  padding-right: 10px;
+  background-color: transparent;
+  text-transform: uppercase; }
+head {
+  display: block;
+}
+head * {
+  display: none;
+}
+[contenteditable] {
+  -webkit-user-modify: read-write-plaintext-only;
+}
+#editme {  white-space: pre;
+  display: block;
+  margin: 20px;
+  font-family: monospace;
+  -webkit-user-modify: read-write-plaintext-only;
+   -moz-user-modify: read-write;
+    user-modify: read-write;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    width: 50%;
+    overflow: scroll;
+}
+body {
+  margin: 20px;
+  line-height: 1.6;
+}
+p {
+  padding-right: 40px;
+}
+</style>
+<style id="editme" contenteditable>/* additional styles */
+  li {line-height: 2; clear: both;}
+  label {display: inline-block; width: 15em;}
+  .shell span {color: pink;}
+  li {font-family: helvetica;}
+  </style>
+</head>
+<body>
+
+<ul>
+  <li>
+    <label for="expiration">Credit Card Expiration Month</label>
+    <input id="expiration" type="tel" placeholder="MM/YY" class="masked" pattern="(1[0-2]|0[1-9])\/\d\d" data-valid-example="11/18" title="2-digit month and 2-digit year greater than 01/15">
+  </li>
+
+<li>
+  <label for="zip">Zip Code</label>
+  <input id="zip" type="tel" name="zipcode" placeholder="XXXXX" pattern="\d{5}" class="masked" title="5-digit zip code">
+</li>
+<li>
+  <label for="zipca">Canadian Zip Code</label>
+  <input id="zipca" type="text" name="zipcodeca" placeholder="XXX XXX" pattern="\w\d\w \d\w\d" class="masked" data-charset="_X_ X_X" title="6-character alphanumeric zip code in the format of A1A 1A1">
+</li>
+<li>
+  <label for="tel">Telephone</label>
+  <input id="tel" type="tel" name="phone" placeholder="(XXX) XXX-XXXX" pattern="\(\d{3}\) \d{3}\-\d{4}" class="masked" title="10-digit number">
+</li>
+<li>
+  <label for="cc">Credit Card Number</label>
+  <input id="cc" type="tel" name="ccnumber" placeholder="XXXX XXXX XXXX XXXX" pattern="\d{4} \d{4} \d{4} \d{4}" class="masked" title="16-digit number">
+</li>
+</ul>
+
+<script src="assets/js/inputmask.min.js" data-autoinit="true"></script>
+
+
+</body></html>
