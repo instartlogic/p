@@ -15,7 +15,7 @@ var carouselCarousel = {
         l = radios.length;
     if(l && carouselCarousel.arrowButtons) {
       if(l > 1) { // if you have more than one card, add back and forward buttons for sited users
-        carouselCarousel.activateForwardAndBack(radios, l);
+        carouselCarousel.activateForwardAndBack();
       }
       for(i = 0; i < l; i++) {
         radios[i].addEventListener('change', function (e) {
@@ -26,7 +26,8 @@ var carouselCarousel = {
   },
 
   // Activate arrows if there is more than one item and arrows are included
-  activateForwardAndBack: function (arrowButtons, l) {
+  activateForwardAndBack: function () {
+    var arrowButtons = document.querySelectorAll('#' + carouselCarousel.carouselID +' [data-move]');
     for (var i = 0; i < l; i++) {
       arrowButtons[i].removeAttribute('hidden');
       arrowButtons[i].setAttribute('tabindex', '0');
@@ -57,7 +58,3 @@ var carouselCarousel = {
     ul.setAttribute('class', name + ' left' + value);
   }
 }
-
-window.onload = function () {
-  carouselCarousel.init();
-};
