@@ -4,41 +4,47 @@ pre {
   font-size: 1.25rem;
 }
 </style>
-<pre>&lt;form action="carousel.html">
-  <b>&lt;fieldset>
-    &lt;legend></b>Select an address to edit:&lt;/legend>
-    &lt;div class="carousel">
-        &lt;span class="backward" data-move="backward" data-carousel="shipping-addresses" 
-                 hidden <b>aria-hidden="true"</b>>&lt;/span>
-        &lt;ul class="shipping-addresses left0">
-          &lt;li>
-            <b>&lt;label for="address1"></b>
-            &lt;p>Estelle Weyl&lt;/p>
-            &lt;p>Alley Not A Street&lt;/p>
-            &lt;p>Valley City, ND 58072&lt;/p>
-            &lt;/label>
-          &lt;/li>
-          &lt;li>
-            <b>&lt;label for="address2"></b>
-            &lt;p>Estelle Weyl&lt;/p>
-            &lt;p>194 Castro Street&lt;/p>
-            &lt;p>Mountain View, CA  94041&lt;/p>
-            &lt;/label>
-          &lt;/li>
-        &lt;/ul>
-        &lt;span class="forward" data-move="forward" data-carousel="shipping-addresses" 
-                 hidden <b>aria-hidden="true"</b>>&lt;/span>
-      &lt;/div>
-      &lt;ul id="addressradios" class="carousel-radios">
-        &lt;li>
-          &lt;input type="radio" name="shipping-addresses" value="0" <b>id="address1"</b> checked>&lt;span>&lt;/span>
-        &lt;/li>
-        &lt;li>
-          &lt;input type="radio" name="shipping-addresses" value="1" <b>id="address2"></b>&lt;span>&lt;/span>
-        &lt;/li>
-      &lt;/ul>
-    &lt;/fieldset>
-  &lt;input type="submit" value="Edit">
+<pre>&lt;form action="index.html">
+<b>&lt;fieldset</b> class="mgr" id="address">
+<b>&lt;legend>Select an address to edit:&lt;/legend></b>
+&lt;div>
+  &lt;a class="backward" data-move="backward" data-mgr="shipping-addresses" hidden>&lt;/a>
+  &lt;ul class="mgr-labels left0">
+    &lt;li>
+      <b>&lt;label for="address1"></b>
+      &lt;p>Instart Logic&lt;/p>
+      &lt;p>US Headquarters&lt;/p>
+      &lt;p>450 Lambert Avenue&lt;/p>
+      &lt;p>Palo Alto, CA 94306&lt;/p>
+      &lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;label for="address2">
+      &lt;p>Instart Logic&lt;/p>
+      &lt;p>India Office&lt;/p>
+      &lt;p>6th Floor , HM Vibha Towers&lt;/p>
+      &lt;p>Hosur Rd, Adugodi&lt;/p>
+      &lt;p>Bengaluru — 560029&lt;/p>
+      &lt;/label>
+    &lt;/li>...
+  &lt;/ul>
+  &lt;a class="forward" data-move="forward" data-mgr="shipping-addresses" hidden>&lt;/a>
+  &lt;/div>
+  &lt;ul id="addressradios" class="mgr-radios">
+    &lt;li>
+      <b>&lt;input type="radio" name="shipping-addresses" data-value="0" id="address1" checked>&lt;span>&lt;/span></b>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="shipping-addresses" data-value="1" id="address2">&lt;span>&lt;/span>
+    &lt;/li>...
+  &lt;/ul>
+  &lt;/fieldset>
+ &lt;input type="submit" value="Edit">
 &lt;/form>
-</pre>
+&lt;script src="js/merry-go-round.js">&lt;/script>
+&lt;script>
+window.onload = function () {
+  mgr.init('address');
+};
+&lt;/script></pre>
 

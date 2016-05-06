@@ -4,7 +4,7 @@ pre {float: left;}
 body {display: flex;}
 </style>
 <body>
-<pre>.carousel {
+<pre>.merry-go-round {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,7 +31,7 @@ $itemwidth: 164px;
 }</b>
 </pre>
 <pre>
-function carouselChange (name, value) {
+function mgrChange (name, value) {
   var ul = document.querySelector('.' + name);
   <b>ul.setAttribute('class', 
                       name + ' left' + value);</b>
