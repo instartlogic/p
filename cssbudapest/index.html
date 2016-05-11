@@ -12,13 +12,13 @@ Based on: http://estelle.github.com/slides
 -->    
 <link rel="stylesheet" href="../a11yperf/assets/css/budapest.css">
 <style>
-pre { line-height: 4.5vh; background-size: 100% 9vh; font-size: 3.8vh;}
+pre {padding-top: 1.8vh;line-height: 4vh; background-size: 100% 8vh; font-size: 3.5vh; position: relative; top: -10px;}
 .tweet .content{
   display: flex;
   align-content: center;
   justify-content: center;
   height: 80vh;
-  padding-top: 100px;
+  padding-top: 120px;
 }
 twitterwidget {
   transform: scale(1.4);
@@ -711,10 +711,12 @@ Content interprable by UAs, including AT.</p>
 
     input.setAttribute('maxlength', placeholder.length);
     input.setAttribute('data-placeholder', placeholderText);
-    input.removeAttribute('placeholder');
+    input.removeAttribute('placeholder');</pre></div>
 
 
-    if ( !inputClass || ( inputClass && inputClass.indexOf('masked') === -1 ) ) {
+
+<div class="slide object">
+<pre contenteditable class="allcode">if ( !inputClass || ( inputClass && inputClass.indexOf('masked') === -1 ) ) {
       input.setAttribute( 'class', inputClass + ' masked');
     }
 
@@ -752,10 +754,10 @@ Content interprable by UAs, including AT.</p>
 
 .shell span, 
 input.masked {
+ <b> background-color: transparent;</b>
   font-size: 16px;
   font-family: monospace;
   padding-right: 10px;
- <b> background-color: transparent;</b>
   text-transform: uppercase; 
   }</pre></div>
 
@@ -763,7 +765,7 @@ input.masked {
 
 <div class="slide">
   <header><h1>ARIA Accessibilty</h1></header>
-    <section class="content">
+    <section>
       <ul>
         <li>aria-labeledby="otherElement idValues"</li>
         <li>aria-label="Read by Screen Reader"</li>
@@ -772,7 +774,7 @@ input.masked {
         <li>title</li>
         <li>not accessible</li>
       </ul>
-      <pre contenteditable style="font-size: 1.4rem">&lt;label for="telephone"&gt;Telephone Number&lt;/label&gt;
+      <pre contenteditable>&lt;label for="telephone"&gt;Telephone Number&lt;/label&gt;
   &lt;input type="tel" id="telephone" placeholder="(XXX) XXX-XXXX"
   aria-describedby="hint"&gt;
   &lt;span class="hint" id="hint"&gt;10-digit phone number&lt;/span&gt;</pre>
@@ -1094,7 +1096,7 @@ input.masked {
     <section class="content">
     <h1 style="font-size: 3rem; margin-top: 10%;">Thank You</h1>
       <h2>Estelle Weyl</h2>
-      <p><a href="http://instartlogic.github.io/p/webdevcon">http://instartlogic.github.io/p/webdevcon</a></p>
+      <p><a href="http://instartlogic.github.io/p/webdevcon">http://instartlogic.github.io/p/cssbudapest</a></p>
       <p>all talks at <a href="http://instartlogic.github.io/">instartlogic.github.io</a></p>
     </section>
 </div>
