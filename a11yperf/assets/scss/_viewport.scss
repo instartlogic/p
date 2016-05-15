@@ -1,9 +1,8 @@
 .viewport { 
 .img {
 	height: 100%;
-	width: 100%;
 	background: url(../images/perf/godaddy.png) no-repeat;
-	animation: grow_shrink 10s infinite alternate-reverse;
+	animation: grow_shrink 10s infinite alternate;
 	background-size: 100% auto;
 	border: 1px solid $lightborders;
 	box-shadow: $shadows;
@@ -18,7 +17,7 @@
     width: 30%;
   }
   70%, 100% {
-    width: 99%;
+    width: 880px;
     height: 100%;
   }
 }

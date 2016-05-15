@@ -8,16 +8,19 @@
 		spaces = /\s+/,
 		a1 = [''],
 	    toArray = function(list) {
-  		return Array.prototype.slice.call(list || [], 0);
-	},
+  			return Array.prototype.slice.call(list || [], 0);
+		},
 		byId = function(id) {
-		if (typeof id == 'string') { return doc.getElementById(id); }
-		return id;
-	},
+			if (typeof id == 'string') { 
+				return doc.getElementById(id); 
+			}
+			return id;
+		},
 	
 	query = function(query, root) {
 	  if (!query) { return []; }
-		if (typeof query != 'string') { return toArray(query); }
+		if (typeof query != 'string') { 
+			return toArray(query); }
 		if (typeof root == 'string') {
 		  root = byId(root);
 		  if(!root){ return []; }
@@ -44,7 +47,7 @@
 				return a1;
 			} 
 			else {
-					return s.split(spaces);
+				return s.split(spaces);
 			}
 		}
 		return s;
@@ -52,61 +55,26 @@
 
     addClass = function(node, classStr) {
 	  classStr = strToArray(classStr);
-	  var cls = ' ' + node.className + ' ';
 	  for (var i = 0, len = classStr.length, c; i < len; ++i) {
-		c = classStr[i];
-		if (c && cls.indexOf(' ' + c + ' ') < 0) {
-		  cls += c + ' ';
-		}
+		  node.classList.add(classStr[i]);
 	  }
-	  node.className = cls.trim();
 	}, 
 	
 	removeClass = function(node, classStr) {
-		  var cls;
 		  if (classStr !== undefined) {
 			classStr = strToArray(classStr);
-			cls = ' ' + node.className + ' ';
 			for (var i = 0, len = classStr.length; i < len; ++i) {
-			  cls = cls.replace(' ' + classStr[i] + ' ', ' ');
+			  node.classList.remove(classStr[i]);
 			}
-			  cls = cls.trim();
-		  } else {
-			cls = '';
-		  }
-		
-		  if (node.className != cls) {
-			node.className = cls;
-		  }
-		
+		  } 
 	  },
 	
 	  toggleClass = function(node, classStr) {
-		  var cls = ' ' + node.className + ' ';
-		  if (cls.indexOf(' ' + classStr.trim() + ' ') >= 0) {
-			removeClass(node, classStr);
-		  } else {
-			addClass(node, classStr);
-		  }
+		  node.classList.toggle(classStr);
 	  },
 
-
-
-  		ua = navigator.userAgent,
-		isFF = parseFloat(ua.split('Firefox/')[1]) || undefined,
-		isWK = parseFloat(ua.split('WebKit/')[1]) || undefined,
-		isOpera = parseFloat(ua.split('Opera/')[1]) || undefined,
-
-
-
   	 	canTransition = (function() {
-		  var ver = parseFloat(ua.split('Version/')[1]) || undefined;
-		  // test to determine if this browser can handle CSS transitions.
-		  var cachedCanTransition = 
-		
-			(isWK || (isFF && isFF > 3.6 ) || (isOpera && ver >= 10.5));
-		  return function() { return cachedCanTransition; }
-
+		  var ver = parseFloat(navigator.userAgent.split('Version/')[1]) || undefined;
   		}
   )();
 
@@ -119,7 +87,7 @@ var Slide = function(node, idx) {
     this._count = idx + 1;
   }
   if (this._node) {
-    addClass(this._node, 'slide distant-slide');
+    this._node.classList.add('distant-slide');
   }
   //this._makeCounter();
   this._makeBuildList();
@@ -196,23 +164,15 @@ Slide.prototype = {
     });
     if (idx >= 0) {
       var elem = this._buildList.splice(idx, 1)[0];
-      var transitionEnd = isWK ? 'webkitTransitionEnd' : (isFF ? 'mozTransitionEnd' : 'oTransitionEnd');
       var _t = this;
-      if (canTransition()) {
-        var l = function(evt) {
-          elem.parentNode.removeEventListener(transitionEnd, l, false);
+      var l = function(evt) {
+          elem.parentNode.removeEventListener('transitionend', l, false);
           _t._runAutos();
         };
-        elem.parentNode.addEventListener(transitionEnd, l, false);
-        removeClass(elem, 'to-build');
-      } else {
-        setTimeout(function() {
-          removeClass(elem, 'to-build');
-          _t._runAutos();
-        }, 400);
-      }
+      elem.parentNode.addEventListener('transitionend', l, false);
+      elem.classList.remove('to-build');
+      } 
 
-      }
 
     },
 
@@ -366,7 +326,9 @@ SlideShow.prototype = {
 	
 	removeHidingClass: function(){
 		var paragraphToShow = document.querySelector('.current .temphidden');
-		if(paragraphToShow) {paragraphToShow.classList.remove('temphidden');}
+		if(paragraphToShow) {
+			paragraphToShow.classList.remove('temphidden');
+		}
 	
 	},
 	
@@ -374,7 +336,7 @@ SlideShow.prototype = {
       // disable keys for these elements
       if (/^(input|textarea|pre|object)$/i.test(e.target.nodeName)) return;
 	 
-
+      if(!ATUserPreference) {
       switch (e.keyCode) {
 		  case 37: // left arrow
 		  case 33: // left clicker
@@ -392,6 +354,7 @@ SlideShow.prototype = {
 		     this.addNotes(); break;
 		     break;
     	}
+      }
     },
 	
     _touchStartX: 0,
@@ -413,3 +376,24 @@ SlideShow.prototype = {
   // Initialize
   var slideshow = new SlideShow(query('.slide'));
 })();
+
+var removeCSS = document.getElementById('killCSS'),
+	ATUserPreference = false;
+console.dir(removeCSS);
+if(removeCSS) {
+	removeCSS.addEventListener('click', function () {
+		console.log('hello');
+		killCSS();
+	});
+
+	function killCSS() {
+		ATUserPreference = true;
+		var filesToKill = document.querySelectorAll('.removeForAT'),
+		    l = filesToKill.length, i = 0;
+		for ( ; i < l; i++) {
+			filesToKill[i].setAttribute('href', '');
+			filesToKill[i].setAttribute('src', '');
+		}
+
+	}
+}

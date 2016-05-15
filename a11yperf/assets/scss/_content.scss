@@ -114,3 +114,10 @@ small {
     opacity: 0.5;
     text-align: left;
 }
+
+.skiplink {
+  opacity: 0;
+}
+.skiplink:focus {
+  opacity: 1;
+}

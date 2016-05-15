@@ -237,6 +237,12 @@ small {
   opacity: 0.5;
   text-align: left; }
 
+.skiplink {
+  opacity: 0; }
+
+.skiplink:focus {
+  opacity: 1; }
+
 pre {
   text-align: left;
   padding: 10px 20px;
@@ -245,7 +251,8 @@ pre {
   background-position: 0 1.8rem;
   background-clip: padding-box;
   background-attachment: local;
-  width: 99vw;
+  width: 98%;
+  margin: 0 1vw 20px;
   overflow: scroll;
   font-size: 1.4rem;
   box-sizing: border-box;

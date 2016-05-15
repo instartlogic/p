@@ -8,7 +8,7 @@ Made by: Estelle Weyl
 Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
 Based on: http://estelle.github.com/slides 
 -->    
-<link rel="stylesheet" href="../a11yperf/assets/css/oscon.css">
+<link rel="stylesheet" class="removeForAT"  href="../a11yperf/assets/css/oscon.css">
 <base target="play"/>
 </head>
 
@@ -22,7 +22,7 @@ Based on: http://estelle.github.com/slides
     <h1 style="font-size: 3rem; margin-top: 10%;">Straightforward Accessibility</h1>
       <h2>Estelle Weyl</h2>
       <p><a href="http://instartlogic.github.io/p/oscon">http://instartlogic.github.io/p/oscon/prescriptions.html</a></p>
-      
+     <button id="killCSS" class="skiplink">Click to Remove CSS to enable Sreen Reader Access</button> 
     </section>
 </div>
 
@@ -187,9 +187,9 @@ Based on: http://estelle.github.com/slides
        <li>orientation</li>
      </ol>
      </p>
-<p class="resources small">
+<small>
      Resource: <a href="http://www.quirksmode.org/mobile/viewports2.html" target="_blank">A tale of 2 viewports</a><br/>
-      Tutorial: <a href="http://estelle.github.io/CSS-Workshop/part_04_media.html" target="_blank">Media Queries slide deck</a></p>
+      Tutorial: <a href="http://estelle.github.io/CSS-Workshop/part_04_media.html" target="_blank">Media Queries slide deck</a></small>
     </section>
 </div>
 
@@ -326,7 +326,7 @@ Content interprable by UAs, including AT.</p>
 <br/>The <a href="/techniques/screenreader/">reading order</a> should be the same as the visual order.</li>
 
 <li><b>Provide Good <i>Contrast</i></b>
-<br/>Be especially careful with light shades of gray, orange, and yellow. Check your contrast levels with our color contrast checker.</li>
+<br/>Be especially careful with light shades of gray, orange, and yellow. Check your contrast levels with a color contrast checker.</li>
 
 <li><b>Use True <i>Text</i> Whenever Possible</b>
 <br/>True text enlarges better, loads faster, and is easier to translate. Use CSS to add visual style.</li>
@@ -355,6 +355,27 @@ Content interprable by UAs, including AT.</p>
 <li><b>Design a "<i>Skip</i> to Main Content" Link</b>
 <br/>A link for keyboard users to skip navigation should be at the top of the page. It can be hidden, but should be visible when it receives keyboard focus.</li>
 </ol>
+</section>
+</div>
+
+<div class=slide>
+<header><h1>Skip link</h1></header>
+<section>
+<pre>&lt;a href="#maincontent" class="skiplink">Skip to main content&lt;/a></pre>
+<pre>.skiplink {
+  opacity: 0;
+}
+.skiplink:focus {
+  opacity: 1;
+}</pre>
+<pre>.skiplink {
+  transform: scale(0);
+  display: inline-block;
+}
+.skiplink:focus {
+  transform: scale(1);
+}</pre>
+
 </section>
 </div>
 
@@ -399,7 +420,7 @@ Content interprable by UAs, including AT.</p>
 
    </div>
 </div>
-<script src="../a11yperf/slides.js"></script>
+<script src="../a11yperf/slides.js" class="removeForAT"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -8,7 +8,7 @@ Made by: Estelle Weyl
 Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
 Based on: http://estelle.github.com/slides 
 -->    
-<link rel="stylesheet" href="../a11yperf/assets/css/oscon.css">
+<link rel="stylesheet" class="removeForAT"  href="../a11yperf/assets/css/oscon.css">
 <base target="play"/>
 </head>
 
@@ -22,7 +22,7 @@ Based on: http://estelle.github.com/slides
     <h1 style="font-size: 3rem; margin-top: 10%;">Straightforward Accessibility</h1>
       <h2>Estelle Weyl</h2>
       <p><a href="http://instartlogic.github.io/p/oscon/issues.html">http://instartlogic.github.io/p/oscon/requirements.html</a></p>
-      
+      <button id="killCSS" class="skiplink">Click to Remove CSS to enable Sreen Reader Access</button>
     </section>
 </div>
 
@@ -37,12 +37,28 @@ Based on: http://estelle.github.com/slides
 
 
 <div class="slide object" style="background: url(../a11yperf/assets/images/visalogin.png) no-repeat center 0;">
-<object data="https://secure.checkout.visa.com"></object>
-<a href="https://secure.checkout.visa.com" class="pagelink">Original Site</a>
+<object data="https://secure.checkout.visa.com" aria-label='Visa Checkout page. '></object>
+<a href="https://secure.checkout.visa.com" class="pagelink" aria-label='visit the visa checkout page'>Original Site</a>
 </div>
 
 <div class="slide object">
-<object data="http://www.webpagetest.org/result/160406_HP_14ZZ/1/details/"></object>
+<object data="http://www.webpagetest.org/result/160406_HP_14ZZ/1/details/" aria-label="WebPageTest results for Visa's checkout page"></object><a href="http://www.webpagetest.org/result/160406_HP_14ZZ/1/details/" class="pagelink" aria-label='Go to WebPageTest results for Visa Checkout'>WebPageTest</a>
+</div>
+
+
+<div class="slide object" style="background: url(../a11yperf/assets/images/visalogin2.png) no-repeat center 0;">
+<object data="../a11yperf/site/" aria-label="A recoded version of the Visa Checkout page. Looks almost identical, but one either of the file size"></object>
+<a href="../a11yperf/site/" class="pagelink">My Version</a>
+</div>
+
+
+<div class="slide object">
+<object data="http://www.webpagetest.org/result/160418_TW_NN/5/details/"></object><a href="http://www.webpagetest.org/result/160418_TW_NN/5/details/" class="pagelink" aria-label='Go to WebPageTest results for recoded version of Visa Checkout'>WebPageTest</a>
+</div>
+
+
+<div class="slide object">
+<object data="http://www.webpagetest.org/video/compare.php?tests=160417_WM_114N%2C160417_7M_114P&thumbSize=200&ival=500&end=visual"></object><a href="http://www.webpagetest.org/video/compare.php?tests=160417_WM_114N%2C160417_7M_114P&thumbSize=200&ival=500&end=visual" class="pagelink" aria-label="web page test comparison of the two visa checkout pages">WebPageTest</a>
 </div>
 
 
@@ -51,24 +67,8 @@ Based on: http://estelle.github.com/slides
 <a href="../a11yperf/site/" class="pagelink">My Version</a>
 </div>
 
-
 <div class="slide object">
-<object data="http://www.webpagetest.org/result/160418_TW_NN/5/details/"></object>
-</div>
-
-
-<div class="slide object">
-<object data="http://www.webpagetest.org/video/compare.php?tests=160417_WM_114N%2C160417_7M_114P&thumbSize=200&ival=500&end=visual"></object>
-</div>
-
-
-<div class="slide object" style="background: url(../a11yperf/assets/images/visalogin2.png) no-repeat center 0;">
-<object data="../a11yperf/site/"></object>
-<a href="../a11yperf/site/" class="pagelink">My Version</a>
-</div>
-
-<div class="slide object">
-<object data="http://robinherbots.github.io/jquery.inputmask/"></object>
+<object data="http://robinherbots.github.io/jquery.inputmask/" aria-label="Github repo for the jQuery input mask library"></object>
 <a href="http://robinherbots.github.io/jquery.inputmask/" class="pagelink">Github Repo</a>
 <img src="../a11yperf/assets/images/inputmasksize.png"  class="bytes" alt="jquery at 37.7kb and input masking script is 29.6kb">
 </div>
@@ -76,9 +76,9 @@ Based on: http://estelle.github.com/slides
 
 
 <div class="slide object">
-<object data="../a11yperf/inputmask.html"></object>
-<a href="../a11yperf/inputmask.html" class="pagelink">Open</a>
-<img src="../a11yperf/assets/images/inputmasksize_a11y.png"  class="bytes" alt="script is only 2.0kb">
+<object data="../a11yperf/inputmask.html" aria-label="example of estelle's input masking page"></object>
+<a href="../a11yperf/inputmask.html" class="pagelink" aria-label="open the input masking page in a different tab">Open</a>
+<img src="../a11yperf/assets/images/inputmasksize_a11y.png"  class="bytes" alt="accessible input masking script is only 2.0kb">
 </div>
 
 
@@ -91,19 +91,19 @@ Based on: http://estelle.github.com/slides
 
 
 <div class="slide object">
-<object data="http://estelle.github.io/merry-go-round/"></object>
-<a href="http://estelle.github.io/merry-go-round/" class="pagelink">Github Repo</a>
+<object data="http://estelle.github.io/merry-go-round/" aria-label="inclusion of Github repo for the merry-go-round accessible carousel-like script"></object>
+<a href="http://estelle.github.io/merry-go-round/" class="pagelink" aria-label="link to github repo for the merry-go-round accessible carousel-like script">Github Repo</a>
 
 </div>
 
 <div class="slide object">
-<object data="../a11yperf/noreactvisacarousel.html"></object>
-<a href="../a11yperf/noreactvisacarousel.html" class="pagelink"></a>
+<object data="../a11yperf/noreactvisacarousel.html" aria-label="Example of the merry-go-round accessible carousel-like script"></object>
+<a href="../a11yperf/noreactvisacarousel.html" class="pagelink" aria-label="open merry-go-round in different tab">Go</a>
 </div>
 
 <div class="slide object">
 <object data="../a11yperf/carouselA.html"></object>
-<img src="../a11yperf/assets/images/carousel-carousel.png"  class="bytes" alt="Carousel script is 1.1kb">
+<img src="../a11yperf/assets/images/carousel-carousel.png"  class="bytes" alt="Merry-Go-Round script is 1.1kb">
 </div>
 
 
@@ -445,7 +445,7 @@ class="bundleAddressCollection-button-wrapper">
 
    </div>
 </div>
-<script src="../a11yperf/slides.js"></script>
+<script src="../a11yperf/slides.js" class="removeForAT"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -237,6 +237,12 @@ small {
   opacity: 0.5;
   text-align: left; }
 
+.skiplink {
+  opacity: 0; }
+
+.skiplink:focus {
+  opacity: 1; }
+
 pre {
   text-align: left;
   padding: 10px 20px;
@@ -245,7 +251,8 @@ pre {
   background-position: 0 1.8rem;
   background-clip: padding-box;
   background-attachment: local;
-  width: 99vw;
+  width: 98%;
+  margin: 0 1vw 20px;
   overflow: scroll;
   font-size: 1.4rem;
   box-sizing: border-box;
@@ -491,9 +498,8 @@ twitterwidget {
 
 .viewport .img {
   height: 100%;
-  width: 100%;
   background: url(../images/perf/godaddy.png) no-repeat;
-  animation: grow_shrink 10s infinite alternate-reverse;
+  animation: grow_shrink 10s infinite alternate;
   background-size: 100% auto;
   border: 1px solid #ccc;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); }
@@ -505,7 +511,7 @@ twitterwidget {
     height: 100%;
     width: 30%; }
   70%, 100% {
-    width: 99%;
+    width: 880px;
     height: 100%; } }
 @keyframes grow_shrink2 {
   0%, 30% {

@@ -8,7 +8,7 @@ Made by: Estelle Weyl
 Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
 Based on: http://estelle.github.com/slides 
 -->    
-<link rel="stylesheet" href="../a11yperf/assets/css/oscon.css">
+<link rel="stylesheet" class="removeForAT"  href="../a11yperf/assets/css/oscon.css">
 <base target="play"/>
 </head>
 
@@ -22,6 +22,7 @@ Based on: http://estelle.github.com/slides
     <h1 style="font-size: 3rem; margin-top: 10%;">Straightforward Accessibility</h1>
       <h2>Estelle Weyl</h2>
       <p><a href="http://instartlogic.github.io/p/oscon/solutions.html">http://instartlogic.github.io/p/oscon/solutions.html</a></p>
+      <button id="killCSS" class="skiplink">Click to Remove CSS to enable Sreen Reader Access</button>
     </section>
 </div>
 
@@ -65,13 +66,101 @@ Based on: http://estelle.github.com/slides
 
 <div class="slide">
 <header><h1>input types</h1></header>
-<section><!-- XXX --><a href="http://estelle.github.io/forms" class="pagelink" aria-label="Learn more about HTML5 input types and attributes">Learn More</a></section>
+<section>
+  <div style="float: left; width: 45%;">
+
+    <h1>Original HTML </h1>
+  <ul>
+        <li>button</li>
+        <li>checkbox</li>
+        <li>file</li>
+        <li>hidden</li>
+        <li>image</li>
+        <li>password</li>
+        <li>radio</li>
+        <li>reset</li>
+        <li>submit</li>
+        <li>text</li>
+    </ul>
+  </div>
+  <div>
+    <h1> HTML<b>5</b> </h1>
+    <ul>
+        <li>color</li>
+        <li>date </li>
+        <li><del>datetime</del> </li>
+        <li>datetime-local </li>
+        <li>email </li>
+        <li>month</li>
+        <li>number</li>
+        <li>range</li>
+        <li>search</li>
+        <li>tel</li>
+        <li>time</li>
+        <li>url</li>
+        <li>week</li>
+  </ul>
+<a href="http://estelle.github.io/forms" class="pagelink" aria-label="Learn more about HTML5 input types and attributes">Learn More</a></section>
 </div>
 
 
+
 <div class="slide">
-<header><h1>attributes</h1></header>
-<section><!-- XXX -->
+
+<header><h1>HTML Attributes</h1></header>
+<section><ul style="columns: 2">
+      <li>name  </li>
+      <li>:disabled    </li>
+      <li>type    </li>
+      <li>maxlength    </li>
+      <li>readonly    </li>
+      <li>size    </li>
+      <li>value    </li>
+      <li>alt    </li>
+      <li>src    </li>
+      <li>height    </li>
+      <li>width    </li>
+      <li>:checked    </li>
+      <li><del>align</del>** <br><br>FORMS</li>
+
+      <li class="half">action</li>
+      <li class="half">method</li>
+      <li class="half">accept-charset</li>
+      <li class="half">enctype</li>
+      <li class="half">target</li>
+    </ul></section>
+</div>
+
+
+
+<div class="slide">
+<header><h1>HTML5 Attributes</h1></header>
+<section><ul style="columns: 3">
+          <li class="half">autocomplete    </li>
+          <li class="half">spellcheck</li>
+          <li>autofocus    </li>
+          <li>pattern    </li>
+          <li>:required    </li>
+          <li>placeholder    </li>
+          <li class="half">dirname</li>
+          <li>multiple    </li>
+          <li>list    </li>
+          <li>min    </li>
+          <li>max    </li>
+          <li>step    </li>
+          <li>low</li>
+          <li>high</li>
+          <li class="half">optimum</li>
+          <li>form</li>
+          <li class="half">minlength</li>
+          <li class="half">novalidate </li>
+          <li class="half">formnovalidate </li>
+          <li class="half">formaction </li>
+          <li class="half">formenctype </li>
+          <li class="half">formmethod</li>
+          <li class="half">formtarget</li>
+
+    </ul>
 <a href="http://estelle.github.io/forms" class="pagelink" aria-label="Learn more about HTML5 input types and attributes">Learn More</a></section>
 </div>
 
@@ -87,7 +176,7 @@ Based on: http://estelle.github.com/slides
 
 
 <div class="slide">
-  <header><h1>ARIA Accessibilty</h1></header>
+  <header><h1>ARIA Accessibility</h1></header>
     <section>
       <ul>
         <li>aria-labeledby="otherElement idValues"</li>
@@ -564,17 +653,6 @@ input.masked {
 <a href="http://w3c.github.io/aria-in-html/" class="pagelink">WAI-ARIA</a>
 </div>
 
-
-
-  <div class="slide intro">
-    <section class="content">
-    <h1 style="font-size: 3rem; margin-top: 10%;">Thank You</h1>
-      <h2>Estelle Weyl</h2>
-      <p><a href="http://instartlogic.github.io/p/oscon">http://instartlogic.github.io/p/oscon</a></p>
-      <p>all talks at <a href="http://instartlogic.github.io/">instartlogic.github.io</a></p>
-    </section>
-</div>
-
 <div class="slide resources">
   <header><h1>Resources</h1></header>
   <section class="content">
@@ -597,6 +675,110 @@ input.masked {
   </section>
 </div>
 
+<div class="slide"><header><h1>Tools</h1></header>
+<section>
+  <p>Screen Readers Development Tools</p>
+  <ul>
+    <li>Safari with VoiceOver - Command + F5</li>
+    <li>Chrome with <a href="http://www.chromevox.com/">ChromeVox</a></li>
+    <li><a href="http://www.nvaccess.org/download/">NVDA</a> on Windows</li>
+    </li>
+    </ul>
+  <p>Tools</p>
+  <ul>
+    <li><a href="https://chrome.google.com/webstore/detail/fpkknkljclfencbdbgkenhalefipecmb">Chrome Accessibility Developer Tools</a></li>
+    <li><a href="https://chrome.google.com/webstore/detail/lhdoppojpmngadmnindnejefpokejbdd">aXe</a> Accessibility testing in Chrome Developer Tools</li>
+    </ul> 
+</section>
+</div>
+
+<div class="slide">
+  <header><h1>Testing</h1></header>
+<section>
+<ul>
+<li>This element does not support ARIA roles, states and properties
+</li>
+<li>aria-owns should not be used if ownership is implicit in the DOM
+</li>
+<li>
+Elements with ARIA roles must be in the correct scope
+</li>
+<li>
+Audio elements should have controls
+</li>
+<li>
+This element has an invalid ARIA attribute
+</li>
+<li>
+ARIA state and property values must be valid
+</li>
+<li>
+Elements with ARIA roles must use a valid, non-abstract ARIA role
+</li>
+<li>
+Controls and media elements should have labels
+</li>
+<li>
+An element's ID must be unique in the DOM
+</li>
+<li>
+These elements are focusable but either invisible or obscured by another element
+</li>
+<li>
+The web page should have the content's human language indicated in the markup
+</li>
+<li>
+Images should have a text alternative or presentational role
+</li>
+<li>
+The purpose of each link should be clear from the link text
+</li>
+<li>
+Text elements should have a reasonable contrast ratio
+</li>
+<li>
+role=main should only appear on significant elements
+</li>
+<li>
+Meaningful images should not be used in element backgrounds
+</li>
+<li>
+An element's ID must not be present in more that one aria-owns attribute at any time
+</li>
+<li>
+A label element may not have labelable descendants other than its labeled control.
+</li>
+<li>
+ARIA attributes which refer to other elements by ID should refer to elements which exist in the DOM
+</li>
+<li>
+The web page should have a title that describes topic or purpose
+</li>
+<li>
+Elements with ARIA roles must have all required attributes for that role
+</li>
+<li>
+Elements with ARIA roles must ensure required owned elements are present
+</li>
+<li>
+Avoid positive integer values for tabIndex
+</li>
+<li>
+Elements with onclick handlers must be focusable</li></ul>
+</section>
+</div>
+
+  <div class="slide intro">
+    <section class="content">
+    <h1 style="font-size: 3rem; margin-top: 10%;">Thank You</h1>
+      <h2>Estelle Weyl</h2>
+      <p><a href="http://instartlogic.github.io/p/oscon">http://instartlogic.github.io/p/oscon</a></p>
+      <p>all talks at <a href="http://instartlogic.github.io/">instartlogic.github.io</a></p>
+    </section>
+</div>
+
+
+
 <div class="slide">
 <section class="content">
 <h1>Estelle Weyl</h1>
@@ -612,7 +794,7 @@ input.masked {
 
    </div>
 </div>
-<script src="../a11yperf/slides.js"></script>
+<script src="../a11yperf/slides.js" class="removeForAT"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
