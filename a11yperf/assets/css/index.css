@@ -239,19 +239,23 @@ small {
 
 pre {
   text-align: left;
-  font-size: 0.8rem;
   padding: 10px 20px;
   border-radius: 8px;
-  border: 1px solid white;
   background: linear-gradient(to top, #eaf3fb 50%, #FFF 50%);
-  background-size: 100% 2.7rem;
   background-position: 0 1.8rem;
   background-clip: padding-box;
   background-attachment: local;
   width: 99vw;
   overflow: scroll;
   font-size: 1.4rem;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding-top: 1.8vh;
+  line-height: 4vh;
+  background-size: 100% 8vh;
+  font-size: 3.5vh;
+  position: relative;
+  top: -10px;
+  border: 1px solid #ccc; }
   pre b, pre em {
     font-weight: normal;
     font-style: normal;
@@ -364,10 +368,15 @@ a.pagelink {
 .switchletters h1:hover .d {
   order: 2; }
 
-.tweet iframe {
-  margin: 100px auto 0 !important;
-  font-size: 1.2rem;
-  transform: scale(1.65); }
+.tweet .content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 80vh;
+  padding-top: 120px; }
+
+twitterwidget {
+  transform: scale(1.4); }
 
 .blind {
   background-color: black; }

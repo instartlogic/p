@@ -1,0 +1,460 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<meta charset="utf-8" />
+<title>Accessible Simplicity</title>
+<!--
+Made by: Estelle Weyl
+Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
+Based on: http://estelle.github.com/slides 
+-->    
+<link rel="stylesheet" href="../a11yperf/assets/css/oscon.css">
+<base target="play"/>
+</head>
+
+<body> 
+<div id="presentation">
+   <div id="slides">
+   
+   
+  <div class="slide intro">
+    <section class="content">
+    <h1 style="font-size: 3rem; margin-top: 10%;">Simply Accessible</h1>
+      <h2>Estelle Weyl</h2>
+      <p><a href="http://instartlogic.github.io/p/oscon/issues.html">http://instartlogic.github.io/p/oscon/requirements.html</a></p>
+      
+    </section>
+</div>
+
+
+
+<div class="slide intro">
+<header><h1>Requirements</h1>
+<p>and issues with their implementation</p>
+</header>
+</div>
+
+
+
+<div class="slide object" style="background: url(../a11yperf/assets/images/visalogin.png) no-repeat center 0;">
+<object data="https://secure.checkout.visa.com"></object>
+<a href="https://secure.checkout.visa.com" class="pagelink">Original Site</a>
+</div>
+
+<div class="slide object">
+<object data="http://www.webpagetest.org/result/160406_HP_14ZZ/1/details/"></object>
+</div>
+
+
+<div class="slide object" style="background: url(../a11yperf/assets/images/visalogin2.png) no-repeat center 0;">
+<object data="../a11yperf/site/"></object>
+<a href="../a11yperf/site/" class="pagelink">My Version</a>
+</div>
+
+
+<div class="slide object">
+<object data="http://www.webpagetest.org/result/160418_TW_NN/5/details/"></object>
+</div>
+
+
+<div class="slide object">
+<object data="http://www.webpagetest.org/video/compare.php?tests=160417_WM_114N%2C160417_7M_114P&thumbSize=200&ival=500&end=visual"></object>
+</div>
+
+
+<div class="slide object" style="background: url(../a11yperf/assets/images/visalogin2.png) no-repeat center 0;">
+<object data="../a11yperf/site/"></object>
+<a href="../a11yperf/site/" class="pagelink">My Version</a>
+</div>
+
+<div class="slide object">
+<object data="http://robinherbots.github.io/jquery.inputmask/"></object>
+<a href="http://robinherbots.github.io/jquery.inputmask/" class="pagelink">Github Repo</a>
+<img src="../a11yperf/assets/images/inputmasksize.png"  class="bytes" alt="jquery at 37.7kb and input masking script is 29.6kb">
+</div>
+
+
+
+<div class="slide object">
+<object data="../a11yperf/inputmask.html"></object>
+<a href="../a11yperf/inputmask.html" class="pagelink">Open</a>
+<img src="../a11yperf/assets/images/inputmasksize_a11y.png"  class="bytes" alt="script is only 2.0kb">
+</div>
+
+
+
+<div class="slide intro">
+<header><h1 style="font-size: 110%">In Production</h1>
+<p style="font-size: 90%"><a href="https://secure.checkout.visa.com/addressaddnew">https://secure.checkout.visa.com/addressaddnew</a></p></header>
+</div>
+
+
+
+<div class="slide object">
+<object data="http://estelle.github.io/merry-go-round/"></object>
+<a href="http://estelle.github.io/merry-go-round/" class="pagelink">Github Repo</a>
+
+</div>
+
+<div class="slide object">
+<object data="../a11yperf/noreactvisacarousel.html"></object>
+<a href="../a11yperf/noreactvisacarousel.html" class="pagelink"></a>
+</div>
+
+<div class="slide object">
+<object data="../a11yperf/carouselA.html"></object>
+<img src="../a11yperf/assets/images/carousel-carousel.png"  class="bytes" alt="Carousel script is 1.1kb">
+</div>
+
+
+<div class="slide">
+<pre contenteditable="">&lt;div 
+class="bundleAddressCollection-button-wrapper">
+  &lt;div class="viewButton viewButton--splitBtnLeft">
+    &lt;input class="viewButton-button" name="Add" type="button"
+     value="Add" aria-label="Add a new address" 
+     aria-hidden="false" role="">
+  &lt;/div>
+  &lt;div class="viewButton viewButton--splitBtnRight">
+    &lt;input class="viewButton-button" name="Edit" type="button"
+     value="Edit" aria-label="Edit this address" 
+     aria-hidden="false" role="">
+  &lt;/div>
+&lt;/div>
+&lt;div class="carousel address">
+  <b>&lt;button class="navigation-control prev disabled" 
+  type="button" style="visibility:visible;" aria-hidden="true" 
+  tabindex="-1">
+    &lt;img class="nullElementForA11yCompliance">
+  &lt;/button></b>
+  &lt;div class="slit">
+    &lt;div style="left: 0px;" class="items-container" 
+    role="listbox">
+      <b>&lt;div class="item" role="option" tabindex="0" 
+      aria-selected="true" aria-label="Estelle Weyl Alley Not A 
+      Street   Valley City ND 58072 US 4155551212">
+        &lt;div class="item-body" data-carousel-index="0" 
+        aria-label="Estelle Weyl Alley Not A Street   Valley City
+         ND 58072 US 4155551212"></b>
+          &lt;div class="inner-wrapper shipping-address">
+            &lt;span> &lt;/span>
+            &lt;div class="card-base">
+              &lt;p class="detail-row mplus">Estelle Weyl
+              &lt;/p>
+              &lt;p class="detail-row">
+                &lt;span> &lt;/span>
+                &lt;span>Alley Not A Street&lt;/span>
+                &lt;span> &lt;/span>
+              &lt;/p>
+              &lt;p class="detail-row">
+                &lt;span>Valley City&lt;/span>
+                &lt;span> &lt;/span>
+                &lt;span>ND&lt;/span>
+                &lt;span> &lt;/span>
+                &lt;span>58072 &lt;/span>
+              &lt;/p>
+              &lt;p class="detail-row">4155551212
+              &lt;/p>
+            &lt;/div>
+            &lt;span>
+            &lt;/span>
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+      <b>&lt;div class="item" role="option" tabindex="-1" 
+      aria-selected="false" aria-label="Estelle Weyl 194 Castro 
+      Street   Mountain View CA 94041 US 6504981212">
+        &lt;div class="item-body" data-carousel-index="1" 
+        aria-label="Estelle Weyl 194 Castro Street   Mountain 
+        View CA 94041 US 6504981212"></b>
+          &lt;div class="inner-wrapper shipping-address">
+            &lt;span> &lt;/span>
+            &lt;div class="card-base">
+              &lt;p class="detail-row mplus">Estelle Weyl
+              &lt;/p>
+              &lt;p class="detail-row">
+                &lt;span> &lt;/span>
+                &lt;span>194 Castro Street &lt;/span>
+                &lt;span> &lt;/span>
+              &lt;/p>
+              &lt;p class="detail-row">
+                &lt;span>Mountain View &lt;/span>
+                &lt;span> &lt;/span>
+                &lt;span>CA &lt;/span>
+                &lt;span> &lt;/span>
+                &lt;span>94041 &lt;/span>
+              &lt;/p>
+              &lt;p class="detail-row">6504981212&lt;/p>
+            &lt;/div>
+            &lt;span>
+            &lt;/span>
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  &lt;button class="navigation-control next" type="button" 
+  style="visibility:visible;" aria-label="Go to next billing 
+  address" aria-hidden="false" tabindex="0">
+    &lt;img class="nullElementForA11yCompliance">
+  &lt;/button>
+  &lt;div class="graphic-pagination-outer-wrapper">
+    &lt;div class="graphic-pagination-inner-wrapper">
+      &lt;button tabindex="0" type="button" role="option" 
+      aria-selected="true" aria-label="Currently selected address 
+      1 of 2" class="pagination-item active">
+      &lt;/button>
+      &lt;button tabindex="-1" type="button" role="option" 
+        aria-selected="false" aria-label="Go to last billing 
+      address of 2" class="pagination-item">
+      &lt;/button>
+    &lt;/div>
+  &lt;/div>
+&lt;/div></pre>
+</div>
+
+
+
+<div class="slide">
+<pre contenteditable><b>&lt;fieldset</b> class="mgr" id="address"&gt;
+<b>&lt;legend&gt;Select an address to edit:&lt;/legend&gt;</b>
+&lt;div&gt;
+  &lt;a class="backward" data-move="backward" data-mgr="shipping-addresses" hidden&gt;&lt;/a&gt;
+  &lt;ul class="mgr-labels left0"&gt;
+    &lt;li&gt;
+      <b>&lt;label for="address1"&gt;</b>
+      &lt;p&gt;Estelle Weyl&lt;/p&gt; 
+      &lt;p&gt;194 Castro Street&lt;/p&gt;
+      &lt;p&gt;Mountain View CA 94041 US&lt;/p&gt; 
+      &lt;p&gt;6504981212&lt;/p&gt;
+      &lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;label for="address2"&gt;
+      &lt;p&gt;Estelle Weyl &lt;/p&gt; 
+      &lt;p&gt;Alley Not A Street &lt;/p&gt;   
+      &lt;p&gt;Valley City ND 58072 US &lt;/p&gt; 
+      &lt;p&gt;4155551212&lt;/p&gt;
+      &lt;/label&gt;
+    &lt;/li&gt;...
+  &lt;/ul&gt;
+  &lt;a class="forward" data-move="forward" data-mgr="shipping-addresses" hidden&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;ul id="addressradios" class="mgr-radios"&gt;
+    &lt;li&gt;
+      <b>&lt;input type="radio" name="shipping-addresses" data-value="0" id="address1" checked&gt;&lt;span&gt;&lt;/span&gt;</b>
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;input type="radio" name="shipping-addresses" data-value="1" id="address2"&gt;&lt;span&gt;&lt;/span&gt;
+    &lt;/li&gt;...
+  &lt;/ul&gt;
+  &lt;/fieldset&gt;</pre>
+</div>
+
+
+
+
+
+
+
+
+<div class="slide object">
+<object data="../a11yperf/site/index_js.html"></object>
+<a href="../a11yperf/site/index_js.html" class="pagelink">Example Page</a>
+</div>
+
+
+<div class="slide object">
+<!--<object data="../a11yperf/visaselect.html" class="enlarge"></object>-->
+<img src="../a11yperf/assets/images/dropkick.png" class="bytes" alt="5.8kb for the dropkick js file with jquery dependencyof 38.6 kb minified">
+<pre>&lt;section id="footer-listbox" <b>role="listbox" aria-label</b>="Select your country" class="footer-languageSelector">
+  &lt;section <b>role="option" tabindex="-1" aria-selected="true" </b>
+    id="footerLanguageOption-0" data-value="AR" class="footer-languageSelector-item">
+    &lt;label>Argentina&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-AR">&lt;/i>
+  &lt;/section>
+  &lt;section <b>role="option" tabindex="-1" aria-selected="false" </b> 
+    id="footerLanguageOption-1" data-value="AU" class="footer-languageSelector-item">
+    &lt;label>Australia&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-AU">&lt;/i>
+  &lt;/section>
+  &lt;section <b>role="option" tabindex="-1" aria-selected="false"</b>  
+    id="footerLanguageOption-2" data-value="BR" class="footer-languageSelector-item">
+    &lt;label>Brazil&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-BR">&lt;/i>
+  &lt;/section>
+  &lt;section <b>role="option" tabindex="-1" aria-selected="false"  </b>
+    id="footerLanguageOption-3" data-value="CA" class="footer-languageSelector-item">
+    &lt;label>Canada&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-CA">&lt;/i>
+  &lt;/section>
+  &lt;section <b>role="option" tabindex="-1" aria-selected="false" </b> 
+    id="footerLanguageOption-4" data-value="CL" class="footer-languageSelector-item">
+    &lt;label>Chile&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-CL">&lt;/i>
+  &lt;/section>
+  &lt;section <b>role="option" tabindex="-1" aria-selected="false" </b> 
+    id="footerLanguageOption-5" data-value="CN" class="footer-languageSelector-item">
+    &lt;label>China&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-CN">&lt;/i>
+  &lt;/section>
+  &lt;section <b>role="option" tabindex="-1" aria-selected="false"  </b>
+    id="footerLanguageOption-6" data-value="CO" class="footer-languageSelector-item">
+    &lt;label>Colombia&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-CO">&lt;/i>
+  &lt;/section>
+  &lt;section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-7" data-value="HK" class="footer-languageSelector-item">
+    &lt;label>Hong Kong&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-HK">&lt;/i>
+  &lt;/section>
+  &lt;section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-8" data-value="MY" class="footer-languageSelector-item">
+    &lt;label>Malaysia&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-MY">&lt;/i>
+  &lt;/section>
+  &lt;section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-9" data-value="MX" class="footer-languageSelector-item">
+    &lt;label>Mexico&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-MX">&lt;/i>
+  &lt;/section>
+  &lt;section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-10" data-value="NZ" class="footer-languageSelector-item">
+    &lt;label>New Zealand&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-NZ">&lt;/i>
+  &lt;/section>
+  &lt;section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-11" data-value="PE" class="footer-languageSelector-item">
+    &lt;label>Peru&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-PE">&lt;/i>
+  &lt;/section>
+  &lt;section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-12" data-value="SG" class="footer-languageSelector-item">
+    &lt;label>Singapore&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-SG">&lt;/i>
+  &lt;/section>
+  &lt;section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-13" data-value="ZA" class="footer-languageSelector-item">
+    &lt;label>South Africa&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-ZA">&lt;/i>
+  &lt;/section>
+  &lt;section role="option" tabindex="-1" aria-selected="false"  
+    id="footerLanguageOption-14" data-value="AE" class="footer-languageSelector-item">
+    &lt;label>United Arab Emirates&lt;/label>
+    &lt;i class="footer-languageSelector-item-icon footer-img-AE">&lt;/i>
+  &lt;/section>
+&lt;/section></pre>
+</div>
+
+
+<div class="slide object">
+<!--<object data="../a11yperf/estelleselect.html" class="enlarge"></object>-->
+<img src="../a11yperf/assets/images/language_selector_time.png"  class="bytes" alt="Selector script is 917 bytes"/>
+<pre><b>&lt;fieldset class="languageSelector">
+  &lt;legend>Select your country:&lt;/legend></b>
+  &lt;ul>
+    &lt;li>
+        &lt;input type="radio" name="langSelect"  id="langAR" value="AR">
+        &lt;label for="langAR" class="langAR">Argentina&lt;/label>
+    &lt;/li>
+    &lt;li>
+      <b>&lt;input type="radio" name="langSelect" id="langAU" value="AU">
+        &lt;label for="langAU" class="langAU">Australia&lt;/label></b>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langBR" value="BR">
+        &lt;label for="langBR" class="langBR">Brazil&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langCA" value="CA">
+        &lt;label for="langCA" class="langCA">Canada&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langCL" value="CL">
+        &lt;label for="langCL" class="langCL">Chile&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langCN" value="CN">
+        &lt;label for="langCN" class="langCN">China&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langCO" value="CO">
+        &lt;label for="langCO" class="langCO">Colombia&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langHK" value="HK">
+        &lt;label for="langHK" class="langHK">Hong Kong&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langMY" value="MY">
+        &lt;label for="langMY" class="langMY">Malaysia&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langMX" value="MX">
+        &lt;label for="langMX" class="langMX">Mexico&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langNZ" value="NZ">
+        &lt;label for="langNZ" class="langNZ">New Zealand&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langPE" value="PE">
+        &lt;label for="langPE" class="langPE">Peru&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langSG" value="SG">
+        &lt;label for="langSG" class="langSG">Singapore&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langZA" value="ZA">
+        &lt;label for="langZA" class="langZA">South Africa&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langAE" value="AE">
+        &lt;label for="langAE" class="langAE">United Arab Emirates&lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="langSelect" id="langUS" value="US">
+        &lt;label for="langUS" class="langUS">United States&lt;/label>
+    &lt;/li>
+  &lt;/ul>
+&lt;/fieldset></pre>
+</div>
+
+
+
+<div class="slide scaffolding"><section>
+<span class="photocredit" aria-label="Image of bay bridge's scaffolding by Kenneth Lu">Photo: <a href="https://www.flickr.com/photos/toasty/">Kenneth Lu</a></span></section>
+</div>
+
+<div class="slide thinkoutsidebox intro">
+  <div class="box">
+    <p aria-label="think outside the box">think</p>
+  </div>  
+</div>
+
+
+<div class="slide">
+<section class="content">
+<p class="next"><a href="solutions.html">Next</a></p>
+<h1>Estelle Weyl</h1>
+<h2><a href="http://www.standardista.com">www.standardista.com</a><br>
+<a href="http://www.instartlogic.com/blog">www.instartlogic.com/blog</a></h2><h2><a href="http://www.twitter.com/webdevtips">@webdevtips</a><br><a href="http://www.twitter.com/estellevw">@estellevw</a><br><a href="http://www.twitter.com/standardista">@standardista</a></h2>
+</section>
+</div>
+
+   </div>
+</div>
+<script src="../a11yperf/slides.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30010510-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.hoverhilite {
+  letter-spacing: 1;
+  &:hover {
+    color: $ilblue;
+    letter-spacing: initial;
+    font-weight: bold;
+  }
+  u {
+    text-decoration: none;
+  }
+  &.bad:hover u {
+      color: $red;
+      text-decoration: line-through;
+    }
+}
+
+.next {
+  border-bottom: 3px solid $lightborders;
+  text-align: right;
+  margin-right: 20px;
+  position: relative;
+  padding-right: 20px;
+  &:after {
+    content: '';
+    height:0; width:0;
+    border: 15px solid transparent;
+    border-left-color: $lightborders;
+    position: absolute;
+    right: -20px;
+    bottom: -15px;
+  }
+}

@@ -1,0 +1,414 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<meta charset="utf-8" />
+<title>Accessible Simplicity</title>
+<!--
+Made by: Estelle Weyl
+Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
+Based on: http://estelle.github.com/slides 
+-->    
+<link rel="stylesheet" href="../a11yperf/assets/css/oscon.css">
+<base target="play"/>
+</head>
+
+<body> 
+<div id="presentation">
+   <div id="slides">
+   
+   
+  <div class="slide intro">
+    <section class="content">
+    <h1 style="font-size: 3rem; margin-top: 10%;">Simply Accessible</h1>
+      <h2>Estelle Weyl</h2>
+      <p><a href="http://instartlogic.github.io/p/oscon">http://instartlogic.github.io/p/oscon/prescriptions.html</a></p>
+      
+    </section>
+</div>
+
+
+<div class="slide intro">
+<header><h1>Prescriptions</h1></header>
+</div>
+
+
+<div class="slide"> 
+<header><h1>Image Optimization</h1></header> 
+<section class="content"> 
+<dl class="hidden_dd">
+<dt>GZip</dt>
+<dd>GZip works best for text-based content, while providing little to no byte shrinkage on previously-compressed assets. SVG is a text-based image format. Minifying and GZipping SVG image and font files can greatly <a href="http://calendar.perfplanet.com/2014/tips-for-optimising-svg-delivery-for-the-web/">reduce their SVG file size</a>. Minify first. Then Gzip.</dd>
+<dt>Remove Image Metadata</dt>
+<dd>Cameras and software often add metadata to images that is not seen by the web user. This metadata can actually be a security risk by exposing geographical data. There’s free software that will <a href="https://itunes.apple.com/us/app/exifpurge/id784466108?mt=12">strip EXIF metadata</a> from multiple images at a time.</dd>
+<dt>Resize Images</dt>
+<dd>Serve the smallest image file for the screen size and resolution. <ul>
+<li> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">&lt;picture&gt;</a> element</li>
+<li><a href="http://www.sitepoint.com/how-to-build-responsive-images-with-srcset/">srcset</a> attribute</li><li>load small background images in CSS </support <a href="http://caniuse.com/#search=srcset">Internet Explorer</a>, consider using <a href="http://scottjehl.github.io/picturefill/">Picturefill</a> or JS-free <a href="https://www.smashingmagazine.com/2013/06/clown-car-technique-solving-for-adaptive-images-in-responsive-web-design/">Clown Car Technique</a>.</li>
+<li>Serve scaled images. Resizing images means <a href="http://blog.cloudfour.com/responsive-images-101-part-9-image-breakpoints/">downloading unneeded pixels</a> and take longer to decode and paint.
+</li></ul>
+</dd>
+<dt>Optimize Images</dt>
+<dd>Serve the smallest image size for the screen size and resolution. Images, no matter the size, should be compressed as much as possible without noticeably degrading the quality. Image compression programs include <a href="https://imageoptim.com/">ImageOptim</a> and <a href="https://pngmini.com/">ImageAlpha</a> for pngs. Can be automated with machine learning with <a href="https://www.instartlogic.com/blog/playing-smartvision-intelligent-image-optimization">SmartVision</a>.</dd>
+<dt>Use the Right Image Format</dt>
+<dd>Image types include SVG, GIF, JPEG, PNG, and WebP. 
+<ul>
+<li>GIF: Palette of less than 256 colors, like a comic, for transparency and for low quality animation</li>
+<li>SVG: Better than GIFS: Scalable, Animatable, unlimited color pallette</li>
+<li>PNG: When you need transparency and have more than 256 colors.</li>
+<li>JPEG: raster images</li>
+<li>JPEG with a CSS mask: when you need transparency on a raster image and PNG-24 file size is huge</li>
+<li> WebP:  Animation, transparency, and great resolution with small file size, but only supported in Blink. <a href="https://developers.google.com/speed/webp/faq#which_web_browsers_natively_support_webp">Test WebP</a></li>
+<li>JPEG-XR: For Edge</li>
+</ul>
+</dd>
+<dt>Reduce the Number of Images</dt>
+<dd>Reduce HTTP requests with sprites. Also, consider reducing actual number of images your page requires: is your image worth 1,000 words or does your site work better without it?</dd>
+<dt>Leverage CSS</dt>
+<dd>Leverage CSS to reduce image size and number of images:
+<ul><li><strong>Image Masking:</strong> use <a href="http://wegraphics.net/blog/articles/png-masking-how-to-dynamically-shape-any-image-on-your-website/">image masking</a> when you need a “transparent JPEG” without PNG-24 file size</li>
+<li><strong>CSS Effects:</strong> gradients, borders, outlines, rounded corners, shadows, etc. Create resolution-independent effects with minifiable &amp; gZippable text</li>
+<li><strong>Sprites:</strong> until HTTP/2 is fully supported  use <a href="https://www.smashingmagazine.com/2009/04/the-mystery-of-css-sprites-techniques-tools-and-tutorials/">image sprites</a> and background-position to reduce number of requests</li>
+<li><strong>Animation:</strong> when animating GIFs, consider CSS <a href="http://codepen.io/estelle/pen/LyItm">animation using the steps()</a> timing function and sprites as an alternative</li>
+<li><strong>Filters:</strong> use <a href="http://www.html5rocks.com/en/tutorials/filters/understanding-css/">CSS filter</a> effects instead of multiple versions of the same image if you want filters applied: save bytes, HTTP requests and time</li>
+<li><strong>Media Queries:</strong> Use media queries to serve hi-res images to hi-res devices</li>
+</ul></dd>
+</dl>
+<p><strong>Note:</strong> Include an <em>alt</em> attribute on all  foreground images, with empty <a href="http://webaim.org/techniques/alttext/"><em>alt</em> attribute</a> for decorative images.</p>
+
+<a class="pagelink" href="https://www.instartlogic.com/blog/image-optimization-tips-for-improved-web-performance">Image Optimization Tips</a>
+</section>
+</div> 
+ 
+  
+<div class="slide">
+<header><h1>PageSpeed</h1></header>
+<section class="content">
+<dl class="hidden_dd">
+<dt>Minimize request size</dt>
+ <dd>GZip all requests. </dd>
+<dt>Leverage browser caching.</dt>
+ <dd>Include caching headers for all requests with a future date so previously fetched responses can be reused instead of refetched.</dd>
+<dt>Specify a cache validator</dt>
+ <dd>Specify a <code>Last-Modified</code> or ETag header to enable cache validation. ETags provide revalidation tokens automatically sent by client to check if there are file changes since last requested. </dd>
+<dt>Minify CSS, JS &amp; HTML</dt>
+ <dd>Removing unnecessary whitespace saves bandwidth</dd>
+<dt>Defer parsing of JavaScript</dt>
+ <dd>inlcude <code>async</code> attribute in your <code>&lt;script&gt;</code> tags so client can continue downloading assets instead of waiting as scripts are downloaded, parsed and excecuted.</dd>
+<dt>Optimize images</dt>
+ <dd>Choose best format and compression on a per image basis include: type of data being encoded, image format capabilities, quality settings, resolution, and more. Leverage SVG and CSS. See previous page.</dd>
+<dt>Specify a character set</dt>
+ <dd>Including a content-type header, such as <code>Content-Type: text/html; charset=UTF-8</code> reduces browser processing. Can start parsing HTML immediately when it knows which character set it has.</dd>
+<dt>Remove query strings from static resources</dt>
+ <dd>Resources with a "?" in the URL are not cached by some proxy caching servers</dd>
+<dt>Specify a Vary: Accept-Encoding header</dt>
+ <dd>In case client doesn't support compression, tells proxy server to store both compressed and uncompressed versions.</dd>
+<dt>Avoid CSS @import</dt>
+ <dd>Only starts downing imported file once encountered rather than in parallel.</dd>
+<dt>Avoid a character set in the meta tag</dt>
+ <dd>Better to include it in HTTP Content-Type header (IE8 rule)</dd>
+<dt>Avoid bad requests</dt>
+ <dd>404 and 410 errors waste time. If requests are for blocking resources, it becomes a more serious problem.</dd>
+<dt>Avoid landing page redirects</dt>
+ <dd>If your site requires redirects, do them server-side not client side, to reduce round trip requests. Removing HTTP redirects removes extra round trips.</dd>
+<dt>Combine images into CSS sprites</dt>
+ <dd></dd>
+<dt>Enable Keep-Alive</dt>
+ <dd>HTTP persistent connections allows a TCP connection to send and receive multiple HTTP requests, reducing latency for subsequent requests.</dd>
+<dt>Enable compression</dt>
+ <dd>GZip!</dd>
+<dt>Inline Small CSS &amp; JS</dt>
+ <dd></dd>
+<dt>Minimize redirects</dt>
+ <dd>Minimizing redirects removes additional RTTs and wait time for users.</dd>
+<dt>Optimize the order of styles and scripts</dt>
+ <dd></dd>
+<dt>Prefer asynchronous resources</dt>
+ <dd>Many JS libraries and frameworks were originally written as synchronous scripts, but now have asynchronous versions. Use the asynchronous versions. </dd>
+<dt>Put CSS in the document head</dt>
+ <dd></dd>
+<dt>Serve resources from a consistent URL</dt>
+ <dd></dd>
+<dt>Serve scaled images</dt>
+ <dd>Properly sized images saves bandwidth.</dd>
+<dt>Specify image dimensions</dt>
+ <dd>Enables rendering page before images are downloaded. Without proper dimensions, browser will need to reflow and repaint upon image downloaded.</dd>
+</dl>
+<a class="pagelink" href="https://developers.google.com/speed/docs/insights/about#send-us-your-feedback">Page Speed</a>
+</section>
+</div>
+
+
+
+
+<div class="slide"> 
+<header><h1>Usability Rules</h1></header> 
+<section class="content"> 
+<dl class="hidden_dd">
+<dt>Avoid plugins</dt>
+ 
+<dt>Configure the viewport</dt>
+ <dd>Optimize pages to display well on mobile devices by including a meta viewport in the head of the document specifying <code>width=device-width, initial-scale=1</code>.
+
+<pre>&lt;meta name=viewport content="width=device-width, initial-scale=1"&gt;</pre></dd>
+
+
+<dt>Size content to viewport</dt>
+ <dd>Scrolling websites vertically is Okay, but horizontally creates poor user experience. Use media queries and <code>vh</code>, <code>vw</code> and percents for width.
+</dd>
+
+<dt>Size tap targets appropriately</dt>
+ <dd>Set a minimum tap target size of  of 48 CSS pixels on a site with a properly-set mobile viewport. Make important tap targets large enough to be easy to press, ensuring there is extra spacing between smaller tap targets.</dd>
+<dt>Use legible font sizes</dt>
+
+ </dl>
+ <a class="pagelink" href="https://developers.google.com/speed/docs/insights/rules">Page Speed Insights</a>
+ </section>
+</div>
+
+<!-- Oracle - large -->
+<div class="slide object viewport">
+  <div class="img" aria-label="when the viewport shrinks, so does the content, to a point of being illegible"></div>
+<header><h1>Configure Viewport</h1></header>
+</div>
+
+
+<div class="slide">
+  <header><h1>Viewport</h1></header>
+    <section class="content"><pre>&lt;meta name="viewport"
+  content="<span class="hoverhilite">width=device-width</span>,
+     <span class="hoverhilite">user-scalable=yes</span>"&gt;</pre>
+
+     <pre>@viewport { viewport-properties }</pre>
+
+     <p>Specifies:
+     <ol> 
+       <li>viewport size</li>
+       <li>zoom factor</li>
+       <li>orientation</li>
+     </ol>
+     </p>
+<p class="resources small">
+     Resource: <a href="http://www.quirksmode.org/mobile/viewports2.html" target="_blank">A tale of 2 viewports</a><br/>
+      Tutorial: <a href="http://estelle.github.io/CSS-Workshop/part_04_media.html" target="_blank">Media Queries slide deck</a></p>
+    </section>
+</div>
+
+<!-- Godaddy - large -->
+<div class="slide object viewport resizemeta">
+  <div class="img" aria-label="when the viewport shrinks, now the page narrows, but the content doesn't shrink, so it is still legible"></div>
+</div>
+
+<!--GMAIL-->
+<div class=slide>
+<header><h1>Don't be a jerk like GMail</h1></header>
+<pre>&lt;meta name="viewport" 
+  content="<span class="hoverhilite">initial-scale=1.0</span>, 
+           <span class="hoverhilite bad"><u>maximum-scale=1.0</u>, 
+           <u>minimum-scale=1.0</u>, 
+           <u>user-scalable=no</u></span>, 
+           <span class="hoverhilite">width=device-width</span>"></pre>
+<img src="../a11yperf/assets/images/perf/gmail.png" alt="Gmail doesn't allow resizing" style="margin: auto; display: block; width: 320px"/>
+</div>
+
+
+<!-- scalable -->
+<div class="slide intro">
+<header><h1>user-scalable=yes</h1></header>
+  <div><pre>&lt;meta name="viewport"
+  content="<span class="hoverhilite">width=device-width</span>, 
+           <span class="hoverhilite">user-scalable=yes</span>,
+           <span class="hoverhilite">initial-scale=1</span>"&gt;</pre>
+  </div>
+</div>
+
+<div class="slide">
+<header><h1>Size content to viewport</h1></header>
+<section>
+<ul>
+<li>Scrolling websites vertically, not horizontally</li>
+<li>Use media queries</li>
+<li>Use <code>vh</code>, <code>vw</code> and percents for width.
+</li>
+</section>
+</div>
+
+
+<div class="slide">
+<header><h1>Target Size</h1></header>
+<section><p>Size tap targets appropriately</p>
+<ul>
+<li>Minimum 48px</li>
+<li>Larger if important</li>
+<li>Space between targets</li>
+<li>Extra space for small tap targets</li>
+</ul>
+</section>
+</div>
+
+
+<div class="slide">
+<header><h1>WCAG 1.0 (1998)</h1></header>
+<section>
+<ol class="pop"><li>Provide equivalent <i>alt</i>ernatives to auditory and visual content
+</li><li>Don’t rely on <i>colour</i> alone
+</li><li>Use markup (<i>HTML</i>) and style sheets (<i>CSS</i>), and do so properly
+</li><li>Clarify natural <i>lang</i>uage usage
+</li><li>Create tables that transform gracefully
+</li><li>Ensure that pages featuring new technologies transform gracefully
+</li><li>Ensure user control of <i>time</i> sensitive content changes
+</li><li>Ensure direct accessibility of embedded user interfaces
+</li><li>Design for <i>device independence</i>
+</li><li>User interim solutions
+</li><li>Use W3C technologies and guidelines
+</li><li>Provide context and orientation information
+</li><li>Provide clear <i>nav</i>igation mechanisms
+</li><li>Ensure that documents are <i>clear</i> and <i>simple</i>
+</li></ol>
+</section>
+</div>
+
+
+
+<div class="slide wcag2">
+<header><h1>WCAG 2.0 (2008)</h1></header>
+<section>
+<p><strong>Perceivable:</strong> Content &amp; UI components</p>
+<ol>
+<li>Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.</li>
+<li>Time-based media: Provide alternatives for time-based media.</li>
+<li>Create content that can be presented in different ways (for example simpler layout) without losing information or structure.
+</li>
+<li>Make it easier for users to see and hear content including separating foreground from background.</li>
+</ol>
+<p><strong>Operable:</strong> UI and Nav </p>
+<ol>
+<li>Make all functionality available from a keyboard.</li>
+</li>
+<li>Provide users enough time to read and use content.
+</li>
+<li>Do not design content in a way that is known to cause seizures.
+</li>
+<li>Provide ways to help users navigate, find content, and determine where they are.</li>
+</ol></section>
+</div>
+
+
+
+<div class="slide wcag2">
+<header><h1>WCAG 2.0 (2008)</h1></header>
+<section>
+<p>
+<strong>Understandable:</strong>
+Information and operation of UI</p>
+<ol>
+<li>Make text content readable and understandable.
+</li>
+<li>Make web pages appear and operate in predictable ways.
+</li>
+<li>Help users avoid and correct mistakes.</li>
+</ol>
+<p><strong>Robust:</strong>
+Content interprable by UAs, including AT.</p>
+<ol>
+<li>Maximize compatibility with current and future user agents, including assistive technologies.
+</li>
+</ol></section>
+</div>
+
+<div class="slide">
+<header><h1>Accessible Design Rules</h1></header>
+
+<section>
+<ol class="pop"><li><b>Plan <i>Heading Structure</i> Early</b>
+<br/>Ensure all content and design fits into a <a href="../a11yperf/techniques/semanticstructure/">logical heading structure</a>.</li>
+
+<li><b>Consider <i>Reading Order</i></b>
+<br/>The <a href="/techniques/screenreader/">reading order</a> should be the same as the visual order.</li>
+
+<li><b>Provide Good <i>Contrast</i></b>
+<br/>Be especially careful with light shades of gray, orange, and yellow. Check your contrast levels with our color contrast checker.</li>
+
+<li><b>Use True <i>Text</i> Whenever Possible</b>
+<br/>True text enlarges better, loads faster, and is easier to translate. Use CSS to add visual style.</li>
+
+<li><b>Watch the Use of CAPS</b>
+<br/>All caps can be difficult to read and can be read incorrectly by screen readers.</li>
+</ol>
+</section>
+</div>
+
+<div class="slide">
+<header><h1>Accessible Design Rules (2)</h1></header>
+
+<section>
+<ol  start="6" class="pop">
+<li><b>Use Adequate <i>Font Size</i></b>
+<br/>Font size can vary based on the font chosen, but 10 point is usually a minimum.</li>
+
+<li><b>Remember <i>Line Length</i></b>
+<br/>Don't make it too long or too short.</li><li><b>Make Sure <i>Links</i> are Recognizable</b>
+<br/>Differentiate links in the body of the page with underlines or something other than color alone.</li>
+
+<li><b>Design Link <i>Focus</i> Indicators</b>
+<br/>Ensure keyboard users can visually identify a focused link. Use the standard dotted line or other non-color designators.</li>
+
+<li><b>Design a "<i>Skip</i> to Main Content" Link</b>
+<br/>A link for keyboard users to skip navigation should be at the top of the page. It can be hidden, but should be visible when it receives keyboard focus.</li>
+</ol>
+</section>
+</div>
+
+<div class="slide">
+<header><h1>Accessible Design Rules (2)</h1></header>
+
+<section>
+<ol  start="11" class="pop">
+<li><b>Ensure <i>Link Text</i> Makes Sense on Its Own</b>
+<br/>Avoid "Click Here" in link text. Other ambiguous links, such as "More" or "Continue", can also be confusing.</li>
+
+<li><i>Motion and sound</i>: <b>Use Animation, Video, and Audio Carefully</b>
+<br/>If used, provide a play/pause button. Avoid flashing or strobing content: It can cause seizures.</li>
+
+<li><b>Don't Rely on <i>Color</i> Alone</b>
+<br/>Because users often can't distinguish or may override page colors, color cannot be the only way information is conveyed.</li>
+
+<li><b>Design Accessible <i>Form Controls</i></b>
+<br/>Ensure form controls have descriptive labels and instructions. Pay close attention to form validation errors and recovery mechanisms.</li></ul>
+<a href="http://webaim.org/resources/designers/" class="pagelink">Get Poster</a>
+</section>
+</div>
+
+
+
+
+<div class="slide intro">
+<header><h1>Issues</h1></header>
+</div>
+
+
+
+
+<div class="slide">
+<section class="content">
+<p class="next"><a href="requirements.html">Next</a></p>
+<h1>Estelle Weyl</h1>
+<h2><a href="http://www.standardista.com">www.standardista.com</a><br>
+<a href="http://www.instartlogic.com/blog">www.instartlogic.com/blog</a></h2><h2><a href="http://www.twitter.com/webdevtips">@webdevtips</a><br><a href="http://www.twitter.com/estellevw">@estellevw</a><br><a href="http://www.twitter.com/standardista">@standardista</a></h2>
+</section>
+</div>
+
+   </div>
+</div>
+<script src="../a11yperf/slides.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30010510-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

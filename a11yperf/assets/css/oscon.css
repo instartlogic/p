@@ -237,6 +237,39 @@ small {
   opacity: 0.5;
   text-align: left; }
 
+pre {
+  text-align: left;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: linear-gradient(to top, #eaf3fb 50%, #FFF 50%);
+  background-position: 0 1.8rem;
+  background-clip: padding-box;
+  background-attachment: local;
+  width: 99vw;
+  overflow: scroll;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+  padding-top: 1.8vh;
+  line-height: 4vh;
+  background-size: 100% 8vh;
+  font-size: 3.5vh;
+  position: relative;
+  top: -10px;
+  border: 1px solid #ccc; }
+  pre b, pre em {
+    font-weight: normal;
+    font-style: normal;
+    color: #226DAA;
+    font-weight: bold;
+    transition: 200ms; }
+    pre b:hover, pre em:hover {
+      display: inline-block;
+      transform: scale(1.5);
+      background-color: rgba(255, 255, 255, 0.8);
+      transform-origin: left center; }
+  pre.allcode {
+    height: 90vh; }
+
 /* OBJECT PAGES */
 .object header {
   position: absolute;
@@ -292,48 +325,6 @@ a.pagelink {
     content: ' ➫';
     display: inline-block;
     padding-left: 5px; }
-
-.switchletters h1 {
-  display: flex;
-  text-align: center;
-  color: #226DAA;
-  justify-content: center;
-  padding: 40px 0;
-  letter-spacing: 0.25px;
-  flex-flow: row wrap; }
-.switchletters i {
-  position: absolute;
-  color: rgba(0, 0, 0, 0.01);
-  text-shadow: none; }
-.switchletters span {
-  padding: 0 5px;
-  white-space: nowrap; }
-.switchletters h1 span {
-  order: 0; }
-.switchletters .a:after {
-  content: 'y'; }
-.switchletters h1:hover .a:after {
-  content: "e"; }
-.switchletters h1:hover .a:before {
-  content: "made "; }
-.switchletters h1:hover .c:before {
-  content: "with "; }
-.switchletters h1:hover .c:after {
-  content: " Standards "; }
-.switchletters h1:hover .a {
-  order: 4; }
-.switchletters h1:hover .b {
-  order: 1; }
-.switchletters .b:after {
-  content: 'le'; }
-.switchletters h1:hover .b:before {
-  content: "  "; }
-.switchletters h1:hover .b:after {
-  content: "ility and "; }
-.switchletters h1:hover .c {
-  order: 6; }
-.switchletters h1:hover .d {
-  order: 2; }
 
 .tweet .content {
   display: flex;
@@ -490,6 +481,69 @@ twitterwidget {
 .halfwidth dd {
   width: 50%; }
 
+.pop {
+  line-height: 1.75em; }
+  .pop i {
+    color: #226DAA;
+    font-weight: bold;
+    font-size: 1.75em;
+    font-style: normal; }
+
+.viewport .img {
+  height: 100%;
+  width: 100%;
+  background: url(../images/perf/godaddy.png) no-repeat;
+  animation: grow_shrink 10s infinite alternate-reverse;
+  background-size: 100% auto;
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); }
+.viewport.resizemeta .img {
+  background-size: 880px; }
+
+@keyframes grow_shrink {
+  0%, 30% {
+    height: 100%;
+    width: 30%; }
+  70%, 100% {
+    width: 99%;
+    height: 100%; } }
+@keyframes grow_shrink2 {
+  0%, 30% {
+    height: 140%;
+    width: 40%;
+    transform: scale(1); }
+  70%, 100% {
+    width: 170%;
+    height: 180%;
+    transform: scale(0.6); } }
+.hoverhilite {
+  letter-spacing: 1; }
+  .hoverhilite:hover {
+    color: #226DAA;
+    letter-spacing: initial;
+    font-weight: bold; }
+  .hoverhilite u {
+    text-decoration: none; }
+  .hoverhilite.bad:hover u {
+    color: #f00;
+    text-decoration: line-through; }
+
+.next {
+  border-bottom: 3px solid #ccc;
+  text-align: right;
+  margin-right: 20px;
+  position: relative;
+  padding-right: 20px; }
+  .next:after {
+    content: '';
+    height: 0;
+    width: 0;
+    border: 15px solid transparent;
+    border-left-color: #ccc;
+    position: absolute;
+    right: -20px;
+    bottom: -15px; }
+
 body {
   counter-reset: wcag; }
 
@@ -592,4 +646,4 @@ li {
   #presentation-counter, #info, #topinfo, .counter {
     display: none; } }
 
-/*# sourceMappingURL=webdevcon.css.map */
+/*# sourceMappingURL=oscon.css.map */

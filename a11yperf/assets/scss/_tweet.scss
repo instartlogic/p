@@ -1,8 +1,10 @@
-
-.tweet iframe {
-  margin: 100px auto 0 !important;
-  font-size: 1.2rem;
-  transform: scale(1.65);
-  //-webkit-transform-origin: top;
+.tweet .content{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 80vh;
+  padding-top: 120px;
 }
-
+twitterwidget {
+  transform: scale(1.4);
+}

@@ -2,12 +2,10 @@
 
 pre {
   text-align: left;
-  font-size: 0.8rem;
   padding: 10px 20px;
   border-radius: 8px;
-  border: 1px solid white;
-  background: linear-gradient(to top, lighten($ilblue, 55%) 50%, #FFF 50%);
-    background-size: 100% 2.7rem;
+  background: 
+    linear-gradient(to top, lighten($ilblue, 55%) 50%, #FFF 50%);
     background-position: 0 1.8rem;
     background-clip: padding-box;
     background-attachment: local;
@@ -15,6 +13,17 @@ pre {
   overflow: scroll;
   font-size: 1.4rem;
   box-sizing: border-box;
+  padding-top: 1.8vh;
+  line-height: 4vh; 
+  background-size: 100% 8vh; 
+  font-size: 3.5vh; 
+  position: relative; 
+  top: -10px;
+  border: 1px solid $lightborders;
+
+
+
+
 b, em {
   font-weight: normal;
   font-style: normal;
