@@ -9,6 +9,12 @@ Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
 Based on: http://estelle.github.com/slides 
 -->    
 <link class="removeForAT" rel="stylesheet" href="../a11yperf/assets/css/oscon.css">
+<style>.hidden_dd.inline dt {display: inline; }
+.hidden_dd.inline dt:after {
+  content: ' '; display: inline-block; height: 0.75rem; border-right: 1px solid #ccc; 
+padding: 0 5px;
+}
+</style>
 <base target="play"/>
 </head>
 
@@ -174,7 +180,234 @@ Based on: http://estelle.github.com/slides
 <i>A</i>pplications</h1>
 </div>
 
+<div class="slide">
+<header><h1>WAI-ARIA Roles</h1></header>
+<section>
+<p>Adding an ARIA role overrides the native role semantics in the accessibility tree which is reported via the accessibility API, and therefore ARIA indirectly affects what is reported to a screen reader or other assistive technology.</p>
 
+<pre>&lt;h1 role=button>text&lt;/h1></pre>
+<p>Becomes button with a label of 'heading text'</p>
+</section>
+</div>
+
+<div class="slide">
+  <header><h1>Roles</h1></header>
+  <section><dl  class="hidden_dd inline"><dt><code>alert</code></a></dt>
+<dd>A type of live region with important, and usually time-sensitive, information. See related alertdialog and status.</dd>
+<dt><code>alertdialog</code></dt>
+<dd>A type of dialog that contains an alert message, where initial focus goes to an element within the dialog. See related alert and dialog.</dd>
+<dt><code>application</code></dt>
+<dd>A structure containing one or more focusable elements requiring user input, such as keyboard or gesture events, that do not follow a standard interaction pattern supported by a widget role.</dd>
+<dt><code>article</code></dt>
+<dd>A section of a page that consists of a composition that forms an independent part of a document, page, or site.</dd>
+<dt><code>banner</code></dt>
+<dd>A region that contains mostly site-oriented content, rather than page-specific content.</dd>
+<dt><code>button</code></dt>
+<dd>An input that allows for user-triggered actions when clicked or pressed. See related link.</dd>
+<dt><code>cell</code></dt>
+<dd>[ARIA 1.1] A cell in a tabular container.</dd>
+<dt><code>checkbox</code></dt>
+<dd>A checkable input that has three possible <span>values</span>: true, false, or mixed.</dd>
+<dt><code>columnheader</code></dt>
+<dd>A cell containing header information for a column.</dd>
+<dt><code>combobox</code></dt>
+<dd>A composite widget containing a single-line textbox and another element, such as a listbox or grid, that can dynamically pop up to help the user set the value of the textbox.</dd>
+<dt><code>command</code>  </dt>
+<dd>A form of widget that performs an action but does not receive input data.</dd>
+<dt><code>complementary</code></dt>
+<dd>A supporting section of the document, designed to be complementary to the main content at a similar level in the <abbr title="Document Object Model">DOM</abbr> hierarchy, but remains meaningful when separated from the main content.</dd>
+<dt><code>composite</code>  </dt>
+<dd>A widget that may contain navigable descendants or owned children.</dd>
+<dt><code>contentinfo</code></dt>
+<dd>A large perceivable region that contains information about the parent document.</dd>
+<dt><code>definition</code></dt>
+<dd>A definition of a term or concept. See related term.</dd>
+<dt><code>dialog</code></dt>
+<dd>A dialog is a descendant window of the primary window of a web application. For <abbr title="Hypertext Markup Language">HTML</abbr> pages, the primary application window is the entire web document, i.e., the <code>body</code> element.</dd>
+<dt><code>directory</code></dt>
+<dd>A list of references to members of a group, such as a static table of contents.</dd>
+<dt><code>document</code></dt>
+<dd>An element containing content that assistive technology users may want to browse in a reading mode.</dd>
+<dt><code>feed</code></dt>
+<dd>[ARIA 1.1] A scrollable list of articles where scrolling may cause articles to be added to or removed from either end of the list.</dd>
+<dt><code>figure</code></dt>
+<dd>[ARIA 1.1] A perceivable section of content that typically contains a graphical document, images, code snippets, or example text. The parts of a <code>figure</code> <em class="rfc2119" title="MAY">MAY</em> be user-navigable.</dd>
+<dt><code>form</code></dt>
+<dd>A landmark region that contains a collection of items and objects that, as a whole, combine to create a form. See related search.</dd>
+<dt><code>grid</code></dt>
+<dd>A composite widget containing a collection of one or more rows with one or more cells where some or all cells in the grid are focusable by using methods of two-dimensional navigation, such as directional arrow keys.</dd>
+<dt><code>gridcell</code></dt>
+<dd>A cell in a grid or treegrid.</dd>
+<dt><code>group</code></dt>
+<dd>A set of user interface objects which are not intended to be included in a page summary or table of contents by assistive technologies.</dd>
+<dt><code>heading</code></dt>
+<dd>A heading for a section of the page.</dd>
+<dt><code>img</code></dt>
+<dd>A container for a collection of elements that form an image.</dd>
+<dt><code>input</code>  </dt>
+<dd>A generic type of widget that allows user input.</dd>
+<dt><code>landmark</code>  </dt>
+<dd>A perceivable section containing content that is relevant to a specific, author-specified  purpose and sufficiently important that users will likely want to be able to navigate to the section easily and to have it listed in a summary of the page. Such a page summary could be generated dynamically by a user agent or assistive technology.</dd>
+<dt><code>link</code></dt>
+<dd>An interactive reference to an internal or external resource that, when activated, causes the user agent to navigate to that resource. See related button.</dd>
+<dt><code>list</code></dt>
+<dd>A section containing listitem elements. See related listbox.</dd>
+<dt><code>listbox</code></dt>
+<dd>A widget that allows the user to select one or more items from a list of choices. See related combobox and list.</dd>
+<dt><code>listitem</code></dt>
+<dd>A single item in a list or directory.</dd>
+<dt><code>log</code></dt>
+<dd>A type of live region where new information is added in meaningful order and old information may disappear. See related marquee.</dd>
+<dt><code>main</code></dt>
+<dd>The main content of a document.</dd>
+<dt><code>marquee</code></dt>
+<dd>A type of live region where non-essential information changes frequently. See related log.</dd>
+<dt><code>math</code></dt>
+<dd>Content that represents a mathematical expression.</dd>
+<dt><code>menu</code></dt>
+<dd>A type of widget that offers a list of choices to the user.</dd>
+<dt><code>menubar</code></dt>
+<dd>A presentation of menu that usually remains visible and is usually presented horizontally.</dd>
+<dt><code>menuitem</code></dt>
+<dd>An option in a set of choices contained by a menu or menubar.</dd>
+<dt><code>menuitemcheckbox</code></dt>
+<dd>A menuitem with a checkable state whose possible <span>values</span> are true, false, or mixed.</dd>
+<dt><code>menuitemradio</code></dt>
+<dd>A checkable menuitem in a set of elements with the same role, only one of which can be checked at a time.</dd>
+<dt><code>navigation</code></dt>
+<dd>A collection of navigational elements (usually links) for navigating the document or related documents.</dd>
+<dt><code>none</code></dt>
+<dd>[ARIA 1.1] An element whose implicit native role semantics will not be mapped to the accessibility <abbr title="Application Programing Interfaces">API</abbr>. See synonym presentation [ARIA 1.0].</dd>
+<dt><code>note</code></dt>
+<dd>A section whose content is parenthetic or ancillary to the main content of the resource.</dd>
+<dt><code>option</code></dt>
+<dd>A selectable item in a select list.</dd>
+<dt><code>password</code></dt>
+<dd>[ARIA 1.1] An input for entering a password.</dd>
+<dt><code>presentation</code></dt>
+<dd>An element whose implicit native role semantics will not be mapped to the accessibility <abbr title="Application Programing Interfaces">API</abbr>. See synonym none [ARIA 1.1].</dd>
+<dt><code>progressbar</code></dt>
+<dd>An element that displays the progress status for tasks that take a long time.</dd>
+<dt><code>radio</code></dt>
+<dd>A checkable input in a group of elements with the same role, only one of which can be checked at a time.</dd>
+<dt><code>radiogroup</code></dt>
+<dd>A group of radio buttons.</dd>
+<dt><code>range</code>  </dt>
+<dd>An input representing a range of values that can be set by the user.</dd>
+<dt><code>region</code></dt>
+<dd>A perceivable section containing content that is relevant to a specific, author-specified  purpose and sufficiently important that users will likely want to be able to navigate to the section easily and to have it listed in a summary of the page. Such a page summary could be generated dynamically by a user agent or assistive technology.</dd>
+<dt><code>roletype</code>  </dt>
+<dd>The base role from which all other roles in this taxonomy inherit.</dd>
+<dt><code>row</code></dt>
+<dd>A row of cells in a tabular container.</dd>
+<dt><code>rowgroup</code></dt>
+<dd>A structure containing one or more row elements in a tabular container.</dd>
+<dt><code>rowheader</code></dt>
+<dd>A cell containing header information for a row in a grid.</dd>
+<dt><code>scrollbar</code></dt>
+<dd>A graphical object that controls the scrolling of content within a viewing area, regardless of whether the content is fully displayed within the viewing area.</dd>
+<dt><code>search</code></dt>
+<dd>A landmark region that contains a collection of items and objects that, as a whole, combine to create a search facility. See related form and searchbox.</dd>
+<dt><code>searchbox</code></dt>
+<dd>[ARIA 1.1] A type of textbox intended for specifying search criteria. See related textbox and search.</dd>
+<dt><code>section</code>  </dt>
+<dd>A renderable structural containment unit in a document or application.</dd>
+<dt><code>sectionhead</code>  </dt>
+<dd>A structure that labels or summarizes the topic of its related section.</dd>
+<dt><code>select</code>  </dt>
+<dd>A form widget that allows the user to make selections from a set of choices.</dd>
+<dt><code>separator</code></dt>
+<dd>A divider that separates and distinguishes sections of content or groups of menuitems.</dd>
+<dt><code>slider</code></dt>
+<dd>A user input where the user selects a value from within a given range.</dd>
+<dt><code>spinbutton</code></dt>
+<dd>A form of range that expects the user to select from among discrete choices.</dd>
+<dt><code>status</code></dt>
+<dd>A type of live region whose content is advisory information for the user but is not important enough to justify an alert, often but not necessarily presented as a status bar. See related alert.</dd>
+<dt><code>structure</code>  </dt>
+<dd>A document structural element.</dd>
+<dt><code>switch</code></dt>
+<dd>[ARIA 1.1] A type of checkbox that represents on/off values, as opposed to checked/unchecked values. See related checkbox.</dd>
+<dt><code>tab</code></dt>
+<dd>A grouping label providing a mechanism for selecting the tab content that is to be rendered to the user.</dd>
+<dt><code>table</code></dt>
+<dd>[ARIA 1.1] A section containing data arranged in rows and columns.</dd>
+<dt><code>tablist</code></dt>
+<dd>A list of tab elements, which are references to tabpanel elements.</dd>
+<dt><code>tabpanel</code></dt>
+<dd>A container for the resources associated with a tab, where each tab is contained in a tablist.</dd>
+<dt><code>term</code></dt>
+<dd>[ARIA 1.1] A word or phrase with a corresponding definition. See related definition.</dd>
+<dt><code>text</code></dt>
+<dd>[ARIA 1.1] An element whose entire subtree should be exposed to accessibility <abbr title="Application Programing Interfaces">APIs</abbr> as plain text.</dd>
+<dt><code>textbox</code></dt>
+<dd>A type of input that allows free-form text as its value.</dd>
+<dt><code>timer</code></dt>
+<dd>A type of live region containing a numerical counter which indicates an amount of elapsed time from a start point, or the time remaining until an end point.</dd>
+<dt><code>toolbar</code></dt>
+<dd>A collection of commonly used function buttons or controls represented in compact visual form.</dd>
+<dt><code>tooltip</code></dt>
+<dd>A contextual popup that displays a description for an element.</dd>
+<dt><code>tree</code></dt>
+<dd>A type of list that may contain sub-level nested groups that can be collapsed and expanded.</dd>
+<dt><code>treegrid</code></dt>
+<dd>A grid whose rows can be expanded and collapsed in the same manner as for a tree.</dd>
+<dt><code>treeitem</code></dt>
+<dd>An option item of a tree. This is an element within a tree that may be expanded or collapsed if it contains a sub-level group of tree item elements.</dd>
+<dt><code>widget</code>  </dt>
+<dd>An interactive component of a graphical user interface (<abbr title="Graphical User Interface">GUI</abbr>).</dd>
+<dt><code>window</code>  </dt>
+<dd>A browser or application window.</dd>
+</dl>
+</div>
+
+<div class="slide">
+<header><h1>WAI-ARIA States and Properties</h1></header>
+<section>
+  <ul>
+  <li>aria-atomic
+</li><li>aria-busy (state)
+</li><li>aria-controls
+</li><li>aria-current (state)
+</li><li>aria-describedby
+</li><li>aria-details
+</li><li>aria-disabled (state)
+</li><li>aria-dropeffect
+</li><li>aria-errormessage
+</li><li>aria-expanded (state)
+</li><li>aria-flowto
+</li><li>aria-grabbed (state)
+</li><li>aria-haspopup
+</li><li>aria-hidden (state)
+</li><li>aria-invalid (state)
+</li><li>aria-keyshortcuts
+</li><li>aria-label
+</li><li>aria-labelledby
+</li><li>aria-live
+</li><li>aria-modal
+</li><li>aria-owns
+</li><li>aria-relevant
+</li><li>aria-roledescription</li></ul>
+</section>
+</div>
+
+
+<div class="slide">
+<header><h1>Managing Focus</h1></header>
+<section><p>Managing focus is required. Has to be added with JavaScript</p>
+<ul>
+<li>combobox</li>
+<li>grid</li>
+<li>listbox</li>
+<li>menu</li>
+<li>menubar</li>
+<li>radiogroup</li>
+<li>tree</li>
+<li>treegrid</li>
+<li>tablist</li>
+</ul>
+</section>
+</div>
 
 
 <div class="slide tweet" style="text-align: center; padding-top: 40px;"> 
