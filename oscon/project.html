@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<meta charset="utf-8" />
+<title>Straightforward Accessibility</title>
+<!--
+Made by: Estelle Weyl
+Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
+Based on: http://estelle.github.com/slides 
+-->    
+<link class="removeForAT" rel="stylesheet" href="../a11yperf/assets/css/oscon.css">
+<base target="play"/>
+</head>
+
+<body> 
+
+<div id="presentation">
+   <div id="slides">
+   
+   
+  <div class="slide intro">
+    <section class="content">
+    <h1 style="font-size: 3rem; margin-top: 10%;">Straightforward Accessibility</h1>
+      <h2>Estelle Weyl</h2>
+      <p><a href="http://instartlogic.github.io/p/oscon/project.html">http://instartlogic.github.io/p/oscon/project.html</a></p>
+      <button id="killCSS" class="skiplink">Enable Screen Reader Access</button>
+    </section>
+</div>
+
+<div class="slide intro">
+    <header>
+        <h1>Create a Merry Go Round</h1>
+    </header>
+</div>
+
+<div class="slide">
+    <header>
+        <h1>Create the form</h1>
+    </header>
+    <section>
+        <pre contenteditable><em>&lt;form action="">
+&lt;/form></em></pre>
+    </section>
+</div>
+
+<div class="slide">
+    <header>
+        <h1>Add the fieldset</h1>
+    </header>
+    <section><pre contenteditable>&lt;form action="">
+<b>&lt;fieldset class="mgr" id="mgrID">
+
+&lt;/fieldset></b>
+&lt;/form></pre>
+<p>mgrID will be used to instantiate MerryGoRound
+    </section>
+</div>
+
+<div class="slide">
+    <header>
+        <h1>Add the legend</h1>
+    </header>
+    <section><pre contenteditable>&lt;form action="">
+&lt;fieldset class="mgr" id="address">
+<b>&lt;legend>Instructions to Screen Reader user here:&lt;/legend></b>
+
+&lt;/fieldset>
+&lt;/form></pre>
+<p>The legend is read aloud to the screen reader user</p>
+    </section>
+</div>
+
+<div class="slide">
+    <header>
+        <h1>&lt;div> to hold the visual component</h1>
+    </header>
+    <section><pre contenteditable>&lt;form action="">
+&lt;fieldset class="mgr" id="address">
+&lt;legend>Select an address to edit:&lt;/legend>
+&lt;div>
+&lt;/div>
+&lt;/fieldset>
+&lt;/form></pre>
+<p>Needed if you're going to use the optional arrows.</p>
+    </section>
+</div>
+
+<div class="slide">
+    <header>
+        <h1>Add the labels</h1>
+    </header>
+    <section><pre contenteditable>&lt;form action="">
+&lt;fieldset class="mgr" id="address">
+&lt;legend>Select an address to edit:&lt;/legend>
+&lt;div><b>
+  &lt;ul class="mgr-labels left0">
+    &lt;li>
+      &lt;label for="radioID1">
+         1st label
+      &lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;label for="radioID2">
+         2nd label
+      &lt;/label>
+    &lt;/li>...
+  &lt;/ul></b>
+&lt;/div>
+&lt;/fieldset>
+&lt;/form></pre>
+    </section>
+</div>
+
+<div class="slide">
+    <header>
+        <h1>Example Labels</h1>
+    </header>
+    <section><pre contenteditable>&lt;form action="">
+&lt;fieldset class="mgr" id="address">
+&lt;legend>Select an address to edit:&lt;/legend>
+&lt;div>
+  &lt;ul class="mgr-labels left0">
+    &lt;li>
+      &lt;label for="<b>address1</b>">
+      &lt;p>Instart Logic&lt;/p>
+      &lt;p>US Headquarters&lt;/p>
+      &lt;p>450 Lambert Avenue&lt;/p>
+      &lt;p>Palo Alto, CA 94306&lt;/p>
+      &lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;label for="<b>address2</b>">
+      &lt;p>Instart Logic&lt;/p>
+      &lt;p>India Office&lt;/p>
+      &lt;p>6th Floor, HM Vibha Towers&lt;/p>
+      &lt;p>Hosur Rd, Adugodi&lt;/p>
+      &lt;p>Bengaluru 560029&lt;/p>
+      &lt;/label>
+    &lt;/li>...
+  &lt;/ul>
+ &lt;/div>
+&lt;/fieldset>
+&lt;/form></pre>
+    </section>
+</div>
+
+
+<div class="slide">
+    <header>
+        <h1>Add the Radio Buttons</h1>
+    </header>
+    <section><pre contenteditable>&lt;form action="">
+&lt;fieldset class="mgr" id="address">
+&lt;legend>Select an address to edit:&lt;/legend>
+&lt;div>
+  &lt;ul class="mgr-labels left0">
+    &lt;li>
+      &lt;label for="radioID1"> ...
+    &lt;/li>...
+  &lt;/ul>
+ &lt;/div>
+<b>&lt;ul id="optionalID" class="mgr-radios">
+    &lt;li>
+      &lt;input type="radio" name="sameName" data-value="0" id="radioID1" checked>
+      &lt;span>&lt;/span>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="sameName" data-value="1" id="radiosID2">
+      &lt;span>&lt;/span>
+    &lt;/li>...
+  &lt;/ul></b>
+&lt;/fieldset>
+&lt;/form></pre>
+    </section>
+</div>
+
+
+<div class="slide">
+    <header>
+        <h1>Make the form explicitly submittable</h1>
+    </header>
+    <section><pre contenteditable>...
+  &lt;ul id="addressradios" class="mgr-radios">
+    &lt;li>
+      &lt;input type="radio" name="shipping-addresses" data-value="0" id="address1" checked>&lt;span>&lt;/span>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="shipping-addresses" data-value="1" id="address2">&lt;span>&lt;/span>
+    &lt;/li>...
+  &lt;/ul>
+&lt;/fieldset>
+<b>&lt;input type="submit" value="Put Submit Button Text Here"></b>
+&lt;/form></pre>
+  <p>Hitting enter or the button will submit the form</p>
+    </section>
+</div>
+
+<div class="slide">
+    <header>
+        <h1>Add the JavaScript</h1>
+    </header>
+    <section><pre contenteditable><b>&lt;script src="path/js/merry-go-round.js">&lt;/script></b></pre>
+    </section>
+</div>
+
+<div class="slide">
+    <header>
+        <h1>Initialize the MerryGoRound by ID</h1>
+    </header>
+    <section><pre contenteditable>&lt;script>
+<b>window.onload = function () {
+  mgr.init('mgrID');
+};</b>
+&lt;/script></pre>
+    </section>
+</div>
+
+<div class="slide">
+    <header>
+        <h1>Add the CSS</h1>
+    </header>
+    <section><pre contenteditable>&lt;link rel="stylesheet" href="path/css/mgr.css"/></pre>
+    </section>
+</div>
+
+<div class="slide">
+    <header>
+        <h1>Modify the SCSS</h1>
+    </header>
+    <section><pre contenteditable>$themeColor: [color value for theme>;
+        
+//$arrowWidth: [the border-width of arrow's two lines];
+//$arrowSize: [the length of those two lines];
+
+$mgrWidth: [width of mgr in em units];
+$mgrBorder: [none or border shorthand declaration];
+$mgrRadius: [corners of the mgr];
+
+$radioSpacing: [width of space between radio buttons];</pre>
+    </section>
+</div>
+
+
+<div class="slide">
+    <header>
+        <h1>Optional Arrows</h1>
+    </header>
+    <section>
+<pre contenteditable>&lt;form action="">
+&lt;fieldset class="mgr" id="address">
+&lt;legend>Select an address to edit:&lt;/legend>
+&lt;div>
+  <b>&lt;a class="backward" data-move="backward" data-mgr="RADIONAME" hidden>&lt;/a></b>
+  &lt;ul class="mgr-labels left0">
+    &lt;li>
+      &lt;label for="address1">...
+      &lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;label for="address2">...
+      &lt;/label>
+    &lt;/li>...
+  &lt;/ul>
+  <b>&lt;a class="forward" data-move="forward" data-mgr="RADIONAME" hidden>&lt;/a></b>
+  &lt;/div>
+  &lt;ul id="addressradios" class="mgr-radios">
+    &lt;li>
+      &lt;input type="radio" name="RADIONAME" data-value="0" id="address1" checked>&lt;span>&lt;/span>
+    &lt;/li>
+    &lt;li>
+      &lt;input type="radio" name="RADIONAME" data-value="1" id="address2">&lt;span>&lt;/span>
+    &lt;/li>...
+  &lt;/ul>
+  &lt;/fieldset>
+  &lt;/form></pre>
+    </section>
+</div>
+
+
+
+
+<div class="slide">
+<section class="content">
+<p class="next"><a href="solutions.html">Back</a></p>
+<h1>Estelle Weyl</h1>
+<h2><a href="http://www.standardista.com">www.standardista.com</a><br>
+<a href="http://www.instartlogic.com/blog">www.instartlogic.com/blog</a></h2><h2><a href="http://www.twitter.com/webdevtips">@webdevtips</a><br><a href="http://www.twitter.com/estellevw">@estellevw</a><br><a href="http://www.twitter.com/standardista">@standardista</a></h2>
+</section>
+</div>
+
+   </div>
+</div>
+<script src="../a11yperf/slides.js" class="removeForAT"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30010510-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
