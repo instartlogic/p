@@ -1,0 +1,90 @@
+@import "vars";
+
+/* Content */
+
+header {
+  font-weight: normal;
+  letter-spacing: -.05em;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+  left: 30px;
+  top: 25px;
+  font-size: 2rem;
+}
+h1 {
+  font-size:2rem;
+  margin-bottom: 0px;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h1:first-child {
+  margin-top: 0;
+}
+section, footer {
+  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+  margin: 20px 30px 0;
+  display: block;
+  overflow: hidden;
+}
+footer {
+  font-size: 1rem;
+  margin: 20px 0 0 30px;
+}
+a{
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 110%;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+pre {
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  background: rgba(255,255,255, 0.5);
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid white;
+  b, strong {
+    font-weight: strong;
+    color: $ILblue;
+  }
+}
+
+.floatright img {margin: 2px;}
+
+.hilite {
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+cite {text-align: right; display: block; margin-top: 1rem;}
+cite:before {content: '-';}
+a {
+    color: rgb(122,128,144);
+    color: $ILblue;}
+.visibility {
+  margin-top: 0;
+}
+.hidenotes {
+  display: none;
+}
+li:hover .hidenotes {
+display: block;
+margin-top: 0;
+font-size: inherit;
+background-color: #DEDEDE;
+padding: 5px;
+font-weight: normal;
+}
+ol {
+  font-size: 1.2rem;
+  padding-left:50px;
+}
+.resizeimg img {width: 100%;}
+p.small, sup {
+  font-size: small;
+}

@@ -1,0 +1,76 @@
+.object object, .object .img {
+  height: 100%;
+  width: 100%;
+}
+
+.object.resize2 object {
+  -webkit-animation: resized infinite 8s 2s linear alternate paused backwards;
+  animation: resized infinited 8s 2s linear alternate paused backwards;
+  border: 1px solid;
+
+}
+
+.object.resize:hover object {
+  -webkit-animation-play-state: paused;
+}
+
+.object.resize .img {
+  margin: auto;
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+
+.current.object.resize .img,
+body .current.object .resize4 {
+  width: 100%;
+  animation: grow_shrink 10s infinite alternate-reverse;
+  background-repeat: no-repeat; 
+  background-size: 100% auto;
+}
+
+.current.object.resize object {
+  animation: grow_shrink2 10s infinite alternate-reverse both;
+  transform-origin: top left;
+}
+@keyframes grow_shrink {
+  0%, 30% {
+    height:100%;
+    width: 30%;
+  }
+  70%, 100% {
+    width: 99%;
+    height: 100%;
+  }
+}
+@keyframes grow_shrink2 {
+  0%, 30% {
+    height:140%;
+    width: 40%;
+    transform: scale(1);
+  }
+  70%, 100% {
+    width: 170%;
+    height: 180%;
+    transform: scale(0.6);
+  }
+}
+.current.object.resizemeta .img{
+  background-size: 880px;
+}
+.resize4 object {
+  border: 5px solid red;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.objectlink {
+position: absolute;
+top: 0;
+right: 0;
+background-color: rgb(122,128,144);
+color: #FFF;
+padding: 5px 20px;
+border-radius: 0 0 0 40px;
+text-decoration: none;
+font-size: 0.8rem;
+}

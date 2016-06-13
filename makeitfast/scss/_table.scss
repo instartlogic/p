@@ -1,0 +1,14 @@
+table {
+margin: auto;
+border: 1px solid #DEDEDE;
+border-collapse: collapse;
+border-spacing: 0;
+}
+.rowed tr:nth-of-type(even), .rowed th, .th th {
+background-color: #DEDEDE;
+}
+section td, section th {
+border: none;
+font-size: 30px;
+padding: 4px;
+}

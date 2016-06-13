@@ -1,0 +1,133 @@
+
+.past, .current, .future, .far-past, .far-future {
+    display: block;
+}
+
+.slide {
+  opacity: 0.15;
+  box-sizing: border-box;
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  width: 900px;
+  height: 700px;
+  margin-left: -450px;
+  margin-top: -350px;
+  padding-left: 20px;
+  padding-top: 10px;
+  left: 50%;
+  top: 50%;
+  background-color: transparent;
+  transition: all 0.25s ease-in-out;
+  transform: scale(1);
+  .objectlink {
+    right: 0;
+  }
+  &.far-past {margin-left: -2400px;}
+  &.past     {margin-left: -1400px;}
+  &.current  {
+    margin-left: -450px; 
+    opacity:0.95; 
+    background-color: white;
+    transform: scale(1);
+  }
+  &.future   {
+    margin-left: 500px;
+  }
+  &.far-future {
+    margin-left: 1500px;
+  }
+
+  &.intro {
+    text-align: center;
+    font-size: 2rem;
+  }
+  &.intro hgroup {
+    margin-top: 200px;
+  }
+}
+
+.slide.cui object{
+  display: none;
+}
+.slide.cui.current object{
+  display: block;
+}
+.slides {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  transition: transform 1s ease-in-out;
+  transform: scale(0.8);
+}
+
+
+.slide textarea.mynotes {
+    -webkit-appearance: none;
+    border: 1px #aaa solid;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-style: italic;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
+    padding: 5px;
+    box-sizing: border-box;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, cursive,serif;
+   }
+td,
+th {
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.invalid {
+  background-color: red;
+}
+.slide.section {
+  text-align: center;
+}
+.slide.section,.slide.intro header {
+  font-size: 2.5rem;
+}
+.slide li {
+    margin-bottom: 10px;
+}
+.slide img {
+  max-height: 90%;
+  border: 1px solid white;
+  text-align: center;
+}
+.slide p{
+  font-size: 1.5rem;
+  margin: 1rem 0 0 0;
+}
+.force-render {
+  display: block;
+  visibility: hidden;
+}
+.slide.far-past {
+  display: block;
+  margin-left: -2400px;
+}
+.slide.past {
+  visibility: visible;
+  display: block;
+  margin-left: -1400px;
+}
+.slide.current {
+  visibility: visible;
+  display: block;
+  margin-left: -450px;
+}
+.slide.future {
+  visibility: visible;
+  display: block;
+  margin-left: 500px;
+}
+.slide.far-future {
+  display: block;
+  margin-left: 1500px;
+}

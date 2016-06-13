@@ -1,0 +1,18 @@
+.cloudfour {
+	display: flex;
+	align-items: flex-end;
+	list-style-type: none;
+	li {
+		text-align: center;
+		pre {
+			font-size: 1em;
+		}
+	}
+	img {
+		text-align: center;
+		margin:  0 10px 0 0; 
+		border: 1px solid;
+		padding: 20px 20px 0 0;
+		background-color: #226DAA;
+	}
+}

@@ -1,0 +1,15 @@
+.telecom {
+background-image: linear-gradient(to left, #F00, #F00);
+width: 200px;
+background-size: 100% 10px;
+background-position: center;
+background-repeat: no-repeat;
+div {
+  height: 0;
+  width: 0;
+  border: 20px solid rgba(0, 0, 0, 0);
+  border-left-color: #F00;
+  float: right;
+  margin-right: -30px;
+  }
+}

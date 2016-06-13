@@ -1,0 +1,318 @@
+:root {font-size: 162.5%;}
+body {
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px; top: 0px;
+}
+
+#presentation {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  background: #000;
+background-image:
+    linear-gradient(left, rgba(0,0,0,0.2) 50%, transparent 50%),
+    linear-gradient(left, transparent 40%, rgba(0,0,0,0.2) 40%),
+    linear-gradient(left, transparent 60%, rgba(0,0,0,0.2) 60%),
+    linear-gradient(left, transparent 50%, rgba(0,0,0,0.2) 50%),
+    linear-gradient(left, transparent 40%, rgba(0,0,0,0.2) 40%),
+    linear-gradient(left, transparent 60%, rgba(0,0,0,0.2) 60%),
+    linear-gradient(left, transparent 50%, rgba(0,0,0,0.2) 50%),
+    linear-gradient(left, transparent 40%, rgba(0,0,0,0.2) 40%),
+    linear-gradient(left, transparent 60%, rgba(0,0,0,0.2) 60%),
+    linear-gradient(left,
+    red 14%, orange 15%, orange 28%, yellow 29%, yellow 42%, green 43%, green 56%, blue 57%, blue 70%, magenta 71%, magenta 85%, purple 86%);
+     background-size: 1px 50%, 1px 50px, 32px, 120px, 80px, 60px, 90px, 110px, 70px, 500px;
+
+}
+
+:root {font-size: 162.5%;}
+body,
+#presentation {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+  font-family: sans-serif;
+}
+
+#presentation {
+  overflow: hidden;
+  background-color: #000;
+
+    background-image: linear-gradient(#b8c6df,#6d88b7);
+    background-image: linear-gradient(to bottom, #b8c6df 0%,#6d88b7 100%);
+}
+
+.slide {
+  width: 900px;
+  height: 700px;
+  background-color: #efefef;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+    margin-top: -350px;
+    margin-left: -450px;
+    display: none;
+    overflow: hidden;
+  padding: 20px;
+  border-radius: 50px 0;
+  border: 5px solid #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6),
+        inset 0 0 6px rgba(0,0,0,0.4);
+    display: none;
+  transition: margin-left 1s, transform 1s, opacity 2s;
+  opacity: 0.5;
+  transform: scale(0.8);
+  box-sizing: border-box;
+}
+.slide:nth-of-type(odd) {
+  border-radius: 0 50px;
+}
+
+.past, .current, .future, .far-past, .far-future {
+    display: block;
+}
+
+.slide.far-past {margin-left: -2400px;}
+.slide.past     {margin-left: -1400px;}
+.slide.current  {margin-left: -450px; opacity:1;
+  transform: scale(1);}
+.slide.future   {margin-left: 500px;}
+.slide.far-future {margin-left: 1500px;}
+:root {font-size: 162.5%;}
+h1 {
+  font-size:1.8rem;
+}
+pre {
+  font-size: 1.5rem;
+}
+p{
+  font-size: 1.5rem;
+  margin: 1rem 0 0 0;
+}
+pre {background-color: #fff;}
+
+
+
+.slides {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  transition: transform 1s ease-in-out;
+  transform: scale(0.8);
+}
+.slide {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  width: 900px;
+  height: 700px;
+  left: 50%;
+  top: 50%;
+  margin-top: -350px;
+  background-color: #fff;
+  transition: all 0.25s ease-in-out;
+  transform: scale(1);
+  padding-left: 20px;
+  padding-top: 10px;
+  border-radius: 50px 0;
+  border: 5px solid #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6),
+        inset 0 0 6px rgba(0,0,0,0.4);
+}
+.slide:nth-of-type(odd){
+  border-radius: 0 50px;
+}
+.slide.intro {
+  text-align: center;
+  font-size: 2rem;
+}
+.slide.intro hgroup {
+  margin-top: 200px;
+}
+.content {
+  font-size: 2rem;
+}
+.content input, button {
+  font-size: 2rem;
+}
+.slide textarea.mynotes {
+    -webkit-appearance: none;
+    border: 1px #aaa solid;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-style: italic;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
+    padding: 5px;
+    box-sizing: border-box;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, cursive,serif;
+   }
+td, th {
+  border: 1px solid black;
+}
+.invalid {
+  background-color: red;
+}
+.slide.section,.slide.intro {
+  text-align: center;
+}
+.slide.section,.slide.intro header {
+  font-size: 2.5rem;
+}
+.slide li {
+    margin-bottom: 10px;
+}
+.slide img {
+  max-height: 90%;
+  border: 1px solid white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+  text-align: center;
+}
+.slide p{
+  font-size: 1.5rem;
+  margin: 1rem 0 0 0;
+}
+.force-render {
+  display: block;
+  visibility: hidden;
+}
+.slide.far-past {
+  display: block;
+  margin-left: -2400px;
+}
+.slide.past {
+  visibility: visible;
+  display: block;
+  margin-left: -1400px;
+}
+.slide.current {
+  visibility: visible;
+  display: block;
+  margin-left: -450px;
+}
+.slide.future {
+  visibility: visible;
+  display: block;
+  margin-left: 500px;
+}
+.slide.far-future {
+  display: block;
+  margin-left: 1500px;
+}
+
+/* Content */
+
+header {
+  font-weight: normal;
+  letter-spacing: -.05em;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+  left: 30px;
+  top: 25px;
+  font-size: 2rem;
+}
+h1 {
+  font-size:2rem;
+  margin-bottom: 0px;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h1:first-child {
+  margin-top: 0;
+}
+section, footer {
+  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+  margin: 20px 30px 0;
+  display: block;
+  overflow: hidden;
+}
+footer {
+  font-size: 1rem;
+  margin: 20px 0 0 30px;
+}
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 110%;
+}
+a:hover {
+  text-decoration: underline;
+}
+pre {
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  background: rgba(255,255,255, 0.5);
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+pre b {
+  font-weight: normal;
+  color: #c61800;
+  text-shadow: #c61800 0 0 1px;
+/*letter-spacing: -1px;*/}
+
+#next,
+#back {
+  z-index: 1000;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  list-style-type: none;
+  -webkit-appearance: none;
+  color: #333;
+  font-size: 1rem;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  background: linear-gradient(#fff 50%, #eee 50%, #ddd);
+  border-radius: 7px;
+  border: none;
+  padding: 5px 10px;
+  letter-spacing:1px;
+  font-size: 1rem;
+  box-shadow: inset 0 0 2px rgba(0,0,0,0.3),
+    2px 2px 5px rgba(0,0,0,0.7);
+  border: 3px solid #eee;
+}
+#next {left: auto; right: 5px;}
+
+@media print {
+  .slide {
+    page-break-inside: avoid;
+    page-break-after: always;
+    visibility: visible !important;
+    font-size: 20pt;
+    font-family: Arial, sans-serif;
+  }
+  @page {
+    size: landscape;
+  }
+  body {
+    font-size: 12pt;
+    background: white;
+  }
+  header h1 {
+    border-top: 2pt solid gray;
+    border-bottom: 1px dotted silver;
+  }
+  #presentation-counter, #info, #topinfo, .counter {
+    display: none
+  }
