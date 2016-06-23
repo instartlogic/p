@@ -19,7 +19,16 @@ pre {padding-top: 1.8vh;line-height: 4vh; background-size: 100% 8vh; font-size: 
   padding-top: 120px;
 }
 twitterwidget {
-  transform: scale(1.4);
+  transform: scale(1.5) !important;
+}
+
+.wcag2 p + ol {
+  max-height: 0px;
+  overflow: hidden;
+  transition: 200ms;
+}
+.wcag2 p:hover + ol {
+  max-height: 1000px;
 }
 </style> <base target="play"/>
 </head>
@@ -41,6 +50,12 @@ twitterwidget {
     </section>
 </div>
 
+ 
+<div class="slide intro">
+Enter to Win
+</div>
+
+
 <div class="slide">
 <section class="content">
 <h1>Estelle Weyl</h1>
@@ -53,15 +68,14 @@ twitterwidget {
   \<img src="http://akamaicovers.oreilly.com/images/0636920025955/cat.gif" alt="Web Performance Daybook"/></div>
 </section>
 </div>
- 
 
 
 <div class="slide intro">
 <header><h1 aria-label="Accessibility and Performance with Web Standards" onmouseover="this.innerHTML
  = 'Accessibility and Performance with Web Standards';"
  onmouseout="this.innerHTML
- = 'Simply Accessible';"
- >Simply Accessible</h1></header>
+ = 'Accessibility as Performance';"
+ >Accessibility as Performance</h1></header>
 
   <table cellpadding="0" cellspacing="0" align="center">
   	<tr>
@@ -475,17 +489,10 @@ Remove render-blocking JavaScript</dt>
 <li>Do not design content in a way that is known to cause seizures.
 </li>
 <li>Provide ways to help users navigate, find content, and determine where they are.</li>
-</ol></section>
-</div>
-
-
-
-<div class="slide wcag2">
-<header><h1>WCAG 2.0 (2008)</h1></header>
-<section>
+</ol>
 <p>
 <strong>Understandable:</strong>
-Information and operation of UI</p>
+Information &amp; operation of UI</p>
 <ol>
 <li>Make text content readable and understandable.
 </li>
@@ -568,6 +575,10 @@ Content interprable by UAs, including AT.</p>
 <div class="slide object" style="background: url(../a11yperf/assets/images/visalogin.png) no-repeat center 0;">
 <object data="https://secure.checkout.visa.com"></object>
 <a href="https://secure.checkout.visa.com" class="pagelink">Original Site</a>
+</div>
+
+<div class="slide">
+<div style="text-align: center;font-weight: bold;font-size: 30vw; transform: scale(1,0.8); color: #226DAA">RDD</div>
 </div>
 
 <div class="slide object">
@@ -1095,15 +1106,19 @@ input.masked {
 
   <div class="slide intro">
     <section class="content">
-    <h1 style="font-size: 3rem; margin-top: 10%;">Thank You</h1>
-      <h2>Estelle Weyl</h2>
-      <p><a href="http://instartlogic.github.io/p/velocity
-">http://instartlogic.github.io/p/velocity
 
-</a></p>
+<h1>Questions?</h1>
+<p>estelle@instartlogic.com<br/>@estellevw / @webdevtips</p>
       <p>all talks at <a href="http://instartlogic.github.io/">instartlogic.github.io</a></p>
     </section>
 </div>
+
+
+<div class="slide intro">
+Did to Win?
+</div>
+
+ 
 
 <div class="slide resources">
   <header><h1>Resources</h1></header>
@@ -1127,6 +1142,10 @@ input.masked {
   </section>
 </div>
 
+
+
+
+
 <div class="slide">
 <section class="content">
 <h1>Estelle Weyl</h1>
@@ -1139,6 +1158,8 @@ input.masked {
   <img src="http://akamaicovers.oreilly.com/images/0636920025955/cat.gif" alt="Web Performance Daybook"/></div>
 </section>
 </div>
+
+ 
 
    </div>
 </div>

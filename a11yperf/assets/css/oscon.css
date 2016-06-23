@@ -414,7 +414,7 @@ twitterwidget {
   text-align: left;
   display: flex;
   height: 5vh;
-  margin: 8vh;
+  margin: 6vh;
   justify-content: space-around; }
   .graph ul li {
     flex: 1 0 20%; }
@@ -489,7 +489,14 @@ twitterwidget {
   width: 50%; }
 
 .pop {
-  line-height: 1.75em; }
+  line-height: 1.75em;
+  list-style-position: inside; }
+  .pop li {
+    max-height: 2em;
+    overflow-y: hidden;
+    transition: 200ms; }
+    .pop li:hover {
+      max-height: 5em; }
   .pop i {
     color: #226DAA;
     font-weight: bold;

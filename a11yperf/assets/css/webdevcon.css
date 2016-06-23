@@ -422,7 +422,7 @@ twitterwidget {
   text-align: left;
   display: flex;
   height: 5vh;
-  margin: 8vh;
+  margin: 6vh;
   justify-content: space-around; }
   .graph ul li {
     flex: 1 0 20%; }
