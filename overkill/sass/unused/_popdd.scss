@@ -1,0 +1,21 @@
+@import "variables";
+
+.pop {
+		line-height: 1.75em;
+		list-style-position: inside;
+	li {
+		max-height: 2em;
+		overflow-y: hidden;
+		transition: 200ms;
+		&:hover {
+		max-height: 5em;
+		}
+	}
+
+	i {
+		color: $ilblue;
+		font-weight: bold;
+		font-size: 1.75em;
+		font-style: normal;
+	}
+}

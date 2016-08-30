@@ -1,0 +1,36 @@
+.viewport { 
+.img {
+	height: 100%;
+	background: url(../images/perf/godaddy.png) no-repeat;
+	animation: grow_shrink 10s infinite alternate;
+	background-size: 100% auto;
+	border: 1px solid $lightborders;
+	box-shadow: $shadows;
+}
+	&.resizemeta .img{
+	  background-size: 880px;
+	}
+}
+@keyframes grow_shrink {
+  0%, 30% {
+    height:100%;
+    width: 30%;
+  }
+  70%, 100% {
+    width: 880px;
+    height: 100%;
+  }
+}
+
+@keyframes grow_shrink2 {
+  0%, 30% {
+    height:140%;
+    width: 40%;
+    transform: scale(1);
+  }
+  70%, 100% {
+    width: 170%;
+    height: 180%;
+    transform: scale(0.6);
+  }
+}

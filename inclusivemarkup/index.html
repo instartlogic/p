@@ -734,34 +734,38 @@ background-size: cover;" aria-label="Image of bay bridge's scaffolding">
 
 <div class="slide object">
 <pre contenteditable class="allcode">// replaces each masked input with a shall containing the input and it's mask.
-  <b>createShell</b> : function (input) {
-<b>    var wrap = document.createElement('span'),
-        mask = document.createElement('span'),
-        emphasis = document.createElement('i'),</b>
-        inputClass = input.getAttribute('class'),
-        placeholderText = input.getAttribute('placeholder'),
-        placeholder = document.createTextNode(placeholderText);
+  <b>createShell</b> : function ( input ) {
+<b>    var wrap = document.createElement( 'span' ),
+        mask = document.createElement( 'span' ),
+        emphasis = document.createElement( 'i' ),</b>
+        inputClass = input.getAttribute( 'class' ),
+        title = input.getAttribute( 'title' ),
+        placeholderText = input.getAttribute( 'placeholder' ),
+        placeholder = document.createTextNode( placeholderText );
 
-    input.setAttribute('maxlength', placeholder.length);
-    input.setAttribute('data-placeholder', placeholderText);
-    input.removeAttribute('placeholder');</pre></div>
+    input.setAttribute( 'maxlength', placeholder.length );
+    input.setAttribute( 'data-placeholder', placeholderText );
+    if ( title ) {
+       input.setAttribute( 'aria-description', title );
+    }
+    input.removeAttribute( 'placeholder' );</pre></div>
 
 
 
 <div class="slide object">
-<pre contenteditable class="allcode">if ( !inputClass || ( inputClass && inputClass.indexOf('masked') === -1 ) ) {
-      input.setAttribute( 'class', inputClass + ' masked');
+<pre contenteditable class="allcode">if ( !inputClass || ( inputClass && inputClass.indexOf( 'masked' ) === -1 ) ) {
+      input.setAttribute( 'class', inputClass + ' masked' );
     }
 
-    <b>mask.setAttribute('aria-hidden', 'true');</b>
-    mask.setAttribute('id', input.getAttribute('id') + 'Mask');
-    mask.appendChild(emphasis);
-    mask.appendChild(placeholder);
+    <b>mask.setAttribute( 'aria-hidden', 'true' );</b>
+    mask.setAttribute( 'id', input.getAttribute('id') + 'Mask' );
+    mask.appendChild( emphasis );
+    mask.appendChild( placeholder );
 
-    wrap.setAttribute('class', 'shell');
-    wrap.appendChild(mask);
+    wrap.setAttribute( 'class', 'shell' );
+    wrap.appendChild( mask );
     input.parentNode.insertBefore( wrap, input );
-    wrap.appendChild(input);
+    wrap.appendChild( input );
   },</pre>
 
 </div>
@@ -874,7 +878,7 @@ input.masked {
 
 <div class="slide">
 <div align="center">
-<img src="../a11yperf/img/carou.png" alt="Merry Go Round" style="height: 40vh; margin: 10vh auto" />
+<img src="../a11yperf/img/carousel.png" alt="Merry Go Round" style="height: 40vh; margin: 10vh auto" />
 <br/>
 <img src="../a11yperf/img/ceci.png" lang="fr-fr" alt="Ceci n'est pas un carousel" style="height: 10vh;">
 </div>
