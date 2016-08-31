@@ -148,7 +148,7 @@ a:hover {
 .slide.section, .slide.intro header {
   font-size: 2.5rem; }
 
-p, ul, dd, dt, blockquote {
+p, ul, dl, dd, dt, blockquote {
   font-size: 1.5rem;
   margin-top: 0;
   margin-bottom: 0.75rem; }
