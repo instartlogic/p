@@ -1,0 +1,28 @@
+@import "variables";
+/* OBJECT PAGES */
+
+.object {
+header {
+  position: absolute;
+  top: 0; right: 0; left: 0;
+  text-align: center;
+  background-color: $darken;
+}
+&.slide {
+	padding:0;
+&:after {
+	content:''; 
+	position: absolute;
+	top: 3rem;
+	right: 0;
+	height: 10vw;
+	width: 10vw;
+	border-radius: 50%;
+	background-color:rgba(255,255,255,0.2);
+	outline: 1px solid rgba(0,0,0,0.05);
+}}
+ object {
+	width: 100%; 
+	height: 100%;
+}
+}

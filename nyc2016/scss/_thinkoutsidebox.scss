@@ -1,0 +1,36 @@
+@import "variables";
+.thinkoutsidebox {
+	.box {
+		width: 25vw;
+		height: 25vh;
+		border: 1vmin solid $ilblue;
+		margin: 25vh 25vw;
+		p {
+			position: relative;
+			top: -20vh;
+			right: -20vw;
+			border: 1vmin solid $ilblue;
+			border-radius: 15rem;
+			display: inline-block;
+			padding: 1vh 2vw;
+			&:after,&:before {
+				content: '';
+				position:absolute;
+				border-radius: 50%;
+				border: 1vmin solid $ilblue;
+				background: $background;
+				width: 2vw;
+				height: 2vw;
+				top: 90%;
+				left: 10%;
+			}
+			&:after {
+				top: 130%;
+				left: 0%;
+				width: 1vw;
+				height: 1vw;
+			}
+		}
+	}
+
+}

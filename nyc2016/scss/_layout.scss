@@ -1,0 +1,63 @@
+@import "variables";
+:root {
+  font-size: 162.5%;
+  background: $background;
+  color: #333;
+}
+body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: no-repeat url(../img/instartlogo.svg) $background;
+    background-position: right 1vw bottom 1vh;
+    background-size: auto 7.5vh;
+}
+
+#info {
+  font-size: small;
+  position: absolute;
+  bottom: 0px;
+  left: 40%;
+  z-index: 500;
+}
+/* optional */
+#topinfo {
+  font-size: small;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 500;
+}
+.key {
+  font-weight: bold;
+  padding: 3px;
+  background-color: $darken;
+  }
+#presentation {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  display: block;
+  overflow: hidden;
+}
+.slides {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: block;
+  transition: transform 1s ease-in-out;
+  transform: scale(0.8);
+}
+
+header, section {padding: 10px 20px;}

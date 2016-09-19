@@ -1,0 +1,14 @@
+@import "variables";
+.slide .aria {
+    font-family: monospace;
+	margin-left: 30vw;
+	white-space: pre;
+  	padding: 20vh 0;
+  	letter-spacing: 0.25px;
+  	font-size: 8vh;
+	i {
+		color: black;
+		padding-right: 0.1rem;
+		font-style: normal;
+	}
+}

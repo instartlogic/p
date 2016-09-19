@@ -1,0 +1,347 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<meta charset="utf-8" />
+<title>Straightforward Accessibility</title>
+<!--
+Made by: Estelle Weyl
+Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
+Based on: http://estelle.github.com/slides 
+-->    
+<link class="removeForAT" rel="stylesheet" href="css/index.css">
+<style>
+</style>
+<base target="play"/>
+</head>
+
+<body> 
+
+<div id="presentation">
+   <div id="slides">
+   
+   
+  <div class="slide intro">
+    <section class="content">
+    <h1 style="font-size: 3rem; margin-top: 10%;">Performant Accessibility<br/><span style="font-size: 2rem;">Fast. Simple. Accessible</span></h1>
+      <h2>Estelle Weyl</h2>
+      <p><a href="http://instartlogic.github.io/p/nyc2016">http://instartlogic.github.io/p/nyc2016</a></p>
+      <button id="killCSS" class="skiplink">Enable Screen Reader Access</button>
+    </section>
+</div>
+
+<div class="slide">
+<section class="content">
+<h1>Estelle Weyl</h1>
+<h2><a href="http://www.standardista.com">www.standardista.com</a><br>
+<a href="http://www.instartlogic.com/blog">www.instartlogic.com/blog</a></h2><h2><a href="http://www.twitter.com/webdevtips">@webdevtips</a><br><a href="http://www.twitter.com/estellevw">@estellevw</a><br><a href="http://www.twitter.com/standardista">@standardista</a></h2>
+<div class="floatright">
+  <img src="http://akamaicovers.oreilly.com/images/9780987467485/cat.gif" alt="HTML5 and CSS3 for the Real World">
+  <img src="http://akamaicovers.oreilly.com/images/0636920041658/cat.gif" alt="Animations and Transitions with CSS"/>
+  <img src="http://akamaicovers.oreilly.com/images/0636920021711/cat.gif" alt="MObile HTML5" />
+  <img src="http://akamaicovers.oreilly.com/images/0636920025955/cat.gif" alt="Web Performance Daybook"/></div>
+</section>
+</div>
+ 
+
+
+<div class="slide section" style="background: white; height: 100vh;">
+	<img src="img/instartlogo.svg" alt="instart logic" style="width: 50vw; display: block; margin: 20vh auto 10px;">
+	<p style="text-align: center;">
+		Making web and mobile applications <br/>
+		fast, secure, and easy to operate.
+	</p>
+	<div style="display: inline-flex; justify-content: space-around; margin: auto; text-align: left ">
+		<ul style="padding: 0 2vw">
+		  <li>JS Streaming</li>
+		  <li>HTML Streaming</li>
+		  <li>Image Optimization</li>
+		</ul>
+		<ul style="padding: 0 2vw">
+			<li>Machine Learning</li>
+			<li>Application Virtualization</li>
+			<li>Intelligent CDN</li>
+		</ul>
+	</div>
+</div>
+
+<div class="slide">
+<header><h1>Goals</h1></header>
+<section>
+	<h2>Performant, Accessible Web Applications</h2>
+	<ul>
+		<li>Content Accessible to Everyone, Everywhere</li>
+		<li>Fast Loading Interfaces on All Devices, Everywhere</li>
+		<li>Understandable, Streamlined Interfaces <br/>
+		...Minimizing time to complete Task</li>
+	</ul>
+</section>
+</div>
+  
+<div class="slide object" style="padding-top: 100px;"> 
+<header><h1>My First Framework</h1></header> 
+<object data="http://estelleweyl.com/portfolio/kodak.html?foxr=mouse"></object>
+<a href="http://estelleweyl.com/portfolio/kodak.html" class="pagelink">My old portfolio</a>
+</div> 
+ 
+  
+<div class="slide normal"> 
+<header><h1>The code</h1></header>
+<pre contenteditable>var <strong>isDHTML, isID, isAll, isLayers</strong>;
+
+if (document.<strong>getElementById</strong>) {
+  isID = 1; isDHTML = 1;
+} else {
+  if (document.<strong>all</strong>) {
+    isAll = 1; isDHTML = 1;
+  } else {
+    browserVersion = parseInt(navigator.appVersion);
+    if ((navigator.appName.indexOf('Netscape') != -1) && (browserVersion == 4)) {
+      isLayers = 1; isDHTML = 1;
+    }
+   }
+}
+
+function <strong>findDOM</strong>(objectID,withStyle) {
+ if (withStyle == 1) {
+   if (isID) { return (document.<strong>getElementById(objectID)</strong>.style) ; }
+   else { 
+     if (isAll) { return (document.<strong>all[objectID]</strong>.style); }
+     else {
+        if (isLayers) { return (document.<strong>layers[objectID]</strong>); }
+     };
+   }
+ } else {
+    if (isID) { return (document.getElementById(objectID)); 
+    } else { 
+       if (isAll) { 
+          return (document.all[objectID]); 
+       } else {
+            if (isLayers) { return (document.layers[objectID]); }
+       };
+    }
+  }
+}
+
+function setClass(objectID,newClass) {
+    var dom =findDOM(objectID, 0);
+    dom.className = newClass;
+}</pre>
+</div> 
+
+
+<div class="slide"> 
+<header><h1>Frameworks</h1></header> 
+<section class="content"> 
+<h2>Original Purpose &amp; Goal</h2>
+<p>Normalize browser features <br/> Code once, works everywhere</p>
+<p><code><strong>addEventListener</strong></code> and <code><strong>attachEvent</strong></code></p>
+</section>
+</div>
+
+ 
+<div class="slide"> 
+<header><h1>Universally supported since...</h1></header>
+<section class="content">    
+<dl>
+<dt>addEventListener</dt>
+<dd>IE9</dd>
+<dt>getElementsByClassName()</dt>
+<dd>IE9 </dd>
+<dt>Selectors API</dt>
+<dd>IE8. querySelector(), querySelectorAll() </dd>
+<dt>classList </dt>
+<dd>IE 10 / 12. toggle(), add(), remove()</dd>
+<dt>getAttribute() </dt>
+<dd>always supported!</dd>
+</dl>	
+     </section>
+ </div>
+
+
+<div class="slide section">
+<header><h1>Frameworks are Good</h1></header>
+<section><img src="img/wheel.png" alt="Don't reinvent the wheel">
+<p>Faster, optimized, readable code</p>
+
+<p>Function chaining &amp; implicit iteration behavior</p>
+
+<p>Less code. Faster to code.</p></section>
+</div>
+
+<div class="slide section"> 
+<header>
+<h1>Seriously?</h1></header> 
+<section>
+<pre class="big">&lt;script src="jquery.js"&gt;&lt;/script>
+          
+&lt;script type="text/javascript">                                         
+   $('li:first').addClass('first');     
+&lt;/script>
+</pre>
+</section>
+</div> 
+
+
+<div class="slide">
+<header><h1>Fireable Offenses</h1></header>
+<section>
+<pre>&lt;span data-resource="https://example.com" class="link">
+    Click Here
+&lt;/span></pre>
+<div class="temphidden">
+<p><a href="https://www.w3.org/TR/wai-aria-1.1/#link">role="link"</a></p>
+<pre>&lt;span data-resource="https://example.com" role="link">
+    Click Here
+&lt;/span></pre></div>
+<div class="temphidden">
+<p>Keep your job:</p>
+<pre>&lt;a href="https://example.com">
+    Relevent text
+&lt;/a></pre></div>
+
+
+</section>
+</div>
+
+<div class="slide" style="
+background-image: url(../a11yperf/assets/images/scaffolding.jpg); 
+background-size: cover;" aria-label="Image of bay bridge's scaffolding">
+<span class="photocredit">Photo: <a href="https://www.flickr.com/photos/toasty/">Kenneth Lu</a></span>
+</div>
+
+
+<div class="slide">
+	<header><h1>Downsides</h1></header>
+	<section>
+	<ul style="float: left; width: 45%">
+		<li>HTML Fundamentals
+			<ul>
+				<li>Valid Markup</li>
+				<li>Semantics</li>
+				<li>Elements</li>
+				<li>Attributes</li>
+			</ul>
+		</li>
+		<li>Accessibility</li>
+	</ul>
+	<ul style="float: left; width: 45%">
+		<li>CSS Fundamentals
+			<ul>
+				<li>Inline</li>
+				<li>Selectors</li>
+				<li>Bloat</li>
+			</ul>
+		</li>
+		<li>Performance</li>
+		<li>Laziness</li>
+	</ul>
+	</section>
+</div>
+
+
+<div class="slide object">
+<object data="https://miketaylr.com/code/input-type-attr.html"></object>
+<a href="https://miketaylr.com/code/input-type-attr.html" class="pagelink">Browser Test</a>
+</div>
+
+<div class="slide intro">
+	<section class="content">
+		<h2>Frameworks <strong>enable</strong> accessible site creation<br> but <strong>don’t guarantee</strong> accessibility.</h2>
+		<h2>You need to <strong>understand</strong> the <br>output you're generating.</h2>
+	</section>
+</div>
+
+
+<div class="slide">
+	<section class="content">
+		<blockquote>Many developers who have grown up only using frameworks have a total lack of understanding about the fundamental of HTML such as valid and semantic markup.<br/><br/>This is of great concern as semantic markup is one of the core principles of an accessible web.
+		</blockquote>
+		<p style="text-align: right; margin-right: 0">&mdash; Russ Weakley, (@russmaxdesign) 
+		<a href="http://www.slideshare.net/maxdesign/front-end-frameworks-are-they-accessible">Front End Frameworks -- are they accessible</a></p>
+	</section>
+</div>
+
+
+<div class="slide tweet"><br/><br/>
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The mobile web sucks: the *average* mobile site takes 19 seconds to load, but 53% of visits are abandoned after 3s: <a href="https://t.co/uvKIxIXWdr">https://soasta.com/blog/goo...</a></p>&mdash; Laurie Voss (@seldo) <a href="https://twitter.com/seldo/status/776299274204172288">September 15, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>	<br/><br/>
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Appropriate counterfactual in perf discussions isn&#39;t &quot;different framework&quot;, it&#39;s &quot;throw out all script, start over&quot; <a href="https://t.co/L796jWjKjb">(in RT of @seldo)</a></p>&mdash; Alex Russell (@slightlylate) <a href="https://twitter.com/slightlylate/status/776495876600541184">September 15, 2016</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+
+<div class="slide intro">
+<header><h1 aria-label="Accessibility and Performance with Web Standards" onmouseover="this.innerHTML
+ = 'Accessibility and Performance with Web Standards';"
+ onmouseout="this.innerHTML
+ = 'Accessible Performance';"
+ >Accessible Performance</h1></header>
+
+  <table cellpadding="10" cellspacing="0" align="center">
+  	<tr>
+  	<td style="border-bottom: 5px solid #226daa; width: 25vw; height: 20vh;">Issues</td>
+  	<td style="border-left: 5px solid #226daa;  border-bottom:5px solid #226daa; ">Prescriptions</td>
+  	</tr>
+  	<tr>
+  	<td>Requirements</td>
+  	<td style="border-left: 5px solid #226daa; width: 25vw; height: 20vh;">Solutions</td>
+  	</tr>
+  </table>
+
+</div>
+
+
+
+
+
+<div class="slide">
+<header><h1><a href="issues.html" target="_self">Issues</a></h1></header>
+<section>
+<ol>
+  <li>Accessibility</li>
+  <li>Performance</li>
+</ol>
+</div>
+
+
+<div class="slide intro">
+<header><h1><a href="prescriptions.html" target="_self">Prescriptions</a></h1></header>
+</div>
+
+
+
+<div class="slide intro">
+<header><h1><a href="requirements.html"  target="_self">Requirements</a></h1></header>
+</div>
+
+
+
+<div class="slide intro">
+<header><h1><a href="solutions.html"  target="_self">Solutions</a></h1></header>
+</div>
+
+<div class="slide">
+<section class="content">
+<p class="next"><a href="issues.html"  target="_self">Next</a></p>
+<h1>Estelle Weyl</h1>
+<h2><a href="http://www.standardista.com">www.standardista.com</a><br>
+<a href="http://www.instartlogic.com/blog">www.instartlogic.com/blog</a></h2><h2><a href="http://www.twitter.com/webdevtips">@webdevtips</a><br><a href="http://www.twitter.com/estellevw">@estellevw</a><br><a href="http://www.twitter.com/standardista">@standardista</a></h2>
+</section>
+</div>
+
+   </div>
+</div>
+<script src="slides.js" class="removeForAT"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30010510-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

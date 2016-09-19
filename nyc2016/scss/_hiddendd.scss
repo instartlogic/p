@@ -1,0 +1,62 @@
+@import "variables";
+
+.hidden_dd {
+		margin-top: 0;
+		transform: translatey(-1vh);
+		max-height: 80vh;
+		overflow: scroll;
+		margin-bottom: 3vh;
+		border-bottom: 1px solid #dedede;
+		font-size: 1.6rem;
+		&:after {
+			display: block;
+			content: '';
+			width: 100%;
+			height: 5rem;
+			color: transparent;
+		}
+	dt {
+		margin-bottom: 0;
+		margin-top: 0.2rem;
+		white-space: nowrap;
+		padding-right: 10px; margin-right: 10px;
+		font-weight: bold;
+		display: block;
+		clear: both;
+		&:hover {
+			color: $background;
+			background-color: $ilblue;
+			border-bottom: 1px solid $ilblue;
+		}
+	}
+	&.inline dt {
+		display: inline; 
+		&:after {
+	 		padding-left: 25px;
+  			content: ' '; 
+  			display: inline-block; 
+  			height: 0.75rem; 
+  			border-right: 1px solid #ccc; 
+		}
+		&:hover:after {
+			border-color: transparent;
+			padding-left: 0;
+		}
+	}
+	dd {
+		position: absolute;
+		top: -101vh;
+		font-size: 1rem;
+		margin-left: 0;
+		padding: 5px 5px 10px 10px;
+	}
+
+	dt:hover + dd {
+    position: static;
+    background-color: #dedede;
+}
+}
+.halfwidth {
+dd {
+		width: 50%;
+}}

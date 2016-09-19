@@ -1,0 +1,39 @@
+@import "variables";
+.graph {
+  .arrow {
+	display: flex;
+	div {
+		padding: 0 30px;
+		&.border {
+			padding: 0;
+			flex: 1 0;
+			border-bottom: 10px solid $ilblue;
+			position: relative;
+			top: -10px;
+			&:after, &:before {
+				content: '';
+				position: absolute;
+				right: -20px;
+				bottom: -15px;
+				height: 0;
+				width: 0;
+				border: 10px solid;
+				border-color: transparent transparent transparent $ilblue;
+			}
+		   &:before {
+				border-color: transparent $ilblue transparent transparent;
+				right: auto;
+				left: -20px; 
+		   }
+		}
+	}
+  }
+  ul {
+  	text-align: left;
+  	display: flex;
+  	height: 5vh;
+  	margin: 6vh;
+  	justify-content: space-around;
+  	li {flex: 1 0 20%;}
+  }
+}
