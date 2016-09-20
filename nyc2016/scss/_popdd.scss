@@ -1,0 +1,18 @@
+@import "variables";
+
+.pop {
+	margin-top: -23px;
+    li {margin-bottom: 0.2em;}
+	i {
+		color: $ilblue;
+		font-weight: bold;
+		font-size: 1.25em;
+		font-style: normal;
+	}
+}
+.wcag2 section, 
+.pop {
+	max-height: 80vh;
+	overflow: auto;
+	padding-left: 60px;
+}

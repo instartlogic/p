@@ -1,0 +1,12 @@
+[role="link"] {
+  color: rebeccapurple;
+  text-decoration: underline;
+}
+
+[role="link"]:hover, 
+[role="link"]:focus, 
+[role="link"]:active {
+  color: white;
+  cursor: pointer;
+  background-color: $ilblue;
+}
