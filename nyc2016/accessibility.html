@@ -21,49 +21,27 @@ Based on: http://estelle.github.com/slides
    
    
   <div class="slide">
-<header><h1>Accessibility</h1></header>
+<header><h1>Prescriptions</h1></header>
     <section class="content">
-<h2>Topic</h2>
-<ol>
-  <li>ARIA</li>
-  <li>Semantics</li>
-</ol>
+<h2>Accessibility Detour</h2>
 </div>
 
-<div class="slide"><br/><br/>
-<blockquote>The power of the Web is in its universality.
-Access by everyone regardless of disability is an essential aspect.</blockquote><p>--Tim Berners-Lee, Web Developer<br/><br/></p>
-<blockquote>The Web is fundamentally designed to work for all people, whatever their hardware, software, language, culture, location, or physical or mental ability. When the Web meets this goal, it is accessible to people with a diverse range of hearing, movement, sight, and cognitive ability.</blockquote>
-<p>--<a href="https://www.w3.org/standards/webdesign/accessibility">W3C Web Design / accessibility</a></p>
 
-</div>
-
+<!-- ARIA -->
 <div class="slide">
-<h1 class="aria"><i>A</i>ccessible
-<i>R</i>ich
-<i>I</i>nternet 
-<i>A</i>pplications</h1>
-</div>
-
-
-<div class="slide intro">
-<section class="content">
-<h2>ARIA is appropriate when<br/> required native semantics do not exist or<br/> are poorly supported.</h2></section>
-</div>
-
-
-<div class="slide">
-<header><h1>WAI-ARIA Roles</h1></header>
+<header><h1>ARIA</h1></header>
 <section>
-<p>Adding an ARIA role overrides the native role semantics in the accessibility tree which is reported via the accessibility API, and therefore ARIA indirectly affects what is reported to a screen reader or other assistive technology.</p>
-
-<pre>&lt;h1 role=button>text&lt;/h1></pre>
-<p>Becomes button with a label of 'heading text'</p>
+<ul>
+<li class=temphidden>Attributes to use with HTML and SVG</li>
+<li class=temphidden>Changes the accessibility tree</li>
+<li class=temphidden>Does not change the DOM</li>
+<li class=temphidden>Does not add functionality</li>
+</ul>
 </section>
 </div>
 
 
-
+<!-- ARIA Roles -->
 <div class="slide">
   <header><h1>Roles</h1></header>
   <section><dl  class="hidden_dd inline"><dt><code>alert</code></a></dt>
@@ -267,56 +245,55 @@ Access by everyone regardless of disability is an essential aspect.</blockquote>
 
 
 <div class="slide">
-<header><h1>Managing Focus</h1></header>
-<section><p>Managing focus is required. Has to be added with JavaScript</p>
-<ul>
-<li>combobox</li>
-<li>grid</li>
-<li>listbox</li>
-<li>menu</li>
-<li>menubar</li>
-<li>radiogroup</li>
-<li>tree</li>
-<li>treegrid</li>
-<li>tablist</li>
-</ul>
+
+<header><h1>Accessibility Tree</h1></header>
+<section>
+<ol>
+  <li>DOM is built (HTML parsed)</li>
+  <li>DOM used to build accessibility tree - <br/>
+  available at "reflow" (FF) or "layout" (chrome)</li>
+  <li>DOM is updated by user interaction or JS. Accessibility Tree is updated too.
+    <ul><li>Changes causing repaint/reflow</li></ul></li>
+  <li>Screen reader notes changes to a11y tree: reacting as necessary</li>
+</ol>
+
 </section>
 </div>
 
 
+<div class="slide">
+<header><h1>Accessibility Tree</h1></header>
+<section>
+<p>Accessibility tree - parallel to DOM -- group of objects of every item in HTML object.  Objects are impacted by CSS, HTML and JS, and can be changed by those and ARIA.</p> 
+  <ul>
+    <li>Chrome: <a href="chrome://accessibility">chrome://accessibility</a></li>
+    <li>Edge: F12, DOM Explorer Tab, A11y icon </li>
+    <li>Chrome Extension</li>
+    <li>Chrome Settings: <br/>
+    settings > experiments > Accessibility Inspection<br>
+    settings > experiments > Contrast ratio line in color picker</li>
+    <li>Chrome Dev Tools: Audit > Accessbility</li>
+    <li>Windows Machines: <a href="https://www.paciellogroup.com/resources/aviewer/">Accessibility Viewer</a></li>
+  </ul>
+</section>
+</div>
 
 <div class="slide intro">
-<section class="content">
-<h2>ARIA is <strong>appropriate</strong> when<br/> required <strong>native semantics</strong> do not exist or<br/> are poorly <strong>supported</strong>.</h2></section>
+<h1>Accessibility Tree</h1>
+<p><a href="chrome://accessibility">chrome://accessibility</a></p>
+</section>
 </div>
 
-
 <div class="slide">
-<header><h1>WAI-ARIA Roles</h1></header>
+<header><h1>Tips</h1></header>
 <section>
-<p>Adding an ARIA role overrides the native role semantics in the accessibility tree which is reported via the accessibility API, and therefore ARIA indirectly affects what is reported to a screen reader or other assistive technology.</p>
-
-<pre>&lt;h1 role=button>text&lt;/h1></pre>
-<p>Becomes button with a label of 'heading text'</p>
+<p class="temphidden">UA Sniffing ≠ AT Sniffing</p>
+<p class="temphidden">Managing focus is required. Has to be added with JavaScript</p>
+<p class="temphidden">Use browser defaults as much as possible</p>
 </section>
 </div>
 
 
-<div class="slide">
-	
-<section class="content" style="padding-left: 4vw;">
-<code>&lt;div role="heading" aria-level="1">
-<br/>  &nbsp;  &nbsp;  <strong>Just use a @#$%ing heading</strong>
-<br/>&lt;/div></code>
-</section>
-</div>
-
-<div class="slide tweet" style="text-align: center; padding-top: 40px;"> 
-<section class="content">
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The 1st rule of ARIA use is if you can use a native HTML element or attribute with the semantics behavior already built in, do that instead!</p>&mdash; Estelle Weyl (@estellevw) <a href="https://twitter.com/estellevw/status/702935029807058944">February 25, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></section>
-
-</div>
 
 
 <div class="slide">

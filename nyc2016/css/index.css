@@ -244,7 +244,7 @@ pre {
   max-height: calc(100vh - 150px);
   width: 98%;
   margin: 0 1vw 20px;
-  overflow: scroll;
+  overflow: auto;
   padding: 0.75rem 10px;
   line-height: 1.25rem;
   font-size: 1rem;
@@ -468,9 +468,8 @@ a.pagelink {
   margin-top: 0;
   transform: translatey(-1vh);
   max-height: 80vh;
-  overflow: scroll;
+  overflow-y: scroll;
   margin-bottom: 3vh;
-  border-bottom: 1px solid #dedede;
   font-size: 1.6rem; }
   .hidden_dd:after {
     display: block;
@@ -478,6 +477,8 @@ a.pagelink {
     width: 100%;
     height: 5rem;
     color: transparent; }
+  .hidden_dd ul {
+    display: none; }
   .hidden_dd dt {
     margin-bottom: 0;
     margin-top: 0.2rem;
@@ -486,11 +487,14 @@ a.pagelink {
     margin-right: 10px;
     font-weight: bold;
     display: block;
-    clear: both; }
+    clear: both;
+    border-bottom: 1px solid #ccc; }
     .hidden_dd dt:hover {
       color: #ffffff;
       background-color: #226DAA;
       border-bottom: 1px solid #226DAA; }
+      .hidden_dd dt:hover + dd ul {
+        display: inherit; }
   .hidden_dd.inline dt {
     display: inline; }
     .hidden_dd.inline dt:after {
@@ -508,6 +512,8 @@ a.pagelink {
     font-size: 1rem;
     margin-left: 0;
     padding: 5px 5px 10px 10px; }
+    .hidden_dd dd li {
+      font-size: 1rem; }
   .hidden_dd dt:hover + dd {
     position: static;
     background-color: #dedede; }
@@ -543,6 +549,90 @@ a.pagelink {
       left: 0%;
       width: 1vw;
       height: 1vw; }
+
+.hoverhilite {
+  letter-spacing: 1; }
+  .hoverhilite:hover {
+    color: #226DAA;
+    letter-spacing: initial;
+    font-weight: bold; }
+  .hoverhilite u {
+    text-decoration: none; }
+  .hoverhilite.bad:hover u {
+    color: #f00;
+    text-decoration: line-through; }
+
+.next {
+  border-bottom: 3px solid #ccc;
+  text-align: right;
+  margin-right: 20px;
+  position: relative;
+  padding-right: 20px; }
+  .next:after {
+    content: '';
+    height: 0;
+    width: 0;
+    border: 15px solid transparent;
+    border-left-color: #ccc;
+    position: absolute;
+    right: -20px;
+    bottom: -15px; }
+
+.viewport .img {
+  height: 100%;
+  background: url(../img/godaddy.png) no-repeat;
+  animation: grow_shrink 10s infinite alternate;
+  background-size: 100% auto;
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); }
+.viewport.resizemeta .img {
+  background-size: 880px; }
+
+@keyframes grow_shrink {
+  0%, 30% {
+    height: 100%;
+    width: 30%; }
+  70%, 100% {
+    width: 880px;
+    height: 100%; } }
+@keyframes grow_shrink2 {
+  0%, 30% {
+    height: 140%;
+    width: 40%;
+    transform: scale(1); }
+  70%, 100% {
+    width: 170%;
+    height: 180%;
+    transform: scale(0.6); } }
+.pop {
+  margin-top: -23px; }
+  .pop li {
+    margin-bottom: 0.2em; }
+  .pop i {
+    color: #226DAA;
+    font-weight: bold;
+    font-size: 1.25em;
+    font-style: normal; }
+
+.wcag2 section,
+.pop {
+  max-height: 80vh;
+  overflow: auto;
+  padding-left: 60px; }
+
+[role="link"], .rolelink {
+  color: rebeccapurple;
+  text-decoration: underline; }
+
+[role="link"]:hover,
+[role="link"]:focus,
+[role="link"]:active,
+.rolelink:hover,
+.rolelink:active,
+.rolelink:focus {
+  color: white;
+  cursor: pointer;
+  background-color: #226DAA; }
 
 img.bytes {
   position: absolute;
