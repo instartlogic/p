@@ -1,0 +1,141 @@
+@import "variables";
+/* Content */
+
+header {
+  font-weight: normal;
+  letter-spacing: -.05em;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+  left: 30px;
+  top: 25px;
+  font-size: 2rem;
+}
+h1 {
+  font-size: 1.8rem;
+  margin:0 0 0.75rem;
+  color: $ilblue;
+}
+h2 {
+  font-size: 1.9rem;
+  margin:0 0 0.75rem;
+}
+h1:first-child {
+  margin-top: 0;
+}
+section, footer {
+  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+  margin: 0.75em 30px 0;
+  display: block;
+  overflow: hidden;
+}
+footer {
+  font-size: 1rem;
+  margin: 20px 0 0 30px;
+}
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 110%;
+  color: $ilblue;
+}
+a:hover {
+  text-decoration: underline;
+}
+.content {
+  font-size: 1.75rem;
+}
+.content input, button {
+  font-size: 2rem;
+}
+.slide textarea.mynotes {
+    -webkit-appearance: none;
+    border: 1px #aaa solid;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-style: italic;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
+    padding: 5px;
+    box-sizing: border-box;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, cursive,serif;
+   }
+
+.slide.intro {
+  text-align: center;
+  font-size: 2rem;
+}
+.slide.intro header {
+  margin-top: 200px;
+  h1 {
+    
+  color: $ilblue;
+  justify-content: center;
+  padding: 40px 0;
+  letter-spacing: 0.25px;
+  }
+}
+
+.slide.section,.slide.intro {
+  text-align: center;
+}
+.slide.section,.slide.intro header {
+  font-size: 2.5rem;
+}
+p, ul, dl, dd, dt, li, blockquote {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+dt{
+  margin: 0;
+}
+dd {
+  margin-bottom: 0.25rem;
+}
+strong, dt {
+  color: $ilblue; font-weight: bold;
+}
+.force-render {
+  display: block;
+  visibility: hidden;
+}
+
+.photocredit {
+  position: absolute; 
+  right: 20px; 
+  bottom: 20px; 
+  background-color: rgba(255,255,255,0.5); 
+  padding: 0 5px;
+}
+div.example {
+  display: block;
+  padding: 10px 20px;
+  background: $darken;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+small {
+    display: block;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    opacity: 0.5;
+    text-align: left;
+}
+
+.skiplink {
+  opacity: 0;
+}
+.skiplink:focus {
+  opacity: 1;
+}
+.center {text-align: center;}
+.right {float: right;}
+.hinttome {
+  color: rgba(0,0,0,0.05);
+  text-shadow: none;
+}
+.flex {
+  display: flex;
+}

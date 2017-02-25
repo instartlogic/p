@@ -1,0 +1,500 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<meta charset="utf-8" />
+<title>Speed Perception</title>
+<!--
+Made by: Estelle Weyl
+Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
+Based on: http://estelle.github.com/slides 
+-->    
+<link class="removeForAT" rel="stylesheet" href="css/index.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<base target="play"/>
+
+<style>.icon {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  word-wrap: normal;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}</style>
+</head>
+
+<body> 
+
+<div id="presentation">
+   <div id="slides">
+   
+  
+<!-- TITLE SLIDE --> 
+  <div class="slide intro">
+    <section class="content">
+    <h1 style="font-size: 3rem; margin-top: 10%;">Speed Perception</h1>
+      <h2>Understanding and Measuring Perceived Performance</h2>
+      <p><a href="http://instartlogic.github.io/p/spdperception">http://instartlogic.github.io/p/spdperception</a></p>
+      <button id="killCSS" class="skiplink">Enable Screen Reader Access</button>
+    </section>
+</div>
+
+
+<!-- Parvez Ahammad -->
+<div class="slide">
+<section>
+	<h1>Parvez Ahammad</h1>
+	<p>Head of Data Science and Machine Learning<br/><a href="http://instartlogic.com">Instart Logic</a></p>
+	<p><br/>Twitter: <a href="//twitter.com/perceptPA">@perceptPA</a><br/>
+	Blog: <a href="http://www.parvez-ahammad.org/">www.parvez-ahammad.org</a></p>
+</section>
+</div>
+
+
+<!-- ESTELLE WEYL -->
+<div class="slide">
+<section class="content">
+<h1>Estelle Weyl</h1>
+
+<p>Open Web Evangelist<br/>
+<a href="http://instartlogic.com">Instart Logic</a>
+</p>
+<p>
+Twitter: <a href="http://www.twitter.com/webdevtips">@webdevtips</a>,  <a href="http://www.twitter.com/estellevw">@estellevw</a>,  <a href="http://www.twitter.com/standardista">@standardista</a><br/>Blog: <a href="http://www.standardista.com">www.standardista.com</a></p>
+<div class="floatright">
+  <img src="http://akamaicovers.oreilly.com/images/9780987467485/cat.gif" alt="HTML5 and CSS3 for the Real World">
+  <img src="http://akamaicovers.oreilly.com/images/0636920041658/cat.gif" alt="Animations and Transitions with CSS"/>
+  <img src="http://akamaicovers.oreilly.com/images/0636920021711/cat.gif" alt="MObile HTML5" />
+  <img src="http://akamaicovers.oreilly.com/images/0636920025955/cat.gif" alt="Web Performance Daybook"/></div>
+</section>
+</div>
+ 
+
+
+<!-- Talk Table of Contents-->
+<div class="slide">
+	<header>
+		<h1>Speed Perception TOC</h1>
+	</header>
+	<section>
+	<ol>
+	<li>Understanding performance</li>
+	<li>Understanding perceived performance</li>
+	<li>Measuring performance &amp; perceived performance</li>
+	</ol>
+	</section>
+</div>
+
+
+<!-- Overview of Performance -->
+<div class="slide">
+	<header>
+		<h1>Performance</h1>
+	</header>
+	<section>
+	<ul>
+		<li>Time to Load</li>
+		<li>Time until usable</li>
+		<li>Jitter</li>
+		<li>Responsiveness</li>
+		<li>Smoothness</li> 
+	</section>
+</div>
+
+
+<!-- Intro to RAIL -->
+<div class="slide">
+	<header>
+		<h1>RAIL</h1>
+	</header>
+	<section class="center">
+	<p>Four phases of interaction: end-user’s perception</p>
+	<article class="rail">
+	<ul>
+		<li class="l" style="width: 12vw"></li>
+		<li class="i" style="width: 6vw"></li>
+		<li class="a" style="width: 4vw"></li>
+		<li class="r" style="width: 10vw"></li>
+		<li class="l" style="width: 10vw"></li>
+		<li class="a" style="width: 4vw"></li>
+		<li class="r" style="width: 6vw"></li>
+		<li class="r" style="width: 6vw"></li>
+		<li class="a" style="width: 4vw"></li>
+	</ul>
+	<ol>
+		<li class="r">Response to Input <span class="icon">touch_app</span></li>
+		<li class="a">Animation &amp; Scrolling
+		<span class="icon">directions_run</span>
+		</li>
+		<li class="i">Idle <span class="icon">alarm</span></li>
+		<li class="l">Page Load <span class="icon">cached</span></li>
+	</ol>
+	</article>
+
+	<p class="right"><small>Video: <a href="https://www.youtube.com/watch?v=2ksXo2_Lfl0">How Users Perceive the Speed of The Web (2015): Paul Irish / Google</a></small></p>
+	</section>
+</div>
+
+
+
+<!-- what really makes up performance -->
+<div class="slide">
+	<header>
+		<h1>Web Performance</h1>
+	</header>
+	<section>
+	<dl>
+	<dt>Download</dt>
+	<dd class="temphidden"># of resources: images, fonts, HTML, scripts, and CSS loaded</dd>
+	<dt class="temphidden">Parse</dt>
+	<dd class="temphidden">File size of above resources</dd>
+	<dt class="temphidden">Execute</dt>
+	<dd class="temphidden">Parsing &amp; Painting</dd>
+	<dt class="temphidden">Perceived Performance</dt>
+	<dd class="temphidden">Users perception of the speed of the load and reaction time.</dd> 
+	</dl>
+	<div>
+</div>
+	</section>
+</div>
+
+
+
+<!-- Steps of page Load include -->
+<div class="slide">
+	<header>
+		<h1>What's involved in a page load?</h1>
+	</header>
+	<section>
+	<ol style="height: 80vh; overflow: scroll; padding-left: 3rem">
+	<li>HTTP request with protocol, host, port, and path.</li>
+<li>DNS lookup (find host IP)</li>
+<li>Socket opened between browser and server hosting the initial request content</li>
+<li>HTTP request sent</li>
+<li>Server handles request</li>
+<li>Server sends HTTP response</li>
+<li>The browser receives and parses response</li>
+<li>Initial DOM tree is built</li>
+<li>Additional requests are made based on resources requested in initial response, including images, stylesheets, and scripts.<br/><br/> Go back to step 2 or 4 for each resource request.</li>
+<li>Stylesheets (blocking) are parsed. CSSOM built.</li>
+<li>Scripts (blocking) are parsed and executed. DOM updated.</li>
+<li>Content gets rendered</li>
+	</section>
+</div>
+
+
+
+
+
+<!-- What we can measure -->
+<div class="slide">
+	<header>
+		<h1>Navigation Timing API metrics</h1>
+	</header>
+	<section style="height: 80vh; overflow: scroll">
+	<img src="images/perfmetrics.svg" alt="Navigation Timing API metrics" style="width: 95vw">
+	</section>
+</div>
+
+
+
+
+<!-- video comparison -->
+<!-- Staples and Wolferman's -->
+<div class="slide">
+	<header>
+		<h1>Load Time <span class="temphidden">v. Visually Complete</span></h1>
+	</header>
+	<section>
+	<p class="center">Load Times: 3,729ms v. 3,768ms 
+ </p><p class="center temphidden">Visually Complete: 16s v.
+8.7s </p>
+	<div style="display: flex; justify-content: space-between;">
+	<video src="videos/staples.mp4" id="video1"></video>
+	<video src="videos/wolfermans.mp4" id="video2"></video>
+	</div>
+	<p class="center"><button onclick="playVideos('video1', 'video2')">Play</button>
+	</section>
+	<script>
+		function playVideos() {
+			for(var count = 0; count < arguments.length; count++) {
+				document.getElementById(arguments[count]).play()
+			}
+		}
+	</script>
+</div>
+
+
+
+<!-- WPT of Staples and Wolferman's -->
+<div class="slide object">
+<object data="https://www.webpagetest.org/video/compare.php?tests=170223_16_311%2C170223_ZY_312&thumbSize=200&ival=1000&end=all"></object>
+</div>
+
+
+<!-- WPT Metrics list -->
+<div class="slide">
+	<header>
+		<h1>WPT Metrics</h1>
+	</header>
+	<section style="display: flex;">
+		<div style="padding-right: 3vw">	
+			<p>Film Strip</p>
+			<ul>
+				<li>Visually Complete</li>
+				<li>Last Change</li>
+				<li>Document Complete</li>
+				<li>Fully Loaded</li>
+			</ul>
+		</div>
+		<div  class="temphidden">
+			<p>Graphs</p>
+			<ul>
+				<li>Visual Progress (SI: 4,462 v 5,902)</li>
+				<li>Timings</li>
+				<li>Requests (286 v 178)</li>
+				<li>Bytes (3.37Mb v. 2.19Mb)</li>
+			</ul>
+		</div>
+	</section>
+	<p class="hinttome">timings, # of bytes, # of requests<br/>above fold QoE measurements</p>
+</div>
+
+<div class="slide">
+	<header>
+		<h1>Timings</h1>
+	</header>
+	<section>
+	<dl class="ddhide">
+		<dt>TTFB</dt>
+		<dd>Time from initial navigation until first byte is received by browser</dd>
+		<dt>Start Render</dt>
+		<dd>Time from start of initial navigation to the first non-white content painted to browser.<br/>Green Line in WPTest</dd>	
+<dt>Load Time (onLoad)</dt>
+<dd>From navigation start to document complete<br/>
+</dd>
+<dt>Load Time (Fully Loaded)</dt>
+<dd>
+Metrics collected up until there was 2s of no network activity after Document Complete. </dd>
+<dt>Speed Index</dt>
+<dd>Proportional representation of how quickly user-visible content was rendered.</dd>
+</dl>
+
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1>Speed Index</h1>
+	</header>
+	<section>
+	<p>Metric on above-fold visual Quality of Experience</p>
+<ul>
+<li>Created by Patrick Meenan (Google)</li>
+<li>Used on WebPage Test </li>
+</ul>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1>Speed Index</h1>
+	</header>
+	<section>
+<p>
+Aggregate function on quickness of above-the-fold visual completion:</p>
+<ul class="flex">
+<li></li>
+<li></li>
+<li></li>
+</ul>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<section>
+		<h1>User Experience > Developer Experience</h1>
+	</section>
+</div>
+
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+   </div>
+</div>
+<script src="js/slides.js" class="removeForAT"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30010510-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

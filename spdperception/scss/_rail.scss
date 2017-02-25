@@ -1,0 +1,36 @@
+.rail {
+  .icon {
+    display: block;
+  }
+  ul, ol {
+    display: flex;
+    list-style-type: none;
+  }
+  ul {
+    justify-content: center;
+    li {
+      height: 4vh;
+      margin: 0.1vw;
+      border: 1px solid black;
+    }
+
+  }
+  ol {
+    justify-content: space-around;
+    li {
+      border: 1px solid black;
+      flex: 1; 
+      margin: 10px; 
+      padding: 10px; 
+      box-sizing: border-box; 
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  .r {background-color:rgb(254, 228, 157);}
+  .a {background-color:rgb(30, 167, 99); color: $white;}
+  .i {background-color:rgb(202, 218, 247);}
+  .l {background-color:rgb(64,122,213); color: $white;}
+}

@@ -1,0 +1,25 @@
+.twitter-tweet p {
+  width: 80vw;
+  margin: 0 auto 0.75rem;
+  text-align: left;
+  &:before, &:after {
+    content: '“';
+    display: inline-block;
+    transform: scale(2);
+    transform-origin: right center;
+    color: $ilblue;
+  }
+  &:after {
+    content: '”';
+    transform-origin: left top;
+  }
+}
+.twitter-tweet {
+  text-align: right;
+  + p {
+  font-style: italic;
+  width: 50vw;
+  margin: auto;
+  text-align: right;
+  }
+}
