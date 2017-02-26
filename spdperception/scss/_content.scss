@@ -138,4 +138,34 @@ small {
 }
 .flex {
   display: flex;
+  list-style-type: none;
+  > li {
+    position: relative;
+  }
+  img {width: 100%;}
+  .si {
+    position: absolute;
+    top: 40%; right: 20%;
+  }
+}
+img {max-width: 90vw;}
+
+.intro_psi {
+  position: relative;
+  &::before {
+    content: "Perceptual";
+    color: red;
+    font-size: 1.5rem;
+    position: absolute;
+    left: calc(50% - 20vw - 5em);
+    top: 4vh;
+  }
+  &::after {
+    content: "(via SSIM)";
+    font-size: 1.5rem;
+    position: absolute;
+    left: calc(50% + 19vw);
+    top: 0;
+    color: red;
+  }
 }

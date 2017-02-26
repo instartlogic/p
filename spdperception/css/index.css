@@ -72,6 +72,11 @@ header, section {
   left: 0;
   transition: all 0.25s ease-in-out; }
 
+.divider {
+  background-color: #226DAA; }
+  .divider * {
+    color: #fff; }
+
 /* Content */
 header {
   font-weight: normal;
@@ -207,7 +212,36 @@ small {
   text-shadow: none; }
 
 .flex {
-  display: flex; }
+  display: flex;
+  list-style-type: none; }
+  .flex > li {
+    position: relative; }
+  .flex img {
+    width: 100%; }
+  .flex .si {
+    position: absolute;
+    top: 40%;
+    right: 20%; }
+
+img {
+  max-width: 90vw; }
+
+.intro_psi {
+  position: relative; }
+  .intro_psi::before {
+    content: "Perceptual";
+    color: red;
+    font-size: 1.5rem;
+    position: absolute;
+    left: calc(50% - 20vw - 5em);
+    top: 4vh; }
+  .intro_psi::after {
+    content: "(via SSIM)";
+    font-size: 1.5rem;
+    position: absolute;
+    left: calc(50% + 19vw);
+    top: 0;
+    color: red; }
 
 pre {
   text-align: left;

@@ -76,9 +76,9 @@ Twitter: <a href="http://www.twitter.com/webdevtips">@webdevtips</a>,  <a href="
 
 
 <!-- Talk Table of Contents-->
-<div class="slide">
+<div class="slide divider">
 	<header>
-		<h1>Speed Perception TOC</h1>
+		<h1>Speed Perception</h1>
 	</header>
 	<section>
 	<ol>
@@ -86,6 +86,16 @@ Twitter: <a href="http://www.twitter.com/webdevtips">@webdevtips</a>,  <a href="
 	<li>Understanding perceived performance</li>
 	<li>Measuring performance &amp; perceived performance</li>
 	</ol>
+	</section>
+</div>
+
+<!-- Overview of Performance -->
+<div class="slide divider">
+	<header>
+		<h1>Performance</h1>
+	</header>
+	<section>
+
 	</section>
 </div>
 
@@ -287,6 +297,20 @@ Metrics collected up until there was 2s of no network activity after Document Co
 	</section>
 </div>
 
+
+
+<div class="slide divider">
+	<header>
+		<h1>Speed Index (&amp; Perceptual Speed Index)</h1>
+	</header>
+	<section>
+
+	</section>
+</div>
+
+
+
+
 <div class="slide">
 	<header>
 		<h1>Speed Index</h1>
@@ -300,18 +324,270 @@ Metrics collected up until there was 2s of no network activity after Document Co
 	</section>
 </div>
 
+
+<!-- images of speed index -->
 <div class="slide">
 	<header>
 		<h1>Speed Index</h1>
 	</header>
 	<section>
-<p>
-Aggregate function on quickness of above-the-fold visual completion:</p>
-<ul class="flex">
-<li></li>
-<li></li>
-<li></li>
+		<p>
+		Aggregate function on quickness of above-the-fold visual completion:</p>
+		<ul class="flex">
+			<li><img src="images/visualprogress_both.gif" alt="speed index graph for both sites"></li>
+			<li><img src="images/visualprogress_both_staples.gif" alt="speed index graph for staples"><span class="si">4,462</span></li>
+			<li><img src="images/visualprogress_both_wolf.gif" alt="speed index graph for wolfermans"><span class="si">5,902</span></li>
+		</ul>
+		<p class="center"><img src="images/si.png" alt="equation for speed index" style="width: 30vw"></p>
+	</section>
+</div>
+
+
+<!-- SI explained -->
+<div class="slide">
+	<header>
+		<h1>Measurement of visual progress in Speed Index</h1>
+	</header>
+	<section>
+	<ul>
+		<li>Frame-by-frame VC progress is computed from pixel-histogram comparisons
+		<p class="center"><img src="images/si.png" alt="equation for speed index" style="width: 30vw"></p>
+		</li>
+		<li>Pixel-wise similarity (mean histogram difference / MHD) doesn’t capture visual perception!
+<ul><li>Perception of Shape / Color / Object similarity</li></ul></li></ul>
+	</section>
+</div>
+ 
+
+<!-- shape similarity -->
+<div class="slide">
+	<header>
+		<h1>Pixel-wise similarity doesn’t capture <u>shape similarity</u></h1>
+	</header>
+	<section class="center">
+	<p>Black/White = 50/50<br/>
+	<img src="images/px_similarity.png" style="height: 60vh;"><br/>
+	MHD (Mean Histogram Difference) = 0</p>
+
+	</section>
+</div>
+
+
+<!-- color similarity -->
+<div class="slide">
+	<header>
+		<h1>Pixel-wise similarity doesn’t capture <u>color similarity</u></h1>
+	</header>
+	<section>
+	<ul class="flex">
+		<li><img src="images/monolith.png" alt=""></li>
+		<li><img src="images/checkers.png" alt="">
+		</li>
+	</section>
+</div>
+
+
+
+<div class="slide">
+	<header>
+		<h1>Proposal for a perceptually oriented visual QoE metric</h1>
+	</header>
+	<section>
+	<ul>
+		<li>Update: Frame-by-frame VC progress computation using SSIM
+		<p class="center"><img src="images/einstein.png" style="height: 60vh"></p></li>
+	</ul>
+	</section>
+</div>
+
+
+
+
+
+
+
+<div class="slide">
+	<header>
+		<h1>Perceptual Speed Index</h1>
+	</header>
+	<section>
+	<p>Frame-by-frame VC progress computation using SSIM</p>
+	<div class="intro_psi">
+	<p class="center"><img src="images/si.png" alt="equation for perceptual speed index" style="width: 40vw"></p>
+	</div>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1>Without Jitter</h1>
+	</header>
+	<section>
+	<ul class="flex">
+		<li style="flex: 1">
+			<img src="images/etsy_psi_si.png" style="width: 40vw">
+		</li>
+		<li style="flex: 1">
+			<video src="videos/etsy_psi_si.m4v"controls style="width: 40vw"></video>
+		</li>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1>With Jitter</h1>
+	</header>
+	<section>
+		<ul class="flex">
+		<li style="flex: 1">
+			<img src="images/rl_si_psi.png" style="width: 40vw">
+		</li>
+		<li style="flex: 1">
+			<video src="videos/ralphlaurenvideo.m4v" controls style="width: 40vw"></video>
+		</li>
+	</section>
+</div>
+
+
+<div class="slide">
+	<header>
+		<h1>PSI v. SI</h1>
+	</header>
+	<section>
+<ul>
+<li>SI and PSI: linearly correlated</li>
+<li class="temphidden">Visual jitter / layout thrashing?  PSI > SI<ul><li>PSI appears higher when visual jitter exists (Pop-up ads / large lay-out changes / etc.)</li></ul>
+</li>
+<li class="temphidden">SSIM based visual progress measurements match human perception more closely than MHD</li>
+
+<li class="temphidden">
+SSIM / MHD swap doesn’t affect websites without visual jitter
+</li>
+
 </ul>
+<p><img src="images/sivpsi.png" style="height: 60vh">
+</section>
+</div>
+
+
+<div class="slide" style="background: #faa">
+	<header>
+		<h1>Staples</h1>
+	</header>
+	<section>ADD SI/PSI graph here
+	</section>
+</div>
+
+<div class="slide" style="background: #faa">
+	<header>
+		<h1>Wolfermans</h1>
+	</header>
+	<section>ADD SI/PSI graph here
+	</section>
+</div>
+
+
+<div class="slide">
+	<header>
+		<h1>PSI v. SI</h1>
+	</header>
+	<section>
+
+
+<p>Speed Index</p>
+<ul><li>Primarily focused on progress of above-fold loading</li>
+<li>Does not account for layout stability</li>
+</ul>
+<p>Perceptual Speed Index</p>
+<ul>
+<li>A perceptually oriented metric to measure above-fold visual QoE</li>
+<li>
+Designed to account for visual jitter (layout stability)</li>
+<li>
+Complementary to SI</li>
+</ul>
+</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1>Resources</h1>
+	</header>
+	<section>
+<ul>
+<li>
+PSI and SI open sourced on GitHub: <a href="https://github.com/WPO-Foundation/visualmetrics">github.com/WPO-Foundation/visualmetrics</a>
+</li>
+<li>
+For more details and explanations:
+<a href="http://www.parvez-ahammad.org/blog/perceptual-speed-index-psi-for-measuring-above-fold-visual-performance-of-webpages">http://www.parvez-ahammad.org/blog/perceptual-speed-index-psi-for-measuring-above-fold-visual-performance-of-webpages</a> or <a href="http://bit.ly/2ldyo9n">http://bit.ly/2ldyo9n</a>
+	</section>
+</div>
+
+<div class="slide divider">
+	<header>
+		<h1>SpeedPerception</h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<div class="slide">
+	<header>
+		<h1>Staples v. Wolferman's</h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
 	</section>
 </div>
 
@@ -345,134 +621,6 @@ Aggregate function on quickness of above-the-fold visual completion:</p>
 	</section>
 </div>
 
-
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
 
 <div class="slide">
 	<header>

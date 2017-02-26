@@ -3,18 +3,22 @@
 <head>
 	<meta charset="utf-8">
 	<title>Bad Form</title>
+	<style>radiogroup {border: red solid;}</style>
 </head>
 <body>
-<p>First Name <input type="text" name="name"></p>
-<p>In the USA, which color means stop?</p>
+<form>
+<p><label>First Name <input type="text" name="name"></label></p>
+<radiogroup aria-labeledby="banana"><legend id="banana">In the USA, which color means stop?</legend>
+Hello
 <ul>
-<li><input type="radio" name="stop" value="red"> Red</li>
-<li><input type="radio" name="stop" value="yellow"> Yellow</li>
-<li><input type="radio" name="stop" value="green"> Green</li>
-</ul>
-<p>Password <input type="password" name="pwd">
+<li><label><input type="radio" name="stop" value="red"> Red</label></li>
+<li><label><input type="radio" name="stop" value="yellow"> Yellow</label></li>
+<li><label><input type="radio" name="stop" value="green"> Green</label></li>
+</ul></radiogroup>
+<p><label for="myPwd">Password</label> <input id="myPwd" type="password" name="pwd">
 <small>6 to 8 character password</small>
 </p>
+</form>
 
 <!--<p>See also <a href="https://html.spec.whatwg.org/multipage/forms.html#autofill">autocomplete/autofill</a></p>-->
 </body>
