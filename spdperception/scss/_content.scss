@@ -169,3 +169,23 @@ img {max-width: 90vw;}
     color: red;
   }
 }
+
+.fiftyfifty {
+  max-width: 980px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  li {
+    display: block;
+    flex: 0 0 30%;
+  }
+ .temphidden {
+    visibility:hidden;
+  }
+  #sq_diag {order: 1;}
+  #sq_grid {order: 2;}
+  #sq_flow {order: 3;}
+  #sq_hand {order: 4;}
+  #sq_cats {order: 5;}
+  #sq_half {order: 6;}
+}

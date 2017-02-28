@@ -243,6 +243,29 @@ img {
     top: 0;
     color: red; }
 
+.fiftyfifty {
+  max-width: 980px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .fiftyfifty li {
+    display: block;
+    flex: 0 0 30%; }
+  .fiftyfifty .temphidden {
+    visibility: hidden; }
+  .fiftyfifty #sq_diag {
+    order: 1; }
+  .fiftyfifty #sq_grid {
+    order: 2; }
+  .fiftyfifty #sq_flow {
+    order: 3; }
+  .fiftyfifty #sq_hand {
+    order: 4; }
+  .fiftyfifty #sq_cats {
+    order: 5; }
+  .fiftyfifty #sq_half {
+    order: 6; }
+
 pre {
   text-align: left;
   background: linear-gradient(to top, rgba(34, 109, 170, 0.2) 50%, rgba(255, 255, 255, 0.5) 50%);

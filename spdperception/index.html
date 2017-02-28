@@ -364,10 +364,21 @@ Metrics collected up until there was 2s of no network activity after Document Co
 	<header>
 		<h1>Pixel-wise similarity doesn’t capture <u>shape similarity</u></h1>
 	</header>
-	<section class="center">
-	<p>Black/White = 50/50<br/>
-	<img src="images/px_similarity.png" style="height: 60vh;"><br/>
-	MHD (Mean Histogram Difference) = 0</p>
+	<section class="center" style="margin: 0">
+	<p style="margin:0; font-size: x-small;">Black/White = 50/50 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MHD (Mean Histogram Difference) = 0<p>
+	<ul class="fiftyfifty flex">
+		<li class="temphidden" id="sq_diag"><img src="images/square_diagonal.svg" alt="box that is 50% white and 50% black"></li>
+
+		<li class="temphidden" id="sq_half"><img src="images/square_half.svg" alt="box that is 50% white and 50% black"></li>
+		
+		<li class="temphidden"  id="sq_grid"><img src="images/square_grid.svg" alt="box that is 50% white and 50% black"></li>
+
+		<li class="temphidden"  id="sq_hand"><img src="images/sq_hands.png" alt="box that is 50% white and 50% black" style="border:1px solid #ccc"></li>
+
+		<li class="temphidden"  id="sq_cats"><img src="images/square_cat.svg" alt="box that is 50% white and 50% black"></li>
+
+		<li class="temphidden"  id="sq_flow"><img src="images/square_flower.svg" alt="box that is 50% white and 50% black"></li>
+		</ul>
 
 	</section>
 </div>
@@ -470,19 +481,20 @@ SSIM / MHD swap doesn’t affect websites without visual jitter
 </div>
 
 
-<div class="slide" style="background: #faa">
+<div class="slide">
 	<header>
 		<h1>Staples</h1>
 	</header>
-	<section>ADD SI/PSI graph here
+	<section>
+	<img src="images/staples_visual_complete_progress.png">
 	</section>
 </div>
 
-<div class="slide" style="background: #faa">
+<div class="slide">
 	<header>
 		<h1>Wolfermans</h1>
 	</header>
-	<section>ADD SI/PSI graph here
+	<section><img src="images/wolfermans_visual_complete_progress.png">
 	</section>
 </div>
 
@@ -521,6 +533,10 @@ PSI and SI open sourced on GitHub: <a href="https://github.com/WPO-Foundation/vi
 <li>
 For more details and explanations:
 <a href="http://www.parvez-ahammad.org/blog/perceptual-speed-index-psi-for-measuring-above-fold-visual-performance-of-webpages">http://www.parvez-ahammad.org/blog/perceptual-speed-index-psi-for-measuring-above-fold-visual-performance-of-webpages</a> or <a href="http://bit.ly/2ldyo9n">http://bit.ly/2ldyo9n</a>
+</li>
+<li>PSI in action: <a href="https://github.com/GoogleChrome/lighthouse">GoogleChrome Lighthouse</a></li>
+<li>SI in action: WebPageTest</li>
+</ul>
 	</section>
 </div>
 
@@ -544,9 +560,10 @@ For more details and explanations:
 		<h1>Study Hypotheses</h1>
 	</header>
 	<section>
-	<p><strong>Hypothesis 1:</strong> No single metric can explain human choices with 90%+ accuracy</p>
+<p><strong>Hypothesis 1:</strong> Visual metrics will perform better than non-visual/network metrics<br/> </p>
 
-<p><br/> <strong>Hypothesis 2:</strong> Visual metrics will perform better than non-visual/network metrics<br/> </p>
+	<p><br/> <strong>Hypothesis 2:</strong> No single metric can explain human choices with 90%+ accuracy</p>
+
 
 <p><br/> <strong>Hypothesis 3:</strong> User will not wait until “Visual Complete” to make their choice (despite the explicit instruction to wait until video turns grey)<br/> </p>
 	</section>
@@ -576,6 +593,8 @@ For more details and explanations:
 </div>
 
 
+
+
 <div class="slide divider">
 	<header>
 		<h1>Hypothesis 1</h1>
@@ -585,65 +604,9 @@ For more details and explanations:
 </div>
 
 
-
-
-<div class="slide">
-<section>
-		<p><strong>Hypothesis 1:</strong> No single metric can explain human choices with 90%+ accuracy</p>
-
-	<img src="images/h1_original.svg" style="height: 85vh; margin-top: -80px">
-
-	<div class="true temphidden">True</div>
-	</section>
-</div>
-
-
-<div class="slide">
-	<header>
-		<h1>Conclusions &amp; Thoughts</h1>
-	</header>
-	<section>
-	
-
-<ul>
-<li>Yes, there appears to be no one unicorn metric but, is there a combination synthetic metric (joint ML model) that will do a better job?</li>
-
-
-<li class="temphidden">People only looked two videos and made the call. Is there some additional information that we can extract from videos that will improve our models?</li>
-</section>
-</div>
-
-<div class="slide" style="background: #faa">
-	<header>
-		<h1>Hypothesis #1</h1>
-	</header>
-	<section>Explain your logic
-	</section>
-</div>
-
-<div class="slide">
-<section>
-		<p><strong>Hypothesis 1:</strong> No single metric can explain human choices with 90%+ accuracy</p>
-
-	<img src="images/h1_revised.svg" style="height: 85vh; margin-top: -80px">
-
-	<div class="true temphidden">Still True</div>
-	</section>
-</div>
-
-
-<div class="slide divider">
-	<header>
-		<h1>Hypothesis 2</h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-
 <div class="slide">
 	<section>
-	<p><strong>Hypothesis 2:</strong> Visual metrics will perform better than non-visual/network metrics</p>
+	<p><strong>Hypothesis 1:</strong> Visual metrics will perform better than non-visual/network metrics</p>
 <img src="images/h2_original.svg" style="height: 85vh; margin-top: -80px">
 <div class="true temphidden">Not True</div>
 	</section>
@@ -669,7 +632,7 @@ For more details and explanations:
 
 <div class="slide" style="background: #faa">
 	<header>
-		<h1>Hypothesis #2</h1>
+		<h1>Hypothesis #1</h1>
 	</header>
 	<section>Explain your logic
 	</section>
@@ -677,11 +640,76 @@ For more details and explanations:
 
 <div class="slide">
 	<section>
-	<p><strong>Hypothesis 2:</strong> Visual metrics will perform better than non-visual/network metrics</p>
+	<p><strong>Hypothesis 1:</strong> Visual metrics will perform better than non-visual/network metrics</p>
 <img src="images/h2_revised.svg" style="height: 85vh; margin-top: -80px">
 <div class="true temphidden">True</div>
 	</section>
 </div>
+
+
+
+
+
+
+
+
+
+
+<div class="slide divider">
+	<header>
+		<h1>Hypothesis 2</h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+
+
+<div class="slide">
+<section>
+		<p><strong>Hypothesis 2:</strong> No single metric can explain human choices with 90%+ accuracy</p>
+
+	<img src="images/h1_original.svg" style="height: 85vh; margin-top: -80px">
+
+	<div class="true temphidden">True</div>
+	</section>
+</div>
+
+
+<div class="slide">
+	<header>
+		<h1>Conclusions &amp; Thoughts</h1>
+	</header>
+	<section>
+	
+
+<ul>
+<li>Yes, there appears to be no one unicorn metric but, is there a combination synthetic metric (joint ML model) that will do a better job?</li>
+
+
+<li class="temphidden">People only looked two videos and made the call. Is there some additional information that we can extract from videos that will improve our models?</li>
+</section>
+</div>
+
+<div class="slide" style="background: #faa">
+	<header>
+		<h1>Hypothesis #2</h1>
+	</header>
+	<section>Explain your logic
+	</section>
+</div>
+
+<div class="slide">
+<section>
+		<p><strong>Hypothesis 2:</strong> No single metric can explain human choices with 90%+ accuracy</p>
+
+	<img src="images/h2_revised.svg" style="height: 85vh; margin-top: -80px">
+
+	<div class="true temphidden">Still True</div>
+	</section>
+</div>
+
 
 
 <div class="slide divider">
@@ -696,16 +724,14 @@ For more details and explanations:
 <div class="slide">
 	<section>
 		<p><strong>Hypothesis 3:</strong> User will not wait until “Visual Complete” to make their choice (despite the explicit instruction to wait until video turns grey)</p>
+		<img class="temphidden" src="images/hyp3.png" style="max-height: 60vh">
 	</section>
 </div>
 
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
+
+
+
+
 
 <div class="slide">
 	<header>
@@ -725,19 +751,43 @@ For more details and explanations:
 	</section>
 </div>
 
-<div class="slide">
-	<section>
-		<h1>User Experience > Developer Experience</h1>
-	</section>
+
+
+
+<!-- WPT of Staples and Wolferman's #2-->
+<div class="slide object">
+<object data="https://www.webpagetest.org/video/compare.php?tests=170228_WQ_2NZ%2C170228_RN_2P0&thumbSize=200&ival=1000&end=visual"></object>
 </div>
+
 
 
 <div class="slide">
 	<header>
-		<h1></h1>
+		<h1>Speed Perception Phase 2</h1>
 	</header>
 	<section>
 	</section>
+</div>
+
+
+
+<div class="slide">
+	<section>
+		<h1>User Experience > Developer Experience</h1>
+		<img src="images/wpt_cpu.svg">
+	</section>
+</div>
+
+
+<!-- TITLE SLIDE --> 
+  <div class="slide intro">
+    <section class="content">
+    <h1 style="font-size: 3rem; margin-top: 10%;">Thank you</h1>
+      <h2>Speed Perception: Understanding and Measuring Perceived Performance</h2>
+      <p><a href="http://instartlogic.github.io/p/spdperception">http://instartlogic.github.io/p/spdperception</a></p>
+      <ul class="flex" style=" max-width: 30rem; justify-content: space-between; margin: auto; padding-top: 1rem">
+      <li>Estelle Weyl <br/><a href="https://twitter.com/estellevw">@estellevw</a></li><li> Parvez Ahammad <br/><a href="https://twitter.com/perceptPA">@perceptPA</a></li></ul>
+    </section>
 </div>
 
 
