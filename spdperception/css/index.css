@@ -269,6 +269,33 @@ img {
 acronym {
   border-bottom: 1px dotted #226DAA; }
 
+.arrow {
+  justify-content: flex-start;
+  margin-right: 2em;
+  background-image: linear-gradient(transparent 25%, #226DAA 25%, #226DAA 75%, transparent 75%);
+  position: relative; }
+  .arrow::after {
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 100%;
+    top: -0.15em;
+    border: 1.5em solid transparent;
+    border-left-color: #226DAA; }
+  .arrow li {
+    background-color: white;
+    font-size: 0.6rem;
+    font-family: serif;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #226DAA;
+    border-radius: 5px;
+    flex: 1;
+    max-width: 6.5%;
+    text-align: center;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); }
+
 pre {
   text-align: left;
   background: linear-gradient(to top, rgba(34, 109, 170, 0.2) 50%, rgba(255, 255, 255, 0.5) 50%);

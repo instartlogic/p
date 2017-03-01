@@ -192,3 +192,38 @@ img {max-width: 90vw;}
 acronym {
   border-bottom: 1px dotted $ilblue;
 }
+
+.arrow {
+    justify-content: flex-start;
+    margin-right: 2em;
+    background-image:
+      linear-gradient(
+          transparent 25%, 
+          $ilblue 25%,  
+          $ilblue 75%, 
+          transparent 75%);
+    position: relative;
+    &::after {
+      content: "";
+      height: 0; width: 0;
+      position: absolute;
+      left: 100%;
+      top: -0.15em;
+      border: 1.5em solid transparent;
+      border-left-color: $ilblue;
+
+    }
+  li {
+    background-color:white;
+    font-size: 0.6rem;
+    font-family: serif;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid $ilblue;
+    border-radius: 5px;
+    flex: 1;
+    max-width: 6.5%;
+    text-align: center;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+  }
+}

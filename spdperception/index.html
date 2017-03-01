@@ -25,6 +25,24 @@ Based on: http://estelle.github.com/slides
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
 }</style>
+<script>
+	function playVideos() {
+		for(var count = 0; count < arguments.length; count++) {
+			document.getElementById(arguments[count]).play()
+		}
+	}
+	function explainSP(){
+		playVideos('test1', 'test2');
+		setTimeout(function() {
+			stopVideos('test1', 'test2');
+		  }, 7800);
+	}
+	function stopVideos() {
+		for(var count = 0; count < arguments.length; count++) {
+			document.getElementById(arguments[count]).pause();
+		}
+	}
+</script>
 </head>
 
 <body> 
@@ -101,6 +119,27 @@ Twitter: <a href="http://www.twitter.com/webdevtips">@webdevtips</a>,  <a href="
 	</section>
 </div>
 
+
+
+<!-- DO THIS -->
+<div class="slide">
+	<header>
+		<h1>Which feels faster?</h1>
+	</header>
+	<section>
+
+	<p class="center"><button onclick="explainSP();">Play</button>
+	<div class="testvids flex">
+		<section>
+			<video src="videos/orient.m4v" id="test1"></video>
+			
+		</section>
+		<section>
+			<video src="videos/auto.m4v" id="test2"></video>
+		</section>
+	</div>
+</section>
+</div>
 
 <!-- Overview of Performance -->
 <div class="slide">
@@ -182,7 +221,8 @@ Twitter: <a href="http://www.twitter.com/webdevtips">@webdevtips</a>,  <a href="
 		<h1>What's involved in a page load?</h1>
 	</header>
 	<section>
-	<ol style="height: 80vh; overflow: scroll; padding-left: 3rem">
+	<p class="center"><img src="images/latency.gif" alt="latency"></p>
+	<ol style="height: 40vh; overflow: scroll; padding-left: 3rem; font-size: small">
 	<li>HTTP request with protocol, host, port, and path.</li>
 <li>DNS lookup (find host IP)</li>
 <li>Socket opened between browser and server hosting the initial request content</li>
@@ -194,13 +234,35 @@ Twitter: <a href="http://www.twitter.com/webdevtips">@webdevtips</a>,  <a href="
 <li>Additional requests are made based on resources requested in initial response, including images, stylesheets, and scripts.<br/><br/> Go back to step 2 or 4 for each resource request.</li>
 <li>Stylesheets (blocking) are parsed. CSSOM built.</li>
 <li>Scripts (blocking) are parsed and executed. DOM updated.</li>
-<li>Content gets rendered</li>
+<li>Content gets rendered</li></ol>
 	</section>
 </div>
 
 
-
-
+<div class="slide">
+	<header>
+		<h1>What's involved in a page load?</h1>
+	</header>
+	<section>
+<ul class="flex arrow">
+	<li>HTTP request</li>
+	<li>DNS lookup</li>
+	<li>TCP Connect</li>
+	<li>HTTP request sent</li>
+	<li>Server Magic</li>
+	<li>Server Sends response</li>
+	<li>Browser receives/<wbr>parses response</li>
+	<li>Resources fetched from Cache</li>
+	<li>Parse &amp; Execute Scripts</li>
+	<li>Render Site</li>
+</ul>
+<ul style="margin-top: 2em">
+	<li>Each request: go back to DNS lookup or HTTP Request</li>
+	<li>Stylesheets are blocking</li>
+	<li>Scripts are blocking.</li>
+</ul>
+</section>
+</div>
 
 <!-- What we can measure -->
 <div class="slide">
@@ -210,6 +272,15 @@ Twitter: <a href="http://www.twitter.com/webdevtips">@webdevtips</a>,  <a href="
 	<section style="height: 80vh; overflow: scroll">
 	<img src="images/perfmetrics.svg" alt="Navigation Timing API metrics" style="width: 95vw">
 	</section>
+</div>
+
+
+<!-- objective / subjective -->
+<div class="slide intro">
+	
+		<h1>Objective v. Subjective</h1>
+	
+
 </div>
 
 
@@ -237,13 +308,7 @@ Twitter: <a href="http://www.twitter.com/webdevtips">@webdevtips</a>,  <a href="
 	</div>
 	<p class="center"><button onclick="playVideos('video1', 'video2')">Play</button>
 	</section>
-	<script>
-		function playVideos() {
-			for(var count = 0; count < arguments.length; count++) {
-				document.getElementById(arguments[count]).play()
-			}
-		}
-	</script>
+
 </div>
 
 
@@ -405,6 +470,22 @@ Metrics collected up until there was 2s of no network activity after Document Co
 	</section>
 </div>
 
+<!-- images of speed index -->
+<div class="slide">
+	<header>
+		<h1>Speed Index</h1>
+	</header>
+	<section>
+		<p>
+		Aggregate function on quickness of above-the-fold visual completion:</p>
+		<ul class="flex">
+			<li><img src="images/visualprogress_both.gif" alt="speed index graph for both sites"></li>
+			<li><img src="images/visualprogress_both_staples.gif" alt="speed index graph for staples"><span class="si">4,462</span></li>
+			<li><img src="images/visualprogress_both_wolf.gif" alt="speed index graph for wolfermans"><span class="si">5,902</span></li>
+		</ul>
+		<p class="center"><img src="images/si.png" alt="equation for speed index" style="width: 30vw"></p>
+	</section>
+</div>
 
 
 <div class="slide">
@@ -554,7 +635,7 @@ For more details and explanations:
 	</header>
 	<section>
 	<blockquote>“SpeedPerception is a large-scale web performance crowdsourcing study focused on the perceived loading performance of above-the-fold content.”</blockquote>
-	<p>Premise: perception of above-the-fold performance (like perceived webpage speed) is relative.
+	<p>Premise: Perception of perceived performance is relative.
 	</section>
 </div>
 
@@ -663,11 +744,11 @@ For more details and explanations:
 </div>
 
 
-<div class="slide" style="background: #faa">
+<div class="slide" style="background: url(images/equation.png); background-size: contain; background-position: center; background-repeat: no-repeat">
 	<header>
-		<h1>Hypothesis #1</h1>
+		
 	</header>
-	<section>Explain your logic
+	<section>
 	</section>
 </div>
 
@@ -711,29 +792,6 @@ For more details and explanations:
 
 
 <div class="slide">
-	<header>
-		<h1>Conclusions &amp; Thoughts</h1>
-	</header>
-	<section>
-	
-
-<ul>
-<li>Yes, there appears to be no one unicorn metric but, is there a combination synthetic metric (joint ML model) that will do a better job?</li>
-
-
-<li class="temphidden">People only looked two videos and made the call. Is there some additional information that we can extract from videos that will improve our models?</li>
-</section>
-</div>
-
-<div class="slide" style="background: #faa">
-	<header>
-		<h1>Hypothesis #2</h1>
-	</header>
-	<section>Explain your logic
-	</section>
-</div>
-
-<div class="slide">
 <section>
 		<p><strong>Hypothesis 2:</strong> No single metric can explain human choices with 90%+ accuracy</p>
 
@@ -743,6 +801,22 @@ For more details and explanations:
 	</section>
 </div>
 
+
+
+<div class="slide">
+	<header>
+		<h1>Conclusions &amp; Thoughts</h1>
+	</header>
+	<section>
+	
+
+<ul>
+<li>There appears to be no one unicorn metric but, is there a combination synthetic metric (joint ML model) that will do a better job?</li>
+
+
+<li class="temphidden">People only looked two videos and made the call. Is there some additional information that we can extract from videos that will improve our models?</li>
+</section>
+</div>
 
 
 <div class="slide divider">
