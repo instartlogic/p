@@ -1,0 +1,56 @@
+
+header {
+    background-image: url(../svg/all.svg);
+    color: white;
+    text-align: center;
+    height: 50vw;
+    background-size: contain;	
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 8vh;
+}
+@media only screen and (min-width: 540px) {
+    header {padding-top: calc((20vh+20vw)/2);}
+}
+hgroup {
+	background-color: rgba(255,255,255,0.4);
+	text-align: center;
+	padding: 3vh;
+}
+hgroup h2, hgroup h1 {
+	font-size: calc((5vw + 5vh)/2);
+	margin: 1rem;
+	color: $ilblue;
+	font-weight: normal;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+hgroup h2 {
+	font-size: calc((2.5vw + 2.5vh)/2);
+}
+
+header .buttons {
+	display: flex;
+	max-width: 26rem;
+	padding-top: calc((5vh + 5vw)/2);
+	margin: auto;
+	a {
+	  flex: 1 1 40%;
+	  padding: 7px 14px;
+	  text-decoration: none;
+	  font-family: "Open sans";
+	  margin: 5px;
+	  border-radius: 2px;
+	  box-shadow: $shadows;
+	  &:hover {
+	  	box-shadow: -2px -2px 2px rgba(0,0,0,0.2);
+	  }
+	}
+	.btn { 
+		background-color: $lightborders;
+		color: $ilblue;
+	}
+	.btn-cta {
+	  color: $white;
+	  background-color: $ilblue;}
+}

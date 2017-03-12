@@ -1,0 +1,14 @@
+$ilblue: #226DAA;
+$darken: rgba(0,0,0,0.1);
+$lightborders: #ccc;
+$shadows: 3px 3px 3px rgba(0,0,0,0.2);
+$black: #333;
+$white: #fff;
+$background: $white;
+$bg_light: $lightborders;
+$ilb_light: lighten($ilblue, 40%);
+$ilb_tester: lighten($ilblue, 50%);
+$ilb_dark: darken($ilblue, 20%);
+
+a {color: $ilblue;}
+meter {background:$ilb_light }

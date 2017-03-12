@@ -1,0 +1,46 @@
+html {
+	font-family: Raleway, sans-serif;
+}
+body, header, footer {
+	margin: 0; padding: 0;
+	line-height: 2;
+}
+
+section, footer {
+	padding: 4vh 1vw; 
+	margin-left: -1vw; 
+	margin-right: -1vw;
+	display: flex;
+	align-items: center;
+	flex-direction: column; 
+}
+
+section > * {
+	max-width: 54rem;
+}
+section:first-of-type {
+	background-color: $ilblue;
+	color: #fff;
+}
+section:nth-of-type(2) {
+	 
+	background-image: url("../images/vaccuum.png"); 
+	background-position: 50% -78px;
+}
+section:nth-of-type(3) {
+	background-color: white;
+	color: #333;
+}	
+
+section:nth-of-type(4) {
+	background-color: lighten($ilblue, 40%);
+	color: #333;
+}
+
+section:nth-of-type(5) {
+	background-color: darken($ilblue, 20%);
+	color: #333;
+}
+footer {
+	background-color: $bg_light;
+}

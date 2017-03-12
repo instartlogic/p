@@ -1,0 +1,21 @@
+.teachers img {
+	width: 200px;
+	border-radius: 50%;
+	float: left;
+	shape-outside: circle(50%);  
+    clip-path: circle(50%);
+    transform: translatex(-10px);
+}
+.teachers {
+	ul {
+		display: flex;
+		list-style-type: none;
+		justify-content: space-between;
+		li {
+			flex: 0 0 45%;
+			min-width: 300px;
+		}
+		
+	}
+
+}

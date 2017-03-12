@@ -1,0 +1,47 @@
+footer {
+	padding: 20px;
+	article {
+		display: flex;
+		line-height: 1.6;
+		> ul:not(:first-of-type)  > li > a {
+		border-bottom: 1px solid;
+		&:hover {
+			border: none;
+		}
+	}
+	}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0 0 0 1rem;
+		flex: 25%;
+		a {
+			text-decoration: none;
+			
+		&:hover{
+			text-decoration: underline;
+			color: $ilb_dark;
+		}
+		}
+
+	}
+
+}
+
+@media only screen and (max-width: 800px) {
+	footer article {
+		flex-wrap: wrap;
+		> ul {
+			flex: 45%;
+		}
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	footer article {
+		flex-wrap: wrap;
+		> ul {
+			flex: 100%;
+		}
+	}
+}

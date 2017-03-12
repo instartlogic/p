@@ -1,0 +1,66 @@
+.feedback {
+  ul {
+ 	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+ * {
+
+	color: white;
+  }
+ li {
+	flex: 0 1 30%;
+
+	display: flex;
+	flex-direction: column;
+	margin: 0; padding: 0;
+	font-family: open sans;
+  }
+
+ blockquote {
+	line-height: 2; margin: 0; padding: 0;
+    &::before{
+	   content: "“";
+	   font-size: 2rem;
+	   position: absolute;
+	   transform: translate(-20px, -20px);
+	}
+	&::after{
+		content: "”";
+	   font-size: 2rem;
+	   position: absolute;
+	   transform: translate(5px, -20px);
+	}
+	~ p {
+		text-align: right;
+	}
+  }
+
+  img {
+	max-width: 100%;
+	max-height: 300px;
+	display: block;
+	margin: auto;
+  }
+}
+@media only screen and (min-width: 661px) {
+	img[alt="Toaster"] {
+		transform: translatey(60px);
+	}
+}
+@media only screen and (max-width: 660px) {
+	.feedback ul {
+		flex-direction: column;
+	 li {
+	 	border-top: 1px solid $ilblue;
+	 	max-width: 400px;
+	 	margin: auto;
+		padding: 20px 10px;
+		&:first-of-type {
+			border-top: none;
+		}
+	 }
+	}
+}

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="224" height="360" xmlns:xlink="http://www.w3.org/1999/xlink" version="1">
+  <defs>
+    <linearGradient id="a">
+      <stop offset="0" stop-color="#454242"/>
+      <stop offset="1" stop-color="#454242" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="d" width="1.2" height="1.3" x="-.1" y="-.2">
+      <feGaussianBlur stdDeviation=".7"/>
+    </filter>
+    <filter id="f" width="2.7" height="1.4" x="-.8" y="-.2">
+      <feGaussianBlur stdDeviation="1.6"/>
+    </filter>
+    <filter id="h" width="3.4" height="1.8" x="-1.2" y="-.4">
+      <feGaussianBlur stdDeviation="2.4"/>
+    </filter>
+    <filter id="b" width="2.4" height="1.7" x="-.7" y="-.3">
+      <feGaussianBlur stdDeviation="2.7"/>
+    </filter>
+    <filter id="c" width="1.2" height="1.2" x="-.1" y="-.1">
+      <feGaussianBlur stdDeviation=".6"/>
+    </filter>
+    <filter id="g" width="1.2" height="1.5" x="-.1" y="-.3">
+      <feGaussianBlur stdDeviation=".4"/>
+    </filter>
+    <radialGradient id="e" cx="-31" cy="159.8" r="1.7" xlink:href="#a" gradientUnits="userSpaceOnUse" gradientTransform="matrix(2 6.1 -5.7 1.9 1054.2 52.2)" fx="-31" fy="159.8"/>
+  </defs>
+  <rect width="199.2" height="309.1" x="14.7" y="16.4" stroke="#000" stroke-width="2.2" ry="6" opacity=".5"/>
+  <rect width="177.3" height="291.9" x="23.9" y="25.8" fill="#fff" stroke="#000" stroke-width="2.2" ry="0" opacity=".5"/>
+  <path stroke="#000" stroke-width="1.9" d="m 34.11,16.74 -0.23,0.22 -16.45,0 5.97,7.19 2.14,0 -0.05,0.06 176.38,0.38 8.56,-7.46 -13.69,-0.06 -0.28,-0.33 -103.86,0.11 -58.49,-0.11 z m 0.33,309.66 -0.22,-0.22 -15.15,-2.14 4.67,-5.05 2.14,0 -0.06,-0.05 176.38,-0.39 8.56,7.47 -13.69,0.05 -0.28,0.33 -103.86,-0.11 -58.49,0.11 z" opacity=".6"/>
+  <path stroke="#000" stroke-width="1.8" d="M119.84 90.10a9.68 8.47 0 0 1-19.37 0 9.68 8.47 0 1 1 19.37 0zM119.34 255.60a9.68 8.47 0 0 1-19.37 0 9.68 8.47 0 1 1 19.37 0z" opacity=".6"/>
+  <rect width="29.3" height="69.5" x="96.3" y="134.2" fill="#0d0d0d" stroke="#0e0b0b" stroke-width="2.2"/>
+  <path fill="#030000" stroke-width="1.2" d="m 90.34,164.04 -0.72,14.05 -7.75,0 -0.73,-18.41 9.2,4.36 z" transform="matrix(1.8 0 0 -1.8 -26.4 491.1)" opacity=".5" filter="url(#b)"/>
+  <rect width="20.5" height="16.7" x="98.1" y="-220" fill="#746a6a" stroke="#746a6a" stroke-width="2.2" transform="scale(1 -1)" ry=".4"/>
+  <path fill="#ccc" stroke-width="1.2" d="m 98.54,162.17 25.77,0 -1.3,-6.44 -22.31,-0.43 -2.16,6.87 z" opacity=".8"/>
+  <rect width="13.6" height="10.7" x="70" y="174.7" fill="#746a6a" stroke="#746a6a" stroke-width="1.2" transform="matrix(1.8 0 0 -1.8 -26.4 491.1)" ry=".2" opacity=".6" filter="url(#c)"/>
+  <path fill="#746a6a" stroke="#746a6a" stroke-width="2.2" d="m 118.41,201.82 c 1.71,-6.69 2.41,-16.85 4.81,-18.86 l -23.15,0.43 -1.75,18 20.09,0.43 z" opacity=".6"/>
+  <path fill="#060000" stroke-width="1.2" d="m 82.83,173.49 -12.83,0.24 -0.49,-10.42 10.42,0.25 2.9,9.93 z" transform="matrix(1.8 0 0 -1.8 -26.4 491.1)" opacity=".6" filter="url(#d)"/>
+  <path fill="#746a6a" stroke="#746a6a" stroke-width="2.2" d="m 124.75,184.03 -6.12,17.15 0.87,18.86 4.37,-15.86 0.88,-20.15 z" opacity=".6"/>
+  <text x="128.1" y="171.4" fill="#ccc" font-size="82.7" transform="scale(.8 1.3)" font-family="Bitstream Vera Sans">
+    <tspan x="127.1" y="146.3" font-size="10.3">OFF</tspan>
+  </text>
+  <path fill="url(#e)" stroke-width="1.2" d="m 84.04,173.97 -3.39,-9.69 0.49,-10.66 2.42,8.97 0.48,11.38 z" transform="matrix(1.8 0 0 -1.8 -26.4 491.1)" filter="url(#f)"/>
+  <path fill="#746a6a" stroke="#746a6a" stroke-width="1.2" d="m 82.59,186.56 -0.24,2.43 -11.39,0 -0.24,-2.18 11.87,-0.25 z" transform="matrix(1.8 0 0 -1.8 -26.4 491.1)" opacity=".9" filter="url(#g)"/>
+  <path fill="#030000" stroke-width="1.2" d="m 87.19,174.7 -4.84,2.42 0,-14.53 4.84,2.18 0,9.93 z" transform="matrix(1.8 0 0 -1.8 -26.4 491.1)" opacity=".5" filter="url(#h)"/>
+  <path fill="#fff" d="M16.33 324.74c-.288588-.19656-.947063-.97456-1.46-1.72-.875954-1.28-.938571-11.41-.938571-151.90 0-141.21.05888-150.63.951646-152.14.523406-.886055 1.08-1.59 1.24-1.57.163035.01 1.73 1.78 3.48 3.93l3.18 3.90 0 146.42 0 146.42-2.97 3.50c-1.63 1.92-3.21 3.34-3.49 3.14zM19.78 20.92c-1.70-2.00-2.95-3.87-2.77-4.16.413096-.668403 194.39-.695747 194.39-.0274 0 .267691-1.84 2.13-4.10 4.16l-4.10 3.67-90.15 0-90.15 0-3.09-3.64zM207.07 321.29l-4.54-3.95 0-146.06 0-146.06 2.55-2.11c1.40-1.16 3.61-3.05 4.92-4.20l2.37-2.08 1.03 1.53c1.00 1.48 1.03 5.84 1.03 152.81l0 151.28-1.41 1.41-1.41 1.41-4.54-3.95z"/>
+  <path fill="#ccc" d="M23.63 325.47c-2.44-.39821-4.77-.74278-5.18-.76569-.433933-.0243.22-1.19 1.57-2.81l2.32-2.77 89.69 0c54.73 0 89.90-.20164 90.22-.51737.32-.32273 2.13.86983 4.80 3.16 2.86 2.47 4.05 3.82 3.60 4.11-.36963.23-41.60.40104-91.64.36922-71.97-.0458-91.89-.20907-95.40-.78189zM15.24 322.72c-.952604-2.11-.998327-8.98-1.00-151.43-.01079-151.71.0092-153.37 1.84-153.37.220578 0 1.82 1.72 3.56 3.84l3.16 3.84 0 146.12 0 146.12-3.28 3.54-3.28 3.54-.997846-2.21z"/>
+</svg>
