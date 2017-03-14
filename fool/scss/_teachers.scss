@@ -12,10 +12,13 @@
 		list-style-type: none;
 		justify-content: space-between;
 		li {
-			flex: 0 0 45%;
+			flex: 0 1 45%;
 			min-width: 300px;
 		}
 		
+	}
+	h3 {
+		font-size: 2rem;
 	}
 
 }

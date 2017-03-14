@@ -1,0 +1,41 @@
+<svg
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+  version="1.1" x="0" y="0" viewBox="0 0 100 125"
+>
+<defs>
+  <style>
+  rect {
+    fill:#cccccc; 
+    stroke: #666; 
+    transform-origin: top center;
+  }
+  .backcover {
+    transform: skewy(12deg); 
+  }
+  .back1 {
+    transform: skewy(18deg); 
+  }
+  .back2 {
+    transform: skewy(24deg); 
+  }
+  .frontcover {
+    transform: skewy(-12deg); 
+  }
+  .front1 {
+    transform: skewy(-18deg); 
+  }
+  .front2 {
+    transform: skewy(-24deg); 
+  }
+</style>
+</defs>
+
+<rect width="36" height="60" x="13" y="18" ry="2" class="back2"/>
+<rect width="39" height="60" x="11" y="20" ry="2" class="back1"/>
+<rect width="42" height="90" x="8" y="22" ry="2" class="backcover"/>
+<rect width="36" height="60" x="50" y="18" ry="2" class="front2"/>
+<rect width="39" height="60" x="50" y="20" ry="2"  class="front1" />
+<rect width="42" height="90" x="50" y="22" ry="2" class="frontcover" />
+</svg>
