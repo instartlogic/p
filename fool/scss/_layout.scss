@@ -24,10 +24,11 @@ section:first-of-type {
 }
 section:nth-of-type(2) {
 	 
-	background-image: url("../images/vaccuum.png"); 
-	background-position: 50% -78px;
+	background-image: url("../images/bg.jpg"); 
+	background-size: cover;
 }
-section:nth-of-type(3) {
+section:nth-of-type(3),
+table {
 	background-color: white;
 	color: #333;
 }	

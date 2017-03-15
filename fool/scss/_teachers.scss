@@ -1,4 +1,4 @@
-.teachers img {
+.teachers img, .hal {
 	width: 200px;
 	border-radius: 50%;
 	float: left;
@@ -20,5 +20,16 @@
 	h3 {
 		font-size: 2rem;
 	}
+	.hal:hover {
+		position:relative;
+		img {visibility: hidden;}
+	}
+	.hal:hover::after {
+		content: '';
+		background: url(../svg/halanim.svg);
+		top:0; left:0; right:0; bottom:0;
+		position: absolute;
 
+    transform: translatex(-10px);
+	}
 }

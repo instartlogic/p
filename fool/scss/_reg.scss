@@ -1,0 +1,19 @@
+.reg {
+	color: $white;
+	h1 {
+		font-size: 2rem;
+		margin-bottom: 0
+	}
+	table {
+		color: #333;
+		border: 1px solid;
+		padding: 10px;
+		td { padding:5px 10px;}
+		tr + tr td {border-top:1px solid;}
+		td + td {
+			border-left: 1px solid;
+		}
+		td[colspan] {text-align: center;}
+	}
+
+}

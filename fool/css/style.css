@@ -29,10 +29,11 @@ section:first-of-type {
   color: #fff; }
 
 section:nth-of-type(2) {
-  background-image: url("../images/vaccuum.png");
-  background-position: 50% -78px; }
+  background-image: url("../images/bg.jpg");
+  background-size: cover; }
 
-section:nth-of-type(3) {
+section:nth-of-type(3),
+table {
   background-color: white;
   color: #333; }
 
@@ -128,7 +129,25 @@ footer {
     flex-wrap: wrap; }
     footer article > ul {
       flex: 100%; } }
-.teachers img {
+.reg {
+  color: #fff; }
+  .reg h1 {
+    font-size: 2rem;
+    margin-bottom: 0; }
+  .reg table {
+    color: #333;
+    border: 1px solid;
+    padding: 10px; }
+    .reg table td {
+      padding: 5px 10px; }
+    .reg table tr + tr td {
+      border-top: 1px solid; }
+    .reg table td + td {
+      border-left: 1px solid; }
+    .reg table td[colspan] {
+      text-align: center; }
+
+.teachers img, .hal {
   width: 200px;
   border-radius: 50%;
   float: left;
@@ -141,8 +160,23 @@ footer {
   list-style-type: none;
   justify-content: space-between; }
   .teachers ul li {
-    flex: 0 0 45%;
+    flex: 0 1 45%;
     min-width: 300px; }
+.teachers h3 {
+  font-size: 2rem; }
+.teachers .hal:hover {
+  position: relative; }
+  .teachers .hal:hover img {
+    visibility: hidden; }
+.teachers .hal:hover::after {
+  content: '';
+  background: url(../svg/halanim.svg);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transform: translatex(-10px); }
 
 .feedback ul {
   display: flex;
