@@ -1,8 +1,8 @@
-.teachers img, .hal {
+.teachers ul img, .hal {
 	width: 200px;
 	border-radius: 50%;
 	float: left;
-	shape-outside: circle(50%);  
+	shape-outside: circle(50%);
     clip-path: circle(50%);
     transform: translatex(-10px);
 }
@@ -15,10 +15,7 @@
 			flex: 0 1 45%;
 			min-width: 300px;
 		}
-		
-	}
-	h3 {
-		font-size: 2rem;
+
 	}
 	.hal:hover {
 		position:relative;
@@ -31,5 +28,23 @@
 		position: absolute;
 
     transform: translatex(-10px);
+	}
+	h2 {
+		margin-bottom: 0;
+	}
+	h1 {
+		margin: -1rem 0 0 0;
+		font-size: 2.5rem;
+		color: $white;
+		text-shadow: $shadows;
+		span {
+			font-size: 4rem;
+			font-family: serif;
+			position: relative;
+			top: 0.5rem;
+			font-weight: normal;
+			font-style: normal;
+			color: $ilblue;
+		}
 	}
 }

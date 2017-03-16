@@ -7,12 +7,12 @@ body, header, footer {
 }
 
 section, footer {
-	padding: 4vh 1vw; 
-	margin-left: -1vw; 
+	padding: 4vh 1vw;
+	margin-left: -1vw;
 	margin-right: -1vw;
 	display: flex;
 	align-items: center;
-	flex-direction: column; 
+	flex-direction: column;
 }
 
 section > * {
@@ -20,28 +20,36 @@ section > * {
 }
 section:first-of-type {
 	background-color: $ilblue;
+  box-shadow: $shadows, $topshadows;
 	color: #fff;
 }
 section:nth-of-type(2) {
-	 
-	background-image: url("../images/bg.jpg"); 
+
+	background-image: url("../images/bg.jpg");
+  box-shadow: inset $shadows, inset $topshadows;
 	background-size: cover;
 }
 section:nth-of-type(3),
 table {
 	background-color: white;
 	color: #333;
-}	
+  box-shadow: $shadows, $topshadows;
+}
 
 section:nth-of-type(4) {
 	background-color: lighten($ilblue, 40%);
+
+  box-shadow: inset $shadows, inset $topshadows;
 	color: #333;
 }
 
 section:nth-of-type(5) {
 	background-color: darken($ilblue, 20%);
+
+  box-shadow:  $shadows,  $topshadows;
 	color: #333;
 }
 footer {
 	background-color: $bg_light;
+  box-shadow: inset $shadows, inset $topshadows;
 }

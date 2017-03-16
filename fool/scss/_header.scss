@@ -4,7 +4,7 @@ header {
     color: white;
     text-align: center;
     height: 50vw;
-    background-size: contain;	
+    background-size: contain;
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
@@ -14,7 +14,9 @@ header {
     header {padding-top: calc((20vh+20vw)/2);}
 }
 hgroup {
-	background-color: rgba(255,255,255,0.4);
+	background-color: rgba(255,255,255,0.6);
+  border: 1 solid white;
+  box-shadow: $shadows, $topshadows;
 	text-align: center;
 	padding: 3vh;
 }
@@ -46,7 +48,7 @@ header .buttons {
 	  	box-shadow: -2px -2px 2px rgba(0,0,0,0.2);
 	  }
 	}
-	.btn { 
+	.btn {
 		background-color: $lightborders;
 		color: $ilblue;
 	}

@@ -26,27 +26,33 @@ section > * {
 
 section:first-of-type {
   background-color: #226DAA;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), -3px -3px 3px rgba(0, 0, 0, 0.2);
   color: #fff; }
 
 section:nth-of-type(2) {
   background-image: url("../images/bg.jpg");
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset -3px -3px 3px rgba(0, 0, 0, 0.2);
   background-size: cover; }
 
 section:nth-of-type(3),
 table {
   background-color: white;
-  color: #333; }
+  color: #333;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), -3px -3px 3px rgba(0, 0, 0, 0.2); }
 
 section:nth-of-type(4) {
   background-color: #aad0ee;
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset -3px -3px 3px rgba(0, 0, 0, 0.2);
   color: #333; }
 
 section:nth-of-type(5) {
   background-color: #113755;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), -3px -3px 3px rgba(0, 0, 0, 0.2);
   color: #333; }
 
 footer {
-  background-color: #ccc; }
+  background-color: #ccc;
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset -3px -3px 3px rgba(0, 0, 0, 0.2); }
 
 header {
   background-image: url(../svg/all.svg);
@@ -63,7 +69,9 @@ header {
   header {
     padding-top: calc((20vh+20vw)/2); } }
 hgroup {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1 solid white;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), -3px -3px 3px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding: 3vh; }
 
@@ -147,7 +155,7 @@ footer {
     .reg table td[colspan] {
       text-align: center; }
 
-.teachers img, .hal {
+.teachers ul img, .hal {
   width: 200px;
   border-radius: 50%;
   float: left;
@@ -162,8 +170,6 @@ footer {
   .teachers ul li {
     flex: 0 1 45%;
     min-width: 300px; }
-.teachers h3 {
-  font-size: 2rem; }
 .teachers .hal:hover {
   position: relative; }
   .teachers .hal:hover img {
@@ -177,6 +183,21 @@ footer {
   bottom: 0;
   position: absolute;
   transform: translatex(-10px); }
+.teachers h2 {
+  margin-bottom: 0; }
+.teachers h1 {
+  margin: -1rem 0 0 0;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); }
+  .teachers h1 span {
+    font-size: 4rem;
+    font-family: serif;
+    position: relative;
+    top: 0.5rem;
+    font-weight: normal;
+    font-style: normal;
+    color: #226DAA; }
 
 .feedback ul {
   display: flex;
@@ -228,5 +249,20 @@ footer {
       padding: 20px 10px; }
       .feedback ul li:first-of-type {
         border-top: none; } }
+.black * {
+  color: black !important;
+  background: black !important;
+  transition: background 200ms, color 200ms; }
+.black img {
+  display: none; }
+
+.light {
+  float: left;
+  width: 70px;
+  margin-right: 10px; }
+
+.black .light {
+  display: inline-block;
+  transform: rotate(180deg); }
 
 /*# sourceMappingURL=style.css.map */

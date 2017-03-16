@@ -11,46 +11,46 @@
       </stop>
       <stop stop-color="#f6f913" offset="3%">
         <animate attributeName="stop-color" values="#f6f913; #e5511b; #f6f913" dur="2s" repeatCount="indefinite"></animate>
-      </stop> 
+      </stop>
       <stop stop-color="#e5511b" offset="5%">
           <animate attributeName="stop-color" values="#e5511b; #ea5b27; #e5511b" dur="2s" repeatCount="indefinite"></animate>
-      </stop> 
+      </stop>
       <stop stop-color="#ea5b27" offset="12%">
           <animate attributeName="stop-color" values="#ea5b27; #d82000; #ea5b27" dur="2s" repeatCount="indefinite"></animate>
-      </stop> 
+      </stop>
       <stop stop-color="#d82000" offset="13%">
           <animate attributeName="stop-color" values="#d82000;#d82000; #d82000" dur="2s" repeatCount="indefinite"></animate>
-      </stop> 
+      </stop>
       <stop stop-color="#d82000" offset="26%">
         <animate attributeName="stop-color" values="#d82000; #752201; #d82000" dur="2s" repeatCount="indefinite"></animate>
-      </stop> 
+      </stop>
       <stop stop-color="#752201" offset="36%">
             <animate attributeName="stop-color" values="#752201; #020201; #752201" dur="2s" repeatCount="indefinite"></animate>
-      </stop> 
+      </stop>
       <stop stop-color="#020201" offset="59%">
             <animate attributeName="stop-color" values="#020201; #020201" dur="2s" repeatCount="indefinite"></animate>
-      </stop> 
+      </stop>
       <stop stop-color="#020201" offset="62%">
             <animate attributeName="stop-color" values="#020201; rgba(52, 52, 51, 0.7); #020201" dur="2s" repeatCount="indefinite"></animate>
-      </stop> 
+      </stop>
       <stop stop-color="rgba(52, 52, 51, 0.7)" offset="64%">
             <animate attributeName="stop-color" values="rgba(52, 52, 51, 0.7); rgba(68, 68, 68, 0.4);rgba(52, 52, 51, 0.7);" dur="2s" repeatCount="indefinite"></animate>
-      </stop> 
+      </stop>
       <stop stop-color="rgba(68, 68, 68, 0.4)" offset="65%">
             <animate attributeName="stop-color" values="rgba(68, 68, 68, 0.4); rgba(204, 204, 204, 0.2); rgba(68, 68, 68, 0.4)" dur="2s" repeatCount="indefinite"></animate>
-      </stop> 
+      </stop>
       <stop stop-color="rgba(204, 204, 204, 0.2)" offset="66%">
             <animate attributeName="stop-color" values="rgba(204, 204, 204, 0.2); rgba(204, 204, 204, 0.2); rgba(204, 204, 204, 0.2)" dur="2s" repeatCount="indefinite"></animate>
-      </stop> 
+      </stop>
       <stop stop-color="rgba(204, 204, 204, 0.2)" offset="68%">
             <animate attributeName="stop-color" values="rgba(204, 204, 204, 0.2); rgba(204, 204, 204, 0.2); rgba(204, 204, 204, 0.2)" dur="2s" repeatCount="indefinite"></animate>
-      </stop> 
+      </stop>
       <stop stop-color="rgba(68, 68, 68, 0.2)" offset="73%">
             <animate attributeName="stop-color" values="rgba(68, 68, 68, 0.2); rgba(204, 204, 204, 0.2); rgba(68, 68, 68, 0.2)" dur="2s" repeatCount="indefinite"></animate>
-      </stop> 
-      
-      <stop stop-color="rgba(68, 68, 68, 0.2)" offset="77%"/> 
-      <stop stop-color="rgba(68, 68, 68, 0)" offset="78%"/> 
+      </stop>
+
+      <stop stop-color="rgba(68, 68, 68, 0.2)" offset="77%"/>
+      <stop stop-color="rgba(68, 68, 68, 0)" offset="78%"/>
     </radialGradient>
   </defs>
 
