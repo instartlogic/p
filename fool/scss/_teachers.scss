@@ -26,7 +26,6 @@
 		background: url(../svg/halanim.svg);
 		top:0; left:0; right:0; bottom:0;
 		position: absolute;
-
     transform: translatex(-10px);
 	}
 	h2 {
@@ -43,8 +42,20 @@
 			position: relative;
 			top: 0.5rem;
 			font-weight: normal;
-			font-style: normal;
 			color: $ilblue;
 		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.teachers ul {
+		flex-wrap: wrap;
+		li {
+			flex: 1;
+			+ li {
+				border-top: 1px solid $ilblue;
+			}
+		}
+
 	}
 }
