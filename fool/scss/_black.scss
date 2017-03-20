@@ -1,0 +1,17 @@
+.black {
+	* {
+	color: black !important;
+	background: black !important;
+	transition: background 200ms, color 200ms;
+	}
+	img {display: none;}
+}
+.light {
+	float: left;
+	width:70px;
+	margin-right: 10px;
+}
+.black .light {
+	display: inline-block;
+	transform: rotate(180deg);
+}
