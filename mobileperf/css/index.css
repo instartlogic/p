@@ -1,0 +1,390 @@
+@charset "UTF-8";
+:root {
+  font-size: 2vw;
+  background: #ffffff;
+  color: #333; }
+
+body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: no-repeat url(../../overkill/img/instartlogo.svg) #ffffff;
+  background-position: right 1vw bottom 1vh;
+  background-size: auto 7.5vh; }
+
+#info {
+  font-size: small;
+  position: absolute;
+  bottom: 0px;
+  left: 40%;
+  z-index: 500; }
+
+/* optional 
+#topinfo {
+  font-size: small;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 500;
+}
+.key {
+  font-weight: bold;
+  padding: 3px;
+  background-color: $darken;
+  }
+*/
+#presentation {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  display: block;
+  overflow: hidden; }
+
+.slides {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: block;
+  transition: transform 1s ease-in-out;
+  transform: scale(0.8); }
+
+header, section {
+  padding: 10px 20px; }
+
+ul.books {
+  flex-wrap: wrap; }
+  ul.books li {
+    padding: 5px; }
+
+.slide {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 0.25s ease-in-out; }
+
+.divider {
+  background-color: #226DAA; }
+  .divider * {
+    color: #fff; }
+
+/* OBJECT PAGES */
+.object header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1); }
+.object.slide {
+  padding: 0; }
+  .object.slide:after {
+    content: '';
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: 1px solid rgba(0, 0, 0, 0.05); }
+.object object {
+  width: 100%;
+  height: 100%; }
+
+.temphidden, .notes {
+  display: none; }
+
+a.pagelink {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #FFF;
+  background-color: #226DAA;
+  padding: 3px 5px 3px 5px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem; }
+  a.pagelink::after {
+    content: ' ➫';
+    display: inline-block;
+    padding-left: 5px; }
+
+.slide.far-past {
+  display: block;
+  margin-left: -200%; }
+
+.slide.past {
+  visibility: visible;
+  display: block;
+  margin-left: -100%; }
+
+.slide.current {
+  visibility: visible;
+  display: block;
+  margin-left: 0; }
+
+.slide.future {
+  visibility: visible;
+  display: block;
+  margin-left: 100%; }
+
+.slide.far-future {
+  display: block;
+  margin-left: 200%; }
+
+/* Content */
+header {
+  font-weight: normal;
+  letter-spacing: -.05em;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+  left: 30px;
+  top: 25px;
+  font-size: 2rem; }
+
+h1 {
+  font-size: 1.8rem;
+  margin: 0 0 0.75rem;
+  color: #226DAA; }
+
+h2 {
+  font-size: 1.9rem;
+  margin: 0 0 0.75rem; }
+
+h1:first-child {
+  margin-top: 0; }
+
+section, footer {
+  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+  margin: 0.75em 30px 0;
+  display: block;
+  overflow: hidden; }
+
+footer {
+  font-size: 1rem;
+  margin: 20px 0 0 30px; }
+
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 110%;
+  color: #226DAA; }
+
+a:hover {
+  text-decoration: underline; }
+
+.content {
+  font-size: 1.75rem; }
+
+.content input, button {
+  font-size: 2rem; }
+
+.slide textarea.mynotes {
+  -webkit-appearance: none;
+  border: 1px #aaa solid;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-style: italic;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  box-sizing: border-box;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, cursive,serif; }
+
+.slide.intro {
+  text-align: center;
+  font-size: 2rem; }
+
+.slide.intro header {
+  margin-top: 200px; }
+  .slide.intro header h1 {
+    color: #226DAA;
+    justify-content: center;
+    padding: 40px 0;
+    letter-spacing: 0.25px; }
+
+.slide.section, .slide.intro {
+  text-align: center; }
+
+.slide.section, .slide.intro header {
+  font-size: 2.5rem; }
+
+p, ul, dl, dd, dt, li, blockquote {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.75rem; }
+
+dt {
+  margin: 0; }
+
+dd {
+  margin-bottom: 0.25rem; }
+
+strong, dt {
+  color: #226DAA;
+  font-weight: bold; }
+
+.force-render {
+  display: block;
+  visibility: hidden; }
+
+.photocredit {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0 5px; }
+
+div.example {
+  display: block;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2); }
+
+small {
+  display: block;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  opacity: 0.5;
+  text-align: left; }
+
+.temphidden {
+  visibility: hidden; }
+
+.skiplink {
+  opacity: 0.025; }
+
+.skiplink:focus {
+  opacity: 1; }
+
+.center {
+  text-align: center; }
+
+.right {
+  float: right; }
+
+.hinttome {
+  color: rgba(0, 0, 0, 0.05);
+  text-shadow: none; }
+
+.flex {
+  display: flex;
+  list-style-type: none; }
+
+img {
+  max-width: 90vw; }
+
+acronym {
+  border-bottom: 1px dotted #226DAA; }
+
+.tweet iframe {
+  margin: 100px auto 0 !important;
+  font-size: 1.2rem;
+  transform: scale(1.65); }
+
+.tweetparent iframe {
+  transform: scale(1.3); }
+
+.slide .aria {
+  margin-left: 30vw;
+  white-space: pre;
+  padding: 20vh 0;
+  letter-spacing: 0.25px;
+  font-size: 8vh; }
+  .slide .aria i {
+    color: #226DAA;
+    padding-right: 0.1rem;
+    font-style: normal; }
+
+@media print {
+  .slide {
+    page-break-inside: avoid;
+    page-break-after: always;
+    visibility: visible !important;
+    font-size: 20pt;
+    font-family: Arial, sans-serif; }
+
+  @page {
+    size: landscape; }
+  body {
+    font-size: 12pt;
+    background: white; }
+
+  header h1 {
+    border-top: 2pt solid gray;
+    border-bottom: 1px dotted silver; }
+
+  #presentation-counter, #info, #topinfo, .counter {
+    display: none; } }
+.break {
+  background-image: url(../img/broken-lcd.jpg);
+  background-size: cover;
+  background-position: top right; }
+  .break section h1 {
+    color: #E65F00;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4), -1px -1px 0px rgba(255, 255, 255, 0.7);
+    width: 50%;
+    text-align: center;
+    float: right;
+    font-size: calc((8vh + 8vw) / 2); }
+
+.credit footer {
+  position: absolute;
+  bottom: 1vh;
+  right: 1vw;
+  font-size: small; }
+
+.big_piechart {
+  position: relative;
+  padding: 0;
+  height: 80vh;
+  width: 80vw;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-image: url(http://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=226daa&amp;is3D=true&amp;chd=t:1664,49,83,417,94,199,12&amp;chds=0,1664&amp;chdlp=b&amp;chma=|5); }
+  .big_piechart span {
+    color: white;
+    text-shadow: 1px 1px #333, -1px -1px #333;
+    text-align: center;
+    font-size: 8vh;
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    width: 2em;
+    height: 1em; }
+  .big_piechart .small_piechart {
+    height: 24vh;
+    width: 24vh;
+    -webkit-clip-path: circle(48%);
+    background-color: #FFF;
+    background-position: center;
+    background-size: 44vh auto;
+    background-image: url(http://chart.googleapis.com/chart?chs=400x225&amp;cht=p&amp;chco=333333&amp;chd=t:416,34,25,113,2,22&amp;chbg=transparent&amp;chds=0,416&amp;chdlp=b&amp;chma=|5); }
+  .big_piechart:hover div {
+    height: 43vh;
+    width: 43vh;
+    background-size: 80vh auto;
+    background-image: url(http://chart.googleapis.com/chart?chs=400x225&amp;cht=p&amp;chco=333333&amp;chd=t:416,34,25,113,2,22&amp;chbg=transparent&amp;chds=0,416&amp;chdlp=b&amp;chma=|5&amp;chp=-.55); }
+
+/*# sourceMappingURL=index.css.map */

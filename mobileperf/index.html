@@ -1,0 +1,485 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<meta charset="utf-8" />
+<title>Mobile Performance</title>
+<!--
+Made by: Estelle Weyl
+Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
+Based on: http://estelle.github.com/slides 
+-->  
+<meta name="description" content="
+Some of your users are on mobile browsers that may be more advanced than the desktop browsers of other users, but chances are those phones with their advanced browsers may have similar memory and bandwidth constraints to the computer you threw out or recycled 5 years ago.
+
+While as developers we’re finally enjoying the ubiquity of modern browsers accessing the web, it’s the devices themselves that are now creating constraints we always need to consider. The issue with mobile isn’t Old IE,  but rather battery life, latency, memory and UI responsiveness. In this session we'll discuss best practices to make sure your site performs well, no matter how your user is accessing your content." /> 
+
+<link class="removeForAT" rel="stylesheet" href="css/index.css">
+
+<!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">-->
+<base target="play"/>
+</head>
+
+<body> 
+
+<div id="presentation">
+   <div id="slides">
+   
+  
+<!-- TITLE SLIDE --> 
+  <div class="slide intro">
+    <section class="content">
+    <h1 style="font-size: 3rem; margin-top: 10%;">Mobile Web Performance</h1>
+      
+      <p><a href="http://instartlogic.github.io/p/spdperception">http://instartlogic.github.io/p/mobileperf</a></p>
+      <button id="killCSS" class="skiplink">Enable Screen Reader Access</button>
+    </section>
+</div>
+
+
+<!-- Don't break the mobile web-->
+<div class="slide credit break">
+	<header>
+		<h1>Mobile Web Performance</h1>
+	</header>
+	<section>
+	<h1>Don't Break the Mobile Web</h1>
+	<footer>Photo: <a href="http://www.hdwallpapers4ipad.com/photo/abstract_backgrounds/broken_screen/2-0-1568">hdwallpapers4ipad.com</a></footer>
+	</section>
+</div>
+
+
+
+<!-- Talk Table of Contents-->
+<div class="slide divider">
+	<header>
+		<h1>Mobile Web Performance</h1>
+	</header>
+	<section>
+	<ol>
+	<li>Mobile Ecosystem</li>
+	<li>Understanding performance</li>
+	<li>Performance Solutions</li>
+	</ol>
+	</section>
+</div>
+
+<!-- ESTELLE WEYL -->
+<div class="slide">
+<section class="content">
+<div class="flex">
+<div>
+<h1>Estelle Weyl</h1>
+
+<p>Open Web Evangelist<br/>
+<a href="http://instartlogic.com">Instart Logic</a>
+</p>
+<p>
+Twitter: <br/><a href="http://www.twitter.com/webdevtips">@webdevtips</a> <br/> <a href="http://www.twitter.com/estellevw">@estellevw</a> <br/> <a href="http://www.twitter.com/standardista">@standardista</a></p><p>Blog: <br/><a href="http://www.standardista.com">www.standardista.com</a></p>
+</div>
+<ul class="flex books">
+	<li><img src="http://akamaicovers.oreilly.com/images/9780987467485/cat.gif" alt="HTML5 and CSS3 for the Real World"></li>
+  <li><img src="http://akamaicovers.oreilly.com/images/0636920041658/cat.gif" alt="Animations and Transitions with CSS"/>
+  </li>
+  <li><img src="http://akamaicovers.oreilly.com/images/0636920021711/cat.gif" alt="MObile HTML5" />
+  </li>
+  <li><img src="http://akamaicovers.oreilly.com/images/0636920025955/cat.gif" alt="Web Performance Daybook"/>
+  </li>
+  <li><img src="http://akamaicovers.oreilly.com/images/0636920012726/rc_cat.gif" alt="CSS: The Definitive Guide">
+  </li>
+  <li><img src="https://images-na.ssl-images-amazon.com/images/I/51kEaOLPoPL._SX379_BO1,204,203,200_.jpg" alt="Flexible boxes in CSS" width="180"></li></ul>
+</section>
+</div>
+ 
+
+
+<!-- Mobile Ecosystem -->
+<div class="slide divider">
+	<header>
+		<h1>Mobile Ecosystem</h1>
+	</header>
+	<section>
+
+	</section>
+</div>
+
+
+<!-- Tweet: Your mobile site might suck -->
+<div class="slide tweet">
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Just because no one uses your mobile site, doesn&#39;t mean you don&#39;t need to improve it. Maybe no one uses it because the experience is awful.</p>&mdash; Dawn Parzych (@dparzych) <a href="https://twitter.com/dparzych/status/710650338596884481">March 18, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+
+<!-- HTTP Archive March 1, 2017 -->
+<div class="slide"> 
+	<header>
+		<h1>March 2017</h1>
+	</header> 
+	<img style="height: 80vh; display: inline-block; margin: auto;" id="bytesperpage" class="chart" src="http://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=226daa&amp;is3D=true&amp;chd=t:1664,49,83,417,94,199,12&amp;chds=0,1664&amp;chdlp=b&amp;chdl=total 2533 kB&amp;chl=Images+-+1664+kB%7CHTML+-+49+kB%7CStylesheets+-+83+kB%7CScripts+-+417+kB%7CFonts+-+94+kB%7CVideo+-+199+kB%7COther+-+12+kB&amp;chma=|5&amp;chtt=Average+Bytes+per+Page+by+Content+Type+March+1,+2017"
+	alt='In March 2017, content is Images=1664kb, HTML=49kb, Stylesheets=83kb, Scripts=417kb, Fonts=94kb, Video=199 and Other=12kb for a total of 2533 kb'>
+</div>
+
+
+<!-- HTTP Archive webpage test
+<div class="slide"> 
+	<header>
+		<h1>August 1, 2017</h1>
+	</header> 
+	<img style="height: 80vh; display: inline-block; margin: auto;" id="bytesperpage" class="chart" src="http://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=226daa&amp;is3D=true&amp;chd=t:1299,61,67,508,73,421,16&amp;chds=0,1299&amp;chdlp=b&amp;chdl=total 2463 kB&amp;chl=Images+-+1299+kB%7CHTML+-+61+kB%7CStylesheets+-+67+kB%7CScripts+-+508+kB%7CFonts+-+73+kB%7CVideo+-+421+kB%7COther+-+16+kB&amp;chma=|5&amp;chtt=Average+Bytes+per+Page+by+Content+Type+August+15,+2016"
+	alt='In 2016, content is Images=1299kb, HTML=61kb, Stylesheets=67kb, Scripts=421kb, Fonts=73kb, Video=421 and Other=16kb for a total of 2463 kb'> 
+</div>-->
+
+
+<!-- HTTP Archive November 15, 2017 -->
+<div class="slide"> 
+	<header>
+		<h1>November 2010</h1>
+	</header> 
+	<img  style="height: 80vh; display: inline-block; margin: auto;" id="bytesperpage2" class="chart" src="http://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=226daa&amp;chd=t:416,34,25,113,2,22&amp;chds=0,416&amp;chdlp=b&amp;chdl=total 702 kB&amp;chl=Images+-+416+kB%7CHTML+-+34+kB%7CStylesheets+-+25+kB%7CScripts+-+113+kB%7CFonts+-+2+kB%7COther+-+22+kB&amp;chma=|5&amp;chtt=Average+Bytes+per+Page+by+Content+Type+November+2010" alt='In 2010, content was Images=416kb, HTML=34kb, Stylesheets=25kb, Scripts=113kb, Fonts=2kb, and Other=22kb for a total of 702kb'>
+</div> 
+
+
+
+<div class="slide"> 
+	<header><h1>2017 v 2010</h1></header> 
+	<section class="overlapping_pies">
+		<div class="big_piechart"  style="
+			    background-image: url(http://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=226daa&amp;is3D=true&amp;chd=t:1664,49,83,417,94,199,12&amp;chds=0,1664&amp;chdlp=b&amp;chma=|5);">
+			<div class="small_piechart"  style="
+			    background-image: url(http://chart.googleapis.com/chart?chs=400x225&amp;cht=p&amp;chco=333333&amp;chd=t:416,34,25,113,2,22&amp;chbg=transparent&amp;chds=0,416&amp;chdlp=b&amp;chma=|5);"></div>
+			<span  aria-label="for a total increase of 361% over a little over 6 years">361%</span>
+		</div>
+	</section>
+</div>
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- Overview of Performance -->
+<div class="slide divider">
+	<header>
+		<h1>Understanding Performance</h1>
+	</header>
+	<section>
+
+	</section>
+</div>
+
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1></h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+
+
+
+   </div>
+</div>
+<script src="js/slides.js" class="removeForAT"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30010510-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -3,7 +3,7 @@ a {
   color: #226DAA; }
 
 meter {
-  background: #aad0ee; }
+  background: #a4bacc; }
 
 html {
   font-family: Raleway, sans-serif; }
@@ -21,6 +21,9 @@ section, footer {
   align-items: center;
   flex-direction: column; }
 
+@media screen and (max-width: 600px) {
+  section, footer {
+    padding: 20px; } }
 section > * {
   max-width: 54rem; }
 
@@ -41,7 +44,7 @@ table {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), -3px -3px 3px rgba(0, 0, 0, 0.2); }
 
 section:nth-of-type(4) {
-  background-color: #aad0ee;
+  background-color: #a4bacc;
   box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset -3px -3px 3px rgba(0, 0, 0, 0.2);
   color: #333; }
 
@@ -56,9 +59,9 @@ footer {
 
 header {
   background-image: url(../svg/all.svg);
-  color: white;
   text-align: center;
-  height: 50vw;
+  background-color: #fff;
+  min-height: 50vw;
   background-size: contain;
   background-attachment: fixed;
   background-position: top center;
@@ -196,9 +199,15 @@ footer {
     position: relative;
     top: 0.5rem;
     font-weight: normal;
-    font-style: normal;
     color: #226DAA; }
 
+@media screen and (max-width: 600px) {
+  .teachers ul {
+    flex-wrap: wrap; }
+    .teachers ul li {
+      flex: 1; }
+      .teachers ul li + li {
+        border-top: 1px solid #226DAA; } }
 .feedback ul {
   display: flex;
   justify-content: space-between;

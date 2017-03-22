@@ -1,0 +1,21 @@
+.break {
+	background-image:url(../img/broken-lcd.jpg); 
+	background-size:cover; 
+	background-position: top right;
+	section h1 {
+		color: #E65F00;
+		text-shadow: 
+			  3px 3px 3px rgba(0,0,0,0.4),
+			 -1px -1px 0px rgba(255,255,255,0.7);
+		width: 50%;
+		text-align: center;
+		float: right;
+		font-size: calc((8vh + 8vw) / 2);
+	}
+}
+
+.credit footer {
+	position: absolute;
+	bottom: 1vh; right: 1vw;
+	font-size: small;
+}

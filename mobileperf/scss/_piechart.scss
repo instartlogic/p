@@ -1,0 +1,42 @@
+@import "variables";
+
+.big_piechart {
+  position: relative; 
+  padding: 0;
+  height: 80vh; 
+  width: 80vw;
+  background-size: auto 100%; 
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-image: url(http://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=226daa&amp;is3D=true&amp;chd=t:1664,49,83,417,94,199,12&amp;chds=0,1664&amp;chdlp=b&amp;chma=|5);
+ span {
+      color: white; 
+      text-shadow: 1px 1px #333, -1px -1px #333; 
+      text-align: center; 
+      font-size: 8vh;
+      position: absolute; top: 50%; left: 44%;
+      width: 2em; height: 1em;
+    }
+
+.small_piechart {
+    height: 24vh;
+    width: 24vh;
+    -webkit-clip-path: circle(48%);
+    background-color: #FFF;
+    background-position: center;
+    background-size: 44vh auto;
+    background-image: url(http://chart.googleapis.com/chart?chs=400x225&amp;cht=p&amp;chco=333333&amp;chd=t:416,34,25,113,2,22&amp;chbg=transparent&amp;chds=0,416&amp;chdlp=b&amp;chma=|5);
+  }
+&:hover div {
+  
+
+    height: 43vh;
+    width: 43vh;
+    background-size: 80vh auto;
+  background-image: url(http://chart.googleapis.com/chart?chs=400x225&amp;cht=p&amp;chco=333333&amp;chd=t:416,34,25,113,2,22&amp;chbg=transparent&amp;chds=0,416&amp;chdlp=b&amp;chma=|5&amp;chp=-.55);
+}
+}
+

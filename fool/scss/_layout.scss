@@ -43,7 +43,7 @@ table {
 }
 
 section:nth-of-type(4) {
-	background-color: lighten($ilblue, 40%);
+	background-color: $ilb_light;
 
   box-shadow: inset $shadows, inset $topshadows;
 	color: #333;
