@@ -3,8 +3,7 @@
 	border-radius: 50%;
 	float: left;
 	shape-outside: circle(50%);
-    clip-path: circle(50%);
-    transform: translatex(-10px);
+	margin-left: -10px;
 }
 .teachers {
 	ul {

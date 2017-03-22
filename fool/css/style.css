@@ -5,6 +5,35 @@ a {
 meter {
   background: #a4bacc; }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  width: 100%;
+  _box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); }
+  nav img {
+    margin: 7px 0 -7px 7px;
+    height: 2.5rem; }
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    nav ul li {
+      flex: 1; }
+      nav ul li a {
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+        text-decoration: none; }
+        nav ul li a:hover {
+          color: white; }
+      nav ul li:hover {
+        background: #226DAA; }
+
 html {
   font-family: Raleway, sans-serif; }
 
@@ -163,8 +192,7 @@ footer {
   border-radius: 50%;
   float: left;
   shape-outside: circle(50%);
-  clip-path: circle(50%);
-  transform: translatex(-10px); }
+  margin-left: -10px; }
 
 .teachers ul {
   display: flex;
@@ -247,7 +275,7 @@ footer {
 
 @media only screen and (min-width: 661px) {
   img[alt="Toaster"] {
-    transform: translatey(60px); } }
+    margin-top: 185px; } }
 @media only screen and (max-width: 660px) {
   .feedback ul {
     flex-direction: column; }
@@ -268,10 +296,12 @@ footer {
 .light {
   float: left;
   width: 70px;
-  margin-right: 10px; }
+  margin-right: 10px;
+  cursor: pointer; }
 
 .black .light {
   display: inline-block;
-  transform: rotate(180deg); }
+  transform: rotate(180deg);
+  opacity: 0.3; }
 
 /*# sourceMappingURL=style.css.map */
