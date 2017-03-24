@@ -231,7 +231,7 @@ footer {
 
 @media screen and (max-width: 600px) {
   .teachers ul {
-    flex-wrap: wrap; }
+    flex-direction: column; }
     .teachers ul li {
       flex: 1; }
       .teachers ul li + li {
@@ -282,6 +282,7 @@ footer {
     .feedback ul li {
       border-top: 1px solid #226DAA;
       max-width: 400px;
+      flex: auto;
       margin: auto;
       padding: 20px 10px; }
       .feedback ul li:first-of-type {

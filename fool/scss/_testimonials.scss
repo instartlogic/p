@@ -56,6 +56,7 @@
 	 li {
 	 	border-top: 1px solid $ilblue;
 	 	max-width: 400px;
+	 	flex: auto; 
 	 	margin: auto;
 		padding: 20px 10px;
 		&:first-of-type {

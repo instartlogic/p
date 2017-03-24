@@ -48,7 +48,8 @@
 
 @media screen and (max-width: 600px) {
 	.teachers ul {
-		flex-wrap: wrap;
+
+		flex-direction: column;
 		li {
 			flex: 1;
 			+ li {
