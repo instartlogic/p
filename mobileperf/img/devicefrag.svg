@@ -1,0 +1,3209 @@
+<svg xmlns="http://www.w3.org/2000/svg"  width="830" height="603.33">
+
+<defs>
+	<style>
+	text {font-size: 12px; fill: black; font-family: sans-serif;}
+</style>
+</defs>
+<g class="cell" transform="translate(771,139)" fill="#bfb890"><svg><rect width="10" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(793,450)" fill="#805e5e"><svg><rect width="8" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(766,400)" fill="#9fa439"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(819,433)" fill="#1e7d3d"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,277)" fill="#85c76d"><svg><rect width="12" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(555,468)" fill="#fce468"><svg><rect width="7" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(452,107)" fill="#f8ad19"><svg><rect width="17" height="33"></rect></svg>
+</g>
+<g class="cell" transform="translate(744,157)" fill="#e16326"><svg><rect width="14" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(484,346)" fill="#c23d4b"><svg><rect width="11" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(499,314)" fill="#61293d"><svg><rect width="10" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,390)" fill="#c158a2"><svg><rect width="13" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(573,330)" fill="#9961a8"><svg><rect width="0" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(758,255)" fill="#d9b5d5"><svg><rect width="21" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(743,381)" fill="#655aa7"><svg><rect width="9" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(209,463)" fill="#174585"><svg><rect width="27" height="28"></rect></svg>
+</g>
+<g class="cell" transform="translate(642,332)" fill="#4486c7"><svg><rect width="8" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(799,546)" fill="#aed1e7"><svg><rect width="5" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,329)" fill="#595a5a"><svg><rect width="13" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(783,537)" fill="#bfb890"><svg><rect width="3" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(703,346)" fill="#805e5e"><svg><rect width="11" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(385,216)" fill="#9fa439"><svg><rect width="30" height="63"></rect></svg>
+<svg><text y="0" transform="translate(0, 61)">One</text></svg></g>
+<g class="cell" transform="translate(818,546)" fill="#1e7d3d"><svg><rect width="1" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,366)" fill="#85c76d"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(663,548)" fill="#fce468"><svg><rect width="12" height="4.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,512)" fill="#f8ad19"><svg><rect width="4" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,407)" fill="#e16326"><svg><rect width="10" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(658,494)" fill="#c23d4b"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(737,450)" fill="#61293d"><svg><rect width="4" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(537,433)" fill="#c158a2"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(714,322)" fill="#9961a8"><svg><rect width="12" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(819,525)" fill="#d9b5d5"><svg><rect width="6" height="2"></rect></svg>
+</g>
+<g class="cell" transform="translate(598,520)" fill="#655aa7"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(830,542)" fill="#174585"><svg><rect width="0" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(794,442)" fill="#4486c7"><svg><rect width="10" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,529)" fill="#aed1e7"><svg><rect width="7" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(768,507)" fill="#595a5a"><svg><rect width="6" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(793,472)" fill="#bfb890"><svg><rect width="8" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,456)" fill="#805e5e"><svg><rect width="7" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(769,391)" fill="#9fa439"><svg><rect width="9" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(759,502)" fill="#1e7d3d"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(634,434)" fill="#85c76d"><svg><rect width="4" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(650,503)" fill="#fce468"><svg><rect width="6" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(827,551)" fill="#f8ad19"><svg><rect width="1" height="1.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(794,446)" fill="#e16326"><svg><rect width="10" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,494)" fill="#c23d4b"><svg><rect width="3" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,364)" fill="#61293d"><svg><rect width="7" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,536)" fill="#c158a2"><svg><rect width="2" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(736,277)" fill="#9961a8"><svg><rect width="7" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,519)" fill="#d9b5d5"><svg><rect width="3" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(815,546)" fill="#655aa7"><svg><rect width="2" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(703,356)" fill="#174585"><svg><rect width="11" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(582,537)" fill="#4486c7"><svg><rect width="7" height="15.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(709,484)" fill="#aed1e7"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(691,531)" fill="#595a5a"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(709,545)" fill="#bfb890"><svg><rect width="6" height="7.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(754,476)" fill="#805e5e"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(812,525)" fill="#9fa439"><svg><rect width="6" height="2"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,381)" fill="#1e7d3d"><svg><rect width="7" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(754,450)" fill="#85c76d"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(815,468)" fill="#fce468"><svg><rect width="3" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(786,546)" fill="#f8ad19"><svg><rect width="5" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(795,391)" fill="#e16326"><svg><rect width="10" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(754,493)" fill="#c23d4b"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(684,537)" fill="#61293d"><svg><rect width="6" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(793,502)" fill="#c158a2"><svg><rect width="7" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,27)" fill="#9961a8"><svg><rect width="24" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(794,443)" fill="#d9b5d5"><svg><rect width="0" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(631,494)" fill="#655aa7"><svg><rect width="6" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(555,433)" fill="#174585"><svg><rect width="7" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(670,450)" fill="#4486c7"><svg><rect width="5" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(755,304)" fill="#aed1e7"><svg><rect width="12" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,537)" fill="#595a5a"><svg><rect width="4" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(771,174)" fill="#bfb890"><svg><rect width="10" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(755,295)" fill="#805e5e"><svg><rect width="12" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(549,494)" fill="#9fa439"><svg><rect width="15" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,442)" fill="#1e7d3d"><svg><rect width="6" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(762,536)" fill="#85c76d"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(748,297)" fill="#fce468"><svg><rect width="6" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(529,537)" fill="#f8ad19"><svg><rect width="8" height="15.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(760,442)" fill="#e16326"><svg><rect width="5" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,504)" fill="#c23d4b"><svg><rect width="6" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(663,428)" fill="#61293d"><svg><rect width="12" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(786,507)" fill="#c158a2"><svg><rect width="6" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(679,55)" fill="#9961a8"><svg><rect width="23" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(430,329)" fill="#d9b5d5"><svg><rect width="13" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(740,400)" fill="#655aa7"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(683,450)" fill="#174585"><svg><rect width="6" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,346)" fill="#4486c7"><svg><rect width="7" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,519)" fill="#aed1e7"><svg><rect width="3" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(691,520)" fill="#595a5a"><svg><rect width="5" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(775,502)" fill="#bfb890"><svg><rect width="3" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(812,489)" fill="#805e5e"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(819,476)" fill="#9fa439"><svg><rect width="10" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(702,267)" fill="#1e7d3d"><svg><rect width="25" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(780,290)" fill="#85c76d"><svg><rect width="15" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(471,398)" fill="#fce468"><svg><rect width="12" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,177)" fill="#f8ad19"><svg><rect width="11" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,537)" fill="#e16326"><svg><rect width="8" height="15.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(445,519)" fill="#c23d4b"><svg><rect width="15" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(737,493)" fill="#61293d"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(740,528)" fill="#c158a2"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,512)" fill="#9961a8"><svg><rect width="3" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(443,472)" fill="#d9b5d5"><svg><rect width="12" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(482,472)" fill="#655aa7"><svg><rect width="12" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(484,277)" fill="#174585"><svg><rect width="11" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(684,520)" fill="#4486c7"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(806,456)" fill="#aed1e7"><svg><rect width="7" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(813,528)" fill="#595a5a"><svg><rect width="5" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(667,313)" fill="#bfb890"><svg><rect width="7" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(793,511)" fill="#805e5e"><svg><rect width="3" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,358)" fill="#9fa439"><svg><rect width="14" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(488,485)" fill="#1e7d3d"><svg><rect width="8" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(795,243)" fill="#85c76d"><svg><rect width="13" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(546,450)" fill="#fce468"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(631,484)" fill="#f8ad19"><svg><rect width="6" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,0)" fill="#e16326"><svg><rect width="16" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(470,177)" fill="#c23d4b"><svg><rect width="25" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(590,485)" fill="#61293d"><svg><rect width="7" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(497,506)" fill="#c158a2"><svg><rect width="11" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(562,277)" fill="#9961a8"><svg><rect width="10" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,209)" fill="#d9b5d5"><svg><rect width="14" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(607,433)" fill="#655aa7"><svg><rect width="7" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(703,366)" fill="#174585"><svg><rect width="7" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(826,519)" fill="#4486c7"><svg><rect width="3" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(802,450)" fill="#aed1e7"><svg><rect width="3" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(758,545)" fill="#595a5a"><svg><rect width="3" height="7.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(0,392)" fill="#bfb890"><svg><rect width="57" height="29"></rect></svg>
+<svg><text y="0" transform="translate(0, 27)">ZenFone 5</text></svg></g>
+<g class="cell" transform="translate(548,22)" fill="#805e5e"><svg><rect width="25" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(160,447)" fill="#9fa439"><svg><rect width="48" height="24"></rect></svg>
+</g>
+<g class="cell" transform="translate(217,0)" fill="#1e7d3d"><svg><rect width="39" height="76"></rect></svg>
+</g>
+<g class="cell" transform="translate(690,355)" fill="#85c76d"><svg><rect width="12" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,364)" fill="#fce468"><svg><rect width="13" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(586,369)" fill="#f8ad19"><svg><rect width="11" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(445,485)" fill="#e16326"><svg><rect width="15" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,105)" fill="#c23d4b"><svg><rect width="15" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(707,105)" fill="#61293d"><svg><rect width="19" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(315,280)" fill="#c158a2"><svg><rect width="25" height="36"></rect></svg>
+</g>
+<g class="cell" transform="translate(522,22)" fill="#9961a8"><svg><rect width="25" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(116,388)" fill="#d9b5d5"><svg><rect width="46" height="33"></rect></svg>
+</g>
+<g class="cell" transform="translate(709,537)" fill="#655aa7"><svg><rect width="6" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(824,542)" fill="#174585"><svg><rect width="5" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(814,415)" fill="#4486c7"><svg><rect width="4" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(763,502)" fill="#aed1e7"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(684,511)" fill="#595a5a"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(715,457)" fill="#bfb890"><svg><rect width="11" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(663,450)" fill="#805e5e"><svg><rect width="6" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(761,381)" fill="#9fa439"><svg><rect width="7" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,298)" fill="#1e7d3d"><svg><rect width="8" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,313)" fill="#85c76d"><svg><rect width="13" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(650,442)" fill="#fce468"><svg><rect width="10" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,364)" fill="#f8ad19"><svg><rect width="7" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(684,545)" fill="#e16326"><svg><rect width="6" height="7.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(742,490)" fill="#c23d4b"><svg><rect width="7" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,437)" fill="#61293d"><svg><rect width="0" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,443)" fill="#c158a2"><svg><rect width="6" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(749,528)" fill="#9961a8"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(716,484)" fill="#d9b5d5"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(830,476)" fill="#655aa7"><svg><rect width="0" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(735,508)" fill="#174585"><svg><rect width="6" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(684,331)" fill="#4486c7"><svg><rect width="7" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(497,485)" fill="#aed1e7"><svg><rect width="14" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(668,401)" fill="#595a5a"><svg><rect width="7" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(702,246)" fill="#bfb890"><svg><rect width="12" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(549,503)" fill="#805e5e"><svg><rect width="15" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(773,467)" fill="#9fa439"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,460)" fill="#1e7d3d"><svg><rect width="6" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,469)" fill="#85c76d"><svg><rect width="10" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(444,399)" fill="#fce468"><svg><rect width="13" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(810,109)" fill="#f8ad19"><svg><rect width="19" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(598,433)" fill="#e16326"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(589,468)" fill="#c23d4b"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(707,70)" fill="#61293d"><svg><rect width="19" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(550,76)" fill="#c158a2"><svg><rect width="26" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(471,296)" fill="#9961a8"><svg><rect width="12" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,97)" fill="#d9b5d5"><svg><rect width="24" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(498,232)" fill="#655aa7"><svg><rect width="23" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(270,523)" fill="#174585"><svg><rect width="23" height="29.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(612,383)" fill="#4486c7"><svg><rect width="10" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(367,353)" fill="#aed1e7"><svg><rect width="24" height="33"></rect></svg>
+</g>
+<g class="cell" transform="translate(824,484)" fill="#595a5a"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,394)" fill="#bfb890"><svg><rect width="15" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(773,424)" fill="#805e5e"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(497,437)" fill="#9fa439"><svg><rect width="22" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(264,420)" fill="#1e7d3d"><svg><rect width="35" height="21"></rect></svg>
+<svg><text y="0" transform="translate(0, 19)">C5303</text></svg></g>
+<g class="cell" transform="translate(716,508)" fill="#85c76d"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,358)" fill="#fce468"><svg><rect width="17" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(630,504)" fill="#f8ad19"><svg><rect width="6" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(607,520)" fill="#e16326"><svg><rect width="7" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(615,415)" fill="#c23d4b"><svg><rect width="7" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,529)" fill="#61293d"><svg><rect width="14" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,528)" fill="#c158a2"><svg><rect width="4" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(573,229)" fill="#9961a8"><svg><rect width="24" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(657,53)" fill="#d9b5d5"><svg><rect width="21" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(45,490)" fill="#655aa7"><svg><rect width="21" height="62.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,277)" fill="#174585"><svg><rect width="8" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(577,109)" fill="#4486c7"><svg><rect width="30" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(601,330)" fill="#aed1e7"><svg><rect width="10" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(548,213)" fill="#595a5a"><svg><rect width="24" height="31"></rect></svg>
+</g>
+<g class="cell" transform="translate(679,0)" fill="#bfb890"><svg><rect width="14" height="25"></rect></svg>
+</g>
+<g class="cell" transform="translate(116,318)" fill="#805e5e"><svg><rect width="46" height="34"></rect></svg>
+<svg><text y="0" transform="translate(0, 32)">C6903</text></svg></g>
+<g class="cell" transform="translate(486,452)" fill="#9fa439"><svg><rect width="8" height="19"></rect></svg>
+</g>
+<g class="cell" transform="translate(702,493)" fill="#1e7d3d"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(562,399)" fill="#85c76d"><svg><rect width="10" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(825,442)" fill="#fce468"><svg><rect width="4" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,427)" fill="#f8ad19"><svg><rect width="13" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(822,494)" fill="#e16326"><svg><rect width="3" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(512,520)" fill="#c23d4b"><svg><rect width="7" height="19"></rect></svg>
+</g>
+<g class="cell" transform="translate(741,322)" fill="#61293d"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,338)" fill="#c158a2"><svg><rect width="11" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(787,537)" fill="#9961a8"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(747,424)" fill="#d9b5d5"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(716,490)" fill="#655aa7"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,543)" fill="#174585"><svg><rect width="7" height="2"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,545)" fill="#4486c7"><svg><rect width="4" height="7.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(812,519)" fill="#aed1e7"><svg><rect width="5" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(823,519)" fill="#595a5a"><svg><rect width="2" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(828,546)" fill="#bfb890"><svg><rect width="1" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(797,494)" fill="#805e5e"><svg><rect width="3" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(615,347)" fill="#9fa439"><svg><rect width="7" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(598,245)" fill="#1e7d3d"><svg><rect width="24" height="31"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,415)" fill="#85c76d"><svg><rect width="6" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(615,520)" fill="#fce468"><svg><rect width="7" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,347)" fill="#f8ad19"><svg><rect width="17" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,305)" fill="#e16326"><svg><rect width="13" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(744,139)" fill="#c23d4b"><svg><rect width="14" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(445,261)" fill="#61293d"><svg><rect width="28" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(591,44)" fill="#c158a2"><svg><rect width="15" height="31"></rect></svg>
+</g>
+<g class="cell" transform="translate(270,399)" fill="#9961a8"><svg><rect width="44" height="20"></rect></svg>
+<svg><text y="0" transform="translate(0, 18)">D2303</text></svg></g>
+<g class="cell" transform="translate(416,368)" fill="#d9b5d5"><svg><rect width="15" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(443,141)" fill="#655aa7"><svg><rect width="26" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(506,250)" fill="#174585"><svg><rect width="15" height="26"></rect></svg>
+</g>
+<g class="cell" transform="translate(807,286)" fill="#4486c7"><svg><rect width="11" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(577,76)" fill="#aed1e7"><svg><rect width="30" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,124)" fill="#595a5a"><svg><rect width="20" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,61)" fill="#bfb890"><svg><rect width="30" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(572,424)" fill="#805e5e"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,472)" fill="#9fa439"><svg><rect width="26" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(537,468)" fill="#1e7d3d"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(574,0)" fill="#85c76d"><svg><rect width="24" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(108,496)" fill="#fce468"><svg><rect width="40" height="28"></rect></svg>
+<svg><text y="0" transform="translate(0, 26)">D5503</text></svg></g>
+<g class="cell" transform="translate(108,472)" fill="#f8ad19"><svg><rect width="51" height="23"></rect></svg>
+<svg><text y="0" transform="translate(0, 21)">D5803</text></svg></g>
+<g class="cell" transform="translate(447,346)" fill="#e16326"><svg><rect width="11" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(759,174)" fill="#c23d4b"><svg><rect width="11" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(386,147)" fill="#61293d"><svg><rect width="29" height="68"></rect></svg>
+<svg><text y="0" transform="translate(0, 66)">D6503</text></svg></g>
+<g class="cell" transform="translate(688,277)" fill="#c158a2"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(67,490)" fill="#9961a8"><svg><rect width="40" height="31"></rect></svg>
+<svg><text y="0" transform="translate(0, 29)">D6603</text></svg></g>
+<g class="cell" transform="translate(345,529)" fill="#d9b5d5"><svg><rect width="26" height="23.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(496,141)" fill="#655aa7"><svg><rect width="25" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,415)" fill="#174585"><svg><rect width="13" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(592,383)" fill="#4486c7"><svg><rect width="8" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(716,520)" fill="#aed1e7"><svg><rect width="5" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(443,177)" fill="#595a5a"><svg><rect width="26" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,296)" fill="#bfb890"><svg><rect width="0" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(819,426)" fill="#805e5e"><svg><rect width="0" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(816,519)" fill="#9fa439"><svg><rect width="2" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(690,427)" fill="#1e7d3d"><svg><rect width="12" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,408)" fill="#85c76d"><svg><rect width="12" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(766,72)" fill="#fce468"><svg><rect width="12" height="24"></rect></svg>
+</g>
+<g class="cell" transform="translate(498,213)" fill="#f8ad19"><svg><rect width="23" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(813,364)" fill="#e16326"><svg><rect width="6" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(775,545)" fill="#c23d4b"><svg><rect width="3" height="7.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(663,246)" fill="#61293d"><svg><rect width="12" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(766,519)" fill="#c158a2"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(701,312)" fill="#9961a8"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(668,366)" fill="#d9b5d5"><svg><rect width="7" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(457,505)" fill="#655aa7"><svg><rect width="11" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(704,139)" fill="#174585"><svg><rect width="11" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(741,313)" fill="#4486c7"><svg><rect width="12" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(717,434)" fill="#aed1e7"><svg><rect width="9" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(461,415)" fill="#595a5a"><svg><rect width="7" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,330)" fill="#bfb890"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,421)" fill="#805e5e"><svg><rect width="8" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(722,537)" fill="#9fa439"><svg><rect width="4" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(573,537)" fill="#1e7d3d"><svg><rect width="8" height="15.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,551)" fill="#85c76d"><svg><rect width="6" height="1.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(824,549)" fill="#fce468"><svg><rect width="3" height="1"></rect></svg>
+</g>
+<g class="cell" transform="translate(821,536)" fill="#f8ad19"><svg><rect width="2" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(651,401)" fill="#e16326"><svg><rect width="8" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(793,477)" fill="#c23d4b"><svg><rect width="0" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(742,484)" fill="#61293d"><svg><rect width="7" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(736,545)" fill="#c158a2"><svg><rect width="4" height="7.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,515)" fill="#9961a8"><svg><rect width="13" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,489)" fill="#d9b5d5"><svg><rect width="6" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(549,485)" fill="#655aa7"><svg><rect width="15" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(701,297)" fill="#174585"><svg><rect width="8" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(819,468)" fill="#4486c7"><svg><rect width="5" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(573,288)" fill="#aed1e7"><svg><rect width="18" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(444,295)" fill="#595a5a"><svg><rect width="13" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,373)" fill="#bfb890"><svg><rect width="13" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(692,70)" fill="#805e5e"><svg><rect width="14" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(640,0)" fill="#9fa439"><svg><rect width="16" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,536)" fill="#1e7d3d"><svg><rect width="3" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(469,485)" fill="#85c76d"><svg><rect width="9" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(488,415)" fill="#fce468"><svg><rect width="8" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(762,528)" fill="#f8ad19"><svg><rect width="3" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,383)" fill="#e16326"><svg><rect width="13" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(826,450)" fill="#c23d4b"><svg><rect width="3" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(792,537)" fill="#61293d"><svg><rect width="3" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(780,330)" fill="#c158a2"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(651,381)" fill="#9961a8"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,548)" fill="#d9b5d5"><svg><rect width="12" height="4.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(787,426)" fill="#655aa7"><svg><rect width="6" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,442)" fill="#174585"><svg><rect width="6" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(657,538)" fill="#4486c7"><svg><rect width="5" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(512,415)" fill="#aed1e7"><svg><rect width="7" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(317,491)" fill="#595a5a"><svg><rect width="36" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(768,512)" fill="#bfb890"><svg><rect width="10" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(766,440)" fill="#805e5e"><svg><rect width="8" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(373,0)" fill="#9fa439"><svg><rect width="42" height="59"></rect></svg>
+</g>
+<g class="cell" transform="translate(65,456)" fill="#1e7d3d"><svg><rect width="42" height="33"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,107)" fill="#85c76d"><svg><rect width="17" height="33"></rect></svg>
+</g>
+<g class="cell" transform="translate(392,353)" fill="#fce468"><svg><rect width="23" height="33"></rect></svg>
+</g>
+<g class="cell" transform="translate(470,37)" fill="#f8ad19"><svg><rect width="34" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(576,195)" fill="#e16326"><svg><rect width="23" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(471,365)" fill="#c23d4b"><svg><rect width="0" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(638,209)" fill="#61293d"><svg><rect width="14" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(780,260)" fill="#c158a2"><svg><rect width="14" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(323,216)" fill="#9961a8"><svg><rect width="61" height="31"></rect></svg>
+<svg><text y="0" transform="translate(0, 29)">GT-I8262</text></svg></g>
+<g class="cell" transform="translate(796,158)" fill="#d9b5d5"><svg><rect width="13" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(661,434)" fill="#655aa7"><svg><rect width="4" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(535,496)" fill="#174585"><svg><rect width="13" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(0,490)" fill="#4486c7"><svg><rect width="44" height="31"></rect></svg>
+</g>
+<g class="cell" transform="translate(58,361)" fill="#aed1e7"><svg><rect width="57" height="30"></rect></svg>
+<svg><text y="0" transform="translate(0, 28)">GT-I8552B</text></svg></g>
+<g class="cell" transform="translate(556,537)" fill="#595a5a"><svg><rect width="7" height="15.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(640,35)" fill="#bfb890"><svg><rect width="16" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(742,507)" fill="#805e5e"><svg><rect width="7" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(592,277)" fill="#9fa439"><svg><rect width="8" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,383)" fill="#1e7d3d"><svg><rect width="9" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(217,216)" fill="#85c76d"><svg><rect width="35" height="63"></rect></svg>
+</g>
+<g class="cell" transform="translate(636,288)" fill="#fce468"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(373,89)" fill="#f8ad19"><svg><rect width="42" height="57"></rect></svg>
+</g>
+<g class="cell" transform="translate(743,243)" fill="#e16326"><svg><rect width="14" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,542)" fill="#c23d4b"><svg><rect width="28" height="10.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(550,95)" fill="#61293d"><svg><rect width="26" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(315,387)" fill="#c158a2"><svg><rect width="25" height="32"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,546)" fill="#9961a8"><svg><rect width="6" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(690,346)" fill="#d9b5d5"><svg><rect width="12" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(253,147)" fill="#655aa7"><svg><rect width="35" height="68"></rect></svg>
+</g>
+<g class="cell" transform="translate(354,491)" fill="#174585"><svg><rect width="17" height="37"></rect></svg>
+</g>
+<g class="cell" transform="translate(136,155)" fill="#4486c7"><svg><rect width="80" height="41"></rect></svg>
+<svg><text y="0" transform="translate(0, 39)">Galaxy S II</text></svg></g>
+<g class="cell" transform="translate(650,246)" fill="#aed1e7"><svg><rect width="12" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(598,503)" fill="#595a5a"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(639,532)" fill="#bfb890"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(826,512)" fill="#805e5e"><svg><rect width="3" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(474,213)" fill="#9fa439"><svg><rect width="23" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(300,420)" fill="#1e7d3d"><svg><rect width="16" height="42"></rect></svg>
+</g>
+<g class="cell" transform="translate(488,73)" fill="#85c76d"><svg><rect width="16" height="33"></rect></svg>
+</g>
+<g class="cell" transform="translate(160,422)" fill="#fce468"><svg><rect width="48" height="24"></rect></svg>
+<svg><text y="0" transform="translate(0, 22)">GT-I9190</text></svg></g>
+<g class="cell" transform="translate(71,321)" fill="#f8ad19"><svg><rect width="44" height="39"></rect></svg>
+</g>
+<g class="cell" transform="translate(289,147)" fill="#e16326"><svg><rect width="33" height="68"></rect></svg>
+</g>
+<g class="cell" transform="translate(743,209)" fill="#c23d4b"><svg><rect width="14" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(800,109)" fill="#61293d"><svg><rect width="9" height="29"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,399)" fill="#c158a2"><svg><rect width="13" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(703,55)" fill="#9961a8"><svg><rect width="23" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(0,0)" fill="#d9b5d5"><svg><rect width="80" height="107"></rect></svg>
+<svg><text y="0" transform="translate(0, 105)">Galaxy S III</text></svg></g>
+<g class="cell" transform="translate(36,280)" fill="#655aa7"><svg><rect width="34" height="53"></rect></svg>
+</g>
+<g class="cell" transform="translate(709,502)" fill="#174585"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(294,0)" fill="#4486c7"><svg><rect width="35" height="76"></rect></svg>
+</g>
+<g class="cell" transform="translate(209,389)" fill="#aed1e7"><svg><rect width="30" height="30"></rect></svg>
+</g>
+<g class="cell" transform="translate(691,548)" fill="#595a5a"><svg><rect width="10" height="4.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(147,78)" fill="#bfb890"><svg><rect width="69" height="76"></rect></svg>
+<svg><text y="0" transform="translate(0, 74)">Galaxy S4</text></svg></g>
+<g class="cell" transform="translate(0,108)" fill="#805e5e"><svg><rect width="146" height="46"></rect></svg>
+<svg><text y="0" transform="translate(0, 44)">Galaxy S4</text></svg></g>
+<g class="cell" transform="translate(702,529)" fill="#9fa439"><svg><rect width="13" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(470,55)" fill="#1e7d3d"><svg><rect width="34" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(209,280)" fill="#85c76d"><svg><rect width="26" height="38"></rect></svg>
+</g>
+<g class="cell" transform="translate(707,122)" fill="#fce468"><svg><rect width="19" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,484)" fill="#f8ad19"><svg><rect width="7" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(522,76)" fill="#e16326"><svg><rect width="27" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(633,332)" fill="#c23d4b"><svg><rect width="8" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(134,422)" fill="#61293d"><svg><rect width="25" height="49"></rect></svg>
+</g>
+<g class="cell" transform="translate(0,224)" fill="#c158a2"><svg><rect width="75" height="55"></rect></svg>
+<svg><text y="0" transform="translate(0, 53)">GT-N7100</text></svg></g>
+<g class="cell" transform="translate(416,229)" fill="#9961a8"><svg><rect width="28" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(372,522)" fill="#d9b5d5"><svg><rect width="21" height="30.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(718,331)" fill="#655aa7"><svg><rect width="8" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(657,503)" fill="#174585"><svg><rect width="5" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(741,468)" fill="#4486c7"><svg><rect width="6" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(812,519)" fill="#aed1e7"><svg><rect width="3" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(471,330)" fill="#595a5a"><svg><rect width="13" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(65,422)" fill="#bfb890"><svg><rect width="42" height="33"></rect></svg>
+</g>
+<g class="cell" transform="translate(799,533)" fill="#805e5e"><svg><rect width="5" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(657,0)" fill="#9fa439"><svg><rect width="21" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(572,450)" fill="#1e7d3d"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(367,463)" fill="#85c76d"><svg><rect width="24" height="27"></rect></svg>
+</g>
+<g class="cell" transform="translate(782,177)" fill="#fce468"><svg><rect width="11" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(630,415)" fill="#f8ad19"><svg><rect width="6" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,40)" fill="#e16326"><svg><rect width="15" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(548,245)" fill="#c23d4b"><svg><rect width="24" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,463)" fill="#61293d"><svg><rect width="12" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(445,530)" fill="#c158a2"><svg><rect width="15" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,520)" fill="#9961a8"><svg><rect width="7" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(799,489)" fill="#d9b5d5"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(666,298)" fill="#655aa7"><svg><rect width="8" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(488,434)" fill="#174585"><svg><rect width="8" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(108,525)" fill="#4486c7"><svg><rect width="40" height="27.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(690,461)" fill="#aed1e7"><svg><rect width="12" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(430,312)" fill="#595a5a"><svg><rect width="13" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(761,346)" fill="#bfb890"><svg><rect width="7" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(806,198)" fill="#805e5e"><svg><rect width="23" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,198)" fill="#9fa439"><svg><rect width="27" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,72)" fill="#1e7d3d"><svg><rect width="11" height="24"></rect></svg>
+</g>
+<g class="cell" transform="translate(796,277)" fill="#85c76d"><svg><rect width="10" height="19"></rect></svg>
+</g>
+<g class="cell" transform="translate(824,507)" fill="#fce468"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(716,537)" fill="#f8ad19"><svg><rect width="5" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,277)" fill="#e16326"><svg><rect width="13" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(692,105)" fill="#c23d4b"><svg><rect width="14" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(447,365)" fill="#61293d"><svg><rect width="23" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(706,234)" fill="#c158a2"><svg><rect width="21" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(469,452)" fill="#9961a8"><svg><rect width="16" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(508,346)" fill="#d9b5d5"><svg><rect width="11" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(0,334)" fill="#655aa7"><svg><rect width="70" height="26"></rect></svg>
+<svg><text y="0" transform="translate(0, 24)">Galaxy Y</text></svg></g>
+<g class="cell" transform="translate(639,105)" fill="#174585"><svg><rect width="15" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(460,452)" fill="#4486c7"><svg><rect width="8" height="19"></rect></svg>
+</g>
+<g class="cell" transform="translate(650,538)" fill="#aed1e7"><svg><rect width="6" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(470,159)" fill="#595a5a"><svg><rect width="25" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(763,484)" fill="#bfb890"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(759,162)" fill="#805e5e"><svg><rect width="22" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(829,553)" fill="#9fa439"><svg><rect width="0" height="0.167"></rect></svg>
+</g>
+<g class="cell" transform="translate(537,415)" fill="#1e7d3d"><svg><rect width="8" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(813,346)" fill="#85c76d"><svg><rect width="6" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(496,159)" fill="#fce468"><svg><rect width="25" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(813,478)" fill="#f8ad19"><svg><rect width="5" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(787,382)" fill="#e16326"><svg><rect width="7" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(366,317)" fill="#c23d4b"><svg><rect width="24" height="35"></rect></svg>
+</g>
+<g class="cell" transform="translate(443,462)" fill="#61293d"><svg><rect width="16" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(809,266)" fill="#c158a2"><svg><rect width="20" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(666,442)" fill="#9961a8"><svg><rect width="9" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(573,245)" fill="#d9b5d5"><svg><rect width="24" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,0)" fill="#655aa7"><svg><rect width="25" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,246)" fill="#174585"><svg><rect width="12" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(470,0)" fill="#4486c7"><svg><rect width="34" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,477)" fill="#aed1e7"><svg><rect width="10" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(496,364)" fill="#595a5a"><svg><rect width="11" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(728,260)" fill="#bfb890"><svg><rect width="14" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(743,226)" fill="#805e5e"><svg><rect width="14" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(665,484)" fill="#9fa439"><svg><rect width="10" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(469,462)" fill="#1e7d3d"><svg><rect width="16" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(703,428)" fill="#85c76d"><svg><rect width="11" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(690,381)" fill="#fce468"><svg><rect width="12" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,312)" fill="#f8ad19"><svg><rect width="19" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(702,537)" fill="#e16326"><svg><rect width="6" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(728,139)" fill="#c23d4b"><svg><rect width="15" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(775,433)" fill="#61293d"><svg><rect width="3" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(430,277)" fill="#c158a2"><svg><rect width="13" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(675,297)" fill="#9961a8"><svg><rect width="8" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(701,322)" fill="#d9b5d5"><svg><rect width="12" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,507)" fill="#655aa7"><svg><rect width="6" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(512,485)" fill="#174585"><svg><rect width="7" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(217,147)" fill="#4486c7"><svg><rect width="35" height="68"></rect></svg>
+</g>
+<g class="cell" transform="translate(317,420)" fill="#aed1e7"><svg><rect width="32" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(644,538)" fill="#595a5a"><svg><rect width="5" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(655,139)" fill="#bfb890"><svg><rect width="23" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(758,232)" fill="#805e5e"><svg><rect width="21" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(735,381)" fill="#9fa439"><svg><rect width="7" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(692,139)" fill="#1e7d3d"><svg><rect width="11" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(743,39)" fill="#85c76d"><svg><rect width="14" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(665,520)" fill="#fce468"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(443,452)" fill="#f8ad19"><svg><rect width="16" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(655,88)" fill="#e16326"><svg><rect width="20" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(581,433)" fill="#c23d4b"><svg><rect width="7" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(435,415)" fill="#61293d"><svg><rect width="9" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,450)" fill="#c158a2"><svg><rect width="6" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,139)" fill="#9961a8"><svg><rect width="15" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(590,347)" fill="#d9b5d5"><svg><rect width="7" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(0,280)" fill="#655aa7"><svg><rect width="35" height="53"></rect></svg>
+</g>
+<g class="cell" transform="translate(458,399)" fill="#174585"><svg><rect width="12" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(323,147)" fill="#4486c7"><svg><rect width="62" height="34"></rect></svg>
+<svg><text y="0" transform="translate(0, 32)">GT-S7580</text></svg></g>
+<g class="cell" transform="translate(649,288)" fill="#aed1e7"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(76,218)" fill="#595a5a"><svg><rect width="59" height="61"></rect></svg>
+<svg><text y="0" transform="translate(0, 59)">GT-S7582</text></svg></g>
+<g class="cell" transform="translate(540,44)" fill="#bfb890"><svg><rect width="16" height="31"></rect></svg>
+</g>
+<g class="cell" transform="translate(562,383)" fill="#805e5e"><svg><rect width="10" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(666,484)" fill="#9fa439"><svg><rect width="9" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(237,463)" fill="#1e7d3d"><svg><rect width="26" height="28"></rect></svg>
+</g>
+<g class="cell" transform="translate(809,209)" fill="#85c76d"><svg><rect width="20" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,502)" fill="#fce468"><svg><rect width="9" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(639,434)" fill="#f8ad19"><svg><rect width="10" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(550,399)" fill="#e16326"><svg><rect width="11" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(768,484)" fill="#c23d4b"><svg><rect width="6" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(350,420)" fill="#61293d"><svg><rect width="16" height="42"></rect></svg>
+</g>
+<g class="cell" transform="translate(392,463)" fill="#c158a2"><svg><rect width="23" height="27"></rect></svg>
+</g>
+<g class="cell" transform="translate(484,364)" fill="#9961a8"><svg><rect width="11" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(456,472)" fill="#d9b5d5"><svg><rect width="12" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,477)" fill="#655aa7"><svg><rect width="13" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,177)" fill="#174585"><svg><rect width="26" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(209,492)" fill="#4486c7"><svg><rect width="20" height="36"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,415)" fill="#aed1e7"><svg><rect width="6" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(461,519)" fill="#595a5a"><svg><rect width="7" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,433)" fill="#bfb890"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(638,491)" fill="#805e5e"><svg><rect width="11" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(806,468)" fill="#9fa439"><svg><rect width="8" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(546,468)" fill="#1e7d3d"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(809,546)" fill="#85c76d"><svg><rect width="2" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(768,304)" fill="#fce468"><svg><rect width="11" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(703,463)" fill="#f8ad19"><svg><rect width="11" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(444,383)" fill="#e16326"><svg><rect width="13" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(435,502)" fill="#c23d4b"><svg><rect width="9" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(601,295)" fill="#61293d"><svg><rect width="10" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(683,415)" fill="#c158a2"><svg><rect width="6" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(522,0)" fill="#9961a8"><svg><rect width="25" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(550,277)" fill="#d9b5d5"><svg><rect width="11" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,93)" fill="#655aa7"><svg><rect width="31" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(741,297)" fill="#174585"><svg><rect width="6" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(772,366)" fill="#4486c7"><svg><rect width="6" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(793,460)" fill="#aed1e7"><svg><rect width="12" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,128)" fill="#595a5a"><svg><rect width="31" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(692,174)" fill="#bfb890"><svg><rect width="11" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(573,323)" fill="#805e5e"><svg><rect width="18" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,322)" fill="#9fa439"><svg><rect width="11" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(734,442)" fill="#1e7d3d"><svg><rect width="5" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(546,459)" fill="#85c76d"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(598,213)" fill="#fce468"><svg><rect width="24" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(694,0)" fill="#f8ad19"><svg><rect width="13" height="25"></rect></svg>
+</g>
+<g class="cell" transform="translate(457,437)" fill="#e16326"><svg><rect width="11" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(565,503)" fill="#c23d4b"><svg><rect width="7" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(598,415)" fill="#61293d"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(663,415)" fill="#c158a2"><svg><rect width="6" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(488,537)" fill="#9961a8"><svg><rect width="8" height="15.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(819,295)" fill="#d9b5d5"><svg><rect width="10" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,376)" fill="#655aa7"><svg><rect width="15" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,433)" fill="#174585"><svg><rect width="4" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(590,537)" fill="#4486c7"><svg><rect width="7" height="15.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(650,520)" fill="#aed1e7"><svg><rect width="7" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(715,463)" fill="#595a5a"><svg><rect width="11" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(806,450)" fill="#bfb890"><svg><rect width="7" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(748,476)" fill="#805e5e"><svg><rect width="5" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(58,392)" fill="#9fa439"><svg><rect width="57" height="29"></rect></svg>
+<svg><text y="0" transform="translate(0, 27)">One</text></svg></g>
+<g class="cell" transform="translate(769,366)" fill="#1e7d3d"><svg><rect width="9" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,346)" fill="#85c76d"><svg><rect width="20" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(445,229)" fill="#fce468"><svg><rect width="28" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,359)" fill="#f8ad19"><svg><rect width="15" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(612,312)" fill="#e16326"><svg><rect width="10" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(469,434)" fill="#c23d4b"><svg><rect width="9" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(810,40)" fill="#61293d"><svg><rect width="19" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(644,450)" fill="#c158a2"><svg><rect width="5" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(820,382)" fill="#9961a8"><svg><rect width="9" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(445,245)" fill="#d9b5d5"><svg><rect width="28" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,400)" fill="#655aa7"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(742,513)" fill="#174585"><svg><rect width="0" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(0,361)" fill="#4486c7"><svg><rect width="57" height="30"></rect></svg>
+<svg><text y="0" transform="translate(0, 28)">One (M8)</text></svg></g>
+<g class="cell" transform="translate(719,400)" fill="#aed1e7"><svg><rect width="7" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(792,494)" fill="#595a5a"><svg><rect width="4" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,450)" fill="#bfb890"><svg><rect width="6" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,484)" fill="#805e5e"><svg><rect width="6" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(795,382)" fill="#9fa439"><svg><rect width="9" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(741,547)" fill="#1e7d3d"><svg><rect width="11" height="5.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(546,424)" fill="#85c76d"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,346)" fill="#fce468"><svg><rect width="13" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(793,338)" fill="#f8ad19"><svg><rect width="11" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(632,298)" fill="#e16326"><svg><rect width="7" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(508,277)" fill="#c23d4b"><svg><rect width="11" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(538,347)" fill="#61293d"><svg><rect width="8" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,463)" fill="#c158a2"><svg><rect width="13" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(550,330)" fill="#9961a8"><svg><rect width="22" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(824,539)" fill="#d9b5d5"><svg><rect width="3" height="2"></rect></svg>
+</g>
+<g class="cell" transform="translate(792,546)" fill="#655aa7"><svg><rect width="6" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,456)" fill="#174585"><svg><rect width="9" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(691,490)" fill="#4486c7"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,550)" fill="#aed1e7"><svg><rect width="6" height="2.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,382)" fill="#595a5a"><svg><rect width="7" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,506)" fill="#bfb890"><svg><rect width="9" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(714,277)" fill="#805e5e"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,462)" fill="#9fa439"><svg><rect width="17" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(768,295)" fill="#1e7d3d"><svg><rect width="11" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(484,296)" fill="#85c76d"><svg><rect width="11" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(812,551)" fill="#fce468"><svg><rect width="5" height="1.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(601,383)" fill="#f8ad19"><svg><rect width="10" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,72)" fill="#e16326"><svg><rect width="12" height="24"></rect></svg>
+</g>
+<g class="cell" transform="translate(230,492)" fill="#c23d4b"><svg><rect width="19" height="36"></rect></svg>
+</g>
+<g class="cell" transform="translate(825,415)" fill="#61293d"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,267)" fill="#c158a2"><svg><rect width="26" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(789,415)" fill="#9961a8"><svg><rect width="4" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(663,463)" fill="#d9b5d5"><svg><rect width="12" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(445,505)" fill="#655aa7"><svg><rect width="11" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(703,39)" fill="#174585"><svg><rect width="23" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,288)" fill="#4486c7"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(708,0)" fill="#aed1e7"><svg><rect width="18" height="19"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,398)" fill="#595a5a"><svg><rect width="13" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(742,495)" fill="#bfb890"><svg><rect width="5" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(801,511)" fill="#805e5e"><svg><rect width="3" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,330)" fill="#9fa439"><svg><rect width="13" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(651,177)" fill="#1e7d3d"><svg><rect width="13" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,124)" fill="#85c76d"><svg><rect width="20" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(608,109)" fill="#fce468"><svg><rect width="14" height="31"></rect></svg>
+</g>
+<g class="cell" transform="translate(317,463)" fill="#f8ad19"><svg><rect width="24" height="27"></rect></svg>
+</g>
+<g class="cell" transform="translate(771,545)" fill="#e16326"><svg><rect width="3" height="7.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(661,469)" fill="#c23d4b"><svg><rect width="4" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,442)" fill="#61293d"><svg><rect width="0" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,415)" fill="#c158a2"><svg><rect width="8" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(734,433)" fill="#9961a8"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(547,369)" fill="#d9b5d5"><svg><rect width="12" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(555,161)" fill="#655aa7"><svg><rect width="20" height="19"></rect></svg>
+</g>
+<g class="cell" transform="translate(488,520)" fill="#174585"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(538,537)" fill="#4486c7"><svg><rect width="8" height="15.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(573,383)" fill="#aed1e7"><svg><rect width="9" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(662,288)" fill="#595a5a"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(819,528)" fill="#bfb890"><svg><rect width="3" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,39)" fill="#805e5e"><svg><rect width="15" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(548,245)" fill="#9fa439"><svg><rect width="24" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,228)" fill="#1e7d3d"><svg><rect width="14" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(663,514)" fill="#85c76d"><svg><rect width="12" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(666,469)" fill="#fce468"><svg><rect width="9" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(740,381)" fill="#f8ad19"><svg><rect width="12" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(598,277)" fill="#e16326"><svg><rect width="24" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(655,70)" fill="#c23d4b"><svg><rect width="20" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,461)" fill="#61293d"><svg><rect width="13" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(469,520)" fill="#c158a2"><svg><rect width="9" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(758,266)" fill="#9961a8"><svg><rect width="21" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(715,415)" fill="#d9b5d5"><svg><rect width="11" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,26)" fill="#655aa7"><svg><rect width="25" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(703,479)" fill="#174585"><svg><rect width="13" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(822,512)" fill="#4486c7"><svg><rect width="3" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(741,537)" fill="#aed1e7"><svg><rect width="7" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,494)" fill="#595a5a"><svg><rect width="7" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(639,450)" fill="#bfb890"><svg><rect width="10" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(690,450)" fill="#805e5e"><svg><rect width="6" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(806,408)" fill="#9fa439"><svg><rect width="11" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(657,415)" fill="#1e7d3d"><svg><rect width="5" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,461)" fill="#85c76d"><svg><rect width="14" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,438)" fill="#fce468"><svg><rect width="8" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(740,519)" fill="#f8ad19"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(653,209)" fill="#e16326"><svg><rect width="22" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(644,415)" fill="#c23d4b"><svg><rect width="5" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(703,391)" fill="#61293d"><svg><rect width="11" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,484)" fill="#c158a2"><svg><rect width="7" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(829,553)" fill="#9961a8"><svg><rect width="0" height="0.167"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,508)" fill="#d9b5d5"><svg><rect width="7" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(760,424)" fill="#655aa7"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,450)" fill="#174585"><svg><rect width="8" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(806,473)" fill="#4486c7"><svg><rect width="8" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(742,502)" fill="#aed1e7"><svg><rect width="7" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(663,503)" fill="#595a5a"><svg><rect width="6" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(615,537)" fill="#bfb890"><svg><rect width="7" height="15.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(445,437)" fill="#805e5e"><svg><rect width="11" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,468)" fill="#9fa439"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,537)" fill="#1e7d3d"><svg><rect width="3" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(812,484)" fill="#85c76d"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,525)" fill="#fce468"><svg><rect width="6" height="2"></rect></svg>
+</g>
+<g class="cell" transform="translate(824,489)" fill="#f8ad19"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(786,502)" fill="#e16326"><svg><rect width="6" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(737,484)" fill="#c23d4b"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,467)" fill="#61293d"><svg><rect width="8" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,381)" fill="#c158a2"><svg><rect width="13" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(799,524)" fill="#9961a8"><svg><rect width="5" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(741,338)" fill="#d9b5d5"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(824,502)" fill="#655aa7"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(788,512)" fill="#174585"><svg><rect width="4" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(797,511)" fill="#4486c7"><svg><rect width="3" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(793,533)" fill="#aed1e7"><svg><rect width="5" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(745,528)" fill="#595a5a"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(658,298)" fill="#bfb890"><svg><rect width="7" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(810,494)" fill="#805e5e"><svg><rect width="3" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(768,502)" fill="#9fa439"><svg><rect width="6" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(740,415)" fill="#1e7d3d"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(786,460)" fill="#85c76d"><svg><rect width="6" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(792,489)" fill="#fce468"><svg><rect width="6" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,511)" fill="#f8ad19"><svg><rect width="7" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(683,433)" fill="#e16326"><svg><rect width="6" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(821,541)" fill="#c23d4b"><svg><rect width="2" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(813,543)" fill="#61293d"><svg><rect width="4" height="2"></rect></svg>
+</g>
+<g class="cell" transform="translate(670,503)" fill="#c158a2"><svg><rect width="5" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(722,520)" fill="#9961a8"><svg><rect width="4" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(826,532)" fill="#d9b5d5"><svg><rect width="3" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(670,538)" fill="#655aa7"><svg><rect width="5" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(665,526)" fill="#174585"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,489)" fill="#4486c7"><svg><rect width="6" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,393)" fill="#aed1e7"><svg><rect width="15" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(800,297)" fill="#595a5a"><svg><rect width="6" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,209)" fill="#bfb890"><svg><rect width="14" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(640,298)" fill="#805e5e"><svg><rect width="8" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(612,330)" fill="#9fa439"><svg><rect width="10" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(825,424)" fill="#1e7d3d"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(786,550)" fill="#85c76d"><svg><rect width="5" height="2.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(799,519)" fill="#fce468"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(431,519)" fill="#f8ad19"><svg><rect width="13" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(650,415)" fill="#e16326"><svg><rect width="6" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,295)" fill="#c23d4b"><svg><rect width="13" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(443,195)" fill="#61293d"><svg><rect width="26" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(484,381)" fill="#c158a2"><svg><rect width="11" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(601,399)" fill="#9961a8"><svg><rect width="21" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(740,72)" fill="#d9b5d5"><svg><rect width="12" height="24"></rect></svg>
+</g>
+<g class="cell" transform="translate(748,450)" fill="#655aa7"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(769,346)" fill="#174585"><svg><rect width="9" height="19"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,426)" fill="#4486c7"><svg><rect width="13" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(581,468)" fill="#aed1e7"><svg><rect width="7" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(549,512)" fill="#595a5a"><svg><rect width="15" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(748,459)" fill="#bfb890"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(819,442)" fill="#805e5e"><svg><rect width="5" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(740,424)" fill="#9fa439"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(573,358)" fill="#1e7d3d"><svg><rect width="16" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(289,319)" fill="#85c76d"><svg><rect width="25" height="37"></rect></svg>
+<svg><text y="0" transform="translate(0, 35)">K012</text></svg></g>
+<g class="cell" transform="translate(754,330)" fill="#fce468"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(598,347)" fill="#f8ad19"><svg><rect width="16" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,381)" fill="#e16326"><svg><rect width="13" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(660,401)" fill="#c23d4b"><svg><rect width="7" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(479,415)" fill="#61293d"><svg><rect width="8" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,533)" fill="#c158a2"><svg><rect width="6" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(819,424)" fill="#9961a8"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,541)" fill="#d9b5d5"><svg><rect width="2" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(829,553)" fill="#655aa7"><svg><rect width="0.5" height="0.167"></rect></svg>
+</g>
+<g class="cell" transform="translate(814,450)" fill="#174585"><svg><rect width="3" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(775,536)" fill="#4486c7"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(754,338)" fill="#aed1e7"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,72)" fill="#595a5a"><svg><rect width="12" height="24"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,407)" fill="#bfb890"><svg><rect width="13" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,357)" fill="#805e5e"><svg><rect width="20" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(505,107)" fill="#9fa439"><svg><rect width="16" height="33"></rect></svg>
+</g>
+<g class="cell" transform="translate(367,387)" fill="#1e7d3d"><svg><rect width="24" height="32"></rect></svg>
+</g>
+<g class="cell" transform="translate(434,73)" fill="#85c76d"><svg><rect width="17" height="33"></rect></svg>
+</g>
+<g class="cell" transform="translate(690,444)" fill="#fce468"><svg><rect width="12" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,399)" fill="#f8ad19"><svg><rect width="10" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,26)" fill="#e16326"><svg><rect width="25" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(809,541)" fill="#c23d4b"><svg><rect width="3" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(163,389)" fill="#61293d"><svg><rect width="45" height="32"></rect></svg>
+<svg><text y="0" transform="translate(0, 30)">A369i</text></svg></g>
+<g class="cell" transform="translate(690,398)" fill="#c158a2"><svg><rect width="12" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(457,540)" fill="#9961a8"><svg><rect width="11" height="12.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(444,312)" fill="#d9b5d5"><svg><rect width="13" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(496,296)" fill="#655aa7"><svg><rect width="23" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(471,346)" fill="#174585"><svg><rect width="12" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(209,357)" fill="#4486c7"><svg><rect width="30" height="31"></rect></svg>
+<svg><text y="0" transform="translate(0, 29)">A536</text></svg></g>
+<g class="cell" transform="translate(692,331)" fill="#aed1e7"><svg><rect width="8" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(564,521)" fill="#595a5a"><svg><rect width="8" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(169,525)" fill="#bfb890"><svg><rect width="39" height="27.33"></rect></svg>
+<svg><text y="0" transform="translate(0, 25.33)">A6000</text></svg></g>
+<g class="cell" transform="translate(728,192)" fill="#805e5e"><svg><rect width="15" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,547)" fill="#9fa439"><svg><rect width="0" height="5.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(590,520)" fill="#1e7d3d"><svg><rect width="7" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(505,0)" fill="#85c76d"><svg><rect width="16" height="36"></rect></svg>
+</g>
+<g class="cell" transform="translate(479,537)" fill="#fce468"><svg><rect width="8" height="15.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(426,502)" fill="#f8ad19"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,484)" fill="#e16326"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,502)" fill="#c23d4b"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,346)" fill="#61293d"><svg><rect width="7" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(812,443)" fill="#c158a2"><svg><rect width="6" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(522,213)" fill="#9961a8"><svg><rect width="25" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(435,485)" fill="#d9b5d5"><svg><rect width="9" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(810,139)" fill="#655aa7"><svg><rect width="19" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,381)" fill="#174585"><svg><rect width="13" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(510,314)" fill="#4486c7"><svg><rect width="9" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,538)" fill="#aed1e7"><svg><rect width="6" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(703,415)" fill="#595a5a"><svg><rect width="11" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(768,286)" fill="#bfb890"><svg><rect width="11" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(607,468)" fill="#805e5e"><svg><rect width="7" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(768,490)" fill="#9fa439"><svg><rect width="6" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(691,537)" fill="#1e7d3d"><svg><rect width="5" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(600,195)" fill="#85c76d"><svg><rect width="22" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(675,331)" fill="#fce468"><svg><rect width="8" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(496,177)" fill="#f8ad19"><svg><rect width="25" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(573,333)" fill="#e16326"><svg><rect width="13" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(750,484)" fill="#c23d4b"><svg><rect width="3" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(598,459)" fill="#61293d"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,58)" fill="#c158a2"><svg><rect width="33" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(549,181)" fill="#9961a8"><svg><rect width="26" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(675,312)" fill="#d9b5d5"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(697,415)" fill="#655aa7"><svg><rect width="5" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(758,109)" fill="#174585"><svg><rect width="20" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(795,226)" fill="#4486c7"><svg><rect width="13" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,502)" fill="#aed1e7"><svg><rect width="7" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(665,491)" fill="#595a5a"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(767,330)" fill="#bfb890"><svg><rect width="5" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,365)" fill="#805e5e"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(715,450)" fill="#9fa439"><svg><rect width="11" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(497,496)" fill="#1e7d3d"><svg><rect width="14" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(572,468)" fill="#85c76d"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(458,295)" fill="#fce468"><svg><rect width="12" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(807,277)" fill="#f8ad19"><svg><rect width="11" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(657,18)" fill="#e16326"><svg><rect width="21" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(496,195)" fill="#c23d4b"><svg><rect width="25" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(707,88)" fill="#61293d"><svg><rect width="19" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(675,322)" fill="#c158a2"><svg><rect width="12" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(793,313)" fill="#9961a8"><svg><rect width="11" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(639,469)" fill="#d9b5d5"><svg><rect width="10" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(495,462)" fill="#655aa7"><svg><rect width="16" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(649,298)" fill="#174585"><svg><rect width="8" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,288)" fill="#4486c7"><svg><rect width="19" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(728,209)" fill="#aed1e7"><svg><rect width="14" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,332)" fill="#595a5a"><svg><rect width="9" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(573,298)" fill="#bfb890"><svg><rect width="13" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(555,141)" fill="#805e5e"><svg><rect width="20" height="19"></rect></svg>
+</g>
+<g class="cell" transform="translate(548,0)" fill="#9fa439"><svg><rect width="25" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(715,246)" fill="#1e7d3d"><svg><rect width="12" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(264,463)" fill="#85c76d"><svg><rect width="26" height="28"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,97)" fill="#fce468"><svg><rect width="25" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(701,331)" fill="#f8ad19"><svg><rect width="8" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(434,107)" fill="#e16326"><svg><rect width="17" height="33"></rect></svg>
+</g>
+<g class="cell" transform="translate(458,312)" fill="#c23d4b"><svg><rect width="12" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(690,364)" fill="#61293d"><svg><rect width="12" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(665,177)" fill="#c158a2"><svg><rect width="13" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(563,415)" fill="#9961a8"><svg><rect width="8" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(574,22)" fill="#d9b5d5"><svg><rect width="24" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(599,22)" fill="#655aa7"><svg><rect width="23" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(736,537)" fill="#174585"><svg><rect width="4" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(787,346)" fill="#4486c7"><svg><rect width="7" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(689,246)" fill="#aed1e7"><svg><rect width="12" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(792,72)" fill="#595a5a"><svg><rect width="12" height="24"></rect></svg>
+</g>
+<g class="cell" transform="translate(809,232)" fill="#bfb890"><svg><rect width="20" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(470,107)" fill="#805e5e"><svg><rect width="17" height="33"></rect></svg>
+</g>
+<g class="cell" transform="translate(650,484)" fill="#9fa439"><svg><rect width="7" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,415)" fill="#1e7d3d"><svg><rect width="9" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(432,368)" fill="#85c76d"><svg><rect width="14" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,0)" fill="#fce468"><svg><rect width="24" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(539,506)" fill="#f8ad19"><svg><rect width="9" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(598,468)" fill="#e16326"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(522,261)" fill="#c23d4b"><svg><rect width="25" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(690,407)" fill="#61293d"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(706,209)" fill="#c158a2"><svg><rect width="21" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(704,174)" fill="#9961a8"><svg><rect width="11" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(461,485)" fill="#d9b5d5"><svg><rect width="7" height="19"></rect></svg>
+</g>
+<g class="cell" transform="translate(163,317)" fill="#655aa7"><svg><rect width="45" height="35"></rect></svg>
+<svg><text y="0" transform="translate(0, 33)">G2</text></svg></g>
+<g class="cell" transform="translate(556,521)" fill="#174585"><svg><rect width="7" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(780,243)" fill="#4486c7"><svg><rect width="14" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,390)" fill="#aed1e7"><svg><rect width="13" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,346)" fill="#595a5a"><svg><rect width="7" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,97)" fill="#bfb890"><svg><rect width="25" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(653,234)" fill="#805e5e"><svg><rect width="22" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(701,287)" fill="#9fa439"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(136,239)" fill="#1e7d3d"><svg><rect width="80" height="40"></rect></svg>
+<svg><text y="0" transform="translate(0, 38)">G3</text></svg></g>
+<g class="cell" transform="translate(727,313)" fill="#85c76d"><svg><rect width="13" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(743,391)" fill="#fce468"><svg><rect width="9" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(766,415)" fill="#f8ad19"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(601,407)" fill="#e16326"><svg><rect width="21" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(426,434)" fill="#c23d4b"><svg><rect width="8" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,428)" fill="#61293d"><svg><rect width="13" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(766,424)" fill="#c158a2"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(788,277)" fill="#9961a8"><svg><rect width="7" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(709,493)" fill="#d9b5d5"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(485,314)" fill="#655aa7"><svg><rect width="13" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,521)" fill="#174585"><svg><rect width="8" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,400)" fill="#4486c7"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(540,383)" fill="#aed1e7"><svg><rect width="9" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,513)" fill="#595a5a"><svg><rect width="14" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(806,460)" fill="#bfb890"><svg><rect width="0" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(560,369)" fill="#805e5e"><svg><rect width="12" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(651,356)" fill="#9fa439"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(714,312)" fill="#1e7d3d"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(709,520)" fill="#85c76d"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(471,314)" fill="#fce468"><svg><rect width="13" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(435,434)" fill="#f8ad19"><svg><rect width="9" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(741,476)" fill="#e16326"><svg><rect width="6" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(688,322)" fill="#c23d4b"><svg><rect width="12" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(773,459)" fill="#61293d"><svg><rect width="5" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(426,415)" fill="#c158a2"><svg><rect width="8" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(741,330)" fill="#9961a8"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(806,400)" fill="#d9b5d5"><svg><rect width="11" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,373)" fill="#655aa7"><svg><rect width="13" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(679,197)" fill="#174585"><svg><rect width="24" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(434,452)" fill="#4486c7"><svg><rect width="8" height="19"></rect></svg>
+</g>
+<g class="cell" transform="translate(715,428)" fill="#aed1e7"><svg><rect width="11" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,504)" fill="#595a5a"><svg><rect width="6" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(796,139)" fill="#bfb890"><svg><rect width="13" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(430,295)" fill="#805e5e"><svg><rect width="13" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,394)" fill="#9fa439"><svg><rect width="15" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(709,511)" fill="#1e7d3d"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(589,450)" fill="#85c76d"><svg><rect width="8" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(651,366)" fill="#fce468"><svg><rect width="8" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(496,277)" fill="#f8ad19"><svg><rect width="11" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(547,537)" fill="#e16326"><svg><rect width="8" height="15.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(754,313)" fill="#c23d4b"><svg><rect width="12" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,277)" fill="#61293d"><svg><rect width="19" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(748,468)" fill="#c158a2"><svg><rect width="5" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(445,415)" fill="#9961a8"><svg><rect width="15" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,433)" fill="#d9b5d5"><svg><rect width="6" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(572,433)" fill="#655aa7"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(650,450)" fill="#174585"><svg><rect width="6" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,519)" fill="#4486c7"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(750,502)" fill="#aed1e7"><svg><rect width="3" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(788,494)" fill="#595a5a"><svg><rect width="3" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(766,446)" fill="#bfb890"><svg><rect width="12" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(670,415)" fill="#805e5e"><svg><rect width="5" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(639,526)" fill="#9fa439"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(612,295)" fill="#1e7d3d"><svg><rect width="10" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,70)" fill="#85c76d"><svg><rect width="15" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,472)" fill="#fce468"><svg><rect width="0" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,415)" fill="#f8ad19"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(787,524)" fill="#e16326"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(825,433)" fill="#c23d4b"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(703,400)" fill="#61293d"><svg><rect width="7" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(754,502)" fill="#c158a2"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(458,329)" fill="#9961a8"><svg><rect width="12" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(702,511)" fill="#d9b5d5"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(789,433)" fill="#655aa7"><svg><rect width="4" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(639,520)" fill="#174585"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(800,424)" fill="#4486c7"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(638,484)" fill="#aed1e7"><svg><rect width="11" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(697,537)" fill="#595a5a"><svg><rect width="4" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(691,508)" fill="#bfb890"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,400)" fill="#805e5e"><svg><rect width="11" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(773,330)" fill="#9fa439"><svg><rect width="6" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(615,450)" fill="#1e7d3d"><svg><rect width="7" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(793,507)" fill="#85c76d"><svg><rect width="7" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,424)" fill="#fce468"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(703,469)" fill="#f8ad19"><svg><rect width="6" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(589,415)" fill="#e16326"><svg><rect width="8" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(663,538)" fill="#c23d4b"><svg><rect width="6" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(703,422)" fill="#61293d"><svg><rect width="11" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(704,197)" fill="#c158a2"><svg><rect width="23" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(562,312)" fill="#9961a8"><svg><rect width="10" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,485)" fill="#d9b5d5"><svg><rect width="14" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(582,503)" fill="#655aa7"><svg><rect width="7" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(759,484)" fill="#174585"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(809,243)" fill="#4486c7"><svg><rect width="20" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(740,365)" fill="#aed1e7"><svg><rect width="12" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,461)" fill="#595a5a"><svg><rect width="5" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(773,415)" fill="#bfb890"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(755,286)" fill="#805e5e"><svg><rect width="12" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(694,484)" fill="#9fa439"><svg><rect width="8" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,428)" fill="#1e7d3d"><svg><rect width="12" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(771,536)" fill="#85c76d"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(742,459)" fill="#fce468"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,489)" fill="#f8ad19"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(573,347)" fill="#e16326"><svg><rect width="16" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,434)" fill="#c23d4b"><svg><rect width="10" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,484)" fill="#61293d"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,246)" fill="#c158a2"><svg><rect width="13" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(445,426)" fill="#9961a8"><svg><rect width="15" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(469,503)" fill="#d9b5d5"><svg><rect width="9" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(240,529)" fill="#655aa7"><svg><rect width="29" height="23.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(649,277)" fill="#174585"><svg><rect width="12" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(550,295)" fill="#4486c7"><svg><rect width="11" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(540,312)" fill="#aed1e7"><svg><rect width="9" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(577,93)" fill="#595a5a"><svg><rect width="30" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(372,491)" fill="#bfb890"><svg><rect width="21" height="30"></rect></svg>
+</g>
+<g class="cell" transform="translate(744,192)" fill="#805e5e"><svg><rect width="14" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(793,322)" fill="#9fa439"><svg><rect width="11" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(209,420)" fill="#1e7d3d"><svg><rect width="36" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(639,158)" fill="#85c76d"><svg><rect width="15" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(573,213)" fill="#fce468"><svg><rect width="24" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,369)" fill="#f8ad19"><svg><rect width="13" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(768,277)" fill="#e16326"><svg><rect width="11" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(775,528)" fill="#c23d4b"><svg><rect width="3" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(820,355)" fill="#61293d"><svg><rect width="9" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(650,469)" fill="#c158a2"><svg><rect width="10" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(650,267)" fill="#9961a8"><svg><rect width="25" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(539,141)" fill="#d9b5d5"><svg><rect width="15" height="26"></rect></svg>
+</g>
+<g class="cell" transform="translate(655,105)" fill="#655aa7"><svg><rect width="20" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(522,95)" fill="#174585"><svg><rect width="27" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(743,365)" fill="#4486c7"><svg><rect width="9" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,346)" fill="#aed1e7"><svg><rect width="13" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(651,330)" fill="#595a5a"><svg><rect width="7" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(795,364)" fill="#bfb890"><svg><rect width="9" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,333)" fill="#805e5e"><svg><rect width="29" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,532)" fill="#9fa439"><svg><rect width="4" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(660,366)" fill="#1e7d3d"><svg><rect width="7" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,323)" fill="#85c76d"><svg><rect width="19" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(530,383)" fill="#fce468"><svg><rect width="9" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(459,346)" fill="#f8ad19"><svg><rect width="11" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(607,503)" fill="#e16326"><svg><rect width="7" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(691,502)" fill="#c23d4b"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(763,511)" fill="#61293d"><svg><rect width="4" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(630,450)" fill="#c158a2"><svg><rect width="6" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(702,545)" fill="#9961a8"><svg><rect width="6" height="7.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(697,433)" fill="#d9b5d5"><svg><rect width="5" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(650,463)" fill="#655aa7"><svg><rect width="12" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(601,312)" fill="#174585"><svg><rect width="10" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(742,512)" fill="#4486c7"><svg><rect width="5" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(716,531)" fill="#aed1e7"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(479,485)" fill="#595a5a"><svg><rect width="8" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(745,519)" fill="#bfb890"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(717,442)" fill="#805e5e"><svg><rect width="9" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(820,346)" fill="#9fa439"><svg><rect width="9" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,338)" fill="#1e7d3d"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,355)" fill="#85c76d"><svg><rect width="13" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(679,39)" fill="#fce468"><svg><rect width="23" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(795,399)" fill="#f8ad19"><svg><rect width="10" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(784,512)" fill="#e16326"><svg><rect width="3" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(767,467)" fill="#c23d4b"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,452)" fill="#61293d"><svg><rect width="17" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(780,209)" fill="#c158a2"><svg><rect width="14" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(736,519)" fill="#9961a8"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,496)" fill="#d9b5d5"><svg><rect width="14" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(742,461)" fill="#655aa7"><svg><rect width="0" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,408)" fill="#174585"><svg><rect width="12" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(793,477)" fill="#4486c7"><svg><rect width="6" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(600,177)" fill="#aed1e7"><svg><rect width="22" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(437,346)" fill="#595a5a"><svg><rect width="9" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(583,383)" fill="#bfb890"><svg><rect width="8" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(573,312)" fill="#805e5e"><svg><rect width="18" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(826,494)" fill="#9fa439"><svg><rect width="3" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(675,287)" fill="#1e7d3d"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(829,551)" fill="#85c76d"><svg><rect width="0.5" height="1"></rect></svg>
+</g>
+<g class="cell" transform="translate(793,519)" fill="#fce468"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(787,546)" fill="#f8ad19"><svg><rect width="4" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(474,232)" fill="#e16326"><svg><rect width="23" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(819,286)" fill="#c23d4b"><svg><rect width="10" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(469,472)" fill="#61293d"><svg><rect width="12" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(547,358)" fill="#c158a2"><svg><rect width="16" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(767,476)" fill="#9961a8"><svg><rect width="5" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,493)" fill="#d9b5d5"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(651,322)" fill="#655aa7"><svg><rect width="15" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(780,338)" fill="#174585"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(490,250)" fill="#4486c7"><svg><rect width="15" height="26"></rect></svg>
+</g>
+<g class="cell" transform="translate(691,228)" fill="#aed1e7"><svg><rect width="14" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(291,463)" fill="#595a5a"><svg><rect width="25" height="28"></rect></svg>
+</g>
+<g class="cell" transform="translate(675,277)" fill="#bfb890"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,359)" fill="#805e5e"><svg><rect width="15" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(813,382)" fill="#9fa439"><svg><rect width="6" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(431,531)" fill="#1e7d3d"><svg><rect width="13" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,433)" fill="#85c76d"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(728,226)" fill="#fce468"><svg><rect width="14" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(799,550)" fill="#f8ad19"><svg><rect width="5" height="2.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(821,550)" fill="#e16326"><svg><rect width="2" height="2.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(823,528)" fill="#c23d4b"><svg><rect width="2" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(810,528)" fill="#61293d"><svg><rect width="2" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(469,537)" fill="#c158a2"><svg><rect width="9" height="15.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(824,551)" fill="#9961a8"><svg><rect width="2" height="1.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(820,546)" fill="#d9b5d5"><svg><rect width="1" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(650,428)" fill="#655aa7"><svg><rect width="12" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,550)" fill="#174585"><svg><rect width="2" height="2.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(771,519)" fill="#4486c7"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(812,502)" fill="#aed1e7"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(824,536)" fill="#595a5a"><svg><rect width="3" height="2"></rect></svg>
+</g>
+<g class="cell" transform="translate(734,476)" fill="#bfb890"><svg><rect width="6" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(819,519)" fill="#805e5e"><svg><rect width="3" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(658,529)" fill="#9fa439"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(809,536)" fill="#1e7d3d"><svg><rect width="3" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(787,519)" fill="#85c76d"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(691,514)" fill="#fce468"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(734,415)" fill="#f8ad19"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,330)" fill="#e16326"><svg><rect width="11" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,450)" fill="#c23d4b"><svg><rect width="7" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(728,174)" fill="#61293d"><svg><rect width="15" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(572,415)" fill="#c158a2"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(743,346)" fill="#9961a8"><svg><rect width="9" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(806,394)" fill="#d9b5d5"><svg><rect width="13" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,520)" fill="#655aa7"><svg><rect width="7" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(780,226)" fill="#174585"><svg><rect width="14" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(366,280)" fill="#4486c7"><svg><rect width="24" height="36"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,424)" fill="#aed1e7"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(758,536)" fill="#595a5a"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(715,346)" fill="#bfb890"><svg><rect width="11" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(760,433)" fill="#805e5e"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(691,496)" fill="#9fa439"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(820,391)" fill="#1e7d3d"><svg><rect width="9" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(758,528)" fill="#85c76d"><svg><rect width="3" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(684,484)" fill="#fce468"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(786,489)" fill="#f8ad19"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,364)" fill="#e16326"><svg><rect width="13" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(773,450)" fill="#c23d4b"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(718,297)" fill="#61293d"><svg><rect width="8" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(793,297)" fill="#c158a2"><svg><rect width="6" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(479,520)" fill="#9961a8"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(783,519)" fill="#d9b5d5"><svg><rect width="3" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(825,468)" fill="#655aa7"><svg><rect width="4" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,381)" fill="#174585"><svg><rect width="7" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(748,495)" fill="#4486c7"><svg><rect width="5" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,538)" fill="#aed1e7"><svg><rect width="6" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(658,520)" fill="#595a5a"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(512,452)" fill="#bfb890"><svg><rect width="7" height="19"></rect></svg>
+</g>
+<g class="cell" transform="translate(522,245)" fill="#805e5e"><svg><rect width="25" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(732,493)" fill="#9fa439"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(573,494)" fill="#1e7d3d"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(587,402)" fill="#85c76d"><svg><rect width="13" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(740,442)" fill="#fce468"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(771,528)" fill="#f8ad19"><svg><rect width="3" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(690,433)" fill="#e16326"><svg><rect width="6" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(289,280)" fill="#c23d4b"><svg><rect width="25" height="38"></rect></svg>
+</g>
+<g class="cell" transform="translate(257,0)" fill="#61293d"><svg><rect width="36" height="76"></rect></svg>
+</g>
+<g class="cell" transform="translate(0,522)" fill="#c158a2"><svg><rect width="44" height="30.33"></rect></svg>
+<svg><text y="0" transform="translate(0, 28.33)">Nexus 6</text></svg></g>
+<g class="cell" transform="translate(169,496)" fill="#9961a8"><svg><rect width="39" height="28"></rect></svg>
+</g>
+<g class="cell" transform="translate(715,422)" fill="#d9b5d5"><svg><rect width="11" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(367,442)" fill="#655aa7"><svg><rect width="32" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(240,357)" fill="#174585"><svg><rect width="29" height="31"></rect></svg>
+<svg><text y="0" transform="translate(0, 29)">X</text></svg></g>
+<g class="cell" transform="translate(33,422)" fill="#4486c7"><svg><rect width="31" height="45"></rect></svg>
+<svg><text y="0" transform="translate(0, 43)">XL</text></svg></g>
+<g class="cell" transform="translate(753,519)" fill="#aed1e7"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,476)" fill="#595a5a"><svg><rect width="6" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,502)" fill="#bfb890"><svg><rect width="7" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(703,434)" fill="#805e5e"><svg><rect width="6" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(826,528)" fill="#9fa439"><svg><rect width="3" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(775,519)" fill="#1e7d3d"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(655,164)" fill="#85c76d"><svg><rect width="23" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(659,330)" fill="#fce468"><svg><rect width="7" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(538,521)" fill="#f8ad19"><svg><rect width="8" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(444,277)" fill="#e16326"><svg><rect width="13" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,261)" fill="#c23d4b"><svg><rect width="28" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,450)" fill="#61293d"><svg><rect width="9" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(535,485)" fill="#c158a2"><svg><rect width="13" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(769,381)" fill="#9961a8"><svg><rect width="9" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(564,537)" fill="#d9b5d5"><svg><rect width="8" height="15.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(741,542)" fill="#655aa7"><svg><rect width="7" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(829,553)" fill="#174585"><svg><rect width="0" height="0.166"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,515)" fill="#4486c7"><svg><rect width="6" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,415)" fill="#aed1e7"><svg><rect width="9" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(702,484)" fill="#595a5a"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(747,433)" fill="#bfb890"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(767,459)" fill="#805e5e"><svg><rect width="5" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(690,390)" fill="#9fa439"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(794,424)" fill="#1e7d3d"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(631,520)" fill="#85c76d"><svg><rect width="7" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(703,457)" fill="#fce468"><svg><rect width="11" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(766,528)" fill="#f8ad19"><svg><rect width="4" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(824,461)" fill="#e16326"><svg><rect width="5" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(809,519)" fill="#c23d4b"><svg><rect width="2" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,507)" fill="#61293d"><svg><rect width="6" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(762,545)" fill="#c158a2"><svg><rect width="3" height="7.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(631,529)" fill="#9961a8"><svg><rect width="7" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(786,529)" fill="#d9b5d5"><svg><rect width="6" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(732,537)" fill="#655aa7"><svg><rect width="3" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,426)" fill="#174585"><svg><rect width="7" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(587,333)" fill="#4486c7"><svg><rect width="13" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(780,277)" fill="#aed1e7"><svg><rect width="7" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(755,277)" fill="#595a5a"><svg><rect width="12" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,109)" fill="#bfb890"><svg><rect width="20" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,398)" fill="#805e5e"><svg><rect width="13" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,358)" fill="#9fa439"><svg><rect width="15" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(799,484)" fill="#1e7d3d"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,455)" fill="#85c76d"><svg><rect width="8" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(662,277)" fill="#fce468"><svg><rect width="12" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(819,533)" fill="#f8ad19"><svg><rect width="6" height="2"></rect></svg>
+</g>
+<g class="cell" transform="translate(732,528)" fill="#e16326"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(766,0)" fill="#c23d4b"><svg><rect width="12" height="25"></rect></svg>
+</g>
+<g class="cell" transform="translate(758,519)" fill="#61293d"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(794,433)" fill="#c158a2"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,443)" fill="#9961a8"><svg><rect width="14" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(793,524)" fill="#d9b5d5"><svg><rect width="5" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(792,484)" fill="#655aa7"><svg><rect width="6" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(685,476)" fill="#174585"><svg><rect width="8" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(819,415)" fill="#4486c7"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(774,495)" fill="#aed1e7"><svg><rect width="4" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(540,277)" fill="#595a5a"><svg><rect width="9" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(529,433)" fill="#bfb890"><svg><rect width="7" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(740,433)" fill="#805e5e"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(749,537)" fill="#9fa439"><svg><rect width="3" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(767,476)" fill="#1e7d3d"><svg><rect width="0" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,494)" fill="#85c76d"><svg><rect width="4" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(754,484)" fill="#fce468"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(573,402)" fill="#f8ad19"><svg><rect width="13" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(684,297)" fill="#e16326"><svg><rect width="7" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(564,347)" fill="#c23d4b"><svg><rect width="8" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(488,503)" fill="#61293d"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(710,469)" fill="#c158a2"><svg><rect width="6" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(754,322)" fill="#9961a8"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(754,459)" fill="#d9b5d5"><svg><rect width="6" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(67,522)" fill="#655aa7"><svg><rect width="40" height="30.33"></rect></svg>
+<svg><text y="0" transform="translate(0, 28.33)">Joy</text></svg></g>
+<g class="cell" transform="translate(535,402)" fill="#174585"><svg><rect width="14" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,128)" fill="#4486c7"><svg><rect width="30" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,529)" fill="#aed1e7"><svg><rect width="6" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(684,502)" fill="#595a5a"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(801,494)" fill="#bfb890"><svg><rect width="3" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(479,503)" fill="#805e5e"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(716,174)" fill="#9fa439"><svg><rect width="11" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,323)" fill="#1e7d3d"><svg><rect width="13" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(582,520)" fill="#85c76d"><svg><rect width="7" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(341,317)" fill="#fce468"><svg><rect width="24" height="35"></rect></svg>
+</g>
+<g class="cell" transform="translate(728,243)" fill="#f8ad19"><svg><rect width="14" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,322)" fill="#e16326"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(445,495)" fill="#c23d4b"><svg><rect width="15" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(443,472)" fill="#61293d"><svg><rect width="0" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,373)" fill="#c158a2"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(744,297)" fill="#9961a8"><svg><rect width="10" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(794,415)" fill="#d9b5d5"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(665,532)" fill="#655aa7"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(688,312)" fill="#174585"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(728,157)" fill="#4486c7"><svg><rect width="15" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(497,530)" fill="#aed1e7"><svg><rect width="14" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(665,497)" fill="#595a5a"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(499,335)" fill="#bfb890"><svg><rect width="20" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(664,356)" fill="#805e5e"><svg><rect width="11" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(793,528)" fill="#9fa439"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(716,514)" fill="#1e7d3d"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(793,330)" fill="#85c76d"><svg><rect width="11" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(598,358)" fill="#fce468"><svg><rect width="16" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(341,280)" fill="#f8ad19"><svg><rect width="24" height="36"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,323)" fill="#e16326"><svg><rect width="13" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(744,174)" fill="#c23d4b"><svg><rect width="14" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,493)" fill="#61293d"><svg><rect width="7" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,515)" fill="#c158a2"><svg><rect width="12" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(766,366)" fill="#9961a8"><svg><rect width="5" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(367,420)" fill="#d9b5d5"><svg><rect width="32" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(759,511)" fill="#655aa7"><svg><rect width="3" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(800,477)" fill="#174585"><svg><rect width="5" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(715,391)" fill="#4486c7"><svg><rect width="11" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(636,277)" fill="#aed1e7"><svg><rect width="12" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(703,450)" fill="#595a5a"><svg><rect width="11" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(522,141)" fill="#bfb890"><svg><rect width="16" height="26"></rect></svg>
+</g>
+<g class="cell" transform="translate(780,322)" fill="#805e5e"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(236,319)" fill="#9fa439"><svg><rect width="26" height="37"></rect></svg>
+</g>
+<g class="cell" transform="translate(704,162)" fill="#1e7d3d"><svg><rect width="23" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(497,415)" fill="#85c76d"><svg><rect width="14" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(317,529)" fill="#fce468"><svg><rect width="27" height="23.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(470,19)" fill="#f8ad19"><svg><rect width="34" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(735,502)" fill="#e16326"><svg><rect width="6" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(684,493)" fill="#c23d4b"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(732,519)" fill="#61293d"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(263,319)" fill="#c158a2"><svg><rect width="25" height="37"></rect></svg>
+</g>
+<g class="cell" transform="translate(0,422)" fill="#9961a8"><svg><rect width="32" height="45"></rect></svg>
+</g>
+<g class="cell" transform="translate(706,222)" fill="#d9b5d5"><svg><rect width="21" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(717,469)" fill="#655aa7"><svg><rect width="9" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(793,467)" fill="#174585"><svg><rect width="8" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,433)" fill="#4486c7"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(813,540)" fill="#aed1e7"><svg><rect width="4" height="2"></rect></svg>
+</g>
+<g class="cell" transform="translate(653,222)" fill="#595a5a"><svg><rect width="22" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(541,113)" fill="#bfb890"><svg><rect width="17" height="27"></rect></svg>
+</g>
+<g class="cell" transform="translate(714,287)" fill="#805e5e"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(270,492)" fill="#9fa439"><svg><rect width="23" height="30"></rect></svg>
+</g>
+<g class="cell" transform="translate(708,20)" fill="#1e7d3d"><svg><rect width="18" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,467)" fill="#85c76d"><svg><rect width="8" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(452,37)" fill="#fce468"><svg><rect width="17" height="35"></rect></svg>
+</g>
+<g class="cell" transform="translate(650,494)" fill="#f8ad19"><svg><rect width="7" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,374)" fill="#e16326"><svg><rect width="12" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(711,400)" fill="#c23d4b"><svg><rect width="7" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(655,122)" fill="#61293d"><svg><rect width="20" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(691,529)" fill="#c158a2"><svg><rect width="0" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(655,152)" fill="#9961a8"><svg><rect width="23" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,541)" fill="#d9b5d5"><svg><rect width="3" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,433)" fill="#655aa7"><svg><rect width="8" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(430,383)" fill="#174585"><svg><rect width="13" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,421)" fill="#4486c7"><svg><rect width="9" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,468)" fill="#aed1e7"><svg><rect width="6" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,312)" fill="#595a5a"><svg><rect width="13" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(576,141)" fill="#bfb890"><svg><rect width="23" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(469,415)" fill="#805e5e"><svg><rect width="9" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(812,461)" fill="#9fa439"><svg><rect width="5" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(607,537)" fill="#1e7d3d"><svg><rect width="7" height="15.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,398)" fill="#85c76d"><svg><rect width="13" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(747,415)" fill="#fce468"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(760,415)" fill="#f8ad19"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(630,538)" fill="#e16326"><svg><rect width="6" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,408)" fill="#c23d4b"><svg><rect width="11" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,444)" fill="#61293d"><svg><rect width="13" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(820,364)" fill="#c158a2"><svg><rect width="9" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,346)" fill="#9961a8"><svg><rect width="13" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(598,494)" fill="#d9b5d5"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(690,373)" fill="#655aa7"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(508,381)" fill="#174585"><svg><rect width="11" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(537,450)" fill="#4486c7"><svg><rect width="8" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,450)" fill="#aed1e7"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(809,221)" fill="#595a5a"><svg><rect width="20" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,528)" fill="#bfb890"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(742,450)" fill="#805e5e"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(664,391)" fill="#9fa439"><svg><rect width="11" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(814,433)" fill="#1e7d3d"><svg><rect width="4" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,536)" fill="#85c76d"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(710,434)" fill="#fce468"><svg><rect width="6" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(749,519)" fill="#f8ad19"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(701,277)" fill="#e16326"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(657,450)" fill="#c23d4b"><svg><rect width="5" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(758,221)" fill="#61293d"><svg><rect width="21" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(576,159)" fill="#c158a2"><svg><rect width="23" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,0)" fill="#9961a8"><svg><rect width="35" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(615,485)" fill="#d9b5d5"><svg><rect width="7" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(317,442)" fill="#655aa7"><svg><rect width="32" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(576,177)" fill="#174585"><svg><rect width="23" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(534,369)" fill="#4486c7"><svg><rect width="12" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,159)" fill="#aed1e7"><svg><rect width="26" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(679,162)" fill="#595a5a"><svg><rect width="24" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(598,229)" fill="#bfb890"><svg><rect width="24" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(562,295)" fill="#805e5e"><svg><rect width="10" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,442)" fill="#9fa439"><svg><rect width="10" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(744,277)" fill="#1e7d3d"><svg><rect width="10" height="19"></rect></svg>
+</g>
+<g class="cell" transform="translate(246,420)" fill="#85c76d"><svg><rect width="17" height="42"></rect></svg>
+</g>
+<g class="cell" transform="translate(598,424)" fill="#fce468"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(573,369)" fill="#f8ad19"><svg><rect width="12" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(599,0)" fill="#e16326"><svg><rect width="23" height="21"></rect></svg>
+</g>
+<g class="cell" transform="translate(443,159)" fill="#c23d4b"><svg><rect width="26" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,213)" fill="#61293d"><svg><rect width="28" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(400,420)" fill="#c158a2"><svg><rect width="15" height="42"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,519)" fill="#9961a8"><svg><rect width="14" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,322)" fill="#d9b5d5"><svg><rect width="13" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(810,56)" fill="#655aa7"><svg><rect width="19" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(488,107)" fill="#174585"><svg><rect width="16" height="33"></rect></svg>
+</g>
+<g class="cell" transform="translate(116,353)" fill="#4486c7"><svg><rect width="46" height="34"></rect></svg>
+</g>
+<g class="cell" transform="translate(810,164)" fill="#aed1e7"><svg><rect width="19" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(470,195)" fill="#595a5a"><svg><rect width="25" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(563,468)" fill="#bfb890"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(758,56)" fill="#805e5e"><svg><rect width="20" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(657,35)" fill="#9fa439"><svg><rect width="21" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(651,391)" fill="#1e7d3d"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(607,44)" fill="#85c76d"><svg><rect width="15" height="31"></rect></svg>
+</g>
+<g class="cell" transform="translate(71,280)" fill="#fce468"><svg><rect width="44" height="40"></rect></svg>
+</g>
+<g class="cell" transform="translate(76,155)" fill="#f8ad19"><svg><rect width="59" height="62"></rect></svg>
+<svg><text y="0" transform="translate(0, 60)">SM-G355H</text></svg></g>
+<g class="cell" transform="translate(758,243)" fill="#e16326"><svg><rect width="21" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(108,422)" fill="#c23d4b"><svg><rect width="25" height="49"></rect></svg>
+</g>
+<g class="cell" transform="translate(317,510)" fill="#61293d"><svg><rect width="36" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,297)" fill="#c158a2"><svg><rect width="13" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(758,39)" fill="#9961a8"><svg><rect width="20" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(474,250)" fill="#d9b5d5"><svg><rect width="15" height="26"></rect></svg>
+</g>
+<g class="cell" transform="translate(330,89)" fill="#655aa7"><svg><rect width="42" height="57"></rect></svg>
+</g>
+<g class="cell" transform="translate(458,383)" fill="#174585"><svg><rect width="12" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(563,433)" fill="#4486c7"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(600,159)" fill="#aed1e7"><svg><rect width="22" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,228)" fill="#595a5a"><svg><rect width="14" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(565,485)" fill="#bfb890"><svg><rect width="7" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(611,369)" fill="#805e5e"><svg><rect width="11" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,177)" fill="#9fa439"><svg><rect width="13" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,141)" fill="#1e7d3d"><svg><rect width="26" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(263,280)" fill="#85c76d"><svg><rect width="25" height="38"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,195)" fill="#fce468"><svg><rect width="26" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(559,113)" fill="#f8ad19"><svg><rect width="17" height="27"></rect></svg>
+</g>
+<g class="cell" transform="translate(147,0)" fill="#e16326"><svg><rect width="69" height="77"></rect></svg>
+<svg><text y="0" transform="translate(0, 75)">SM-G530H</text></svg></g>
+<g class="cell" transform="translate(676,246)" fill="#c23d4b"><svg><rect width="12" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(809,255)" fill="#61293d"><svg><rect width="20" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(136,197)" fill="#c158a2"><svg><rect width="80" height="41"></rect></svg>
+<svg><text y="0" transform="translate(0, 39)">SM-G7102</text></svg></g>
+<g class="cell" transform="translate(810,124)" fill="#9961a8"><svg><rect width="19" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(485,330)" fill="#d9b5d5"><svg><rect width="13" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(806,461)" fill="#655aa7"><svg><rect width="5" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(391,280)" fill="#174585"><svg><rect width="24" height="36"></rect></svg>
+</g>
+<g class="cell" transform="translate(294,492)" fill="#4486c7"><svg><rect width="22" height="30"></rect></svg>
+</g>
+<g class="cell" transform="translate(250,492)" fill="#aed1e7"><svg><rect width="19" height="36"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,407)" fill="#595a5a"><svg><rect width="13" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(794,177)" fill="#bfb890"><svg><rect width="11" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(598,537)" fill="#805e5e"><svg><rect width="8" height="15.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(81,0)" fill="#9fa439"><svg><rect width="65" height="107"></rect></svg>
+<svg><text y="0" transform="translate(0, 105)">Galaxy S5</text></svg></g>
+<g class="cell" transform="translate(522,44)" fill="#1e7d3d"><svg><rect width="17" height="31"></rect></svg>
+</g>
+<g class="cell" transform="translate(508,398)" fill="#85c76d"><svg><rect width="11" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(323,248)" fill="#fce468"><svg><rect width="61" height="31"></rect></svg>
+<svg><text y="0" transform="translate(0, 29)">Galaxy S5</text></svg></g>
+<g class="cell" transform="translate(573,261)" fill="#f8ad19"><svg><rect width="24" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(209,319)" fill="#e16326"><svg><rect width="26" height="37"></rect></svg>
+</g>
+<g class="cell" transform="translate(598,369)" fill="#c23d4b"><svg><rect width="12" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(315,317)" fill="#61293d"><svg><rect width="25" height="35"></rect></svg>
+</g>
+<g class="cell" transform="translate(692,297)" fill="#c158a2"><svg><rect width="8" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(694,467)" fill="#9961a8"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(315,353)" fill="#d9b5d5"><svg><rect width="25" height="33"></rect></svg>
+</g>
+<g class="cell" transform="translate(790,399)" fill="#655aa7"><svg><rect width="4" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(116,280)" fill="#174585"><svg><rect width="46" height="37"></rect></svg>
+</g>
+<g class="cell" transform="translate(679,26)" fill="#4486c7"><svg><rect width="28" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(522,113)" fill="#aed1e7"><svg><rect width="18" height="27"></rect></svg>
+</g>
+<g class="cell" transform="translate(217,77)" fill="#595a5a"><svg><rect width="37" height="69"></rect></svg>
+</g>
+<g class="cell" transform="translate(452,73)" fill="#bfb890"><svg><rect width="17" height="33"></rect></svg>
+</g>
+<g class="cell" transform="translate(608,76)" fill="#805e5e"><svg><rect width="14" height="32"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,177)" fill="#9fa439"><svg><rect width="13" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,37)" fill="#1e7d3d"><svg><rect width="17" height="35"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,313)" fill="#85c76d"><svg><rect width="11" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(163,353)" fill="#fce468"><svg><rect width="45" height="35"></rect></svg>
+<svg><text y="0" transform="translate(0, 33)">S6 Edge</text></svg></g>
+<g class="cell" transform="translate(557,44)" fill="#f8ad19"><svg><rect width="16" height="31"></rect></svg>
+</g>
+<g class="cell" transform="translate(612,277)" fill="#e16326"><svg><rect width="10" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(759,197)" fill="#c23d4b"><svg><rect width="22" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(806,177)" fill="#61293d"><svg><rect width="11" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(163,280)" fill="#c158a2"><svg><rect width="45" height="36"></rect></svg>
+</g>
+<g class="cell" transform="translate(509,540)" fill="#9961a8"><svg><rect width="10" height="12.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(522,229)" fill="#d9b5d5"><svg><rect width="25" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(716,548)" fill="#655aa7"><svg><rect width="10" height="4.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(426,485)" fill="#174585"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(452,0)" fill="#4486c7"><svg><rect width="17" height="36"></rect></svg>
+</g>
+<g class="cell" transform="translate(330,60)" fill="#aed1e7"><svg><rect width="85" height="28"></rect></svg>
+<svg><text y="0" transform="translate(0, 26)">Galaxy Note 3</text></svg></g>
+<g class="cell" transform="translate(716,139)" fill="#595a5a"><svg><rect width="11" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,511)" fill="#bfb890"><svg><rect width="6" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(0,155)" fill="#805e5e"><svg><rect width="75" height="68"></rect></svg>
+<svg><text y="0" transform="translate(0, 66)">SM-N9005</text></svg></g>
+<g class="cell" transform="translate(496,381)" fill="#9fa439"><svg><rect width="11" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(820,382)" fill="#1e7d3d"><svg><rect width="9" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(650,434)" fill="#85c76d"><svg><rect width="10" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,14)" fill="#fce468"><svg><rect width="24" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(530,506)" fill="#f8ad19"><svg><rect width="8" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(505,37)" fill="#e16326"><svg><rect width="16" height="35"></rect></svg>
+</g>
+<g class="cell" transform="translate(341,353)" fill="#c23d4b"><svg><rect width="25" height="33"></rect></svg>
+</g>
+<g class="cell" transform="translate(782,139)" fill="#61293d"><svg><rect width="13" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(550,312)" fill="#c158a2"><svg><rect width="11" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(330,0)" fill="#9961a8"><svg><rect width="42" height="59"></rect></svg>
+</g>
+<g class="cell" transform="translate(253,216)" fill="#d9b5d5"><svg><rect width="35" height="63"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,158)" fill="#655aa7"><svg><rect width="15" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(434,37)" fill="#174585"><svg><rect width="17" height="35"></rect></svg>
+</g>
+<g class="cell" transform="translate(505,73)" fill="#4486c7"><svg><rect width="16" height="33"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,390)" fill="#aed1e7"><svg><rect width="13" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(341,387)" fill="#595a5a"><svg><rect width="25" height="32"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,298)" fill="#bfb890"><svg><rect width="14" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(236,280)" fill="#805e5e"><svg><rect width="26" height="38"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,415)" fill="#9fa439"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(795,260)" fill="#1e7d3d"><svg><rect width="13" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(535,298)" fill="#85c76d"><svg><rect width="14" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(719,366)" fill="#fce468"><svg><rect width="7" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(780,297)" fill="#f8ad19"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(715,356)" fill="#e16326"><svg><rect width="11" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(601,277)" fill="#c23d4b"><svg><rect width="10" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,402)" fill="#61293d"><svg><rect width="14" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,548)" fill="#c158a2"><svg><rect width="13" height="4.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(639,477)" fill="#9961a8"><svg><rect width="10" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(471,364)" fill="#d9b5d5"><svg><rect width="12" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,364)" fill="#655aa7"><svg><rect width="13" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(710,331)" fill="#174585"><svg><rect width="7" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(270,357)" fill="#4486c7"><svg><rect width="22" height="41"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,19)" fill="#aed1e7"><svg><rect width="35" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(444,329)" fill="#595a5a"><svg><rect width="13" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(795,40)" fill="#bfb890"><svg><rect width="14" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(509,506)" fill="#805e5e"><svg><rect width="10" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(522,168)" fill="#9fa439"><svg><rect width="32" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(394,522)" fill="#1e7d3d"><svg><rect width="21" height="30.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(795,209)" fill="#85c76d"><svg><rect width="13" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(0,468)" fill="#fce468"><svg><rect width="64" height="21"></rect></svg>
+<svg><text y="0" transform="translate(0, 19)">SM-T211</text></svg></g>
+<g class="cell" transform="translate(573,277)" fill="#f8ad19"><svg><rect width="18" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(639,70)" fill="#e16326"><svg><rect width="15" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,0)" fill="#c23d4b"><svg><rect width="12" height="25"></rect></svg>
+</g>
+<g class="cell" transform="translate(149,496)" fill="#61293d"><svg><rect width="19" height="56.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(497,540)" fill="#c158a2"><svg><rect width="11" height="12.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(615,503)" fill="#9961a8"><svg><rect width="7" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,109)" fill="#d9b5d5"><svg><rect width="20" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(577,125)" fill="#655aa7"><svg><rect width="30" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(691,484)" fill="#174585"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(664,346)" fill="#4486c7"><svg><rect width="11" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(685,467)" fill="#aed1e7"><svg><rect width="8" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(807,304)" fill="#595a5a"><svg><rect width="11" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,313)" fill="#bfb890"><svg><rect width="13" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,376)" fill="#805e5e"><svg><rect width="14" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,450)" fill="#9fa439"><svg><rect width="6" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,70)" fill="#1e7d3d"><svg><rect width="15" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,531)" fill="#85c76d"><svg><rect width="14" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(651,198)" fill="#fce468"><svg><rect width="27" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,0)" fill="#f8ad19"><svg><rect width="12" height="25"></rect></svg>
+</g>
+<g class="cell" transform="translate(550,333)" fill="#e16326"><svg><rect width="0" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(470,73)" fill="#c23d4b"><svg><rect width="17" height="33"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,61)" fill="#61293d"><svg><rect width="30" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(470,141)" fill="#c158a2"><svg><rect width="25" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(818,507)" fill="#9961a8"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,72)" fill="#d9b5d5"><svg><rect width="12" height="24"></rect></svg>
+</g>
+<g class="cell" transform="translate(795,415)" fill="#655aa7"><svg><rect width="10" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(574,44)" fill="#174585"><svg><rect width="16" height="31"></rect></svg>
+</g>
+<g class="cell" transform="translate(761,459)" fill="#4486c7"><svg><rect width="5" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(394,491)" fill="#aed1e7"><svg><rect width="21" height="30"></rect></svg>
+</g>
+<g class="cell" transform="translate(651,346)" fill="#595a5a"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(766,545)" fill="#bfb890"><svg><rect width="4" height="7.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,526)" fill="#805e5e"><svg><rect width="7" height="2"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,537)" fill="#9fa439"><svg><rect width="7" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(573,520)" fill="#1e7d3d"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(800,433)" fill="#85c76d"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(788,467)" fill="#fce468"><svg><rect width="4" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(793,455)" fill="#f8ad19"><svg><rect width="8" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(294,523)" fill="#e16326"><svg><rect width="22" height="29.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(810,152)" fill="#c23d4b"><svg><rect width="19" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(522,197)" fill="#61293d"><svg><rect width="26" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(758,209)" fill="#c158a2"><svg><rect width="21" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,355)" fill="#9961a8"><svg><rect width="13" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(761,450)" fill="#d9b5d5"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(664,381)" fill="#655aa7"><svg><rect width="11" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(796,537)" fill="#174585"><svg><rect width="3" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(799,528)" fill="#4486c7"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(795,364)" fill="#aed1e7"><svg><rect width="9" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(716,529)" fill="#595a5a"><svg><rect width="0" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(703,381)" fill="#bfb890"><svg><rect width="11" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(829,553)" fill="#805e5e"><svg><rect width="0" height="0.167"></rect></svg>
+</g>
+<g class="cell" transform="translate(445,540)" fill="#9fa439"><svg><rect width="11" height="12.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(697,450)" fill="#1e7d3d"><svg><rect width="5" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(697,520)" fill="#85c76d"><svg><rect width="4" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(496,346)" fill="#fce468"><svg><rect width="11" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(717,484)" fill="#f8ad19"><svg><rect width="9" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(782,198)" fill="#e16326"><svg><rect width="23" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(795,346)" fill="#c23d4b"><svg><rect width="9" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(548,261)" fill="#61293d"><svg><rect width="24" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(766,536)" fill="#c158a2"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(546,433)" fill="#9961a8"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(768,495)" fill="#d9b5d5"><svg><rect width="5" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(819,277)" fill="#655aa7"><svg><rect width="10" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(529,468)" fill="#174585"><svg><rect width="7" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,494)" fill="#df1256"><svg><rect width="4" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(688,287)" fill="#aed1e7"><svg><rect width="12" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(784,494)" fill="#595a5a"><svg><rect width="3" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(716,502)" fill="#bfb890"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(801,502)" fill="#805e5e"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,502)" fill="#9fa439"><svg><rect width="6" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(826,524)" fill="#1e7d3d"><svg><rect width="3" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,545)" fill="#85c76d"><svg><rect width="4" height="7.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(650,529)" fill="#fce468"><svg><rect width="7" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(767,313)" fill="#f8ad19"><svg><rect width="12" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(766,408)" fill="#e16326"><svg><rect width="12" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(550,383)" fill="#c23d4b"><svg><rect width="11" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(748,512)" fill="#61293d"><svg><rect width="5" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,381)" fill="#c158a2"><svg><rect width="13" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(651,313)" fill="#9961a8"><svg><rect width="15" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(780,305)" fill="#d9b5d5"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(812,511)" fill="#655aa7"><svg><rect width="5" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(822,546)" fill="#174585"><svg><rect width="1" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(589,433)" fill="#4486c7"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(800,546)" fill="#aed1e7"><svg><rect width="4" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(761,467)" fill="#595a5a"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(734,424)" fill="#bfb890"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(615,433)" fill="#805e5e"><svg><rect width="7" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(497,520)" fill="#9fa439"><svg><rect width="14" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(716,496)" fill="#1e7d3d"><svg><rect width="10" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(740,0)" fill="#85c76d"><svg><rect width="12" height="25"></rect></svg>
+</g>
+<g class="cell" transform="translate(634,469)" fill="#fce468"><svg><rect width="4" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(748,109)" fill="#f8ad19"><svg><rect width="9" height="29"></rect></svg>
+</g>
+<g class="cell" transform="translate(702,520)" fill="#e16326"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(800,537)" fill="#c23d4b"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(766,433)" fill="#61293d"><svg><rect width="8" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(715,381)" fill="#c158a2"><svg><rect width="11" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(702,502)" fill="#9961a8"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(814,494)" fill="#d9b5d5"><svg><rect width="3" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(644,504)" fill="#655aa7"><svg><rect width="5" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(802,467)" fill="#174585"><svg><rect width="3" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(800,415)" fill="#4486c7"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(736,528)" fill="#aed1e7"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(650,514)" fill="#595a5a"><svg><rect width="12" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(445,213)" fill="#bfb890"><svg><rect width="28" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(806,478)" fill="#805e5e"><svg><rect width="6" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(572,459)" fill="#9fa439"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(759,139)" fill="#1e7d3d"><svg><rect width="11" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(828,536)" fill="#85c76d"><svg><rect width="1" height="5"></rect></svg>
+</g>
+<g class="cell" transform="translate(666,434)" fill="#fce468"><svg><rect width="9" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(807,295)" fill="#f8ad19"><svg><rect width="11" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,485)" fill="#e16326"><svg><rect width="9" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(735,346)" fill="#c23d4b"><svg><rect width="7" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(445,542)" fill="#61293d"><svg><rect width="0" height="10.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(792,543)" fill="#c158a2"><svg><rect width="7" height="2"></rect></svg>
+</g>
+<g class="cell" transform="translate(691,209)" fill="#9961a8"><svg><rect width="14" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,434)" fill="#d9b5d5"><svg><rect width="9" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,72)" fill="#655aa7"><svg><rect width="12" height="24"></rect></svg>
+</g>
+<g class="cell" transform="translate(549,197)" fill="#174585"><svg><rect width="26" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(667,330)" fill="#4486c7"><svg><rect width="7" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(796,297)" fill="#aed1e7"><svg><rect width="10" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(754,467)" fill="#595a5a"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(788,450)" fill="#bfb890"><svg><rect width="4" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,415)" fill="#805e5e"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(732,484)" fill="#9fa439"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,424)" fill="#1e7d3d"><svg><rect width="6" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(740,408)" fill="#85c76d"><svg><rect width="12" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(812,546)" fill="#fce468"><svg><rect width="2" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(813,532)" fill="#f8ad19"><svg><rect width="5" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,27)" fill="#e16326"><svg><rect width="25" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(638,497)" fill="#c23d4b"><svg><rect width="11" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(590,503)" fill="#61293d"><svg><rect width="7" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,290)" fill="#c158a2"><svg><rect width="16" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(546,415)" fill="#9961a8"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,313)" fill="#d9b5d5"><svg><rect width="12" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(795,382)" fill="#655aa7"><svg><rect width="10" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(342,463)" fill="#174585"><svg><rect width="24" height="27"></rect></svg>
+</g>
+<g class="cell" transform="translate(160,472)" fill="#4486c7"><svg><rect width="48" height="23"></rect></svg>
+<svg><text y="0" transform="translate(0, 21)">Moto E</text></svg></g>
+<g class="cell" transform="translate(416,73)" fill="#aed1e7"><svg><rect width="17" height="33"></rect></svg>
+</g>
+<g class="cell" transform="translate(753,97)" fill="#595a5a"><svg><rect width="25" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(637,364)" fill="#bfb890"><svg><rect width="13" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(416,245)" fill="#805e5e"><svg><rect width="28" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(255,77)" fill="#9fa439"><svg><rect width="36" height="69"></rect></svg>
+<svg><text y="0" transform="translate(0, 67)">Moto G</text></svg></g>
+<g class="cell" transform="translate(292,77)" fill="#1e7d3d"><svg><rect width="37" height="69"></rect></svg>
+<svg><text y="0" transform="translate(0, 67)">Moto G</text></svg></g>
+<g class="cell" transform="translate(650,548)" fill="#85c76d"><svg><rect width="12" height="4.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,93)" fill="#fce468"><svg><rect width="30" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(293,357)" fill="#f8ad19"><svg><rect width="21" height="41"></rect></svg>
+</g>
+<g class="cell" transform="translate(587,298)" fill="#e16326"><svg><rect width="13" height="13"></rect></svg>
+</g>
+<g class="cell" transform="translate(703,445)" fill="#c23d4b"><svg><rect width="13" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(787,364)" fill="#61293d"><svg><rect width="7" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(495,472)" fill="#c158a2"><svg><rect width="24" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(763,493)" fill="#9961a8"><svg><rect width="4" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(240,389)" fill="#d9b5d5"><svg><rect width="29" height="30"></rect></svg>
+</g>
+<g class="cell" transform="translate(520,459)" fill="#655aa7"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(522,181)" fill="#174585"><svg><rect width="26" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(679,139)" fill="#4486c7"><svg><rect width="12" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(289,216)" fill="#aed1e7"><svg><rect width="33" height="63"></rect></svg>
+</g>
+<g class="cell" transform="translate(323,182)" fill="#595a5a"><svg><rect width="62" height="33"></rect></svg>
+<svg><text y="0" transform="translate(0, 31)">Moto G</text></svg></g>
+<g class="cell" transform="translate(767,322)" fill="#bfb890"><svg><rect width="12" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(743,260)" fill="#805e5e"><svg><rect width="14" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(209,442)" fill="#9fa439"><svg><rect width="36" height="20"></rect></svg>
+<svg><text y="0" transform="translate(0, 18)">XT1080</text></svg></g>
+<g class="cell" transform="translate(711,366)" fill="#1e7d3d"><svg><rect width="7" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(391,317)" fill="#85c76d"><svg><rect width="24" height="35"></rect></svg>
+</g>
+<g class="cell" transform="translate(497,426)" fill="#fce468"><svg><rect width="14" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(264,442)" fill="#f8ad19"><svg><rect width="35" height="20"></rect></svg>
+<svg><text y="0" transform="translate(0, 18)">XT1254</text></svg></g>
+<g class="cell" transform="translate(779,14)" fill="#e16326"><svg><rect width="25" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(529,521)" fill="#c23d4b"><svg><rect width="8" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(786,533)" fill="#61293d"><svg><rect width="6" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(786,484)" fill="#c158a2"><svg><rect width="5" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(759,493)" fill="#9961a8"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(773,476)" fill="#d9b5d5"><svg><rect width="5" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,415)" fill="#655aa7"><svg><rect width="6" height="12"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,346)" fill="#174585"><svg><rect width="7" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,23)" fill="#4486c7"><svg><rect width="33" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(782,158)" fill="#aed1e7"><svg><rect width="13" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(600,141)" fill="#595a5a"><svg><rect width="22" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(484,398)" fill="#bfb890"><svg><rect width="11" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(639,139)" fill="#805e5e"><svg><rect width="15" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(598,450)" fill="#9fa439"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(650,477)" fill="#1e7d3d"><svg><rect width="10" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,267)" fill="#85c76d"><svg><rect width="25" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(430,399)" fill="#fce468"><svg><rect width="13" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(495,452)" fill="#f8ad19"><svg><rect width="16" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,512)" fill="#e16326"><svg><rect width="0" height="6"></rect></svg>
+</g>
+<g class="cell" transform="translate(547,521)" fill="#c23d4b"><svg><rect width="8" height="15"></rect></svg>
+</g>
+<g class="cell" transform="translate(479,434)" fill="#61293d"><svg><rect width="8" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(573,485)" fill="#c158a2"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(780,313)" fill="#9961a8"><svg><rect width="12" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(710,297)" fill="#d9b5d5"><svg><rect width="7" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(471,277)" fill="#655aa7"><svg><rect width="12" height="18"></rect></svg>
+</g>
+<g class="cell" transform="translate(679,174)" fill="#174585"><svg><rect width="12" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(792,550)" fill="#4486c7"><svg><rect width="6" height="2.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(598,485)" fill="#aed1e7"><svg><rect width="16" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(819,313)" fill="#595a5a"><svg><rect width="10" height="0"></rect></svg>
+</g>
+<g class="cell" transform="translate(806,382)" fill="#bfb890"><svg><rect width="6" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(623,105)" fill="#805e5e"><svg><rect width="15" height="22"></rect></svg>
+</g>
+<g class="cell" transform="translate(638,228)" fill="#9fa439"><svg><rect width="14" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(471,381)" fill="#1e7d3d"><svg><rect width="12" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(758,124)" fill="#85c76d"><svg><rect width="20" height="14"></rect></svg>
+</g>
+<g class="cell" transform="translate(727,338)" fill="#fce468"><svg><rect width="13" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(754,511)" fill="#f8ad19"><svg><rect width="4" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(458,277)" fill="#e16326"><svg><rect width="12" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(508,364)" fill="#c23d4b"><svg><rect width="11" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(573,503)" fill="#61293d"><svg><rect width="8" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(563,450)" fill="#c158a2"><svg><rect width="8" height="17"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,472)" fill="#9961a8"><svg><rect width="8" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,476)" fill="#d9b5d5"><svg><rect width="8" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(392,387)" fill="#655aa7"><svg><rect width="23" height="32"></rect></svg>
+<svg><text y="0" transform="translate(0, 30)">Z970</text></svg></g>
+<g class="cell" transform="translate(592,312)" fill="#174585"><svg><rect width="8" height="20"></rect></svg>
+</g>
+<g class="cell" transform="translate(676,545)" fill="#4486c7"><svg><rect width="7" height="7.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(767,450)" fill="#aed1e7"><svg><rect width="5" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(784,433)" fill="#595a5a"><svg><rect width="4" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(779,502)" fill="#bfb890"><svg><rect width="6" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(812,507)" fill="#805e5e"><svg><rect width="5" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(775,484)" fill="#9fa439"><svg><rect width="3" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(209,529)" fill="#1e7d3d"><svg><rect width="30" height="23.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(547,347)" fill="#85c76d"><svg><rect width="16" height="10"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,546)" fill="#fce468"><svg><rect width="3" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(690,415)" fill="#f8ad19"><svg><rect width="6" height="11"></rect></svg>
+</g>
+<g class="cell" transform="translate(762,519)" fill="#e16326"><svg><rect width="3" height="8"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,484)" fill="#c23d4b"><svg><rect width="6" height="4"></rect></svg>
+</g>
+<g class="cell" transform="translate(813,536)" fill="#61293d"><svg><rect width="4" height="3"></rect></svg>
+</g>
+<g class="cell" transform="translate(615,468)" fill="#c158a2"><svg><rect width="7" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(734,468)" fill="#9961a8"><svg><rect width="6" height="7"></rect></svg>
+</g>
+<g class="cell" transform="translate(658,484)" fill="#d9b5d5"><svg><rect width="6" height="9"></rect></svg>
+</g>
+<g class="cell" transform="translate(496,398)" fill="#655aa7"><svg><rect width="11" height="16"></rect></svg>
+</g>
+<g class="cell" transform="translate(824,546)" fill="#174585"><svg><rect width="3" height="2"></rect></svg>
+</g>
+<g class="cell" transform="translate(732,545)" fill="#4486c7"><svg><rect width="3" height="7.33"></rect></svg>
+</g>
+<g class="cell" transform="translate(805,528)" fill="#aed1e7">
+<svg><rect width="4" height="3"></rect></svg></g></svg>

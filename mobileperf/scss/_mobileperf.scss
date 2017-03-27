@@ -1,3 +1,6 @@
+.note {
+	opacity: 0.1;
+}
 .break {
 	background-image:url(../img/broken-lcd.jpg); 
 	background-size:cover; 
@@ -18,4 +21,41 @@
 	position: absolute;
 	bottom: 1vh; right: 1vw;
 	font-size: small;
+}
+
+.fullimg {
+	height: 100vh;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	h1 {	
+  		text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+	}
+	&.phonedistribution {
+		background-image: url(../img/phonedist.png);
+	}
+	&.seasiacoverage {
+		background-image: url(../img/coverage.png);
+	}
+}
+
+.jaguar {
+	background-image:url(../img/jaguar.jpg); 
+	background-size:cover;
+	section {
+		height: 80vh;
+	}
+	ul { 
+		color:#fff; 
+		 list-style-type: none;
+		}
+	ul:first-of-type li {
+		font-size: 8vh; 
+		font-weight: bold;
+	}
+	ul:last-of-type {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
 }

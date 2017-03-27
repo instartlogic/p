@@ -1,7 +1,7 @@
 @charset "UTF-8";
 :root {
   font-size: 2vw;
-  background: #ffffff;
+  background: #fff;
   color: #333; }
 
 body {
@@ -13,7 +13,7 @@ body {
   position: absolute;
   left: 0px;
   top: 0px;
-  background: no-repeat url(../../overkill/img/instartlogo.svg) #ffffff;
+  background: no-repeat url(../../overkill/img/instartlogo.svg) #fff;
   background-position: right 1vw bottom 1vh;
   background-size: auto 7.5vh; }
 
@@ -117,7 +117,7 @@ a.pagelink {
   background-color: #226DAA;
   padding: 3px 5px 3px 5px;
   border: none;
-  color: #ffffff;
+  color: #fff;
   font-size: 1rem; }
   a.pagelink::after {
     content: ' ➫';
@@ -333,6 +333,9 @@ acronym {
 
   #presentation-counter, #info, #topinfo, .counter {
     display: none; } }
+.note {
+  opacity: 0.1; }
+
 .break {
   background-image: url(../img/broken-lcd.jpg);
   background-size: cover;
@@ -350,6 +353,34 @@ acronym {
   bottom: 1vh;
   right: 1vw;
   font-size: small; }
+
+.fullimg {
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .fullimg h1 {
+    text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px; }
+  .fullimg.phonedistribution {
+    background-image: url(../img/phonedist.png); }
+  .fullimg.seasiacoverage {
+    background-image: url(../img/coverage.png); }
+
+.jaguar {
+  background-image: url(../img/jaguar.jpg);
+  background-size: cover; }
+  .jaguar section {
+    height: 80vh; }
+  .jaguar ul {
+    color: #fff;
+    list-style-type: none; }
+  .jaguar ul:first-of-type li {
+    font-size: 8vh;
+    font-weight: bold; }
+  .jaguar ul:last-of-type {
+    position: absolute;
+    top: 10px;
+    right: 10px; }
 
 .big_piechart {
   position: relative;
@@ -386,5 +417,46 @@ acronym {
     width: 43vh;
     background-size: 80vh auto;
     background-image: url(http://chart.googleapis.com/chart?chs=400x225&amp;cht=p&amp;chco=333333&amp;chd=t:416,34,25,113,2,22&amp;chbg=transparent&amp;chds=0,416&amp;chdlp=b&amp;chma=|5&amp;chp=-.55); }
+
+.topphones {
+  border: 1px solid #226DAA;
+  border-spacing: 0px; }
+  .topphones tr:nth-of-type(odd) {
+    background-color: #dedede; }
+  .topphones tr:first-of-type {
+    color: white;
+    background-color: #226DAA; }
+  .topphones td, .topphones th {
+    padding: 7px 14px;
+    text-align: left; }
+
+.htc {
+  margin: auto;
+  border: 1px solid #dedede;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #ffffff;
+  width: 320px;
+  background-color: #666; }
+  .htc .th {
+    margin: 20px auto; }
+  .htc td, .htc th {
+    font-size: 14px;
+    padding: 2px 4px; }
+  .htc thead {
+    background-image: linear-gradient(to bottom, #333, #aaa, #333); }
+  .htc tfoot tr td {
+    color: #000; }
+  .htc tbody tr:nth-of-type(odd) {
+    font-weight: bold; }
+  .htc tbody tr:nth-of-type(even) {
+    color: #ccc; }
+  .htc tbody tr:nth-of-type(4n-3),
+  .htc tbody tr:nth-of-type(4n-2) {
+    background-color: black; }
+  .htc tbody tr:nth-of-type(even) td {
+    padding-bottom: 4px; }
+  .htc tbody tr:nth-of-type(odd) td {
+    padding-top: 4px; }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,57 @@
+.topphones {
+	border: 1px solid $ilblue;
+		border-spacing: 0px; 
+	tr:nth-of-type(odd) {
+		background-color: $subtle;
+	}
+	tr:first-of-type {
+		color: white;
+		background-color: $ilblue;
+	}
+	td, th {
+		padding: 7px 14px;
+		text-align: left;
+	}
+}
+
+.htc {
+  margin: auto;
+  border: 1px solid #dedede;
+  border-collapse: collapse;
+  border-spacing:0;
+  color: #ffffff;
+  width: 320px;
+  background-color: #666;
+  	.th {
+	  margin: 20px auto;
+  	}
+  	td, th {
+   		font-size: 14px;
+   		padding: 2px 4px;
+	}
+	thead {
+	  background-image: linear-gradient(to bottom,
+	    #333, #aaa, #333);
+	}
+	tfoot tr td {
+		color: #000;
+	}
+	tbody {
+		tr:nth-of-type(odd) {
+			font-weight: bold;
+		}
+		tr:nth-of-type(even) {
+			color: #ccc;
+		}
+		tr:nth-of-type(4n-3),
+		tr:nth-of-type(4n-2){
+	  		background-color: black;
+	 	}
+		tr:nth-of-type(even) td{
+	  		padding-bottom: 4px;
+	 	}
+		tr:nth-of-type(odd) td{
+	  		padding-top: 4px;
+	 	}
+	}
+}
