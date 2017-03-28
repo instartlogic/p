@@ -8,16 +8,16 @@
 @media screen and (min-width: 978px) {
 .fuckInlineStyles {
    transform: scale(3);
-   .twitter-tweet {
-   transform: scale(.333) !important;
+   blockquote {
+   transform: scale(.333);
    }
   }
 }
 @media screen and (min-width: 700px) {
 .fuckInlineStyles {
    transform: scale(2);
-   .twitter-tweet {
-   transform: scale(.5) !important;
+   blockquote {
+   transform: scale(.5);
    }
   }
 }
@@ -25,8 +25,8 @@
 @media screen and (min-width: 500px) {
 .fuckInlineStyles {
    transform: scale(1.5);
-   .twitter-tweet {
-   transform: scale(.667) !important;
+   blockquote {
+   transform: scale(.667);
    }
  }
 }

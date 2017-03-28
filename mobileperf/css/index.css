@@ -294,18 +294,18 @@ acronym {
 @media screen and (min-width: 978px) {
   .fuckInlineStyles {
     transform: scale(3); }
-    .fuckInlineStyles .twitter-tweet {
-      transform: scale(0.333) !important; } }
+    .fuckInlineStyles blockquote {
+      transform: scale(0.333); } }
 @media screen and (min-width: 700px) {
   .fuckInlineStyles {
     transform: scale(2); }
-    .fuckInlineStyles .twitter-tweet {
-      transform: scale(0.5) !important; } }
+    .fuckInlineStyles blockquote {
+      transform: scale(0.5); } }
 @media screen and (min-width: 500px) {
   .fuckInlineStyles {
     transform: scale(1.5); }
-    .fuckInlineStyles .twitter-tweet {
-      transform: scale(0.667) !important; } }
+    .fuckInlineStyles blockquote {
+      transform: scale(0.667); } }
 .slide .aria {
   margin-left: 30vw;
   white-space: pre;
