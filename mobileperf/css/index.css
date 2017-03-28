@@ -283,25 +283,21 @@ acronym {
   border-bottom: 1px dotted #226DAA; }
 
 .fuckInlineStyles {
-  transform-origin: top left;
-  transform: scale(3); }
-
-.fuckInlineStyles {
   transform-origin: top left; }
   .fuckInlineStyles .twitter-tweet {
     transform-origin: top left; }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 750px) {
   .fuckInlineStyles {
     transform: scale(1.5); }
     .fuckInlineStyles blockquote {
       transform: scale(0.667); } }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   .fuckInlineStyles {
     transform: scale(2); }
     .fuckInlineStyles blockquote {
       transform: scale(0.5); } }
-@media screen and (min-width: 978px) {
+@media screen and (min-width: 1400px) {
   .fuckInlineStyles {
     transform: scale(3); }
     .fuckInlineStyles blockquote {
