@@ -291,21 +291,21 @@ acronym {
   .fuckInlineStyles .twitter-tweet {
     transform-origin: top left; }
 
-@media screen and (min-width: 978px) {
-  .fuckInlineStyles {
-    transform: scale(3); }
-    .fuckInlineStyles blockquote {
-      transform: scale(0.333); } }
-@media screen and (min-width: 700px) {
-  .fuckInlineStyles {
-    transform: scale(2); }
-    .fuckInlineStyles blockquote {
-      transform: scale(0.5); } }
 @media screen and (min-width: 500px) {
   .fuckInlineStyles {
     transform: scale(1.5); }
     .fuckInlineStyles blockquote {
       transform: scale(0.667); } }
+@media screen and (min-width: 700px) {
+  .fuckInlineStyles {
+    transform: scale(2); }
+    .fuckInlineStyles blockquote {
+      transform: scale(0.5); } }
+@media screen and (min-width: 978px) {
+  .fuckInlineStyles {
+    transform: scale(3); }
+    .fuckInlineStyles blockquote {
+      transform: scale(0.333); } }
 .slide .aria {
   margin-left: 30vw;
   white-space: pre;

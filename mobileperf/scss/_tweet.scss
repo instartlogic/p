@@ -5,14 +5,15 @@
    }
 }
 
-@media screen and (min-width: 978px) {
+@media screen and (min-width: 500px) {
 .fuckInlineStyles {
-   transform: scale(3);
+   transform: scale(1.5);
    blockquote {
-   transform: scale(.333);
+   transform: scale(.667);
    }
-  }
+ }
 }
+
 @media screen and (min-width: 700px) {
 .fuckInlineStyles {
    transform: scale(2);
@@ -22,11 +23,11 @@
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 978px) {
 .fuckInlineStyles {
-   transform: scale(1.5);
+   transform: scale(3);
    blockquote {
-   transform: scale(.667);
+   transform: scale(.333);
    }
- }
+  }
 }
