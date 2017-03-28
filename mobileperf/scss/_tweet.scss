@@ -1,19 +1,32 @@
-.twitter-tweet-rendered {
+.fuckInlineStyles {
    transform-origin: top left;
-   margin-left: 10px;
+   .twitter-tweet {
+   transform-origin: top left;
+   }
 }
+
 @media screen and (min-width: 978px) {
-.twitter-tweet-rendered {
+.fuckInlineStyles {
    transform: scale(3);
-}
+   .twitter-tweet {
+   transform: scale(.333) !important;
+   }
+  }
 }
 @media screen and (min-width: 700px) {
-.twitter-tweet-rendered {
+.fuckInlineStyles {
    transform: scale(2);
+   .twitter-tweet {
+   transform: scale(.5) !important;
+   }
+  }
 }
 }
 @media screen and (min-width: 500px) {
-.twitter-tweet-rendered {
+.fuckInlineStyles {
    transform: scale(1.5);
-}
+   .twitter-tweet {
+   transform: scale(.667) !important;
+   }
+ }
 }
