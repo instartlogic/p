@@ -286,13 +286,19 @@ acronym {
   transform-origin: top left;
   transform: scale(3); }
 
-.fuckInlineStyles {
+.twitter-tweet-rendered {
   transform-origin: top left;
-  transform: scale(3); }
-  .fuckInlineStyles .twitter-tweet {
-    transform-origin: top left;
-    transform: scale(0.333); }
+  margin-left: 10px; }
 
+@media screen and (min-width: 978px) {
+  .twitter-tweet-rendered {
+    transform: scale(3); } }
+@media screen and (min-width: 700px) {
+  .twitter-tweet-rendered {
+    transform: scale(2); } }
+@media screen and (min-width: 500px) {
+  .twitter-tweet-rendered {
+    transform: scale(1.5); } }
 .slide .aria {
   margin-left: 30vw;
   white-space: pre;

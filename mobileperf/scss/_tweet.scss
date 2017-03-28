@@ -1,8 +1,19 @@
-.fuckInlineStyles {
+.twitter-tweet-rendered {
    transform-origin: top left;
+   margin-left: 10px;
+}
+@media screen and (min-width: 978px) {
+.twitter-tweet-rendered {
    transform: scale(3);
-   .twitter-tweet {
-   transform-origin: top left;
-   transform: scale(.333);
-   }
+}
+}
+@media screen and (min-width: 700px) {
+.twitter-tweet-rendered {
+   transform: scale(2);
+}
+}
+@media screen and (min-width: 500px) {
+.twitter-tweet-rendered {
+   transform: scale(1.5);
+}
 }
