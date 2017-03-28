@@ -13,7 +13,7 @@
 		width: 50%;
 		text-align: center;
 		float: right;
-		font-size: calc((8vh + 8vw) / 2);
+		font-size: calc((10vh + 10vw) / 2);
 	}
 }
 
@@ -29,10 +29,11 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	h1 {	
-  		text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+		background: rgba(255,255,255,0.7);
 	}
 	&.phonedistribution {
 		background-image: url(../img/phonedist.png);
+		background-position: 25% 50%;
 	}
 	&.seasiacoverage {
 		background-image: url(../img/coverage.png);

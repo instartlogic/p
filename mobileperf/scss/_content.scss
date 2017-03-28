@@ -147,3 +147,7 @@ img {max-width: 90vw;}
 acronym {
   border-bottom: 1px dotted $ilblue;
 }
+.fuckInlineStyles {
+   transform-origin: top left;
+   transform: scale(3);
+}

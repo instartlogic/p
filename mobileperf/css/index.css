@@ -24,20 +24,6 @@ body {
   left: 40%;
   z-index: 500; }
 
-/* optional 
-#topinfo {
-  font-size: small;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  z-index: 500;
-}
-.key {
-  font-weight: bold;
-  padding: 3px;
-  background-color: $darken;
-  }
-*/
 #presentation {
   position: absolute;
   height: 100%;
@@ -81,6 +67,8 @@ ul.books {
   background-color: #226DAA; }
   .divider * {
     color: #fff; }
+  .divider ol {
+    padding-left: 3vw; }
 
 /* OBJECT PAGES */
 .object header {
@@ -294,6 +282,10 @@ img {
 acronym {
   border-bottom: 1px dotted #226DAA; }
 
+.fuckInlineStyles {
+  transform-origin: top left;
+  transform: scale(3); }
+
 .tweet iframe {
   margin: 100px auto 0 !important;
   font-size: 1.2rem;
@@ -346,7 +338,7 @@ acronym {
     width: 50%;
     text-align: center;
     float: right;
-    font-size: calc((8vh + 8vw) / 2); }
+    font-size: calc((10vh + 10vw) / 2); }
 
 .credit footer {
   position: absolute;
@@ -360,9 +352,10 @@ acronym {
   background-repeat: no-repeat;
   background-position: center; }
   .fullimg h1 {
-    text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px; }
+    background: rgba(255, 255, 255, 0.7); }
   .fullimg.phonedistribution {
-    background-image: url(../img/phonedist.png); }
+    background-image: url(../img/phonedist.png);
+    background-position: 25% 50%; }
   .fullimg.seasiacoverage {
     background-image: url(../img/coverage.png); }
 
@@ -436,13 +429,13 @@ acronym {
   border-collapse: collapse;
   border-spacing: 0;
   color: #ffffff;
-  width: 320px;
+  width: 32vmax;
   background-color: #666; }
   .htc .th {
-    margin: 20px auto; }
+    margin: 4vmin auto; }
   .htc td, .htc th {
-    font-size: 14px;
-    padding: 2px 4px; }
+    font-size: 2vmin;
+    padding: 0.4vmin 0.8vmax; }
   .htc thead {
     background-image: linear-gradient(to bottom, #333, #aaa, #333); }
   .htc tfoot tr td {
@@ -455,8 +448,8 @@ acronym {
   .htc tbody tr:nth-of-type(4n-2) {
     background-color: black; }
   .htc tbody tr:nth-of-type(even) td {
-    padding-bottom: 4px; }
+    padding-bottom: 0.8vmin; }
   .htc tbody tr:nth-of-type(odd) td {
-    padding-top: 4px; }
+    padding-top: 0.8vmin; }
 
 /*# sourceMappingURL=index.css.map */

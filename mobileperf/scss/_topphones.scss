@@ -20,14 +20,14 @@
   border-collapse: collapse;
   border-spacing:0;
   color: #ffffff;
-  width: 320px;
+  width: 32vmax;
   background-color: #666;
   	.th {
-	  margin: 20px auto;
+	  margin: 4vmin auto;
   	}
   	td, th {
-   		font-size: 14px;
-   		padding: 2px 4px;
+   		font-size: 2vmin;
+   		padding: 0.4vmin 0.8vmax;
 	}
 	thead {
 	  background-image: linear-gradient(to bottom,
@@ -48,10 +48,10 @@
 	  		background-color: black;
 	 	}
 		tr:nth-of-type(even) td{
-	  		padding-bottom: 4px;
+	  		padding-bottom: 0.8vmin;
 	 	}
 		tr:nth-of-type(odd) td{
-	  		padding-top: 4px;
+	  		padding-top: 0.8vmin;
 	 	}
 	}
 }
