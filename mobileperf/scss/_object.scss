@@ -1,0 +1,17 @@
+.object object, .object .img {
+  height: 100%;
+  width: 100%;
+}
+
+
+.objectlink {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: $ilblue;
+  color: $white;
+  padding: 0.3rem 1rem;
+  border-radius: 0 0 0 2rem;
+  text-decoration: none;
+  font-size: 0.8rem;
+}

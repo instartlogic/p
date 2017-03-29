@@ -1,6 +1,7 @@
 .note {
 	opacity: 0.1;
 }
+
 .break {
 	background-image:url(../img/broken-lcd.jpg); 
 	background-size:cover; 
@@ -60,3 +61,14 @@
 		right: 10px;
 	}
 }
+
+.wholepoint {
+  position: absolute;
+  bottom: 20vh;
+  right: 20px;
+  font-size: 1rem;
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid $ilblue;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px rgba(0, 0, 0, 0.1);
+  background-color: white; }

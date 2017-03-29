@@ -1,7 +1,9 @@
 .fuckInlineStyles {
    transform-origin: top left;
-   .twitter-tweet {
-   transform-origin: top left;
+   margin-left: 10px;
+   blockquote {
+   	  transform-origin: top left;
+   	  margin-left: 0;
    }
 }
 

@@ -12,7 +12,12 @@ Based on: http://estelle.github.com/slides
 Some of your users are on mobile browsers that may be more advanced than the desktop browsers of other users, but chances are those phones with their advanced browsers may have similar memory and bandwidth constraints to the computer you threw out or recycled 5 years ago.
 
 While as developers we’re finally enjoying the ubiquity of modern browsers accessing the web, it’s the devices themselves that are now creating constraints we always need to consider. The issue with mobile isn’t Old IE,  but rather battery life, latency, memory and UI responsiveness. In this session we'll discuss best practices to make sure your site performs well, no matter how your user is accessing your content." /> 
-
+<style>
+.slide {
+	position: relative;
+	min-height: 60vh;
+}
+</style>
 <link class="removeForAT" rel="stylesheet" href="css/index.css">
 
 <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -397,23 +402,23 @@ Twitter: <br/><a href="http://www.twitter.com/webdevtips">@webdevtips</a> <br/> 
 </div>
 
 
-<!-- -->
-<div class="slide" style="background-image: url(img/telephonecans.jpg); background-position: bottom 100px right; background-repeat: no-repeat;">
+<!-- Planes -->
+<div class="slide">
 	<header>
-		<h1>Device Considerations</h1>
+		<h1>Dev Environments ≠ Mobile Experience
+		</h1>
 	</header>
 	<section>
-     <ul>
-        <li>Battery</li>
-      	<li>Latency</li>
-        <li>Memory</li>
-        <li>Responsiveness</li>
-     </ul>
-     <div>
-     <h2>Phones aren't Laptops</h2>
-     <p>More powerful browsers.<br/> Less powerful CPUs</p></div>
-     </section>
+	<img src="img/plane.svg" alt="airplane" style="position: absolute; top: 10vh; left: 5vw; width: 80vw">
+	<img src="img/paperplane.svg" alt="airplane" style="position: absolute; bottom: 10vh; right: 5vw; width: 25vw" class="temphidden">
+	<img src="img/drone.svg" alt="airplane" style="position: absolute; width: 60vw; top: 55vh; left: 25vw;"  class="temphidden">
+
+
+
+	</section>
 </div>
+
+
 <!-- Overview of Performance -->
 <div class="slide divider">
 	<header>
@@ -444,34 +449,22 @@ Twitter: <br/><a href="http://www.twitter.com/webdevtips">@webdevtips</a> <br/> 
 </div>
 
 
+<!-- HTTP Archive November  2010 -->
+<div class="slide"> 
+	<header>
+		<h1>November 2010</h1>
+	</header> 
+	<img  style="height: 80vmin; display: inline-block; margin: auto; max-width: none;" id="bytesperpage2" class="chart" src="http://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=226daa&amp;chd=t:416,34,25,113,2,22&amp;chds=0,416&amp;chdlp=b&amp;chdl=total 702 kB&amp;chl=Images+-+416+kB%7CHTML+-+34+kB%7CStylesheets+-+25+kB%7CScripts+-+113+kB%7CFonts+-+2+kB%7COther+-+22+kB&amp;chma=|5&amp;chtt=Average+Bytes+per+Page+by+Content+Type+November+2010" alt='In 2010, content was Images=416kb, HTML=34kb, Stylesheets=25kb, Scripts=113kb, Fonts=2kb, and Other=22kb for a total of 702kb'>
+</div> 
+
 <!-- HTTP Archive March 1, 2017 -->
 <div class="slide"> 
 	<header>
 		<h1>March 2017</h1>
 	</header> 
-	<img style="height: 80vh; display: inline-block; margin: auto;" id="bytesperpage" class="chart" src="http://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=226daa&amp;is3D=true&amp;chd=t:1664,49,83,417,94,199,12&amp;chds=0,1664&amp;chdlp=b&amp;chdl=total 2533 kB&amp;chl=Images+-+1664+kB%7CHTML+-+49+kB%7CStylesheets+-+83+kB%7CScripts+-+417+kB%7CFonts+-+94+kB%7CVideo+-+199+kB%7COther+-+12+kB&amp;chma=|5&amp;chtt=Average+Bytes+per+Page+by+Content+Type+March+1,+2017"
+	<img style="height: 80vmin; max-width: none; display: inline-block; margin: auto;" id="bytesperpage" class="chart" src="http://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=226daa&amp;is3D=true&amp;chd=t:1664,49,83,417,94,199,12&amp;chds=0,1664&amp;chdlp=b&amp;chdl=total 2533 kB&amp;chl=Images+-+1664+kB%7CHTML+-+49+kB%7CStylesheets+-+83+kB%7CScripts+-+417+kB%7CFonts+-+94+kB%7CVideo+-+199+kB%7COther+-+12+kB&amp;chma=|5&amp;chtt=Average+Bytes+per+Page+by+Content+Type+March+1,+2017"
 	alt='In March 2017, content is Images=1664kb, HTML=49kb, Stylesheets=83kb, Scripts=417kb, Fonts=94kb, Video=199 and Other=12kb for a total of 2533 kb'>
 </div>
-
-
-<!-- HTTP Archive webpage test
-<div class="slide"> 
-	<header>
-		<h1>August 1, 2017</h1>
-	</header> 
-	<img style="height: 80vh; display: inline-block; margin: auto;" id="bytesperpage" class="chart" src="http://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=226daa&amp;is3D=true&amp;chd=t:1299,61,67,508,73,421,16&amp;chds=0,1299&amp;chdlp=b&amp;chdl=total 2463 kB&amp;chl=Images+-+1299+kB%7CHTML+-+61+kB%7CStylesheets+-+67+kB%7CScripts+-+508+kB%7CFonts+-+73+kB%7CVideo+-+421+kB%7COther+-+16+kB&amp;chma=|5&amp;chtt=Average+Bytes+per+Page+by+Content+Type+August+15,+2016"
-	alt='In 2016, content is Images=1299kb, HTML=61kb, Stylesheets=67kb, Scripts=421kb, Fonts=73kb, Video=421 and Other=16kb for a total of 2463 kb'> 
-</div>-->
-
-
-<!-- HTTP Archive November 15, 2017 -->
-<div class="slide"> 
-	<header>
-		<h1>November 2010</h1>
-	</header> 
-	<img  style="height: 80vh; display: inline-block; margin: auto;" id="bytesperpage2" class="chart" src="http://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=226daa&amp;chd=t:416,34,25,113,2,22&amp;chds=0,416&amp;chdlp=b&amp;chdl=total 702 kB&amp;chl=Images+-+416+kB%7CHTML+-+34+kB%7CStylesheets+-+25+kB%7CScripts+-+113+kB%7CFonts+-+2+kB%7COther+-+22+kB&amp;chma=|5&amp;chtt=Average+Bytes+per+Page+by+Content+Type+November+2010" alt='In 2010, content was Images=416kb, HTML=34kb, Stylesheets=25kb, Scripts=113kb, Fonts=2kb, and Other=22kb for a total of 702kb'>
-</div> 
-
 
 
 <div class="slide"> 
@@ -486,6 +479,36 @@ Twitter: <br/><a href="http://www.twitter.com/webdevtips">@webdevtips</a> <br/> 
 	</section>
 </div>
 
+
+<div class="slide object">
+  <object style="background: url(img/feathers.png) top center no-repeat white" data="http://blog.chriszacharias.com/page-weight-matters">
+  	<a href="http://blog.chriszacharias.com/page-weight-matters" target="play"><img src="img/feathers.png" alt="screenshot of Chris Zacharias's blog post from December 2012, 
+Page Weight Matters"></a>
+  </object>
+  <a href="http://blog.chriszacharias.com/page-weight-matters" target="play" class="objectlink">Open in separate window</a>
+  <p class="wholepoint">
+    Youtube Feathers:<br>Regular:  &nbsp;58 requests/1200 kB<br>Feathers: 14 requests/100 kB</p>
+</div>
+
+
+
+<!-- Four points with Cans -->
+<div class="slide" style="background-image: url(img/telephonecans.jpg); background-position: bottom 100px right; background-repeat: no-repeat;">
+	<header>
+		<h1>Device Considerations</h1>
+	</header>
+	<section>
+     <ul>
+        <li>Battery</li>
+      	<li>Latency</li>
+        <li>Memory</li>
+        <li>Responsiveness</li>
+     </ul>
+     <div>
+     <h2>Phones aren't Laptops</h2>
+     <p>More powerful browsers.<br/> Less powerful CPUs</p></div>
+     </section>
+</div>
 <!-- -->
 <div class="slide">
 	<header>
@@ -525,15 +548,6 @@ Twitter: <br/><a href="http://www.twitter.com/webdevtips">@webdevtips</a> <br/> 
 	</section>
 </div>
 
-
-<!-- -->
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
 
 
 <!-- -->

@@ -283,9 +283,11 @@ acronym {
   border-bottom: 1px dotted #226DAA; }
 
 .fuckInlineStyles {
-  transform-origin: top left; }
-  .fuckInlineStyles .twitter-tweet {
-    transform-origin: top left; }
+  transform-origin: top left;
+  margin-left: 10px; }
+  .fuckInlineStyles blockquote {
+    transform-origin: top left;
+    margin-left: 0; }
 
 @media screen and (min-width: 750px) {
   .fuckInlineStyles {
@@ -302,6 +304,21 @@ acronym {
     transform: scale(3); }
     .fuckInlineStyles blockquote {
       transform: scale(0.333); } }
+.object object, .object .img {
+  height: 100%;
+  width: 100%; }
+
+.objectlink {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #226DAA;
+  color: #fff;
+  padding: 0.3rem 1rem;
+  border-radius: 0 0 0 2rem;
+  text-decoration: none;
+  font-size: 0.8rem; }
+
 .slide .aria {
   margin-left: 30vw;
   white-space: pre;
@@ -383,14 +400,27 @@ acronym {
     top: 10px;
     right: 10px; }
 
+.wholepoint {
+  position: absolute;
+  bottom: 20vh;
+  right: 20px;
+  font-size: 1rem;
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid #226DAA;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px rgba(0, 0, 0, 0.1);
+  background-color: white; }
+
 .big_piechart {
   position: relative;
   padding: 0;
-  height: 80vh;
-  width: 80vw;
+  height: 80vmin;
+  width: 80vmin;
   background-size: auto 100%;
   background-repeat: no-repeat;
   display: flex;
+  overflow: visible;
+  border-radius: 50%;
   align-items: center;
   justify-content: center;
   background-position: center;
@@ -406,16 +436,16 @@ acronym {
     width: 2em;
     height: 1em; }
   .big_piechart .small_piechart {
-    height: 24vh;
-    width: 24vh;
+    height: 22vmin;
+    width: 22vmin;
     -webkit-clip-path: circle(48%);
     background-color: #FFF;
     background-position: center;
     background-size: 44vh auto;
     background-image: url(http://chart.googleapis.com/chart?chs=400x225&amp;cht=p&amp;chco=333333&amp;chd=t:416,34,25,113,2,22&amp;chbg=transparent&amp;chds=0,416&amp;chdlp=b&amp;chma=|5); }
   .big_piechart:hover div {
-    height: 43vh;
-    width: 43vh;
+    height: 44vmin;
+    width: 44vmin;
     background-size: 80vh auto;
     background-image: url(http://chart.googleapis.com/chart?chs=400x225&amp;cht=p&amp;chco=333333&amp;chd=t:416,34,25,113,2,22&amp;chbg=transparent&amp;chds=0,416&amp;chdlp=b&amp;chma=|5&amp;chp=-.55); }
 

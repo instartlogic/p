@@ -3,11 +3,13 @@
 .big_piechart {
   position: relative; 
   padding: 0;
-  height: 80vh; 
-  width: 80vw;
+  height: 80vmin; 
+  width: 80vmin;
   background-size: auto 100%; 
   background-repeat: no-repeat;
   display: flex;
+  overflow: visible;
+  border-radius: 50%;
   align-items: center;
   justify-content: center;
   background-position: center;
@@ -22,8 +24,8 @@
     }
 
 .small_piechart {
-    height: 24vh;
-    width: 24vh;
+    height: 22vmin;
+    width: 22vmin;
     -webkit-clip-path: circle(48%);
     background-color: #FFF;
     background-position: center;
@@ -33,8 +35,8 @@
 &:hover div {
   
 
-    height: 43vh;
-    width: 43vh;
+    height: 44vmin;
+    width: 44vmin;
     background-size: 80vh auto;
   background-image: url(http://chart.googleapis.com/chart?chs=400x225&amp;cht=p&amp;chco=333333&amp;chd=t:416,34,25,113,2,22&amp;chbg=transparent&amp;chds=0,416&amp;chdlp=b&amp;chma=|5&amp;chp=-.55);
 }
