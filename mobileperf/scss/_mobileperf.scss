@@ -1,20 +1,21 @@
 .note {
 	opacity: 0.1;
+	font-size: 0.9rem;
 }
 
 .break {
-	background-image:url(../img/broken-lcd.jpg); 
-	background-size:cover; 
+	background-image:url(../img/break.svg);  
 	background-position: top right;
 	section h1 {
 		color: #E65F00;
 		text-shadow: 
 			  3px 3px 3px rgba(0,0,0,0.4),
 			 -1px -1px 0px rgba(255,255,255,0.7);
-		width: 50%;
+		width: 60%;
 		text-align: center;
 		float: right;
-		font-size: calc((10vh + 10vw) / 2);
+		margin-right: 10vw;
+		font-size: calc((8vh + 8vw) / 2);
 	}
 }
 
@@ -71,4 +72,125 @@
   border-radius: 3px;
   border: 1px solid $ilblue;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px rgba(0, 0, 0, 0.1);
-  background-color: white; }
+  background-color: white; 
+}
+
+.arrow {
+    justify-content: flex-start;
+    margin-right: 2em;
+    background-image:
+      linear-gradient(
+          transparent 25%, 
+          $ilblue 25%,  
+          $ilblue 75%, 
+          transparent 75%);
+    position: relative;
+    &::after {
+      content: "";
+      height: 0; width: 0;
+      position: absolute;
+      left: 100%;
+      top: -0.15em;
+      border: 1.5em solid transparent;
+      border-left-color: $ilblue;
+
+    }
+  li {
+    background-color:white;
+    font-size: 0.6rem;
+    font-family: serif;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid $ilblue;
+    border-radius: 5px;
+    flex: 1;
+    max-width: 6.5%;
+    text-align: center;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+  }
+}
+
+.bluearrow {
+	position: absolute;
+	top: 6rem;
+	left: 48%;
+	overflow: visible;
+	&::before,
+	&::after {
+		height: 0;
+		width: 0;
+		content: "";
+		color: $ilblue;
+		transform: rotate(-28deg);
+		position: absolute;
+		left: 0;
+	}
+	&::before {
+		width: 100px;
+		height: 20px;
+		background:  $ilblue; top: 40px; 
+	}
+	&::after {
+		border: 30px transparent solid;
+		border-right-color: inherit;
+		left: -50px;
+		top: 57px;
+	}
+}
+
+.plane {
+	position: absolute; 
+	top:  calc((10vw+10vh)/2); 
+	left:  calc((5vw+5vh)/2); 
+	width: calc((100vw+100vh)/2)
+}
+.paperplane {
+	position: absolute; 
+	top: calc((80vw+80vh)/2); 
+	left: calc((80vw+80vh)/2); 
+	width: calc((25vw+25vh)/2)
+}
+.drone {
+	position: absolute;  
+	width: calc((40vw+40vh)/2);
+	top:   calc((50vw+50vh)/2); 
+	left:  calc((50vw+50vh)/2);
+}
+
+.hidden_dd {
+  margin-top: 0;
+  transform: translatey(-1vh);
+  max-height: 80vh;
+  overflow: scroll;
+  margin-bottom: 3vh; 
+  dt {
+    margin-bottom: 0;
+    margin-top: 0.2rem;
+    padding-left: 5px;
+    font-weight: bold;
+    display: block;
+    clear: both;
+    border-bottom: 1px solid #dedede;
+    font-size: 1.6rem; 
+    &:hover {
+      color: #ffffff;
+      background-color: #226DAA;
+      border-bottom: 1px solid #226DAA; 
+ 	 }
+ 	}
+   dd {
+    position: absolute;
+    top: -301vh;
+    font-size: 1rem;
+    margin-left: 0;
+    padding: 5px 5px 10px 10px; *{
+    font-size: 1rem;}}
+  dt:hover + dd {
+    position: static;
+    background-color: #dedede;
+  } 
+}
+
+.halfwidth dd {
+  width: 50%; }
+
