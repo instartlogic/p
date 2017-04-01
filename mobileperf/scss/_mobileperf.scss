@@ -194,3 +194,72 @@
 .halfwidth dd {
   width: 50%; }
 
+.phonemask {
+	width: 182px; height: 356px;
+	background-image: url(../img/oldiphone.jpg);
+	padding: 99px 11px 80px 12px;
+	box-sizing: border-box;
+ 	div {
+ 		height: 100%;
+ 		width: 100%;
+ 		background-image: url(../img/alexa.gif);
+ 		background-size: 400px auto;
+		&.contain {
+			background-size: cover;
+		}
+	}
+  + .arrow {
+  	background: none;
+  	width: 100px;
+  	position:relative;
+  	padding-left: 40px;
+  	&::before, &::after {
+  		height: 0;
+		width: 0;
+		content: "";
+		color: $ilblue;
+		position: absolute;
+	}
+  	&::before {
+		width: 100px;
+		height: 20px;
+		background:  $ilblue; top: 90px; 
+	}
+	&::after {
+		border: 30px transparent solid;
+		border-left-color: inherit;
+		top: 70px;
+		right: 0;
+	}
+
+  }
+}
+
+.hoverhilite.bad:hover {
+	display: inline-block; white-space: normal; width: 18rem;
+	background: linear-gradient(to bottom right, transparent 45%, red 45%, red 55%, transparent 55%),
+	linear-gradient(to bottom left, transparent 45%, red 45%, red 55%, transparent 55%),
+}
+
+.lineone {
+	ol > li::first-line {
+		color: white; 
+		background-color: $ilblue; 
+	}
+}
+
+.cloudfour {
+	align-items: flex-end;
+	pre {
+    	font-size: 0.8rem;
+    	padding: 10px 20px;
+    	background: none;
+	}
+	img {
+		text-align: center;
+    	background-color: rgb(34, 109, 170);
+    	margin: 0 10px;
+    	border: 1px solid initial;
+    	padding: 20px 20px 0 0;
+	}
+}

@@ -282,6 +282,14 @@ img {
 acronym {
   border-bottom: 1px dotted #226DAA; }
 
+pre {
+  background-color: #dededa;
+  font-size: 1.3rem;
+  padding: 1vh 1vw;
+  border-radius: 1vw;
+  margin-left: 1vw;
+  margin-right: 2vw; }
+
 div, section {
   background-repeat: no-repeat; }
 
@@ -517,6 +525,64 @@ div, section {
 
 .halfwidth dd {
   width: 50%; }
+
+.phonemask {
+  width: 182px;
+  height: 356px;
+  background-image: url(../img/oldiphone.jpg);
+  padding: 99px 11px 80px 12px;
+  box-sizing: border-box; }
+  .phonemask div {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/alexa.gif);
+    background-size: 400px auto; }
+    .phonemask div.contain {
+      background-size: cover; }
+  .phonemask + .arrow {
+    background: none;
+    width: 100px;
+    position: relative;
+    padding-left: 40px; }
+    .phonemask + .arrow::before, .phonemask + .arrow::after {
+      height: 0;
+      width: 0;
+      content: "";
+      color: #226DAA;
+      position: absolute; }
+    .phonemask + .arrow::before {
+      width: 100px;
+      height: 20px;
+      background: #226DAA;
+      top: 90px; }
+    .phonemask + .arrow::after {
+      border: 30px transparent solid;
+      border-left-color: inherit;
+      top: 70px;
+      right: 0; }
+
+.hoverhilite.bad:hover {
+  display: inline-block;
+  white-space: normal;
+  width: 18rem;
+  background: linear-gradient(to bottom right, transparent 45%, red 45%, red 55%, transparent 55%), linear-gradient(to bottom left, transparent 45%, red 45%, red 55%, transparent 55%); }
+
+.lineone ol > li::first-line {
+  color: white;
+  background-color: #226DAA; }
+
+.cloudfour {
+  align-items: flex-end; }
+  .cloudfour pre {
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    background: none; }
+  .cloudfour img {
+    text-align: center;
+    background-color: #226daa;
+    margin: 0 10px;
+    border: 1px solid initial;
+    padding: 20px 20px 0 0; }
 
 .big_piechart {
   position: relative;

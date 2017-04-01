@@ -33,7 +33,7 @@ While as developers we’re finally enjoying the ubiquity of modern browsers acc
   
 <!-- TITLE SLIDE --> 
   <div class="slide intro">
-    <section class="content">
+    <section>
     <h1 style="font-size: 3rem; margin-top: 10%;">Mobile Web Performance</h1>
       
       <p><a href="http://instartlogic.github.io/p/spdperception">http://instartlogic.github.io/p/mobileperf</a></p>
@@ -95,7 +95,7 @@ While as developers we’re finally enjoying the ubiquity of modern browsers acc
 
 <!-- ESTELLE WEYL -->
 <div class="slide">
-<section class="content">
+<section>
 <div class="flex">
 <div>
 <h1>Estelle Weyl</h1>
@@ -778,7 +778,7 @@ Page Weight Matters"></a>
 		<li>Developer Tools</li>
 		<li>Lighthouse</li>
 	</ul>
-	<ul style="overflow-y: scroll; height: 80vh; margin-left: 2vw;">
+	<ul style="overflow-y: scroll; height: 80vh; margin-left: 6vw;">
 		<li>Minimize Requests</li>
 		<li>Reduce DNS lookups</li>
 		<li>Avoid Redirects</li>
@@ -800,7 +800,7 @@ Page Weight Matters"></a>
 		<li>Avoid reflows and repaints</li>
 		<li>Use the right input type</li>
 		<li>Configure the viewport</li>
-		<li>Make the site squishy<li>
+		<li>Make the site squishy</	li>
 		<li>Ensure legibility</li>
 		<li>Serve the right size images</li>
 		<li>Effective content strategy</li>
@@ -812,7 +812,7 @@ Page Weight Matters"></a>
 
 <div class="slide">
 <header><h1>PageSpeed</h1></header>
-<section class="content">
+<section>
 <dl class="hidden_dd">
 <dt>Minimize request size</dt>
  <dd>GZip all requests. </dd>
@@ -870,7 +870,7 @@ Page Weight Matters"></a>
 
 <div class="slide"> 
 <header><h1>Usability Rules</h1></header> 
-<section class="content"> 
+<section> 
 <dl class="hidden_dd">
 <dt>Avoid plugins</dt>
  
@@ -894,23 +894,23 @@ Page Weight Matters"></a>
 
 <div class="slide"> 
 <header><h1>Image Optimization</h1></header> 
-<section class="content"> 
+<section> 
 <dl class="hidden_dd">
 <dt>GZip</dt>
-<dd>GZip works best for text-based content, while providing little to no byte shrinkage on previously-compressed assets. SVG is a text-based image format. Minifying and GZipping SVG image and font files can greatly <a href="http://calendar.perfplanet.com/2014/tips-for-optimising-svg-delivery-for-the-web/">reduce their SVG file size</a>. Minify first. Then Gzip.</dd>
+<!--<dd>GZip works best for text-based content, while providing little to no byte shrinkage on previously-compressed assets. SVG is a text-based image format. Minifying and GZipping SVG image and font files can greatly <a href="http://calendar.perfplanet.com/2014/tips-for-optimising-svg-delivery-for-the-web/">reduce their SVG file size</a>. Minify first. Then Gzip.</dd>-->
 <dt>Remove Image Metadata</dt>
-<dd>Cameras and software often add metadata to images that is not seen by the web user. This metadata can actually be a security risk by exposing geographical data. There’s free software that will <a href="https://itunes.apple.com/us/app/exifpurge/id784466108?mt=12">strip EXIF metadata</a> from multiple images at a time.</dd>
+<!--<dd>Cameras and software often add metadata to images that is not seen by the web user. This metadata can actually be a security risk by exposing geographical data. There’s free software that will <a href="https://itunes.apple.com/us/app/exifpurge/id784466108?mt=12">strip EXIF metadata</a> from multiple images at a time.</dd>-->
 <dt>Resize Images</dt>
-<dd>Serve the smallest image file for the screen size and resolution. <ul>
+<!--<dd>Serve the smallest image file for the screen size and resolution. <ul>
 <li> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">&lt;picture&gt;</a> element</li>
 <li><a href="http://www.sitepoint.com/how-to-build-responsive-images-with-srcset/">srcset</a> attribute</li><li>load small background images in CSS Internet Explorer, consider using <a href="http://scottjehl.github.io/picturefill/">Picturefill</a> or JS-free <a href="https://www.smashingmagazine.com/2013/06/clown-car-technique-solving-for-adaptive-images-in-responsive-web-design/">Clown Car Technique</a>.</li>
 <li>Serve scaled images. Resizing images means <a href="http://blog.cloudfour.com/responsive-images-101-part-9-image-breakpoints/">downloading unneeded pixels</a> and take longer to decode and paint.
 </li></ul>
-</dd>
+</dd>-->
 <dt>Optimize Images</dt>
-<dd>Serve the smallest image size for the screen size and resolution. Images, no matter the size, should be compressed as much as possible without noticeably degrading the quality. Image compression programs include <a href="https://imageoptim.com/">ImageOptim</a> and <a href="https://pngmini.com/">ImageAlpha</a> for pngs. Can be automated with machine learning with <a href="https://www.instartlogic.com/blog/playing-smartvision-intelligent-image-optimization">SmartVision</a>.</dd>
+<!--<dd>Serve the smallest image size for the screen size and resolution. Images, no matter the size, should be compressed as much as possible without noticeably degrading the quality. Image compression programs include <a href="https://imageoptim.com/">ImageOptim</a> and <a href="https://pngmini.com/">ImageAlpha</a> for pngs. Can be automated with machine learning with <a href="https://www.instartlogic.com/blog/playing-smartvision-intelligent-image-optimization">SmartVision</a>.</dd>-->
 <dt>Use the Right Image Format</dt>
-<dd>Image types include SVG, GIF, JPEG, PNG, and WebP. 
+<!--<dd>Image types include SVG, GIF, JPEG, PNG, and WebP. 
 <ul>
 <li>GIF: Palette of less than 256 colors, like a comic, for transparency and for low quality animation</li>
 <li>SVG: Better than GIFS: Scalable, Animatable, unlimited color pallette</li>
@@ -920,9 +920,9 @@ Page Weight Matters"></a>
 <li> WebP:  Animation, transparency, and great resolution with small file size, but only supported in Blink. <a href="https://developers.google.com/speed/webp/faq#which_web_browsers_natively_support_webp">Test WebP</a></li>
 <li>JPEG-XR: For Edge</li>
 </ul>
-</dd>
+</dd>-->
 <dt>Reduce the Number of Images</dt>
-<dd>Reduce HTTP requests with sprites. Also, consider reducing actual number of images your page requires: is your image worth 1,000 words or does your site work better without it?</dd>
+<!--<dd>Reduce HTTP requests with sprites. Also, consider reducing actual number of images your page requires: is your image worth 1,000 words or does your site work better without it?</dd>
 <dt>Leverage CSS</dt>
 <dd>Leverage CSS to reduce image size and number of images:
 	<ul><li><strong>Image Masking:</strong> use <a href="http://wegraphics.net/blog/articles/png-masking-how-to-dynamically-shape-any-image-on-your-website/">image masking</a> when you need a “transparent JPEG” without PNG-24 file size</li>
@@ -932,11 +932,12 @@ Page Weight Matters"></a>
 	<li><strong>Filters:</strong> use <a href="http://www.html5rocks.com/en/tutorials/filters/understanding-css/">CSS filter</a> effects instead of multiple versions of the same image if you want filters applied: save bytes, HTTP requests and time</li>
 	<li><strong>Media Queries:</strong> Use media queries to serve hi-res images to hi-res devices</li><li><strong>Animation:</strong> when animating GIFs, consider CSS <a href="http://codepen.io/estelle/pen/LyItm">animation using the steps()</a> timing function and sprites as an alternative</li>
 	</ul>
-</dd>
+</dd>-->
 </dl>
-<p><strong>Note:</strong> Include an <em>alt</em> attribute on all  foreground images, with empty <a href="http://webaim.org/techniques/alttext/"><em>alt</em> attribute</a> for decorative images.</p>
+<p>
+My <a href="https://www.instartlogic.com/blog/image-optimization-tips-for-improved-web-performance">Tips</a> &amp; <a href="https://calendar.perfplanet.com/2016/image-optimization/">Deep Dive</a></p>
 
-<a class="pagelink" href="https://www.instartlogic.com/blog/image-optimization-tips-for-improved-web-performance">Image Optimization Tips</a>
+<p><strong>Note:</strong> Include an <em>alt</em> attribute on all  foreground images, with empty <a href="http://webaim.org/techniques/alttext/"><em>alt</em> attribute</a> for decorative images.</p>
 </section>
 </div>
 
@@ -945,35 +946,157 @@ Page Weight Matters"></a>
 
 <!-- -->
 <div class="slide">
-	<header>
-		<h1>#1: Configure the Viewport</h1>
-	</header>
-	<section>
-	</section>
+  <header><h1>#1: Configure the Viewport</h1></header>
+    <section><pre>&lt;meta name="viewport"
+   content="width=device-width, ..."&gt;</pre>
+<ol style="line-height: 1"> 
+       <li>viewport size</li>
+       <li>zoom factor</li>
+       <li>orientation</li>
+     </ol>
+
+     <pre>@viewport { viewport-properties }</pre>
+<small>
+     Resource: <a href="http://www.quirksmode.org/mobile/viewports2.html" target="_blank">A tale of 2 viewports</a><br>
+      Tutorial: <a href="http://estelle.github.io/CSS-Workshop/part_04_media.html" target="_blank">Media Queries slide deck</a></small>
+    </section>
 </div>
 
 
 <!-- -->
 <div class="slide">
 	<header>
-		<h1></h1>
+		<h1>One line of code....</h1>
 	</header>
-	<section>
+	<section class="flex">
+	<div class="phonemask"><div class="contain"></div></div>
+	<div class="arrow"></div>
+	<div class="phonemask"><div></div></div>
 	</section>
+</div>
+
+<div class="slide">
+<header><h1>Don't be a jerk like GMail</h1></header>
+<pre>&lt;meta name="viewport" 
+  content="<span class="hoverhilite">initial-scale=1.0</span>, 
+           <span class="hoverhilite bad">maximum-scale=1.0, 
+           minimum-scale=1.0, 
+           user-scalable=no,</span> 
+           <span class="hoverhilite">width=device-width</span>"&gt;</pre>
+<img src="img/gmail.png" alt="Gmail doesn't allow resizing" style="margin: auto; display: block; width: 320px">
 </div>
 
 
 <!-- -->
 <div class="slide">
 	<header>
-		<h1></h1>
+		<h1>#2 Optimize all Images</h1>
 	</header>
 	<section>
+<ol>
+	<li>GZip</li>
+	<li>Remove Image Metadata</li>
+	<li>Resize Images</li>
+	<li>Optimize Images</li>
+	<li>Use the Right Image Format</li>
+	<li>Reduce the Number of Images</li>
+	<li>Leverage CSS</li>
+</ol>
+
 	</section>
 </div>
 
+
+
+<div class="slide lineone"> 
+<header><h1>#2 Optimize all Images</h1></header> 
+<section> 
+<ol>
+<li>GZip
+<p>Minify and GZip SVG and font files. In that order. See
+ <a href="http://calendar.perfplanet.com/2014/tips-for-optimising-svg-delivery-for-the-web/"> tips for optimising SVG delivery</a>. </p>
+</li>
+<li>Remove Image Metadata
+<p>Metadata adds bytes and can  be a security risk by exposing geographical data. You can <a href="https://itunes.apple.com/us/app/exifpurge/id784466108?mt=12">Strip EXIF metadata</a> from multiple images at a time.</p>
+</li>
+</ol>
+</section>
+</div>
+
+<div class="slide lineone"> 
+<header><h1>#2 Optimize all Images</h1></header> 
+<section> 
+<ol start="3">
+<li>Resize Images
+<p>Serve the smallest image file for the screen size and resolution. </p>
+	<ul>
+		<li>Serve scaled images. <br/>Resizing images means <a href="http://blog.cloudfour.com/responsive-images-101-part-9-image-breakpoints/">downloading unneeded pixels</a> and take longer to decode and paint.</li>
+
+
+		<li> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">&lt;picture&gt;</a> element and <a href="http://www.sitepoint.com/how-to-build-responsive-images-with-srcset/">srcset</a> attribute</li>
+
+		<li>Old browsers? load small background images in CSS Internet Explorer, consider using <a href="http://scottjehl.github.io/picturefill/">Picturefill</a> or JS-free <a href="https://www.smashingmagazine.com/2013/06/clown-car-technique-solving-for-adaptive-images-in-responsive-web-design/">Clown Car Technique</a>.</li>
+		</ul>
+	</li>
+</ol>
+</section>
+</div>
+
+
+
+
+
+
+
+
+<!-- useless bytes -->
 <div class="slide">
-<header><h1><code>&lt;picture&gt;, &lt;source&gt; &amp; srcset</code></h1></header>
+<header>
+	<h1>Right Size Your Images: Unneeded pixels</h1>
+</header>
+
+<ul class="cloudfour flex">
+<li><pre style="margin:0 -40px 0 -60px;">240 x 240 = 57,600
+200 x 200 = 40,000
+            17,600</pre>
+<img src="img/small.png" width="100"></li>
+<li><pre style="margin: 0 -30px;">440 x 440 = 193,600
+400 x 400 = 160,000
+             33,600</pre><img src="img/medium.png" width="200"></li>
+<li><pre>640 x 640 = 409,600
+600 x 600 = 360,000
+             49,000</pre><img src="img/big.png" width="300"></li>
+<li><pre>840 x 840 = 705,600
+800 x 800 = 640,000
+             65,600</pre><img src="img/huge.png" width="400"></li>
+</ul>
+<p><a href="http://blog.cloudfour.com/responsive-images-101-part-9-image-breakpoints/" class="objectlink">CloudFour: image breakpoints</a>
+</p></div>
+
+
+<div class="slide">
+   <header><h1>Scaling can be slow....</h1></header>
+     <section class="content">
+
+      <p>Scaled: 1,850 milliseconds</p>
+      <img src="img/bad-trimmed-2_resize_image.png">
+
+      <p>Right-sized: 625 milliseconds</p>
+      <img src="img/good-trimmed-2_resize_image.png">
+<small>blue = CPU used to decode<br/>
+green = FPS (more is better)<br/>
+purple = rendering</small>
+  <a class="objectlink" href="http://physicsoffast.io/demos/">PhysicsOfFast</a>
+    <footer><a href="https://twitter.com/tobint">Tobin Titus, Microsoft</a></footer> </section>
+ </div>
+
+
+
+
+
+<!-- <PICTURE> ELEMENT -->
+<div class="slide">
+<header><h1>#2, sect. 3, part B<br/><code>&lt;picture&gt;, &lt;source&gt; &amp; srcset</code></h1></header>
 <pre>&lt;picture&gt;
   &lt;source srcset="large.jpg" 
           media="(min-width: 1000px)"&gt;
@@ -985,6 +1108,131 @@ Page Weight Matters"></a>
 &lt;/picture&gt;</pre>
 
 </div>
+
+
+<!-- -->
+<div class="slide lineone">
+	<header>
+		<h1>#2 Optimize all Images</h1>
+	</header>
+	<section>
+<ol start="4">
+<li>Optimize Images
+<ul>
+	<li>Compressed without noticeably degrading  quality. </li>
+	<li>Image compression: <a href="https://imageoptim.com/">ImageOptim</a>, <a href="https://pngmini.com/">ImageAlpha</a>, <a href="https://tinypng.com/">TinyPNG</a>, PhotoShop, etc.</li>
+	<li>JPEG Image compression automation has issues. (see <a href="https://www.instartlogic.com/blog/playing-smartvision-intelligent-image-optimization">SmartVision</a>).</li>
+</li>
+</ol>
+</section>
+</div>
+
+<!-- -->
+<div class="slide  lineone">
+	<header>
+		<h1>#2 Optimize all Images</h1>
+	</header>
+	<section>
+<ol start="5">
+<li>
+Use the Right Image Format
+<p>Image types include SVG, GIF, JPEG, PNG, and WebP. </p>
+<ul>
+<li>GIF: Palette of less than 256 colors, like a comic, for transparency and for low quality animation</li>
+<li>SVG: Better than GIFS: Scalable, Animatable, unlimited color pallette</li>
+<li>PNG: When you need transparency and have more than 256 colors.</li>
+<li>JPEG: raster images</li>
+<li>JPEG with a CSS mask: when you need transparency on a raster image and PNG-24 file size is huge</li>
+<li> WebP:  Animation, transparency, and great resolution with small file size, but only supported in Blink. <a href="https://developers.google.com/speed/webp/faq#which_web_browsers_natively_support_webp">Test WebP</a></li>
+<li>JPEG-XR: For Edge</li>
+</ul>
+</li>
+</ol>
+</section>
+</div>
+
+
+
+<div class="slide  lineone">
+	<header>
+		<h1>Smallest file size</h1>
+	</header>
+	<section>
+
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Browser</strong></p>
+</td>
+<td>
+<p><strong>Optimal image format</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Chrome</p>
+</td>
+<td>
+<p>WebP</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>IE 9+ / Edge &nbsp;</p>
+</td>
+<td>
+<p>JPEG-XR</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Opera</p>
+</td>
+<td>
+<p>WebP</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Safari</p>
+</td>
+<td>
+<p>JPEG-2000</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="note">You don't have to change the file extension.</p>
+</section></div>
+
+
+<!-- -->
+<div class="slide  lineone">
+	<section>
+<ol start="6">
+<li>Reduce the Number of Images
+<ul><li>
+Sprites</li>
+<li>Just fewer images</li>
+</ul></li>
+<li>Leverage CSS
+<ul><li><strong>Image Masking.</strong> use <a href="http://wegraphics.net/blog/articles/png-masking-how-to-dynamically-shape-any-image-on-your-website/"> create “transparent JPEG” without PNG-24 file size</a></li>
+	<li><strong>CSS Effects:</strong> gradients, borders, rounded corners, shadows, etc. </li>
+	<li><strong>Sprites:</strong> especially without HTTP/2</li>
+	
+	<li><strong>CSS Filters:</strong> </li>
+	<li><strong>Media Queries:</strong> serve hi-res images to hi-res devices</li><li><strong>Animation:</strong>  <a href="http://codepen.io/estelle/pen/LyItm">steps()</a> as alternative to animated gifs.</li>
+	</ul>
+</li>
+</ol>
+</section>
+</div>
+
+
+
+
+
 <!-- -->
 <div class="slide">
 	<header>
@@ -996,7 +1244,7 @@ Page Weight Matters"></a>
 
 <div class="slide">
 <header><h1>JavaScript</h1>
-     <section class="content">
+     <section>
 <ul>
 <li><em>Render cost:</em> JS (and CSS <strong title="can be as expensive to render as">and images</strong>)</li>
 <li>JS (download, parsing &amp; executing) </li>
