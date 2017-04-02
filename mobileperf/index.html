@@ -708,7 +708,7 @@ Page Weight Matters"></a>
 	</section>
 </div>
 
-<!-- -->
+<!-- Wired Waterfall-->
 <div class="slide">
 	<header>
 		<h1>(Note the colors)</h1>
@@ -897,42 +897,16 @@ Page Weight Matters"></a>
 <section> 
 <dl class="hidden_dd">
 <dt>GZip</dt>
-<!--<dd>GZip works best for text-based content, while providing little to no byte shrinkage on previously-compressed assets. SVG is a text-based image format. Minifying and GZipping SVG image and font files can greatly <a href="http://calendar.perfplanet.com/2014/tips-for-optimising-svg-delivery-for-the-web/">reduce their SVG file size</a>. Minify first. Then Gzip.</dd>-->
 <dt>Remove Image Metadata</dt>
-<!--<dd>Cameras and software often add metadata to images that is not seen by the web user. This metadata can actually be a security risk by exposing geographical data. There’s free software that will <a href="https://itunes.apple.com/us/app/exifpurge/id784466108?mt=12">strip EXIF metadata</a> from multiple images at a time.</dd>-->
+
 <dt>Resize Images</dt>
-<!--<dd>Serve the smallest image file for the screen size and resolution. <ul>
-<li> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">&lt;picture&gt;</a> element</li>
-<li><a href="http://www.sitepoint.com/how-to-build-responsive-images-with-srcset/">srcset</a> attribute</li><li>load small background images in CSS Internet Explorer, consider using <a href="http://scottjehl.github.io/picturefill/">Picturefill</a> or JS-free <a href="https://www.smashingmagazine.com/2013/06/clown-car-technique-solving-for-adaptive-images-in-responsive-web-design/">Clown Car Technique</a>.</li>
-<li>Serve scaled images. Resizing images means <a href="http://blog.cloudfour.com/responsive-images-101-part-9-image-breakpoints/">downloading unneeded pixels</a> and take longer to decode and paint.
-</li></ul>
-</dd>-->
+
 <dt>Optimize Images</dt>
-<!--<dd>Serve the smallest image size for the screen size and resolution. Images, no matter the size, should be compressed as much as possible without noticeably degrading the quality. Image compression programs include <a href="https://imageoptim.com/">ImageOptim</a> and <a href="https://pngmini.com/">ImageAlpha</a> for pngs. Can be automated with machine learning with <a href="https://www.instartlogic.com/blog/playing-smartvision-intelligent-image-optimization">SmartVision</a>.</dd>-->
+
 <dt>Use the Right Image Format</dt>
-<!--<dd>Image types include SVG, GIF, JPEG, PNG, and WebP. 
-<ul>
-<li>GIF: Palette of less than 256 colors, like a comic, for transparency and for low quality animation</li>
-<li>SVG: Better than GIFS: Scalable, Animatable, unlimited color pallette</li>
-<li>PNG: When you need transparency and have more than 256 colors.</li>
-<li>JPEG: raster images</li>
-<li>JPEG with a CSS mask: when you need transparency on a raster image and PNG-24 file size is huge</li>
-<li> WebP:  Animation, transparency, and great resolution with small file size, but only supported in Blink. <a href="https://developers.google.com/speed/webp/faq#which_web_browsers_natively_support_webp">Test WebP</a></li>
-<li>JPEG-XR: For Edge</li>
-</ul>
-</dd>-->
+
 <dt>Reduce the Number of Images</dt>
-<!--<dd>Reduce HTTP requests with sprites. Also, consider reducing actual number of images your page requires: is your image worth 1,000 words or does your site work better without it?</dd>
-<dt>Leverage CSS</dt>
-<dd>Leverage CSS to reduce image size and number of images:
-	<ul><li><strong>Image Masking:</strong> use <a href="http://wegraphics.net/blog/articles/png-masking-how-to-dynamically-shape-any-image-on-your-website/">image masking</a> when you need a “transparent JPEG” without PNG-24 file size</li>
-	<li><strong>CSS Effects:</strong> gradients, borders, outlines, rounded corners, shadows, etc. Create resolution-independent effects with minifiable &amp; gZippable text</li>
-	<li><strong>Sprites:</strong> until HTTP/2 is fully supported  use <a href="https://www.smashingmagazine.com/2009/04/the-mystery-of-css-sprites-techniques-tools-and-tutorials/">image sprites</a> and background-position to reduce number of requests</li>
-	
-	<li><strong>Filters:</strong> use <a href="http://www.html5rocks.com/en/tutorials/filters/understanding-css/">CSS filter</a> effects instead of multiple versions of the same image if you want filters applied: save bytes, HTTP requests and time</li>
-	<li><strong>Media Queries:</strong> Use media queries to serve hi-res images to hi-res devices</li><li><strong>Animation:</strong> when animating GIFs, consider CSS <a href="http://codepen.io/estelle/pen/LyItm">animation using the steps()</a> timing function and sprites as an alternative</li>
-	</ul>
-</dd>-->
+
 </dl>
 <p>
 My <a href="https://www.instartlogic.com/blog/image-optimization-tips-for-improved-web-performance">Tips</a> &amp; <a href="https://calendar.perfplanet.com/2016/image-optimization/">Deep Dive</a></p>
@@ -1162,12 +1136,12 @@ Use the Right Image Format
 <table>
 <tbody>
 <tr>
-<td>
+<th>
 <p><strong>Browser</strong></p>
-</td>
-<td>
+</th>
+<th>
 <p><strong>Optimal image format</strong></p>
-</td>
+</th>
 </tr>
 <tr>
 <td>
@@ -1209,7 +1183,7 @@ Use the Right Image Format
 
 <!-- -->
 <div class="slide  lineone">
-	<section>
+	<section style="margin-top:-5px">
 <ol start="6">
 <li>Reduce the Number of Images
 <ul><li>
@@ -1217,16 +1191,27 @@ Sprites</li>
 <li>Just fewer images</li>
 </ul></li>
 <li>Leverage CSS
-<ul><li><strong>Image Masking.</strong> use <a href="http://wegraphics.net/blog/articles/png-masking-how-to-dynamically-shape-any-image-on-your-website/"> create “transparent JPEG” without PNG-24 file size</a></li>
+<ul><li><strong>Image Masking.</strong> (<a href="http://wegraphics.net/blog/articles/png-masking-how-to-dynamically-shape-any-image-on-your-website/">article</a>)</li>
 	<li><strong>CSS Effects:</strong> gradients, borders, rounded corners, shadows, etc. </li>
 	<li><strong>Sprites:</strong> especially without HTTP/2</li>
 	
-	<li><strong>CSS Filters:</strong> </li>
-	<li><strong>Media Queries:</strong> serve hi-res images to hi-res devices</li><li><strong>Animation:</strong>  <a href="http://codepen.io/estelle/pen/LyItm">steps()</a> as alternative to animated gifs.</li>
+	<li><strong>CSS Filters</strong> </li>
+	<li><strong>Media Queries</strong> serve hi-res images to hi-res devices</li>
+	<li><strong>Animation:</strong>  <a href="http://codepen.io/estelle/pen/LyItm">steps()</a> as alternative to animated gifs.</li>
+	<li>Leave out prefixed property/values</li>
 	</ul>
 </li>
 </ol>
 </section>
+</div>
+	
+
+
+<div class="slide object">
+  <object data="mask/index.html">
+  	<a href="mask/index.html" target="_blank">Ooops, didn't load</a>
+  </object>
+  <a href="mask/index.html" target="play" class="objectlink">Open in separate window</a>
 </div>
 
 
@@ -1236,22 +1221,44 @@ Sprites</li>
 <!-- -->
 <div class="slide">
 	<header>
-		<h1></h1>
+		<h1>#3: Everything Else</h1>
 	</header>
 	<section>
 	</section>
 </div>
 
 <div class="slide">
+<header><h1>Code Order</h1></header>
+<section>
+<pre contenteditable="" style="font-size: 1.2rem;">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+ &lt;head&gt;
+   &lt;meta charset="UTF-8"&gt;
+   &lt;title&gt;Titles are good for SEO&lt;/title&gt;
+   &lt;link rel="stylesheet" href="prettyWhenItLoads.<strong>css</strong>"/&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+   &lt;!-- lots of good content --&gt;
+   &lt;script src="dontBlockHTMLandCSS.<strong>js</strong>"&gt;&lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</pre>
+</section></div>
+
+
+
+
+
+<div class="slide">
 <header><h1>JavaScript</h1>
      <section>
-<ul>
+<ul style="max-height: 78vh; overflow-y: scroll">
 <li><em>Render cost:</em> JS (and CSS <strong title="can be as expensive to render as">and images</strong>)</li>
 <li>JS (download, parsing &amp; executing) </li>
 <li><em title="(like XMLHttpRequest)">Dynamic JS:</em> ⬆ rendering cost (can't be cached). </li>
 <li>AJAX: waking up the radio communications</li>
 <li>All scripts loaded and parsed (even if not used)</li>
 <li>Reduce JS to only what is needed</li>
+<li>Don't let 3rd party scripts be your SPOF </li>
 <li>Are libraries really necessary?
 <ul>
   <li>Include only functions used by page to reduce
@@ -1262,19 +1269,61 @@ energy use.</li>
 
 development, but increase energy use.</li>
 <li><a href="http://estelle.github.com/jsframeworks">You don't need a framework for that</a></li></ul></li>
-<li>Don't let 3rd party scripts be your SPOF </li></ul>
+</ul>
     </section>
 </div>
+
+
+
+
+
+
+<div style="background-image: url(img/batter.svg); background-position: 60% 10%; background-size: 10vw;"
+ class="slide">
+     <header>
+      <h1>Battery Consumption</h1>
+     </header> 
+     <section>
+     <div>
+     <p>CPU Drains the battery. Avoid using it!</p>
+     <ul>
+     	<li>Avoid Reflows &amp; Repaints</li>
+     	<li>Minimize JavaScript (size and activity)</li>
+     	<li>Avoid JavaScript Animations (<code>requestAnimationFrame()</code>)</li>
+        <li>Avoid WebGL (or otherwise warming up the phone)</li>
+        <li>Let the radio idle</li>
+        <li>Implement what you learn today</li>
+     </ul>
+     </div>
+     <p>Let your device take long, long breaks! </p>
+     </section>
+</div>
+
+
+
+
 <!-- -->
 <div class="slide">
 	<header>
-		<h1></h1>
+		<h1>JavaScript in Pink</h1>
 	</header>
 	<section>
+	<img src="img/wired_latency_ttfb.png" alt="Screenshot of WebPageTest waterfall chart showing light colors in a load reflect time to first byte" style="max-width: 78vw; margin-top: -30px;"/>
 	</section>
 </div>
 
+<!-- -->
 <div class="slide">
+	<header>
+		<h1>The effect of <acronym title="resume driven development">RDD</acronym>...</h1>
+	</header>
+	<section>
+	<img src="img/wpt_visa.png" alt="Screenshot of WebPageTest waterfall showing a 2 second DOM content loaded event" style="max-width: 78vw;"/>
+	</section>
+</div>
+
+
+<div class="slide" style="background-image: url(img/tetris.svg); background-position: top right; background-size: 28%">
     <header>
       <h1>Minimize the DOM</h1>
     </header>
@@ -1300,153 +1349,208 @@ development, but increase energy use.</li>
 
     </section>
   </div>
+
+
+<div class="slide">
+  <header><h1>Squishy ≠ Responsive</h1></header>
+    <section class="content">
+    <h1>Disney Went "Mobile"</h1>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Wide / Desktop</th>
+            <th>Narrow / Mobile</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Requests</td>
+            <td>77</td>
+            <td>123</td>
+          </tr>
+          <tr>
+            <td>Assets</td>
+            <td>3752kB</td>
+            <td>3344kB</td>
+          </tr>
+
+          <tr>
+            <td>Load</td>
+            <td>10.62s</td>
+            <td>34.10s</td>
+          </tr>
+
+          <tr>
+            <td>DOMContentLoaded</td>
+            <td>&nbsp;9.74s</td>
+            <td>30.94s</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><a href="http://httparchive.org/viewsite.php?u=http%3A%2F%2Fwww.disney.com%2F" target="_play">desktop stats</a></td>
+            <td><a href="http://mobile.httparchive.org/viewsite.php?pageid=335728" target="_play">mobile stats</a></td>
+        </tr></tbody>
+      </table>
+    </section>
+</div>
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1>Build with Accessibility in Mind</h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1>Build with Mobile in mind</h1>
+	</header>
+	<section>
+	</section>
+</div>
 <!-- -->
 <div class="slide">
 	<header>
 		<h1>Progressive Web Apps</h1>
 	</header>
-	<section>A Progressive Web App is:
-
+	<section>
 <ul>
+<li>Works offline, online &amp; on Lie-Fi</li>
+<li>App like
+	<ul>
+		<li>Installable: add to home screen</li>
+	</ul>
+</li>
+<li>Works as web page too</li>
 <li>Responsive</li>
-<li>Network independent: online, offline, lie-fi</li>
-<li>Installable: add to home screen</li>
+<li>Progressively Enhancement</li>
 <li>Secure:  HTTPS </li>
 <li>Manifest</li>
 <li>Service Workers</li>
-<li>App like</li>
-<li>Works as web page too</li>
-<li>Progressively Enhancement</li>
 </ul>
-
 	</section>
 </div>
 
+<!-- AMP-->
+<div class="slide">
+	<header>
+		<h1>AMP: Accelerated Mobile Pages</h1>
+	</header>
+	<section>
+	</section>
+</div>
 
 <div class="slide tweet">
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">So, here&#39;s the deal:<br>Browsers made a decision to refuse to enable any new advanced speed features, moving forward, for unencrypted websites.</p>&mdash; failed meme (@SwiftOnSecurity) <a href="https://twitter.com/SwiftOnSecurity/status/846932219193163778">March 29, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
 
-<!-- -->
+
+<!-- Testing -->
+<div class="slide normal">
+    <header>
+    	<h1>Test in Real Environments</h1>
+    </header> 
+    <section> 
+    <img src="img/closeapps.png" style="margin-right: 20px; width: 20vw; float:right;" alt="Phone showing which apps are running in the background"/>
+        <ul>
+          <li>Test on Phone: 
+          		<ul>
+                    <li>Simulator != Emulator</li>
+                    <li>Cap your memory</li>
+                </ul>
+                </li>
+          <li>Test with many apps open</li>
+          <li>Test on multiple devices</li>
+          <li>Test on mobile network</li>
+        </ul>
+        <p>Test during development</p>
+        <p>Set a budget before you start</p>
+      </section>
+</div>      
+    
+  
+   
+<!-- Tricks -->
+<div class="slide normal" style="background-image:url(img/nerdGirl.jpg); background-position: 5% bottom;">
+<header>
+<h1>Tricks</h1>
+</header> 
+<section> 
+  <ul class="sevenless">
+    <li>Scale down (not up)</li>
+    <li>Don't use prefixed property fallbacks</li>
+    <li>Take advantage of HTML5 &amp; native storage</li>
+    <li>Don't disable zoom (except for games)</li>
+  </ul>
+  
+  <footer>Credit: <a href="http://nerdquirks.tumblr.com/">NerdQuirks</a></footer>
+</section>
+</div>  
+    
+<!-- Take Aways -->
 <div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
+     <header>
+      <h1>Conclusion</h1>
+     </header> 
+     <section> 
+       <ul>
+         <li>Follow performance recommendations</li>
+         <li>Minimize Latency</li>
+         <li>Manage memory</li>
+         <li>Use CSS Judiciously</li>
+         <li>Use JS Minimally (and NOT for animation)</li>
+        <li>Batch query and manipulations separately</li>
+        <li>Reuse the DOM</li>
+         <li class="important">Keep Mobile in Mind</li>
+       </ul>
+     </section>
+    </div>
+   
+   
+<!-- It's a phone -->
+<div class="slide normal">
+     <header>
+      <h1>Remember...</h1>
+     </header> 
+      
+       <section>
+          <h1 class="conclude">Your users may <br/>not be <strong>tethered</strong> <br/>and their <br/><strong>memory</strong> may be very <strong>limited</strong>.</h1>
+	   </section>
+    </div> 
+    
+      
 
-
-<!-- -->
+<!-- ESTELLE WEYL -->
 <div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
+<section>
+<div class="flex">
+<div>
+<h1>Questions</h1>
+
+<p><br/>
+<a href="http://instartlogic.github.io/p/mobileperf">instartlogic.github.io/p/mobileperf</a>
+</p>
+<p>
+Twitter: <br/><a href="http://www.twitter.com/webdevtips">@webdevtips</a> <br/> <a href="http://www.twitter.com/estellevw">@estellevw</a> <br/> <a href="http://www.twitter.com/standardista">@standardista</a></p><p>Blog: <br/><a href="http://www.standardista.com">www.standardista.com</a></p>
 </div>
-
-
-<!-- -->
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
+<ul class="flex books">
+	<li><img src="http://akamaicovers.oreilly.com/images/9780987467485/cat.gif" alt="HTML5 and CSS3 for the Real World"></li>
+  <li><img src="http://akamaicovers.oreilly.com/images/0636920041658/cat.gif" alt="Animations and Transitions with CSS"/>
+  </li>
+  <li><img src="http://akamaicovers.oreilly.com/images/0636920021711/cat.gif" alt="MObile HTML5" />
+  </li>
+  <li><img src="http://akamaicovers.oreilly.com/images/0636920025955/cat.gif" alt="Web Performance Daybook"/>
+  </li>
+  <li><img src="http://akamaicovers.oreilly.com/images/0636920012726/rc_cat.gif" alt="CSS: The Definitive Guide">
+  </li>
+  <li><img src="https://images-na.ssl-images-amazon.com/images/I/51kEaOLPoPL._SX379_BO1,204,203,200_.jpg" alt="Flexible boxes in CSS" width="180"></li></ul>
+</section>
 </div>
-
-
-<!-- -->
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-
-<!-- -->
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-
-<!-- -->
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-
-<!-- -->
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-
-<!-- -->
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-
-<!-- -->
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-
-<!-- -->
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-
-<!-- -->
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-
-<!-- -->
-<div class="slide">
-	<header>
-		<h1></h1>
-	</header>
-	<section>
-	</section>
-</div>
-
-
+ 
 
 
 

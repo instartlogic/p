@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="744" height="1052" version="1">
+  <title>Tetris</title>
+  <defs>
+    <linearGradient id="b">
+      <stop offset="0" style="stop-color:#ffffff;stop-opacity:0;"/>
+      <stop offset="1" style="stop-color:#000000;stop-opacity:0.30;"/>
+    </linearGradient>
+    <style>
+      rect {
+        stroke: black;
+        stroke-width: 6.25;
+      }
+      .yellow rect {
+         fill: yellow ;
+      }
+      .blue rect {
+          fill: #0000cc;
+      }
+
+      .red rect {
+          fill: #cc0000;
+      }
+
+      .green rect {
+           fill: #00cc00;
+      }
+    </style>
+  </defs>
+  <g style="font-size:12;" transform="translate(1226.002 315.413)">
+    <g class="green" transform="translate(-435.673 -10.18)">
+      <rect width="71" height="71" x="-308" y="298.2"/>
+      <rect width="71" height="71" x="-308" y="368.8"/>
+      <rect width="71" height="71" x="-308" y="439.3"/>
+      <rect width="71" height="71" x="-308" y="510.6"/>
+    </g>
+    <g class="red" transform="rotate(90 -762.792 228.096)">
+      <rect width="71" height="71" x="-487.1" y="298.2"/>
+      <rect width="71" height="71" x="-487.1" y="368.8"/>
+      <rect width="71" height="71" x="-487.1" y="439.3"/>
+      <rect width="71" height="71" x="-557.6" y="439.3"/>
+    </g>
+    <rect width="201" height="146" x="-920" y="-72" style="fill:url(#b);stroke-width:0;transform:rotate(90deg); transform-origin: center;"/>
+    <g class="blue" transform="rotate(-90 -649.802 357.372)">
+      <rect width="71" height="71" x="-487.1" y="298.2" transform="rotate(90 -351.55 323.78)"/>
+      <rect width="71" height="71" x="-487.1" y="368.8" transform="rotate(90 -351.55 323.78)"/>
+      <rect width="71" height="71" x="-487.1" y="439.3" transform="rotate(90 -351.55 323.78)"/>
+      <rect width="71" height="71" x="117.7" y="395.8" transform="rotate(90)"/>
+    </g>
+    <g class="yellow" transform="translate(201.54 174.188)">
+      <rect width="71" height="71" x="-1246.5" y="115.6"/>
+      <rect width="71" height="71" x="-487.1" y="368.8" transform="translate(-688.857 -181.166)"/>
+      <rect width="71" height="71" x="-487.1" y="439.3" transform="translate(-688.857 -181.166)"/>
+      <rect width="71" height="71" x="117.7" y="395.8" transform="translate(-1364.187 -208.934)"/>
+    </g>
+  </g>
+</svg>

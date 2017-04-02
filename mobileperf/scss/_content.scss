@@ -156,3 +156,10 @@ pre {
   margin-right: 2vw;
 }
 div, section {background-repeat: no-repeat;}
+
+table {
+  th { text-align: left; }
+  td {
+    border-top: 1px solid $ilblue;
+  }
+}

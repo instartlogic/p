@@ -293,6 +293,11 @@ pre {
 div, section {
   background-repeat: no-repeat; }
 
+table th {
+  text-align: left; }
+table td {
+  border-top: 1px solid #226DAA; }
+
 .fuckInlineStyles {
   transform-origin: top left;
   margin-left: 10px; }
@@ -583,6 +588,19 @@ div, section {
     margin: 0 10px;
     border: 1px solid initial;
     padding: 20px 20px 0 0; }
+
+.important {
+  text-transform: uppercase;
+  color: #226DAA;
+  font-weight: bold; }
+
+.conclude {
+  text-align: center;
+  color: #333;
+  line-height: 2.8rem; }
+  .conclude strong {
+    color: #226DAA;
+    font-size: 2.5rem; }
 
 .big_piechart {
   position: relative;

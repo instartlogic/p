@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Masking Example</title>
+
+</head>
+<body style="display: flex">
+<style contenteditable style="display:block; padding: 20px; font-size: 1.5em; white-space: pre; font-family: monospace; white-space:pre; border-radius: 10px; border: 3px solid #aaa; background-color:rgba(0,0,0,0.1); margin: 20px auto; 	 font-family: Courier, monospace;order:2">
+div {	
+  width: 402px;
+  height: 734px;
+  position:relative;
+  background-image: 
+    url(http://placekitten.com/g/200/200/);
+}
+div:after {
+  content: '';
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-image:url(iphone.jpg);
+  -webkit-mask: url(mask.png); 
+}</style>
+<div></div>
+</body>
+</html>
