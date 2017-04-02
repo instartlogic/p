@@ -518,7 +518,7 @@ Page Weight Matters"></a>
 	<dt class="temphidden">Execute</dt>
 	<dd class="temphidden">Parsing &amp; Painting</dd>
 	<dt class="temphidden">Perceived Performance</dt>
-	<dd class="temphidden">Users perception of the speed of the load and reaction time.</dd> 
+	<dd class="temphidden">User perception of load speed and reaction time.(<a href="http://speedperception.com">study</a>)<br/></dd> 
 	</dl>
 	<div>
 </div>
@@ -903,16 +903,23 @@ My <a href="https://www.instartlogic.com/blog/image-optimization-tips-for-improv
   <header><h1>#1: Configure the Viewport</h1></header>
     <section><pre>&lt;meta name="viewport"
    content="width=device-width, ..."&gt;</pre>
-<ol style="line-height: 1"> 
-       <li>viewport size</li>
-       <li>zoom factor</li>
-       <li>orientation</li>
-     </ol>
-
+<table class="data">
+<tr><td>width</td><td>	width of device's virtual viewport.</td></tr>
+<tr><td>device-width</td><td>width of the device's screen.</td></tr>
+<tr><td>
+height</td><td>	height of device's virtual viewport</td></tr>
+<tr><td>device-height</td><td>	height of the device's screen.
+</td></tr>
+<tr><td>initial-scale</td><td>	Initial zoom on page visit. default 1.0.</td></tr>
+<tr><td>minimum-scale</td><td>	If user scalable, as small as it can zoom on the page.</td></tr>
+<tr><td>maximum-scale</td><td>	If user scalable, maximum amount visitor can zoom on the page.</td></tr>
+<tr><td>user-scalable</td><td>Can the web zoom in and out. Values are yes or no.</td></tr>
+</table>
+<!--
      <pre>@viewport { viewport-properties }</pre>
 <small>
      Resource: <a href="http://www.quirksmode.org/mobile/viewports2.html" target="_blank">A tale of 2 viewports</a><br>
-      Tutorial: <a href="http://estelle.github.io/CSS-Workshop/part_04_media.html" target="_blank">Media Queries slide deck</a></small>
+      Tutorial: <a href="http://estelle.github.io/CSS-Workshop/part_04_media.html" target="_blank">Media Queries slide deck</a></small>-->
     </section>
 </div>
 
@@ -1092,12 +1099,11 @@ purple = rendering</small>
 Use the Right Image Format
 <p>Image types include SVG, GIF, JPEG, PNG, and WebP. </p>
 <ul>
-<li>GIF: Palette of less than 256 colors, like a comic, for transparency and for low quality animation</li>
-<li>SVG: Better than GIFS: Scalable, Animatable, unlimited color pallette</li>
-<li>PNG: When you need transparency and have more than 256 colors.</li>
+<li>GIF: <= 256 color pallette, need transparency and/prlow quality animation</li>
+<li>SVG: scalable, animatable, unlimited color pallette</li>
+<li>PNG: > 256 colors if transparency needed.</li>
 <li>JPEG: raster images</li>
-<li>JPEG with a CSS mask: when you need transparency on a raster image and PNG-24 file size is huge</li>
-<li> WebP:  Animation, transparency, and great resolution with small file size, but only supported in Blink. <a href="https://developers.google.com/speed/webp/faq#which_web_browsers_natively_support_webp">Test WebP</a></li>
+<li> WebP:  Animation, transparency, great resolution, small file size. <a href="https://developers.google.com/speed/webp/faq#which_web_browsers_natively_support_webp">Blink only.</a></li>
 <li>JPEG-XR: For Edge</li>
 </ul>
 </li>
@@ -1113,7 +1119,7 @@ Use the Right Image Format
 	</header>
 	<section>
 
-<table>
+<table class="data">
 <tbody>
 <tr>
 <th>
@@ -1335,7 +1341,7 @@ development, but increase energy use.</li>
   <header><h1>Squishy ≠ Responsive</h1></header>
     <section class="content">
     <h1>Disney Went "Mobile"</h1>
-      <table>
+      <table class="data">
         <thead>
           <tr>
             <th></th>

@@ -293,9 +293,9 @@ pre {
 div, section {
   background-repeat: no-repeat; }
 
-table th {
+table.data th {
   text-align: left; }
-table td {
+table.data td {
   border-top: 1px solid #226DAA; }
 
 .fuckInlineStyles {
