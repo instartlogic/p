@@ -602,6 +602,72 @@ table.data td {
     color: #226DAA;
     font-size: 2.5rem; }
 
+.lessimportant {
+  opacity: 0.25; }
+
+.rail .icon {
+  display: block; }
+
+.rail ul, .rail ol {
+  display: flex;
+  list-style-type: none; }
+
+.rail ul {
+  justify-content: center; }
+
+.rail ul li {
+  height: 4vh;
+  margin: 0.1vw;
+  border: 1px solid black; }
+
+.rail ol {
+  justify-content: space-around; }
+
+.rail ol li {
+  border: 1px solid black;
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.rail .r {
+  background-color: #fee49d; }
+
+.rail .a {
+  background-color: #1ea763;
+  color: #fff; }
+
+.rail .i {
+  background-color: #cadaf7; }
+
+.rail .l {
+  background-color: #407ad5;
+  color: #fff; }
+
+.rail ol li {
+  position: relative; }
+  .rail ol li:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: small; }
+
+.rail ol .r::after {
+  content: "100ms"; }
+
+.rail ol .a::after {
+  content: "16ms"; }
+
+.rail ol .i::after {
+  content: "50ms"; }
+
+.rail ol .l::after {
+  content: "1s"; }
+
 .big_piechart {
   position: relative;
   padding: 0;

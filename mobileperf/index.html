@@ -20,8 +20,21 @@ While as developers we’re finally enjoying the ubiquity of modern browsers acc
 </style>
 <link class="removeForAT" rel="stylesheet" href="css/index.css">
 
-<!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<style>.icon {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  word-wrap: normal;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}</style>
 <base target="play"/>
 </head>
 
@@ -709,6 +722,39 @@ Page Weight Matters"></a>
 	</section>
 </div>
 
+
+<div class="slide">
+	<header>
+		<h1>RAIL</h1>
+	</header>
+	<section class="center">
+	<p>Four phases of interaction: end-user’s perception</p>
+	<article class="rail">
+	<ul>
+		<li class="l" style="width: 12vw"></li>
+		<li class="i" style="width: 6vw"></li>
+		<li class="a" style="width: 4vw"></li>
+		<li class="r" style="width: 10vw"></li>
+		<li class="l" style="width: 10vw"></li>
+		<li class="a" style="width: 4vw"></li>
+		<li class="r" style="width: 6vw"></li>
+		<li class="r" style="width: 6vw"></li>
+		<li class="a" style="width: 4vw"></li>
+	</ul>
+	<ol>
+		<li class="r">Response to Input <span class="icon">touch_app</span></li>
+		<li class="a">Animation &amp; Scrolling
+		<span class="icon">directions_run</span>
+		</li>
+		<li class="i">Idle <span class="icon">alarm</span></li>
+		<li class="l">Page Load <span class="icon">cached</span></li>
+	</ol>
+	</article>
+
+	<p class="right"><small>Video: <a href="https://www.youtube.com/watch?v=2ksXo2_Lfl0">How Users Perceive the Speed of The Web (2015): Paul Irish / Google</a></small></p>
+	</section>
+</div>
+
 <!-- -->
 <div class="slide">
 <article class="flex" style="justify-content: center">
@@ -789,6 +835,10 @@ Page Weight Matters"></a>
 	</ul>
 	</section>
 </div>
+
+
+
+
 
 <div class="slide">
 <header><h1>PageSpeed</h1></header>
@@ -991,12 +1041,12 @@ height</td><td>	height of device's virtual viewport</td></tr>
 <li>Resize Images
 <p>Serve the smallest image file for the screen size and resolution. </p>
 	<ul>
-		<li>Serve scaled images. <br/>Resizing images means <a href="http://blog.cloudfour.com/responsive-images-101-part-9-image-breakpoints/">downloading unneeded pixels</a> and take longer to decode and paint.</li>
+		<li>Serve scaled images. <br/><span class="lessimportant">Resizing images means <a href="http://blog.cloudfour.com/responsive-images-101-part-9-image-breakpoints/">downloading unneeded pixels</a> and take longer to decode and paint.</span></li>
 
 
 		<li> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">&lt;picture&gt;</a> element and <a href="http://www.sitepoint.com/how-to-build-responsive-images-with-srcset/">srcset</a> attribute</li>
 
-		<li>Old browsers? load small background images in CSS Internet Explorer, consider using <a href="http://scottjehl.github.io/picturefill/">Picturefill</a> or JS-free <a href="https://www.smashingmagazine.com/2013/06/clown-car-technique-solving-for-adaptive-images-in-responsive-web-design/">Clown Car Technique</a>.</li>
+		<li>Old browsers? load small background images<span class="lessimportant"> in CSS Internet Explorer, consider using <a href="http://scottjehl.github.io/picturefill/">Picturefill</a> or JS-free <a href="https://www.smashingmagazine.com/2013/06/clown-car-technique-solving-for-adaptive-images-in-responsive-web-design/">Clown Car Technique</a>.</span></li>
 		</ul>
 	</li>
 </ol>
@@ -1082,7 +1132,7 @@ purple = rendering</small>
 <ul>
 	<li>Compressed without noticeably degrading  quality. </li>
 	<li>Image compression: <a href="https://imageoptim.com/">ImageOptim</a>, <a href="https://pngmini.com/">ImageAlpha</a>, <a href="https://tinypng.com/">TinyPNG</a>, PhotoShop, etc.</li>
-	<li>JPEG Image compression automation has issues. (see <a href="https://www.instartlogic.com/blog/playing-smartvision-intelligent-image-optimization">SmartVision</a>).</li>
+	<li>JPEG Image compression automation? (see <a href="https://www.instartlogic.com/blog/playing-smartvision-intelligent-image-optimization">SmartVision</a>).</li>
 </li>
 </ol>
 </section>
@@ -1221,11 +1271,11 @@ Sprites</li>
  &lt;head&gt;
    &lt;meta charset="UTF-8"&gt;
    &lt;title&gt;Titles are good for SEO&lt;/title&gt;
-   &lt;link rel="stylesheet" href="prettyWhenItLoads.<strong>css</strong>"/&gt;
+   &lt;link <strong>rel="stylesheet"</strong> href="prettyWhenItLoads.css"/&gt;
  &lt;/head&gt;
  &lt;body&gt;
    &lt;!-- lots of good content --&gt;
-   &lt;script src="dontBlockHTMLandCSS.<strong>js</strong>"&gt;&lt;/script&gt;
+   &lt;<strong>script</strong> src="dontBlockHTMLandCSS.js"&gt;&lt;/script&gt;
  &lt;/body&gt;
 &lt;/html&gt;</pre>
 </section></div>
@@ -1403,20 +1453,20 @@ development, but increase energy use.</li>
 	<header>
 		<h1>Progressive Web Apps</h1>
 	</header>
-	<section>
+	<section><img style="float: right; width: 240px	;" src="img/flipkart.png" alt="screenshot of Flipkart in offline mode"><img style="float: right; width: 240px; margin-right: 3px;" src="img/flipkart_splash.png" alt="screenshot of Flipkart in offline mode">
 <ul>
 <li>Works offline, online &amp; on Lie-Fi</li>
 <li>App like
 	<ul>
 		<li>Installable: add to home screen</li>
+		<li>Splash Page: add to home screen</li>
 	</ul>
 </li>
-<li>Works as web page too</li>
-<li>Responsive</li>
-<li>Progressively Enhancement</li>
 <li>Secure:  HTTPS </li>
 <li>Manifest</li>
 <li>Service Workers</li>
+<li>Responsive</li>
+<li>Progressively Enhanced</li>
 </ul>
 	</section>
 </div>
@@ -1426,7 +1476,7 @@ development, but increase energy use.</li>
 	<header>
 		<h1>AMP: Accelerated Mobile Pages</h1>
 	</header>
-	<section>
+	<section><img src="img/amp.jpg" alt="AMP">
 	</section>
 </div>
 
@@ -1539,6 +1589,14 @@ Twitter: <br/><a href="http://www.twitter.com/webdevtips">@webdevtips</a> <br/> 
 </div>
  
 
+<div class="slide">
+<header><h1>Also....</h1></header>
+<section>
+<ul>
+<li><a href="http://speedperception.com">SpeedPerception.com</a></li>
+<li><a href="http://www.MachineLearningWorkshop.com">MachineLearningWorkshop.com</a></li>
+</section>
+</div>
 
 
    </div>
