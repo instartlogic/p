@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/*#226DAA;*/
-/*#226DAA;*/
 :root {
   font-size: 2vw;
   background: #fff;
@@ -55,7 +53,6 @@ ul.books {
   ul.books li {
     padding: 5px; }
 
-/*#226DAA;*/
 .slide {
   display: none;
   position: absolute;
@@ -67,13 +64,12 @@ ul.books {
   transition: all 0.25s ease-in-out; }
 
 .divider {
-  background-color: #99c; }
+  background-color: #226DAA; }
   .divider * {
     color: #fff; }
   .divider ol {
     padding-left: 3vw; }
 
-/*#226DAA;*/
 /* OBJECT PAGES */
 .object header {
   position: absolute;
@@ -101,13 +97,12 @@ ul.books {
 .temphidden, .notes {
   display: none; }
 
-/*#226DAA;*/
 a.pagelink {
   position: absolute;
   top: 5px;
   right: 5px;
   color: #FFF;
-  background-color: #99c;
+  background-color: #226DAA;
   padding: 3px 5px 3px 5px;
   border: none;
   color: #fff;
@@ -140,7 +135,6 @@ a.pagelink {
   display: block;
   margin-left: 200%; }
 
-/*#226DAA;*/
 /* Content */
 header {
   font-weight: normal;
@@ -153,7 +147,7 @@ header {
 h1 {
   font-size: 1.8rem;
   margin: 0 0 0.75rem;
-  color: #99c; }
+  color: #226DAA; }
 
 h2 {
   font-size: 1.9rem;
@@ -177,7 +171,7 @@ a {
   display: inline-block;
   text-decoration: none;
   line-height: 110%;
-  color: #99c; }
+  color: #226DAA; }
 
 a:hover {
   text-decoration: underline; }
@@ -207,7 +201,7 @@ a:hover {
 .slide.intro header {
   margin-top: 200px; }
   .slide.intro header h1 {
-    color: #99c;
+    color: #226DAA;
     justify-content: center;
     padding: 40px 0;
     letter-spacing: 0.25px; }
@@ -230,7 +224,7 @@ dd {
   margin-bottom: 0.25rem; }
 
 strong, dt {
-  color: #99c;
+  color: #226DAA;
   font-weight: bold; }
 
 .force-render {
@@ -286,7 +280,7 @@ img {
   max-width: 90vw; }
 
 acronym {
-  border-bottom: 1px dotted #99c; }
+  border-bottom: 1px dotted #226DAA; }
 
 pre {
   background-color: #dededa;
@@ -302,7 +296,7 @@ div, section {
 table.data th {
   text-align: left; }
 table.data td {
-  border-top: 1px solid #99c; }
+  border-top: 1px solid #226DAA; }
 
 .fuckInlineStyles {
   transform-origin: top left;
@@ -334,14 +328,13 @@ table.data td {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #99c;
+  background-color: #226DAA;
   color: #fff;
   padding: 0.3rem 1rem;
   border-radius: 0 0 0 2rem;
   text-decoration: none;
   font-size: 0.8rem; }
 
-/*#226DAA;*/
 .slide .aria {
   margin-left: 30vw;
   white-space: pre;
@@ -349,11 +342,10 @@ table.data td {
   letter-spacing: 0.25px;
   font-size: 8vh; }
   .slide .aria i {
-    color: #99c;
+    color: #226DAA;
     padding-right: 0.1rem;
     font-style: normal; }
 
-/*#226DAA;*/
 @media print {
   .slide {
     page-break-inside: avoid;
@@ -432,14 +424,14 @@ table.data td {
   font-size: 1rem;
   padding: 20px;
   border-radius: 3px;
-  border: 1px solid #99c;
+  border: 1px solid #226DAA;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1), -3px -3px 3px rgba(0, 0, 0, 0.1);
   background-color: white; }
 
 .arrow {
   justify-content: flex-start;
   margin-right: 2em;
-  background-image: linear-gradient(transparent 25%, #99c 25%, #99c 75%, transparent 75%);
+  background-image: linear-gradient(transparent 25%, #226DAA 25%, #226DAA 75%, transparent 75%);
   position: relative; }
   .arrow::after {
     content: "";
@@ -449,14 +441,14 @@ table.data td {
     left: 100%;
     top: -0.15em;
     border: 1.5em solid transparent;
-    border-left-color: #99c; }
+    border-left-color: #226DAA; }
   .arrow li {
     background-color: white;
     font-size: 0.6rem;
     font-family: serif;
     padding: 10px;
     margin: 5px;
-    border: 1px solid #99c;
+    border: 1px solid #226DAA;
     border-radius: 5px;
     flex: 1;
     max-width: 6.5%;
@@ -472,14 +464,14 @@ table.data td {
     height: 0;
     width: 0;
     content: "";
-    color: #99c;
+    color: #226DAA;
     transform: rotate(-28deg);
     position: absolute;
     left: 0; }
   .bluearrow::before {
     width: 100px;
     height: 20px;
-    background: #99c;
+    background: #226DAA;
     top: 40px; }
   .bluearrow::after {
     border: 30px transparent solid;
@@ -561,12 +553,12 @@ table.data td {
       height: 0;
       width: 0;
       content: "";
-      color: #99c;
+      color: #226DAA;
       position: absolute; }
     .phonemask + .arrow::before {
       width: 100px;
       height: 20px;
-      background: #99c;
+      background: #226DAA;
       top: 90px; }
     .phonemask + .arrow::after {
       border: 30px transparent solid;
@@ -582,7 +574,7 @@ table.data td {
 
 .lineone ol > li::first-line {
   color: white;
-  background-color: #99c; }
+  background-color: #226DAA; }
 
 .cloudfour {
   align-items: flex-end; }
@@ -599,7 +591,7 @@ table.data td {
 
 .important {
   text-transform: uppercase;
-  color: #99c;
+  color: #226DAA;
   font-weight: bold; }
 
 .conclude {
@@ -607,7 +599,7 @@ table.data td {
   color: #333;
   line-height: 2.8rem; }
   .conclude strong {
-    color: #99c;
+    color: #226DAA;
     font-size: 2.5rem; }
 
 .lessimportant {
@@ -676,7 +668,6 @@ table.data td {
 .rail ol .l::after {
   content: "1s"; }
 
-/*#226DAA;*/
 .big_piechart {
   position: relative;
   padding: 0;
@@ -716,13 +707,13 @@ table.data td {
     background-image: url(http://chart.googleapis.com/chart?chs=400x225&amp;cht=p&amp;chco=333333&amp;chd=t:416,34,25,113,2,22&amp;chbg=transparent&amp;chds=0,416&amp;chdlp=b&amp;chma=|5&amp;chp=-.55); }
 
 .topphones {
-  border: 1px solid #99c;
+  border: 1px solid #226DAA;
   border-spacing: 0px; }
   .topphones tr:nth-of-type(odd) {
     background-color: #dedede; }
   .topphones tr:first-of-type {
     color: white;
-    background-color: #99c; }
+    background-color: #226DAA; }
   .topphones td, .topphones th {
     padding: 7px 14px;
     text-align: left; }
