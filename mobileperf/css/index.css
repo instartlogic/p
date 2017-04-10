@@ -346,26 +346,6 @@ table.data td {
     padding-right: 0.1rem;
     font-style: normal; }
 
-@media print {
-  .slide {
-    page-break-inside: avoid;
-    page-break-after: always;
-    visibility: visible !important;
-    font-size: 20pt;
-    font-family: Arial, sans-serif; }
-
-  @page {
-    size: landscape; }
-  body {
-    font-size: 12pt;
-    background: white; }
-
-  header h1 {
-    border-top: 2pt solid gray;
-    border-bottom: 1px dotted silver; }
-
-  #presentation-counter, #info, #topinfo, .counter {
-    display: none; } }
 .note {
   opacity: 0.1;
   font-size: 0.9rem; }
@@ -746,5 +726,33 @@ table.data td {
     padding-bottom: 0.8vmin; }
   .htc tbody tr:nth-of-type(odd) td {
     padding-top: 0.8vmin; }
+
+@media print {
+  html {
+    font-size: 16px; }
+
+  .slide {
+    page-break-inside: avoid;
+    page-break-after: always;
+    visibility: visible;
+    display: block;
+    position: relative;
+    height: auto;
+    font-size: 20pt;
+    border-top: 2px solid #ccc; }
+
+  #presentation {
+    overflow: visible;
+    height: auto; }
+
+  .temphidden {
+    display: inherit;
+    visibility: visible; }
+
+  @page {
+    size: landscape; }
+  body {
+    font-size: 12pt;
+    background: white; } }
 
 /*# sourceMappingURL=index.css.map */

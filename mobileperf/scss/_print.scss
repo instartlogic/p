@@ -1,11 +1,26 @@
-@import "variables";
+
+
 @media print {
+  html {
+    font-size: 16px;
+  }
   .slide {
     page-break-inside: avoid;
     page-break-after: always;
-    visibility: visible !important;
+    visibility: visible;
+    display: block;
+    position: relative;
+    height: auto;
     font-size: 20pt;
-    font-family: Arial, sans-serif;
+    border-top: 2px solid #ccc;
+  }
+    #presentation {
+    overflow: visible;
+    height: auto;
+  }
+  .temphidden {
+    display: inherit;
+    visibility: visible;
   }
   @page {
     size: landscape;
@@ -13,12 +28,5 @@
   body {
     font-size: 12pt;
     background: white;
-  }
-  header h1 {
-    border-top: 2pt solid gray;
-    border-bottom: 1px dotted silver;
-  }
-  #presentation-counter, #info, #topinfo, .counter {
-    display: none
   }
 }
