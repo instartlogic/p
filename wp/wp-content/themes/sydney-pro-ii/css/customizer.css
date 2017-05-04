@@ -1,0 +1,7 @@
+#accordion-panel-sydney_woocommerce h3::before,
+#accordion-panel-sydney_pro_panel h3::before {
+  content: 'Sydney Pro:';
+  color: #d65050;
+  font-size: 12px;
+  margin-right: 5px;
+}
