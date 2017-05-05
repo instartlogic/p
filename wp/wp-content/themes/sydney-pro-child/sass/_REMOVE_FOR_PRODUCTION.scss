@@ -1,0 +1,7 @@
+.shortcode-area {
+	background-color: $ilblue;
+	background: radial-gradient( $midblue, $ilpurple, $ilblue);
+}
+.shortcode-area	> ul > li:not(:first-of-type) {
+	display: none;
+}

@@ -1,0 +1,47 @@
+.header-slider {
+	position: relative;
+    max-width: 100%;
+    overflow: hidden;
+		img.preserve {
+			display: none;
+		}
+}
+.slides-container .slide-item {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text-slider {
+	  position: relative;
+	  animation: 1s fadeInRightBig both;
+	.maintitle,
+	.subtitle {
+		z-index: 10;
+		color: $white;
+		margin: 0;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+	}
+	.maintitle {
+		position: relative;
+		display: inline-block;
+		font-size: 4rem;
+		padding-bottom: 10px;
+	}
+	.subtitle {
+		font-size: 2rem;
+		padding: 1.5rem 0 3rem;
+	}
+}
+.slide-inner {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	z-index: 2;
+	min-height: 260px;
+	padding-top: 5px;
+	transform: translateY(-50%);
+}
+	

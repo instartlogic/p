@@ -1,0 +1,17 @@
+.roll-list {
+	list-style: none;
+	margin: 0 0 30px 10px;
+	li {
+		line-height: 32px;
+		position: relative;
+		padding-left: 40px;
+	}
+	li:before {
+		content: "\f006";
+		font-family: "FontAwesome";
+		font-size: 15px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}

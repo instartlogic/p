@@ -1,0 +1,15 @@
+.widget-tags .tag-list {
+	a {
+		display: inline-block;
+		font-size: 0.8125rem;
+		color: $ilgrey;
+		border: 1px solid $illightgrey;
+		padding: 7px 15px;
+		margin: 4px;
+		margin-left: 0;
+		&:hover {
+			color: $oddbackground;
+		border: 1px solid $ilblue;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.roll-infomation {
+	margin-bottom: 50px;
+	list-style: none;
+	li {
+		position: relative;
+		padding-left: 30px;
+		margin-bottom: 15px;
+		line-height: 24px;
+		&.time span {
+			color: $ilblue;
+			font-weight: 700;
+		}
+		&.address:before,
+		&.phone:before,
+		&.email:before {
+			position: absolute;
+			left: 0;
+			top: 4px;
+			content: "\f041";
+			font-family: "FontAwesome";
+			font-size: 20px;
+			color: $ilblue;
+		}
+		&.phone:before {
+			content: "\f095";
+		}
+		&.email:before {
+			content: "\f040";
+		}
+	}
+}

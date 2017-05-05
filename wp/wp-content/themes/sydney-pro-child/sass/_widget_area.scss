@@ -1,0 +1,50 @@
+	.widget-area .widget {
+		position: relative;
+		margin-bottom: 30px;
+		padding-top: 50px;
+	}
+	.widget-area .widget:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 30px;
+		height: 1px;
+	}
+	.widget-area .widget:first-child {
+		padding-top: 0;
+	}
+	.widget-area .widget:first-child:before {
+		height: 0;
+	}
+	.widget-area .widget-title {
+		font-size: 16px;
+		line-height: normal;
+		color: $darkbackground;
+		font-weight: 600;
+		padding-bottom: 24px;
+		margin: 0;
+		text-transform: uppercase;
+	}
+	.footer-widgets .widget ul,
+	.widget-area .widget ul {
+		max-width: 100%;
+		list-style: none;
+		padding: 0;
+	}
+	.widget .children {
+		padding-left: 15px;
+	}	
+	.widget-area .widget ul li {
+		padding: 5px 0;
+	}
+	.widget-area .widget ul li:first-child {
+		padding-top: 0;
+	}
+	.widget-area .widget ul li:last-child {
+		padding-bottom: 0;
+	}
+	.widget-area,
+	.widget-area  a {
+		color: #767676;
+	}

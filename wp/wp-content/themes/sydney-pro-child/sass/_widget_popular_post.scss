@@ -1,0 +1,24 @@
+.widget-popular-post .news {
+	.thumb {
+		width: 65px;
+		height: auto;
+		margin: 3px 1.25rem 0 0;
+		float: left;
+	}
+	.text {
+		min-height: 65px;
+	}
+	h6 {
+		font-size: 0.8125rem;
+		font-weight: 500;
+		margin: 0 0 4px;
+	}
+	p,
+	p a {
+		font-size: 0.8125rem;
+		margin: 0;
+	}
+	p a:hover {
+		text-decoration: underline;
+	}
+}

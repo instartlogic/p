@@ -1,0 +1,18 @@
+.service {
+	margin-bottom: 30px;
+}
+.widget_sydney_services_type_b .service {
+	margin-bottom: 20px;
+}
+.widget_sydney_services_type_b .service-thumb { 
+	float: left; 
+ 	max-width: 120px; 
+ 	margin-right: 30px; 
+ 	margin-top: 7px; 
+	} 		
+.service.col-md-4:nth-of-type(3n+1) {
+	clear: left;
+}
+.service.col-md-6:nth-of-type(2n+1) {
+	clear: left;
+}	

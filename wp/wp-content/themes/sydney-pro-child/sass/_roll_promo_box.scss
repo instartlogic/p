@@ -1,0 +1,44 @@
+.roll-promobox {
+	text-align: center;
+	padding: 20px 0;
+	.promo-controls {
+		margin-top: 25px;
+	}
+	.title {
+		font-size: 1.25rem;
+		margin-bottom: 10px;
+		color: $ilgrey;
+		font-weight: 500;
+	}
+	.promo-content p {
+		margin-bottom: 40px;
+		font-size: 16px;
+	}
+	&.aside-style {
+		text-align: left;
+		.promo-content p {
+			padding-bottom: 15px;
+		}
+		.promo-wrap {
+		    display: table;
+			overflow: hidden;
+			width: 100%;
+		}
+		.promo-content {
+		    display: table-cell;
+		    vertical-align: middle;
+			width: 70%;
+			p {
+				margin: 0 0 5px; 
+			}
+		}
+		.promo-controls {
+		    display: table-cell;
+		    margin: 0;
+		    text-align: center;
+		    vertical-align: middle;
+		    white-space: nowrap;
+			width: 30%;
+		}
+	}
+}

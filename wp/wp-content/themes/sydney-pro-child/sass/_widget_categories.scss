@@ -1,0 +1,11 @@
+.widget-categories .categories li {
+	a {
+		position: relative;
+		display: block;
+	}
+	span {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}

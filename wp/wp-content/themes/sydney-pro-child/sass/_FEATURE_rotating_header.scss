@@ -1,0 +1,24 @@
+.shortcode-area {
+	min-height: 24rem;
+	padding-left: 7vw;
+	padding-top: 4rem;
+	ul, li { 
+		padding: 0;
+		list-style-type: none;
+	}
+	ul * {
+		color: $white;
+		text-shadow: $textshadow;
+	}
+	h1 {
+	  font-weight: normal;
+	  font-size: $xlargeFont;
+	  line-height: 1;
+	}
+	p {
+		max-width: 32rem;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}

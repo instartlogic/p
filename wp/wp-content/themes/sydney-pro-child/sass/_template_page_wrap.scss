@@ -1,0 +1,28 @@
+/*.page-wrap .content-wrapper {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: $white;
+}
+.page .page-wrap .content-wrapper,
+.single .page-wrap .content-wrapper {
+	padding: 30px;
+}
+.page-template-page_front-page .page-wrap .content-wrapper {
+	padding-top: 0;
+	padding-bottom: 0;
+	background-color: transparent;
+}
+.page-wrap {
+	padding: 83px 0 100px;
+	clear: both;
+}
+.page-template-page_front-page .page-wrap {
+	padding: 0;
+}*/
+.entry-page p, 
+.entry-post p {
+	margin-bottom: 24px;
+}
+.entry-post img {
+	margin: 10px 0 20px;
+}

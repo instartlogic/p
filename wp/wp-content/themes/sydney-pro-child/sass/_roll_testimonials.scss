@@ -1,0 +1,35 @@
+.roll-testimonials {
+		max-width: 750px;
+		margin: 0 auto 30px;
+		text-align: center;
+	.avatar {
+		width: 100px;
+		margin: 7px auto 26px;
+		border: 2px solid $white;
+	}
+	.avatar,
+	.avatar img {
+		border-radius: 50%;	
+	}
+	.whisper {
+		font-size: 18px;
+		font-style: italic;
+		line-height: 26px;
+		padding: 0 0 20px;
+		margin: 0;
+		border: 0;
+	}
+	.name {
+		font-size: 1.125rem;
+		font-weight: 500;
+		font-weight: 500;
+		span {
+			font-size: 13px;
+			display: block;
+			color: $ilgrey;
+		}
+	}
+	.owl-controls {
+		margin-top: 40px;
+	}
+}

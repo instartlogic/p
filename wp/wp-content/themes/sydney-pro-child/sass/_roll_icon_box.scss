@@ -1,0 +1,37 @@
+.roll-icon-box {
+	text-align: center;
+	.service-thumb { 
+		margin: 0 auto 20px; 
+	} 	
+	.icon {
+		text-align: center;
+		width: 70px;
+		height: 70px;
+		line-height: 2.2;
+		margin: 0 auto 20px;
+		border-radius: 50%;
+		border: 1px solid;
+		font-size: 2rem;
+	}
+	&.left {
+		text-align: left;
+		.icon {
+			float: left;
+			margin-top: 7px;
+			margin-right: 30px;
+			
+		}
+	}
+	.content {
+		overflow: hidden;
+		h3 {
+			font-size: 1.75rem;
+			font-weight: 500;
+			margin: 7px 0 10px;
+			color: $ilblue; 
+			a {
+				color: $ilblue;
+			}
+		}
+	}
+}

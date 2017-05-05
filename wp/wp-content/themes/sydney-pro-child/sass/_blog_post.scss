@@ -1,0 +1,10 @@
+.blog-post {
+	.cat-links { display: none;}
+	margin-bottom: 30px;
+	&:nth-of-type(3n+1) {
+		clear: left;
+	}
+	.entry-title {
+		margin: 15px 0;
+	}
+}

@@ -1,0 +1,36 @@
+.preloader {
+    background: none repeat scroll 0 0 $white;
+    height: 100%;
+    opacity: 1;
+    position: fixed;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    width: 100%;
+    z-index: 9999;
+	.spinner {
+	    height: 30px;
+	    left: 50%;
+	    margin-left: -15px;
+	    margin-top: -15px;
+	    position: relative;
+	    top: 50%;
+	    width: 30px;
+	}
+	.pre-bounce1,
+	.pre-bounce2 {
+	    -webkit-animation: 2s ease 0s normal none infinite bounce;
+	            animation: 2s ease 0s normal none infinite bounce;
+	    background-color: lighten($ilblue, 50);
+	    border-radius: 50%;
+	    height: 100%;
+	    left: 0;
+	    opacity: 0.6;
+	    position: absolute;
+	    top: 0;
+	    width: 100%;
+	}
+	.pre-bounce2 {
+	    -webkit-animation-delay: -0.5s;
+	            animation-delay: -0.5s;
+	}
+}

@@ -1,0 +1,45 @@
+.site-title {
+	a, a:hover {
+		color: $white;
+	}
+}
+.site-logo {
+	max-width: 50%;
+	margin: 0 0 0 7vw;
+}
+.site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	box-sizing: border-box;
+	z-index: 1000;
+	background-color: $siteheaderinitial;
+	transition: $transdur ease-out;
+	 .logo {
+		float: left;
+		width: 135px;
+		height: 27px;
+		a {
+			display: block;
+			height: 100%;
+		}
+	}
+}
+.header-image {
+	position: relative;
+	background-position: center;
+	background-size: cover;	
+	img {
+		display: none;
+	}
+}
+
+.no-hero .sydney-hero-area {
+	//display: none;
+}
+
+.no-hero {
+	.header-image {position: static;}
+	.page-wrap {margin-top: -80px;}
+}

@@ -1,0 +1,23 @@
+a, .text-color {
+		color: $ilblue;
+	}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background-color: $ilblue;
+	border: 1px solid $ilblue;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background-color: transparent;
+	color: $ilblue;
+}
+textarea:focus,
+input:focus,
+textarea:active,
+input:active {
+	border-color: $ilblue;
+}

@@ -1,0 +1,23 @@
+.blog-pagination ul {
+		width: 100%;
+		text-align: right;
+		list-style: none;
+	li,
+	li a {
+		display: inline-block;
+		background-color: transparent;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+	}
+	li {
+		margin-left: 3px;
+		border: 1px solid $ilblue;
+	}
+	li.active,
+	li:hover a {
+		color: $white;
+		background-color: $ilblue;
+	}
+}

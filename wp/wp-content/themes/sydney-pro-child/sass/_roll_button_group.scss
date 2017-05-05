@@ -1,0 +1,9 @@
+.roll-button-group {
+		text-align: center;
+	&.roll-button {
+		margin-left: 8px;
+	}
+	&.roll-button:first-child {
+		margin-left: 0;
+	}
+}

@@ -1,0 +1,11 @@
+.breadcrumbs {
+	ul {
+		margin: 0;
+	}
+	.breadcrumbs ul li {
+		display: inline;
+	}
+	.breadcrumbs ul li a:hover {
+		text-decoration: underline;
+	}
+}

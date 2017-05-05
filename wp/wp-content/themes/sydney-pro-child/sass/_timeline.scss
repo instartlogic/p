@@ -1,0 +1,51 @@
+/* Timeline */
+.timeline-inner {
+	width: 50%;
+	.icon {
+		background-color: $ilblue;
+		color: $white;
+		text-align: center;
+		padding: 13px;
+		height: 56px;
+		width: 56px;
+		font-size: 28px;
+		border-radius: 50%;
+	}
+	h3 {
+		font-size: 1.25rem;
+		margin: 0 0 15px;
+	}
+}
+.timeline .content {
+	width: 88%;
+	float: left;
+	border-radius: 15px;
+	border: 2px solid $illightgrey;
+	padding: 15px;
+	background-color: $white;
+}
+.timeline-even .icon {
+	float: right;
+	position: relative;
+	right: -30px;
+}
+.timeline-odd .icon {
+	float: left;
+	position: relative;
+	left: -30px;	
+}
+.timeline-odd .timeline-inner {
+	float: right;
+	border-left: 5px solid $illightgrey;
+	position: relative;
+	left: -5px;
+}
+.timeline-even .timeline-inner {
+	border-right: 5px solid $illightgrey;
+}
+
+.timeline-date {
+	display: block;
+	margin-bottom: 10px;
+	color: $lightcolor;
+}

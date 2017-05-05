@@ -1,0 +1,42 @@
+$white: #ffffff;
+$illightgrey: #dbefec;
+$lightcolor: #c7c7c7;
+$ilgrey: #79949e;
+$mediumgrey: #666666;
+$oddbackground: #505050;
+$textgrey: #333333;
+$darkgrey: #2D3340;
+$almostBlack: #1c1c1c;
+
+$ilblue: #226daa;
+$ilteal: #005cb9;
+$ilnavy: #073553;
+$ilpurple: #393f8d;
+$ilgreen: #adc166;
+$ilgold: #fcb943;
+$ilorange: #f26b3b;
+$ilred: #aa3544;
+$midblue: rgb(65,159,217);
+$darkerblue: rgb(48,124,173);
+
+$transdur: 0.2s;
+$darkbackground: $almostBlack;
+
+
+// font-sizes
+$xlargeFont: 2.75rem;
+
+// USE CASES
+
+$siteheaderinitial: rgba(255,255,255,0.9);
+$siteheaderfinal: rgba(255,255,255,1);
+
+$textshadow: 1px 1px 1px rgba(0,0,0,0.2);
+$boxshadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+
+// Background-colors
+
+$topbar: rgb(94, 139, 181);
+$secondbar: rgb(1, 66, 106);
+$tertiarybar: rgb(209, 210, 212);
+$footercolor: rgb(162, 172, 174);

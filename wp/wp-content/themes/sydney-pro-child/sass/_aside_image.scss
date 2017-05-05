@@ -1,0 +1,32 @@
+.aside-image {
+	padding: 0;
+	position: relative;
+	 .image-container {
+	    height: 100%;
+	    overflow: hidden;
+	    padding: 0;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	}
+	 .image-holder {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		z-index: 0;
+		background-position: 50% 50%;
+	}
+	.content-wrap {
+		padding: 70px 0 70px 50px;
+	}
+	&.right .image-container {
+		left: auto;
+		right: 0;
+	}
+	&.right .content-wrap {
+		padding: 70px 50px 70px 0;
+	}
+}

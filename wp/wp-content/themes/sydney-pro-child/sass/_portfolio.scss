@@ -1,0 +1,31 @@
+.portfolio-images {
+	margin-bottom: 40px;
+}
+.portfolio-info {
+	background-color: $white;
+	border: 1px solid $illightgrey;
+	padding: 25px 25px 40px;
+	h5 {
+		margin: 0 0 15px;
+		text-transform: uppercase;
+	}
+	ul {
+		list-style: none;
+		font-size: 0.875rem;
+		margin-bottom: 10px;
+		li {
+		padding: 10px 0;
+			span {
+				float: right;
+				color: $darkbackground;
+			}
+		}
+	}
+	.button-group {
+		text-align: center;
+		a {
+			width: 100%;
+			margin-top: 10px;
+		}
+	}
+}

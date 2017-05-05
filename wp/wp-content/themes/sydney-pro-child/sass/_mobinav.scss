@@ -1,0 +1,60 @@
+#mainnav-mobi {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		position: absolute;
+		top:28px;
+		background-color: $white;
+		z-index: 1000;
+	ul {
+		display: block;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			margin:0;
+			position: relative;
+			text-align: left;
+			cursor: pointer;
+		}
+	}
+	 > li > a {
+		display: block;
+		text-decoration: none;
+		padding: 10px 50px;
+		color: $white;
+	}
+	&.sub-menu {
+		top: 100%;
+		left: 0;
+		z-index: 2000;
+		position: relative;
+		background-color: $almostBlack;
+	}
+	 > ul > li > ul > li,
+	 > ul > li > ul > li > ul > li {
+		position: relative;
+		border-top: 1px solid $darkgrey;
+		background-color: $darkgrey;
+	}
+	 > ul > li > ul > li >  a {
+		padding-left: 70px;
+	}
+	 > ul > li > ul > li > ul > li a {
+		padding-left: 90px;
+	}
+	 ul.sub-menu > li > a {
+		display: block;
+		text-decoration: none;
+		padding: 5px 60px;
+		border-top-color: rgba(255,255,255,0.1);
+		transition: 0.2s ease-out;
+	}
+	 > ul > li > ul > li:first-child a {
+		border-top: none;
+	}
+	ul.sub-menu > li > a:hover,
+	> ul > li > ul > li.active > a {
+		color: $white;
+	}
+}

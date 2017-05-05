@@ -1,0 +1,40 @@
+.widget_sydney_fp_contact_info {
+	text-align: center;
+}
+.widget_sydney_fp_contact_info span {
+	display: block;
+}
+.fp-contact {
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	.fa {
+		font-size: 36px;
+		color: $ilgrey;
+	}
+	.contact-above {
+		font-size: 22px;
+		margin: 15px 0;
+		color: $ilgrey;
+	}
+}
+
+.sydney_contact_info_widget {
+	span {
+		color: $ilblue;
+		margin-right: 15px;
+	}
+	div {
+		margin-bottom: 15px;
+	}
+}
+
+.page-template-page_contact {
+	input {
+		width: 100%;
+		max-width: 100%;
+	}
+	.wpcf7-submit {
+		width: auto;
+	}
+}

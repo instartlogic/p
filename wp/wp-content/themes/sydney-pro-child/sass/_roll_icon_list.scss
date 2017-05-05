@@ -1,0 +1,31 @@
+.roll-icon-list {
+	padding-top: 15px;
+	.icon {
+		text-align: center;
+		width: 70px;
+		height: 70px;
+		line-height: 75px;
+		float: left;
+		margin-right: 30px;
+		margin-top: 7px;
+		border-radius: 50%;
+		i {
+			font-size: 1.625rem;
+		}
+	}
+	.list-item {
+		margin-bottom: 30px;
+	}
+	.content {
+		overflow: hidden;
+	}
+	.content h3 {
+		font-size: 1rem;
+		font-weight: 500;
+		line-height: normal;
+		margin: 7px 0 10px;
+	}
+	.content p {
+		margin-bottom: 0;
+	}
+}

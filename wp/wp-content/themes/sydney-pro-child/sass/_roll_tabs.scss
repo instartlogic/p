@@ -1,0 +1,40 @@
+.roll-tabs {
+	margin-bottom: 20px;
+	.menu-tab {
+		overflow: hidden;
+		margin: 0;
+		list-style: none;
+		li {
+			position: relative;
+			bottom: -1px;
+			float: left;
+			margin-right: 2px;
+			a {
+				font-size: 0.875rem;
+				font-weight: 500;
+				display: block;
+				color: $darkgrey;
+				padding: 12px 25px 10px;
+				&:hover {
+					background-color: $white;
+					text-decoration: none;
+				}
+			}
+		}
+		&.active a {
+			background-color: $white;
+			border: 1px solid $illightgrey;
+			transition: none;
+		}
+	}
+	.content-tab {
+		margin-top: 50px;
+		border: 1px solid $illightgrey;
+		padding: 25px 20px 10px 25px;
+		margin-top: -1px;
+		background-color: $white;
+		p {
+			margin-bottom: 20px;
+		}
+	}
+}

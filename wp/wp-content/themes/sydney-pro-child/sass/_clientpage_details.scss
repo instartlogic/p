@@ -1,0 +1,29 @@
+.clientpage {
+	details {
+		margin: 2rem 0;
+		background-color: $white;
+		padding: 10px;
+		border: 1px solid;
+		summary {
+			position: relative;
+			color: $ilblue;
+			cursor: pointer;
+			font-weight: bold;
+		}
+	}
+	details summary::before{
+		content: "»";
+		transform: rotate(-90deg);
+		font-size: 2rem;
+		position: absolute;
+		right: 15px;
+		top: -1rem;
+		color: $ilblue;
+	}
+	details[open] summary::before {
+		transform: rotate(90deg);
+	}
+	summary + * {
+		margin-top: 1rem;
+	}
+}

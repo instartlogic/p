@@ -1,0 +1,19 @@
+article.hentry {
+		background-color: #ededef;
+		padding: 30px; // app adds inline styles
+	}
+.hentry .panel-grid-cell {
+	padding: 20px;
+    background-color: $white;
+    border: 1px solid;
+	align-self: stretch;
+}
+.entry-content h3.widget-title {
+	text-align: left;
+	font-size: 1.25rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	&:after {
+		content: none;
+	}
+}

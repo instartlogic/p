@@ -1,0 +1,18 @@
+.internalads {
+	display: flex;
+	justify-content: space-between;
+	.siteorigin-widget-tinymce.textwidget {
+		display: flex;
+		flex-direction: columns;
+		justify-content: space-between;
+	}
+	.panel-grid-cell {
+		position: relative;
+		padding-bottom: 3.5rem; // to save room but CTA button.
+		.btn {
+			position: absolute;
+			bottom: 15px;
+			left: 15px;
+		}
+	}
+}

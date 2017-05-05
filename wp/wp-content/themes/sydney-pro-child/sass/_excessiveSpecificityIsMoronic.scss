@@ -1,0 +1,13 @@
+#excessiveSpecificityIsMoronic {
+  .hentry .panel-grid-cell {
+	align-self: stretch;
+  }
+  .hentry .clientpageshell .panel-grid-cell {
+	align-self: flex-start;
+  }
+}
+.siteorigin-panels-stretch {
+	border-bottom: none !important;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}

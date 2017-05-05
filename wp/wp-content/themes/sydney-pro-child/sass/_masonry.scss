@@ -1,0 +1,16 @@
+.masonry-layout {
+	width: 100%;
+	padding: 0;
+	.hentry {
+		width: 360px;
+		margin: 15px;
+		padding: 0;
+	}
+	.post-wrap {
+		padding: 0;
+	}	
+	.hentry:after {
+		width: 0;
+		height: 0;
+	}
+}

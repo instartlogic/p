@@ -1,0 +1,13 @@
+.roll-spacer {
+	display: block;
+	clear: both;
+	width: 100%;
+	height: 47px;
+	overflow: hidden;
+	&.small {
+		height: 27px;
+	}
+	&.large {
+		height: 60px;
+	}
+}

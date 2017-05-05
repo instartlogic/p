@@ -1,0 +1,78 @@
+@import "FEATURE_hp_futurefocused";
+@import "FEATURE_hp_product_hilites";
+
+
+.topmod {
+	text-align: center;
+    padding: 20px 7vw;
+	position: relative;
+	h3 {
+		font-size: $xlargeFont;
+	}
+}
+.angledown {
+	position: relative;
+	&:after {
+		content: '';
+		height: 0;
+		width: 0;
+		position: absolute;
+		top: 100%;
+		left: calc(50% - 15px);
+		border: 30px solid transparent;
+	}
+}
+.proactive_support {
+	background-color: $tertiarybar; 
+	color: $mediumgrey;
+	&:after {
+		border-top-color: $tertiarybar;
+	}
+}
+.enterprise {
+	background-color: $topbar;
+	&:after {
+		border-top-color: $topbar;
+	}
+	* {
+		color: $white;
+	}
+}
+.hp_why, .hp_why2 {
+	background-color: $footercolor;
+	color: $white;
+}
+.hp_why2 {
+    padding: 20px 7vw;
+    display: flex;
+    > div {
+    	border-left: 1px solid; 
+    	padding: 0 1vw;
+    	position: relative;
+
+    }
+	.panel-widget-style {
+		padding-left: 50px;
+		&:before {
+    		content: "X";
+    		position: absolute;
+    		top: 0;
+    		left: 1vw;
+    	  }
+	}
+}
+a.noa11y {
+	border-bottom: 1px solid;
+	color: inherit;
+	white-space: nowrap;
+	&:after {
+		content: " >"
+	}
+	
+	&:hover, &:focus, &:active {
+		color: $ilorange;
+	}
+}
+body.home .header-image {
+	display:none;
+}

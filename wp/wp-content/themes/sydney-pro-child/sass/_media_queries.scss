@@ -1,0 +1,303 @@
+/* Media Queries
+-------------------------------------------------------------- */
+	@media only screen and (min-width: 1930px) {
+		.parallax {
+			background-size: cover;
+		}
+	}
+	/* Smaller than standard 1200 */
+	@media only screen and (max-width: 1199px) {
+		.roll-icon-list .list-item {
+			margin-bottom: 18px;
+		}
+		.roll-project.fullwidth .project-item {
+			width: 25%;
+		}
+		.masonry-layout .hentry {
+			width: 455px;
+		}
+		.timeline .content {
+			width: 80%;
+		}
+	}
+	/* Smaller than standard 980 */
+	@media only screen and (max-width: 991px) {	
+		.site-header.fixed {
+			position: static !important;
+		}
+		.parallax {
+			background-size: cover;
+			background-attachment: scroll;
+			background-position: top center!important;
+		}
+        .site-header {
+            position: static;
+            background-color: $white;
+		} 		
+		.roll-counter .numb-count {
+			font-size: 24px;
+		}
+		.masonry-layout .hentry {
+			width: 345px;
+		}
+		.header-wrap .col-md-8 {
+			padding: 0;
+		}
+		.last {
+			margin-bottom: 0 !important;
+		}
+		.margin-bottom-device {
+			margin-bottom: 50px;
+		}
+		.margin-top-device {
+			margin-top: 50px;
+		}
+		.content-area .post-wrap,
+		.contact-form-wrap {
+			padding-right: 0;
+		}
+		.contact-form-aside,
+		.sidebar {
+			margin-top: 50px;
+		}
+		.roll-icon-box {
+			margin-bottom: 30px;
+		}
+		.roll-promobox.aside-style,
+		.roll-promobox.aside-style .promo-wrap,
+		.roll-promobox.aside-style .promo-content,
+		.roll-promobox.aside-style .promo-controls {
+			display: block;
+			text-align: center;
+			width: 100%;
+		}
+		.roll-promobox.aside-style .title {
+			margin-bottom: 20px;
+		}
+		.roll-project.fullwidth .project-item {
+			width: 33.3%;
+		}
+		.footer-widgets .widget {
+			margin-bottom: 50px;
+		}
+		.blog-post:nth-of-type(3n+1) {
+			clear: none;
+		}		
+		.blog-post:nth-of-type(2n+1) {
+			clear: left;
+		}
+	}
+	@media only screen and (max-width: 1024px) {
+		.slides-container .slide-item,	
+		.panel-row-style {
+			background-attachment: scroll;
+			background-position: center !important;
+		}
+		.panel-row-style.mob-pad-0 {
+			padding: 0 !important;
+		}		
+		.panel-row-style.mob-pad-15 {
+			padding: 15px 0 !important;
+		}	
+		.panel-row-style.mob-pad-30 {
+			padding: 30px 0 !important;
+		}
+		.panel-row-style.mob-pad-45 {
+			padding: 45px 0 !important;
+		}
+		.btn-menu {
+			display: block;
+		}
+		#mainnav {
+			display: none;
+		}		
+		.posts-navigation {
+			overflow: hidden;
+			margin-bottom: 30px;
+		}					
+	}
+	@media only screen and (max-width: 780px) {	
+		.roll-client .client-item img {
+			max-width: 100%;
+  		}
+  		.panel-grid-cell {
+   			padding-left:15px !important;
+    		padding-right:15px !important;
+    		margin-bottom: 15px !important;
+  		}
+	}
+	/* Tablet Landscape */
+	 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+		.parallax {
+			background-size: cover;
+			background-attachment: scroll;
+			background-position: top center!important;
+		}
+	}
+	/* All Mobile Sizes */
+	@media only screen and (max-width: 767px) {
+		.posts-layout {
+			max-width: 100%;
+		}
+		.masonry-layout .hentry {
+			width: 100%;
+			margin: 0 0 30px;
+			padding: 0 15px;
+		}		
+		.text-slider-section {
+			min-height: 190px;
+		}
+		.text-slider .maintitle {
+			font-size: 32px;
+		    line-height: 1.1;
+		    padding-bottom: 10px;
+		}
+		.text-slider .subtitle {
+		    font-size: 16px;
+		    line-height: 24px;
+		    padding: 15px 0;
+		}
+		.roll-button {
+			padding: 10px 30px;
+		}
+		.roll-project .project-item {
+			width: 100%;
+		}
+		.roll-project.fullwidth .project-item {
+			width: 50%;
+		}
+		.roll-counter {
+			margin-bottom: 50px;
+		}
+		.single-post .author-post .author-avatar {
+			float: none;
+			margin-bottom: 20px;
+		}
+		.single-post .author-post .author-info {
+			margin-left: 0;
+			padding: 0;
+		}
+		.single-post .author-post ul.socials {
+			position: static;
+		}
+		.single-post .author-post .intro {
+			clear: left;
+			padding-top: 10px;
+		}
+		.comment-list .children {
+			margin-left: 75px;
+		}
+		.error-wrap .error-search {
+			padding: 0 20px;
+		}
+		.aside-image .content-wrap {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.social-menu-widget a:before {
+			font-size: 42px;
+		}
+		.btn-menu {
+			float: none;
+			margin: 15px auto 0;
+		}
+		.header-wrap {
+			text-align: center;
+		}
+		#mainnav-mobi {
+			top: auto;
+		}
+		.site-header.float-header {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		.timeline-inner {
+			width: 100%;
+		}
+		.timeline .icon {
+			float: left;
+			position: static;
+		}
+		.timeline .content {
+			float: right;
+			width: 90%;
+		}
+		.timeline-even .timeline-inner,
+		.timeline-odd .timeline-inner {
+			border: 0;
+		}
+		.timeline {
+			margin-bottom: 15px;
+		}
+        .text-slider-section {
+			min-height: 0;
+			top: auto;
+			bottom: 0;
+		}
+		.site-title {
+			font-size: 22px !important;
+		}	
+		.fp-contact {
+			width: 100%;
+			margin-bottom: 20px;
+		}	
+		.fp-contact .contact-above {
+			font-size: 18px;
+			margin: 8px 0;
+		}
+		.fp-contact .fa {
+			font-size: 26px;
+		}
+	}
+	@media only screen and (max-width: 600px) {
+		.timeline {
+			position: relative;
+		}
+		.timeline .icon {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}	
+		.timeline-inner h3 {
+			margin-left: 30px;
+		}
+	}	
+	/* Mobile Portrait Size */
+	@media only screen and (max-width: 479px) {
+		.roll-project.fullwidth .project-item {
+			width: 100%;
+		}		
+		.blog-post,
+		.service,
+		.sidebar-column {
+			padding: 0;
+		}		
+		.roll-button {
+			font-size: 12px;
+		}
+		.text-slider .maintitle {
+			font-size: 20px;
+		}
+		.text-slider .subtitle {
+			font-size: 14px;
+		}
+		.text-slider {
+			margin-bottom: 15px;
+		}
+	}
+	@media only screen and (max-width: 320px) {
+		.text-slider {
+			margin-bottom: 0;
+		}		
+	}
+	/* Center menu vertically */
+	@media screen and (min-width: 1025px) {
+		.header-wrap .container > .row {
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-align-items: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+		}
+	}	

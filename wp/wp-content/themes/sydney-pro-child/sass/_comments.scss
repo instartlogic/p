@@ -1,0 +1,72 @@
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+
+.comments-area {
+	margin-bottom: 60px;
+}
+.comments-title {
+	margin: 0 0 30px 0;
+	font-size: 1.5rem;
+}
+.comments-area ol {
+	list-style: none;
+}
+.comments-area ol {
+	padding: 0;
+}
+.comments-area .children {
+	padding-left: 20px;
+}
+.comments-area .fn {
+	color: $oddbackground;
+}
+.comment-author .avatar {
+	position: absolute;
+}
+.comment-author .fn,
+.comment-metadata {
+	margin-left: 80px;
+}
+.comment-metadata {
+	font-size: 0.75rem;
+	margin-bottom: 30px;
+}
+.comment-body {
+	padding: 15px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid $illightgrey;
+	background-color: $white;
+}
+.reply {
+	text-align: right;
+}
+.comment-reply-link {
+	padding: 5px;
+	font-size: 0.75rem;
+}
+.comment-meta a {
+	color: $lightcolor;
+}
+.comments-area a.url {
+	color: $oddbackground;
+	text-decoration: underline;
+}
+.bypostauthor {
+}
+.comment-reply-title {
+	font-size: 25px;
+}
+.comment-form input {
+	width: 100%;
+	max-width: 100%;
+}
+.form-submit input {
+	width: auto;
+}
+.comment .comment-detail {
+	border: 1px solid $ilblue;
+}

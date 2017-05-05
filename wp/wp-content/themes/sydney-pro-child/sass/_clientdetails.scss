@@ -1,0 +1,16 @@
+.clientdetails {
+    img {
+        width: 100%;
+    }
+    p {
+        line-height: 1.2;
+        margin-bottom: 1rem;
+        &::first-line {
+            color: $ilblue;
+            font-weight: bold;
+        }
+    }
+}
+.client-item + .client-item {
+    margin-left: 30px;
+}

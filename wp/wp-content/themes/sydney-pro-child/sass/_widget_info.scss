@@ -1,0 +1,34 @@
+.widget-info {
+	.logo-footer {
+		margin-bottom: 36px;
+	}
+	p {
+		margin-bottom: 24px;
+	}
+	.infomation {
+		list-style: none;
+		margin: 0;
+		li {
+			position: relative;
+			padding: 0 0 0 30px;
+			margin-bottom: 15px;
+			line-height: 24px;
+			&.address:before,
+			&.phone:before,
+			&.email:before {
+				position: absolute;
+				left: 0;
+				top: 0;
+				content: "\f041";
+				font-family: "FontAwesome";
+				font-size: 1rem;
+			}
+			&.phone:before {
+				content: "\f095";
+			}
+			&.email:before {
+				content: "\f040";
+			}
+		}
+	}
+}

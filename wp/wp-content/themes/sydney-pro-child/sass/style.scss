@@ -1,0 +1,77 @@
+/*
+ Theme Name:   FastAsFuck
+ Theme URI:    
+ Description:  Child theme of Sydney Pro, customized for Instart Logic 
+ Author:       Instart Logic 
+ Author URI:   http://instartlogic.com
+ Template:     sydney-pro-ii
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         
+ Text Domain:  sydney-pro-ii-child
+*/
+
+@import "variables";
+@import "accessibility";
+@import "comments";
+@import "media";
+@import "defaults";
+@import "header";
+@import "mainnav";
+@import "footer";
+@import "mobinav";
+@import "page_wrap";
+@import "error_wrap";
+@import "page-title";
+@import "error_404";	
+@import "blog_pagination";
+@import "next_prev";
+@import "innerpagelayout";	
+@import "single_post";
+@import "site_footer";
+@import "go_top_button";
+@import "panels";
+@import "blog_post";
+@import "thumbnails";
+@import "hentry_content_area";
+@import "layout_article";
+@import "client_partial";
+@import "roll_tabs";
+@import "elements";
+@import "roll_button";
+@import "layout";
+@import "search";
+@import "print";
+@import "internal_ad_modules";
+@import "home_social_menu";
+@import "roll_client";
+@import "roll_icon_box";
+@import "roll_promo_box";
+@import "_slider";
+
+@import "media_queries";
+@import "responsive";
+
+@import "excessiveSpecificityIsMoronic";
+
+//@import "FEATURE_rotating_header";
+///@import "FEATURE_home_page";
+
+//@import "REMOVE_FOR_PRODUCTION";
+
+.slide-text.slides {
+   padding-left: 0;
+}
+.text-slider .maintitle:after {
+	background-color: $ilblue;
+}
+.sidebar .widget:before {
+	background-color: $ilblue;
+}	
+.switcher-container .switcher-icon a:focus {
+	color: $ilblue;
+}
+#map img {
+	max-width: none;
+}

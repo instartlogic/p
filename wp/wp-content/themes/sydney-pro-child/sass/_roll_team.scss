@@ -1,0 +1,121 @@
+
+	.roll-team.carousel .team-item {
+		padding: 0 25px;
+	}
+	.post-type-archive-employees .team-item {
+  		margin-bottom: 30px;
+	}
+	.roll-team .team-inner {
+		padding: 4px;
+		background-color: $white;
+		position: relative;
+		text-align: center;
+	}
+	.roll-team .team-item .team-pop .name {
+		font-family: "Raleway", sans-serif;
+		font-size: 16px;
+		font-weight: 600;
+		color: $white;
+		padding: 10px 0;
+
+	}
+	.roll-team .team-item .team-pop .pos {
+		font-style: italic;
+	}
+	.roll-team .team-item .team-pop .team-info {
+	    top: 30%;
+	    position: relative;
+		width: 100%;
+	}
+	.roll-team .team-item .pop-overlay {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+		z-index: 10;
+		opacity: 0;
+		transition: all 1s;
+	}
+	.roll-team .team-item .team-social {
+		text-align: center;
+		padding: 17px 0 0;
+		margin: 0;
+	}
+	.roll-team .team-item .team-social li {
+		display: inline-block;
+	}
+	.roll-team .team-social li a {
+		font-size: 16px;
+		color: $white;
+		display: block;
+		margin-left: 5px;
+		height: 30px;
+		width: 30px;
+		line-height: 28px;
+		border: 1px solid $white;
+		background-color: transparent;
+		border-radius: 50%;
+		transition: $transdur;
+	}
+	.roll-team .team-item .team-social li:first-child a {
+		margin-left: 0;
+	}
+	.roll-team .team-item .team-social li:hover a {
+		background-color: $white;
+	}
+	.archive .team-social li a {
+		color: $ilblue;
+		border: 1px solid $ilblue;
+	}
+	.roll-team .team-item .team-pop {
+		color: $white;
+		z-index: 20;
+		width: 100%;
+		height: 100%;
+		padding: 0 10px;
+		cursor: pointer;
+		opacity: 0;
+		transition: all 0.3s;
+		background-color: $ilblue;
+	}
+	.roll-team .team-item:hover > .team-inner .team-pop {
+		opacity: 1;
+		-webkit-animation: pop-scale 0.5s 1 cubic-bezier(0.15, 0.85, 0.35, 1.2);
+		animation: pop-scale 0.5s 1 cubic-bezier(0.15, 0.85, 0.35, 1.2);
+	}
+	.roll-team .team-item:hover > .team-inner .pop-overlay {
+		opacity: 1;
+	}
+	.roll-team .team-content {
+		text-align: center;
+	}
+	.roll-team .team-content .name {
+		font-size: 1rem;
+		font-weight: 600;
+		padding: 12px 0 2px;
+		color: $ilblue;
+	}
+	.roll-team .team-content .pos {
+		padding-bottom: 12px;
+		color: $darkbackground;
+	}
+	.archive .team-item:nth-of-type(3n+1) {
+		clear: left;
+	}
+	/* Type B */
+	.roll-team.type-b .team-item .team-social li:hover a {
+		background-color: $ilblue;
+		color: $white;
+	}
+	.roll-team.type-b .team-social li a {
+		color: $ilblue;
+		border: 1px solid $ilblue;
+	}
+	.roll-team.type-b .team-item {
+		margin-bottom: 30px;
+	}
+	.roll-team.type-b .team-item:nth-of-type(3n+1) {
+		clear: left;
+	}

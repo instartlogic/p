@@ -1,0 +1,24 @@
+.roll-icon-box {
+.icon {
+		border: 1px solid $ilblue;
+	}
+.icon i,
+.content h3 a:hover {
+		color: $ilblue;
+	}
+&.white .icon {
+		background-color: $ilblue;
+	}
+&.white .content h3 a {
+		color: $ilblue;
+	}
+}
+.roll-icon-list {
+.icon {
+		border: 1px solid $ilblue;
+	}
+.icon i,
+.content h3 a:hover {
+		color: $ilblue;
+	}
+}

@@ -1,0 +1,41 @@
+#mainnav.mainnav.mainnav { // high specifity due to inpage CSS
+		float: right;
+	ul {
+		list-style-type: none;
+		display: flex;
+		justify-content: space-between;
+		margin: 0;
+	}	
+	ul li a {
+		display: block;
+		padding: 10px;
+		color: $ilblue;
+		text-transform: uppercase;
+	}
+	.menu > li:hover > a,
+	a:hover {
+		color: $white;
+		background-color: $ilblue;
+		text-decoration: none;
+	}
+	ul ul {
+		width: 180px;
+		position: absolute;
+		transform: scale(1,0);
+		transform-origin: top;
+		box-shadow: $boxshadow;
+		display: block;
+		a {
+			background-color: $white;
+			color: $ilblue;
+			display: block;
+		}
+	}
+	li:hover > ul {
+		transform: scale(1);
+		padding: 0;
+	}
+}
+#mainnav-mobi#mainnav-mobi ul li a {
+	float: none;
+}

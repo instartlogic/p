@@ -1,0 +1,9 @@
+.video-container .wp-video {
+	width: 100% !important;
+	vertical-align: bottom;
+}
+@media only screen and (min-width: 1025px) {
+	.video-container .mejs-controls {
+        display: none !important;
+	}
+}

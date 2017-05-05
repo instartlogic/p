@@ -1,0 +1,14 @@
+body:not(.home) {
+	.header-image {
+		min-height: 100px;
+	}
+	.entry-header {
+		h1 {
+			font-size: $xlargeFont;
+		}
+	}
+}
+
+body[class*="no-header"] #page {
+	padding-top: 100px;
+}

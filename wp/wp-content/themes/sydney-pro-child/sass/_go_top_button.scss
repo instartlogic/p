@@ -1,0 +1,28 @@
+.go-top {
+		position: fixed !important;
+		right: 20px;
+		bottom: -45px;
+		color: $white; 
+		display: block;
+		font-size: 22px;
+		line-height: 35px;
+		text-align: center;
+		width: 40px;
+		height: 40px;
+		visibility: hidden;
+		opacity: 0;
+		z-index: 9999;
+		cursor: pointer;
+		border-radius: 2px;
+		transition: all 0.5s;
+		background-color: $ilblue;
+	&:hover {
+		background-color: $white;
+		color: $ilblue;
+	}
+	&.show {
+		opacity: 1;
+		visibility: visible;
+		bottom : 11px;
+	}
+}
