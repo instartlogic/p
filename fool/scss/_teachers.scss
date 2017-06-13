@@ -1,9 +1,17 @@
-.teachers ul img, .hal {
-	width: 200px;
+.teachers ul img {
 	border-radius: 50%;
 	float: left;
 	shape-outside: circle(50%);
 	margin-left: -10px;
+}
+.hal {
+	width: 200px;
+}
+.eve {
+	
+	img { 
+		width: 117px; padding: 5% 10%;
+	}
 }
 .teachers {
 	ul {

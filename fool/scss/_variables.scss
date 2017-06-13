@@ -10,6 +10,7 @@ $bg_light: $lightborders;
 $ilb_light: #a4bacc;
 $ilb_tester: lighten($ilblue, 50%);
 $ilb_dark: darken($ilblue, 20%);
+$aa_ilblue_on_grey: #005193;
 
 a {color: $ilblue;}
 meter {background:$ilb_light }

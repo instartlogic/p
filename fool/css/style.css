@@ -126,7 +126,7 @@ header .buttons {
     flex: 1 1 40%;
     padding: 7px 14px;
     text-decoration: none;
-    font-family: "Open sans";
+    font-family: "Open sans", geneva;
     margin: 5px;
     border-radius: 2px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); }
@@ -134,7 +134,7 @@ header .buttons {
       box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.2); }
   header .buttons .btn {
     background-color: #ccc;
-    color: #226DAA; }
+    color: #005193; }
   header .buttons .btn-cta {
     color: #fff;
     background-color: #226DAA; }
@@ -154,7 +154,8 @@ footer {
     padding: 0 0 0 1rem;
     flex: 25%; }
     footer ul a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #005193; }
       footer ul a:hover {
         text-decoration: underline;
         color: #113755; }
@@ -187,12 +188,18 @@ footer {
     .reg table td[colspan] {
       text-align: center; }
 
-.teachers ul img, .hal {
-  width: 200px;
+.teachers ul img {
   border-radius: 50%;
   float: left;
   shape-outside: circle(50%);
   margin-left: -10px; }
+
+.hal {
+  width: 200px; }
+
+.eve img {
+  width: 117px;
+  padding: 5% 10%; }
 
 .teachers ul {
   display: flex;
@@ -250,7 +257,7 @@ footer {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  font-family: open sans; }
+  font-family: "Open Sans", geneva; }
 .feedback blockquote {
   line-height: 2;
   margin: 0;

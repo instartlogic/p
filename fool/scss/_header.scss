@@ -40,7 +40,7 @@ header .buttons {
 	  flex: 1 1 40%;
 	  padding: 7px 14px;
 	  text-decoration: none;
-	  font-family: "Open sans";
+	  font-family: "Open sans", geneva;
 	  margin: 5px;
 	  border-radius: 2px;
 	  box-shadow: $shadows;
@@ -50,7 +50,7 @@ header .buttons {
 	}
 	.btn {
 		background-color: $lightborders;
-		color: $ilblue;
+		color: $aa_ilblue_on_grey;
 	}
 	.btn-cta {
 	  color: $white;
