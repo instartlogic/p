@@ -1,6 +1,9 @@
-body:not(.home) {
+body.no-hero {
 	.header-image {
 		min-height: 100px;
+	}
+	.sydney-hero-area {
+		display: none;
 	}
 	.entry-header {
 		h1 {
@@ -9,6 +12,7 @@ body:not(.home) {
 	}
 }
 
-body[class*="no-header"] #page {
+
+/*body[class*="no-header"] #page {
 	padding-top: 100px;
-}
+}*/

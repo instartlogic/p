@@ -1,10 +1,9 @@
-// the last footer, with the copyright statement
-.site-footer {
+#sidebar-footer, .site-footer {
 	background-color: $footercolor;
-	color: rgba(255,255,255,0.5);
+	color: lighten($ilblue, 30%);
 	padding: 30px;
 	a {
-		color: $ilblue;
+		color: $white;
 	  &:hover, &:focus {
 		text-decoration: underline;
 	  }

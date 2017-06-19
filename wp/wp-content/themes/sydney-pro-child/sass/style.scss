@@ -13,6 +13,7 @@
 */
 
 @import "variables";
+@import "fonts";
 @import "accessibility";
 @import "comments";
 @import "media";
@@ -20,6 +21,7 @@
 @import "header";
 @import "mainnav";
 @import "footer";
+@import "footer2";
 @import "mobinav";
 @import "page_wrap";
 @import "error_wrap";
@@ -44,11 +46,12 @@
 @import "search";
 @import "print";
 @import "internal_ad_modules";
-@import "home_social_menu";
+@import "social_menus";
+@import "heroslider";
 @import "roll_client";
 @import "roll_icon_box";
 @import "roll_promo_box";
-@import "_slider";
+@import "slider";
 
 @import "media_queries";
 @import "responsive";

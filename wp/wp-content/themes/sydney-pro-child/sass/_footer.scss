@@ -1,40 +1,33 @@
 #sidebar-footer {
 	padding: 1rem;
-	background-color: $ilblue;
 	margin-top: 30px;
-	a {
-		color: $white;
-		&:hover, &:focus {
-			opacity: 0.6;
+	.menu-item-has-children {
+		margin-right: 1rem;
+	}
+	.sub-menu {
+		a:before {
+			color: rgba(255,255,255, 0.5);
+			padding-left: 1rem;
+		  }
+	}
+	ul {
+		margin: 1rem 0;
+		list-style-type: none;
+		padding:0;
+		li {
+			line-height: 2;
 		}
 	}
-.menu-item-has-children {
-	margin-right: 1rem;
 }
-.sub-menu {
-	font-style: italic;
-	a:before {
-		content: ' / ';
-		color: rgba(255,255,255, 0.5);
-		padding-left: 1rem;
-	  }
-}
-.menu {
+#menu-footermenu {
 	list-style-type: none;
 	display: flex;
 	> li {
 		flex: 1;
-		a {
-			padding-bottom: 0.5rem;
+		> a {
+			text-transform: uppercase;
 		} 
 	}
-	ul {
-		margin: 0;
-		border-top: 1px solid rgba(255,255,255,0.5);
-		padding: 0.5rem 0.5rem 0 0;
-		list-style-type: none;
-	}
-}
 }
 .home #sidebar-footer { // social icons need to look centered.
 	margin-top: 0;

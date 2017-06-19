@@ -1,35 +1,4 @@
-	.panel-grid-cell .widget-title {
-		text-align: center;
-		position: relative;
-		margin: 0 auto 2.75rem;
-		font-size: 3rem;
-		&:after {
-		content: "";
-		position: absolute;
-		left: 50%;
-		bottom: 0;
-		width: 50px;
-		height: 1px;
-		margin-left: -25px;
-		background-color: #226daa;
-	}
+.panel-row-style {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
-
-	.panel-row-style[data-hasbg="hasbg"] {
-		background-size: cover;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		position: relative;
-		z-index: 11;
-		overflow: hidden;
-	}
-	.panel-grid .overlay {
-		z-index: -1;
-	}
-	.inheritColor {
-		color: inherit !important;
-	}
-	.no-col-padding .panel-grid-cell {
-		padding-left: 0 !important;
-		padding-right: 0 !important;
-	}

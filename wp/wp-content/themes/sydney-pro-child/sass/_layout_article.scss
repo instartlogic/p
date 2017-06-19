@@ -9,11 +9,23 @@ article.hentry {
 	align-self: stretch;
 }
 .entry-content h3.widget-title {
-	text-align: left;
 	font-size: 1.25rem;
-	font-weight: bold;
 	margin-bottom: 1rem;
 	&:after {
 		content: none;
 	}
+	.home & {
+		font-size: 3rem;
+		margin: 1rem auto;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		&::before, &::after {
+			content: '';
+			height: 1px;
+			min-width: 300px;
+			background: $ilblue;
+
+		}
+	} 
 }

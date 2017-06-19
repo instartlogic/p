@@ -8,7 +8,7 @@ $textgrey: #333333;
 $darkgrey: #2D3340;
 $almostBlack: #1c1c1c;
 
-$ilblue: #226daa;
+$ilblue: #226daa; // hsl(211, 70%, 44%)
 $ilteal: #005cb9;
 $ilnavy: #073553;
 $ilpurple: #393f8d;
@@ -39,4 +39,4 @@ $boxshadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 $topbar: rgb(94, 139, 181);
 $secondbar: rgb(1, 66, 106);
 $tertiarybar: rgb(209, 210, 212);
-$footercolor: rgb(162, 172, 174);
+$footercolor: darken($ilblue, 30%);
