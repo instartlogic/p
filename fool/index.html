@@ -20,9 +20,10 @@ Thank you.
 -->
 
 <!--<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans%3A400'  />-->
-<link href="//fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet" >
+<link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet" >
 <link rel="stylesheet" href="css/style.css">
-
+<link rel="manifest" href="manifest.json?2">
+<meta name="theme-color" content="#226DAA">
 </head>
 <body>
 
@@ -184,10 +185,26 @@ Thank you.
 	<small>* On a serious note, please take our <a href="http://speedperception.meteorapp.com/challenge">Speed Perception Challenge</a> to better help developers understand perceived performance.</small>
 	<p>&copy; Instart Logic Inc. All rights reserved. <a href="https://instartlogic.com/company/legal">Privacy Policy and Legal</a></p>
 </footer>
+
 <script>
 	document.getElementById('switch').addEventListener('click', function(){
 		document.body.classList.toggle('black');
 	});
+
+self.addEventListener('install', function(event) {
+  event.waitUntil(
+    caches.open('static-v01').then(function(cache) {
+      return cache.addAll([
+        '/css/style.css',
+        '/svg/instartlogo.svg'
+      ]);
+    })
+  );
+});
+
+
+
+
 	
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -2,9 +2,6 @@
 a {
   color: #226DAA; }
 
-meter {
-  background: #a4bacc; }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -62,6 +59,7 @@ section:first-of-type {
   color: #fff; }
 
 section:nth-of-type(2) {
+  background-color: #113755;
   background-image: url("../images/bg.jpg");
   box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset -3px -3px 3px rgba(0, 0, 0, 0.2);
   background-size: cover; }

@@ -30,10 +30,10 @@ section:first-of-type {
 	color: #fff;
 }
 section:nth-of-type(2) {
-
-	background-image: url("../images/bg.jpg");
+  background-color: $ilb_dark;
+  background-image: url("../images/bg.jpg");
   box-shadow: inset $shadows, inset $topshadows;
-	background-size: cover;
+  background-size: cover;
 }
 section:nth-of-type(3),
 table {
