@@ -1,0 +1,22 @@
+input {
+  font-size: 1.4rem;
+}
+p.result {position: absolute;
+ right: 20px;}
+pre {font-family: monospace;}
+
+@import "vars";
+@import "styleblock";
+@import "layout";
+@import "content";
+.btn {
+    padding: 0 8px 4px;
+    color: $background;
+    text-transform: capitalize;
+    border-radius: 8px;
+    background-color: $lime;
+    line-height: 1.5;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: $surround_shadow;
+}

@@ -1,0 +1,14 @@
+
+#next,
+#back {
+  z-index: 1000;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: $ilblue;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  letter-spacing:1px;
+  font-size: 1rem;
+}
+#next {left: auto; right: 5px;}
+
