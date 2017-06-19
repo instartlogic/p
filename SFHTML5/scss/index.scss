@@ -1,0 +1,28 @@
+@import "layout";
+@import "slides";
+@import "content";
+@import "pre";
+@import "objects";
+@import "externallink";
+@import "slidedisplay";
+@import "buttons";
+@import "aria";
+@import "showhide_dl";
+@import "true";
+@import "print"; 
+
+@import "rail";
+
+.toc .lookatme {
+	animation: lookatme 10s infinite;
+	transform-origin: bottom top;
+}
+
+@keyframes lookatme {
+	80% {
+		transform: rotatex(0deg);
+	}
+	to {
+		transform: rotatex(360deg);;
+	}
+}

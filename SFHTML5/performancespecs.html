@@ -1,0 +1,38 @@
+Interested in web performance? Here are the specs of interest:
+<ul>
+<li>
+<h2>High Resolution Time (Level 3)</h2>
+<p>The <code>DOMHighResTimeStamp</code> type, <code>performance.now</code> method, and <code>performance.timeOrigin</code> attributes of the <code>Performance</code> interface resolve <code>Date.now()</code> issues with monotonically increasing time values with sub-millisecond resolution.</p>
+<p><a href="https://w3c.github.io/hr-time">https://w3c.github.io/hr-time</a></p>
+</li>
+<li><h2>Performance Timeline (Level 2)</h2>
+<p>Extends definition of the <code>Performance</code> interface, exposes <code>PerformanceEntry</code> in Web Workers and adds support for the <code>PerformanceObserver</code> interface.
+<p><a href="https://w3c.github.io/performance-timeline">https://w3c.github.io/performance-timeline</a></p>
+</li>
+
+<li>
+<h2>Resource Timing (Level 3)</h2>
+<p>Defines the <code>PerformanceResourceTiming</code> interface providing timing information related to resources in a document.</p>
+<p><a href="https://w3c.github.io/resource-timing https://w3c.github.io/navigation-timing">https://w3c.github.io/resource-timing https://w3c.github.io/navigation-timing</a><br/>Supported in all browser except Safari and Opera Mini, starting with IE10</p></li>
+
+<li>
+<h2>User Timing (Level 2)</h2>
+<p>Extends <code>Performance</code> interface with <code>PerformanceMark</code> and <code>PerformanceMeasure</code>.</p>
+<p><a href="https://w3c.github.io/user-timing">https://w3c.github.io/user-timing</a><br/>Supported in all browser except Safari and Opera Mini, starting with IE10</p></li>
+
+<li>
+<h2>Beacon API</h2>
+<p>Defines a beacon API which can "guarantee" asynchronous and non-blocking delivery of data, while minimizing resource contention with other time-critical operations.</p>
+<p><a href="https://w3c.github.io/beacon">https://w3c.github.io/beacon</a><br/>Not supported in IE, Safari or Opera Mini. Support started with Edge 14<br/>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/sendBeacon">navigator.sendBeacon() on MDN</a></p></li>
+
+<li>
+<h2>Preload</h2>
+<p>Defines <code>preload</code> for resources which need to be fetched as early as possible, without being immediately processed and executed. Preloaded resources can be specified via declarative markup, the <code>Link</code> HTTP header, or scheduled with JS. </p>
+<p><a href="https://w3c.github.io/preload">https://w3c.github.io/preload</a></li>
+
+<li>
+<h2>Cooperative Scheduling of Background Tasks</h2>
+<p>Adds the <code>requestIdleCallback</code> method on the Window object, which enables the browser to schedule a callback when it would otherwise be idle, along with the associated <code>cancelIdleCallback</code> and <code>timeRemaining</code> methods.</p>
+<p><a href="https://w3c.github.io/requestidlecallback">https://w3c.github.io/requestidlecallback</a></li>
+</ul>

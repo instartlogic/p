@@ -1,0 +1,703 @@
+foo.captions
+"  EWA GASPEROWICZ: 
+ Hello, everyone.   My name is Ewa Gasperowicz, 
+ and I'm a developer programs   engineer here at Google.   And this is Jeff Posnick.   JEFF POSNICK: Hi, everybody.   I'm also on the developer 
+ relations team at Google.   EWA GASPEROWICZ: Jeff 
+ is one of the creators   and main contributors 
+ to the Workbox library.   Today, we are going 
+ to share with you   our story about transforming 
+ the womentechmakers.com website   into a progressive website.   But before I get to 
+ it, let me tell you   what brought the two of us 
+ together on that project.   Some time ago, I was talking 
+ with a friend of mine, Megan,   at work, and I knew 
+ she was involved   with the Women Techmakers 
+ program, so I asked her,   how is it going?   And she told me, with a lot of 
+ enthusiasm in her voice, Ewa,   it's going great.   The program is growing.   And it's amazing, because 
+ it's so community-based.   There is so much going on, 
+ but actually, sometimes, it's   also challenging.   It's hard to keep 
+ everyone in the loop.   Given that everyone 
+ is going mobile   these days, we're 
+ thinking whether we   should have an app for it.   And it made me think, 
+ if an app was the way   to go, how about the 
+ Progressive Web App?   It also made me 
+ personally curious.   I knew quite well by then how 
+ to write a Progressive Web   App from scratch, 
+ but transforming   an existing live site is an 
+ entirely different story.   And I know some of you 
+ are bothered about it   as well, because you approached 
+ me during this conference   already and asked about it.   So I'm very happy that 
+ I'll be able, today,   to share this story with you.   Luckily for me, 
+ this is also where   Jeff comes into the picture.   Around that time, he was 
+ working on a Workbox library.   When he learned about 
+ my migration plans,   he approached me, 
+ and he said, listen,   Ewa, me and my team are working 
+ on a set of tools that would   make your migration a bliss.   Would you like to use it?   And of course, I said yes.   And that's how me 
+ and Women Techmakers   became a guinea pig for 
+ the Workbox project.   So that's what we settled on.   We settled that Women Techmakers 
+ will get a Progressive Web App,   that Jeff will 
+ provide us with tools,   and I will get my 
+ discovery process   about how it feels to 
+ migrate a website that I can   share with all of you today.   And this is exactly what 
+ we're going to do today.   Our intention is to give you 
+ some insight and some tooling   so that you can attempt 
+ migrations in your own projects   in future with confidence.   OK, let's start.   First, I would like us to 
+ look into the decision process   behind how we decided to go 
+ for a Progressive Web App.   But in order for you to 
+ understand our decisions,   you need to know more 
+ about Women Techmakers.   Women Techmakers is 
+ Google Global program   for women in technology.   It is actually a great 
+ pleasure to talk about it here   at I/O, because this is 
+ where all of this started.   Six years ago, here at I/O, the 
+ first Women Techmakers event   took place.   It was an event to bring 
+ support and community to women   who attended the conference.   And I'm very happy to say that 
+ this support yielded results,   and our number grew.   In the old times, 
+ around 2013, there   were only 8% women 
+ attending the conference.   And this year, we aimed to 
+ have 25% of us attending.   And I'm happy to 
+ say that we made it.   [APPLAUSE]   Since then, the 
+ Women Techmakers have   grown from a humble, 
+ once-per-year event   to now hosting hundreds of 
+ events for over 70,000 women   worldwide.   There is Women Techmakers 
+ Scholars Program   for college students, and 
+ membership to help women   get the career 
+ support they need,   and many more initiatives.   It is now part of 
+ the global movement   for women in technology.   It's not focused in Silicon 
+ Valley only, or even US only.   It supports women 
+ in 160 countries.   That's a lot of 
+ diverse environments.   Because of that, 
+ Women Techmakers   had to get creative 
+ at how they can   support such growth at scale.   When Women Techmakers 
+ was entering new markets,   it also started 
+ targeting new audiences.   And these new audiences 
+ often meant more users   on mobile devices and on less 
+ reliable internet connections.   The program leaders 
+ wanted to make   sure they have the 
+ infrastructure that supports   this diverse environment.   And it seemed that a 
+ Progressive Web App   might be just what they need.   A Progressive Web App 
+ is a web application   that uses modern network 
+ capabilities to deliver   app-like experience 
+ to the users.   It should be, in 
+ particular, reliable,   which means it should 
+ load instantly,   even in uncertain 
+ network conditions.   It should be fast, 
+ which means it   should react to user's actions 
+ on all kinds of devices.   And it should be 
+ engaging, which means   it should feel like a 
+ natural app on the device,   providing an immersive 
+ user experience.   You can see how those features 
+ corresponded with the Women   Techmakers goals.   By making the sites 
+ reliable and fast,   we would improve 
+ experience for users   on mobile and on slow 
+ internet connections.   And by making the app 
+ always just one click away   for the user on 
+ their mobile phones,   it would help to keep 
+ users engaged and involved   even more in the community.   It would allow us to 
+ improve user experience   and stay frugal 
+ at the same time.   We could keep current 
+ infrastructure,   have a single code base, and 
+ support only one platform going   forward.   So that was the decision.   We will migrate this site 
+ to a Progressive Web App.   So how did we do it?   How did we approach 
+ our migration?   Well, this is the process 
+ we roughly followed.   First of all, we needed to 
+ understand, deep in detail,   the current state of our site.   In order to do that, 
+ we used Lighthouse.   How many of you know what 
+ Lighthouse is, or used it?   Yeah, you've been to the 
+ mobile web tent, hopefully.   So Lighthouse is a Chrome 
+ extension that all of you   can install in your 
+ browser that allows   you to measure how close your 
+ web app is to a Progressive Web   App.   When you run your website 
+ through Lighthouse,   it gives you back a report 
+ and a score that summarizes   the state of the app for you.   When we started the process, 
+ our score was about 45,   and our goal was to 
+ get as close to 100   as possible without changing 
+ how the site looked or worked   in general.   That's why we 
+ called it migration.   We didn't want to alter 
+ the site too much,   we just wanted to 
+ make it smoother   in different environments.   If you're curious about 
+ your own site scores,   you can try out the 
+ Lighthouse in the web tent.   And if it goes green, 
+ it means you have   an amazing, amazing website.   So here's how out Lighthouse 
+ report looked like.   You see the score there, 
+ but apart from that,   you also see a list 
+ of features or traits   that the website 
+ should have in order   to be considered progressive.   The green ones mean we're 
+ doing well on those,   and the red ones mean there 
+ is area for improvement.   And one cool thing 
+ about this list   is that, actually, each of 
+ those is an expandable section.   So you can click on it 
+ and see more information   about the particular 
+ feature, and also   find links that lead you 
+ to resources that tell you   how to actually implement that 
+ feature or get better on it.   And this makes it 
+ a super cool tool   for people that are less 
+ experienced with Progressive   Web Apps because, 
+ as a matter of fact,   you don't even need to know what 
+ features you should implement   in order to get progressive.   Lighthouse will simply tell you.   As you can see, our 
+ Lighthouse was 45,   and we were presented 
+ with a list of options.   So what do we do next?   Well, we needed to 
+ prioritize, because we   didn't have all the 
+ resources in the world,   and we didn't have all 
+ the time in the world.   We needed to make sure 
+ we focused on the most   important things first.   And this is why I put the 
+ Women Techmakers logo there,   because that's the moment where 
+ you take the technology you   have, like a Lighthouse 
+ report, and bring it back   to organization or 
+ to business people,   because those are 
+ folks that know   best what's good for the users.   And important thing to remember 
+ about the Progressive Web App   is that it's not a monolithic 
+ technology that you just   drop on your site.   It's actually a set 
+ of modular solutions   that you can usually implement 
+ independently on each other.   So you can take that list 
+ and just pick and choose,   and decide what would make 
+ the biggest difference first,   and then iterate on it.   So you don't need to 
+ be scared that you need   to do everything in one go.   You can start with smaller 
+ changes and take it from there.   In our case, we decided 
+ to focus on two areas--   on offline and on 
+ app-like experience.   Offline, obviously, would 
+ improve the performance   on low internet 
+ connections, and that   would improve how the 
+ app works, not only   for the users in the countries 
+ where the connection is scarce,   but also in environment 
+ like some big conferences.   You've probably 
+ encountered this problem,   where you can't really 
+ access the website   during a conference.   And Women Techmakers is 
+ event driven initiative,   so it was important to add that.   Secondly, we decided to add 
+ app-like experience, which   means you can now install 
+ the app through home   screen of your mobile device.   And we hope that this 
+ will drive engagement   with the users over time, 
+ that it will be easier   to keep everyone in the loop.   Once we have all 
+ our priorities, we   needed to get to know our tools.   In just a moment, 
+ Jeff will take you   through all the ins and 
+ outs of the Workbox library,   and he will show how 
+ easy, with this library,   our migration became.   Once Jeff is done, I will 
+ tell you a little bit   about how we actually implement 
+ it, the whole process.   I'm going to share some 
+ challenges we tackled   during the implementation phase, 
+ and share some lessons learned.   So I hope you will find that 
+ part really interesting.   Finally, at the 
+ end of the process,   it is important to 
+ measure what you achieved.   Of course, first of all, we 
+ wanted to know our Lighthouse   score, if it's 100.   This is a measurement you do for 
+ yourself to know how well you   did on the migration, 
+ but it's also   important for your 
+ stakeholders, because it   gives a nice, concise, 
+ and numerical way   of presenting the progress 
+ you made on your app.   While this number can bring 
+ a lot of satisfaction,   especially if it turns green 
+ and it lights a Lighthouse out   there, the second type of 
+ measurement I put out there,   the Google Analytics, is 
+ even more important to me,   because I think it's very 
+ important to check, afterwards,   how your users reacted to 
+ the changes you introduced.   After all, it's the users 
+ that are the ultimate judge   of your changes.   And this also gives 
+ you a nice base   to start this process again.   Once more, Progressive Web 
+ App can be developed gradually   and interactively over time.   So you can just start 
+ the whole process again,   follow this path, and 
+ iterate as many times   as needed to achieve the 
+ optimal user experience.   Now, you know more 
+ about the business case   we wanted to solve and about 
+ the process we followed,   so how about we get a 
+ little bit more technical?   Jeff, are you ready?   JEFF POSNICK: Thanks, Ewa.   So before we detail the 
+ specific tools that we used,   I wanted to provide 
+ some background   on a web platform technology 
+ called service workers.   Service workers are a code 
+ that you write in JavaScript,   and they act like 
+ a proxy server,   sitting in between your 
+ web app and the network.   They could intercept 
+ network requests,   and they could return a response 
+ from some cache that they   choose or from the 
+ network, or they   can implement custom logic 
+ that mixes and matches where   they get the response from.   Now, with the right 
+ service worker in place,   we could create a web app 
+ that loads almost instantly   and works even when 
+ you're offline.   But if you're not familiar 
+ with service workers,   it can be kind of hard to 
+ picture exactly what's going   on, So an analogy might help.   You can imagine that a service 
+ worker is like an air traffic   controller.   And think about your web 
+ app's requests and response   as airplanes that are 
+ taking off and landing.   So let's see how that analogy 
+ plays out when your web   app makes an HTTP request.   So all right.   We have this airplane 
+ representing a request.   It's taken off.   We're making a GET 
+ request for this image,   and now the service 
+ worker's in control.   It gets to decide the 
+ route while your request is   in flight.   And for a URL that 
+ we've never seen before,   it ends up just going 
+ against the network.   It'll receive a response 
+ just like it normally does.   That response would 
+ go back to your page.   But the really cool thing 
+ is that the service worker   could decide, hey, 
+ I actually want   to save a copy of that response 
+ for use later in a cache,   and that's great.   So our web app gets a 
+ response, and we have   a cache copy that's good to go.   So next time, request takes off, 
+ same URL that we saw before.   The service worker's like, 
+ hey, I know this URL.   I could go straight 
+ to the cache,   I could give the page 
+ response from that cache,   bypass the network completely, 
+ and everything looks the same   from the perspective 
+ of the page.   So that's really cool, 
+ and that's really   what the service worker's 
+ doing in a nutshell.   It's routing where 
+ your requests will go   and having some 
+ intelligent logic there.   But many people would 
+ be reluctant to write   code for an air traffic 
+ control system from scratch,   and I don't blame you.   But while the service worker API 
+ isn't quite as complex as that,   there are some subtle issues 
+ that you could easily run into.   And problematic 
+ service worker code   could lead to things 
+ like delayed updates   or missing contents 
+ in your web app,   just like buggy 
+ air traffic control   could lead to flight 
+ delays, or even worse.   So the Women Techmakers 
+ service worker implementation   uses a brand new set 
+ of tools that we're   happy to announce today, 
+ and it's called Workbox.   And you can find out all 
+ about it at workboxjs.org.   Happy to see people 
+ taking pictures.   I'll give you a chance for that.   So I'd like to walk 
+ you all through some   of the common service worker 
+ use cases and show how Workbox   helps you avoid subtle problems 
+ that you might bump into if you   build everything from scratch.   All right.   So first up, most service 
+ worker implementations   start by adding all 
+ the critical assets   that they need to a cache, 
+ making sure that they'll   be available for later reuse.   And this is referred 
+ to as precaching.   So here's some basic 
+ service worker code   that waits for a given 
+ version of a service worker   to be installed, and then 
+ precaches a list of URLs.   And this is the sort of 
+ thing that you might just   find some sample 
+ on the internet,   and copy and paste, and maybe 
+ even deploy it right away.   But there are some pitfalls 
+ that become apparent   as you release newer 
+ versions of your web app   or add in additional assets.   So one thing is, you need 
+ to remember to manually bump   that version variable each 
+ time you change anything,   or else the new assets 
+ might not get precached.   And you also need 
+ to keep updating   that array of URLs that reflect 
+ your asset's current file   names.   And that's particularly tricky 
+ when your URLs contain version   assets like you see there--   sorry, version 
+ [? hashes, ?] like   you see there with the 
+ JavaScript and the CSS files.   And if your site 
+ could be accessed   via Slash or via 
+ index.html, you need   to have cache entries for both.   Forgetting to do 
+ any of that could   lead to a service 
+ worker that continues   serving still content, 
+ or just doesn't   have a fully populated cache.   So instead of 
+ going it alone, you   could sidestep those 
+ pitfalls by using Workbox.   It integrates into your 
+ existing build process,   whether using webpack, NPM 
+ scripts, gulp, or in the Women   Techmakers case, grunt.   So let's take a 
+ quick look at how   Workbox implements precaching.   There's a single 
+ method, precache,   that takes in a list of files 
+ and all of their revision   information.   We call this information 
+ the precache manifest.   You can see our source 
+ service worker file here,   which is just a pretty 
+ empty precache manifest, not   doing very much.   The nice thing is, though, 
+ in the source file,   we don't have to hard code a 
+ really hard-to-maintain list   of URLs or anything like that.   We could keep it empty.   And the goal of 
+ the build process   is to figure out what should 
+ go into that manifest.   So our final service worker file 
+ would have that empty manifest   replaced with a list of 
+ URLs, along with versioning   information about each URL.   And Workbox ensures that 
+ all of your precache files   are available offline using the 
+ revision info in that manifest   to keep them all up to date.   All right, let's take a closer 
+ look at the build process   that we're using to get that 
+ final service worker file.   And right here, we're using a 
+ method called inject manifest,   which is part of the 
+ Workbox build module.   We pass in the source 
+ service worker file,   and that's the one that 
+ has that empty manifest.   And we tell it where to 
+ write the destination file,   and that will have the 
+ fully-populated manifest ready   for use.   Next thing is, we could 
+ use wildcard patterns   to tell Workbox which files 
+ we want to be precached.   So whenever we add or 
+ rename one of our files,   we don't have to remember 
+ to manually update   that list of URLs.   And there's also no longer 
+ need to increment a version   variable.   Workbox handles versioning 
+ for us via the revision   details in the manifest.   We can also tell Workbox that 
+ our site responds to requests   for the forward slash with 
+ the contents of index.html,   so we don't end up having to 
+ precache two separate entries.   So that's only one 
+ part of the picture.   In addition to precaching, 
+ it's really common   to use runtime 
+ caching strategies   for resources that are 
+ either used infrequently   or are just too 
+ large to precache.   You might, for 
+ instance, use runtime   caching to handle requests 
+ for images that aren't needed   for every section of your site.   Here's some boilerplate 
+ code that implements   a runtime caching strategy.   It fetches a response 
+ from the network,   but first, it saves a copy 
+ of the response in the cache.   This is the sort 
+ of thing, again,   you might copy and paste from 
+ a sample on the internet.   And it's very similar 
+ to what we saw   Illustrated earlier in that 
+ air traffic controller example.   But the subtlety here is 
+ that, while your code will   add entries to 
+ the cache, there's   actually no code that's going 
+ to clean up those entries when   they're no longer needed.   So think back to those airplanes 
+ delivering the image files   to the cache.   So they're going to keep 
+ landing in the cache with more   and more images, and our 
+ air traffic controller   isn't going to do anything 
+ to stop them from piling up.   In practice, this 
+ is the sort of code   that will lead to cache 
+ responses that build up   over time, which waste storage 
+ space in your users' devices.   And that's only one 
+ half of the picture,   though, with runtime caching.   Once you define your 
+ caching strategy,   you need to tell 
+ your service worker   when to use that strategy.   That's called routing.   And here's some 
+ boilerplate code that   checks whether it's a request 
+ for a URL ending in png,   and if so, it uses that 
+ runtime caching strategy   that we just described.   And for a very basic web 
+ app, that might be fine.   But things get out of 
+ hand pretty quickly   if you need to implement 
+ different runtime caching   strategies for different 
+ type of resources,   and you end up chaining them 
+ all together in a big if/else   block, and that just really 
+ doesn't scale very well.   All right, so 
+ let's see how we're   using Workbox on the 
+ Women Techmakers sites   to handle runtime caching.   So there's a number 
+ of features that   lead to clearer, more 
+ concise runtime caching code,   as you can see there.   First, we have a 
+ built-in router,   and this takes care of 
+ responding to requests when   a certain criteria are met.   And here, we're using 
+ a regular expression   as a criteria for what 
+ triggers our routes.   Workbox has built-in support 
+ for common caching strategies,   so we don't have to write, 
+ or more likely, copy,   our own response logic.   They're ready to use 
+ right out of the box.   But Workbox goes 
+ beyond the basics,   allowing us to customize 
+ the built-in strategies   with powerful options, like 
+ specifying an expiration   policy for a given cache.   Workbox will take care of 
+ cleaning up old entries   automatically, instead of 
+ them being saved indefinitely   on your users' devices.   So going back to our 
+ airplane analogy,   our air traffic 
+ controller knows how   to clear out the previous planes 
+ to make room for new ones.   And so let's just take a look 
+ at the impact of adding Workbox   to the site.   So as you can see on the 
+ screenshot in the DevTools   network panel, even if a user's 
+ device is completely offline,   all the responses we need 
+ come from the service worker,   giving us a Progressive Web App 
+ that loads in under a second.   You no longer have 
+ to build a native app   to get this kind of speed, 
+ reliability, and network   independence.   So that's great, but we 
+ don't have to stop there.   Workbox also offers a 
+ number of built-in features   that go beyond 
+ caching, and I'd like   to highlight a couple of them 
+ that the Women Techmakers   site is using.   First, Workbox makes it 
+ easy to add in support   for offline Google Analytics.   All it takes to turn it on 
+ is a single line of code.   Once enabled, Google 
+ Analytics requests   that are made when the 
+ network is unavailable   will be automatically queued 
+ up on your users' devices   and then replayed when 
+ the network comes back.   This means that the Women 
+ Techmakers team won't lose out   on valuable insights when users 
+ access their PWA while they're   offline.   Workbox also helps you follow 
+ user experience best practices.   So using a cache 
+ first strategy means   that your PWA could 
+ load almost instantly,   but it also means 
+ that your users will   see previously-cached 
+ contents on their next visit,   even if you've deployed 
+ an update to your site.   So a really common 
+ UX pattern to follow   is displaying a 
+ little toast message,   like you see at the 
+ bottom of the screen   there, letting your users know 
+ that if they refresh the page,   they'll see the latest content.   And Workbox makes it easy 
+ to follow this UX pattern   by broadcasting a 
+ message to your page   when there's an update 
+ made to one of the caches   that it maintains.   And this message includes 
+ important context,   like the URL of the 
+ resource that was updated.   And this gives you 
+ the flexibility   of ignoring updates of 
+ less important assets,   like some random CSS file, 
+ while prompting the user   to refresh when something 
+ critical is updated,   like the site's main HTML.   So that's just a small overview 
+ of what Workbox can do.   We hope that you find 
+ Workbox equally useful   when you're building your 
+ own Progressive Web Apps.   It's available for use today.   We're [? 1.0 ?] And examples 
+ can be found at workboxjs.org.   Chestnut   I really want to offer special 
+ thanks to Ewa and the Women   Techmakers team for being an 
+ early adopter to the library,   and for offering tons 
+ of valuable feedback   along the way.   So thank you for that.   [APPLAUSE]   EWA GASPEROWICZ: All right, 
+ back to implementation.   But first of all, 
+ thank you, Jeff,   for walking us 
+ through the library,   and thanks for implementing 
+ it in the first place.   It saved me a ton of time.   I actually think it made 
+ me delete more codes than I   added in the first place.   OK, implementation-- 
+ the first takeaway   I wanted to share with you 
+ from the implementation process   is that going for a Progressive 
+ Web App is a great audit   opportunity, and not only 
+ because Lighthouse will list   all of your performance 
+ [? scenes ?] anyways,   but because when you're 
+ planning to implement offline,   especially if it 
+ involves caching   some part of the website 
+ on users' device,   you really need to be 
+ respectful of users' resources,   like bandwidth or storage space.   And you don't want to 
+ push, through this cache,   a bloated website, unnecessary 
+ assets, because it's a waste.   Making the site lean 
+ and resource-friendly   should be a priority.   And it makes it more usable to 
+ all users, not only the ones   using the offline mode.   And often, it's 
+ really not very hard.   Usually, you can 
+ find some easy fixes   and pick the lower-hanging 
+ fruit to start with.   That's what we did 
+ with Women Techmakers.   Let's look at the example.   This is the network panel 
+ for Women Techmakers site.   What I did here, I just 
+ sorted all the assets   the old page was using by size.   And only by looking at 
+ the very top of that list,   you can easily spot easy 
+ targets for optimization.   The bigger the file, the 
+ higher chance you can optimize.   Here, you can see, the 
+ two biggest files, by far,   are the base.js, which was part 
+ of the YouTube API JavaScript   file, and the header, which 
+ is this nice, big [INAUDIBLE]   image on the home page.   So can we optimize those?   Let's start with the image.   It covers the full 
+ header area of the page,   so it should be as big as 
+ the viewport, at least,   but it doesn't need to 
+ be bigger than that.   So if the viewport is smaller, 
+ you can make the image smaller.   What I did here, I just 
+ created two more versions   of that image-- a medium-sized 
+ one and a small one.   I added a few 
+ breakpoints in my CSS   so that it uses the 
+ appropriate image   for the appropriate viewport.   And look at the stats.   It allowed me to save 21% on 
+ overall image load on that page   with--   how many?-- nine lines of code 
+ if you count brackets, right?   This was the gain 
+ just from one image.   Imagine what would happen 
+ if you do it for more   of your images on the page.   It's a really easy fix.   Now, YouTube API-- 
+ over the lifespan   of your page, the libraries 
+ and the resources you're using   might change.   The new ones come up, some 
+ become obsolete, and so on.   In this case, everything 
+ that we were achieving   through the YouTube 
+ API, now it's   possible to do it with an IFrame 
+ when it's configured properly.   So by embedding YouTube 
+ videos on the page with IFrame   instead of YouTube API, we 
+ could just delete that file.   And suddenly, we 
+ gained 400 kilobytes   of the overall page weight.   And if we didn't 
+ make this decision   to go for a Progressive 
+ Web App, probably we   wouldn't even spot that 
+ there is this opportunity.   So it's a good moment when you 
+ go for a Progressive Web App   to stop and think, again, 
+ about resources you're using.   Similar thing, the 
+ Lodash library--   we were using only some basic 
+ functionality of the library,   so we were able to replace 
+ Lodash with Lodash core.   And this brought us from 24 
+ kilobytes to 4 kilobytes.   You might say that 20 
+ kilobytes is not that big,   but this really adds 
+ up in your whole page.   And again, here, I changed only 
+ five characters in my old code,   and that's the gain, right?   So it's really easy to get that.   Now, once we ensure that we're 
+ not pushing too big resources   to the user, it 
+ would be good to also   make sure we don't push things 
+ twice if we don't need to.   For that, we need to 
+ leverage browser caching.   And this is different caching 
+ from service worker caching.   It's just regular browser cache.   Every browser has it these days.   So in the old site, 
+ what was happening,   with every build of the site, 
+ we would version files, or cache   [? past, ?] if you will, by 
+ the version, like build number,   or by timestamp, in some cases.   And this is cool 
+ because every time we   made a new build of the site, 
+ the file would get a new name,   even though the file itself 
+ might not have changed.   That would prevent the 
+ browser from caching it,   because the browser doesn't 
+ know that under different name,   it's still the same content.   So instead, we switched 
+ to content-based caching,   as you see in the lower example.   Now we make a cache 
+ of the content,   and we embed it in 
+ the file name, which   means the file will 
+ get a new address only   if the actual contents change.   So this allowed us to push 
+ less resources to the users.   And remember, Women 
+ Techmakers is a community.   A lot of people are 
+ coming over and over   to the page over the 
+ lifespan of their contacts   with Women Techmakers.   OK.   So a lot of these 
+ type of gains are   really findable in 
+ your Lighthouse report.   If you dig deep, you will 
+ find a lot of good practices   and good hints embedded 
+ in that report.   So just by following 
+ the red color,   you can find a lot 
+ of optimizations   that would make the site 
+ better for all of your users.   Now, the second takeaway-- 
+ and it's going to be quite   a journey, so bear 
+ with me on that one--   is about rethinking 
+ your site resources,   but not from 
+ performance perspective.   Let's say your site 
+ is nice and clean   and it's time to think, 
+ what's to cache and when,   so that users can use 
+ your site offline.   We call it a caching strategy.   And for coming up with the 
+ right caching strategy,   you really need to understand 
+ your site resources,   like images, media, and content.   Let's look at the example.   This is the Women Techmakers 
+ site as loaded online.   It's a rich visual 
+ experience-- lots   of images, lots of 
+ graphical effects.   It's really a beautiful site.   What would happen if we 
+ saved all of the images   from all of this 
+ site to users' cache?   It will just become 
+ really crowded.   Imagine the user wants to 
+ browse a lot of websites   on their device.   If each of the websites 
+ downloaded all possible images   from the whole app, that would 
+ make it really inefficient.   So the question is, are they 
+ really necessary, the images?   Maybe they're not at 
+ the core of the site.   Well, that's how it looks 
+ like without the images.   It's kind of ugly.   But apart from being ugly, 
+ the site is also unusable.   You can't even click to go 
+ to different page, which   means it's entirely broken.   This means no images is a no-go, 
+ and all images is a no-go.   You need to find a 
+ middle ground somewhere.   So how do you find 
+ the middle ground?   Well, I started to think 
+ about images by the function   they have on the website.   Let's go color by color.   The yellow ones are images 
+ that are for navigation,   and the images that allow 
+ users to perform some action.   And this means they're 
+ super important.   If they're not there, the user 
+ cannot really use the website,   they cannot perform the action.   They have absolute priority.   Now, the red ones are the 
+ ones, in our case, that   were related to branding, 
+ but in your case,   it might be different.   Those are images that you, for 
+ some reason, put priority on.   These might be 
+ images, for example,   that create the connection 
+ between your app and the user--   for example, something 
+ that allows your user   to understand what type of 
+ app they are using, right?   So these are your 
+ priority images.   To the contrary, the blue 
+ ones are purely decorative.   They're cool, they make 
+ the website look nice.   But if they're missing, it's 
+ not the end of the world.   Now, the green ones are 
+ kind of funky, because--   I call them informative images.   What I mean by 
+ this is that, apart   from adding to the 
+ visual side of the story,   they also convey some message.   In this case, they tell 
+ you which of the companies   featured content, right?   So I call them 
+ informative because, apart   from being visual, they 
+ also convey a message.   Now, what would happen if 
+ we apply different caching   strategy to different 
+ type of image?   The navigation and action 
+ ones are super important.   So what I did, I 
+ just inlined them.   Because they're 
+ small, they're icons,   I just encoded them in SVG and 
+ I put them directly in my HTML.   This means I don't even need to 
+ think about caching strategy,   because if HTML [? is ?] 
+ there, the images are there,   and I'm done--   easy fix.   Now branding and 
+ priority, I precache.   And you saw that with 
+ Workbox, precaching   is pretty straightforward.   Those are images that I 
+ always put in users' cache   because they're really 
+ important for my users'   experience with the app.   The blue ones I 
+ cache at runtime.   This means that when user 
+ enters the particular part   of the site, I cache them on 
+ a [? best-forward ?] basis.   So there's no guarantee 
+ there will be in the cache   when the user re-enters 
+ that site in offline mode.   I also put a limit so that 
+ they don't build up forever.   And this means that they 
+ might be in the cache   and serve their purpose, 
+ or they might be missing.   What happens if they're missing?   Well, the site is slightly 
+ less visually attractive,   but it's not the 
+ end of the world.   The site is still usable, 
+ the content is there,   you can check your 
+ events, and so on.   Now, informative 
+ images are super cool,   because they show you the 
+ full power of service worker.   What I wanted to do here, when 
+ the image is not in the cache,   I want it to serve some 
+ kind of a placeholder that   tells you there was 
+ supposed to be an image,   but it's unavailable, but I also 
+ want it to convey the message.   So I was using the 
+ [? out stack ?] of the images   to read what company 
+ it referred to,   and tried to render this 
+ image in service worker.   And that's the cool thing, 
+ that service worker is just   a JavaScript file, so you can 
+ do all kinds of crazy rendering   in there.   Like here, I'm creating an 
+ SVG with the offline icon,   and I attached the 
+ name of the company   so that I don't 
+ really store anything.   Those images were 
+ never in my cache,   I just rendered them on 
+ the fly, and they still   served the purpose 
+ of the website.   So those are the four 
+ caching strategies   I used with the help 
+ of the Workbox library   on Women Techmakers.   And the truth is, your 
+ sites, your projects,   might be different, and you 
+ might need different caching   strategies, but it should 
+ show you the direction   you should go for.   With the flexibility 
+ of service worker,   you can find the strategy 
+ that would be best suited   for your users' needs.   Now, let's say we 
+ implemented all this offline   and progressiveness on our app.   What I wanted to tell 
+ you, from my experience   with this migration, is 
+ that these things really   influence other parts 
+ of your app as well.   And you need to remember about 
+ that, because if you forget,   then you'll get in trouble in 
+ the other parts of your app.   Remember the little 
+ toast message   that Jeff showed you when there 
+ was a new version of the app?   This is the type of influence 
+ on the UX I have in mind.   You really need to 
+ think how going offline   influences your users' UX 
+ and respond accordingly.   For example, there might be 
+ a form on your site that you   actually cannot submit where 
+ you're in offline mode,   so you need to 
+ remember, now, that, OK,   it's not enough to dump 
+ everything in the user's cache.   I also need to remember 
+ to implement something   to tell user, oh, 
+ sorry, you can't   do this while in offline mode.   The second thing is to 
+ measure your impact.   Some of the interaction 
+ with the user   will now happen in 
+ the offline mode,   so you need to add offline 
+ analytics tracking.   And you saw in the Workbox that 
+ it's just one line of code,   but it's your task 
+ to remember to put   that line in your service 
+ worker and not forget about it.   Finally, developing 
+ online first can   change your developer workflow.   And here are some hints 
+ that I found useful   during development.   First of all, it is useful 
+ to have two different service   workers for different 
+ environments.   We separated our 
+ development service worker   from the production 
+ service worker,   because in development, we 
+ didn't want anything cached.   You want to be able to refresh 
+ your page and see your changes.   So we just had an empty service 
+ worker, like an empty file.   Because service worker is 
+ a progressive enhancement,   it doesn't harm that 
+ it doesn't do anything.   It's just transparent 
+ for all the requests.   And then in production, we 
+ had the fully-fledged service   worker that does 
+ all the caching.   So that's the solution we used 
+ for separating environments.   Now, when you're 
+ developing offline   and you're actually working 
+ with the service worker,   you often want to see 
+ how your page would   look like for a user that 
+ enters the site first time.   And if you keep 
+ refreshing, that's   not that easily achievable.   So for that, the best solution 
+ is to use the incognito mode.   Also, when you do some 
+ mistakes and you really   mess up all your caches and you 
+ don't know what's happening,   again, just go incognito, 
+ start from scratch,   keep calm, and go incognito.   Incognito is your friend.   And finally, I just 
+ wanted to reiterate   that you should really use build 
+ tools to version your files.   Trying to do it by hand is 
+ just asking for trouble.   And because the Workbox build 
+ process is just an NPM module,   you can usually integrate 
+ it with whatever   workflow you have there.   So really do use tools in 
+ order to avoid manual fiddling   with the cache entries.   What happens if 
+ there is no service   worker at the user's browser?   Well, the cool thing 
+ is, there is no problem.   All of this stuff 
+ we discussed here   is progressive 
+ enhancement, which   means users that do have 
+ service worker available   will get some more features, 
+ some more robust behaviors,   like offline 
+ experience, but even   the users that don't have 
+ it will get a lot of gain   from your Progressive 
+ Web App because of all   those other fixes 
+ you did on the way,   because of the better 
+ normal caching,   better performance, 
+ leaner website, and so on.   So I really encourage you to 
+ consider a Progressive Web   App for your web project 
+ because, in the end,   it will increase satisfaction 
+ for all of your user base.   Did we implement 
+ everything we wanted?   Well, no.   There is always more, and 
+ there are improvements   that did not make the bar.   Here is an example 
+ of a few of those   that we plan to 
+ implement in the future.   But as I told you, this process 
+ can go on and go on and go on.   And as long as Natalie, the 
+ boss of the Women Techmakers,   allow us to work 
+ on it, maybe we'll   get them implemented 
+ with the next iteration.   All right, so let's recap a bit.   I told you today a little 
+ bit about Women Techmakers.   I told you about the 
+ migration we attempted.   I told you how the 
+ process looked like for us   so that you know where 
+ to start on your own.   Jeff walked you through the 
+ tools, the Workbox library.   And we shared some lessons 
+ learned around [INAUDIBLE],   about resources 
+ prioritization, and about   the development workflow.   I hope you enjoyed that.   Now it's your turn.   Go and start your own 
+ progressive migrations.   JEFF POSNICK: Yeah.   So what's next?   Where are some 
+ good places to go?   We've put together a lot of 
+ really great PWA guidance   on developers.google.com.   We hope you check that out.   Hopefully, everybody's 
+ inspired to use Lighthouse,   either in person in the Sandbox, 
+ or you could just go and get   the extension for yourself.   You can find out more about 
+ that at developers.google.com,   as well.   And I hope that folks try 
+ Workbox, give us feedback.   We're really looking to talk 
+ to more developers about it,   as well.   So you can find us in the 
+ Sandbox in the Libraries   and Frameworks section.   Some of us who worked 
+ on it are here, as well.   It wasn't just me.   And workboxjs.org is 
+ the site for that.   EWA GASPEROWICZ: Yeah.   And remember to join the 
+ Women Techmakers movement,   and remember that all genders 
+ are welcome in the movement.   So join us.   [APPLAUSE]   JEFF POSNICK: Thank you.   EWA GASPEROWICZ: 
+ All right, guys.   [APPLAUSE]   [MUSIC PLAYING] "

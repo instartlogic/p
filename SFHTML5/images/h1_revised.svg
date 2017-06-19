@@ -1,0 +1,248 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="1600"
+   height="1200"
+   viewBox="0 0 1600 1200"
+   version="1.1">
+   <title>User Perception Match Population</title>
+ 
+  <style>
+.findings rect {
+}
+.grid rect{
+  stroke: #ccc;
+  stroke-width:2px;
+  stroke-linecap:butt;
+  stroke-linejoin:miter;
+  stroke-opacity:1;
+  fill: #fff;
+}
+.values text,
+.axes text  {
+  font-size:40px;
+  font-family:sans-serif;
+}
+
+.measurements text {
+  transform: rotate(-90deg);
+  fill: white;
+  font-size: 30px;
+}
+
+.rotate {
+  transform: rotate(-90deg); 
+}
+</style>
+  <g
+     class="grid"
+     transform="translate(62,-185)">
+    <rect
+       width="1200"
+       height="900"
+       y="300"
+       x="50"
+        />
+    <rect
+       width="1200"
+       height="700"
+       y="400"
+       x="50"
+        />
+    <rect
+       width="1200"
+       height="500"
+       y="500"
+       x="50"
+        />
+    <rect
+       width="1200"
+       height="300"
+       y="600"
+       x="50"
+        />
+    <rect
+       width="1200"
+       height="100"
+       y="700"
+       x="50"
+        />
+  </g>
+  <g
+     class="findings"
+     transform="translate(80,-185)">
+    <rect
+       style="fill:#003300"
+       width="100"
+       height="160"
+       y="1040"
+       x="100"
+        />
+    <rect
+       style="fill:#014a01"
+       width="100"
+       height="380"
+       y="820"
+       x="220"
+        />
+    <rect
+       style="fill:#056105"
+       width="100"
+       height="440"
+       y="760"
+       x="340"
+        />
+    <rect
+       style="fill:#097609"
+       width="100"
+       height="520"
+       y="680"
+       x="460"
+        />
+    <rect
+       style="fill:#0f8a0f"
+       width="100"
+       height="530"
+       y="670"
+       x="580"
+        />
+    <rect
+       style="fill:#169c16"
+       width="100"
+       height="590"
+       y="610"
+       x="700"
+        />
+    <rect
+       style="fill:#1eae1e"
+       width="100"
+       height="650"
+       y="550"
+       x="820"
+        />
+    <rect
+       style="fill:#28be28"
+       width="100"
+       height="650"
+       y="550"
+       x="940"
+        />
+    <rect
+       style="fill:#33cc33"
+       width="100"
+       height="660"
+       y="540"
+       x="1060"
+        />
+  </g>
+
+  <g class="values">
+  <text
+     x="192"
+     y="848">0.16</text>
+  <text
+     x="308"
+     y="624">
+     0.38
+   </text>
+  <text
+     x="430"
+     y="565">
+     0.44
+   </text>
+  <text
+     x="553"
+     y="487">
+     0.52
+   </text>
+  <text
+     x="670"
+     y="478">
+     0.53
+   </text>
+  <text
+     x="785"
+     y="414">
+     0.59
+   </text>
+  <text
+     x="912"
+     y="358">
+     0.65
+   </text>
+  <text
+     x="1029"
+     y="357">
+     0.65
+   </text>
+  <text
+     x="1145"
+     y="347">
+     0.66
+   </text>
+
+
+</g>
+
+<g class="measurements">
+  <text
+     x="-1000"
+     y="225">visual
+   </text>
+  <text
+     x="-1000"
+     y="255">Complete
+   </text>
+
+  <text
+     x="-1000"
+     y="360">PSI (Visually Complete)
+   </text>
+
+  <text
+     x="-1000"
+     y="480">SpeedIndex (Visually Complete)
+   </text>
+
+  <text
+     x="-1000"
+     y="600">LoadTime
+   </text>
+
+  <text
+     x="-1000"
+     y="720">TTFB
+   </text>
+
+  <text
+     x="-1000"
+     y="840">DomContentLoadedEventEnd
+   </text>
+
+  <text
+     x="-1000"
+     y="960">PSI (Page Load Time)
+   </text>
+
+  <text
+     x="-1000"
+     y="1080">Render Start
+   </text>
+
+  <text
+     x="-1000"
+     y="1200">Speed Index (Page Load Time)
+   </text>
+ </g> 
+
+ <g class="axes">
+    <text
+     x="600"
+     y="1100">Performance Indicator  
+   </text>
+
+  <text
+     x="-700"
+     y="60" class="rotate">Match Fraction  
+   </text>
+ </g>
+</svg>

@@ -1,0 +1,176 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="1600"
+   height="1200"
+   viewBox="0 0 2300 1200"
+   version="1.1">
+   <title>What is fast?</title>
+ 
+  <style>
+.findings rect {
+  stroke: #333;
+  stroke-width: 1px;
+  width: 15px;
+  fill: #226DAA;
+}
+.grid rect{
+  stroke: #ccc;
+  stroke-width:2px;
+  stroke-linecap:butt;
+  stroke-linejoin:miter;
+  stroke-opacity:1;
+  fill: #fff;
+}
+.values text,
+.axes text  {
+  font-size: 40px;
+  font-family:sans-serif;
+}
+.values text {
+  font-size: 20px;
+}
+
+
+.rotate {
+  transform: rotate(-90deg); 
+}
+</style>
+  <g class="grid" transform="translate(62,-185)">
+    <rect width="2100" height="900" y="300" x="50" />
+    <rect width="2100" height="700" y="400" x="50"  />
+    <rect width="2100" height="500" y="500" x="50"  />
+    <rect width="2100" height="300" y="600" x="50"  />
+    <rect width="2100" height="100" y="700" x="50"  />
+  </g>
+
+
+
+  <g class="findings" transform="translate(80,-185)">
+    <rect height="5" y="1195" x="100"  />
+    <rect height="0" y="1200" x="120"  />
+    <rect height="0" y="1200" x="140"  />
+    <rect height="5" y="1195" x="160"  />
+    <rect height="0" y="1200" x="180"  />
+    <rect height="0" y="1200" x="200"  />
+    <rect height="5" y="1195" x="220"  />
+    <rect height="10" y="1190" x="240"  />
+    <rect height="20" y="1180" x="260"  />
+    <rect height="10" y="1190" x="280"  />
+    <rect height="30" y="1170" x="300"  />
+    <rect height="60" y="1140" x="320"  />
+    <rect height="70" y="1130" x="340"  />
+    <rect height="90" y="1110" x="360"  />
+    <rect height="110" y="1090" x="380"  />
+    <rect height="140" y="1060" x="400"  />
+    <rect height="180" y="1020" x="420"  />
+    <rect height="220" y="980" x="440"  />
+    <rect height="280" y="920" x="460"  />
+    <rect height="360" y="840" x="480"  />
+    <rect height="410" y="790" x="500"  />
+    <rect height="480" y="720" x="520"  />
+    <rect height="590" y="610" x="540"  />
+    <rect height="700" y="500" x="560"  />
+    <rect height="750" y="450" x="580"  />
+    <rect height="770" y="430" x="600"  />
+    <rect height="790" y="410" x="620"  />
+    <rect height="800" y="400" x="640"  />
+    <rect height="810" y="390" x="660"  />
+    <rect height="785" y="415" x="680"  />
+    <rect height="705" y="495" x="700"  />
+    <rect height="620" y="580" x="720"  />
+    <rect height="545" y="655" x="740"  />
+    <rect height="475" y="725" x="760"  />
+    <rect height="410" y="790" x="780"  />
+
+    <rect height="370" y="830" x="800"  />
+    <rect height="340" y="860" x="820"  />
+    <rect height="315" y="885" x="840"  />
+    <rect height="290" y="910" x="860"  />
+    <rect height="270" y="930" x="880"  />
+    <rect height="250" y="950" x="900"  />
+    <rect height="230" y="970" x="920"  />
+    <rect height="210" y="990" x="940"  />
+    <rect height="190" y="1010" x="960"  />
+    <rect height="170" y="1030" x="980"  />
+    <rect height="151" y="1049" x="1000"  />
+    <rect height="133" y="1067" x="1020"  />
+    <rect height="116" y="1084" x="1040"  />
+    <rect height="99" y="1101" x="1060"  />
+    <rect height="84" y="1116" x="1080"  />
+    <rect height="70" y="1130" x="1100"  />
+    <rect height="57" y="1143" x="1120"  />
+    <rect height="45" y="1155" x="1140"  />
+    <rect height="34" y="1166" x="1160"  />
+    <rect height="24" y="1176" x="1180"  />
+    <rect height="18" y="1182" x="1200"  />
+    <rect height="14" y="1186" x="1220"  />
+    <rect height="12" y="1188" x="1240"  />
+    <rect height="10" y="1190" x="1260"  />
+    <rect height="9" y="1191" x="1280"  />
+    <rect height="8" y="1192" x="1300"  />
+    <rect height="7" y="1193" x="1320"  />
+    <rect height="7" y="1193" x="1340"  />
+    <rect height="6" y="1194" x="1360"  />
+    <rect height="6" y="1194" x="1380"  />
+    <rect height="6" y="1194" x="1400"  />
+    <rect height="5" y="1195" x="1420"  />
+    <rect height="5" y="1195" x="1440"  />
+    <rect height="5" y="1195" x="1460"  />
+    <rect height="5" y="1195" x="1480"  />
+    <rect height="5" y="1195" x="1500"  />
+    <rect height="10" y="1190" x="1520"  />
+    <rect height="5" y="1195" x="1540"  />
+    <rect height="20" y="1180" x="1580"  />
+    <rect height="60" y="1140" x="1600"  />
+    <rect height="20" y="1180" x="1620"  />
+    <rect height="10" y="1190" x="1640"  />
+    <rect height="5" y="1195" x="1660"  />
+    <rect height="5" y="1195" x="1680"  />
+    <rect height="5" y="1195" x="1700"  />
+    <rect height="5" y="1195" x="1720"  />
+    <rect height="40" y="1160" x="1740"  />
+    <rect height="5" y="1195" x="1760"  />
+    <rect height="20" y="1180" x="1780"  />
+    <rect height="10" y="1190" x="1800"  />
+    <rect height="2" y="1198" x="1820"  />
+    <rect height="2" y="1198" x="1840"  />
+    <rect height="2" y="1198" x="1860"  />
+    <rect height="10" y="1190" x="1880"  />
+    <rect height="2" y="1198" x="1900"  />
+    <rect height="2" y="1198" x="1920"  />
+    <rect height="2" y="1198" x="1940"  />
+    <rect height="2" y="1198" x="1960"  />
+    <rect height="2" y="1198" x="1980"  />
+    <rect height="10" y="1190" x="2110"  />
+  </g>
+
+<g class="values">
+  <text x="100" y="1060">0 s</text>
+  <text x="200" y="1060">1 s</text>
+  <text x="300" y="1060">2 s</text>
+  <text x="400" y="1060">3 s</text>
+  <text x="500" y="1060">4 s</text>
+  <text x="600" y="1060">5 s</text>
+  <text x="700" y="1060">6 s</text>
+  <text x="800" y="1060">7 s</text>
+  <text x="900" y="1060">8 s</text>
+  <text x="1000" y="1060">9 s</text>
+  <text x="1100" y="1060">10 s</text>
+  <text x="1200" y="1060">11 s</text>
+  <text x="1300" y="1060">12 s</text>
+  <text x="1400" y="1060">13 s</text>
+  <text x="1500" y="1060">14 s</text>
+  <text x="1600" y="1060">15 s</text>
+  <text x="1700" y="1060">16 s</text>
+  <text x="1800" y="1060">17 s</text>
+  <text x="1900" y="1060">18 s</text>
+  <text x="2000" y="1060">19 s</text>
+  <text x="2100" y="1060">20 s</text>
+</g>
+
+
+ <g class="axes">
+  <text x="600" y="1100">Time to Load</text>
+  <text x="-700" y="60" class="rotate">Number of Visitors</text>
+ </g>
+</svg>
