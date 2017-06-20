@@ -5,7 +5,7 @@
 <title>CSS you may not have considered</title>
 <!--
 Made by: Estelle Weyl
-Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
+Copyright: 2017,  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
 -->
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans%3A400'  />
 <link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet" >
@@ -245,11 +245,25 @@ p.btn {cursor: pointer;}</pre>
 <div class="slide animbg">
 <header><h1>Animated Backgrounds</h1></header>
 <section class="content">
-<h1 style="position: absolute; top: 44%; width: 100%; text-align: center;">Animated background images with SVG</h1>
+<article style="position: absolute; top: 44%; width: 100%; text-align: center; background-color: rgba(255,255,255,0.7); width: 90vw  ">
+<h1 style="background-blend-mode: color-dodge;background-color: rgba(255,255,255,0.7); font-size: 1.7rem">Animated background images with SVG</h1>
+<p style="font-size: 1rem">Please don't! Putting animation behind content is bad for usability and accessibility</p>
+</article> 
 <small>Original by <a href="http://codepen.io/gpyne/">Graham Pyne</a></small>
 </section>
 <a href="images/svg2.svg" target="play" title="open SVG in new window">↪</a>
 </div>
+
+
+    <input type="checkbox" id="chkbx_blending">
+<label for="chkbx_blending"><span>background-blend-mode</span></label>
+<div class="slide">
+<header><h1>background-blend-mode</h1></header>
+  <figure><object data="files/blendmode.html"></object></figure>
+  <a href="files/blendmode.html" target="play" title="open code example in new window">↪</a>
+</div>
+
+
 
 
 <input type="checkbox" id="chkbx_svgpro">
@@ -312,6 +326,14 @@ p.btn {cursor: pointer;}</pre>
 
 
 
+ <input type="checkbox" id="chkbx_shapes_heart">
+<label for="chkbx_shapes_all2"><span>Shapes with SVG</span></label>
+ <div class="slide">
+     <header><h1>CSS Shapes with SVG Masking</h1></header>
+
+     <figure><object data="files/shapes_heart.html"></object></figure>
+  <a href="files/shapes_heart.html" target="play" title="open code example in new window">↪</a>
+ </div>
 
 <!-- Reduce File Size - JPG not PNG, with Masking -->
 
@@ -348,8 +370,8 @@ p.btn {cursor: pointer;}</pre>
 <label for="chkbx_maskingexample"><span>Masking Example</span></label>
 <div class="slide">
   <header><h1>Masking Example</h1></header>
-  <figure><object data="mask/index.html"></object></figure>
-  <a href="mask/index.html" target="play" title="open code example in new window">↪</a>
+  <figure><object data="files/mask.html"></object></figure>
+  <a href="files/mask.html" target="play" title="open code example in new window">↪</a>
 </div>
 
 

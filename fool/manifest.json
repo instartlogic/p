@@ -1,0 +1,31 @@
+{
+  "short_name": "MLW",
+  "name": "Machine Learning Workshop",
+  "start_url": "./?source=manifest", 
+  "icons": [
+    {
+      "src": "icon-sm.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "icon-med.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "icon-lg.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-huge.png",
+      "type": "image/png",
+      "sizes": "512x412"
+    }
+  ],  
+  "background_color": "#FFFFFF",
+  "theme_color": "#226DAA", 
+  "display": "standalone",  
+  "orientation": "portrait" 
+}
