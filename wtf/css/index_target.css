@@ -401,10 +401,20 @@ figure {
 
   #info, #topinfo, .counter {
     display: none; } }
+body,
+html,
+#slides,
 .slide,
+#presentation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: none; }
+
 .slide:not(:target) {
-  transform: translate(100%, 0) scale(0.1) rotate(180deg);
-  transition: all 0.25s ease-in; }
+  transform: translate(100%, 0) scale(0.1) rotate(180deg); }
 
 .slide:first-of-type,
 .slide:nth-of-type(2):target,
