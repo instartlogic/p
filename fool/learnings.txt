@@ -1,0 +1,31 @@
+Machine Learning Workshop
+
+Install certificate.
+
+
+Change protocol for google fonts:
+
+<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans%3A400'  />
+<link href="http://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet" >
+
+Remove one of the fonts and select Geneva, a similar default font.
+
+Make blue/grey contrast better
+
+img srcset for eve
+
+Redirect HTTP to HTTPS
+
+make google fonts have same protocol
+
+Visit 
+
+https://developers.google.com/web/tools/lighthouse/
+
+Click "Add Extension" to add the Lighthouse extension to Chrome.
+
+
+Create manifest file
+Give it a short name.
+Create icons
+Add <link> to manifest.
