@@ -53,6 +53,8 @@ body {
   transform: scale(0.8);
 }
 .slide {
+  background: no-repeat 50% 96%/30% url(../images/instartlogo.svg) $background;
+
   background-color: $background;
 }
 

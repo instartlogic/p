@@ -23,67 +23,118 @@ Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
 </header>
       <h1>Estelle Weyl</h1>
       <h4>@estellevw</h3>
-      <h4>estelle.github.io/doyouknowcss?</h4>
+      <h4>instartlogic.github.io/p/wtf?</h4>
       <a href="indexjs.html" style="font-size: 1rem; color: #999; text-decoration: underline;">If you need JS</a><br/>
       <a href="index.html" style="font-size: 1rem; color: #999; text-decoration: underline;">With :checked</a>
     </div>
 <a href="#title" checked><span>Intro</span></a>
 
 
-<div id="counting" class="slide normal">
-<header><h1>Counting</h1></header>
-<section class="content">
-<pre contenteditable>body {
-  counter-reset: pagecount;
-}
-.slide {
-  counter-increment: pagecount;
-}
-.slide:after {
-  content: counter(pagecount);
-  position: absolute; bottom: 2rem; left: 1rem;
-}</pre>
-</section>
+
+
+
+<div  id="chkbx_IL" class="slide intro" style="background-image: none;">
+<header>
+  <img src="images/instartlogo.svg" alt="instart logic" style="width: 50vw; display: block; margin: 10vh auto 10px;">
+  <p style="text-align: center;">
+    Making web and mobile applications <br>
+    fast, secure, and easy to operate.
+  </p>
+  <div style="display: inline-flex; justify-content: space-around; margin: 0 auto; text-align: left ">
+    <ul style="padding: 0 2vw">
+      <li>JS Streaming</li>
+      <li>HTML Streaming</li>
+      <li>Image Optimization</li>
+    </ul>
+    <ul style="padding: 0 2vw">
+      <li>Machine Learning</li>
+      <li>Application Virtualization</li>
+      <li>Intelligent CDN</li>
+    </ul>
+  </div>
+  <ul style="display:flex; margin: -1em auto 0 auto; justify-content: center;">
+      <li>AdBlock UnBlocking</li>
+      </ul>
 </div>
+<a href="#chkbx_IL"><span>About Instart Logic</span></a>
 
-<a href="#counting"><span>counting</span></a>
 
-<div id="counter" class="slide">
+
+<div class="slide" id="chkbx_awesome">
+<header><h1>CSS is Awesome</h1></header>
+  <figure><object data="files/awesome.html"></object></figure>
+  <a href="files/awesome.html" target="play" title="open code example in new window">↪</a>
+</div>
+<a href="#chkbx_awesome"><span>Awesome</span></a>
+
+<div class="slide" id="chkbx_vertical">
+<header><h1>Vertical Centering</h1></header>
+  <figure><object data="files/vertical.html"></object></figure>
+  <a href="files/vertical.html" target="play" title="open code example in new window">↪</a>
+</div>
+<a href="#chkbx_vertical"><span>Vertical Centering</span></a>
+
+
+
+<div class="slide" id="chkbx_baseline">
+<header><h1>Aligning by baseline</h1></header>
+  <figure><object data="files/baseline.html"></object></figure>
+  <a href="files/baseline.html" target="play" title="open code example in new window">↪</a>
+</div><a href="#chkbx_baseline"><span>Align baseline</span></a>
+
+
+<div class="slide normal" id="chkbx_counting">
+<header><h1>Counting</h1></header>
+  <figure><object data="files/counting.html"></object></figure>
+  <a href="files/counting.html" target="play" title="open code example in new window">↪</a>
+</div>
+<a href="#chkbx_counting"><span>Counting</span></a>
+
+
+
+<div class="slide" id="chkbx_counter">
   <header><h1>Counter</h1></header>
   <figure><object data="files/counter.html"></object></figure>
   <a href="files/counter.html" target="play" title="open code example in new window">↪</a>
 </div>
+<a href="#chkbx_counter"><span>Count Errors</span></a>
 
-<a href="#counter"><span>Counter</span></a>
 
-<div id="chkbx" class="slide">
+<div class="slide" id="chkbx_UISelector">
   <header><h1>UI Selectors</h1></header>
-    <section class="content">
-    	<pre contenteditable>:enabled   :invalid      :placeholder-shown
+    <section class="content pre">
+      <pre contenteditable>:enabled   :invalid      :placeholder-shown
 :disabled  :in-range     :user-error
 :checked   :out-of-range :indeterminate
 :default   :required     :read-only
 :valid     :optional     :read-write</pre>
- <a href="http://codepen.io/estelle/pen/rDxvb" style="float:right; padding: 20px; font-size: 1rem;">Test page</a>   </section>
-</div>
-<a href="#chkbx"><span>UI Selectors</span></a>
 
-<div id="specificity" class="slide">
+<pre contenteditable>[aria-required]
+[aria-invalid="true"]</pre>
+ <a href="http://codepen.io/estelle/pen/rDxvb" style="float:right; padding: 20px; font-size: 1rem;" target="play">↪</a>   </section>
+</div>
+<a href="#chkbx_UISelector"><span>UI Selectors</span></a>
+
+
+
+<div class="slide" id="chkbx_specificity">
   <header><h1>Specificity</h1></header>
-    <section class="content">
-    	<pre contenteditable>
+    <section class="content pre">
+      <pre contenteditable>
               *   { 0 - 0 - 0 }
 li, p, ::before   { 0 - 0 - 1 }
  .class, [type]   { 0 - 1 - 0 }
     #soPowerful   { 1 - 0 - 0 }</pre>
     </section>
 </div>
-<a href="#specificity"><span>Specificity</span></a>
 
-<div id="combinators"  class="slide">
+<a href="#chkbx_specificity"><span>Specificity</span></a>
+
+
+<div class="slide" id="chkbx_combinators">
   <header><h1>Being specific...</h1></header>
-    <section class="content">
-    	<pre contenteditable>
+    <section class="content pre">
+      <pre contenteditable>
             ul > li   { 0 - 0 - 2 }
             ul   li   { 0 - 0 - 2 }
 
@@ -94,13 +145,17 @@ li:nth-of-type(n+2)   { 0 - 1 - 1 }
           header h2   { 0 - 0 - 2 }</pre>
     </section>
 </div>
-<a href="#combinators"><span>Being Specific</span></a>
+
+<a href="#chkbx_combinators"><span>combinators</span></a>
 
 
-<div id="not"  class="slide">
+
+
+
+<div class="slide" id="chkbx_not" style="background-image: none">
   <header><h1>:not()</h1></header>
-    <section class="content">
-    	<pre contenteditable>
+    <section class="content pre">
+      <pre contenteditable>
                        li  { 0 - 0 - 1 }
                   :not(li) { 0 - 0 - 1 }
 
@@ -114,45 +169,85 @@ li:nth-of-type(n+2)   { 0 - 1 - 1 }
 input:not([type=checkbox]) { 0 - 1 - 1 }</pre>
     </section>
 </div>
-<a href="#not"><span>Negation</span></a>
+<a href="#chkbx_not"><span>:not</span></a>
 
-<div id="specifishity" class="slide">
+
+
+
+
+<div class="slide" id="chkbx_specifishity">
   <figure style="height: 80%; overflow: scroll;"><img src="images/specificity3.png" alt="CSS Specifishity Chart" style="width: 800px; height: auto; background-color: #eee"/></figure><a href="http://specifishity.com" target="play" title="open code example in new window">↪</a>
 </div>
-<a href="#specifishity"><span>Specifishity</span></a>
 
-<div id="imp"  class="slide">
+<a href="#chkbx_specifishity"><span>Specifishity</span></a>
+
+
+
+
+
+<div class="slide" id="chkbx_imp">
 <header><h1>!important</h1></header>
   <figure><object data="files/important.html"></object></figure>
   <a href="files/important.html" target="play" title="open code example in new window">↪</a>
-</div>
-<a href="#imp"><span>!important</span></a>
+</div><a href="#chkbx_imp"><span>!important</span></a>
 
-<div id="repeatclass"  class="slide normal">
+
+
+
+
+
+
+<div id="chkbx_repeatclass" class="slide normal">
 <header><h1>multiple class declarations instead of !important</h1></header>
-<section class="content">
+<section class="content pre">
 <pre contenteditable>.disabled {cursor: default !important;}
 p.btn {cursor: pointer;}</pre>
-
+<p>v.</p>
 <pre contenteditable>.disabled.disabled.disabled {cursor: default;}
 p.btn {cursor: pointer;}</pre>
 </section>
 </div>
-<a href="#repeatclass"><span>Repeat Class</span></a>
+<a href="#chkbx_repeatclass"><span>Repeat Class</span></a>
 
 
-<div id="moreimp"  class="slide">
+
+
+
+
+
+<div class="slide normal" id="chkbx_repeatid">
+<header><h1>multiple IDs instead of !important</h1></header>
+<section class="content pre">
+<pre contenteditable><b>#TheirWidget</b> {background-color: blue <em>!important</em>;}
+#3rdPartyWidget {background-color: white;}</pre>
+<p>v.</p>
+<pre contenteditable><b>#TheirWidget#TheirWidget </b>{background-color: blue ;}
+#3rdPartyWidget {background-color: white;}</pre>
+</section>
+</div>
+<a href="#chkbx_repeatid"><span>Repeat ID</span></a>
+
+
+
+
+
+
+<div class="slide" id="chkbx_moreimp">
 <header><h1>!Even More Important</h1></header>
   <figure><object data="files/importantanimation.html"></object></figure>
   <a href="files/importantanimation.html" target="play" title="open code example in new window">↪</a>
 </div>
-<a href="#moreimp"><span>Overriding !important</span></a>
+<a href="#chkbx_moreimp"><span>More than important</span></a>
 
-<div id="animrules"  class="slide normal">
+
+
+
+
+<div class="slide normal" id="chkbx_animrules">
   <header><h1>Animation Quirks</h1></header>
     <section class="content">
       <ul>
-        <li>!important igored in @keyframe &amp; original values
+        <li>!important ignored in @keyframe &amp; original values
         <li>animation-name: identifier (not string).
         <li>Applied in order declared.
         <li>Original values used if missing 0% or 100%.
@@ -161,133 +256,296 @@ p.btn {cursor: pointer;}</pre>
         <li>Characters: animation-timing-function: steps(n, end);
     </section>
 </div>
-<a href="#animrules"><span>Animation Gotchas</span></a>
+<a href="#chkbx_animrules"><span>Animation rules</span></a>
 
-<div id="steps"  class="slide">
+
+
+
+
+
+<div class="slide"  id="chkbx_steps">
   <header> <h1>steps(4, end)</h1></header>
-    <section class="content">
-<pre contenteditable>@keyframes pedal { 100% {background-position: -360px 0;}}</pre>
-<ul class="stepsexplain">
-    <li><div></div>0%   </li>
-    <li><div></div>25%  </li>
-    <li><div></div>50%  </li>
-    <li><div></div>75%  </li>
-    <li><div></div>100% </li>
-</ul> <div class="biker"></div>
-</section>
+  <figure><object data="files/steps.html"></object></figure>
+  <a href="files/steps.html" target="play" title="open code example in new window">↪</a>
 </div>
-<a href="#steps"><span>Sprite Animation</span></a>
+
+<a href="#chkbx_steps"><span>Sprite Animation</span></a>
 
 
-<div id="timing"  class="slide">
+
+
+<div class="slide" id="chkbx_timing">
   <header><h1>Cubic Bezier</h1></header>
-  <figure><object data="files/print_timing_function.html"></object></figure>
-  <a href="files/print_timing_function.html" target="play" title="open code example in new window">↪</a>
+  <figure><object data="files/cubicbezierprint.html"></object></figure>
+  <a href="files/cubicbezierprint.html" target="play" title="open code example in new window">↪</a>
 </div>
-<a href="#timing"><span>Understanding Cubic Bezier</span></a>
+<a href="#chkbx_timing"><span>Understanding Timing</span></a>
 
 
 
-<div id="svg" class="slide animbg">
+
+
+
+
+<div class="slide" id="chkbx_timing2">
+  <header>
+    <h1>Cubic Bezier</h1>
+  </header>
+  <figure>
+    <object data="http://www.cubic-bezier.com"></object>
+  </figure>
+  <a href="http://www.cubic-bezier.com" target="play" title="open site in new window">↪</a>
+</div>
+
+<a href="#chkbx_timing2"><span>Cubic-Bezier</span></a>
+
+
+
+
+
+<div class="slide" id="chkbx_anim_js">
+  <header><h1>CSSKeyframeRules: <br/>deleteRule(), appendRule(), findRule()</h1></header>
+  <figure>
+  <object data="files/changeanimation.html"></object></figure>
+  <a href="files/changeanimation.html" target="play" title="open code example in new window">↪</a>
+</div>
+
+<a href="#chkbx_anim_js"><span>CSSKeyframeRules</span></a>
+
+
+
+
+<div class="slide animbg" id="xchkbx_svg">
 <header><h1>Animated Backgrounds</h1></header>
 <section class="content">
-<h1 style="position: absolute; top: 44%; width: 100%; text-align: center;">Animated background images with SVG</h1>
+<article style="position: absolute; top: 44%; width: 100%; text-align: center; background-color: rgba(255,255,255,0.7); width: 90vw  ">
+<h1 style="background-blend-mode: color-dodge;background-color: rgba(255,255,255,0.7); font-size: 1.7rem">Animated background images with SVG</h1>
+<p style="font-size: 1rem">Please don't! Putting animation behind content is bad for usability and accessibility</p>
+</article> 
+<small>Original by <a href="http://codepen.io/gpyne/">Graham Pyne</a></small>
 </section>
-<a href="http://codepen.io/gpyne/pen/Lqvxo" target="play" title="open code example in new window">↪</a>
+<a href="images/svg2.svg" target="play" title="open SVG in new window">↪</a>
+</div><a href="#xchkbx_svg"><span>Animated SVG as Backgrounds</span></a>
+
+
+<div class="slide"    id="chkbx_blending">
+<header><h1>background-blend-mode</h1></header>
+  <figure><object data="files/blendmode.html"></object></figure>
+  <a href="files/blendmode.html" target="play" title="open code example in new window">↪</a>
 </div>
-<a href="#svg"><span>Animating backgrounds with SVG</span></a>
+<a href="#chkbx_blending"><span>background-blend-mode</span></a>
 
 
-<div id="svgpro"  class="slide">
+
+
+
+
+<div class="slide" id="chkbx_svgpro">
   <header><h1>SVG Rocks!</h1></header>
     <section class="content">
       <ul>
-        <li>image
-        <li>animatable
-        <li>@media
-        <li>viewport = container
-        <li>supported
-        <li>raster
-        <li>data-URI
+        <li>image</li>
+        <li>animatable</li>
+        <li>@media</li>
+        <li>viewport = container</li>
+        <li>supported</li>
+        <li>raster</li>
+        <li>data-URI</li>
+        <li>masking</li>
+      </ul>
     </section>
+</div><a href="#chkbx_svgpro"><span>SVG Benefits</span></a>
+
+
+
+
+
+ <div class="slide" id="chkbx_shapes_all">
+     <header><h1>CSS Shapes</h1></header>
+
+     <figure><object data="files/shapes_all.html"></object></figure>
+  <a href="files/shapes_all.html" target="play" title="open code example in new window">↪</a>
+  <small>Photo: <a href="https://www.flickr.com/photos/kristinausk/4121781145">kristinausk</a></small>
+ </div>
+<a href="#chkbx_shapes_all"><span>CSS Shapes</span></a>
+
+
+
+<div class="slide" id="chkbx_shapes_all2">
+     <header><h1>CSS Shapes 2</h1></header>
+
+     <figure><object data="files/shapes_all2.html"></object></figure>
+  <a href="files/shapes_all2.html" target="play" title="open code example in new window">↪</a>
+</div><a href="#chkbx_shapes_all2"><span>CSS Shapes</span></a>
+
+
+
+<div class="slide" id="chkbx_shapes_heart">
+  <header><h1>CSS Shapes with SVG Masking</h1></header>
+    <figure><object data="files/shapes_heart.html"></object></figure>
+  <a href="files/shapes_heart.html" target="play" title="open code example in new window">↪</a>
+</div><a href="#chkbx_shapes_heart"><span>Shapes with SVG</span></a>
+
+
+
+
+ <div class="slide" id="chkbx_cssshapes">
+     <header><h1>CSS Shape Editor</h1></header>
+
+     <figure><object data="files/shapes_poly.html"></object></figure>
+  <a href="files/shapes_poly2.html" target="play" title="open code example in new window">↪</a>
+ </div><a href="#chkbx_cssshapes"><span>CSS Shape Editor</span></a>
+
+
+
+
+
+ <div class="slide"  id="shapes_heart">
+     <header><h1>CSS Shapes with SVG Masking</h1></header>
+
+     <figure><object data="files/shapes_heart.html"></object></figure>
+  <a href="files/shapes_heart.html" target="play" title="open code example in new window">↪</a>
+ </div>
+<a href="#shapes_heart"><span>Shapes with SVG</span></a>
+<!-- Reduce File Size - JPG not PNG, with Masking -->
+
+
+<div class="slide" id="chkbx_mask">
+     <header>
+      <h1>CSS Masking</h1>
+     </header>
+     <section>
+
+     <p class="onehundred">
+     <img src="images/frame.jpg" alt="jpeg" width="160">
+     <img src="images/plus.gif" alt="plus" width="100">
+     <img src="images/framemask.png" alt="framemask" width="160">
+     <img src="images/lessthan.gif" alt="less than" width="100">
+     <img src="images/frame2.png" alt="transparent png" width="160"><br>
+     <span style="width: 160px;">88KB</span>
+     <span style="width: 100px;"> + </span>
+     <span style="width: 160px;"> 4KB </span>
+     <span style="width: 100px;"> &lt; </span>
+     <span style="width: 160px;"> 551KB</span>
+     </p>
+     <pre contenteditable>div {
+  background-image:url(images/frame.jpg);
+  mask: url(images/framemask.png);
+}</pre>
+     </section>
+    </div>
+<a href="#chkbx_mask"><span>CSS Masking</span></a>
+
+
+
+
+<div class="slide" id="chkbx_maskingexample">
+  <header><h1>Masking Example</h1></header>
+  <figure><object data="files/mask.html"></object></figure>
+  <a href="files/mask.html" target="play" title="open code example in new window">↪</a>
 </div>
-<a href="#svgpro"><span>SVG Awesomesauce</span></a>
+<a href="#chkbx_maskingexample"><span>Masking Example</span></a>
 
 
-<div id="cct"  class="slide">
+
+
+
+<div class="slide"  id="chkbx_icons_list">
   <header>
-    <h1>Clown Car Technique
+    <h1>Material Design Icons</h1>
   </header>
-<span class="os100">H</span><span class="os200">O</span><span class="os300">V</span><span class="os400">E</span><span class="os500">R</span><span class="os600">&nbsp;</span><span class="os700">O</span><span class="os800">V</span><span class="os900">E</span><span class="os1000">R</span><span class="os1100">&nbsp;</span><span class="os1200">M</span><span class="os1300">E</span><span class="os1400">!</span>
-  <br/>
-  <object data="cc2.svg" id="ccobj" style="border:1px solid white; ">
-<!--[if lte IE 8]>
-<img src="images/medium.png" alt="Fall back for IE">
-<![endif]-->
-</object>
+  <section class="content">
+  <figure><object data="files/icons_list.html"></object></figure>
+  <a href="files/icons_list.html" target="play" title="open code example in new window">↪</a>
 </div>
-<a href="#cct"><span>Responsive Images</span></a>
 
-<div id="cct2"  class="slide">
+<a href="#chkbx_icons_list"><span>Material Design Icons</span></a>
+
+
+
+<div class="slide" id="chkbx_icons">
   <header>
-    <h1>Object + Media Queries + SVG + CCimg</h1>
-  </header><span class="os100">H</span><span class="os200">O</span><span class="os300">V</span><span class="os400">E</span><span class="os500">R</span><span class="os600">&nbsp;</span><span class="os700">O</span><span class="os800">V</span><span class="os900">E</span><span class="os1000">R</span><span class="os1100">&nbsp;</span><span class="os1200">M</span><span class="os1300">E</span><span class="os1400">!</span>
-  <br/>
-  <object data="cc3.svg" id="ccobj3" style="border:1px solid white; ">
-<!--[if lte IE 8]>
-<img src="images/medium.png" alt="Fall back for IE">
-<![endif]-->
-</object>
+    <h1>Icon Fonts</h1>
+  </header>
+  <section class="content">
+  <figure><object data="files/icons.html"></object></figure>
+  <a href="files/icons.html" target="play" title="open code example in new window">↪</a>
+</div><a href="#chkbx_icons"><span>Icon Fonts</span></a>
+
+
+
+
+<div class="slide" id="chkbx_icons2">
+  <header>
+    <h1>Icon Fonts</h1>
+  </header>
+  <section class="content">
+  <figure><object data="files/icons2.html"></object></figure>
+  <a href="files/icons2.html" target="play" title="open code example in new window">↪</a>
 </div>
-<a href="#cct2"><span>Responsive Images</span></a>
+<a href="#chkbx_icons2"><span>Icon Fonts</span></a>
 
 
-<div id="cctsvg"  class="slide">
-  <header><h1>Clown Car</h1></header>
-    <section class="content">
-      <pre contenteditable style="overflow: scroll;">
-&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 329"
-  preserveAspectRatio="xMidYMid meet">
- &lt;title>Clown Car&lt;/title>
- &lt;style>
-  svg {
-    background-repeat: no-repeat;
-    <strong style="color: yellow">background-size: auto;</strong>
-  }
- @media screen and (max-width: 300px) {
-  svg {background-image: url(images/small.png);
-  }
- }
- @media screen and (min-width: 301px) and (max-width: 600px) {
-  svg {background-image: url(images/medium.png);}
- }
- @media screen and (min-width: 601px) and (max-width: 900px) {
-  svg {background-image: url(images/big.png);
-  }
- }
- @media screen and (min-width: 901px) {
-  svg {background-image: url(images/huge.png);
-  }
- }
- &lt;/style>
-&lt;/svg></pre>
-    </section>
-</div>
-<a href="#cctsvg"><span>Clown Car Code</span></a>
 
-<div id="supports"  class="slide">
+
+<div class="slide" id="chkbx_squirrel">
+  <header>
+    <h1>Font Squirrel</h1>
+  </header>
+  <section class="content">
+  <figure><object data="http://www.fontsquirrel.com/tools/webfont-generator"></object></figure>
+  <a href="http://www.fontsquirrel.com/tools/webfont-generator" target="play" title="open font squirrel in new window">↪</a>
+</div><a href="#chkbx_squirrel"><span>Font Squirrel</span></a>
+
+
+
+<div class="slide" id="chkbx_subset">
+  <header>
+    <h1>Subsets of Google Fonts</h1>
+  </header>
+  <section class="content">
+  <figure><object data="files/subset.html"></object></figure>
+  <a href="files/subset.html" target="play" title="open code example in new window">↪</a>
+</div><a href="#chkbx_subset"><span>Subset</span></a>
+
+
+
+
+
+
+<div class="slide" id="chkbx_supports">
+
 <header><h1>@supports</h1></header>
   <figure><object data="files/supports.html"></object></figure>
   <a href="files/supports.html" target="play" title="open code example in new window">↪</a>
 </div>
-<a href="#supports"><span>@supports</span></a>
+<a href="#chkbx_supports"><span>Testing browser support</span></a>
 
-<div id="style" class="slide">
+
+
+
+<div class="slide" id="chkbx_style">
 <header><h1>&lt;style&gt;</h1></header>
   <figure><object data="files/style.html"></object></figure>
   <a href="files/style.html" target="play" title="open code example in new window">↪</a>
 </div>
-<a href="#style"><span>Editing Styles Live</span></a>
+<a href="#chkbx_style"><span>Editing CSS</span></a>
+
+
+
+<div class="slide" id="chkbx_features">
+<header><h1>Other features</h1></header>
+<section class="content">
+&lt;pre contenteditable><pre contenteditable>
+  pointer-events: none;
+
+  -webkit-user-modify: read-write-plaintext-only;
+  -moz-user-modify: read-write;
+  user-modify: read-write;
+  </pre>&lt;/pre>
+  </section>
+  </div>
+<a href="#chkbx_features"><span>Other features</span></a>
 
 <div id="deck"  class="slide">
 <header><h1>&lt;style&gt;</h1></header>
@@ -297,12 +555,32 @@ p.btn {cursor: pointer;}</pre>
 
 <div id="lastslide"  class="slide intro">
   <header><h1>The end!</h1></header>
-    <section class="content">http://estelle.github.io/doyouknowcss/
+    <section class="content">http://instartlogic.github.io/p/wtf/
     </section>
 </div>
 <a href="#lastslide"><span>Last Slide</span></a>
 
 
+<div id="resources" class="slide" style="background-position: right 1vw top 1vh">
+  <header><h1>Resources</h1></header>
+    <section class="content">
+<ul>
+  <li>This talk: <a href="http://instartlogic.github.io/p/wtf/">http://instartlogic.github.io/p/wtf/</a></li>
+  <li>Specificity: <a href="http://estelle.github.io/selectors/">http://estelle.github.io/selectors/</a></li>
+  <li>Specificity: <a href="http://specifishity.com">www.SpeciFISHity.com</a></li>
+  <li>Flexbox Deep Dive: <a href="http://estelle.github.io/animation/">http://estelle.github.io/flexbox/</a></li>
+  <li>Animation Deep Dive: <a href="http://estelle.github.io/animation/">http://estelle.github.io/animation/</a></li>
+  <li>Material Design: <a href="http://google.com/design/icons">http://google.com/design/icons</a></li>
+  <li>Icon Names/Numbers: <a href="https://github.com/google/material-design-icons/blob/master/iconfont/codepoints">https://github.com/google/material-design-icons/</a></li>
+  <li>Font Squirrel: <a href="http://www.fontsquirrel.com/tools/webfont-generator">www.fontsquirrel.com/tools/webfont-generator</a></li>
+  <li>Google Fonts: <a href="http://www.google.com/fonts">www.google.com/fonts</a></li>
+  <li>Optimizing Google Fonts: <a href="http://deanhume.com/Home/BlogPost/optimising-google-fonts-for-fast-load-times/10125">http://deanhume.com/</a></li>
+  <li>CSS Shapes Editor: <a href="http://razvancaliman.com/writing/css-shapes-editor-chrome/">razvancaliman.com/writing/css-shapes-editor-chrome/</a></li>
+  <li>Shape Examples: <a href="http://codepen.io/collection/lrmwd/">http://codepen.io/collection/lrmwd/</a></li>
+    </section>
+</div>
+
+<a href="#resources"><span>Resources</span></a>
 
 
    </div>

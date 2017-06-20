@@ -1,9 +1,7 @@
 body {
   position: absolute;
 }
-.animbg {
-  background: url(../images/svg2.svg) 50% 50% repeat-x;
-}
+
 header {
   margin-bottom: 0;
 }
@@ -19,5 +17,7 @@ section > pre:first-child {
 @import "figure";
 @import "steps";
 /*@import "objectsize";*/
-
+.animbg {
+  background: url(../images/svg2.svg) 50% 50% repeat-x $background;
+}
 @import "print";

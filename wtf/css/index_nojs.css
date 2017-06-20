@@ -2,9 +2,6 @@
 body {
   position: absolute; }
 
-.animbg {
-  background: url(../images/svg2.svg) 50% 50% repeat-x; }
-
 header {
   margin-bottom: 0; }
 
@@ -69,6 +66,7 @@ body {
   transform: scale(0.8); }
 
 .slide {
+  background: no-repeat 50% 96%/30% url(../images/instartlogo.svg) #fffffe;
   background-color: #fffffe; }
 
 header, section {
@@ -380,6 +378,9 @@ figure {
   100% {
     background-position: -360px 0; } }
 /*@import "objectsize";*/
+.animbg {
+  background: url(../images/svg2.svg) 50% 50% repeat-x #fffffe; }
+
 @media print {
   .slide {
     page-break-inside: avoid;

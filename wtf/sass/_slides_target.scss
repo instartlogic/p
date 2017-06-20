@@ -1,35 +1,24 @@
 .slide,
 .slide:not(:target) {
-  -webkit-transform: translate(100%, 0) scale(0.1) rotate(180deg);
   transform: translate(100%, 0) scale(0.1) rotate(180deg);
-  position: absolute;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-  top: 0; left: 0;
-  -webkit-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
-  background-color: #333;
 }
 // current
 .slide:first-of-type,
 .slide:nth-of-type(2):target,
 .slide:first-of-type:not(:target) + a + .slide:target,
 body .slide:target {
-  -webkit-transform: translate(0, 0) scale(1) rotate(0deg);
   transform: translate(0, 0) scale(1) rotate(0deg);
   }
 // next
 .slide:first-of-type + a + .slide,
 body .slide:target + a + .slide {
-     -webkit-transform: translate(45%, -50%) scale(0.2) rotate(-90deg);
      transform: translate(45%, -50%) scale(0.2) rotate(-90deg);
   }
 .slide ~ a:before {
   content: '<< back';
   position:absolute; bottom: 20px; left: 20px;
   width: 5em;
-  background-color: #333;
   -webkit-transform: translatez(0);
   transform: translatez(0);
   z-index: 5000;
@@ -47,11 +36,18 @@ body .slide:target + a + .slide + a {
   visibility: visible;
   position:absolute; bottom: 20px; right: 20px;
   cursor: pointer;
-  color: #ccc;
-  background-color: #333;
   font-size: 1rem;
   width: 5em;
+    text-decoration: none;
   &:before {display: none;}
-  &:after {content: 'next >>'; display: block;}
+  &:after {
+    content: 'next »';
+    padding: 0 8px 4px;
+    color: $background;
+    border-radius: 4px;
+    background-color: $grapefruit;
+    line-height: 2;
+    box-shadow: $surround_shadow;
+  }
 }
 .slide:first-of-type:not(:target):after {display: none;}
