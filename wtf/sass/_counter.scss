@@ -1,0 +1,11 @@
+/* CSS Counter */
+body {counter-reset: pagecount;}
+.slide {counter-increment: pagecount;}
+.slide:after {
+  content: counter(pagecount);
+  color: $grapefruit;
+  background: $background;
+  position: absolute;
+  bottom: calc(2rem + 10px);
+  left: 1rem; padding: 5px;
+}

@@ -1,0 +1,22 @@
+body {
+  position: absolute;
+}
+.animbg {
+  background: url(../images/svg2.svg) 50% 50% repeat-x;
+
+}
+#slides > input,
+#slides > label {display: none;}
+@import "vars";
+@import "layout";
+@import "slidedisplay";
+@import "slides";
+@import "counter";
+@import "buttons";
+@import "content";
+@import "objects";
+@import "figure";
+@import "steps";
+@import "objectsize";
+
+@import "print";
