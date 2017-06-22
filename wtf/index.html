@@ -19,7 +19,9 @@ Copyright: 2017,  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-Share
 <body>
   <div id="presentation">
    <div id="slides">
-
+<h1 style="text-align: center; margin-bottom: 1em;">http://instartlogic.github.io/wtf</h1>
+<div style="float: left; height: 50vh; width: 4vw;"></div>
+<div style="float: right; height: 50vh; width: 4vw;"></div>
 <input type="checkbox" id="chkbx_title" checked>
 <label for="chkbx_title"><span>Title Slide</span></label>
 <div class="slide intro">
@@ -567,6 +569,87 @@ p.btn {cursor: pointer;}</pre>
 <header><h1>&lt;style&gt;</h1></header>
   <figure><object data="files/deck.html"></object></figure>
 </div>
+
+<input type="checkbox" id="input">
+<label for="chkbx_deck"><span>Input Masking</span></label>
+<div class="slide object" id="input">
+<object data="http://estelle.github.io/input-masking/indexcss.html"></object>
+<a href="http://estelle.github.io/input-masking/indexcss.html" class="pagelink">Github Repo</a>
+
+</div>
+
+<input type="checkbox" id="input2">
+<label for="chkbx_deck"><span>Input Masking</span></label>
+<div class="slide" id="input2">
+<pre>&lt;input id="zip" type="tel" name="zipcode" class="masked" 
+  placeholder="XXXXX" pattern="\d{5}" title="5-digit zip code"&gt;</pre>
+  <p>progressively enhanced with JS to: </p>
+<pre>&lt;label for="zip">Zip Code&lt;/label>
+  &lt;span class="shell">
+    &lt;span aria-hidden="true" id="zipMask">&lt;i>123&lt;/i>XX&lt;/span>
+    &lt;input id="zip" type="tel" name="zipcode" pattern="\d{5}" 
+    class="masked" title="5-digit zip code" maxlength="5" data-placeholder="XXXXX">
+  &lt;/span></pre>
+<a href="http://estelle.github.io/input-masking/indexcss.html" class="pagelink">Github Repo</a>
+
+</div>
+
+
+<input type="checkbox" id="merry">
+<label for="merry"><span>Merry Go Round</span></label>
+<div class="slide object">
+<object data="http://estelle.github.io/merry-go-round/"></object>
+<a href="http://estelle.github.io/merry-go-round/" class="pagelink">Github Repo</a>
+</div>
+
+
+<input type="checkbox" id="merry2">
+<label for="merry2"><span>Merry Go Round</span></label>
+<div class="slide">
+<pre style="overflow: scroll; height: 80vh;"><!--&lt;form action="index.html">
+--><b>&lt;fieldset</b> class="mgr" id="address"&gt;
+<b>&lt;legend&gt;Select an address to edit:&lt;/legend&gt;</b>
+&lt;div&gt;
+  &lt;a class="backward" data-move="backward" data-mgr="shipping-addresses" hidden&gt;&lt;/a&gt;
+  &lt;ul class="mgr-labels left0"&gt;
+    &lt;li&gt;
+      <b>&lt;label for="address1"&gt;</b>
+      Instart Logic&lt;br/&gt;
+      US Headquarters&lt;br/&gt;
+      450 Lambert Avenue&lt;br/&gt;
+      Palo Alto, CA 94306
+      &lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;label for="address2"&gt;
+      Instart Logic&lt;br/&gt;
+      India Office&lt;br/&gt;
+      6th Floor , HM Vibha Towers&lt;br/&gt;
+      Hosur Rd, Adugodi&lt;br/&gt;
+      Bengaluru — 560029
+      &lt;/label&gt;
+    &lt;/li&gt;...
+  &lt;/ul&gt;
+  &lt;a class="forward" data-move="forward" data-mgr="shipping-addresses" hidden&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;ul id="addressradios" class="mgr-radios"&gt;
+    &lt;li&gt;
+      <b>&lt;input type="radio" name="shipping-addresses" data-value="0" id="address1" checked&gt;&lt;span&gt;&lt;/span&gt;</b>
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;input type="radio" name="shipping-addresses" data-value="1" id="address2"&gt;&lt;span&gt;&lt;/span&gt;
+    &lt;/li&gt;...
+  &lt;/ul&gt;
+  &lt;/fieldset&gt;<!--
+ &lt;input type="submit" value="Edit">
+&lt;/form>
+&lt;script src="js/merry-go-round.js">&lt;/script>
+&lt;script>
+window.onload = function () {
+  mgr.init('address');
+};
+&lt;/script>--></pre></div>
+
 
 <input type="checkbox" id="chkbx_x">
 <label for="chkbx_x"><span>The End!</span></label>
