@@ -94,24 +94,100 @@ section {
 <div class="slide">
 <header><h1>PWA Features</h1></header>
 <section>
-<div style="display: flex;">
-<ul style="margin-right: 2rem">
-<li>Web technologies</li>
-<li>Progressively Enhanced</li>
-<li>Discoverable</li>
-<li>Linkable</li>
-<li>Responsive</li>
-<li>App-like</li></ul>
+
+<dl style="margin-bottom: 10em" class="ddhide">
+
+<dt>Web technologies</dt>
+<dd><ul>
+<li>HTML
+  <ul>
+	<li>Audio / Video</li>
+	<li>Images</li>
+</ul></li>
+<li>CSS</li>
+<li>JavaScript
+	<ul>
+		<li>Service Workers</li>
+		<li>JSON Manifest</li>
+	</ul>
+</li>
+<li>SVG</li>
+</ul></dd>
+
+<dt>Progressively Enhanced</dt>
+<dd><ul>
+<li>Works no matter what.
+	<br/>&middot; in all browsers
+	<br/>&middot;  on all devices
+</li>
+<li>Works even better when browser supports PWA features</li>
+</ul></dd>
+
+<dt>Discoverable</dt>
+<dd><ul>
+	<li>Search Engine Friendly</li>
+	<li>Doesn't require a store</li>
+	<li>Future: identifiable as application due to manifest.
+</ul></li>
+
+<dt>Linkable</dt>
+<dd><ul>
+<li>Shareable via URL</li>
+<li>Each page has a URL</li>
+</ul></dd>
+<dt>Responsive</dt>
+<dd><ul>
+<li>Page load is fast enough on 3G</li>
+<li>Works no matter the dimensions of the viewport</li>
+<li>
+Content is sized correctly for the viewport</li>
+<li>Has a &lt;meta name="viewport"> tag with width or initial-scale</li>
+</ul></dd>
+
+<dt>App-like</dt>
+<dd>
 <ul>
-<li>Works offline</li>
-<li>Installable</li>
-<li>Automatically Updated</li>
-<li>Secure</li>
-<li>Re-engageable</li>
-</ul></div>
+<li>Look like a native app</li>
+<li>Built on app shell model</li>
+<li>Look and feel described in Manifest</li>
+</ul>
+<p>Not SPAs, but minimize page refreshes</p></dd>
+
+<dt>Works offline</dt>
+<dd><p>Avoid the Chrome Dinosaur</p>
+<ul>
+<li>Works when user is online</li>
+<li>Works when user is offline.</li>
+<li>Works when user has a shitty connection</li>
+<li>Useful even when offline</li>
+</ul>
+<p>Get resources from network, cache, or combo of both</p></dd>
+
+<dt>Installable</dt>
+<dd><ul>
+<li>Add to home screen</li>
+<li>Available fast, even when offline</li>
+<li>Name, color, and icon defined in manifest</li>
+<li>No installation friction like store apps</li>
+</ul></dd>
+
+<dt>Automatically Updated</dt>
+<dd><p>Current content displayed when user is online</p></dd>
+<dt>Secure</dt>
+<dd><ul>
+<li>HTTPS</li>
+<li>Free certificate: letsencrypt.org</li>
+<li>cPanel/Apache: <a href="http://www.standardista.com/lets-encrypt-on-cpanel/">www.standardista.com/lets-encrypt-on-cpanel/</a></li> </ul></dd>
+
+<dt>Re-engageable</dt>
+<dd>
+<ul><li>Add to homescreen</li>
+<li>Push Notifications</li></ul></dd>
+</dl>
+
 </section>
 </div>
-
+<!--
 <div class="slide">
 <header><h1>Web technologies</h1></header>
 <section>
@@ -249,7 +325,7 @@ Content is sized correctly for the viewport</li>
 <ul>
 <li>HTTPS</li>
 <li>Free certificate: letsencrypt.org</li>
-<li>cPanel/Apache: <a href="http://www.standardista.com/lets-encrypt-on-cpanel/">www.standardista.com/lets-encrypt-on-cpanel/</a></li> 
+<li>cPanel/Apache: <a href="http://www.standardista.com/lets-encrypt-on-cpanel/">www.standardista.com/lets-encrypt-on-cpanel/</a></li></ul>
 </section>
 </div>
 
@@ -262,7 +338,7 @@ Re-engageable</h1></header>
 <p>Add to homescreen</p>
 <p>Push Notifications</p>
 </section>
-</div>
+</div> -->
 
 
 
