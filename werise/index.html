@@ -1,0 +1,665 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8" />
+<title>Welcoming</title>
+<!--
+Made by: Estelle Weyl
+Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
+-->
+<link rel="stylesheet" href="css/index.css"/>
+<link href='http://fonts.googleapis.com/css?family=Architects+Daughter|Rock+Salt' rel='stylesheet' type='text/css'>
+<style>
+h1 {font-family: 'Rock Salt', georgia, helvetica, sans-serif;}
+blockquote {line-height: 1.4;}
+.slide {
+  font-family: 'Architects Daughter', cursive;
+}
+/*
+#chatList section {
+  background-image: url(img/peopleITalkTo.png);
+  background-repeat: no-repeat;
+  background-position: center 95%;
+}
+#chatList img {
+  position: relative;
+  top: 20px;
+  margin-top: 40px;
+}
+*/
+
+
+
+#linkedinDrinking .linkedin {
+   font-family: times, times new roman, serif;
+   border-color: #ccc;
+   border-width: 40px 10px 0;
+   border-style: solid;
+   width: 80vw;
+   margin: auto;
+   padding: 20px 20px 0;
+ }
+.linkedin p {
+   font-size: 1.5rem;
+}
+#linkedinDrinking mark {
+  background-color: yellow;
+}
+
+#worstjob div:first-of-type {
+  height: 85vh;
+  overflow:scroll;
+  padding: 20px;
+}
+#jobboards,
+#schools,
+#pipes {
+  background-image: url(img/pipeline.jpg);
+  background-size: cover;
+}
+svg text {
+  font-family: impact;
+  text-shadow: 1px 1px 1px white, 3px 3px 3px black;
+}
+
+#students {
+
+}
+
+#leaks {
+  background-image: url(img/pipelineleak.png);
+  background-size: cover;
+}
+#leaks ul {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 15px;
+  padding: 1em 10%;
+}
+#leaks strong {
+  color: #f33;
+  text-shadow:
+    1px 1px 1px white,
+    2px 2px 2px black;
+}
+
+
+#deathbulge { /* comic */
+  background-image: url(img/deathbulge.png);
+  background-repeat:  no-repeat;
+  background-size:  contain;
+  background-position: center;
+}
+
+#easyhard blockquote {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10vw;
+}
+#easyhard blockquote * {
+  font-size: 1.8rem;
+}
+#easyhard blockquote > div {
+  flex: 0 0 45%;
+}
+#easyhard blockquote > p {
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+
+.slide {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#pingpong {
+  background-image: url(img/pp.png);
+  background-position: right bottom;
+  background-size: 50% auto;
+}
+#people {
+  background-image: url(img/people2.gif);
+}
+#plumber {
+  background-image: url(img/plumber.jpg);
+}
+#superpower {
+   background-image: url(img/superpower.gif);
+   background-position: 50% 50%;"
+}
+#superheros {
+  background-image: url(img/superheros2.jpg);
+}
+#asshats {
+  background-image: url(img/cowboy_etc.jpg);
+}
+#plumber {
+   background-image: url(img/plumber.jpg);
+}
+#superstar {
+  background-image: url(img/dist.gif);
+  background-size: auto;
+}
+#imposter {
+  background-image: url(img/dist2.gif);
+  background-size: auto;
+}
+#normal {
+  background-image: url(img/normal.gif);
+  background-size: auto;
+}
+
+#sexistjob h1 {
+  position: absolute;
+  left: 320px; top: 320px;
+  transform: rotate(-5deg);
+  color: red;
+}
+
+#minime {
+  background-image: url(img/minime.gif);
+}
+.twitter-tweet {
+  margin-right: 240px;
+}
+#quotes {
+  text-align: center;
+}
+#quotes blockquote {
+  border-top: 1px solid red;
+  text-align: left;
+  padding:10px 30px;
+  margin-bottom: 0;
+  margin-top: 1em;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0));
+}
+
+#directives, #rules {
+  background-image: url(img/apple.png);
+  background-position: right 40px bottom 40px;
+  background-size: auto;
+}
+
+#pyramid ul{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  margin: 0; padding: 3vh 0 0 0;
+  list-style-type: none;
+  background-image:
+  linear-gradient(50deg,
+    transparent 50%,
+    white 50%
+    ),
+  linear-gradient(-50deg,
+    transparent 50%,
+    white 50%
+    ),
+  linear-gradient(
+    to bottom,
+    red 15%,
+    orange 15%,
+    orange 29%,
+    yellow 29%,
+    yellow 43%,
+    green 43%,
+    green 57%,
+    blue 57%,
+    blue 71%,
+    purple 71%,
+    purple 86%,
+    magenta 86%
+    );
+  background-position: 23vw 0, -23vw 0, center center;
+  background-size: 90vw;
+  background-repeat: no-repeat;
+}
+#pyramid li {
+  margin: 0; padding: 0;
+  text-align: center;
+  flex: 0 0 11vh;
+  line-height: 11vh;
+  text-shadow: 1px 1px 1px white;
+}
+#pyramid li:nth-of-type(n+4){
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#pyramid li:nth-of-type(4) span {background-color: green;}
+#pyramid li:nth-of-type(5) span {background-color: blue;}
+#pyramid li:nth-of-type(6) span {background-color: purple;}
+#pyramid li:nth-of-type(7) span {background-color: magenta;}
+div.good,
+div.bad {
+  position: absolute;
+  top: calc(50vh + 260px);
+  left: calc(50vw + 280px);
+}
+div.bad {
+  left: calc(50vw - 320px);
+}
+.them,
+.me,
+.us {
+  position: absolute;
+  top: calc(50vh + 140px);
+  left: calc(50vw + 260px);
+  line-height: 1
+}
+.them span,
+.me span,
+.us span {
+  color: red;
+}
+.me {
+  left: calc(50vw - 340px);
+}
+.us {
+  text-align: center;
+  left: calc(50vw - 3.5em);
+  border-left: 5px dashed #666;
+  border-right: 5px dashed #666;
+}
+
+svg text { font-family: Impact;}
+
+#final, #estelle {
+  background-image: url(img/shestelle.png);
+  background-position: bottom right;
+  background-size: auto 50vh;
+}
+#estelle {
+  background-image: url(img/ColorEstelle.gif);
+}
+</style>
+</head>
+
+<body>
+
+<!-- footer instructions -->
+<div id="info">
+    <p><a href="http://standardista.com">Estelle Weyl</a> | <a href="http://twitter.com/estellevw">@estellevw</a> | <a href="http://estelle.github.io">Github</a> | Press <span class="key">&rarr;</span> to advance, </p>
+</div>
+
+  <div id="presentation">
+   <div id="slides">
+
+<!-- Intro Slide -->
+    <div class="slide intro">
+      <header>
+        <h1 style="font-size: 3rem;">Welcoming</h1>
+      </header>
+      <h1>Estelle Weyl</h1>
+      <h4>@estellevw</h3>
+      <h4>www.standardista.com</h3>
+    </div>
+
+<!-- Recruiter 1-->
+<div class="slide intro" id="callLog">
+  <header><h1>Incoming Calls</h1></header>
+    <section class="content">
+      <img alt="90% of calls are from recruiters" src="img/chart.jpg">
+    </section>
+</div>
+
+<!-- Who I would like to talk to
+It's a champagne problem
+<div class="slide intro" id="chatList">
+  <header><h1>People I'm willing to talk to</h1></header>
+    <section class="content"><img alt="I would rather be speaking to wrong callers" src="img/peopleITalkTo2.png" class="temphidden">
+    </section>
+</div>-->
+
+
+<!-- like minded -->
+<div class="slide" id="estelle">
+  <header><h1></h1></header>
+    <section class="content"><blockquote class="twitter-tweet" lang="en"><p>Seeking to hire &quot;like-minded&quot; people generally ends up being a euphamism for hiring like-skinned, like-gendered and like-aged people.</p>&mdash; Estelle Weyl <a href="https://twitter.com/estellevw/status/588931710005325824">(@estellevw)</a></blockquote>
+    </section>
+</div>
+
+
+<!-- recruiters don't know what they're doing -->
+<div class="slide" id="linkedinDrinking">
+<blockquote class="twitter-tweet" lang="en"><p>Everyone who (LinkedIn) endorsed me for drinking, your dream has been realized: </p>&mdash; Jay Fields  <a href="https://twitter.com/thejayfields/status/573035300110385152">(@thejayfields)</a></blockquote>
+  <div class="linkedin">
+    <p><span style="font-family: arial, sans-serif">Good Day</span> Jay Fields,</p>
+    <p>Greetings and thanks for joining my network on LinkedIn. I am interested in discussing <mark>your experience with back-end development and drinking</mark>, as we have been looking for a distinguished candidate such as yourself for a position with one of our clients.
+  </div>
+</div>
+
+
+<!-- What recruiters sell us -->
+<div class="slide" id="pingpong">
+<blockquote class="twitter-tweet" lang="en"><p>What recruiters think I want: Beer cart, ping pong table.
+  <br/>
+  <br/>What I really want: Silence, coworkers with good table manners, attention to UX</p>&mdash; Rebecca Slatkin  <a href="https://twitter.com/RebeccaSlatkin/status/588061034822377472">(@RebeccaSlatkin)</a></blockquote>
+</div>
+
+
+
+
+
+
+<!-- worst job ever -->
+<div class="slide" id="worstjob">
+  <div>
+  <img src="img/worstjobever.png">
+</div>
+</div>
+
+
+<!-- worst job description -->
+<div class="slide" id="sexistjob">
+  <header><h1>Seriously?</h1></header>
+    <section class="content">
+
+  <img src="img/sexistjob.gif">
+  <img src="img/beer.jpg" style="position: absolute; bottom: 0; right: 0">
+    </section>
+</div>
+
+
+<!-- worst job description -->
+<div class="slide" id="sexistjob">
+  <header><h1>WTF?</h1></header>
+    <section class="content">
+  <img src="img/boobs.jpg">
+    </section>
+</div>
+
+
+<!-- Intro Slide -->
+    <div class="slide intro">
+      <header>
+        <h1 style="font-size: 3rem;">Welcoming?!</h1>
+      </header>
+    </div>
+
+<!-- asshats -->
+<div class="slide" id="asshats">
+  <header><h1></h1></header>
+    <section class="content">
+    </section>
+</div>
+
+
+<!-- inadequacy -->
+<div class="slide intro" id="superstar">
+  <header><h1>Perception</h1></header>
+    <section class="content">
+      <div class="good">Awesome</div>
+      <div class="bad">Awful</div>
+      <div class="them">&nbsp;&nbsp;&nbsp;&nbsp; <br/><span>★</span></div>
+    </section>
+</div>
+<!-- inadequacy -->
+<div class="slide intro" id="imposter">
+  <header><h1>Self-Perception</h1></header>
+    <section class="content">
+      <div class="good">Amazing</div>
+      <div class="bad">Horrible</div>
+      <div class="me">Me <br/><span>★</span></div>
+    </section>
+</div>
+
+
+<!-- normal distribution -->
+<div class="slide intro" id="normal">
+  <header><h1>Reality</h1></header>
+    <section class="content">
+      <div class="good">Mad Skillz</div>
+      <div class="bad">Beginner</div>
+      <div class="us">95.4% of Us! <br/><span>★ ★ ★ ★ ★ ★ </span></div>
+    </section>
+</div>
+
+<!-- Huge Pipes -->
+<div class="slide" id="pipes">
+  <header><h1></h1></header>
+    <section class="content">
+    </section>
+</div>
+
+
+
+<!-- minime -->
+<div class="slide" id="minime">
+  <header><h1></h1></header>
+    <section class="content">
+    </section>
+</div>
+
+
+<!-- Students -->
+<div class="slide" id="people">
+  <header><h1></h1></header>
+    <section class="content">
+    </section>
+</div>
+
+
+<!-- schools -->
+<div class="slide" id="schools">
+
+
+<svg width="960" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg" style="
+transform: scale(1.5); transform-origin: top left; "><g></g><g transform="translate(480,300)scale(1.038062334060669,1.038062334060669)"><text text-anchor="middle" transform="translate(159,64)rotate(59.9)" style="font-size: 52px;  fill: rgb(165, 81, 148);">Code</text><text text-anchor="middle" transform="translate(-67,68)rotate(59.86)" style="font-size: 10px;  fill: rgb(99, 121, 57);">End</text><text text-anchor="middle" transform="translate(178,-33)rotate(59.9)" style="font-size: 100px;  fill: rgb(231, 186, 82);">University</text><text text-anchor="middle" transform="translate(-130,-94)rotate(-29.93)" style="font-size: 72px;  fill: rgb(231, 203, 148);">College</text><text text-anchor="middle" transform="translate(-96,35)rotate(29.96)" style="font-size: 80px;  fill: rgb(132, 60, 57);">School</text><text text-anchor="middle" transform="translate(-59,-197)rotate(-29.96)" style="font-size: 52px;  fill: rgb(173, 73, 74);">Academy</text><text text-anchor="middle" transform="translate(312,-26)rotate(29.96)" style="font-size: 37px;  fill: rgb(214, 97, 107);">Community</text><text text-anchor="middle" transform="translate(-116,-63)rotate(59.9)" style="font-size: 37px;  fill: rgb(231, 150, 156);">San</text><text text-anchor="middle" transform="translate(91,-12)rotate(59.9)" style="font-size: 37px;  fill: rgb(123, 65, 115);">State</text><text text-anchor="middle" transform="translate(282,-25)rotate(29.96)" style="font-size: 10px;  fill: rgb(165, 81, 148);">Codecademy</text><text text-anchor="middle" transform="translate(-20,-137)rotate(29.96)" style="font-size: 10px;  fill: rgb(206, 109, 189);">Foothill</text><text text-anchor="middle" transform="translate(-199,-158)rotate(59.9)" style="font-size: 10px;  fill: rgb(222, 158, 214);">Francisco</text><text text-anchor="middle" transform="translate(-38,-49)rotate(29.96)" style="font-size: 10px;  fill: rgb(57, 59, 121);">PluralSight</text><text text-anchor="middle" transform="translate(183,12)rotate(59.9)" style="font-size: 10px;  fill: rgb(82, 84, 163);">Front</text><text text-anchor="middle" transform="translate(138,-21)rotate(0)" style="font-size: 10px;  fill: rgb(107, 110, 207);">Masters</text><text text-anchor="middle" transform="translate(109,-128)rotate(59.9)" style="font-size: 10px;  fill: rgb(156, 158, 222);">General</text><text text-anchor="middle" transform="translate(-215,-129)rotate(-29.96)" style="font-size: 10px;  fill: rgb(99, 121, 57);">Assembly</text><text text-anchor="middle" transform="translate(57,-79)rotate(-59.9)" style="font-size: 10px;  fill: rgb(140, 162, 82);">Ohlone</text><text text-anchor="middle" transform="translate(-228,-145)rotate(0)" style="font-size: 10px;  fill: rgb(181, 207, 107);">Stanford</text><text text-anchor="middle" transform="translate(-193,-31)rotate(-59.9)" style="font-size: 10px;  fill: rgb(206, 219, 156);">Udemy</text><text text-anchor="middle" transform="translate(38,-92)rotate(59.9)" style="font-size: 10px;  fill: rgb(140, 109, 49);">Palm</text><text text-anchor="middle" transform="translate(198,-167)rotate(0)" style="font-size: 10px;  fill: rgb(189, 158, 57);">Beach</text><text text-anchor="middle" transform="translate(45,-108)rotate(29.93)" style="font-size: 10px;  fill: rgb(231, 186, 82);">Portland</text><text text-anchor="middle" transform="translate(142,81)rotate(-59.9)" style="font-size: 10px;  fill: rgb(231, 203, 148);">Jose</text><text text-anchor="middle" transform="translate(146,-47)rotate(-29.93)" style="font-size: 10px;  fill: rgb(132, 60, 57);">Berkeley</text><text text-anchor="middle" transform="translate(-47,-28)" style="font-size: 10px;  fill: rgb(173, 73, 74);">Rochester</text><text text-anchor="middle" transform="translate(-159,12)rotate(59.9)" style="font-size: 10px;  fill: rgb(214, 97, 107);">Khan</text><text text-anchor="middle" transform="translate(-210,-32)rotate(-29.96)" style="font-size: 10px;  fill: rgb(231, 150, 156);">Girl</text><text text-anchor="middle" transform="translate(-234,-105)rotate(0)" style="font-size: 10px;  fill: rgb(123, 65, 115);">Develop</text><text text-anchor="middle" transform="translate(204,29)rotate(-59.9)" style="font-size: 10px;  fill: rgb(165, 81, 148);">Black</text><text text-anchor="middle" transform="translate(-136,-69)rotate(59.9)" style="font-size: 10px;  fill: rgb(206, 109, 189);">Girls</text><text text-anchor="middle" transform="translate(-242,-25)rotate(0)" style="font-size: 10px;  fill: rgb(222, 158, 214);">Thinkful</text><text text-anchor="middle" transform="translate(141,-8)" style="font-size: 10px;  fill: rgb(57, 59, 121);">Miami</text><text text-anchor="middle" transform="translate(48,-121)rotate(0)" style="font-size: 10px;  fill: rgb(82, 84, 163);">Ad</text><text text-anchor="middle" transform="translate(-263,-110)rotate(-29.96)" style="font-size: 10px;  fill: rgb(107, 110, 207);">Harvard</text><text text-anchor="middle" transform="translate(209,111)rotate(-29.96)" style="font-size: 10px;  fill: rgb(156, 158, 222);">Carnegie</text><text text-anchor="middle" transform="translate(-198,19)rotate(-29.93)" style="font-size: 10px;  fill: rgb(99, 121, 57);">Mellon</text><text text-anchor="middle" transform="translate(-123,34)rotate(29.96)" style="font-size: 10px;  fill: rgb(140, 162, 82);">Hebrew</text><text text-anchor="middle" transform="translate(-109,83)rotate(29.96)" style="font-size: 10px;  fill: rgb(181, 207, 107);">Georgia</text><text text-anchor="middle" transform="translate(-215,7)rotate(-59.86)" style="font-size: 10px;  fill: rgb(206, 219, 156);">Southern</text><text text-anchor="middle" transform="translate(-42,-106)rotate(-59.86)" style="font-size: 10px;  fill: rgb(140, 109, 49);">Loyola</text><text text-anchor="middle" transform="translate(229,132)rotate(0)" style="font-size: 10px;  fill: rgb(189, 158, 57);">Marymount</text><text text-anchor="middle" transform="translate(126,41)rotate(29.93)" style="font-size: 10px;  fill: rgb(231, 186, 82);">Salzburg</text><text text-anchor="middle" transform="translate(156,95)rotate(59.9)" style="font-size: 10px;  fill: rgb(231, 203, 148);">Applied</text><text text-anchor="middle" transform="translate(-259,-41)rotate(-29.96)" style="font-size: 10px;  fill: rgb(132, 60, 57);">Science</text><text text-anchor="middle" transform="translate(82,140)rotate(-59.9)" style="font-size: 10px;  fill: rgb(173, 73, 74);">Ulster</text><text text-anchor="middle" transform="translate(-18,-2)rotate(-29.96)" style="font-size: 10px;  fill: rgb(214, 97, 107);">Glasgow</text><text text-anchor="middle" transform="translate(-42,88)rotate(59.9)" style="font-size: 10px;  fill: rgb(231, 150, 156);">Calgary</text><text text-anchor="middle" transform="translate(-251,-133)rotate(29.96)" style="font-size: 10px;  fill: rgb(123, 65, 115);">Colby</text><text text-anchor="middle" transform="translate(-285,-70)rotate(59.9)" style="font-size: 10px;  fill: rgb(165, 81, 148);">Hackbright</text><text text-anchor="middle" transform="translate(339,76)rotate(59.9)" style="font-size: 37px;  fill: rgb(206, 109, 189);">Hackathons</text><text text-anchor="middle" transform="translate(-55,165)rotate(-29.93)" style="font-size: 52px;  fill: rgb(222, 158, 214);">Conferences</text><text text-anchor="middle" transform="translate(-175,104)rotate(29.96)" style="font-size: 10px;  fill: rgb(57, 59, 121);">Academy</text><text text-anchor="middle" transform="translate(51,59)rotate(59.9)" style="font-size: 80px;  fill: rgb(82, 84, 163);">Self taught</text></g></svg>
+</div>
+
+
+<div class="slide" id="jobboards">
+  <header><h1></h1></header>
+    <section class="content" style="height: 900px">
+
+
+<svg width="960" height="600" version="1.1" style="transform: scale(1.5); transform-origin: top left;" xmlns="http://www.w3.org/2000/svg"><g></g><g transform="translate(480,300)"><text text-anchor="middle" transform="translate(-246,-113)rotate(-70)skewX(3.1805546814635176e-15)scale(1,1)" style="font-size: 97px; fill: rgb(57, 59, 121);">LinkedIn</text><text text-anchor="middle" transform="translate(-133,20)rotate(60)" style="font-size: 69px; fill: rgb(156, 158, 222);">Indeed</text><text text-anchor="middle" transform="translate(321,122)rotate(50.71428680419922)" style="font-size: 63px; fill: rgb(99, 121, 57);">Dice</text><text text-anchor="middle" transform="translate(-16,73)rotate(41.42856979370117)" style="font-size: 61px; fill: rgb(140, 162, 82);">Github</text><text text-anchor="middle" transform="translate(-201,123)rotate(-32.85714340209961)" style="font-size: 61px; fill: rgb(206, 219, 156);">Monster</text><text text-anchor="middle" transform="translate(-329,100)rotate(4.286)scale(1,1)" style="font-size: 58px; fill: rgb(140, 109, 49);">Twitter</text><text text-anchor="middle" transform="translate(113,-124)rotate(32.14285659790039)" style="font-size: 35px; fill: rgb(173, 73, 74);">Reddit</text><text text-anchor="middle" transform="translate(44,52)rotate(4.285714149475098)scale( 1, 1)" style="font-size: 10px; fill: rgb(214, 97, 107);">TopCoder</text><text text-anchor="middle" transform="translate(315,32)rotate(22.85714340209961)" style="font-size: 55px; fill: rgb(123, 65, 115);">GlassDoor</text><text text-anchor="middle" transform="translate(243,-141)rotate(-70)skewX(3.1805546814635176e-15)scale( 1, 1)" style="font-size: 74px; fill: rgb(107, 110, 207);">Craigslist</text><text text-anchor="middle" transform="translate(-251,235)rotate(-5)scale(1,1)" style="font-size: 55px; fill: rgb(231, 186, 82);">The Muse</text><text text-anchor="middle" transform="translate(-330,-127)rotate(-70)skewX(3.1805546814635176e-15)scale( 1, 1)" style="font-size: 55px; fill: rgb(189, 158, 57);">TheLadders</text><text text-anchor="middle" transform="translate(77,198)rotate(4.285714149475098)scale( 1, 1)" style="font-size: 81px; fill: rgb(82, 84, 163);">Stack Overflow</text><text text-anchor="middle" transform="translate(-23,-142)rotate(41.42856979370117)" style="font-size: 61px; fill: rgb(181, 207, 107);">White Truffle</text><text text-anchor="middle" transform="translate(326,-24)rotate(32.14285659790039)" style="font-size: 47px; fill: rgb(132, 60, 57);">AngelList</text><text text-anchor="middle" transform="translate(25,4)rotate(32.14285714285714)" style="font-size: 100px; fill: rgb(82, 84, 163);">Company Site</text></g></svg>
+    </section>
+</div>
+
+<!-- Huge Pipes -->
+<div class="slide" id="leaks">
+  <header><h1></h1></header>
+    </section>
+</div>
+
+<!-- Huge Pipes -->
+<div class="slide" id="leaks">
+  <header><h1>Women</h1></header>
+    <section class="content" style="margin-top: 0">
+      <ul style="margin: 0">
+        <li>48% of US work force, 42% of income
+        <li>19.6% to 35.2% of our industry
+        <li>In Development, earn $0.79 - $0.83
+        <li>White=$0.78. Black=$0.64. Latina=$0.56
+        <li><strong>50% leave STEM due to hostile work environments.</strongh>
+      </ul>
+      <footer>http://www.bls.gov/cps/cpsaat39.htm</footer>
+    </section>
+</div>
+
+<!-- Plumber -->
+<div class="slide intro" id="plumber">
+  <header><h1>Me? &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; You?</h1></header>
+    <section class="content">
+    </section>
+</div>
+
+
+
+
+<!-- MLK -->
+<div class="slide" id="quotes">
+  <header><h1></h1></header>
+    <section class="content">
+      <blockquote>Privilege is when you think something is not a problem because it's not a problem to you personally.</blockquote>
+      - @davidgaider
+
+      <blockquote>Our lives begin to end the day we become silent about things that matter.</blockquote>
+      - Martin Luther King
+
+    </section>
+</div>
+
+
+<!-- 2nd dad or mom -->
+<div class="slide">
+  <header><h1></h1></header>
+    <section class="content">A father and son are in a car that stalled on railroad tracks. An oncoming train smashes into the car. The father is killed; the gravely injured son is rushed to a hospital. The doctor enters the room, sees the child on the table. “I cannot operate on this child,” the doctor says; “this child is my son.” How? How can this be?
+    </section>
+</div>
+
+
+
+
+<div class="slide" id="rules">
+  <header><h1>Find a job</h1></header>
+    <section class="content">
+      <ul>
+        <li>You are assumed to be AS skilled as everyone else.
+        <li>Your code is assumed to be as good as everyone else.
+        <li>You are assumed to be correct.
+        <li>You are listened to and not interupted.
+        <li>The same language is used for everyone
+        <li>Merit, not potential, are the bench marks.
+        <li>A culture in which people stand up when others are silenced.
+    </section>
+</div>
+
+
+
+
+<div class="slide" id="directives">
+  <header><h1>Successful Shops</h1></header>
+    <section class="content">
+      <ul>
+        <li>Directives (instead of constructive criticism)</li>
+        <li>Improv principles</li>
+        <li>Everyone is onboarded</li>
+        <li>Everyone is included</li>
+        <li>Processes are formalized</li>
+      </ul>
+    </section>
+</div>
+
+<!-- hard / easy work -->
+<div class="slide" id="easyhard">
+<blockquote class="twitter-tweet" lang="en">
+  <div><p>Easy work:</p>
+<ol>
+  <li>blaming</li>
+  <li>judging</li>
+  <li>imitating</li>
+  <li>pretending &amp;</li>
+  <li>waiting</li>
+</ol>
+</div>
+<div>
+<p>Hard work:
+  <ol>
+    <li>learning</li>
+    <li>teaching</li>
+    <li>inspiring</li>
+    <li>improving</li>
+    <li>giving</li>
+  </ul>
+</div>
+<p>&mdash; Vala Afshar  <a href="https://twitter.com/ValaAfshar/status/588159157653655552">(@ValaAfshar)</a></p>
+</blockquote>
+
+</div>
+
+
+
+<!-- Deathbulge -->
+<div class="slide" id="deathbulge">
+  <header><h1></h1></header>
+    <section class="content">
+    </section>
+</div>
+
+<!-- learning pyramid -->
+<div class="slide" id="pyramid">
+  <header><h1 style="position: absolute; bottom: 0; left: 4vw; transform: rotate(-90deg); text-align: center; transform-origin: left center; line-height: 1.2; width: 100vh;">Faux <br>Learning Pyramid</h1></header>
+    <section class="content">
+      <ul >
+        <li>Lecture</li>
+        <li>Reading</li>
+        <li>Watching Videos</li>
+        <li><span>Demos</span></li>
+        <li><span>Discussion</span></li>
+        <li><span>Practice</span></li>
+        <li><span>Teach others</span></li>
+      </ul>
+    </section>
+</div>
+
+
+
+<!-- Encourage n00bs rather than congratulating pros -->
+    <div class="slide">
+      <blockquote class="twitter-tweet" lang="en"><p>Note to self: spend more time encouraging those who have yet to succeed, than congratulating those who have.</p>&mdash; Mona Nomura  <a href="https://twitter.com/Mona/status/587069447682162688">(@Mona)</a></blockquote>
+    </div>
+
+
+
+
+
+<!-- super power slide-->
+    <div class="slide" id="superpower"></div>
+
+
+<!-- Be kind to amateurs -->
+    <div class="slide">
+        <blockquote class="twitter-tweet" lang="en"><p>Be kind to amateurs, there are more of them than professionals and they&#39;re looking to all of you to see how to act.</p>&mdash; Scott Hanselman  <a href="https://twitter.com/shanselman/status/588088015685201920">(@shanselman)</a></blockquote>
+    </div>
+
+<!-- Superheroes -->
+<div class="slide" id="superheros">
+  <header><h1></h1></header>
+    <section class="content">
+    </section>
+</div>
+
+
+<!-- Credits -->
+<div class="slide" id="final">
+  <header><h1>Thank you</h1></header>
+    <section class="content">
+      <ul style="margin-top: 0;">
+        <li>Estelle Weyl: @estellevw - www.Standardista.com</li>
+        <li>Pipes:
+          <a href="http://www.jsg.utexas.edu">www.jsg.utexas.edu</a>,
+<a href="http://www.uswateralliance.org/wp-content/uploads/2014/01/11553710-a-broken-pipe-that-leaks-water-in-all-directions.jpg">www.uswateralliance.org</a>
+</li>
+        <li>Comic: <a href="http://www.lunarbaboon.com/comics/powers.html">www.lunarbaboon.com</a> - @lunarbaboon</li>
+        <li>Comic: <a href="http://www.deathbulge.com/comics/155?comic_id=155">www.DeathBulge.com</a> - @deathbulge
+        <li>Caricatures: Eric Geronimo </li>
+      </ul>
+    </section>
+</div>
+
+
+
+
+  </div>
+
+  <header>
+    <nav>
+            <a class="button cancel" id="back">&laquo;Back</a>
+            <a class="button done" id="next">Next&raquo;</a>
+    </nav>
+  </header>
+</div>
+<script src="js/slides.js">
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  </script>
+
+  </body>
+
+</html>
+
