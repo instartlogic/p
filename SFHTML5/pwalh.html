@@ -9,6 +9,7 @@ Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
 Based on: http://estelle.github.com/slides 
 -->    
 <link class="removeForAT" rel="stylesheet" href="css/index.css">
+<link class="removeForAT" rel="stylesheet" href="css/pwalh.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 <base target="play"/>
@@ -24,7 +25,12 @@ Based on: http://estelle.github.com/slides
   word-wrap: normal;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
-}</style>
+}
+section {
+	max-height: 80vh;
+	overflow-y: auto;
+}
+</style>
 
 </head>
 
@@ -74,6 +80,18 @@ Based on: http://estelle.github.com/slides
 </div>
 
 <div class="slide">
+<header><h1>PWA Benefits</h1></header>
+<section>
+<ul>
+<li>Can be added to home screen</li>
+<li>Smaller &amp; faster than native apps</li> 
+<li>Code once. Works cross platform</li>
+<li>No need for app stores</li>
+<li>Visible from home screen, trays , app lists</li>
+</section>
+</div>
+
+<div class="slide">
 <header><h1>PWA Features</h1></header>
 <section>
 <div style="display: flex;">
@@ -97,6 +115,21 @@ Based on: http://estelle.github.com/slides
 <div class="slide">
 <header><h1>Web technologies</h1></header>
 <section>
+<ul>
+<li>HTML
+  <ul>
+	<li>Audio / Video</li>
+	<li>Images</li>
+</ul></li>
+<li>CSS</li>
+<li>JavaScript
+	<ul>
+		<li>Service Workers</li>
+		<li>JSON Manifest</li>
+	</ul>
+</li>
+<li>SVG</li>
+</ul>
 </section>
 </div>
 
@@ -105,6 +138,13 @@ Based on: http://estelle.github.com/slides
 <div class="slide">
 <header><h1>Progressively Enhanced</h1></header>
 <section>
+<ul>
+<li>Works no matter what.
+	<br/>&middot; in all browsers
+	<br/>&middot;  on all devices
+</li>
+<li>Works even better when browser supports PWA features</li>
+</ul>
 </section>
 </div>
 
@@ -113,6 +153,11 @@ Based on: http://estelle.github.com/slides
 <div class="slide">
 <header><h1>Discoverable</h1></header>
 <section>
+<ul>
+	<li>Search Engine Friendly</li>
+	<li>Doesn't require a store</li>
+	<li>Future: identifiable as application due to manifest.
+</ul>
 </section>
 </div>
 
@@ -121,6 +166,10 @@ Based on: http://estelle.github.com/slides
 <div class="slide">
 <header><h1>Linkable</h1></header>
 <section>
+<ul>
+<li>Shareable via URL</li>
+<li>Each page has a URL</li>
+</ul>
 </section>
 </div>
 
@@ -129,6 +178,13 @@ Based on: http://estelle.github.com/slides
 <div class="slide">
 <header><h1>Responsive</h1></header>
 <section>
+<ul>
+<li>Page load is fast enough on 3G</li>
+<li>Works no matter the dimensions of the viewport</li>
+<li>
+Content is sized correctly for the viewport</li>
+<li>Has a &lt;meta name="viewport"> tag with width or initial-scale</li>
+</ul>
 </section>
 </div>
 
@@ -137,6 +193,12 @@ Based on: http://estelle.github.com/slides
 <div class="slide">
 <header><h1>App-like</h1></header>
 <section>
+<ul>
+<li>Look like a native app</li>
+<li>Built on app shell model</li>
+<li>Look and feel described in Manifest</li>
+</ul>
+<p>Not SPAs, but minimize page refreshes</p>
 </section>
 </div>
 
@@ -145,6 +207,14 @@ Based on: http://estelle.github.com/slides
 <div class="slide">
 <header><h1>Works offline</h1></header>
 <section>
+<p>Avoid the Chrome Dinosaur</p>
+<ul>
+<li>Works when user is online</li>
+<li>Works when user is offline.</li>
+<li>Works when user has a shitty connection</li>
+<li>Useful even when offline</li>
+</ul>
+<p>Get resources from network, cache, or combo of both</p>
 </section>
 </div>
 
@@ -153,6 +223,12 @@ Based on: http://estelle.github.com/slides
 <div class="slide">
 <header><h1>Installable</h1></header>
 <section>
+<ul>
+<li>Add to home screen</li>
+<li>Available fast, even when offline</li>
+<li>Name, color, and icon defined in manifest</li>
+<li>No installation friction like store apps</li>
+</ul>
 </section>
 </div>
 
@@ -161,6 +237,7 @@ Based on: http://estelle.github.com/slides
 <div class="slide">
 <header><h1>Automatically Updated</h1></header>
 <section>
+<p>Current content displayed when user is online</p>
 </section>
 </div>
 
@@ -187,9 +264,10 @@ Re-engageable</h1></header>
 </section>
 </div>
 
-<div class="slide divider">
-<header><h1>Lighthouse</h1></header>
-</div>
+
+
+
+
 
 
 <div class="slide object"><object data="https://machinelearningworkshop.com"></object></div>
@@ -213,37 +291,354 @@ Re-engageable</h1></header>
 <li><p>Command line:</p>
 <pre>npm install -g lighthouse
 lighthouse https://machinelearningworkshop.com</pre></li>
+</ul>
+<p>More info: <a href="https://developers.google.com/web/tools/lighthouse/">https://developers.google.com/web/tools/lighthouse/</a>
 </section>
 </div>
+
+
+<div class="slide">
+<header><h1>Accessibility Checks</h1></header>
+<section>
+<ul>
+<li>Elements Use Attributes Correctly</li>
+<li>Every Image Element Has An alt Attribute</li>
+<li>ARIA Attributes Follow Best Practices</li>
+<li>Element aria-* Attributes are Allowed for the Role</li>
+<li>Element aria-* Attributes Have Valid Values</li>
+<li>
+Elements With ARIA Roles Have The Required aria-* Attributes</li>
+<li>Elements Have Discernable Names</li>
+<li>Buttons have an accessible name</li>
+<li>Every Form Element Has A Label</li>
+<li>Elements Describe Contents Well</li>
+<li>Color Contrast Is Satisfactory</li>
+<li>Elements Are Well Structured</li>
+<li>Page Specifies Valid Language</li>
+<li>Meta Tags Used Properly</li></ul>
+</section>
+</div>
+
 
 <div class="slide object"><object data="includes/lighthouse_pre.html"></object></div>
 
-
-
 <div class="slide">
-<header><h1>Accessibility</h1></header>
+<header><h1>Accessibility Concerns</h1></header>
 <section>
+<ul>
+	<li>Fixed color contrast on headers</li>
+	<li>Checked the language attribute on the HTML</li>
+	<pre>&lt;html lang="en-US"></html>
+</ul>
 </section>
 </div>
 
+
+<div class="slide object"><object data="https://machinelearningworkshop.com"></object></div>
+
 <div class="slide">
-<header><h1>Best Practices</h1></header>
+<header>
+	<h1>Best Practices Checks</h1>
+</header>
 <section>
+<ul>
+<li>Use HTTP/2 for own resources</li>
+<li>Avoid Application Cache</li>
+<li>Avoid WebSQL DB</li>
+<li>Use HTTPS</li>
+<li>Use passive listeners to improve scrolling performance</li>
+<li>Avoid Mutation Events in its own scripts</li>
+<li>Avoid document.write()</li>
+<li>Open external anchors using rel="noopener"</li>
+<li>Avoid requesting geolocation permission on page load</li>
+<li>Avoid requesting notification permission on page load</li>
+<li>Avoid deprecated APIs</li>
+<li>Allow pasting in password input fields</li></ul>
 </section>
 </div>
+
+
+<div class="slide object"><object data="includes/lighthouse_pre.html#best-practices"></object></div>
+
+
+<div class="slide">
+<header><h1>Best Practices Issues</h1></header>
+<section>
+<ul>
+<li>Uses HTTPS: 16 insecure requests found</li>
+<li>Uses HTTP/2 for its own resources: 12 requests were not handled over h2
+</li>
+<li>Manifest's <code>short_name</code> won't be truncated when displayed on homescreen</li>
+</ul>
+</section>
+</div>
+
+
+
+
+<div class="slide">
+<header><h1>Let's Encrypt</h1></header>
+<section>
+<p>Install Let's Encrypt</p>
+<pre>$ /scripts/install_lets_encrypt_autossl_provider</pre>
+<p>Redirect http:// to https:// in .htaccess</p>
+<pre>RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}/%{REQUEST_URI}</pre>
+<a href="http://www.standardista.com/lets-encrypt-on-cpanel/">Installing LetsEncrypt on cPanel</a>
+</section>
+</div>
+
 
 <div class="slide">
 <header><h1>Performance</h1></header>
 <section>
+<ul>
+<li>Metrics
+	<ul>
+		<li>First meaningful paint</li>
+		<li>First Interactive</li>
+		<li>Consistently Interactive</li>
+		<li>Perceptual Speed Index (target: < 1,250)</li>
+		<li>Estimated Input Latency (target: < 50 ms)</li>
+	</ul>
+</li>
+<li>Opportunities
+	<ul>
+		<li>Reduce render-blocking stylesheets</li>
+		<li>Reduce render-blocking scripts</li>
+		<li>Optimize images</li>
+		<li>Properly size images</li>
+		<li>Offscreen images</li>
+	</ul>
+</li>
+<li>Diagnostics
+	<ul><li>Critical Request Chain</li></ul></li></ul>
 </section>
 </div>
+
+
+
+<div class="slide">
+<header><h1>Critical Network Waterfall</h1></header>
+<section><pre>Initial Navigation
+ / (www.machinelearningworkshop.com)
+  /css?family=Open+Sans%3A400 (fonts.googleapis.com) - 601.7ms, 10.5KB
+  /css?family=Raleway:400 (fonts.googleapis.com) - 593.8ms, 10.5KB
+  /css/style.css (www.machinelearningworkshop.com) - 577.2ms, 10.5KB
+    …v11/QAU...o4.woff2 (fonts.gstatic.com) - 781.2ms, 10.5KB
+    …v13/cJZ...20.woff2 (fonts.gstatic.com) - 786.6ms, 10.5KB</pre>
+<ul>
+	<li>Get rid of Open Sans</li>
+	<li>Include @font-face inline</li>
+	<li>Move external CSS to internal</li>
+	</ul>
+</section></div>
+
+<div class="slide">
+<header><h1>Performance (Passed)</h1></header>
+<section>
+<ul>
+	<li>Reduce render-blocking scripts</li>
+	<li>Properly size images</li>
+	<li>Optimize images</li>
+	<li>Serve images as WebP</li>
+	<li>Enable text compression</li>
+<li>Avoid enormous network payloads: 159 KB (target: < 1,600 KB)</li>
+<li>Avoids an excessive DOM size: 156 nodes (target: < 1,500 nodes)</li>
+<li>User Timing marks and measures</li>
+</ul>
+</section>
+</div>
+
+
+
+<div class="slide"><header><h1>Progressive Web App Requirements</h1></header>
+
+<p><a href="https://developers.google.com/web/progressive-web-apps/checklist">https://developers.google.com/web/progressive-web-apps/checklist</a></p>
+<section>
+<ul>
+<li>Site is served over HTTPS
+</li><li>Pages are responsive on tablets & mobile devices
+</li><li>The start URL (at least) loads while offline
+</li><li>Metadata provided for Add to Home screen
+</li><li>First load fast even on 3G
+</li><li>Site works cross-browser
+</li><li>Page transitions don't feel like they block on the network
+</li><li>Each page has a URL
+</li><li>Schema.org metadata is provided where appropriate
+</li><li>Social metadata is provided where appropriate
+</li><li>Canonical URLs are provided when necessary
+</li><li>Pages use the History API
+</li><li>Content doesn't jump as the page loads
+</li><li>Pressing back from a detail page retains scroll position on the previous list page
+</li><li>When tapped, inputs aren't obscured by the on screen keyboard
+</li><li>Content is easily sharable from standalone or full screen mode
+</li><li>Site is responsive across phone, tablet and desktop screen sizes
+</li><li>Any app install prompts are not used excessively
+</li><li>The Add to Home Screen prompt is intercepted
+</li><li>First load very fast even on 3G
+</li><li>Site uses cache-first networking
+</li><li>Site appropriately informs the user when they're offline
+</li><li>Provide context to the user about how notifications will be used
+</li><li>UI encouraging users to turn on Push Notifications must not be overly aggressive.
+</li><li>Site dims the screen when permission request is showing
+</li><li>Push notifications must be timely, precise and relevant
+</li><li>Provides controls to enable and disable notifications
+</li><li>User is logged in across devices via Credential Management API
+</li><li>User can pay easily via native UI from Payment Request API.</li></ul>
+
+</section>
+<ul class="threethirds">
+<li class="temphidden">Reliable</li>
+<li class="temphidden">Fast</li>
+<li class="temphidden">Engaging</li>
+</ul>
+</div>
+
+
+<div class="slide object"><object data="includes/lighthouse_pre.html"></object></div>
+
 
 <div class="slide">
 <header><h1>Progressive Web App</h1></header>
 <section>
+<p>Manual Checks</p>
+<ul>
+	<li>Site works cross-browser</li>
+	<li>Page transitions don't feel like they block on the network</li>
+	<li>Each page has a URL</li>
+</ul>
+<p>Passed auto checks</p>
+<ul><li>Contains content when JavaScript is not available
+<li>Page load is fast enough on 3G</li>
+<li>Has a &lt;meta name="viewport"> tag with width or initial-scale</li>
+<li>
+Content is sized correctly for the viewport</li>
+
+
 </section>
 </div>
 
+
+<div class="slide object">
+<header><h1>Progressive Web App Issues</h1></header>
+<object data="includes/lighthouse_pre.html"></object></div>
+
+
+<div class="slide">
+<header><h1>Manifest</h1></header>
+<section><pre>{
+  "short_name": "MLW",
+  "name": "Machine Learning Workshop",
+  "start_url": "/?source=homescreen", 
+  "icons": [
+    {
+      "src": "icon-sm.png",	
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "icon-med.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "icon-lg.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-huge.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],  
+  "background_color": "#FFFFFF",
+  "theme_color": "#226DAA", 
+  "display": "standalone",  
+  "orientation": "portrait",
+  "description": "An April Fool's joke that Estelle still finds funny"
+}</pre></section></div>
+
+
+<div class="slide">
+<header><h1>Include the manifest</h1></header>
+<section><pre>&lt;link rel="manifest" href="manifest.json"></pre>
+</div>
+
+
+<div class="slide">
+<header><h1>Dealing with iOS...</h1></header>
+<section>
+<pre>&lt;meta name="apple-mobile-web-app-title" content="MLW">
+&lt;meta name="apple-mobile-web-app-capable" content="yes">
+&lt;!-- use UI framework for back button if you use this -->
+&lt;meta name="apple-mobile-web-status-bar-style" content="black">
+&lt;link rel="apple-touch-icon" href="icon_152x152.png"/>
+&lt;link rel="apple-touch-startup-image" href="pageloadimg.jpg"/>
+</pre>
+<h1>... and Windows</h1>
+<pre>&lt;meta name="msapplication-TileImage" content="icon-144x144.png">
+&lt;meta name="msapplication-TileColor" content="#226DAA">
+</section>
+</div>
+
+
+
+
+<div class="slide">
+<header><h1>Service Worker</h1></header>
+<section><p>Script browser runs in background, separate from a web page, on a separate thread, awakened by events</p></section>
+</div>
+
+<div class="slide">
+<pre>if ('serviceWorker' in navigator) {
+
+  var CACHE_VERSION = '%CACHE_VERSION%';
+  var CACHE_LIST = ['CACHE_VALUES'];
+
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/service-worker.js');
+  });
+
+  self.addEventListener('install', function(event) {
+    event.waitUntil(caches.open(CACHE_VERSION)
+    .then(function(cache) {
+        return cache.addAll(CACHE_LIST);
+    }));
+});
+
+self.addEventListener('activate', function(event) {
+    console.log("service worker has been activated.");
+});
+
+self.addEventListener('fetch', function(event) {
+ console.log('Fetch event for ' + event.request.url);
+     event.respondWith(
+         caches.match(event.request).then(function(response) {
+             if (response) {
+                 console.log('Response found in cache:', response);
+                 return response;
+             } else {
+             	console.log('Fetching from network');
+             	return fetch(event.request);
+             }
+         })
+     );
+ });
+}</pre>
+<p>Load, Install, Activate, Fetch</p>
+</div>
+
+<div class="slide">
+	<header><h1>App Shell Architecture</h1></header>
+</div>
+
+<div class="slide">
+	<header><h1>Test it!</h1></header>
+	<section><h1><a target="_blank" href="https://machinelearningworkshop.com">MachineLearningWorkshop.com</a></h1></section>
+</div>
 
 <!-- Talk Table of Contents-->
 <div class="slide divider">

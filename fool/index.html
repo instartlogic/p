@@ -20,8 +20,334 @@ Thank you.
 -->
 
 <!--<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans%3A400'  />-->
-<link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet" >
-<link rel="stylesheet" href="css/style.css">
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/YZaO6llzOP57DpTBv2GnyFKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/QAUlVt1jXOgQavlW5wEfxQLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+a {
+  color: #226DAA; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  width: 100%;
+  _box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); }
+  nav img {
+    margin: 7px 0 -7px 7px;
+    height: 2.5rem; }
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    nav ul li {
+      flex: 1; }
+      nav ul li a {
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+        text-decoration: none; }
+        nav ul li a:hover {
+          color: white; }
+      nav ul li:hover {
+        background: #226DAA; }
+
+html {
+  font-family: Raleway, sans-serif; }
+
+body, header, footer {
+  margin: 0;
+  padding: 0;
+  line-height: 2; }
+
+section, footer {
+  padding: 4vh 1vw;
+  margin-left: -1vw;
+  margin-right: -1vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+@media screen and (max-width: 600px) {
+  section, footer {
+    padding: 20px; } }
+section > * {
+  max-width: 54rem; }
+
+section:first-of-type {
+  background-color: #226DAA;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), -3px -3px 3px rgba(0, 0, 0, 0.2);
+  color: #fff; }
+
+section:nth-of-type(2) {
+  background-color: #113755;
+  background-image: url("../images/bg.jpg");
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset -3px -3px 3px rgba(0, 0, 0, 0.2);
+  background-size: cover; }
+
+section:nth-of-type(3),
+table {
+  background-color: white;
+  color: #333;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), -3px -3px 3px rgba(0, 0, 0, 0.2); }
+
+section:nth-of-type(4) {
+  background-color: #a4bacc;
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset -3px -3px 3px rgba(0, 0, 0, 0.2);
+  color: #333; }
+
+section:nth-of-type(5) {
+  background-color: #113755;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), -3px -3px 3px rgba(0, 0, 0, 0.2);
+  color: #333; }
+
+footer {
+  background-color: #ccc;
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset -3px -3px 3px rgba(0, 0, 0, 0.2); }
+
+header {
+  background-image: url(../svg/all.svg);
+  text-align: center;
+  background-color: #fff;
+  min-height: 50vw;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 8vh; }
+
+@media only screen and (min-width: 540px) {
+  header {
+    padding-top: calc((20vh+20vw)/2); } }
+hgroup {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1 solid white;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), -3px -3px 3px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 3vh; }
+
+hgroup h2, hgroup h1 {
+  font-size: calc((5vw + 5vh)/2);
+  margin: 1rem;
+  color: #226DAA;
+  font-weight: normal;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); }
+
+hgroup h2 {
+  font-size: calc((2.5vw + 2.5vh)/2); }
+
+header .buttons {
+  display: flex;
+  max-width: 26rem;
+  padding-top: calc((5vh + 5vw)/2);
+  margin: auto; }
+  header .buttons a {
+    flex: 1 1 40%;
+    padding: 7px 14px;
+    text-decoration: none;
+    font-family: "Open sans", geneva;
+    margin: 5px;
+    border-radius: 2px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); }
+    header .buttons a:hover {
+      box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.2); }
+  header .buttons .btn {
+    background-color: #ccc;
+    color: #005193; }
+  header .buttons .btn-cta {
+    color: #fff;
+    background-color: #226DAA; }
+
+footer {
+  padding: 20px; }
+  footer article {
+    display: flex;
+    line-height: 1.6; }
+    footer article > ul:not(:first-of-type) > li > a {
+      border-bottom: 1px solid; }
+      footer article > ul:not(:first-of-type) > li > a:hover {
+        border: none; }
+  footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 1rem;
+    flex: 25%; }
+    footer ul a {
+      text-decoration: none;
+      color: #005193; }
+      footer ul a:hover {
+        text-decoration: underline;
+        color: #113755; }
+
+@media only screen and (max-width: 800px) {
+  footer article {
+    flex-wrap: wrap; }
+    footer article > ul {
+      flex: 45%; } }
+@media only screen and (max-width: 500px) {
+  footer article {
+    flex-wrap: wrap; }
+    footer article > ul {
+      flex: 100%; } }
+.reg {
+  color: #fff; }
+  .reg h1 {
+    font-size: 2rem;
+    margin-bottom: 0; }
+  .reg table {
+    color: #333;
+    border: 1px solid;
+    padding: 10px; }
+    .reg table td {
+      padding: 5px 10px; }
+    .reg table tr + tr td {
+      border-top: 1px solid; }
+    .reg table td + td {
+      border-left: 1px solid; }
+    .reg table td[colspan] {
+      text-align: center; }
+
+.teachers ul img {
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle(50%);
+  margin-left: -10px; }
+
+.hal {
+  width: 200px; }
+
+.eve img {
+  width: 117px;
+  padding: 5% 10%; }
+
+.teachers ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between; }
+  .teachers ul li {
+    flex: 0 1 45%;
+    min-width: 300px; }
+.teachers .hal:hover {
+  position: relative; }
+  .teachers .hal:hover img {
+    visibility: hidden; }
+.teachers .hal:hover::after {
+  content: '';
+  background: url(../svg/halanim.svg);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transform: translatex(-10px); }
+.teachers h2 {
+  margin-bottom: 0; }
+.teachers h1 {
+  margin: -1rem 0 0 0;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); }
+  .teachers h1 span {
+    font-size: 4rem;
+    font-family: serif;
+    position: relative;
+    top: 0.5rem;
+    font-weight: normal;
+    color: #226DAA; }
+
+@media screen and (max-width: 600px) {
+  .teachers ul {
+    flex-direction: column; }
+    .teachers ul li {
+      flex: 1; }
+      .teachers ul li + li {
+        border-top: 1px solid #226DAA; } }
+.feedback ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+.feedback * {
+  color: white; }
+.feedback li {
+  flex: 0 1 30%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", geneva; }
+.feedback blockquote {
+  line-height: 2;
+  margin: 0;
+  padding: 0; }
+  .feedback blockquote::before {
+    content: "“";
+    font-size: 2rem;
+    position: absolute;
+    transform: translate(-20px, -20px); }
+  .feedback blockquote::after {
+    content: "”";
+    font-size: 2rem;
+    position: absolute;
+    transform: translate(5px, -20px); }
+  .feedback blockquote ~ p {
+    text-align: right; }
+.feedback img {
+  max-width: 100%;
+  max-height: 300px;
+  display: block;
+  margin: auto; }
+
+@media only screen and (min-width: 661px) {
+  img[alt="Toaster"] {
+    margin-top: 185px; } }
+@media only screen and (max-width: 660px) {
+  .feedback ul {
+    flex-direction: column; }
+    .feedback ul li {
+      border-top: 1px solid #226DAA;
+      max-width: 400px;
+      flex: auto;
+      margin: auto;
+      padding: 20px 10px; }
+      .feedback ul li:first-of-type {
+        border-top: none; } }
+.black * {
+  color: black !important;
+  background: black !important;
+  transition: background 200ms, color 200ms; }
+.black img {
+  display: none; }
+
+.light {
+  float: left;
+  width: 70px;
+  margin-right: 10px;
+  cursor: pointer; }
+
+.black .light {
+  display: inline-block;
+  transform: rotate(180deg);
+  opacity: 0.3; }
+</style>
 <link rel="manifest" href="manifest.json?2">
 <meta name="theme-color" content="#226DAA">
 </head>

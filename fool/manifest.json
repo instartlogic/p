@@ -20,12 +20,13 @@
     },
     {
       "src": "icon-huge.png",
-      "type": "image/png",
-      "sizes": "512x412"
+      "sizes": "512x512",  
+      "type": "image/png"
     }
   ],  
   "background_color": "#FFFFFF",
   "theme_color": "#226DAA", 
   "display": "standalone",  
-  "orientation": "portrait" 
+  "orientation": "portrait",
+  "description": "An April Fool's joke that Estelle still finds funny"
 }

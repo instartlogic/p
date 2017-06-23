@@ -1,6 +1,6 @@
 {
   "short_name": "MLW",
-  "name": "Machine Learning Workshop  ",
+  "name": "Machine Learning Workshop",
   "icons": [
     {
       "src": "launcher-icon-1x.png",
@@ -18,5 +18,6 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "index.html?launcher=true"
+  "start_url": "index.html?hs=true",
+  "display": "standalone"
 }

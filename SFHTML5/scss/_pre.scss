@@ -4,9 +4,9 @@ pre {
   text-align: left;
   background: 
     linear-gradient(to top, transparentize($ilblue, .8) 50%, transparentize(white, .5) 50%);
-    background-position: 0 2vh;
+    background-position: 0 2rem;
   background-attachment: local;
-  background-size: 100% 8vh;
+  background-size: 100% 3rem;
   border-radius: 1vh;
   box-sizing: border-box;
   max-height: calc(100vh - 150px); 
@@ -14,8 +14,8 @@ pre {
   margin: 0 1vw 20px;
   overflow: scroll;
   padding: 2vh 10px;
-  line-height: 4vh;  
-  font-size: 3.3vh; 
+  line-height: 1.5rem;  
+  font-size: 1rem; 
   position: relative; 
   top: -10px;
   border: 1px solid $lightborders;
