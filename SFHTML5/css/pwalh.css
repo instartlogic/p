@@ -1,0 +1,23 @@
+.threethirds {
+  position: absolute;
+  top: 2em;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  list-style-type: none;
+  left: -40px; }
+  .threethirds li {
+    height: 30vh;
+    text-align: center;
+    line-height: 30vh;
+    margin: 0; }
+  .threethirds li:first-of-type {
+    color: #ffffff;
+    background: rgba(255, 85, 0, 0.95); }
+  .threethirds li:nth-of-type(2) {
+    background: rgba(200, 207, 45, 0.95); }
+  .threethirds li:last-of-type {
+    color: #ffffff;
+    background: rgba(34, 109, 170, 0.95); }
+
+/*# sourceMappingURL=pwalh.css.map */
