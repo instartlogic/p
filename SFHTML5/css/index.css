@@ -74,7 +74,8 @@ header, section {
 
 .divider {
   background-color: #226DAA;
-  padding: 1em; }
+  padding: 1em;
+  box-sizing: border-box; }
   .divider * {
     color: #fff; }
 

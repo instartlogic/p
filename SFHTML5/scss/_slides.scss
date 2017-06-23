@@ -11,6 +11,7 @@
 .divider {
 	background-color: $ilblue;
   padding: 1em;
+  box-sizing: border-box;
 	* {
 		color: $white;
 	}

@@ -320,7 +320,7 @@ Elements With ARIA Roles Have The Required aria-* Attributes</li>
 </div>
 
 
-<div class="slide object"><object data="includes/lighthouse_pre.html"></object></div>
+<div class="slide object"><object data="includes/lighthouse_pre.html#accessibility"></object></div>
 
 <div class="slide">
 <header><h1>Accessibility Concerns</h1></header>
@@ -334,7 +334,8 @@ Elements With ARIA Roles Have The Required aria-* Attributes</li>
 </div>
 
 
-<div class="slide object"><object data="https://machinelearningworkshop.com"></object></div>
+<div class="slide object">
+<header><h1>Colors</h1></header><object data="https://machinelearningworkshop.com"></object></div>
 
 <div class="slide">
 <header>
@@ -342,11 +343,11 @@ Elements With ARIA Roles Have The Required aria-* Attributes</li>
 </header>
 <section>
 <ul>
-<li>Use HTTP/2 for own resources</li>
-<li>Avoid Application Cache</li>
-<li>Avoid WebSQL DB</li>
-<li>Use HTTPS</li>
-<li>Use passive listeners to improve scrolling performance</li>
+	<li>Use HTTP/2 for own resources</li>
+	<li>Avoid Application Cache</li>
+	<li>Avoid WebSQL DB</li>
+	<li>Use HTTPS</li>
+	<li>Use passive listeners to improve scrolling performance</li>
 <li>Avoid Mutation Events in its own scripts</li>
 <li>Avoid document.write()</li>
 <li>Open external anchors using rel="noopener"</li>
@@ -359,6 +360,7 @@ Elements With ARIA Roles Have The Required aria-* Attributes</li>
 
 
 <div class="slide object"><object data="includes/lighthouse_pre.html#best-practices"></object></div>
+
 
 
 <div class="slide">
@@ -417,6 +419,8 @@ RewriteRule (.*) https://%{HTTP_HOST}/%{REQUEST_URI}</pre>
 </section>
 </div>
 
+
+<div class="slide object"><object data="includes/lighthouse_pre.html#performance"></object></div>
 
 
 <div class="slide">
@@ -564,8 +568,13 @@ Content is sized correctly for the viewport</li>
 
 <div class="slide">
 <header><h1>Include the manifest</h1></header>
-<section><pre>&lt;link rel="manifest" href="manifest.json"></pre>
+<section class="flex" style="align-items: flex-start; justify-content: space-around;"><div><pre>&lt;link rel="manifest" href="manifest.json"></pre> <p class="temphidden">Let's re-run lighthouse</p></div>
+<img src="images/mlwpwaG3.png" alt="Screenshot of Machine Learning Workshop on an android device" style="width: 360px; box-shadow: -3px -3px 3px rgba(0,0,0,0.2); border: 1px solid #ccc">
 </div>
+
+<div class="slide object">
+<header><h1>Current Status</h1></header>
+<object data="includes/lighthouse_mid.html"></object></div>
 
 
 <div class="slide">
@@ -585,7 +594,25 @@ Content is sized correctly for the viewport</li>
 </div>
 
 
-
+<div class="slide">
+<header><h1>PWA Issues</h1></header>
+<section>
+<ul>
+	<li>Registers a Service Worker</li>
+	<li>Responds with a 200 when offline</li>
+	<li>User can be prompted to Install the Web App
+		<ul>
+			<li>Site does not register a Service Worker</li>
+			<li>Manifest start_url is not cached by a Service Worker.</li>
+		</ul>
+	</li>
+	<li>Configured for a custom splash screen
+		<ul>
+			<li>Manifest does not have icons at least 512px.</li>
+		</ul>
+	</li>
+</ul></section>
+</div>
 
 <div class="slide">
 <header><h1>Service Worker</h1></header>
@@ -632,13 +659,9 @@ self.addEventListener('fetch', function(event) {
 </div>
 
 <div class="slide">
-	<header><h1>App Shell Architecture</h1></header>
+	<header><h1>Lastly: App Shell Architecture</h1></header>
 </div>
 
-<div class="slide">
-	<header><h1>Test it!</h1></header>
-	<section><h1><a target="_blank" href="https://machinelearningworkshop.com">MachineLearningWorkshop.com</a></h1></section>
-</div>
 
 <!-- Talk Table of Contents-->
 <div class="slide divider">
