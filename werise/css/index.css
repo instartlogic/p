@@ -380,7 +380,10 @@ svg text {
     2px 2px 2px black;
 }
 
-
+#dreamjob {
+  background-image: url(../img/dreamjob.jpg);
+  background-size:  cover;
+  }
 #deathbulge { /* comic */
   background-image: url(../img/deathbulge.png);
   background-repeat:  no-repeat;
@@ -570,3 +573,4 @@ svg text { font-family: Impact;}
 #estelle {
   background-image: url(../img/ColorEstelle.gif);
 }
+
