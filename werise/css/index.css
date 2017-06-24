@@ -303,3 +303,270 @@ figure {
   #info, #topinfo, .counter {
     display: none; }
   }
+  /* -----
+     -----
+     ----- */
+  h1 {font-family: 'Rock Salt', georgia, helvetica, sans-serif;}
+blockquote {line-height: 1.4;}
+.slide {
+  font-family: 'Architects Daughter', cursive;
+}
+
+
+
+#linkedinDrinking .linkedin {
+   font-family: times, times new roman, serif;
+   border-color: #ccc;
+   border-width: 40px 10px 0;
+   border-style: solid;
+   width: 80vw;
+   margin: auto;
+   padding: 20px 20px 0;
+ }
+.linkedin p {
+   font-size: 1.5rem;
+}
+#linkedinDrinking mark {
+  background-color: yellow;
+}
+
+#worstjob div:first-of-type {
+  height: 85vh;
+  overflow:scroll;
+  padding: 20px;
+}
+#jobboards,
+#schools,
+#pipes {
+  background-image: url(../img/pipeline.jpg);
+  background-size: cover;
+}
+
+#troll {
+  background-image: url(../img/troll.jpg);
+  background-size: cover;
+}
+#jez {
+  background-image: url(../img/jez.png);
+  background-size: cover;
+}
+#jez h1 {
+  color: #FAB81E;
+}
+svg text {
+  font-family: impact;
+  text-shadow: 1px 1px 1px white, 3px 3px 3px black;
+}
+
+#students {
+
+}
+
+#leaks {
+  background-image: url(../img/pipelineleak.png);
+  background-size: cover;
+}
+#leaks ul {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 15px;
+  padding: 1em 10%;
+}
+#leaks strong {
+  color: #f33;
+  text-shadow:
+    1px 1px 1px white,
+    2px 2px 2px black;
+}
+
+
+#deathbulge { /* comic */
+  background-image: url(../img/deathbulge.png);
+  background-repeat:  no-repeat;
+  background-size:  contain;
+  background-position: center;
+}
+
+#easyhard blockquote {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10vw;
+}
+#easyhard blockquote * {
+  font-size: 1.8rem;
+}
+#easyhard blockquote > div {
+  flex: 0 0 45%;
+}
+#easyhard blockquote > p {
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+
+.slide {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#pingpong {
+  background-image: url(../img/pp.png);
+  background-position: right bottom;
+  background-size: 50% auto;
+}
+#people {
+  background-image: url(../img/people2.gif);
+}
+#plumber {
+  background-image: url(../img/plumber.jpg);
+}
+#superpower {
+   background-image: url(../img/superpower.gif);
+   background-position: 50% 50%;"
+}
+#superheros {
+  background-image: url(../img/superheros2.jpg);
+}
+#asshats {
+  background-image: url(../img/cowboy_etc.jpg);
+}
+#plumber {
+   background-image: url(../img/plumber.jpg);
+}
+#superstar {
+  background-image: url(../img/dist.gif);
+  background-size: auto;
+}
+#imposter {
+  background-image: url(../img/dist2.gif);
+  background-size: auto;
+}
+#normal {
+  background-image: url(../img/normal.gif);
+  background-size: auto;
+}
+
+#sexistjob h1 {
+  position: absolute;
+  left: 320px; top: 320px;
+  transform: rotate(-5deg);
+  color: red;
+}
+
+#minime {
+  background-image: url(../img/minime.gif);
+}
+.twitter-tweet {
+  margin-right: 240px;
+}
+#quotes {
+  text-align: center;
+}
+#quotes blockquote {
+  border-top: 1px solid red;
+  text-align: left;
+  padding:10px 30px;
+  margin-bottom: 0;
+  margin-top: 1em;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0));
+}
+
+#directives, #rules {
+  background-image: url(../img/apple.png);
+  background-position: right 40px bottom 40px;
+  background-size: auto;
+}
+
+#pyramid ul{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  margin: 0; padding: 3vh 0 0 0;
+  list-style-type: none;
+  background-image:
+  linear-gradient(50deg,
+    transparent 50%,
+    white 50%
+    ),
+  linear-gradient(-50deg,
+    transparent 50%,
+    white 50%
+    ),
+  linear-gradient(
+    to bottom,
+    red 15%,
+    orange 15%,
+    orange 29%,
+    yellow 29%,
+    yellow 43%,
+    green 43%,
+    green 57%,
+    blue 57%,
+    blue 71%,
+    purple 71%,
+    purple 86%,
+    magenta 86%
+    );
+  background-position: 23vw 0, -23vw 0, center center;
+  background-size: 90vw;
+  background-repeat: no-repeat;
+}
+#pyramid li {
+  margin: 0; padding: 0;
+  text-align: center;
+  flex: 0 0 11vh;
+  line-height: 11vh;
+  text-shadow: 1px 1px 1px white;
+}
+#pyramid li:nth-of-type(n+4){
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#pyramid li:nth-of-type(4) span {background-color: green;}
+#pyramid li:nth-of-type(5) span {background-color: blue;}
+#pyramid li:nth-of-type(6) span {background-color: purple;}
+#pyramid li:nth-of-type(7) span {background-color: magenta;}
+div.good,
+div.bad {
+  position: absolute;
+  top: calc(50vh + 260px);
+  left: calc(50vw + 280px);
+}
+div.bad {
+  left: calc(50vw - 320px);
+}
+.them,
+.me,
+.us {
+  position: absolute;
+  top: calc(50vh + 140px);
+  left: calc(50vw + 260px);
+  line-height: 1
+}
+.them span,
+.me span,
+.us span {
+  color: red;
+}
+.me {
+  left: calc(50vw - 340px);
+}
+.us {
+  text-align: center;
+  left: calc(50vw - 3.5em);
+  border-left: 5px dashed #666;
+  border-right: 5px dashed #666;
+}
+
+svg text { font-family: Impact;}
+
+#final, #estelle {
+  background-image: url(../img/shestelle.png);
+  background-position: bottom right;
+  background-size: auto 50vh;
+}
+#estelle {
+  background-image: url(../img/ColorEstelle.gif);
+}
