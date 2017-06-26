@@ -1,0 +1,36 @@
+<pre>&lt;link 
+<pre>manifest file</pre>
+name shows up in install notification
+load starts at start URL
+tip: append query parameter
+display=standalone - no chrome, but still have status =fullscreen - several values
+on iOS, use a backbutton in your design.
+
+Splash page
+background color = 
+icon - 
+theme color - nav bar color.
+notification now uses chrome, not app icon.
+
+SW - script that runs in the background, separate from web page.
+only called on events (not constantly running)
+<script>
+if ('serviceWorker' in Navigator) {
+
+	window.addEventListener('load', function (event){
+		event.waitUntil(caches.open(CACHEVERSION)).
+			.then(function (cache) {
+				return cache.addAll(CACHE_LIST);
+			})
+	}
+
+	window.addEventListener('activate', function(){});
+
+	window.addEventListener('fetch', function(event){
+		event.respondWith(
+			caches.match(event.request).then(function(response){
+
+			})
+			)
+	});
+}</script>

@@ -1,0 +1,154 @@
+How fast is my web app? 
+What do "performance" and "fast" mean? 
+What does fast mean in a particular context? 
+Fast means different things on navigation, or clicking, scrolling, or animations. 
+So what is performance? And what is fast in these contexts? And fast for whom, exactly? 
+
+A framework, or mental model for understanding performance measurement. 
+
+Tools to solve performance problems yourself in your own app. 
+
+Myth 1: "My site loads in x.xx seconds."
+
+App load time is not a single number as it differs by location, device and network. 
+It's the collection of all the load times from every individual user. histogram-like distribution. 
+Important to not forget about the long tail. 
+
+Measuring performance in two very different contexts: lab versus  real world. 
+
+Lab: 
+DevTools
+Lighthouse
+WebPagetest
+continuous integration environments
+
+Lab goals:
+Identify regressions pre-production.
+Lab failings: 
+Real world differences. 
+
+
+Real world measurement goals:
+Test real devices, network configurations, cache conditions,
+understand what really matters to your users
+capture actual user behavior (may differ from assumptions)
+
+When exactly is load? 
+	When onload fires? 
+No single moment or metric. It's an entire experience.
+
+
+If two sites hit full load after 2s, but one shows a blank screen for 2 sec, and the other shows progress, which feels faster?
+
+Give feedback to the user, it makes them feel something. 
+
+Go to restaurant, waited an hour, and then they brought you your drinks, appetizers, entree, dessert, check, and dinner mint all at the same time. That would feel weird. You would wonder why they waited until the very end. 
+
+But what if they gave you everything right away, except for no utensils?
+
+
+On slower devices JavaScript takes longer to execute: pages may render quickly, but aren't usable for a couple of seconds. 
+
+
+That's why you shouldn't measure load with just one single metric. 
+
+Load is an experience and you need multiple metrics to even begin to capture it. 
+
+Myth 2: "you only need to care about performance at load time." clicks, taps, swipes, scrolls are all important. 
+
+1) Real world metrics are a distribution.
+2) Load is an experience. It cannot be captured with a single moment or a single metric. 
+3) Interactivity is a crucial part of load, but it's often neglected. 
+4) Responsiveness is always important to users way beyond load time.
+
+
+Most metrics have little correlation with user experience.
+
+Traditional metrics to measure load time: 
+	DOMContentLoaded 
+	window.onLoad . 
+
+They don't  correspond to  user's experience of load. 
+little to do with when the users saw pixels on the screen. 
+content may be hidden when DOMContentLoaded fires or rendered content may have interaction blocked. Old metrics  ignore interaction
+
+What are the key experiences that matter to users and shape their perception? 
+
+first paint - anything different from what the screen looked like before the response. Answers ""is it happening?""
+
+First contentful paint - something in the DOM is painted.when any DOM content is painted
+
+First meaningful paint: when anything is painted to the screen that the user can see ""Is it useful?" user can engage with the content, when the primary content is rendered; the hero elements.
+
+Time to interactive (TTI): meaningfully rendered and usable.  "Is it usable?"
+
+
+
+FMP: when these Hero Elements have rendered, useful user moment. 
+
+
+Style, Layout, Paint, Scripts and most interactions (taps, clicks, and animations) all happen on the main thread. 
+
+long running scripts block the main thread.
+If a user tries to interact, the interaction is added to the main thread queue, which can manifest as delays in click, jank in scrolling, or jank in animation. 
+
+For this reason, scripts should be broken into 50ms or smaller chunks so if a user interacts, the browser should be able to finish what it's doing and service those inputs, that interaction within 50 milliseconds.
+
+It's 16ms for animating, but animation is only a small subset of interactions.
+
+No generic, standard metric work for every app. 
+Baseline metrics that work for the majority case are used by Lighthouse, DevTools, by WebPagetest. 
+
+
+Variants of these metrics are being worked on.
+
+Out-of-the-box, generic metrics is that don't assume that they accurately capture the use, is it useful, and is it usable moments for your apps. 
+
+web performance APIs are the browser solution to real world measurement. These are standardized APIs. use a combination of these APIs
+
+High Resolution Time - Performance.now. 
+Performance Observer replaces Performance Timeline: Create a Performance Observer and make a callback. Then observe with expressing interest in certain entry types. As entries of that type become available, the callback is invoked asynchronously. Types include LongTasks, Resource Timing or Navigation Timing or Paint Timing
+
+(see screen shot)
+
+The callback is called asynchronously when the main thread is observed to be busy for more than 50 milliseconds at a time. And Long Task is available in Chrome Stable today, 
+
+Having these tracked in apps allows measuring these metrics on your real users, not just running it in the lab. 
+
+So First Paint and First Contentful Paint can be measured with Performance Observer with the Paint entry type. 
+
+Long Task can be measured with Performance Observer 
+
+
+For Hero Elements, you have to identify what your Hero Elements are and write code to figure out when that's visible. Tell the browser what are the Hero Elements. And then the browser would tell you when they're loaded-- or when they're rendered. 
+
+
+Use Hero Element timing as a substitute for First Meaningful Paint
+
+For TTI, use github polyfill. call the Get First Consistently Interactive method (which takes an options object). It returns the promise that resolves to the TTI metric in milliseconds. And then once you have that, you can send it to analytics. 
+
+You configure it for your site. And what you can do is you can pass it a lower bound. The Polyfill will assume the lower bound. By default, it's DOMContentLoaded. But you can give it a better metric for your site. So the way this works is you have the main thread with Long Tasks and Short Tasks. And you have the Network Timeline. And then you have your lower bound, which, by default, is DOMContentLoaded. What the Polyfill does is it uses these Resource Timing and Long Task entries to search forward in time for a quiet window of 5 seconds-- at least 5 seconds-- where there are no Long Tasks and no more than two network requests. Basically it's saying, once we get to that quiet window, we think that the app is most likely interactive now. And then it considers the moment of interactivity to be where the last Long Task was. So that's a bit of how this Polyfill works. Again, you can pass it a custom lower bound for your site. And one example of what you might want to use is the Hero Element timing. That would be a great example. You also might want to pass, basically, the moment all of your event handlers are added. Because if your event handlers have not been added yet, the site is probably not interactive yet. SHUBHIE PANICKER: So Phil showed you how Long Task can push out your Time to Interactive. But there's lots of other interactions that we're asking you to care about, way beyond learning, like clicks and taps. And delays in these can basically cause pretty bad user experiences. So you've probably wanted to know when these important events are delayed. And ideally, there would be a first class platform API that would answer this question. And we actually are working on such an API. But today you can actually use this code sample to understand the gap. You can basically use the difference of event.Timestamp and the current time in your event handler. Now event.Timestamp is our best guess of when the event was created. And so this can be the hardware timestamp, or when our best guess is when you tapped the screen. And this difference will tell you how long the event was spending waiting around on the queue for the main thread. Now here, if that difference is more than 100 milliseconds, we send it to Analytics. Now, we haven't shown this here, but you can also correlate this back to your Long Task Observer. You can actually look at what Long Task happened in this time when my event was blocked, waiting. And those are likely the culprits. PHILIP WALTON: So once you've measured these key metrics and sent them to some analytic service, you want a report on them to see how you're doing that will allow you to better answer the question, is your app fast? So this is just one example of a histogram that I threw together from TTI data for an app that I maintain using the Polyfill that we just showed you. And the point is not to look at these numbers or compare them, but the main point that I want to make is when you're tracking your performance metrics in your analytics tool, then you can drill down by any dimension that your analytics tool provides. So in this case, we can see the difference between Performance on Desktop versus Mobile. You might also want to consider the difference between one country from another country, or geographic locations where maybe network availability is not as great, or network speeds are not as high. It's important to know how those differences manifest in the real world on real users. In cases where you can't show a whole histogram, I recommend using percentile data. So you could show the 50%, the median number. You can also show things like the 75th percentile, the 90th percentile. These numbers give a much better indication of what the distribution was, and they're much better than just averages or just one single value. So a really important question is, do performance metrics correlate with business metrics? And again, if you're tracking your business metrics in an analytics tool and your performance metrics in an analytics tool-- and this shows the value of tracking the stuff on real users-- then you can see and you can answer this question. All the research that we've done at Google suggests that good performance is good for business. But the really important thing is, is this true for your users for your application? So some example questions you might want to know, do users who have faster interactivity times buy more stuff? Do users who experience more Long Tasks during the check out flow drop off at higher rates? These are important questions. And once you know the answers to these questions, you can then make the business case for investing in performance. I hear a lot of developers saying they want to invest in performance, but somebody at the company won't let them or won't prioritize it. This is how you can make that a priority. And finally, we haven't talked about this yet, but you may have been wondering. All of the data we've been showing is for real users who made it to interactivity. And you probably know some users don't make it there. Some users get frustrated with the slow-loading experience and they leave. And so it's important to also know when that happens. Because if it happens 90% of the time, the data that you have will not be very accurate. And so you can't know where the TTI value would have been for one of those users, but you can measure how often this happens. And perhaps more importantly, you can measure how long they stayed before they left. 
+
+
+usercentric metrics and APIs
+Drive down First Paint and First Contentful Paint. 
+Remove those render-blocking scripts from Head. 
+Identify the minimum set of styles you need and inline them in Head. 
+App shell pattern helps improve user perception: quickly render the header and sidebars. 
+
+Improve your overall load time. 
+Start the race soon, and get past the finish line. 
+
+Minimize the time between First Meaningful Paint and Time to Interactive. 
+
+shorten your Time to Interactive
+identify what is the primary interaction for your users. Don't make assumptions here. 
+what is the critical JavaScript that's needed to power that interaction and make the JavaScript available right away. 
+
+large, monolithic JavaScript bundles are an issue. 
+Splitting up JS 
+
+PRPL pattern 
+Ship less JavaScript. Or, at least defer the JavaScript. 
+Reduce Long Tasks. 
+On load, Long Tasks push out Time to Interactive or Long Tasks that are in the way of the checkout flow and other important interactions for your app. Scripts are, by far, the biggest culprits here. So breaking up scripts will certainly help. And it's not just about breaking up scripts on initial load. Scripts that load on single page app navigations-- like going from the Facebook Home page to the Profile page, or clicking around like on the Checkout for Amazon, or the Compose button in Gmail-- all of this JavaScript needs to be broken up so it doesn't cause responsiveness issues. And the final thing we have for you today is holding third parties accountable. Ads and social widgets are known to cause the majority of Long Tasks. And they can undermine all of your hard work on performance. You might have done a ton of work to split out all your code carefully, but then you embed a social plug-in or an ad, and they undo all of that work. That get in the way of critical interactions. So to get an idea of this, we're actually doing a partnership with SOASTA, a major analytics company. And so they're doing a bunch of case studies. And there's some preliminary data that came in. They picked a couple of their sites, their customers who had third-party content. And on the first site, they found that 93% of Long Tasks were because of ads. On the second site, they found 62% of Long Tasks were about evenly split between ads and social widgets. Now, Long Tasks API actually gives you enough attribution to implicate these third party I-frames. So we encourage you to use the Long Tasks API. Find out what damage these third parties are doing on your apps. PHILIP WALTON: And once you've optimized your app, you obviously want to make sure that you don't regress and go back to being slow. You don't want to put a bunch of work into this and then have it all be for nothing if one new release turns everything bad. So it's critical that you have a plan for preventing regression. So this is a workflow that I promote. You start off with writing code. You implement a feature, fix a bug, improve the user experience in some way. And then before you release it, you test it in the lab. I assume a lot of people do this. You run it through Lighthouse. You run it through DevTools. Make sure that it's not slower than your previous release. And then once you release it to your users, you also are going to want to validate that it is fast for those users that you released it to. You can't just test in one. You should-- these things complement each other. You should be testing both in the lab and in the real world. And so for some automation ideas, the best way to prevent regression is to automate this process. You're probably going to slack on a little bit if you don't have it built into the release and automated. So Lighthouse runs on CI. And there's actually a talk tomorrow afternoon by Eric Bidelman and Brendan Kinney that goes into how to do this. And I recommend checking that out if you want to learn how to run Lighthouse on CI. If you're using Google Analytics, you can set up custom alerts that trigger when some condition is met. So for example, you could get an alert if suddenly the number of Long Tasks per user spikes. Maybe a third party you were using changed their JavaScript file, and things got worse, and didn't know. And so this is a good way of finding out that stuff. So getting back to the original question, how fast is your web app?, in this talk, I hope we've given you enough of a framework to think about performance in the big picture in a usercentric way. I also hope we've given you enough specific tools, metrics, and APIs that you need to answer this question for yourself. We know the situation isn't perfect. We know we have more work to do. And Shubhie is working on this, leading our efforts here at Google on the standards side. And so she can talk about some of the things that are coming down the road. SHUBHIE PANICKER: And so this is our final and last slide. And I just want to say that, yes, we know there are gaps. And there's a number of APIs that we are working on. We'd love to have a first class API for Hero Element timing. The idea there is that you guys can annotate the elements that matter most for your sites and then the browser can put those times on the Performance Timeline. Secondly, we are working on improving Long Tasks, mostly by improving Attribution. We really want to tell you which scripts are causing problems and more detail breakdown so you can actually take action right away and fix those issues. Secondly, we want to really have an API for Input Latency. So you don't have to go through all those work arounds that we showed you for Event Timestamp. Ideally, for your important interactions for your app, you should be able to how delayed they were, which Long Tasks were in the way, and when the next render happens. And then there's other inputs that we haven't even touched on that are in our backlog, things like scrolling, and composited animations. And finally, I just want to leave this with saying, we want this-- we said a lot today-- but we really want this to be a two-way dialogue. We want to hear from you. We want to hear about your frustrations. Don't be quiet about those gaps in measurement and your frustrations with performance. Try out these APIs and polyfills. And please, file bugs on the Spec Repos on GitHub. This is actually the best way to report issues and make feature requests. And if you're working with Analytics, whether it's a different team or a third party, push on your Analytics to adopt these new metrics. Ask them for these histograms like Phil showed you. And we are pushing on Analytics too on our end. Star the Chromium bugs on Performance. This is actually a signal we use for prioritization internally. And we need these signals to make a case for working on measurement.

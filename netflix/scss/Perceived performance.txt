@@ -1,0 +1,41 @@
+Perceived performance
+
+human perception of performance
+
+we optimize for objective time becuase it's easy to measure
+
+just noticeable difference: something needs to be significantly different enough to be noticeable
+
+time differences of 20% or less are imperceptable
+-steve seow, Microsoft
+
+Active phase v. passes phase
+a watched pot never boils
+
+
+humans tend to overestimate passive time by 36%
+
+takes 1 sec to transform from active to passive state
+make illusions to make that time go more quickly
+
+1) don't tell users they are waiting (you're putting them into passive state)
+2) respond to interaction immediately
+3) 
+
+
+implement active states
+
+example: create active state for a button, while prefetching the site that will be gotten when the button has the click.
+
+
+slack takes you from active state to active state to active state
+
+weird effects can give you an extra 600ms ("fancy" button)
+
+predictive preloading based on mouse slowing down as it gets close to the link/button
+
+address subjective perceptions
+
+objecctive time really doesn't matter. subjective time, how it feels, is what matters.
+
+assets.eli.wtf

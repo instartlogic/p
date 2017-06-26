@@ -1,0 +1,105 @@
+website, service worker, manifest, https
+
+service worker routes requests
+make request to server normally
+SW can intercept the request
+cache, server, combo
+progressive enhancement
+https only - needed because they can see all the requests.
+
+Free SSL - let's encrypt. CLoudflare yuck
+Edge in development
+Safari - long term road map
+
+
+
+
+To make it fast
+caching, http/2
+service worker process
+register, install, activate
+
+
+caching
+var cacheName = "pageCache"
+
+this. addEventlisternier('install', event =>{
+	event.waitUntil(caches.open(cacheNme))
+		.then(function(cache){
+
+		})
+})
+
+service worker toolbox
+bit.ly/sw-toolbox
+
+
+
+HTTP/2
+multiplexing
+only https
+
+
+npm install spdy
+const spdy = require('spdy');
+express
+app = express();
+
+readfulysync 
+
+lighthouse
+audit the PWA
+google page insights on steroids
+bit.ly/pwa-lighthouse
+
+
+
+
+
+
+
+
+offline
+with service workers, you can get it directly from cache
+
+this.addEL('fetch', event => {
+	if(event.request.method == 'GET' && event.request.headers.get('accept').includes (text/html)
+	if x => get url
+	else => get from cache
+
+})
+
+
+
+do network first
+cache first
+network then cache
+cache then network
+no sw - network only
+
+bit.ly/offline-pages
+
+Manifest File
+Simple json file telling how app should appear to user
+
+
+<link rel="manifest" ...
+
+bit.ly/manifest-json
+Add to home screen
+1) manifest
+start icon
+need service worker over http2
+visit at least twice with at least 5 mintues between visits
+
+start_url: "/?From=addToHomeScreen",
+orientation: "portrait"
+
+helps with perceived performance
+
+
+Fast
+Reliable
+improved Look and Feel
+
+

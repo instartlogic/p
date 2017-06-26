@@ -1,0 +1,375 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<meta charset="utf-8" />
+<title>Speed Perception</title>
+<!--
+Made by: Estelle Weyl
+Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
+Based on: http://estelle.github.com/slides 
+-->    
+<link class="removeForAT" rel="stylesheet" href="css/index.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<base target="play"/>
+
+<style>.icon {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  word-wrap: normal;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}</style>
+<script>
+	function playVideos() {
+		for(var count = 0; count < arguments.length; count++) {
+			document.getElementById(arguments[count]).play()
+		}
+	}
+	function explainSP(){
+		playVideos('test1', 'test2');
+		setTimeout(function() {
+			stopVideos('test1', 'test2');
+		  }, 7800);
+	}
+	function stopVideos() {
+		for(var count = 0; count < arguments.length; count++) {
+			document.getElementById(arguments[count]).pause();
+		}
+	}
+</script>
+</head>
+
+<body> 
+
+<div id="presentation">
+   <div id="slides">
+   
+
+<!-- TITLE SLIDE --> 
+  <div class="slide intro">
+    <section class="content">
+    <h1 style="font-size: 3rem; margin-top: 10%;">Web Performance: <br/>Perception &amp; Metrics</h2>
+      <p><a href="http://instartlogic.github.io/p/SFHTML5">http://instartlogic.github.io/p/SFHTML5</a></p>
+      <button id="killCSS" class="skiplink">Enable Screen Reader Access</button>
+    </section>
+</div>
+
+ 
+
+
+
+<!-- TITLE SLIDE --> 
+  <div class="slide ">
+  <header><h1>Table of Contents</h1></header>
+    <section class="content">
+    <ol>
+    <li><a href="webperf.html">Performance Overview</a></li>
+    <li><a href="pwalh.html">Progressive WebApps &amp; Lighthouse</a></li>
+    <li><a href="psi.html">Visual Metrics: SI &amp; PSI</a></li>
+    <li class="active">SpeedPerception Study</li>
+    </ol>
+
+    </section>
+</div>
+
+<!-- Talk Table of Contents-->
+<div class="slide divider">
+	<header>
+		<h1>This section:
+	</h1>
+	</header>
+	<section>
+	<ol>
+	<li>SpeedPerception Study Overview</li>
+	<li>Hypothesis</li>
+	<li>Results</li>
+	<li>Learnings</li>
+	<li>Phase 2</li>
+	</ol>
+	</section>
+</div>
+
+<div class="slide divider">
+	<header>
+		<h1>SpeedPerception</h1>
+	</header>
+	<section>
+	<blockquote>“SpeedPerception is a large-scale web performance crowdsourcing study focused on the perceived loading performance of above-the-fold content.”</blockquote>
+	<p>Premise: Perception of perceived performance is relative.
+	</section>
+</div>
+
+
+
+
+<!-- Credit for SpeedPerception -->
+<div class="slide">
+	<header>
+		<h1>Credits &amp; Links: SpeedPerception</h1>
+	</header>
+	<section>
+	<ul>
+		<li>Challenge: <a href="http://speedperception.com/">speedperception.meteorapp.com/ </a></li>
+		<li>Findings &amp; Repo: <a href="https://github.com/pahammad/SpeedPerception">github.com/pahammad/SpeedPerception</a></li>
+		<li>Team:
+
+<ul><li><strong>Qingzhu (Clark) Gao</strong>: Data Scientist @ Instart Logic</li>
+<li><strong>Parvez Ahammad</strong>: Head of Data Science &amp; Machine Learning @ Instart Logic</li>
+<li><strong>Prasenjit Dey</strong>: Software Engineer @ Instart Logic</li></ul></li></ul>
+
+<p>Phase-1 crowd sourced 07/28/2016 - 09/30/2016.</p> 
+	</section>
+</div>
+
+
+
+
+<div class="slide object">
+	<object data="http://speedperception.com/challenge"></object>
+</div>
+
+
+<div class="slide">
+	<header>
+		<h1>Study Hypotheses</h1>
+	</header>
+	<section>
+<p><strong>Hypothesis 1:</strong> Visual metrics will perform better than non-visual/network metrics<br/> </p>
+
+	<p><br/> <strong>Hypothesis 2:</strong> No single metric can explain human choices with 90%+ accuracy</p>
+
+
+<p><br/> <strong>Hypothesis 3:</strong> User will not wait until “Visual Complete” to make their choice (despite the explicit instruction to wait until video turns grey)<br/> </p>
+	</section>
+</div>
+
+
+
+<div class="slide">
+	<header>
+		<h1>Study Metrics</h1>
+	</header>
+	<section>
+	<ul><li>5,444 sessions, of which 51% were complete and valid</li>
+	<li>77,482 votes, of which 75% were valid</li>
+	<p class="center"><img src="images/sp_paircount.png" alt="graph demonstrating each of the 160 pairs webkit-font-feature-settings tested between 230 and 330 times"></p>
+	</section>
+</div>
+
+<div class="slide">
+	<header>
+		<h1>Feedback</h1>
+	</header>
+	<section>
+	<p>Perception of speed and UX strongly impacted by popups / overlays</p>
+	<p class="center"><img src="images/sp_words.png" alt="histogram of comments made, highlighting that pop ups was commonly mentioned">
+	</section>
+</div>
+
+
+
+
+<div class="slide divider">
+	<header>
+		<h1>Hypothesis 1</h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<div class="slide">
+	<section>
+	<p><strong>Hypothesis 1:</strong> Visual metrics will perform better than non-visual/network metrics</p>
+<img src="images/h2_original.svg" style="height: 85vh; margin-top: -80px">
+<div class="true temphidden">Not True</div>
+	</section>
+</div>
+
+
+
+<div class="slide">
+	<header>
+		<h1>Questions to Consider</h1>
+	</header>
+	<section>
+	<ul>
+	<li>Does presence of visual jitter / interstitials interfere with metric performance? <ul><li>Can metrics be improved?</li></ul></li>
+
+<li>Will there be different trends for sites that are free of visual jitter like modals and overlays?</li>
+
+<li>Is it possible to automatically predict the presence of jitter to help choose a better set of metrics?</li></ul>
+
+	</section>
+</div>
+
+
+<div class="slide" style="background: url(images/equation.png); background-size: contain; background-position: center; background-repeat: no-repeat">
+	<header>
+		
+	</header>
+	<section>
+	</section>
+</div>
+
+<div class="slide">
+	<section>
+	<p><strong>Hypothesis 1:</strong> Visual metrics will perform better than non-visual/network metrics</p>
+<img src="images/h2_revised.svg" style="height: 85vh; margin-top: -80px">
+<div class="true temphidden">True</div>
+	</section>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="slide divider">
+	<header>
+		<h1>Hypothesis 2</h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+
+
+<div class="slide">
+<section>
+		<p><strong>Hypothesis 2:</strong> No single metric can explain human choices with 90%+ accuracy</p>
+
+	<img src="images/h1_original.svg" style="height: 85vh; margin-top: -80px">
+
+	<div class="true temphidden">True</div>
+	</section>
+</div>
+
+
+<div class="slide">
+<section>
+		<p><strong>Hypothesis 2:</strong> No single metric can explain human choices with 90%+ accuracy</p>
+
+	<img src="images/h2_revised.svg" style="height: 85vh; margin-top: -80px">
+
+	<div class="true temphidden">Still True</div>
+	</section>
+</div>
+
+
+
+<div class="slide">
+	<header>
+		<h1>Conclusions &amp; Thoughts</h1>
+	</header>
+	<section>
+	
+
+<ul>
+<li>There appears to be no one unicorn metric but, is there a combination synthetic metric (joint ML model) that will do a better job?</li>
+
+
+<li class="temphidden">People only looked two videos and made the call. Is there some additional information that we can extract from videos that will improve our models?</li>
+</section>
+</div>
+
+
+<div class="slide divider">
+	<header>
+		<h1>Hypothesis 3</h1>
+	</header>
+	<section>
+	</section>
+</div>
+
+
+<div class="slide">
+	<section>
+		<p><strong>Hypothesis 3:</strong> User will not wait until “Visual Complete” to make their choice (despite the explicit instruction to wait until video turns grey)</p>
+		<img class="temphidden" src="images/hyp3.png" style="max-height: 60vh">
+	</section>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- WPT of Staples and Wolferman's #2-->
+<div class="slide object">
+<object data="https://www.webpagetest.org/video/compare.php?tests=170228_WQ_2NZ%2C170228_RN_2P0&thumbSize=200&ival=1000&end=visual"></object>
+</div>
+
+
+
+<div class="slide">
+	<header>
+		<h1>Speed Perception Phase 2</h1>
+	</header>
+	<section>
+		<ul>
+			<li>How do visual jitter &amp; interstitials impact perceived performance?
+				<ul>
+					<li>Do they interfere with metric performance? </li>
+					<li>Can metrics be improved?</li>
+				
+					<li>Are sites free of visual jitter like modals and overlays viewed as more performant? </li>
+					<li>Is it possible to automatically predict the presence of jitter to help choose a better set of metrics?</li>
+				</ul>
+			<li>Does a long 	DOM Content Loaded impact perceived performance?
+			</li>
+		</ul>
+	</section>
+</div>
+
+
+
+<div class="slide">
+	<section>
+		<h1>User Experience > Developer Experience</h1>
+		<img src="images/wpt_cpu.svg">
+	</section>
+</div>
+
+
+<!-- TITLE SLIDE --> 
+  <div class="slide intro">
+    <section class="content">
+    <h1 style="font-size: 3rem; margin-top: 10%;">Thank you</h1>
+      <h2>Speed Perception: Understanding and Measuring Perceived Performance</h2>
+      <p><a href="http://instartlogic.github.io/p/SFHTML5">http://instartlogic.github.io/p/SFHTML5</a></p>
+      <ul class="flex" style=" max-width: 30rem; justify-content: space-between; margin: auto; padding-top: 1rem">
+      <li>Estelle Weyl <br/><a href="https://twitter.com/estellevw">@estellevw</a></li><li> Parvez Ahammad <br/><a href="https://twitter.com/perceptPA">@perceptPA</a></li></ul>
+    </section>
+</div>
+
+
+   </div>
+</div>
+<script src="js/slides.js" class="removeForAT"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30010510-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
