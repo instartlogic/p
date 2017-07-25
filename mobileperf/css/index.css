@@ -681,8 +681,8 @@ table.data td {
     background-size: 44vh auto;
     background-image: url(http://chart.googleapis.com/chart?chs=400x225&amp;cht=p&amp;chco=333333&amp;chd=t:416,34,25,113,2,22&amp;chbg=transparent&amp;chds=0,416&amp;chdlp=b&amp;chma=|5); }
   .big_piechart:hover div {
-    height: 44vmin;
-    width: 44vmin;
+    height: 33vmin;
+    width: 33vmin;
     background-size: 80vh auto;
     background-image: url(http://chart.googleapis.com/chart?chs=400x225&amp;cht=p&amp;chco=333333&amp;chd=t:416,34,25,113,2,22&amp;chbg=transparent&amp;chds=0,416&amp;chdlp=b&amp;chma=|5&amp;chp=-.55); }
 
