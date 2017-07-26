@@ -1252,13 +1252,93 @@ Sprites</li>
 </div>
 
 
+<!-- -->
+<div class="slide">
+	<header>
+		<h1>#3: Optimize Video</h1>
+	</header>
+	<section>
+		
+		<div style="display:flex">
+		<ol>
+			<li>Omit videos</li>
+			<li>Compression</li>
+			<li>Optimize source order</li>
+			<li>Remove muted audio</li>
+		</ol>
+			<div>
+		<h3>July 1, 2017</h3>
+	<img style="height: 40vmin; max-width: none; display: inline-block; margin: auto;" id="bytesperpage" class="chart" src="http://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=226daa&amp;is3D=true&amp;chd=t:1714,26,60,347,97,729,14&amp;chds=0,1683&amp;chdlp=b&amp;chdl=total 3034 kB&amp;chl=Images+-+1714+kB%7CHTML+-+25+kB%7CStylesheets+-+60+kB%7CScripts+-+347+kB%7CFonts+-+97+kB%7CVideo+-+729+kB%7COther+-+14+kB&amp;chma=|5&amp;chtt=Average+Bytes+per+Page+by+Content+Type+July+1,+2017"
+	alt='In July 2017, content is Images=1714kb, HTML=25kb, Stylesheets=60kb, Scripts=347kb, Fonts=97kb, Video=329 and Other=14kb for a total of 3034 kb'></div>
+			<div>
+				<h3>July 1, 2015</h3>
+	<img style="height: 40vmin; max-width: none; display: inline-block; margin: auto;" id="bytesperpage" class="chart" src="http://chart.googleapis.com/chart?chs=700x394&amp;cht=p&amp;chco=22aa6d&amp;is3D=true&amp;chd=t:1348,55,68,344,102,204,4&amp;chds=0,1348&amp;chdlp=b&amp;chdl=total 2135 kB&amp;chl=Images+-+1348+kB%7CHTML+-+55+kB%7CStylesheets+-+68+kB%7CScripts+-+344+kB%7CFonts+-+102+kB%7CVideo+-+204+kB%7COther+-+4+kB&amp;chma=|5&amp;chtt=Average+Bytes+per+Page+by+Content+Type+July+1,+2015"
+	alt='In July 2015, content is Images=1348kb, HTML=55kb, Stylesheets=68kb, Scripts=344kb, Fonts=102kb, Video=204 and Other=4kb for a total of 2135 kb'>
 
+			</div>
+		</div>
+	</section>
+</div>
+
+
+
+<div class="slide">
+	<header>
+		<h1>#3.1 Omit the video</h1>
+	</header>
+	<section>
+	<pre>&lt;video .... id="hero-video"></pre>
+<p>Do you really need a hero image? On a mobile device?</p>
+<pre>@media screen and (max-width: 650px) {
+  #hero-video {
+    display: none;
+  }
+}</pre>
+</section>
+</div>
 
 
 <!-- -->
 <div class="slide">
 	<header>
-		<h1>#3: Everything Else</h1>
+		<h1>#3.3: Optimize Source order</h1>
+	</header>
+	<section>
+	<p>Order from smallest to largest*</p>
+<pre>&lt;video width="400" height="300" controls="controls">
+  <span style="opacity: 0.5">&lt;!-- WebM: 10 MB --></span>
+  &lt;source src="video.webm" type="video/webm" />
+  <span style="opacity: 0.5">&lt;!-- MPEG-4/H.264: 12 MB --></span>
+  &lt;source src="video.mp4" type="video/mp4" />
+  <span style="opacity: 0.5">&lt;!-- Ogg/Theora: 13 MB --></span>
+  &lt;source src="video.ogv" type="video/ogv" />
+&lt;/video></pre>
+<small>* check for quality consistency</small>
+	</section>
+</div>
+
+
+<div class="slide">
+	<header>
+		<h1>#3.4 Remove audio that is muted</h1>
+	</header>
+	<section>
+	<pre>&lt;video autoplay="" loop="" muted="true" id="hero-video">
+  &lt;source src="web_banner.webm" 
+          type='video/webm; codecs="vp8, vorbis"'>
+  &lt;source src="web_banner.mp4" type="video/mp4">
+&lt;/video></pre>
+<pre><a href="https://www.ffmpeg.org/" target="play">ffmpeg</a> -i original.mp4 -an -c:v copy audiofree.mp4</pre>
+<ul>
+<li><code>-an</code>: Disable audio recording in output.</li></ul>
+</section>
+</div>
+        
+
+<!-- -->
+<div class="slide">
+	<header>
+		<h1>#4: Everything Else</h1>
 	</header>
 	<section>
 	</section>
