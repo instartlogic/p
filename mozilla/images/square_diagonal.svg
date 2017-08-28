@@ -1,0 +1,22 @@
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="200"
+   height="200"
+   viewBox="0 0 200 200"
+   version="1.1">
+  <title>Square Diagonal</title>
+  <defs>
+  <pattern id="stripe" width="400" height="400" patternUnits="userSpaceOnUse" patternTransform="rotate(45) ">
+    <rect width="400" height="150" transform="translate(0,0)" fill="black"></rect>
+  </pattern>     
+</defs>
+
+    <rect
+       style="stroke:#ccc; 
+       stroke-width:3px; fill: url(#stripe);"
+       width="200"
+       height="200"
+       x="0"
+       y="0" />
+</svg>

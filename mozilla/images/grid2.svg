@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1600"
+   height="1200"
+   viewBox="0 0 1600 1200"
+   version="1.1"
+   id="svg3742"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="grid2.svg">
+  <metadata
+     id="metadata3770">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3768" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1429"
+     inkscape:window-height="819"
+     id="namedview3766"
+     showgrid="false"
+     inkscape:zoom="0.25"
+     inkscape:cx="840"
+     inkscape:cy="520"
+     inkscape:window-x="20"
+     inkscape:window-y="43"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3742" />
+  <style
+     id="style3744">
+    .findings rect {
+       fill: #f00;
+    }
+
+    </style>
+  <g
+     class="findings"
+     id="g3746">
+    <rect
+       style="fill: hsl(120, 100%, 10%)"
+       width="100"
+       height="160"
+       y="1040"
+       x="100"
+       id="rect3748" />
+    <rect
+       style="fill: hsl(120, 95%, 15%)"
+       width="100"
+       height="380"
+       y="820"
+       x="220"
+       id="rect3750" />
+    <rect
+       style="fill: hsl(120, 90%, 20%)"
+       width="100"
+       height="440"
+       y="760"
+       x="340"
+       id="rect3752" />
+    <rect
+       style="fill: hsl(120, 85%, 25%)"
+       width="100"
+       height="520"
+       y="680"
+       x="460"
+       id="rect3754" />
+    <rect
+       style="fill: hsl(120, 80%, 30%)"
+       width="100"
+       height="530"
+       y="670"
+       x="580"
+       id="rect3756" />
+    <rect
+       style="fill: hsl(120, 75%, 35%)"
+       width="100"
+       height="590"
+       y="610"
+       x="700"
+       id="rect3758" />
+    <rect
+       style="fill: hsl(120, 70%, 40%)"
+       width="100"
+       height="650"
+       y="550"
+       x="820"
+       id="rect3760" />
+    <rect
+       style="fill: hsl(120, 65%, 45%)"
+       width="100"
+       height="650"
+       y="550"
+       x="940"
+       id="rect3762" />
+    <rect
+       style="fill: hsl(120, 60%, 50%)"
+       width="100"
+       height="660"
+       y="540"
+       x="1060"
+       id="rect3764" />
+  </g>
+  <rect
+     style="fill:#0000ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="rect3772"
+     width="1100"
+     height="788"
+     x="76"
+     y="416" />
+</svg>

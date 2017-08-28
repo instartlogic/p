@@ -1,0 +1,480 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<meta charset="utf-8" />
+<title>Speed Perception</title>
+<!--
+Made by: Estelle Weyl
+Copyright:  CC-SA-NC-BY - Creative Commons Attribution-NonCommercial-ShareAlike
+Based on: http://estelle.github.com/slides 
+-->    
+<link class="removeForAT" rel="stylesheet" href="css/index.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<base target="play"/>
+
+<style>.icon {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  word-wrap: normal;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}</style>
+<script>
+	function playVideos() {
+		for(var count = 0; count < arguments.length; count++) {
+			document.getElementById(arguments[count]).play()
+		}
+	}
+	function explainSP(){
+		playVideos('test1', 'test2');
+		setTimeout(function() {
+			stopVideos('test1', 'test2');
+		  }, 7800);
+	}
+	function stopVideos() {
+		for(var count = 0; count < arguments.length; count++) {
+			document.getElementById(arguments[count]).pause();
+		}
+	}
+</script>
+</head>
+
+<body> 
+
+<div id="presentation">
+   <div id="slides">
+   
+
+<!-- TITLE SLIDE --> 
+  <div class="slide intro">
+    <section class="content">
+    <h1 style="font-size: 3rem; margin-top: 10%;">Measuring the Subjective: <br/>The Performance Dashboard </h2>
+      <p><a href="http://instartlogic.github.io/p/mozilla/webperf.html">http://instartlogic.github.io/p/mozilla/webperf.html</a></p>
+      <button id="killCSS" class="skiplink">Enable Screen Reader Access</button>
+    </section>
+</div>
+
+ 
+<!-- TITLE SLIDE --> 
+  <div class="slide ">
+  <header><h1>Table of Contents</h1></header>
+    <section class="content">
+    <ol class="toc">
+    <li class="lookatme">Performance Overview</li>
+    <li><a href="psi.html" target="_self">Visual Metrics: SI &amp; PSI</a></li>
+    <li><a href="sp.html" target="_self">SpeedPerception Study</a></li>
+    </ol>
+
+    </section>
+</div>
+
+
+<!-- Talk Table of Contents-->
+<div class="slide divider">
+	<header>
+		<h1>Performance Overview</h1>
+	</header>
+	<section>
+	<ol>
+	<li>What is Web Performance</li>
+	<li>Objective Metrics</li>
+	<li>Perceived Performance</li>
+	</ol>
+	</section>
+</div>
+
+
+<!-- What is FAST -->
+<div class="slide">
+	<header>
+		<h1>What is Fast?</h1>
+	</header>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 2300 1200" version="1.1" style="margin-top: -300px; width: 80%"> <title>What is fast?</title> <style> .findings rect { stroke: #333; stroke-width: 1px; width: 15px; fill: #226DAA; } .findings text { } .grid rect{ stroke: #ccc; stroke-width:2px; stroke-linecap:butt; stroke-linejoin:miter; stroke-opacity:1; fill: #fff; } text { font-size: 40px; font-family:sans-serif; } .values text { font-size: 20px; } .rotate { transform: rotate(-90deg); } </style> <g class="grid" transform="translate(62,-185)"> <rect width="2100" height="900" y="300" x="50" /> <rect width="2100" height="700" y="400" x="50" /> <rect width="2100" height="500" y="500" x="50" /> <rect width="2100" height="300" y="600" x="50" /> <rect width="2100" height="100" y="700" x="50" /> </g> <g class="findings" transform="translate(80,-185)">  <rect height="15" y="490" x="240" /> <text x="180" y="440" class="temphidden">Hello World</text> <rect height="15" y="490" x="1820" class="temphidden" /> <text x="1700" y="440" class="temphidden">Lord of the Rings</text> </g> <g class="values"> <text x="100" y="1060">0 s</text> <text x="200" y="1060">1 s</text> <text x="300" y="1060">2 s</text> <text x="400" y="1060">3 s</text> <text x="500" y="1060">4 s</text> <text x="600" y="1060">5 s</text> <text x="700" y="1060">6 s</text> <text x="800" y="1060">7 s</text> <text x="900" y="1060">8 s</text> <text x="1000" y="1060">9 s</text> <text x="1100" y="1060">10 s</text> <text x="1200" y="1060">11 s</text> <text x="1300" y="1060">12 s</text> <text x="1400" y="1060">13 s</text> <text x="1500" y="1060">14 s</text> <text x="1600" y="1060">15 s</text> <text x="1700" y="1060">16 s</text> <text x="1800" y="1060">17 s</text> <text x="1900" y="1060">18 s</text> <text x="2000" y="1060">19 s</text> <text x="2100" y="1060">20 s</text> </g> <g class="axes"> <text x="600" y="1100">Time to Load</text> <text x="-700" y="60" class="rotate">Number of Visitors</text> </g> </svg> 
+	
+</section>
+</div>
+<!-- What is FAST -->
+<div class="slide">
+	<header>
+		<h1>What is Load Time?</h1>
+	</header>
+	
+<img src="images/what_is_fast.svg" alt="a made up histogram in a bell curve shape with a long tail" style="margin-top: -200px;">
+	
+	</div>
+</section>
+</div>
+
+<!-- DO THIS -->
+<div class="slide">
+	<header>
+		<h1>Which feels faster?</h1>
+	</header>
+	<section>
+
+	<p class="center"><button onclick="explainSP();">Play</button>
+	<div class="testvids flex">
+		<section>
+			<video src="videos/orient.m4v" id="test1"></video>
+			
+		</section>
+		<section>
+			<video src="videos/auto.m4v" id="test2"></video>
+		</section>
+	</div>
+</section>
+</div>
+
+<!-- Overview of Performance -->
+<div class="slide">
+	<header>
+		<h1>Performance</h1>
+	</header>
+	<section>
+	<ul>
+		<li>Time to Load</li>
+		<li>Time until usable</li>
+		<li>Jitter</li>
+		<li>Responsiveness</li>
+		<li>Smoothness</li> 
+	</section>
+</div>
+
+
+<!-- Intro to RAIL -->
+<div class="slide">
+	<header>
+		<h1>RAIL</h1>
+	</header>
+	<section class="center">
+	<p>Four phases of interaction: end-user’s perception</p>
+	<article class="rail">
+	<ul>
+		<li class="l" style="width: 12vw"></li>
+		<li class="i" style="width: 6vw"></li>
+		<li class="a" style="width: 4vw"></li>
+		<li class="r" style="width: 10vw"></li>
+		<li class="l" style="width: 10vw"></li>
+		<li class="a" style="width: 4vw"></li>
+		<li class="r" style="width: 6vw"></li>
+		<li class="r" style="width: 6vw"></li>
+		<li class="a" style="width: 4vw"></li>
+	</ul>
+	<ol>
+		<li class="r">Response to Input <span class="icon">touch_app</span></li>
+		<li class="a">Animation &amp; Scrolling
+		<span class="icon">directions_run</span>
+		</li>
+		<li class="i">Idle <span class="icon">alarm</span></li>
+		<li class="l">Page Load <span class="icon">cached</span></li>
+	</ol>
+	</article>
+
+	<p class="right"><small>Video: <a href="https://www.youtube.com/watch?v=2ksXo2_Lfl0">How Users Perceive the Speed of The Web (2015): Paul Irish / Google</a></small></p>
+	</section>
+</div>
+
+
+
+<!-- what really makes up performance -->
+<div class="slide">
+	<header>
+		<h1>Web Performance</h1>
+	</header>
+	<section>
+	<dl>
+	<dt>Download</dt>
+	<dd class="temphidden"># of resources: images, fonts, HTML, scripts, and CSS loaded</dd>
+	<dt class="temphidden">Parse</dt>
+	<dd class="temphidden">File size of above resources</dd>
+	<dt class="temphidden">Execute</dt>
+	<dd class="temphidden">Parsing &amp; Painting</dd>
+	<dt class="temphidden">Perceived Performance</dt>
+	<dd class="temphidden">Users perception of the speed of the load and reaction time.</dd> 
+	</dl>
+	<div>
+</div>
+	</section>
+</div>
+
+
+
+<!-- Steps of page Load include 
+<div class="slide">
+	<header>
+		<h1>What's involved in a page load?</h1>
+	</header>
+	<section>
+	<p class="center"><img src="images/latency.gif" alt="latency"></p>
+	<ol style="height: 40vh; overflow: scroll; padding-left: 3rem; font-size: small">
+	<li>HTTP request with protocol, host, port, and path.</li>
+<li>DNS lookup (find host IP)</li>
+<li>Socket opened between browser and server hosting the initial request content</li>
+<li>HTTP request sent</li>
+<li>Server handles request</li>
+<li>Server sends HTTP response</li>
+<li>The browser receives and parses response</li>
+<li>Initial DOM tree is built</li>
+<li>Additional requests are made based on resources requested in initial response, including images, stylesheets, and scripts.<br/><br/> Go back to step 2 or 4 for each resource request.</li>
+<li>Stylesheets (blocking) are parsed. CSSOM built.</li>
+<li>Scripts (blocking) are parsed and executed. DOM updated.</li>
+<li>Content gets rendered</li></ol>
+	</section>
+</div>
+
+-->
+<div class="slide">
+	<header>
+		<h1>What's involved in a page load?</h1>
+	</header>
+	<section>
+<ul class="flex arrow">
+	<li>HTTP request</li>
+	<li>DNS lookup</li>
+	<li>TCP Connect</li>
+	<li>HTTP request sent</li>
+	<li>Server Magic</li>
+	<li>Server Sends response</li>
+	<li>Browser receives/<wbr>parses response</li>
+	<li>Resources fetched from Cache</li>
+	<li>Parse &amp; Execute Scripts</li>
+	<li>Render Site</li>
+</ul>
+<ul style="margin-top: 2em">
+	<li>Each request: go back to DNS lookup or HTTP Request</li>
+	<li>Stylesheets are blocking</li>
+	<li>Scripts are blocking.</li>
+</ul>
+</section>
+</div>
+
+<!-- What we can measure -->
+<div class="slide">
+	<header>
+		<h1>Navigation Timing API metrics</h1>
+	</header>
+	<section style="height: 80vh; overflow: scroll">
+	<img src="images/perfmetrics.svg" alt="Navigation Timing API metrics" style="width: 95vw">
+	</section>
+</div>
+
+
+<!-- objective / subjective -->
+<div class="slide intro">
+	
+		<h1>Objective v. Subjective</h1>
+	
+
+</div>
+
+
+
+
+<!-- video comparison -->
+<!-- Staples and Wolferman's -->
+<div class="slide">
+	<header>
+		<h1>Load Time <span class="temphidden">v. Visually Complete</span></h1>
+	</header>
+	<section>
+	<p class="center">Load Times: 3,729ms v. 3,768ms 
+ </p><p class="center temphidden">Visually Complete: 16s v.
+8.7s </p>
+	<div style="display: flex; justify-content: space-between;">
+		<section>
+			<video src="videos/staples.mp4" id="video1"></video>
+			Staples
+		</section>
+		<section>
+			<video src="videos/wolfermans.mp4" id="video2"></video>
+			Wolferman's
+		</section>
+	</div>
+	<p class="center"><button onclick="playVideos('video1', 'video2')">Play</button>
+	</section>
+
+</div>
+
+
+
+<!-- WPT of Staples and Wolferman's -->
+<div class="slide object">
+<object data="https://www.webpagetest.org/video/compare.php?tests=170223_16_311%2C170223_ZY_312&thumbSize=200&ival=1000&end=all"></object>
+</div>
+
+
+<!-- WPT Metrics list 
+<div class="slide">
+	<header>
+		<h1>WPT Metrics</h1>
+	</header>
+	<section style="display: flex;">
+		<div style="padding-right: 3vw">	
+			<p>Film Strip</p>
+			<ul>
+				<li>Visually Complete</li>
+				<li>Last Change</li>
+				<li>Document Complete</li>
+				<li>Fully Loaded</li>
+			</ul>
+		</div>
+		<div  class="temphidden">
+			<p>Graphs</p>
+			<ul>
+				<li>Visual Progress (SI: 4,462 v 5,902)</li>
+				<li>Timings</li>
+				<li>Requests (286 v 178)</li>
+				<li>Bytes (3.37Mb v. 2.19Mb)</li>
+			</ul>
+		</div>
+	</section>
+	<p class="hinttome">timings, # of bytes, # of requests<br/>above fold QoE measurements</p>
+</div>
+
+<div class="slide">
+	<header>
+		<h1>Timings</h1>
+	</header>
+	<section>
+	<dl class="ddhide">
+		<dt>TTFB</dt>
+		<dd>Time from initial navigation until first byte is received by browser</dd>
+		<dt>Start Render</dt>
+		<dd>Time from start of initial navigation to the first non-white content painted to browser.<br/>Green Line in WPTest</dd>	
+<dt>Load Time (onLoad)</dt>
+<dd>From navigation start to document complete<br/>
+</dd>
+<dt>Load Time (Fully Loaded)</dt>
+<dd>
+Metrics collected up until there was 2s of no network activity after Document Complete. </dd>
+<dt>Speed Index</dt>
+<dd>Proportional representation of how quickly user-visible content was rendered.</dd>
+</dl>
+
+	</section>
+</div>
+-->
+
+<div class="slide">
+	<section>
+		<h1>What is good User Experience?</h1>
+	</section>
+</div>
+
+
+<div class="slide object">
+<header><h1>Active v. Passive Waiting</h1></header>
+<object data="files/lastsecond.html" style="padding-top: 80px;"></object>	
+</div>
+
+
+<div class="slide object">
+<object data="https://www.webpagetest.org/result/170621_T5_1CZK/1/details/#waterfall_view_step1"></object>
+</div>
+
+<!--
+<div class="slide">
+	<header>
+		<h1>Speed Index</h1>
+	</header>
+	<section>
+	<p>Metric on above-fold visual Quality of Experience</p>
+<ul>
+<li>Created by Patrick Meenan (Google)</li>
+<li>Used on WebPage Test </li>
+</ul>
+	</section>
+</div>
+
+
+<!-- images of speed index 
+<div class="slide">
+	<header>
+		<h1>Speed Index</h1>
+	</header>
+	<section>
+		<p>
+		Aggregate function on quickness of above-the-fold visual completion:</p>
+		<ul class="flex">
+			<li><img src="images/visualprogress_both.gif" alt="speed index graph for both sites"></li>
+			<li><img src="images/visualprogress_both_staples.gif" alt="speed index graph for staples"><span class="si">4,462</span></li>
+			<li><img src="images/visualprogress_both_wolf.gif" alt="speed index graph for wolfermans"><span class="si">5,902</span></li>
+		</ul>
+		<p class="center"><img src="images/si.png" alt="equation for speed index" style="width: 30vw"></p>
+	</section>
+</div>
+-->
+
+<div class="slide">
+	<header>
+		<h1>Questions</h1>
+	</header>
+	<section>
+		<ul>
+			<li>How does visual jitter impact perceived performance?
+			<li>Are sites free of visual jitter like modals and overlays viewed as more performant? </li>
+			<li>Is it possible to automatically predict the presence of jitter to help choose a better set of metrics?</li>
+			<li>Does a long DOM Content Loaded impact perceived performance?
+			</li>
+			<li>Can metrics be improved?</li>
+		</ul>
+	</section>
+</div>
+
+
+
+<div class="slide">
+	<section>
+		<h1>User Experience > Developer Experience</h1>
+		<img src="images/wpt_cpu.svg">
+	</section>
+</div>
+
+<!-- Talk Table of Contents-->
+<div class="slide divider">
+	<header>
+		<h1>Visual Metrics 
+	<a href="psi.html"><span class="icon">launch</span></a></h1>
+	</header>
+	<section>
+	<ol>
+	<li>SpeedIndex (SI)</li>
+	<li>Perceptual Speed Index (PSI)</li>
+	</ol>
+	<a href="psi.html">Go  <span class="icon">launch</span></a>
+	</section>
+</div>
+
+<!-- TITLE SLIDE --> 
+  <div class="slide intro">
+    <section class="content">
+    <h1 style="font-size: 3rem; margin-top: 10%;">Thank you</h1>
+      <h2>Speed Perception: Understanding and Measuring Perceived Performance</h2>
+      <p><a href="http://instartlogic.github.io/p/SFHTML5">http://instartlogic.github.io/p/SFHTML5</a></p>
+      <ul class="flex" style=" max-width: 30rem; justify-content: space-between; margin: auto; padding-top: 1rem">
+      <li>Estelle Weyl <br/><a href="https://twitter.com/estellevw">@estellevw</a></li><li> Parvez Ahammad <br/><a href="https://twitter.com/perceptPA">@perceptPA</a></li></ul>
+    </section>
+</div>
+
+
+   </div>
+</div>
+<script src="js/slides.js" class="removeForAT"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30010510-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

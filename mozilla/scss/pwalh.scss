@@ -1,0 +1,28 @@
+@import "vars";
+
+.threethirds {
+	position: absolute; 
+	top: 2em; 
+	display: flex;
+	flex-flow: column; 
+	width: 100%;
+	list-style-type: none;
+	left: -40px;
+	li {
+		height: 30vh;
+		text-align: center;	
+		line-height: 30vh;
+		margin: 0;
+	}
+	li:first-of-type {
+		color: $background;
+		background: rgba($grapefruit, 0.95);
+	}
+	li:nth-of-type(2) {
+		background: rgba($lime, 0.95);
+	}
+	li:last-of-type {
+	color: $background;
+		background: rgba($ilblue, 0.95);
+	}
+}
